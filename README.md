@@ -7,22 +7,21 @@ Both Bootstrap 4 and 5 versions of Hyper are available for download after purcha
 
 <h3>Features:</h3>
 <p>
-&emsp;1.	Built using the latest bootstrap (v5.1.3)<br>
-&emsp;2.	Easy customizations with extensive use of SCSS variables<br>
-&emsp;3.	Fully responsive and works across all modern/supported browsers, devices<br>
-&emsp;4.	Documentation on all available components, widgets, etc<br>
-&emsp;5.	Easy development and tooling with Gulp workflow<br>
-&emsp;6.	Landing Page included (Onepage)<br>
-&emsp;7.	Vanilla JS and webpack based build available as well<br>
+    &emsp;1.	Built using the latest bootstrap (v5.1.3)<br>
+    &emsp;2.	Easy customizations with extensive use of SCSS variables<br>
+    &emsp;3.	Fully responsive and works across all modern/supported browsers, devices<br>
+    &emsp;4.	Documentation on all available components, widgets, etc<br>
+    &emsp;5.	Easy development and tooling with Gulp workflow<br>
+    &emsp;6.	Landing Page included (Onepage)<br>
+    &emsp;7.	Vanilla JS and webpack based build available as well<br>
 </p>
 
 
 
 <h3>Multiple Demos/Layout Options:</h3>
 <p>
-  3 Pre-built layout options to cater needs of modern web applications. The flexible layout system, build automation (gulp-based build tools), and ready-to-use UI elements enable the development of modern web applications with great speed.<br>
-  <br>
-  <h5>&emsp;Components:</h5>
+  3 Pre-built layout options to cater needs of modern web applications. The flexible layout system, build automation (gulp-based build tools), and ready-to-use UI elements enable the development of modern web applications with great speed.
+  <h5>&emsp;<u>Components:</u></h5>
   <p>
   &emsp;&emsp;•	All of Bootstrap components<br>
   &emsp;&emsp;•	Icons<br>
@@ -42,7 +41,8 @@ Both Bootstrap 4 and 5 versions of Hyper are available for download after purcha
   &emsp;&emsp;•	WYSIWYG Editors (Quill Js and SimpleMDE)<br>
   &emsp;&emsp;•	Google and Vector Maps<br>
   </p>
-  Layouts:
+  
+  <h5>&emsp;<u>Layouts:</u></h5>
   •	Vertical Layout (With different sidebar themes including default, light, dark, etc)
   •	Horizontal Layout
   •	Detached Sidebar Layout
