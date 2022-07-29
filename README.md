@@ -1,17 +1,21 @@
 # Free Responsive Web UI Kit & Dashboard Template bootstrap
- Hyper is a fully featured dashboard and admin template comes with tones of well designed UI elements, components, widgets and pages. It uses bootstrap for the frontend 
 
-
+<p text-align: "center">
 This repository consist of fully-featured dashboard and admin template and many other websites templates that are totally free and some of them have been downloaded from that comes with tones of well-designed UI elements, components, widgets, and pages. The super clean and flexible layout would enable you to easily build web applications. It can be used to create a saas-based interface, custom admin panels, dashboard, CRM, CMS, e-commerce panel, etc.
 Both Bootstrap 4 and 5 versions of Hyper are available for download after purchase.
-Features:
-1.	Built using the latest bootstrap (v5.1.3)
-2.	Easy customizations with extensive use of SCSS variables
-3.	Fully responsive and works across all modern/supported browsers, devices
-4.	Documentation on all available components, widgets, etc
-5.	Easy development and tooling with Gulp workflow
-6.	Landing Page included (Onepage)
-7.	Vanilla JS and webpack based build available as well
+</p>
+
+<h1>Features:</h1>
+<br>
+<p>
+&emsp;1.	Built using the latest bootstrap (v5.1.3)<br>
+&emsp;2.	Easy customizations with extensive use of SCSS variables<br>
+&emsp;3.	Fully responsive and works across all modern/supported browsers, devices<br>
+&emsp;4.	Documentation on all available components, widgets, etc<br>
+&emsp;5.	Easy development and tooling with Gulp workflow<br>
+&emsp;6.	Landing Page included (Onepage)<br>
+&emsp;7.	Vanilla JS and webpack based build available as well<br>
+</p>
 Multiple Demos/Layout Options:
 3 Pre-built layout options to cater needs of modern web applications. The flexible layout system, build automation (gulp-based build tools), and ready-to-use UI elements enable the development of modern web applications with great speed.
 Components:
