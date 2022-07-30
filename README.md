@@ -43,39 +43,51 @@ Both Bootstrap 4 and 5 versions of Hyper are available for download after purcha
   </p>
   
   <h5>&emsp;<u>Layouts:</u></h5>
-  •	Vertical Layout (With different sidebar themes including default, light, dark, etc)
-  •	Horizontal Layout
-  •	Detached Sidebar Layout
-  •	Boxed (Fixed width) for Vertical and Horizontal
-  Apps:
-  •	Calendar
-  •	Projects (List page, Detail Page, Create Project Page, Gantt)
-  •	Tasks (List Page, Detail Modal, Add Task Modal, Kanban Board)
-  •	Ecommerce (Product listing, product detail, order listing, order detail, shopping cart, checkout, seller listing, etc)
-  •	Email (Inbox, Email details page, compose, etc)
-  •	Chat
-  •	Social Feed
-  •	File Manager
-  Pages:
-  •	Sample Dashboards
-  •	Profile
-  •	Invoice
-  •	FAQ
-  •	Timeline
-  •	Pricing
-  •	Maintenance
-  •	Login (Two variations)
-  •	Register (Two variations)
-  •	Logout (Two variations)
-  •	Recover Password (Two variations)
-  •	Lock Screen (Two variations)
-  •	Confirm Mail (Two variations)
-  •	Error 404
-  •	Error 500
-  Documentation:
-  Each component is well explained with examples, code blocks, and other required details.  
-  Design Files and Assets:
-  To get the design files (PSDs and Sketch files) of the template, contact us at support@coderthemes.com. These are provided as complimentary with Hyper.
-  Django, Laravel, and Angular Samples:
-  We have created Angular, Laravel, and Django samples with Hyper integrated into them as well. To get the sample projects, contact us at fazeel.k.khalid@gmail.com. These are provided as complimentary with Hyper. 
+  <p>
+  &emsp;&emsp;•	Vertical Layout (With different sidebar themes including default, light, dark, etc)
+  &emsp;&emsp;•	Horizontal Layout
+  &emsp;&emsp;•	Detached Sidebar Layout
+  &emsp;&emsp;•	Boxed (Fixed width) for Vertical and Horizontal
+  </p>
+  &emsp;Apps:
+  <p>
+  &emsp;&emsp;•	Calendar
+  &emsp;&emsp;•	Projects (List page, Detail Page, Create Project Page, Gantt)
+  &emsp;&emsp;•	Tasks (List Page, Detail Modal, Add Task Modal, Kanban Board)
+  &emsp;&emsp;•	Ecommerce (Product listing, product detail, order listing, order detail, shopping cart, checkout, seller listing, etc)
+  &emsp;&emsp;•	Email (Inbox, Email details page, compose, etc)
+  &emsp;&emsp;•	Chat
+  &emsp;&emsp;•	Social Feed
+  &emsp;&emsp;•	File Manager
+  </p>
+  
+  &emsp;Pages:
+  <p>
+  &emsp;&emsp;•	Sample Dashboards
+  &emsp;&emsp;•	Profile
+  &emsp;&emsp;•	Invoice
+  &emsp;&emsp;•	FAQ
+  &emsp;&emsp;•	Timeline
+  &emsp;&emsp;•	Pricing
+  &emsp;&emsp;•	Maintenance
+  &emsp;&emsp;•	Login (Two variations)
+  &emsp;&emsp;•	Register (Two variations)
+  &emsp;&emsp;•	Logout (Two variations)
+  &emsp;&emsp;•	Recover Password (Two variations)
+  &emsp;&emsp;•	Lock Screen (Two variations)
+  &emsp;&emsp;•	Confirm Mail (Two variations)
+  &emsp;&emsp;•	Error 404
+  &emsp;&emsp;•	Error 500
+  </p>
+  
+  &emsp;Documentation:
+  &emsp;&emsp;Each component is well explained with examples, code blocks, and other required details.  
+  
+  &emsp;Design Files and Assets:
+  &emsp;&emsp;To get the design files (PSDs and Sketch files) of the template, contact us at support@coderthemes.com. These are provided as complimentary with Hyper.
+  
+  &emsp;Django, Laravel, and Angular Samples:
+  <p>
+  &emsp;&emsp;We have created Angular, Laravel, and Django samples with Hyper integrated into them as well. To get the sample projects, contact us at fazeel.k.khalid@gmail.com. These are provided as complimentary with Hyper. 
+  </p>
 </p>
