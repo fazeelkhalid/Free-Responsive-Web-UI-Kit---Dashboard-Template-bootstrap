@@ -44,47 +44,53 @@ Both Bootstrap 4 and 5 versions of Hyper are available for free.
   
   <h5>&emsp;<u>Layouts:</u></h5>
   <p>
-  &emsp;&emsp;•	Vertical Layout (With different sidebar themes including default, light, dark, etc)
-  &emsp;&emsp;•	Horizontal Layout
-  &emsp;&emsp;•	Detached Sidebar Layout
-  &emsp;&emsp;•	Boxed (Fixed width) for Vertical and Horizontal
-  </p>
-  &emsp;Apps:
-  <p>
-  &emsp;&emsp;•	Calendar
-  &emsp;&emsp;•	Projects (List page, Detail Page, Create Project Page, Gantt)
-  &emsp;&emsp;•	Tasks (List Page, Detail Modal, Add Task Modal, Kanban Board)
-  &emsp;&emsp;•	Ecommerce (Product listing, product detail, order listing, order detail, shopping cart, checkout, seller listing, etc)
-  &emsp;&emsp;•	Email (Inbox, Email details page, compose, etc)
-  &emsp;&emsp;•	Chat
-  &emsp;&emsp;•	Social Feed
-  &emsp;&emsp;•	File Manager
+  &emsp;&emsp;•	Vertical Layout (With different sidebar themes including default, light, dark, etc)<br>
+  &emsp;&emsp;•	Horizontal Layout<br>
+  &emsp;&emsp;•	Detached Sidebar Layout<br>
+  &emsp;&emsp;•	Boxed (Fixed width) for Vertical and Horizontal<br>
   </p>
   
-  &emsp;Pages:
+  
+  <h5>&emsp;<u>Apps:</h5>
   <p>
-  &emsp;&emsp;•	Sample Dashboards
-  &emsp;&emsp;•	Profile
-  &emsp;&emsp;•	Invoice
-  &emsp;&emsp;•	FAQ
-  &emsp;&emsp;•	Timeline
-  &emsp;&emsp;•	Pricing
-  &emsp;&emsp;•	Maintenance
-  &emsp;&emsp;•	Login (Two variations)
-  &emsp;&emsp;•	Register (Two variations)
-  &emsp;&emsp;•	Logout (Two variations)
-  &emsp;&emsp;•	Recover Password (Two variations)
-  &emsp;&emsp;•	Lock Screen (Two variations)
-  &emsp;&emsp;•	Confirm Mail (Two variations)
-  &emsp;&emsp;•	Error 404
-  &emsp;&emsp;•	Error 500
+  &emsp;&emsp;•	Calendar<br>
+  &emsp;&emsp;•	Projects (List page, Detail Page, Create Project Page, Gantt)<br>
+  &emsp;&emsp;•	Tasks (List Page, Detail Modal, Add Task Modal, Kanban Board)<br>
+  &emsp;&emsp;•	Ecommerce (Product listing, product detail, order listing, order detail, shopping cart, checkout, seller listing, etc)<br>
+  &emsp;&emsp;•	Email (Inbox, Email details page, compose, etc)<br>
+  &emsp;&emsp;•	Chat<br>
+  &emsp;&emsp;•	Social Feed<br>
+  &emsp;&emsp;•	File Manager<br>
+  </p>
+  
+ <h5>&emsp;<u> Pages:</h5>
+  <p>
+  &emsp;&emsp;•	Sample Dashboards<br>
+  &emsp;&emsp;•	Profile<br>
+  &emsp;&emsp;•	Invoice<br>
+  &emsp;&emsp;•	FAQ<br>
+  &emsp;&emsp;•	Timeline<br>
+  &emsp;&emsp;•	Pricing<br>
+  &emsp;&emsp;•	Maintenance<br>
+  &emsp;&emsp;•	Login (Two variations)<br>
+  &emsp;&emsp;•	Register (Two variations)<br>
+  &emsp;&emsp;•	Logout (Two variations)<br>
+  &emsp;&emsp;•	Recover Password (Two variations)<br>
+  &emsp;&emsp;•	Lock Screen (Two variations)<br>
+  &emsp;&emsp;•	Confirm Mail (Two variations)<br>
+  &emsp;&emsp;•	Error 404<br>
+  &emsp;&emsp;•	Error 500<br>
   </p>
   
   &emsp;Documentation:
+  <p>
   &emsp;&emsp;Each component is well explained with examples, code blocks, and other required details.  
+  </P>
   
   &emsp;Design Files and Assets:
+  <p>
   &emsp;&emsp;To get the design files (PSDs and Sketch files) of the template, contact us at support@coderthemes.com. These are provided as complimentary with Hyper.
+  </P>
   
   &emsp;Django, Laravel, and Angular Samples:
   <p>
