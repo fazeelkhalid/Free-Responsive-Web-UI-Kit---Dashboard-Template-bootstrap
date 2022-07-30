@@ -1,8 +1,8 @@
 # Free Responsive Web UI Kit & Dashboard Template bootstrap
 
 <p text-align: "center">
-This repository consist of fully-featured dashboard and admin template and many other websites templates that are totally free and some of them have been downloaded from that comes with tones of well-designed UI elements, components, widgets, and pages. The super clean and flexible layout would enable you to easily build web applications. It can be used to create a saas-based interface, custom admin panels, dashboard, CRM, CMS, e-commerce panel, etc.
-Both Bootstrap 4 and 5 versions of Hyper are available for download after purchase.
+This repository consist of fully-featured dashboard and admin template and many other websites templates that are totally free and all of them comes with tones of well-designed UI elements, components, widgets, and pages. The super clean and flexible layout would enable you to easily build web applications. It can be used to create a saas-based interface, custom admin panels, dashboard, CRM, CMS, e-commerce panel, etc.
+Both Bootstrap 4 and 5 versions of Hyper are available for free.
 </p>
 
 <h3>Features:</h3>
