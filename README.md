@@ -51,7 +51,7 @@ Both Bootstrap 4 and 5 versions of Hyper are available for free.
   </p>
   
   
-  <h5>&emsp;<u>Apps:</h5>
+  <h5>&emsp;<u>Apps:</u></h5>
   <p>
   &emsp;&emsp;•	Calendar<br>
   &emsp;&emsp;•	Projects (List page, Detail Page, Create Project Page, Gantt)<br>
@@ -63,7 +63,7 @@ Both Bootstrap 4 and 5 versions of Hyper are available for free.
   &emsp;&emsp;•	File Manager<br>
   </p>
   
- <h5>&emsp;<u> Pages:</h5>
+ <h5>&emsp;<u> Pages:</u></h5>
   <p>
   &emsp;&emsp;•	Sample Dashboards<br>
   &emsp;&emsp;•	Profile<br>
@@ -82,18 +82,18 @@ Both Bootstrap 4 and 5 versions of Hyper are available for free.
   &emsp;&emsp;•	Error 500<br>
   </p>
   
-  &emsp;Documentation:
+  <h3>Documentation:</h3>
   <p>
-  &emsp;&emsp;Each component is well explained with examples, code blocks, and other required details.  
+  &emsp;Each component is well explained with examples, code blocks, and other required details.  
   </P>
   
-  &emsp;Design Files and Assets:
+  <h3>Design Files and Assets:</h3>
   <p>
-  &emsp;&emsp;To get the design files (PSDs and Sketch files) of the template, contact us at support@coderthemes.com. These are provided as complimentary with Hyper.
+  &emsp;To get the design files (PSDs and Sketch files) of the template, contact us at support@coderthemes.com. These are provided as complimentary with Hyper.
   </P>
   
-  &emsp;Django, Laravel, and Angular Samples:
+  <h3>Django, Laravel, and Angular Samples:</h3>
   <p>
-  &emsp;&emsp;We have created Angular, Laravel, and Django samples with Hyper integrated into them as well. To get the sample projects, contact us at fazeel.k.khalid@gmail.com. These are provided as complimentary with Hyper. 
+  &emsp;We have created Angular, Laravel, and Django samples with Hyper integrated into them as well. To get the sample projects, contact us at fazeel.k.khalid@gmail.com. These are provided as complimentary with Hyper. 
   </p>
 </p>
