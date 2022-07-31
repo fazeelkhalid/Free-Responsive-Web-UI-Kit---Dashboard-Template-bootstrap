@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from social.webestica.com/docs/customization.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Jul 2022 07:43:10 GMT -->
+<head>
+	<title>Doc - Social Theme</title>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Webestica.com">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/doc.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/prism.css">
+
+</head>
+
+<body>
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+<!-- Navbar top START -->
+<div class="navbar-top bg-dark px-3 px-sm-4 px-md-5">
+	<div class="d-flex justify-content-between align-items-center">
+		<!-- Logo START -->
+			<a class="navbar-brand py-3" href="index.html">
+				<img class="navbar-brand-item h-30px" src="assets/images/logo.svg" alt="logo">				
+			</a>
+			<!-- Logo END -->
+
+		<!-- Navbar right -->
+		<div>
+			<ul class="text-end list-inline m-0">
+        <li class="list-inline-item me-2 me-md-4"> <a class="text-white" href="../index-2.html">Live Preview</a> </li>
+        <li class="list-inline-item me-2 me-md-4"> <a class="text-white" href="https://support.webestica.com/" target="_blank">Support</a> </li>
+        <li class="list-inline-item text-white"> <span class="badge bg-danger text-white">v1.0.0</span></li>
+      </ul>
+		</div>
+	</div>
+</div>
+<!-- Navbar top END -->
+
+<div class="container-fluid px-0">
+	<div class="page-wrapper">
+		<!-- Left sidebar START -->
+		<nav class="navbar navbar-expand-sm navbar-light bg-light px-3">
+		  <a class="navbar-brand py-2 d-sm-none" href="#">Doc nav</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#docNav" aria-controls="docNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="docNav">
+		    <div class="left-sidebar bg-light">
+					<div class="content h-100vh">
+						 <div class="list-group list-group-borderless p-3 p-md-4">
+							<b class="text-dark text-uppercase mb-2">Getting Started</b>
+								<a class="list-group-item" href="index.html">Introduction</a>
+								<a class="list-group-item" href="gulp.html">Gulp</a>
+								<a class="list-group-item" href="customization.html">Customization</a>
+				        <a class="list-group-item" href="color-scheme.html">Color Scheme</a>
+								<a class="list-group-item" href="logo-settings.html">Logo Settings</a>
+								<a class="list-group-item" href="page-loading.html">Page Loading</a>
+								<a class="list-group-item" href="fonts.html">Fonts</a>
+								<a class="list-group-item" href="dark-mode.html">Dark mode</a>
+				        <a class="list-group-item" href="sources-and-credits.html">Sources and Credits</a>
+				        <a class="list-group-item" href="changelog.html">Changelog</a>
+				        <a class="list-group-item" href="updates.html">Updates</a>
+				        <a class="list-group-item" href="support.html">Support</a>
+							<b class="text-dark text-uppercase mt-3 mb-2">Components</b>
+								<a class="list-group-item" href="alerts.html">Alerts</a>
+								<a class="list-group-item" href="avatar.html">Avatar</a>
+								<a class="list-group-item" href="badges.html">Badges</a>
+								<a class="list-group-item" href="breadcrumb.html">Breadcrumb</a>
+								<a class="list-group-item" href="buttons.html">Buttons</a>
+								<a class="list-group-item" href="font-icons.html">Font icons</a>
+								<a class="list-group-item" href="google-map.html">Google Map</a>
+								<a class="list-group-item" href="nav-and-tabs.html">Nav and Tabs</a>
+								<a class="list-group-item" href="pagination.html">Pagination</a><a class="list-group-item" href="utility-classes.html">Utility classes</a>
+							<b class="text-dark text-uppercase mt-3 mb-2">Plugins</b>
+				        <a class="list-group-item" href="tiny-slider.html">Tiny Slider</a>
+                <a class="list-group-item" href="video-player.html">Video player</a>
+                <a class="list-group-item" href="choices.html">Choices</a>
+                <a class="list-group-item" href="flatpickr.html">Flatpickr</a>
+						</div>
+					</div>
+				</div>
+		  </div>
+		</nav>		
+		<!-- Left sidebar END -->
+
+		<!-- Main content START -->
+		<div class="main-content">
+			<div class="row">
+				<div class="col-12">
+					<!-- Page title -->
+					<div class="my-5">
+						<h1>Customization</h1>
+            			<p class="lead">Learn how to write your own custom styles without changing the theme's core files so that you can take advantage of future <a href="updates.html">Updates.</a></p>
+						<hr class="my-5">
+					</div>
+<!-- Page content START -->
+
+<!-- SCSS Method -->
+<h3 id="scssmethod" class="mt-5">SCSS Method <small>- user.scss (highly recommended)</small></h3>
+<p>We highly recommended making edits and additions to the template CSS/SCSS is to use the provided <code>user-variables.scss</code> and <code>user.scss</code> files located in the <code>template/assets/scss</code> folder.</p>
+<ul>
+  <li><code>user-variables.scss</code> will contain each variable you want to edit. Simply copy the variables you need to edit from the main <code>_variables.scss</code> and paste it into this file. It will automatically override the default values with the new ones.</li>
+  <li><code>_user.scss</code> will contain CSS/SCSS you want to add or edit.</li>
+</ul>
+<div class="alert alert-warning my-4 pt-4">
+  <h3><i class="fa-solid fa-triangle-exclamation"></i> Compiling changes</h3>
+  <p class="text-dark mt-3">In order to see the changes, running Gulp command is required. To learn more about Gulp go the <a href="gulp.html">gulp section</a>.</p>
+</div>
+
+
+<!-- CSS Method -->
+<h3 id="cssmethod" class="mt-5 mb-3">CSS Method <small>- custom.css</small></h3>
+<p>If you prefer to work with theme as a static source without Gulp and Sass, you will need to add custom CSS through a separate CSS file.</p>
+<p>You just need to link <code>custom.css</code> at the end of <code>&lt;head&gt;</code> tag of each page and start adding CSS you want to add or edit. See example below:</p>
+
+<pre>
+<code class="language-markup">&lt;link rel="stylesheet" type="text/css" href="assets/css/custom.css" /&gt;</code>
+</pre>
+
+<p class="mt-4"><span class="badge bg-danger me-2">Note:</span>When you update theme, <b>make sure you have backup of your files</b> and not to override the user's custom file, which may contain styles you have created already. We also recommended to checking how to <a href="updates.html">Updates theme</a> section.</p>
+
+ 
+<!-- Page content END -->	
+				</div>
+			</div>
+		</div>
+		<!-- Main content END -->
+	</div>
+</div>
+</main>
+
+<!-- =======================
+JavaScripts -->
+
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/simple-scrollbar.min.js"></script>
+<script src="assets/js/prism.js"></script>
+<script src="assets/js/clipboard.min.js"></script>
+ 
+<!-- Template Functions -->
+<script src="assets/js/functions.js"></script>
+
+</body>
+
+<!-- Mirrored from social.webestica.com/docs/customization.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Jul 2022 07:43:10 GMT -->
+</html> 

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from social.webestica.com/docs/nav-and-tabs.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Jul 2022 07:43:12 GMT -->
+<head>
+	<title>Doc - Social Theme</title>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Webestica.com">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/doc.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/prism.css">
+
+</head>
+
+<body>
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+<!-- Navbar top START -->
+<div class="navbar-top bg-dark px-3 px-sm-4 px-md-5">
+	<div class="d-flex justify-content-between align-items-center">
+		<!-- Logo START -->
+			<a class="navbar-brand py-3" href="index.html">
+				<img class="navbar-brand-item h-30px" src="assets/images/logo.svg" alt="logo">				
+			</a>
+			<!-- Logo END -->
+
+		<!-- Navbar right -->
+		<div>
+			<ul class="text-end list-inline m-0">
+        <li class="list-inline-item me-2 me-md-4"> <a class="text-white" href="../index-2.html">Live Preview</a> </li>
+        <li class="list-inline-item me-2 me-md-4"> <a class="text-white" href="https://support.webestica.com/" target="_blank">Support</a> </li>
+        <li class="list-inline-item text-white"> <span class="badge bg-danger text-white">v1.0.0</span></li>
+      </ul>
+		</div>
+	</div>
+</div>
+<!-- Navbar top END -->
+
+<div class="container-fluid px-0">
+	<div class="page-wrapper">
+		<!-- Left sidebar START -->
+		<nav class="navbar navbar-expand-sm navbar-light bg-light px-3">
+		  <a class="navbar-brand py-2 d-sm-none" href="#">Doc nav</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#docNav" aria-controls="docNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="docNav">
+		    <div class="left-sidebar bg-light">
+					<div class="content h-100vh">
+						 <div class="list-group list-group-borderless p-3 p-md-4">
+							<b class="text-dark text-uppercase mb-2">Getting Started</b>
+								<a class="list-group-item" href="index.html">Introduction</a>
+								<a class="list-group-item" href="gulp.html">Gulp</a>
+								<a class="list-group-item" href="customization.html">Customization</a>
+				        <a class="list-group-item" href="color-scheme.html">Color Scheme</a>
+								<a class="list-group-item" href="logo-settings.html">Logo Settings</a>
+								<a class="list-group-item" href="page-loading.html">Page Loading</a>
+								<a class="list-group-item" href="fonts.html">Fonts</a>
+								<a class="list-group-item" href="dark-mode.html">Dark mode</a>
+				        <a class="list-group-item" href="sources-and-credits.html">Sources and Credits</a>
+				        <a class="list-group-item" href="changelog.html">Changelog</a>
+				        <a class="list-group-item" href="updates.html">Updates</a>
+				        <a class="list-group-item" href="support.html">Support</a>
+							<b class="text-dark text-uppercase mt-3 mb-2">Components</b>
+								<a class="list-group-item" href="alerts.html">Alerts</a>
+								<a class="list-group-item" href="avatar.html">Avatar</a>
+								<a class="list-group-item" href="badges.html">Badges</a>
+								<a class="list-group-item" href="breadcrumb.html">Breadcrumb</a>
+								<a class="list-group-item" href="buttons.html">Buttons</a>
+								<a class="list-group-item" href="font-icons.html">Font icons</a>
+								<a class="list-group-item" href="google-map.html">Google Map</a>
+								<a class="list-group-item" href="nav-and-tabs.html">Nav and Tabs</a>
+								<a class="list-group-item" href="pagination.html">Pagination</a>
+				        <a class="list-group-item" href="utility-classes.html">Utility classes</a>
+							<b class="text-dark text-uppercase mt-3 mb-2">Plugins</b>
+				        <a class="list-group-item" href="tiny-slider.html">Tiny Slider</a>
+                <a class="list-group-item" href="video-player.html">Video player</a>
+                <a class="list-group-item" href="choices.html">Choices</a>
+                <a class="list-group-item" href="flatpickr.html">Flatpickr</a>
+						</div>
+					</div>
+				</div>
+		  </div>
+		</nav>		
+		<!-- Left sidebar END -->
+
+		<!-- Main content START -->
+		<div class="main-content">
+			<div class="row">
+				<div class="col-12">
+					<!-- Page title -->
+					<div class="my-5">
+						<h1>Navs and tabs</h1>
+            			<p class="lead">Documentation and examples for how to use Bootstrap’s included navigation components.</p>
+						<hr class="my-5">
+					</div>
+<!-- Page content START -->
+
+
+<!-- Base nav Examples -->
+<h3 class="mt-5">Base nav</h3>
+<p>Navigation available in Bootstrap share general markup and styles, from the base <code>.nav</code> class to the active and disabled states. Swap modifier classes to switch between each style.</p>
+<div class="p-3 border border-2 mb-3">
+	<p>The base <code>.nav</code> component does not include any <code>.active</code> state. The following examples include the class, mainly to demonstrate that this particular class does not trigger any special styling.</p>
+	<p>To convey the active state to assistive technologies, use the <code>aria-current</code> attribute — using the page value for current page, or <code>true</code> for the current item in a set.</p>
+</div>
+<!-- Tab START -->
+<ul class="nav nav-tabs nav-bottom-line">
+	<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-1">Result</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-2">HTML</a> </li>
+</ul>
+<div class="tab-content bg-light p-4">
+	<div class="tab-pane show active" id="tab-1">
+		<ul class="nav">
+		  <li class="nav-item">
+		    <a class="nav-link active" aria-current="page" href="#">Active</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Link</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Link</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+		  </li>
+		</ul>
+	</div>
+
+<div class="tab-pane" id="tab-2">
+<div class="position-relative">
+<pre id="copy-1" class="my-3">
+<code class="language-markup" data-lang="html">&lt;ul class="nav"&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link active" aria-current="page" href="#"&gt;Active&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="nav-item"&gt;
+    &lt;a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"&gt;Disabled&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<button id="copy_id-1" data-clipboard-action="copy" data-clipboard-target="#copy-1" class="copy-link btn btn-primary btn-sm">Copy</button>
+</div>
+</div>
+</div>
+<!-- Tab END -->
+
+
+<h4 class="mt-5">Tab default</h4>
+<ul class="nav nav-tabs nav-bottom-line">
+	<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-19">Result</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-20">HTML</a> </li>
+</ul>
+<div class="tab-content bg-light p-4">
+	<div class="tab-pane show active" id="tab-19">
+		<ul class="nav nav-tabs mb-3">
+			<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-1-1"> Research </a> </li>
+			<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-1-2"> Design </a> </li>
+			<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-1-3"> Develop </a> </li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane show active" id="tab-1-1">
+				We have a strong foundation built on legacy and emerging technologies, including excellent track record of on-time deliveries. We are emerging as one of the most promising private talent sourcing and management firms in the world. The real challenge before companies in today's world is to make their products and services appealing to everyone.
+			</div>
+			<div class="tab-pane" id="tab-1-2">
+				We pride ourselves on the service we give to our clients. Our friendly team members are always willing to help you understand your present technology requirements and provide suggestions on your future needs. It can be the packaging of an item or the design of its website and Applications.
+			</div>
+			<div class="tab-pane" id="tab-1-3">
+				Social an innovative Internet marketing solutions company that offers comprehensive web development, SMO services, SEO strategies and various other types of Internet marketing related services. With us at your side, you will find the IT solution to achieve your strategic and financial goals.
+			</div>
+		</div>
+	</div>
+
+<div class="tab-pane" id="tab-20">
+<div class="position-relative">
+<pre id="copy-10" class="my-3">
+<code class="language-markup" data-lang="html">&lt;ul class="nav nav-tabs mb-3"&gt;
+	&lt;li class="nav-item"&gt; &lt;a class="nav-link active" data-bs-toggle="tab" href="#tab-1-1"&gt; Research &lt;/a&gt; &lt;/li&gt;
+	&lt;li class="nav-item"&gt; &lt;a class="nav-link" data-bs-toggle="tab" href="#tab-1-2"&gt; Design &lt;/a&gt; &lt;/li&gt;
+	&lt;li class="nav-item"&gt; &lt;a class="nav-link" data-bs-toggle="tab" href="#tab-1-3"&gt; Develop &lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="tab-content"&gt;
+	&lt;div class="tab-pane show active" id="tab-1-1"&gt;
+		We have a strong foundation built on legacy and emerging technologies, including excellent track record of on-time deliveries. We are emerging as one of the most promising private talent sourcing and management firms in the world. The real challenge before companies in today's world is to make their products and services appealing to everyone.
+	&lt;/div&gt;
+	&lt;div class="tab-pane" id="tab-1-2"&gt;
+		We pride ourselves on the service we give to our clients. Our friendly team members are always willing to help you understand your present technology requirements and provide suggestions on your future needs. It can be the packaging of an item or the design of its website and Applications.
+	&lt;/div&gt;
+	&lt;div class="tab-pane" id="tab-1-3"&gt;
+		Social an innovative Internet marketing solutions company that offers comprehensive web development, SMO services, SEO strategies and various other types of Internet marketing related services. With us at your side, you will find the IT solution to achieve your strategic and financial goals.
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<button id="copy_id-10" data-clipboard-action="copy" data-clipboard-target="#copy-10" class="copy-link btn btn-primary btn-sm">Copy</button>
+</div>
+</div>
+</div>
+<!-- Tab END -->
+
+
+<!-- Tab default Justified -->
+<h4 class="mt-5">Tab default Justified</h4>
+<ul class="nav nav-tabs nav-bottom-line">
+	<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-21">Result</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-22">HTML</a> </li>
+</ul>
+<div class="tab-content bg-light p-4">
+	<div class="tab-pane show active" id="tab-21">
+		<ul class="nav nav-tabs nav-justified mb-3">
+			<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-2-1"> Research </a> </li>
+			<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-2-2"> Design </a> </li>
+			<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-2-3"> Develop </a> </li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane show active" id="tab-2-1">
+				We have a strong foundation built on legacy and emerging technologies, including excellent track record of on-time deliveries. We are emerging as one of the most promising private talent sourcing and management firms in the world. The real challenge before companies in today's world is to make their products and services appealing to everyone.
+			</div>
+			<div class="tab-pane" id="tab-2-2">
+				We pride ourselves on the service we give to our clients. Our friendly team members are always willing to help you understand your present technology requirements and provide suggestions on your future needs. It can be the packaging of an item or the design of its website and Applications.
+			</div>
+			<div class="tab-pane" id="tab-2-3">
+				Social an innovative Internet marketing solutions company that offers comprehensive web development, SMO services, SEO strategies and various other types of Internet marketing related services. With us at your side, you will find the IT solution to achieve your strategic and financial goals.
+			</div>
+		</div>
+	</div>
+
+<div class="tab-pane" id="tab-22">
+<div class="position-relative">
+<pre id="copy-11" class="my-3">
+<code class="language-markup" data-lang="html">&lt;ul class="nav nav-tabs nav-justified mb-3"&gt;
+	&lt;li class="nav-item"&gt; &lt;a class="nav-link active" data-bs-toggle="tab" href="#tab-2-1"&gt; Research &lt;/a&gt; &lt;/li&gt;
+	&lt;li class="nav-item"&gt; &lt;a class="nav-link" data-bs-toggle="tab" href="#tab-2-2"&gt; Design &lt;/a&gt; &lt;/li&gt;
+	&lt;li class="nav-item"&gt; &lt;a class="nav-link" data-bs-toggle="tab" href="#tab-2-3"&gt; Develop &lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="tab-content"&gt;
+	&lt;div class="tab-pane show active" id="tab-2-1"&gt;
+		We have a strong foundation built on legacy and emerging technologies, including excellent track record of on-time deliveries. We are emerging as one of the most promising private talent sourcing and management firms in the world. The real challenge before companies in today's world is to make their products and services appealing to everyone.
+	&lt;/div&gt;
+	&lt;div class="tab-pane" id="tab-2-2"&gt;
+		We pride ourselves on the service we give to our clients. Our friendly team members are always willing to help you understand your present technology requirements and provide suggestions on your future needs. It can be the packaging of an item or the design of its website and Applications.
+	&lt;/div&gt;
+	&lt;div class="tab-pane" id="tab-2-3"&gt;
+		Social an innovative Internet marketing solutions company that offers comprehensive web development, SMO services, SEO strategies and various other types of Internet marketing related services. With us at your side, you will find the IT solution to achieve your strategic and financial goals.
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<button id="copy_id-11" data-clipboard-action="copy" data-clipboard-target="#copy-11" class="copy-link btn btn-primary btn-sm">Copy</button>
+</div>
+</div>
+</div>
+<!-- Tab END -->
+
+<!-- Tab line -->
+<h4 class="mt-5">Tab line</h4>
+<ul class="nav nav-tabs nav-bottom-line">
+	<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-23">Result</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-24">HTML</a> </li>
+</ul>
+<div class="tab-content bg-light p-4">
+	<div class="tab-pane show active" id="tab-23">
+		<ul class="nav nav-tabs nav-bottom-line mb-3">
+			<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-3-1"> Research </a> </li>
+			<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-3-2"> Design </a> </li>
+			<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-3-3"> Develop </a> </li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane show active" id="tab-3-1">
+				We have a strong foundation built on legacy and emerging technologies, including excellent track record of on-time deliveries. We are emerging as one of the most promising private talent sourcing and management firms in the world. The real challenge before companies in today's world is to make their products and services appealing to everyone.
+			</div>
+			<div class="tab-pane" id="tab-3-2">
+				We pride ourselves on the service we give to our clients. Our friendly team members are always willing to help you understand your present technology requirements and provide suggestions on your future needs. It can be the packaging of an item or the design of its website and Applications.
+			</div>
+			<div class="tab-pane" id="tab-3-3">
+				Social an innovative Internet marketing solutions company that offers comprehensive web development, SMO services, SEO strategies and various other types of Internet marketing related services. With us at your side, you will find the IT solution to achieve your strategic and financial goals.
+			</div>
+		</div>
+	</div>
+
+<div class="tab-pane" id="tab-24">
+<div class="position-relative">
+<pre id="copy-12" class="my-3">
+<code class="language-markup" data-lang="html">&lt;ul class="nav nav-tabs nav-bottom-line mb-3"&gt;
+	&lt;li class="nav-item"&gt; &lt;a class="nav-link active" data-bs-toggle="tab" href="#tab-3-1"&gt; Research &lt;/a&gt; &lt;/li&gt;
+	&lt;li class="nav-item"&gt; &lt;a class="nav-link" data-bs-toggle="tab" href="#tab-3-2"&gt; Design &lt;/a&gt; &lt;/li&gt;
+	&lt;li class="nav-item"&gt; &lt;a class="nav-link" data-bs-toggle="tab" href="#tab-3-3"&gt; Develop &lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="tab-content"&gt;
+	&lt;div class="tab-pane show active" id="tab-3-1"&gt;
+		We have a strong foundation built on legacy and emerging technologies, including excellent track record of on-time deliveries. We are emerging as one of the most promising private talent sourcing and management firms in the world. The real challenge before companies in today's world is to make their products and services appealing to everyone.
+	&lt;/div&gt;
+	&lt;div class="tab-pane" id="tab-3-2"&gt;
+		We pride ourselves on the service we give to our clients. Our friendly team members are always willing to help you understand your present technology requirements and provide suggestions on your future needs. It can be the packaging of an item or the design of its website and Applications.
+	&lt;/div&gt;
+	&lt;div class="tab-pane" id="tab-3-3"&gt;
+		Social an innovative Internet marketing solutions company that offers comprehensive web development, SMO services, SEO strategies and various other types of Internet marketing related services. With us at your side, you will find the IT solution to achieve your strategic and financial goals.
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<button id="copy_id-12" data-clipboard-action="copy" data-clipboard-target="#copy-12" class="copy-link btn btn-primary btn-sm">Copy</button>
+</div>
+</div>
+</div>
+<!-- Tab END -->
+
+<!-- Tab vertical -->
+<h4 class="mt-5">Tab vertical</h4>
+<ul class="nav nav-tabs nav-bottom-line">
+	<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-27">Result</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-28">HTML</a> </li>
+</ul>
+<div class="tab-content bg-light p-4">
+	<div class="tab-pane show active" id="tab-27">
+		<div class="row">
+		  <div class="col-4 col-sm-3">
+		    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+		      <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+		      <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+		      <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+		      <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+		    </div>
+		  </div>
+		  <div class="col-8 col-sm-9">
+		    <div class="tab-content pt-0" id="v-pills-tabContent">
+		      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+		      	We have a strong foundation built on legacy and emerging technologies, including excellent track record of on-time deliveries. We are emerging as one of the most promising private talent sourcing and management firms in the world. The real challenge before companies in today's world is to make their products and services appealing to everyone.
+		    	</div>
+		      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+		      	We pride ourselves on the service we give to our clients. Our friendly team members are always willing to help you understand your present technology requirements and provide suggestions on your future needs. It can be the packaging of an item or the design of its website and Applications.
+		    	</div>
+		      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+		      	Social an innovative Internet marketing solutions company that offers comprehensive web development, SMO services, SEO strategies and various other types of Internet marketing related services. With us at your side, you will find the IT solution to achieve your strategic and financial goals.
+		    	</div>
+		      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+		      	Our friendly team members are always willing to help you understand your present technology requirements and provide suggestions on your future needs. It can be the packaging of an item or the design of its website and Applications. We pride ourselves on the service we give to our clients.
+		    	</div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+<div class="tab-pane" id="tab-28">
+<div class="position-relative">
+<pre id="copy-14" class="my-3">
+<code class="language-markup" data-lang="html">&lt;div class="row"&gt;
+  &lt;div class="col-4 col-sm-3"&gt;
+    &lt;div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"&gt;
+      &lt;a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"&gt;Home&lt;/a&gt;
+      &lt;a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"&gt;Profile&lt;/a&gt;
+      &lt;a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"&gt;Messages&lt;/a&gt;
+      &lt;a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"&gt;Settings&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-8 col-sm-9"&gt;
+    &lt;div class="tab-content pt-0" id="v-pills-tabContent"&gt;
+      &lt;div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"&gt;
+      	We have a strong foundation built on legacy and emerging technologies, including excellent track record of on-time deliveries. We are emerging as one of the most promising private talent sourcing and management firms in the world. The real challenge before companies in today's world is to make their products and services appealing to everyone.
+    	&lt;/div&gt;
+      &lt;div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"&gt;
+      	We pride ourselves on the service we give to our clients. Our friendly team members are always willing to help you understand your present technology requirements and provide suggestions on your future needs. It can be the packaging of an item or the design of its website and Applications.
+    	&lt;/div&gt;
+      &lt;div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"&gt;
+      	Social an innovative Internet marketing solutions company that offers comprehensive web development, SMO services, SEO strategies and various other types of Internet marketing related services. With us at your side, you will find the IT solution to achieve your strategic and financial goals.
+    	&lt;/div&gt;
+      &lt;div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"&gt;
+      	Our friendly team members are always willing to help you understand your present technology requirements and provide suggestions on your future needs. It can be the packaging of an item or the design of its website and Applications. We pride ourselves on the service we give to our clients.
+    	&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<button id="copy_id-14" data-clipboard-action="copy" data-clipboard-target="#copy-14" class="copy-link btn btn-primary btn-sm">Copy</button>
+</div>
+</div>
+</div>
+<!-- Tab END -->
+
+<!-- Tab primary soft -->
+<h4 class="mt-5">Tab white</h4>
+<ul class="nav nav-tabs nav-bottom-line">
+	<li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab-6">Result</a> </li>
+	<li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab-7">HTML</a> </li>
+</ul>
+<div class="tab-content bg-light p-4">
+	<div class="tab-pane show active" id="tab-6">
+		<div class="row">
+			<!-- Tabs START -->
+			<ul class="nav nav-tabs nav-tabs-white border-0 mb-3" id="pills-tab" role="tablist">
+				<li class="nav-item" role="presentation">
+					<button class="nav-link active" id="pills-tab-1" data-bs-toggle="pill" data-bs-target="#pills-tab1" type="button" role="tab" aria-controls="pills-tab1" aria-selected="true">Home</button>
+				</li>
+				<!-- Tab item -->
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="pills-tab-2" data-bs-toggle="pill" data-bs-target="#pills-tab2" type="button" role="tab" aria-controls="pills-tab2" aria-selected="false">Profile</button>
+				</li>
+				<!-- Tab item -->
+				<li class="nav-item" role="presentation">
+					<button class="nav-link" id="pills-tab-3" data-bs-toggle="pill" data-bs-target="#pills-tab3" type="button" role="tab" aria-controls="pills-tab3" aria-selected="false">Message</button>
+				</li>
+			</ul> 
+			<!-- Tabs contents -->
+			<div class="tab-content" id="pills-tabContent">
+				<!-- Content -->
+				<div class="tab-pane fade show active" id="pills-tab1" role="tabpanel" aria-labelledby="pills-tab-1">
+					We have a strong foundation built on legacy and emerging technologies, including excellent track record of on-time deliveries. We are emerging as one of the most promising private talent sourcing and management firms in the world. The real challenge before companies in today's world is to make their products and services appealing to everyone.
+				</div>
+				<!-- Content -->
+				<div class="tab-pane fade" id="pills-tab2" role="tabpanel" aria-labelledby="pills-tab-2">
+					We pride ourselves on the service we give to our clients. Our friendly team members are always willing to help you understand your present technology requirements and provide suggestions on your future needs. It can be the packaging of an item or the design of its website and Applications.
+				</div>
+				<!-- Content -->
+				<div class="tab-pane fade" id="pills-tab3" role="tabpanel" aria-labelledby="pills-tab-3">
+					Social an innovative Internet marketing solutions company that offers comprehensive web development, SMO services, SEO strategies and various other types of Internet marketing related services. With us at your side, you will find the IT solution to achieve your strategic and financial goals
+				</div>
+			</div>
+			<!-- Tabs END -->
+		</div>
+	</div>
+
+  <div class="tab-pane" id="tab-7">
+    <div class="position-relative">
+    <pre id="copy-14" class="my-3">
+    <code class="language-markup" data-lang="html">&lt;!-- Tabs START --&gt;
+&lt;ul class=&quot;nav nav-tabs nav-tabs-white border-0 mb-3&quot; id=&quot;pills-tab&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button class=&quot;nav-link active&quot; id=&quot;pills-tab-1&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#pills-tab1&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;pills-tab1&quot; aria-selected=&quot;true&quot;&gt;Home&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;!-- Tab item --&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;pills-tab-2&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#pills-tab2&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;pills-tab2&quot; aria-selected=&quot;false&quot;&gt;Profile&lt;/button&gt;
+  &lt;/li&gt;
+  &lt;!-- Tab item --&gt;
+  &lt;li class=&quot;nav-item&quot; role=&quot;presentation&quot;&gt;
+    &lt;button class=&quot;nav-link&quot; id=&quot;pills-tab-3&quot; data-bs-toggle=&quot;pill&quot; data-bs-target=&quot;#pills-tab3&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;pills-tab3&quot; aria-selected=&quot;false&quot;&gt;Message&lt;/button&gt;
+  &lt;/li&gt;
+&lt;/ul&gt; 
+&lt;!-- Tabs contents --&gt;
+&lt;div class=&quot;tab-content&quot; id=&quot;pills-tabContent&quot;&gt;
+  &lt;!-- Content --&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;pills-tab1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;pills-tab-1&quot;&gt;
+    We have a strong foundation built on legacy and emerging technologies, including excellent track record of on-time deliveries. We are emerging as one of the most promising private talent sourcing and management firms in the world. The real challenge before companies in today&#39;s world is to make their products and services appealing to everyone.
+  &lt;/div&gt;
+  &lt;!-- Content --&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;pills-tab2&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;pills-tab-2&quot;&gt;
+    We pride ourselves on the service we give to our clients. Our friendly team members are always willing to help you understand your present technology requirements and provide suggestions on your future needs. It can be the packaging of an item or the design of its website and Applications.
+  &lt;/div&gt;
+  &lt;!-- Content --&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;pills-tab3&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;pills-tab-3&quot;&gt;
+    Social an innovative Internet marketing solutions company that offers comprehensive web development, SMO services, SEO strategies and various other types of Internet marketing related services. With us at your side, you will find the IT solution to achieve your strategic and financial goals
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Tabs END --&gt;
+    </code></pre>
+    <button id="copy_id-14" data-clipboard-action="copy" data-clipboard-target="#copy-14" class="copy-link btn btn-primary btn-sm">Copy</button>
+    </div>
+    </div>
+ 
+ 
+<!-- Page content END -->	
+				</div>
+			</div>
+		</div>
+		<!-- Main content END -->
+	</div>
+</div>
+</main>
+
+<!-- =======================
+JavaScripts -->
+
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/simple-scrollbar.min.js"></script>
+<script src="assets/js/prism.js"></script>
+<script src="assets/js/clipboard.min.js"></script>
+ 
+<!-- Template Functions -->
+<script src="assets/js/functions.js"></script>
+
+</body>
+
+<!-- Mirrored from social.webestica.com/docs/nav-and-tabs.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Jul 2022 07:43:12 GMT -->
+</html>
