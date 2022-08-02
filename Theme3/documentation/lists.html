@@ -1,0 +1,2417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from htmlstream.com/preview/front-v4.2/html/documentation/lists.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Aug 2022 18:21:32 GMT -->
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Lists - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/css/vendor.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../assets/css/theme.minc619.css?v=1.0">
+  <link rel="stylesheet" href="../assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="navbar navbar-expand navbar-fixed navbar-end navbar-light navbar-sticky-lg-top bg-white">
+    <div class="container-fluid">
+      <nav class="navbar-nav-wrap">
+        <div class="row flex-grow-1">
+          <!-- Default Logo -->
+          <div class="docs-navbar-sidebar-container d-flex align-items-center mb-2 mb-lg-0">
+            <a class="navbar-brand" href="index.html" aria-label="Space">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a href="changelog.html">
+              <span class="badge bg-soft-primary text-primary">v4.2</span>
+            </a>
+          </div>
+          <!-- End Default Logo -->
+
+          <div class="col-md px-lg-0">
+            <div class="d-flex justify-content-between align-items-center px-lg-5 px-xl-10">
+              <div class="d-none d-md-block">
+                <!-- Search Form -->
+                <form id="docsSearch" class="position-relative" data-hs-list-options='{
+                       "searchMenu": true,
+                       "keyboard": true,
+                       "item": "searchTemplate",
+                       "valueNames": ["component", "category", {"name": "link", "attr": "href"}],
+                       "empty": "#searchNoResults"
+                     }'>
+                  <!-- Input Group -->
+                  <div class="input-group input-group-merge navbar-input-group">
+                    <div class="input-group-prepend input-group-text">
+                      <i class="bi-search"></i>
+                    </div>
+
+                    <input type="search" class="search form-control form-control-sm" placeholder="Search in docs" aria-label="Search in docs">
+
+                    <a class="input-group-append input-group-text" href="javascript:;">
+                      <i id="clearSearchResultsIcon" class="bi-x" style="display: none;"></i>
+                    </a>
+                  </div>
+                  <!-- End Input Group -->
+
+                  <!-- List -->
+                  <div class="list dropdown-menu navbar-dropdown-menu-borderless w-100 overflow-auto" style="max-height: 16rem;"></div>
+                  <!-- End List -->
+
+                  <!-- Empty -->
+                  <div id="searchNoResults" style="display: none;">
+                    <div class="text-center p-4">
+                      <img class="mb-3" src="../assets/svg/illustrations/oc-error.svg" alt="Image Description" style="width: 10rem;">
+                      <p class="mb-0">No Results</p>
+                    </div>
+                  </div>
+                  <!-- End Empty -->
+                </form>
+                <!-- End Search Form -->
+
+                <!-- List Item Template -->
+                <div class="d-none">
+                  <div id="searchTemplate" class="dropdown-item">
+                    <a class="d-block link" href="#">
+                      <span class="category d-block fw-normal text-muted mb-1"></span>
+                      <span class="component text-dark"></span>
+                    </a>
+                  </div>
+                </div>
+                <!-- End List Item Template -->
+              </div>
+
+              <!-- Navbar -->
+              <ul class="navbar-nav p-0">
+                <li class="nav-item">
+                  <a class="btn btn-ghost-secondary btn-sm" href="https://htmlstream.com/contact-us" target="_blank">
+                    Get Support <i class="bi-box-arrow-up-right ms-1"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-primary btn-sm" href="../index.html">
+                    <i class="bi-eye me-1"></i> Preview Demo
+                  </a>
+                </li>
+              </ul>
+              <!-- End Navbar -->
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </nav>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    <nav class="js-nav-scroller navbar navbar-expand-lg navbar-sidebar navbar-vertical navbar-light bg-white border-end" data-hs-nav-scroller-options='{
+            "type": "vertical",
+            "target": ".navbar-nav .active",
+            "offset": 80
+           }'>
+      <!-- Navbar Toggle -->
+      <button type="button" class="navbar-toggler btn btn-white d-grid w-100" data-bs-toggle="collapse" data-bs-target="#navbarVerticalNavMenu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarVerticalNavMenu">
+        <span class="d-flex justify-content-between align-items-center">
+          <span class="h3 mb-0">Nav menu</span>
+
+          <span class="navbar-toggler-default">
+            <i class="bi-list"></i>
+          </span>
+
+          <span class="navbar-toggler-toggled">
+            <i class="bi-x"></i>
+          </span>
+        </span>
+      </button>
+      <!-- End Navbar Toggle -->
+
+      <!-- Navbar Collapse -->
+      <div id="navbarVerticalNavMenu" class="collapse navbar-collapse">
+        <div class="navbar-brand-wrapper border-end" style="height: auto;">
+          <!-- Default Logo -->
+          <div class="d-flex align-items-center mb-3">
+            <a class="navbar-brand" href="index.html" aria-label="Space">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a class="navbar-brand-badge" href="changelog.html">
+              <span class="badge bg-soft-primary text-primary ms-2">v4.2</span>
+            </a>
+          </div>
+          <!-- End Default Logo -->
+
+          <!-- Nav -->
+          <ul class="nav nav-segment nav-fill nav-justified">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Docs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../snippets/index.html">Snippets</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+
+        <div class="docs-navbar-sidebar-aside-body navbar-sidebar-aside-body">
+          <ul id="navbarSettings" class="navbar-nav nav nav-vertical nav-tabs nav-tabs-borderless nav-sm">
+            <li class="nav-item">
+              <span class="nav-subtitle">Documentation</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Introduction</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Getting started</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="getting-started.html">Getting Started</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="gulp.html">Gulp</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="customization.html">Customization</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="credits.html">Credits</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="changelog.html">Changelog</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Design &amp; Graphics</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="bs-icons.html">Bootstrap Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="duotone-icons.html">Duotone Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="illustrations.html">Illustrations</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Components</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="accordion.html">Accordion</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="alerts.html">Alerts</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="avatars.html">Avatars</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="badge.html">Badge</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="breadcrumb.html">Breadcrumb</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="buttons.html">Buttons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="cards.html">Cards</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="collapse.html">Collapse</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="column-divider.html">Column Divider</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="devices.html">Devices</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="divider.html">Divider</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="dropdowns.html">Dropdowns</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="icons.html">Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="list-group.html">List Group</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="lists.html">Lists</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="legend-indicator.html">Legend Indicator</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="modal.html">Modal</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="offcanvas.html">Offcanvas</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="page-header.html">Page Header</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="pagination.html">Pagination</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="popovers.html">Popovers</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="progress.html">Progress</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="profile.html">Profile</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="shapes.html">Shapes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="spinners.html">Spinners</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="steps.html">Steps</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="tab.html">Tab</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="tables.html">Tables</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="text-highlight.html">Text Highlight</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toasts.html">Toasts</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="tooltips.html">Tooltips</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="typography.html">Typography</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Navbars</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="navbar.html">Navbar</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="navs.html">Navs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="mega-menu.html">Mega Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="scrollspy.html">Scrollspy</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Basic forms</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="basic-forms.html">Basic Forms</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="checks-and-switches.html">Checks &amp; Switches</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="input-group.html">Input Group</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Advanced Forms</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="select.html">Advanced Select</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="file-attachments.html">File Attachments</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="dropzone.html">Drag’ n’ Drop File Uploads</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="quill.html">WYSIWYG Editor</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="quantity-counter.html">Quantity Counter</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="input-mask.html">Input Mask</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="step-forms.html">Step Forms (Wizards)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="range-slider.html">Range Slider (noUiSlider)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="add-field.html">Add Field</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toggle-password.html">Toggle Password</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="count-characters.html">Count Characters</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toggle-switch.html">Toggle Switch</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toggle-state.html">Toggle State</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="switch.html">Switch</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Media</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="fslightbox.html">Fullscreen Lightbox</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="video-bg.html">Video Background</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="video-player.html">Video Player</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="swiper.html">Swiper</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Others</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="maps-leaflet.html">Maps (Leaflet)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="chartjs.html">Chart.js</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="circles.html">Circles.js (Pie Chart)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="sticky-block.html">Sticky Block</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="countdown.html">Countdown</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="sorting.html">Sorting (Shuffle.js)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="go-to.html">Go To</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="show-animation.html">Show Animation</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="typedjs.html">Typed.js</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Utilities</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="backgrounds.html">Backgrounds</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="borders.html">Borders</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="colors.html">Colors</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="links.html">Links</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="position.html">Position</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="rotations.html">Rotations</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="shadows.html">Shadows</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="sizing.html">Sizing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="spacing.html">Spacing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="z-index.html">Z-index</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Navbar Collapse -->
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Lists</h1>
+            <p class="docs-page-header-text">Lists are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="unstyled" class="hs-docs-heading">
+        Unstyled <a class="anchorjs-link" href="#unstyled" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <span class="fw-semi-bold">This only applies to immediate children list items</span>, meaning you will need to add the class for any nested lists as well.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <!-- List -->
+            <ul class="list-unstyled">
+              <li>Dashboard</li>
+              <li>Profile</li>
+              <li>
+                Account
+
+                <ul>
+                  <li>Settings</li>
+                  <li>Billing</li>
+                  <li>Invoice</li>
+                </ul>
+              </li>
+              <li>Projects</li>
+              <li>
+                Tasks
+                <ol>
+                  <li>One</li>
+                  <li>Two</li>
+                  <li>Three</li>
+                </ol>
+              </li>
+            </ul>
+            <!-- End List -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- List --&gt;
+                &lt;ul class="list-unstyled"&gt;
+                  &lt;li&gt;Dashboard&lt;/li&gt;
+                  &lt;li&gt;Profile&lt;/li&gt;
+                  &lt;li&gt;
+                    Account
+
+                    &lt;ul&gt;
+                      &lt;li&gt;Settings&lt;/li&gt;
+                      &lt;li&gt;Billing&lt;/li&gt;
+                      &lt;li&gt;Invoice&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;Projects&lt;/li&gt;
+                  &lt;li&gt;
+                    Tasks
+                    &lt;ol&gt;
+                      &lt;li&gt;One&lt;/li&gt;
+                      &lt;li&gt;Two&lt;/li&gt;
+                      &lt;li&gt;Three&lt;/li&gt;
+                    &lt;/ol&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;!-- End List --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="unstyled-spacings" class="hs-docs-heading">
+        Unstyled spacings <a class="anchorjs-link" href="#unstyled-spacings" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>You can add vertical spacings between lists with modifier classes.</p>
+
+      <p>Use <code>.list-py-1</code> class.</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <!-- List -->
+            <ul class="list-unstyled list-py-1">
+              <li>Dashboard</li>
+              <li>Profile</li>
+              <li>Account</li>
+              <li>Projects</li>
+              <li>Tasks</li>
+            </ul>
+            <!-- End List -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- List --&gt;
+                &lt;ul class="list-unstyled list-py-1"&gt;
+                  &lt;li&gt;Dashboard&lt;/li&gt;
+                  &lt;li&gt;Profile&lt;/li&gt;
+                  &lt;li&gt;Account&lt;/li&gt;
+                  &lt;li&gt;Projects&lt;/li&gt;
+                  &lt;li&gt;Tasks&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;!-- End List --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <p>Use <code>.list-py-2</code> class.</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab3" href="#nav-result3" data-bs-toggle="pill" data-bs-target="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab3" href="#nav-html3" data-bs-toggle="pill" data-bs-target="#nav-html3" role="tab" aria-controls="nav-html3" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent3">
+          <div class="tab-pane fade p-4 show active" id="nav-result3" role="tabpanel" aria-labelledby="nav-resultTab3">
+            <!-- List -->
+            <ul class="list-unstyled list-py-2">
+              <li>Dashboard</li>
+              <li>Profile</li>
+              <li>Account</li>
+              <li>Projects</li>
+              <li>Tasks</li>
+            </ul>
+            <!-- End List -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html3" role="tabpanel" aria-labelledby="nav-htmlTab3">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- List --&gt;
+                &lt;ul class="list-unstyled list-py-2"&gt;
+                  &lt;li&gt;Dashboard&lt;/li&gt;
+                  &lt;li&gt;Profile&lt;/li&gt;
+                  &lt;li&gt;Account&lt;/li&gt;
+                  &lt;li&gt;Projects&lt;/li&gt;
+                  &lt;li&gt;Tasks&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;!-- End List --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <p>Use <code>.list-py-3</code> class.</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab4" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab4" href="#nav-result4" data-bs-toggle="pill" data-bs-target="#nav-result4" role="tab" aria-controls="nav-result4" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab4" href="#nav-html4" data-bs-toggle="pill" data-bs-target="#nav-html4" role="tab" aria-controls="nav-html4" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent4">
+          <div class="tab-pane fade p-4 show active" id="nav-result4" role="tabpanel" aria-labelledby="nav-resultTab4">
+            <!-- List -->
+            <ul class="list-unstyled list-py-3">
+              <li>Dashboard</li>
+              <li>Profile</li>
+              <li>Account</li>
+              <li>Projects</li>
+              <li>Tasks</li>
+            </ul>
+            <!-- End List -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html4" role="tabpanel" aria-labelledby="nav-htmlTab4">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- List --&gt;
+                &lt;ul class="list-unstyled list-py-3"&gt;
+                  &lt;li&gt;Dashboard&lt;/li&gt;
+                  &lt;li&gt;Profile&lt;/li&gt;
+                  &lt;li&gt;Account&lt;/li&gt;
+                  &lt;li&gt;Projects&lt;/li&gt;
+                  &lt;li&gt;Tasks&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;!-- End List --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="inline" class="hs-docs-heading">
+        Inline <a class="anchorjs-link" href="#inline" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Remove a list's bullets and apply some light <code>margin</code> with a combination of two classes, <code>.list-inline</code> and <code>.list-inline-item</code>.</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab5" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab5" href="#nav-result5" data-bs-toggle="pill" data-bs-target="#nav-result5" role="tab" aria-controls="nav-result5" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab5" href="#nav-html5" data-bs-toggle="pill" data-bs-target="#nav-html5" role="tab" aria-controls="nav-html5" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent5">
+          <div class="tab-pane fade p-4 show active" id="nav-result5" role="tabpanel" aria-labelledby="nav-resultTab5">
+            <!-- List -->
+            <ul class="list-inline">
+              <li class="list-inline-item">Dashboard</li>
+              <li class="list-inline-item">Profile</li>
+              <li class="list-inline-item">Account</li>
+              <li class="list-inline-item">Projects</li>
+              <li class="list-inline-item">Tasks</li>
+            </ul>
+            <!-- End List -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html5" role="tabpanel" aria-labelledby="nav-htmlTab5">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- List --&gt;
+                &lt;ul class="list-inline"&gt;
+                  &lt;li class="list-inline-item"&gt;Dashboard&lt;/li&gt;
+                  &lt;li class="list-inline-item"&gt;Profile&lt;/li&gt;
+                  &lt;li class="list-inline-item"&gt;Account&lt;/li&gt;
+                  &lt;li class="list-inline-item"&gt;Projects&lt;/li&gt;
+                  &lt;li class="list-inline-item"&gt;Tasks&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;!-- End List --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="list-separator" class="hs-docs-heading">
+        List separator <a class="anchorjs-link" href="#list-separator" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use <code>.list-separator</code> class with the <code>.list-inline</code> class for an inline separator with a circled shape.</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab7" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab7" href="#nav-result7" data-bs-toggle="pill" data-bs-target="#nav-result7" role="tab" aria-controls="nav-result7" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab7" href="#nav-html7" data-bs-toggle="pill" data-bs-target="#nav-html7" role="tab" aria-controls="nav-html7" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent7">
+          <div class="tab-pane fade p-4 show active" id="nav-result7" role="tabpanel" aria-labelledby="nav-resultTab7">
+            <!-- List Separator -->
+            <ul class="list-inline list-separator">
+              <li class="list-inline-item">
+                <a class="list-separator-link" href="#">FAQ</a>
+              </li>
+              <li class="list-inline-item">
+                <a class="list-separator-link" href="#">License</a>
+              </li>
+              <li class="list-inline-item">
+                <a class="list-separator-link" href="#">Terms &amp; conditions</a>
+              </li>
+            </ul>
+            <!-- End List Separator -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html7" role="tabpanel" aria-labelledby="nav-htmlTab7">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- List Separator --&gt;
+                &lt;ul class="list-inline list-separator"&gt;
+                  &lt;li class="list-inline-item"&gt;
+                    &lt;a class="list-separator-link" href="#"&gt;FAQ&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="list-inline-item"&gt;
+                    &lt;a class="list-separator-link" href="#"&gt;License&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="list-inline-item"&gt;
+                    &lt;a class="list-separator-link" href="#"&gt;Terms &amp; conditions&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;!-- End List Separator --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <p>Use <code>.list-separator-light</code> for a light version in a dark background.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab13" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab13" href="#nav-result13" data-bs-toggle="pill" data-bs-target="#nav-result13" role="tab" aria-controls="nav-result13" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab13" href="#nav-html13" data-bs-toggle="pill" data-bs-target="#nav-html13" role="tab" aria-controls="nav-html13" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent13">
+          <div class="tab-pane fade p-4 show active bg-dark" id="nav-result13" role="tabpanel" aria-labelledby="nav-resultTab13">
+            <!-- List Separator -->
+            <ul class="list-inline list-separator list-separator-light">
+              <li class="list-inline-item">
+                <a class="list-separator-link" href="#">FAQ</a>
+              </li>
+              <li class="list-inline-item">
+                <a class="list-separator-link" href="#">License</a>
+              </li>
+              <li class="list-inline-item">
+                <a class="list-separator-link" href="#">Terms &amp; conditions</a>
+              </li>
+            </ul>
+            <!-- End List Separator -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html13" role="tabpanel" aria-labelledby="nav-htmlTab13">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- List Separator --&gt;
+                &lt;ul class="list-inline list-separator list-separator-light"&gt;
+                  &lt;li class="list-inline-item"&gt;
+                    &lt;a class="list-separator-link" href="#"&gt;FAQ&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="list-inline-item"&gt;
+                    &lt;a class="list-separator-link" href="#"&gt;License&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class="list-inline-item"&gt;
+                    &lt;a class="list-separator-link" href="#"&gt;Terms &amp; conditions&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;!-- End List Separator --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="list-comment" class="hs-docs-heading">
+        List comment <a class="anchorjs-link" href="#list-comment" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use <code>.list-comment</code> class and <code>.list-comment-item</code> as a child class for a comment style listing.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab8" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab8" href="#nav-result8" data-bs-toggle="pill" data-bs-target="#nav-result8" role="tab" aria-controls="nav-result8" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab8" href="#nav-html8" data-bs-toggle="pill" data-bs-target="#nav-html8" role="tab" aria-controls="nav-html8" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent8">
+          <div class="tab-pane fade p-4 show active" id="nav-result8" role="tabpanel" aria-labelledby="nav-resultTab8">
+            <!-- Comment -->
+            <ul class="list-comment">
+              <!-- Item -->
+              <li class="list-comment-item">
+                <!-- Media -->
+                <div class="d-flex align-items-center mb-3">
+                  <div class="flex-shrink-0">
+                    <img class="avatar avatar-circle" src="../assets/img/160x160/img3.jpg" alt="Image Description">
+                  </div>
+
+                  <div class="flex-grow-1 ms-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h6>Dave Austin</h6>
+                      <span class="d-block">1 day ago</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Media -->
+
+                <p>As a Special Education teacher this resonates so well with me. Fighting with gen ed teachers to flatten for the students with learning disabilities. It also confirms some things for me in my writing.</p>
+
+                <a class="link" href="#">Reply <i class="bi-chevron-right small ms-1 small ms-1"></i></a>
+
+                <!-- Comment -->
+                <ul class="list-comment">
+                  <!-- Item -->
+                  <li class="list-comment-item">
+                    <!-- Media -->
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="flex-shrink-0">
+                        <img class="avatar avatar-circle" src="../assets/img/160x160/img9.jpg" alt="Image Description">
+                      </div>
+
+                      <div class="flex-grow-1 ms-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h6>Christina Kray</h6>
+                          <span class="d-block">1 day ago</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Media -->
+
+                    <p>Love it Dave! We're all about keeping it up.</p>
+
+                    <a class="link" href="#">Reply <i class="bi-chevron-right small ms-1 small ms-1"></i></a>
+                  </li>
+                  <!-- End Item -->
+                </ul>
+                <!-- End Comment -->
+              </li>
+              <!-- End Item -->
+
+              <!-- Item -->
+              <li class="list-comment-item">
+                <!-- Media -->
+                <div class="d-flex align-items-center mb-3">
+                  <div class="flex-shrink-0">
+                    <img class="avatar avatar-circle" src="../assets/img/160x160/img8.jpg" alt="Image Description">
+                  </div>
+
+                  <div class="flex-grow-1 ms-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <h6>Hanna Wolfe</h6>
+                      <span class="d-block">2 days ago</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Media -->
+
+                <p>Since our attention spans seem to be shrinking by the day — keeping it simple is more important than ever.</p>
+
+                <a class="link" href="#">Reply <i class="bi-chevron-right small ms-1 small ms-1"></i></a>
+              </li>
+              <!-- End Item -->
+            </ul>
+            <!-- End Comment -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html8" role="tabpanel" aria-labelledby="nav-htmlTab8">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Comment --&gt;
+                &lt;ul class="list-comment"&gt;
+                  &lt;!-- Item --&gt;
+                  &lt;li class="list-comment-item"&gt;
+                    &lt;!-- Media --&gt;
+                    &lt;div class="d-flex align-items-center mb-3"&gt;
+                      &lt;div class="flex-shrink-0"&gt;
+                        &lt;img class="avatar avatar-circle" src="../assets/img/160x160/img3.jpg" alt="Image Description"&gt;
+                      &lt;/div&gt;
+
+                      &lt;div class="flex-grow-1 ms-3"&gt;
+                        &lt;div class="d-flex justify-content-between align-items-center"&gt;
+                          &lt;h6&gt;Dave Austin&lt;/h6&gt;
+                          &lt;span class="d-block"&gt;1 day ago&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Media --&gt;
+
+                    &lt;p&gt;As a Special Education teacher this resonates so well with me. Fighting with gen ed teachers to flatten for the students with learning disabilities. It also confirms some things for me in my writing.&lt;/p&gt;
+
+                    &lt;a class="link" href="#"&gt;Reply &lt;i class="bi-chevron-right small ms-1 small ms-1"&gt;&lt;/i&gt;&lt;/a&gt;
+
+                    &lt;!-- Comment --&gt;
+                    &lt;ul class="list-comment"&gt;
+                      &lt;!-- Item --&gt;
+                      &lt;li class="list-comment-item"&gt;
+                        &lt;!-- Media --&gt;
+                        &lt;div class="d-flex align-items-center mb-3"&gt;
+                          &lt;div class="flex-shrink-0"&gt;
+                            &lt;img class="avatar avatar-circle" src="../assets/img/160x160/img9.jpg" alt="Image Description"&gt;
+                          &lt;/div&gt;
+
+                          &lt;div class="flex-grow-1 ms-3"&gt;
+                            &lt;div class="d-flex justify-content-between align-items-center"&gt;
+                              &lt;h6&gt;Christina Kray&lt;/h6&gt;
+                              &lt;span class="d-block"&gt;1 day ago&lt;/span&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Media --&gt;
+
+                        &lt;p&gt;Love it Dave! We're all about keeping it up.&lt;/p&gt;
+
+                        &lt;a class="link" href="#"&gt;Reply &lt;i class="bi-chevron-right small ms-1 small ms-1"&gt;&lt;/i&gt;&lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;!-- End Item --&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End Comment --&gt;
+                  &lt;/li&gt;
+                  &lt;!-- End Item --&gt;
+
+                  &lt;!-- Item --&gt;
+                  &lt;li class="list-comment-item"&gt;
+                    &lt;!-- Media --&gt;
+                    &lt;div class="d-flex align-items-center mb-3"&gt;
+                      &lt;div class="flex-shrink-0"&gt;
+                        &lt;img class="avatar avatar-circle" src="../assets/img/160x160/img8.jpg" alt="Image Description"&gt;
+                      &lt;/div&gt;
+
+                      &lt;div class="flex-grow-1 ms-3"&gt;
+                        &lt;div class="d-flex justify-content-between align-items-center"&gt;
+                          &lt;h6&gt;Hanna Wolfe&lt;/h6&gt;
+                          &lt;span class="d-block"&gt;2 days ago&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Media --&gt;
+
+                    &lt;p&gt;Since our attention spans seem to be shrinking by the day — keeping it simple is more important than ever.&lt;/p&gt;
+
+                    &lt;a class="link" href="#"&gt;Reply &lt;i class="bi-chevron-right small ms-1 small ms-1"&gt;&lt;/i&gt;&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;!-- End Item --&gt;
+                &lt;/ul&gt;
+                &lt;!-- End Comment --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="list-checked" class="hs-docs-heading">
+        List checked <a class="anchorjs-link" href="#list-checked" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Replacing the default <code>list-style</code> and left margin on list items with 3 different styles of checkboxes.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab9" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab9" href="#nav-result9" data-bs-toggle="pill" data-bs-target="#nav-result9" role="tab" aria-controls="nav-result9" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab9" href="#nav-html9" data-bs-toggle="pill" data-bs-target="#nav-html9" role="tab" aria-controls="nav-html9" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent9">
+          <div class="tab-pane fade p-4 show active" id="nav-result9" role="tabpanel" aria-labelledby="nav-resultTab9">
+            <div class="row">
+              <div class="col-sm">
+                <!-- List Checked -->
+                <ul class="list-checked list-checked-primary">
+                  <li class="list-checked-item">Dashboard</li>
+                  <li class="list-checked-item">Profile</li>
+                  <li class="list-checked-item">Tasks</li>
+                  <li class="list-checked-item">Projects</li>
+                  <li class="list-checked-item">Members</li>
+                </ul>
+                <!-- End List Checked -->
+              </div>
+
+              <div class="col-sm">
+                <!-- List Checked -->
+                <ul class="list-checked list-checked-bg-primary">
+                  <li class="list-checked-item">Dashboard</li>
+                  <li class="list-checked-item">Profile</li>
+                  <li class="list-checked-item">Tasks</li>
+                  <li class="list-checked-item">Projects</li>
+                  <li class="list-checked-item">Members</li>
+                </ul>
+                <!-- End List Checked -->
+              </div>
+
+              <div class="col-sm">
+                <!-- List Checked -->
+                <ul class="list-checked list-checked-soft-bg-primary">
+                  <li class="list-checked-item">Dashboard</li>
+                  <li class="list-checked-item">Profile</li>
+                  <li class="list-checked-item">Tasks</li>
+                  <li class="list-checked-item">Projects</li>
+                  <li class="list-checked-item">Members</li>
+                </ul>
+                <!-- End List Checked -->
+              </div>
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html9" role="tabpanel" aria-labelledby="nav-htmlTab9">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="row"&gt;
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Checked --&gt;
+                    &lt;ul class="list-checked list-checked-primary"&gt;
+                      &lt;li class="list-checked-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Checked --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Checked --&gt;
+                    &lt;ul class="list-checked list-checked-bg-primary"&gt;
+                      &lt;li class="list-checked-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Checked --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Checked --&gt;
+                    &lt;ul class="list-checked list-checked-soft-bg-primary"&gt;
+                      &lt;li class="list-checked-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Checked --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Row --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="list-checked-sizings" class="hs-docs-heading">
+        List checked Sizings <a class="anchorjs-link" href="#list-checked-sizings" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use <code>.list-checked-sm</code> class.</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab10" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab10" href="#nav-result10" data-bs-toggle="pill" data-bs-target="#nav-result10" role="tab" aria-controls="nav-result10" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab10" href="#nav-html10" data-bs-toggle="pill" data-bs-target="#nav-html10" role="tab" aria-controls="nav-html10" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent10">
+          <div class="tab-pane fade p-4 show active" id="nav-result10" role="tabpanel" aria-labelledby="nav-resultTab10">
+            <div class="row">
+              <div class="col-sm">
+                <!-- List Checked -->
+                <ul class="list-checked list-checked-sm list-checked-primary">
+                  <li class="list-checked-item">Dashboard</li>
+                  <li class="list-checked-item">Profile</li>
+                  <li class="list-checked-item">Tasks</li>
+                  <li class="list-checked-item">Projects</li>
+                  <li class="list-checked-item">Members</li>
+                </ul>
+                <!-- End List Checked -->
+              </div>
+
+              <div class="col-sm">
+                <!-- List Checked -->
+                <ul class="list-checked list-checked-sm list-checked-bg-primary">
+                  <li class="list-checked-item">Dashboard</li>
+                  <li class="list-checked-item">Profile</li>
+                  <li class="list-checked-item">Tasks</li>
+                  <li class="list-checked-item">Projects</li>
+                  <li class="list-checked-item">Members</li>
+                </ul>
+                <!-- End List Checked -->
+              </div>
+
+              <div class="col-sm">
+                <!-- List Checked -->
+                <ul class="list-checked list-checked-sm list-checked-soft-bg-primary">
+                  <li class="list-checked-item">Dashboard</li>
+                  <li class="list-checked-item">Profile</li>
+                  <li class="list-checked-item">Tasks</li>
+                  <li class="list-checked-item">Projects</li>
+                  <li class="list-checked-item">Members</li>
+                </ul>
+                <!-- End List Checked -->
+              </div>
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html10" role="tabpanel" aria-labelledby="nav-htmlTab10">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="row"&gt;
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Checked --&gt;
+                    &lt;ul class="list-checked list-checked-sm list-checked-primary"&gt;
+                      &lt;li class="list-checked-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Checked --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Checked --&gt;
+                    &lt;ul class="list-checked list-checked-sm list-checked-bg-primary"&gt;
+                      &lt;li class="list-checked-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Checked --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Checked --&gt;
+                    &lt;ul class="list-checked list-checked-sm list-checked-soft-bg-primary"&gt;
+                      &lt;li class="list-checked-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Checked --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Row --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <p>Use <code>.list-checked-lg</code> class.</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab11" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab11" href="#nav-result11" data-bs-toggle="pill" data-bs-target="#nav-result11" role="tab" aria-controls="nav-result11" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab11" href="#nav-html11" data-bs-toggle="pill" data-bs-target="#nav-html11" role="tab" aria-controls="nav-html11" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent11">
+          <div class="tab-pane fade p-4 show active" id="nav-result11" role="tabpanel" aria-labelledby="nav-resultTab11">
+            <div class="row">
+              <div class="col-sm">
+                <!-- List Checked -->
+                <ul class="list-checked list-checked-lg list-checked-primary">
+                  <li class="list-checked-item">Dashboard</li>
+                  <li class="list-checked-item">Profile</li>
+                  <li class="list-checked-item">Tasks</li>
+                  <li class="list-checked-item">Projects</li>
+                  <li class="list-checked-item">Members</li>
+                </ul>
+                <!-- End List Checked -->
+              </div>
+
+              <div class="col-sm">
+                <!-- List Checked -->
+                <ul class="list-checked list-checked-lg list-checked-bg-primary">
+                  <li class="list-checked-item">Dashboard</li>
+                  <li class="list-checked-item">Profile</li>
+                  <li class="list-checked-item">Tasks</li>
+                  <li class="list-checked-item">Projects</li>
+                  <li class="list-checked-item">Members</li>
+                </ul>
+                <!-- End List Checked -->
+              </div>
+
+              <div class="col-sm">
+                <!-- List Checked -->
+                <ul class="list-checked list-checked-lg list-checked-soft-bg-primary">
+                  <li class="list-checked-item">Dashboard</li>
+                  <li class="list-checked-item">Profile</li>
+                  <li class="list-checked-item">Tasks</li>
+                  <li class="list-checked-item">Projects</li>
+                  <li class="list-checked-item">Members</li>
+                </ul>
+                <!-- End List Checked -->
+              </div>
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html11" role="tabpanel" aria-labelledby="nav-htmlTab11">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="row"&gt;
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Checked --&gt;
+                    &lt;ul class="list-checked list-checked-lg list-checked-primary"&gt;
+                      &lt;li class="list-checked-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Checked --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Checked --&gt;
+                    &lt;ul class="list-checked list-checked-lg list-checked-bg-primary"&gt;
+                      &lt;li class="list-checked-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Checked --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Checked --&gt;
+                    &lt;ul class="list-checked list-checked-lg list-checked-soft-bg-primary"&gt;
+                      &lt;li class="list-checked-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-checked-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Checked --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Row --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="list-checked-color-variations" class="hs-docs-heading">
+        Color variations <a class="anchorjs-link" href="#list-checked-color-variations" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab12" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab12" href="#nav-result12" data-bs-toggle="pill" data-bs-target="#nav-result12" role="tab" aria-controls="nav-result12" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab12" href="#nav-html12" data-bs-toggle="pill" data-bs-target="#nav-html12" role="tab" aria-controls="nav-html12" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent12">
+          <div class="tab-pane fade p-4 show active" id="nav-result12" role="tabpanel" aria-labelledby="nav-resultTab12">
+            <div class="row">
+              <div class="col-sm">
+                <!-- List Checked -->
+                <ul class="list-checked list-checked-primary">
+                  <li class="list-checked-item">Primary</li>
+                </ul>
+                <ul class="list-checked list-checked-secondary">
+                  <li class="list-checked-item">Secondary</li>
+                </ul>
+                <ul class="list-checked list-checked-success">
+                  <li class="list-checked-item">Success</li>
+                </ul>
+                <ul class="list-checked list-checked-danger">
+                  <li class="list-checked-item">Danger</li>
+                </ul>
+                <ul class="list-checked list-checked-warning">
+                  <li class="list-checked-item">Warning</li>
+                </ul>
+                <ul class="list-checked list-checked-info">
+                  <li class="list-checked-item">Info</li>
+                </ul>
+                <ul class="list-checked list-checked-light">
+                  <li class="list-checked-item">Light</li>
+                </ul>
+                <ul class="list-checked list-checked-dark">
+                  <li class="list-checked-item">Dark</li>
+                </ul>
+                <!-- End List Checked -->
+              </div>
+
+              <div class="col-sm">
+                <!-- List Checked -->
+                <ul class="list-checked list-checked-bg-primary">
+                  <li class="list-checked-item">Primary</li>
+                </ul>
+                <ul class="list-checked list-checked-bg-secondary">
+                  <li class="list-checked-item">Secondary</li>
+                </ul>
+                <ul class="list-checked list-checked-bg-success">
+                  <li class="list-checked-item">Success</li>
+                </ul>
+                <ul class="list-checked list-checked-bg-danger">
+                  <li class="list-checked-item">Danger</li>
+                </ul>
+                <ul class="list-checked list-checked-bg-warning">
+                  <li class="list-checked-item">Warning</li>
+                </ul>
+                <ul class="list-checked list-checked-bg-info">
+                  <li class="list-checked-item">Info</li>
+                </ul>
+                <ul class="list-checked list-checked-bg-light">
+                  <li class="list-checked-item">Light</li>
+                </ul>
+                <ul class="list-checked list-checked-bg-dark">
+                  <li class="list-checked-item">Dark</li>
+                </ul>
+                <!-- End List Checked -->
+              </div>
+
+              <div class="col-sm">
+                <!-- List Checked -->
+                <ul class="list-checked list-checked-soft-bg-primary">
+                  <li class="list-checked-item">Primary</li>
+                </ul>
+                <ul class="list-checked list-checked-soft-bg-secondary">
+                  <li class="list-checked-item">Secondary</li>
+                </ul>
+                <ul class="list-checked list-checked-soft-bg-success">
+                  <li class="list-checked-item">Success</li>
+                </ul>
+                <ul class="list-checked list-checked-soft-bg-danger">
+                  <li class="list-checked-item">Danger</li>
+                </ul>
+                <ul class="list-checked list-checked-soft-bg-warning">
+                  <li class="list-checked-item">Warning</li>
+                </ul>
+                <ul class="list-checked list-checked-soft-bg-info">
+                  <li class="list-checked-item">Info</li>
+                </ul>
+                <ul class="list-checked list-checked-soft-bg-light">
+                  <li class="list-checked-item">Light</li>
+                </ul>
+                <ul class="list-checked list-checked-soft-bg-dark">
+                  <li class="list-checked-item">Dark</li>
+                </ul>
+                <!-- End List Checked -->
+              </div>
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html12" role="tabpanel" aria-labelledby="nav-htmlTab12">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="row"&gt;
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Checked --&gt;
+                    &lt;ul class="list-checked list-checked-primary"&gt;
+                      &lt;li class="list-checked-item"&gt;Primary&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-secondary"&gt;
+                      &lt;li class="list-checked-item"&gt;Secondary&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-success"&gt;
+                      &lt;li class="list-checked-item"&gt;Success&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-danger"&gt;
+                      &lt;li class="list-checked-item"&gt;Danger&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-warning"&gt;
+                      &lt;li class="list-checked-item"&gt;Warning&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-info"&gt;
+                      &lt;li class="list-checked-item"&gt;Info&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-light"&gt;
+                      &lt;li class="list-checked-item"&gt;Light&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-dark"&gt;
+                      &lt;li class="list-checked-item"&gt;Dark&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Checked --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Checked --&gt;
+                    &lt;ul class="list-checked list-checked-bg-primary"&gt;
+                      &lt;li class="list-checked-item"&gt;Primary&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-bg-secondary"&gt;
+                      &lt;li class="list-checked-item"&gt;Secondary&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-bg-success"&gt;
+                      &lt;li class="list-checked-item"&gt;Success&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-bg-danger"&gt;
+                      &lt;li class="list-checked-item"&gt;Danger&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-bg-warning"&gt;
+                      &lt;li class="list-checked-item"&gt;Warning&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-bg-info"&gt;
+                      &lt;li class="list-checked-item"&gt;Info&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-bg-light"&gt;
+                      &lt;li class="list-checked-item"&gt;Light&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-bg-dark"&gt;
+                      &lt;li class="list-checked-item"&gt;Dark&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Checked --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Checked --&gt;
+                    &lt;ul class="list-checked list-checked-soft-bg-primary"&gt;
+                      &lt;li class="list-checked-item"&gt;Primary&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-soft-bg-secondary"&gt;
+                      &lt;li class="list-checked-item"&gt;Secondary&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-soft-bg-success"&gt;
+                      &lt;li class="list-checked-item"&gt;Success&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-soft-bg-danger"&gt;
+                      &lt;li class="list-checked-item"&gt;Danger&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-soft-bg-warning"&gt;
+                      &lt;li class="list-checked-item"&gt;Warning&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-soft-bg-info"&gt;
+                      &lt;li class="list-checked-item"&gt;Info&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-soft-bg-light"&gt;
+                      &lt;li class="list-checked-item"&gt;Light&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-checked list-checked-soft-bg-dark"&gt;
+                      &lt;li class="list-checked-item"&gt;Dark&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Checked --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Row --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="list-pointer" class="hs-docs-heading">
+        List pointer <a class="anchorjs-link" href="#list-pointer" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Replacing the default <code>list-style</code> and left margin on list items with 3 different styles of checkboxes.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab17" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab17" href="#nav-result17" data-bs-toggle="pill" data-bs-target="#nav-result17" role="tab" aria-controls="nav-result17" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab17" href="#nav-html17" data-bs-toggle="pill" data-bs-target="#nav-html17" role="tab" aria-controls="nav-html17" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent17">
+          <div class="tab-pane fade p-4 show active" id="nav-result17" role="tabpanel" aria-labelledby="nav-resultTab17">
+            <div class="row">
+              <div class="col-sm">
+                <!-- List Pointer -->
+                <ul class="list-pointer list-pointer-primary">
+                  <li class="list-pointer-item">Dashboard</li>
+                  <li class="list-pointer-item">Profile</li>
+                  <li class="list-pointer-item">Tasks</li>
+                  <li class="list-pointer-item">Projects</li>
+                  <li class="list-pointer-item">Members</li>
+                </ul>
+                <!-- End List Pointer -->
+              </div>
+
+              <div class="col-sm">
+                <!-- List Pointer -->
+                <ul class="list-pointer list-pointer-bg-primary">
+                  <li class="list-pointer-item">Dashboard</li>
+                  <li class="list-pointer-item">Profile</li>
+                  <li class="list-pointer-item">Tasks</li>
+                  <li class="list-pointer-item">Projects</li>
+                  <li class="list-pointer-item">Members</li>
+                </ul>
+                <!-- End List Pointer -->
+              </div>
+
+              <div class="col-sm">
+                <!-- List Pointer -->
+                <ul class="list-pointer list-pointer-soft-bg-primary">
+                  <li class="list-pointer-item">Dashboard</li>
+                  <li class="list-pointer-item">Profile</li>
+                  <li class="list-pointer-item">Tasks</li>
+                  <li class="list-pointer-item">Projects</li>
+                  <li class="list-pointer-item">Members</li>
+                </ul>
+                <!-- End List Pointer -->
+              </div>
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html17" role="tabpanel" aria-labelledby="nav-htmlTab17">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="row"&gt;
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Pointer --&gt;
+                    &lt;ul class="list-pointer list-pointer-primary"&gt;
+                      &lt;li class="list-pointer-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Pointer --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Pointer --&gt;
+                    &lt;ul class="list-pointer list-pointer-bg-primary"&gt;
+                      &lt;li class="list-pointer-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Pointer --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Pointer --&gt;
+                    &lt;ul class="list-pointer list-pointer-soft-bg-primary"&gt;
+                      &lt;li class="list-pointer-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Pointer --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Row --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="list-pointer-sizings" class="hs-docs-heading">
+        List pointer Sizings <a class="anchorjs-link" href="#list-pointer-sizings" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Use <code>.list-pointer-sm</code> class.</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab14" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab14" href="#nav-result14" data-bs-toggle="pill" data-bs-target="#nav-result14" role="tab" aria-controls="nav-result14" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab14" href="#nav-html14" data-bs-toggle="pill" data-bs-target="#nav-html14" role="tab" aria-controls="nav-html14" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent14">
+          <div class="tab-pane fade p-4 show active" id="nav-result14" role="tabpanel" aria-labelledby="nav-resultTab14">
+            <div class="row">
+              <div class="col-sm">
+                <!-- List Pointer -->
+                <ul class="list-pointer list-pointer-sm list-pointer-primary">
+                  <li class="list-pointer-item">Dashboard</li>
+                  <li class="list-pointer-item">Profile</li>
+                  <li class="list-pointer-item">Tasks</li>
+                  <li class="list-pointer-item">Projects</li>
+                  <li class="list-pointer-item">Members</li>
+                </ul>
+                <!-- End List Pointer -->
+              </div>
+
+              <div class="col-sm">
+                <!-- List Pointer -->
+                <ul class="list-pointer list-pointer-sm list-pointer-bg-primary">
+                  <li class="list-pointer-item">Dashboard</li>
+                  <li class="list-pointer-item">Profile</li>
+                  <li class="list-pointer-item">Tasks</li>
+                  <li class="list-pointer-item">Projects</li>
+                  <li class="list-pointer-item">Members</li>
+                </ul>
+                <!-- End List Pointer -->
+              </div>
+
+              <div class="col-sm">
+                <!-- List Pointer -->
+                <ul class="list-pointer list-pointer-sm list-pointer-soft-bg-primary">
+                  <li class="list-pointer-item">Dashboard</li>
+                  <li class="list-pointer-item">Profile</li>
+                  <li class="list-pointer-item">Tasks</li>
+                  <li class="list-pointer-item">Projects</li>
+                  <li class="list-pointer-item">Members</li>
+                </ul>
+                <!-- End List Pointer -->
+              </div>
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html14" role="tabpanel" aria-labelledby="nav-htmlTab14">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="row"&gt;
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Pointer --&gt;
+                    &lt;ul class="list-pointer list-pointer-sm list-pointer-primary"&gt;
+                      &lt;li class="list-pointer-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Pointer --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Pointer --&gt;
+                    &lt;ul class="list-pointer list-pointer-sm list-pointer-bg-primary"&gt;
+                      &lt;li class="list-pointer-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Pointer --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Pointer --&gt;
+                    &lt;ul class="list-pointer list-pointer-sm list-pointer-soft-bg-primary"&gt;
+                      &lt;li class="list-pointer-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Pointer --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Row --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <p>Use <code>.list-pointer-lg</code> class.</p>
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab15" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab15" href="#nav-result15" data-bs-toggle="pill" data-bs-target="#nav-result15" role="tab" aria-controls="nav-result15" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab15" href="#nav-html15" data-bs-toggle="pill" data-bs-target="#nav-html15" role="tab" aria-controls="nav-html15" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent15">
+          <div class="tab-pane fade p-4 show active" id="nav-result15" role="tabpanel" aria-labelledby="nav-resultTab15">
+            <div class="row">
+              <div class="col-sm">
+                <!-- List Pointer -->
+                <ul class="list-pointer list-pointer-lg list-pointer-primary">
+                  <li class="list-pointer-item">Dashboard</li>
+                  <li class="list-pointer-item">Profile</li>
+                  <li class="list-pointer-item">Tasks</li>
+                  <li class="list-pointer-item">Projects</li>
+                  <li class="list-pointer-item">Members</li>
+                </ul>
+                <!-- End List Pointer -->
+              </div>
+
+              <div class="col-sm">
+                <!-- List Pointer -->
+                <ul class="list-pointer list-pointer-lg list-pointer-bg-primary">
+                  <li class="list-pointer-item">Dashboard</li>
+                  <li class="list-pointer-item">Profile</li>
+                  <li class="list-pointer-item">Tasks</li>
+                  <li class="list-pointer-item">Projects</li>
+                  <li class="list-pointer-item">Members</li>
+                </ul>
+                <!-- End List Pointer -->
+              </div>
+
+              <div class="col-sm">
+                <!-- List Pointer -->
+                <ul class="list-pointer list-pointer-lg list-pointer-soft-bg-primary">
+                  <li class="list-pointer-item">Dashboard</li>
+                  <li class="list-pointer-item">Profile</li>
+                  <li class="list-pointer-item">Tasks</li>
+                  <li class="list-pointer-item">Projects</li>
+                  <li class="list-pointer-item">Members</li>
+                </ul>
+                <!-- End List Pointer -->
+              </div>
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html15" role="tabpanel" aria-labelledby="nav-htmlTab15">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="row"&gt;
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Pointer --&gt;
+                    &lt;ul class="list-pointer list-pointer-lg list-pointer-primary"&gt;
+                      &lt;li class="list-pointer-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Pointer --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Pointer --&gt;
+                    &lt;ul class="list-pointer list-pointer-lg list-pointer-bg-primary"&gt;
+                      &lt;li class="list-pointer-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Pointer --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Pointer --&gt;
+                    &lt;ul class="list-pointer list-pointer-lg list-pointer-soft-bg-primary"&gt;
+                      &lt;li class="list-pointer-item"&gt;Dashboard&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Profile&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Tasks&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Projects&lt;/li&gt;
+                      &lt;li class="list-pointer-item"&gt;Members&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Pointer --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Row --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="list-pointer-color-variations" class="hs-docs-heading">
+        Color variations <a class="anchorjs-link" href="#list-pointer-color-variations" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab16" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab16" href="#nav-result16" data-bs-toggle="pill" data-bs-target="#nav-result16" role="tab" aria-controls="nav-result16" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab16" href="#nav-html16" data-bs-toggle="pill" data-bs-target="#nav-html16" role="tab" aria-controls="nav-html16" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent16">
+          <div class="tab-pane fade p-4 show active" id="nav-result16" role="tabpanel" aria-labelledby="nav-resultTab16">
+            <div class="row">
+              <div class="col-sm">
+                <!-- List Pointer -->
+                <ul class="list-pointer list-pointer-primary">
+                  <li class="list-pointer-item">Primary</li>
+                </ul>
+                <ul class="list-pointer list-pointer-secondary">
+                  <li class="list-pointer-item">Secondary</li>
+                </ul>
+                <ul class="list-pointer list-pointer-success">
+                  <li class="list-pointer-item">Success</li>
+                </ul>
+                <ul class="list-pointer list-pointer-danger">
+                  <li class="list-pointer-item">Danger</li>
+                </ul>
+                <ul class="list-pointer list-pointer-warning">
+                  <li class="list-pointer-item">Warning</li>
+                </ul>
+                <ul class="list-pointer list-pointer-info">
+                  <li class="list-pointer-item">Info</li>
+                </ul>
+                <ul class="list-pointer list-pointer-light">
+                  <li class="list-pointer-item">Light</li>
+                </ul>
+                <ul class="list-pointer list-pointer-dark">
+                  <li class="list-pointer-item">Dark</li>
+                </ul>
+                <!-- End List Pointer -->
+              </div>
+
+              <div class="col-sm">
+                <!-- List Pointer -->
+                <ul class="list-pointer list-pointer-bg-primary">
+                  <li class="list-pointer-item">Primary</li>
+                </ul>
+                <ul class="list-pointer list-pointer-bg-secondary">
+                  <li class="list-pointer-item">Secondary</li>
+                </ul>
+                <ul class="list-pointer list-pointer-bg-success">
+                  <li class="list-pointer-item">Success</li>
+                </ul>
+                <ul class="list-pointer list-pointer-bg-danger">
+                  <li class="list-pointer-item">Danger</li>
+                </ul>
+                <ul class="list-pointer list-pointer-bg-warning">
+                  <li class="list-pointer-item">Warning</li>
+                </ul>
+                <ul class="list-pointer list-pointer-bg-info">
+                  <li class="list-pointer-item">Info</li>
+                </ul>
+                <ul class="list-pointer list-pointer-bg-light">
+                  <li class="list-pointer-item">Light</li>
+                </ul>
+                <ul class="list-pointer list-pointer-bg-dark">
+                  <li class="list-pointer-item">Dark</li>
+                </ul>
+                <!-- End List Pointer -->
+              </div>
+
+              <div class="col-sm">
+                <!-- List Pointer -->
+                <ul class="list-pointer list-pointer-soft-bg-primary">
+                  <li class="list-pointer-item">Primary</li>
+                </ul>
+                <ul class="list-pointer list-pointer-soft-bg-secondary">
+                  <li class="list-pointer-item">Secondary</li>
+                </ul>
+                <ul class="list-pointer list-pointer-soft-bg-success">
+                  <li class="list-pointer-item">Success</li>
+                </ul>
+                <ul class="list-pointer list-pointer-soft-bg-danger">
+                  <li class="list-pointer-item">Danger</li>
+                </ul>
+                <ul class="list-pointer list-pointer-soft-bg-warning">
+                  <li class="list-pointer-item">Warning</li>
+                </ul>
+                <ul class="list-pointer list-pointer-soft-bg-info">
+                  <li class="list-pointer-item">Info</li>
+                </ul>
+                <ul class="list-pointer list-pointer-soft-bg-light">
+                  <li class="list-pointer-item">Light</li>
+                </ul>
+                <ul class="list-pointer list-pointer-soft-bg-dark">
+                  <li class="list-pointer-item">Dark</li>
+                </ul>
+                <!-- End List Pointer -->
+              </div>
+            </div>
+            <!-- End Row -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html16" role="tabpanel" aria-labelledby="nav-htmlTab16">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;div class="row"&gt;
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Pointer --&gt;
+                    &lt;ul class="list-pointer list-pointer-primary"&gt;
+                      &lt;li class="list-pointer-item"&gt;Primary&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-secondary"&gt;
+                      &lt;li class="list-pointer-item"&gt;Secondary&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-success"&gt;
+                      &lt;li class="list-pointer-item"&gt;Success&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-danger"&gt;
+                      &lt;li class="list-pointer-item"&gt;Danger&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-warning"&gt;
+                      &lt;li class="list-pointer-item"&gt;Warning&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-info"&gt;
+                      &lt;li class="list-pointer-item"&gt;Info&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-light"&gt;
+                      &lt;li class="list-pointer-item"&gt;Light&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-dark"&gt;
+                      &lt;li class="list-pointer-item"&gt;Dark&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Pointer --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Pointer --&gt;
+                    &lt;ul class="list-pointer list-pointer-bg-primary"&gt;
+                      &lt;li class="list-pointer-item"&gt;Primary&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-bg-secondary"&gt;
+                      &lt;li class="list-pointer-item"&gt;Secondary&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-bg-success"&gt;
+                      &lt;li class="list-pointer-item"&gt;Success&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-bg-danger"&gt;
+                      &lt;li class="list-pointer-item"&gt;Danger&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-bg-warning"&gt;
+                      &lt;li class="list-pointer-item"&gt;Warning&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-bg-info"&gt;
+                      &lt;li class="list-pointer-item"&gt;Info&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-bg-light"&gt;
+                      &lt;li class="list-pointer-item"&gt;Light&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-bg-dark"&gt;
+                      &lt;li class="list-pointer-item"&gt;Dark&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Pointer --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm"&gt;
+                    &lt;!-- List Pointer --&gt;
+                    &lt;ul class="list-pointer list-pointer-soft-bg-primary"&gt;
+                      &lt;li class="list-pointer-item"&gt;Primary&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-soft-bg-secondary"&gt;
+                      &lt;li class="list-pointer-item"&gt;Secondary&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-soft-bg-success"&gt;
+                      &lt;li class="list-pointer-item"&gt;Success&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-soft-bg-danger"&gt;
+                      &lt;li class="list-pointer-item"&gt;Danger&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-soft-bg-warning"&gt;
+                      &lt;li class="list-pointer-item"&gt;Warning&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-soft-bg-info"&gt;
+                      &lt;li class="list-pointer-item"&gt;Info&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-soft-bg-light"&gt;
+                      &lt;li class="list-pointer-item"&gt;Light&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;ul class="list-pointer list-pointer-soft-bg-dark"&gt;
+                      &lt;li class="list-pointer-item"&gt;Dark&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- End List Pointer --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Row --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": "2rem"
+         },
+         "show": {
+           "bottom": "2rem"
+         },
+         "hide": {
+           "bottom": "-2rem"
+         }
+       }
+     }'>
+    <i class="bi-chevron-up"></i>
+  </a>
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/js/vendor.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="../assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('../assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+
+<!-- Mirrored from htmlstream.com/preview/front-v4.2/html/documentation/lists.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Aug 2022 18:21:32 GMT -->
+</html>

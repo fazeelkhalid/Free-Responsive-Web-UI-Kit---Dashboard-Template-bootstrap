@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from htmlstream.com/preview/front-v4.2/html/documentation/scrollspy.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Aug 2022 18:21:35 GMT -->
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Scrollspy - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/css/vendor.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../assets/css/theme.minc619.css?v=1.0">
+  <link rel="stylesheet" href="../assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="navbar navbar-expand navbar-fixed navbar-end navbar-light navbar-sticky-lg-top bg-white">
+    <div class="container-fluid">
+      <nav class="navbar-nav-wrap">
+        <div class="row flex-grow-1">
+          <!-- Default Logo -->
+          <div class="docs-navbar-sidebar-container d-flex align-items-center mb-2 mb-lg-0">
+            <a class="navbar-brand" href="index.html" aria-label="Space">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a href="changelog.html">
+              <span class="badge bg-soft-primary text-primary">v4.2</span>
+            </a>
+          </div>
+          <!-- End Default Logo -->
+
+          <div class="col-md px-lg-0">
+            <div class="d-flex justify-content-between align-items-center px-lg-5 px-xl-10">
+              <div class="d-none d-md-block">
+                <!-- Search Form -->
+                <form id="docsSearch" class="position-relative" data-hs-list-options='{
+                       "searchMenu": true,
+                       "keyboard": true,
+                       "item": "searchTemplate",
+                       "valueNames": ["component", "category", {"name": "link", "attr": "href"}],
+                       "empty": "#searchNoResults"
+                     }'>
+                  <!-- Input Group -->
+                  <div class="input-group input-group-merge navbar-input-group">
+                    <div class="input-group-prepend input-group-text">
+                      <i class="bi-search"></i>
+                    </div>
+
+                    <input type="search" class="search form-control form-control-sm" placeholder="Search in docs" aria-label="Search in docs">
+
+                    <a class="input-group-append input-group-text" href="javascript:;">
+                      <i id="clearSearchResultsIcon" class="bi-x" style="display: none;"></i>
+                    </a>
+                  </div>
+                  <!-- End Input Group -->
+
+                  <!-- List -->
+                  <div class="list dropdown-menu navbar-dropdown-menu-borderless w-100 overflow-auto" style="max-height: 16rem;"></div>
+                  <!-- End List -->
+
+                  <!-- Empty -->
+                  <div id="searchNoResults" style="display: none;">
+                    <div class="text-center p-4">
+                      <img class="mb-3" src="../assets/svg/illustrations/oc-error.svg" alt="Image Description" style="width: 10rem;">
+                      <p class="mb-0">No Results</p>
+                    </div>
+                  </div>
+                  <!-- End Empty -->
+                </form>
+                <!-- End Search Form -->
+
+                <!-- List Item Template -->
+                <div class="d-none">
+                  <div id="searchTemplate" class="dropdown-item">
+                    <a class="d-block link" href="#">
+                      <span class="category d-block fw-normal text-muted mb-1"></span>
+                      <span class="component text-dark"></span>
+                    </a>
+                  </div>
+                </div>
+                <!-- End List Item Template -->
+              </div>
+
+              <!-- Navbar -->
+              <ul class="navbar-nav p-0">
+                <li class="nav-item">
+                  <a class="btn btn-ghost-secondary btn-sm" href="https://htmlstream.com/contact-us" target="_blank">
+                    Get Support <i class="bi-box-arrow-up-right ms-1"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-primary btn-sm" href="../index.html">
+                    <i class="bi-eye me-1"></i> Preview Demo
+                  </a>
+                </li>
+              </ul>
+              <!-- End Navbar -->
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </nav>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    <nav class="js-nav-scroller navbar navbar-expand-lg navbar-sidebar navbar-vertical navbar-light bg-white border-end" data-hs-nav-scroller-options='{
+            "type": "vertical",
+            "target": ".navbar-nav .active",
+            "offset": 80
+           }'>
+      <!-- Navbar Toggle -->
+      <button type="button" class="navbar-toggler btn btn-white d-grid w-100" data-bs-toggle="collapse" data-bs-target="#navbarVerticalNavMenu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarVerticalNavMenu">
+        <span class="d-flex justify-content-between align-items-center">
+          <span class="h3 mb-0">Nav menu</span>
+
+          <span class="navbar-toggler-default">
+            <i class="bi-list"></i>
+          </span>
+
+          <span class="navbar-toggler-toggled">
+            <i class="bi-x"></i>
+          </span>
+        </span>
+      </button>
+      <!-- End Navbar Toggle -->
+
+      <!-- Navbar Collapse -->
+      <div id="navbarVerticalNavMenu" class="collapse navbar-collapse">
+        <div class="navbar-brand-wrapper border-end" style="height: auto;">
+          <!-- Default Logo -->
+          <div class="d-flex align-items-center mb-3">
+            <a class="navbar-brand" href="index.html" aria-label="Space">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a class="navbar-brand-badge" href="changelog.html">
+              <span class="badge bg-soft-primary text-primary ms-2">v4.2</span>
+            </a>
+          </div>
+          <!-- End Default Logo -->
+
+          <!-- Nav -->
+          <ul class="nav nav-segment nav-fill nav-justified">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Docs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../snippets/index.html">Snippets</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+
+        <div class="docs-navbar-sidebar-aside-body navbar-sidebar-aside-body">
+          <ul id="navbarSettings" class="navbar-nav nav nav-vertical nav-tabs nav-tabs-borderless nav-sm">
+            <li class="nav-item">
+              <span class="nav-subtitle">Documentation</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Introduction</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Getting started</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="getting-started.html">Getting Started</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="gulp.html">Gulp</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="customization.html">Customization</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="credits.html">Credits</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="changelog.html">Changelog</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Design &amp; Graphics</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="bs-icons.html">Bootstrap Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="duotone-icons.html">Duotone Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="illustrations.html">Illustrations</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Components</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="accordion.html">Accordion</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="alerts.html">Alerts</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="avatars.html">Avatars</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="badge.html">Badge</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="breadcrumb.html">Breadcrumb</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="buttons.html">Buttons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="cards.html">Cards</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="collapse.html">Collapse</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="column-divider.html">Column Divider</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="devices.html">Devices</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="divider.html">Divider</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="dropdowns.html">Dropdowns</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="icons.html">Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="list-group.html">List Group</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="lists.html">Lists</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="legend-indicator.html">Legend Indicator</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="modal.html">Modal</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="offcanvas.html">Offcanvas</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="page-header.html">Page Header</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="pagination.html">Pagination</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="popovers.html">Popovers</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="progress.html">Progress</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="profile.html">Profile</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="shapes.html">Shapes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="spinners.html">Spinners</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="steps.html">Steps</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="tab.html">Tab</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="tables.html">Tables</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="text-highlight.html">Text Highlight</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toasts.html">Toasts</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="tooltips.html">Tooltips</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="typography.html">Typography</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Navbars</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="navbar.html">Navbar</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="navs.html">Navs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="mega-menu.html">Mega Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="scrollspy.html">Scrollspy</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Basic forms</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="basic-forms.html">Basic Forms</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="checks-and-switches.html">Checks &amp; Switches</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="input-group.html">Input Group</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Advanced Forms</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="select.html">Advanced Select</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="file-attachments.html">File Attachments</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="dropzone.html">Drag’ n’ Drop File Uploads</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="quill.html">WYSIWYG Editor</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="quantity-counter.html">Quantity Counter</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="input-mask.html">Input Mask</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="step-forms.html">Step Forms (Wizards)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="range-slider.html">Range Slider (noUiSlider)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="add-field.html">Add Field</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toggle-password.html">Toggle Password</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="count-characters.html">Count Characters</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toggle-switch.html">Toggle Switch</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toggle-state.html">Toggle State</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="switch.html">Switch</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Media</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="fslightbox.html">Fullscreen Lightbox</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="video-bg.html">Video Background</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="video-player.html">Video Player</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="swiper.html">Swiper</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Others</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="maps-leaflet.html">Maps (Leaflet)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="chartjs.html">Chart.js</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="circles.html">Circles.js (Pie Chart)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="sticky-block.html">Sticky Block</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="countdown.html">Countdown</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="sorting.html">Sorting (Shuffle.js)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="go-to.html">Go To</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="show-animation.html">Show Animation</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="typedjs.html">Typed.js</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Utilities</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="backgrounds.html">Backgrounds</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="borders.html">Borders</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="colors.html">Colors</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="links.html">Links</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="position.html">Position</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="rotations.html">Rotations</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="shadows.html">Shadows</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="sizing.html">Sizing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="spacing.html">Spacing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="z-index.html">Z-index</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Navbar Collapse -->
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Scrollspy</h1>
+            <p class="docs-page-header-text">Automatically update Front navigation or list group components based on scroll position to indicate which link is currently active in the viewport.</p>
+            <a class="link" href="https://getbootstrap.com/docs/5.0/components/scrollspy/" target="_blank">Bootstrap Scrollspy documentation <i class="bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="how-to-use" class="hs-docs-heading">
+        How to use <a class="anchorjs-link" href="#how-to-use" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Copy-paste the following <code>&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing Plugins</u></em> to enable it.</p>
+
+      <pre class="rounded mb-4">
+        <code class="language-html" data-lang="html">
+          &lt;script src="../assets/vendor/hs-scrollspy/dist/hs-scrollspy.min.js"&gt;&lt;/script&gt;
+        </code>
+      </pre>
+
+      <p>Copy-paste the init function under <em><u>JS Plugins Init.</u></em>, before the closing <code>&lt;/body&gt;</code> tag, to enable it.</p>
+
+      <pre class="rounded">
+        <code class="language-html" data-lang="html">
+          &lt;script&gt;
+            (function() {
+              // INITIALIZATION OF SCROLLSPY
+              // =======================================================
+              new bootstrap.ScrollSpy(document.body, {
+                target: '#navbarVerticalNavMenuSettingsEg',
+                offset: 10
+              })
+
+              new HSScrollspy('#navbarVerticalNavMenuEg', {
+                breakpoint: 'lg'
+              })
+            });
+          &lt;/script&gt;
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h2 id="how-it-works" class="hs-docs-heading">
+        How it works <a class="anchorjs-link" href="#how-it-works" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Scrollspy has a few requirements to function properly:</p>
+
+      <ul>
+        <li>Scrollspy requires <code>data-hs-scrollspy-options='{ "target": "#yourID" }'</code> on <code>&lt;body&gt;</code> element and must point to an element with the target <code>ID</code>. And also, add the <code>.js-scrollspy</code> class to the element where this <code>ID</code> is placed.</li>
+        <li>Scrollspy requires <code>position: relative;</code> on the element, you’re spying on, usually the <code>&lt;body&gt;</code>.</li>
+        <li>When spying on elements other than the <code>&lt;body&gt;</code>, be sure to have a <code>height</code> set and <code>overflow-y: scroll;</code> applied.</li>
+        <li>Anchors (<code>&lt;a&gt;</code>) are required and must point to an element with that <code>ID</code>.</li>
+      </ul>
+
+      <p>When successfully implemented, your nav or list group will update accordingly, moving the <code>.active</code> class from one item to the next based on their associated targets.</p>
+
+      <!-- Heading -->
+      <h2 id="example" class="hs-docs-heading">
+        Example <a class="anchorjs-link" href="#example" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab1" href="#nav-js1" data-bs-toggle="pill" data-bs-target="#nav-js1" role="tab" aria-controls="nav-js1" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Alert -->
+        <div class="alert alert-soft-dark card-alert" role="alert">
+          This example uses <a class="alert-link" href="sticky-block.html">Sticky block <i class="bi--link-45deg"></i></a> library.
+        </div>
+        <!-- End Alert -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <!-- Description -->
+            <div class="container content-space-1">
+              <div class="row">
+                <div class="col-md-4 col-lg-3 mb-3 mb-md-0">
+                  <!-- Navbar -->
+                  <div class="navbar-expand-md">
+                    <!-- Navbar Toggle -->
+                    <div class="d-grid">
+                      <button type="button" class="navbar-toggler btn btn-white mb-3" data-bs-toggle="collapse" data-bs-target="#navbarVerticalNavMenuEg2" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarVerticalNavMenuEg2">
+                        <span class="d-flex justify-content-between align-items-center">
+                          <span class="text-dark mb-0">Menu</span>
+
+                          <span class="navbar-toggler-default">
+                            <i class="bi-list"></i>
+                          </span>
+
+                          <span class="navbar-toggler-toggled">
+                            <i class="bi-x"></i>
+                          </span>
+                        </span>
+                      </button>
+                    </div>
+                    <!-- End Navbar Toggle -->
+
+                    <!-- Navbar Collapse -->
+                    <div id="navbarVerticalNavMenuEg2" class="collapse navbar-collapse">
+                      <ul id="navbarSettingsEg2" class="js-sticky-block js-scrollspy nav nav-tabs nav-link-gray nav-vertical" data-hs-sticky-block-options='{
+                           "parentSelector": "#navbarVerticalNavMenuEg2",
+                           "targetSelector": "#header",
+                           "breakpoint": "md",
+                           "startPoint": "#navbarVerticalNavMenuEg2",
+                           "endPoint": "#stickyBlockEndPointEg2",
+                           "stickyOffsetTop": 20
+                         }'>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#accountInfo">1. Accounts</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#linksToOtherWebsInfo">2. Links to other websites</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#terminationInfo">3. Termination</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#goveringLawInfo">4. Governing law</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#changesInfo">5. Changes</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- End Navbar Collapse -->
+                  </div>
+                  <!-- End Navbar -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-md-8 col-lg-9">
+                  <div id="accountInfo" class="mb-7">
+                    <h4>1. Accounts</h4>
+
+                    <p>When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.</p>
+
+                    <p>You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.</p>
+
+                    <p>You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.</p>
+                  </div>
+
+                  <div id="linksToOtherWebsInfo" class="mb-7">
+                    <h4>2. Links to other websites</h4>
+
+                    <p>Our Service may contain links to third-party web sites or services that are not owned or controlled by Front.</p>
+
+                    <p>Front has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Front shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.</p>
+
+                    <p>We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.</p>
+                  </div>
+
+                  <div id="terminationInfo" class="mb-7">
+                    <h4>3. Termination</h4>
+
+                    <p>We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>
+
+                    <p>All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.</p>
+
+                    <p>We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>
+
+                    <p>Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.</p>
+
+                    <p>All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.</p>
+                  </div>
+
+                  <div id="goveringLawInfo" class="mb-7">
+                    <h4>4. Governing law</h4>
+
+                    <p>These Terms shall be governed and construed in accordance with the laws of Jersey, without regard to its conflict of law provisions.</p>
+
+                    <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.</p>
+                  </div>
+
+                  <div id="changesInfo" class="mb-7">
+                    <h4>5. Changes</h4>
+
+                    <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+
+                    <p>By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</p>
+                  </div>
+
+                  <!-- End Sticky End Point -->
+                  <div id="stickyBlockEndPointEg2"></div>
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </div>
+            <!-- End Description -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Description --&gt;
+                &lt;div class="container content-space-1"&gt;
+                  &lt;div class="row"&gt;
+                    &lt;div class="col-md-4 col-lg-3 mb-3 mb-md-0"&gt;
+                      &lt;!-- Navbar --&gt;
+                      &lt;div class="navbar-expand-md"&gt;
+                        &lt;!-- Navbar Toggle --&gt;
+                        &lt;div class="d-grid"&gt;
+                          &lt;button type="button" class="navbar-toggler btn btn-white mb-3" data-bs-toggle="collapse" data-bs-target="#navbarVerticalNavMenuEg2" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarVerticalNavMenuEg2"&gt;
+                            &lt;span class="d-flex justify-content-between align-items-center"&gt;
+                              &lt;span class="text-dark mb-0"&gt;Menu&lt;/span&gt;
+
+                              &lt;span class="navbar-toggler-default"&gt;
+                                &lt;i class="bi-list"&gt;&lt;/i&gt;
+                              &lt;/span&gt;
+
+                              &lt;span class="navbar-toggler-toggled"&gt;
+                                &lt;i class="bi-x"&gt;&lt;/i&gt;
+                              &lt;/span&gt;
+                            &lt;/span&gt;
+                          &lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Navbar Toggle --&gt;
+
+                        &lt;!-- Navbar Collapse --&gt;
+                        &lt;div id="navbarVerticalNavMenuEg2" class="collapse navbar-collapse"&gt;
+                          &lt;ul id="navbarSettingsEg2" class="js-sticky-block js-scrollspy nav nav-tabs nav-link-gray nav-vertical"
+                              data-hs-sticky-block-options='{
+                               "parentSelector": "#navbarVerticalNavMenuEg2",
+                               "targetSelector": "#header",
+                               "breakpoint": "md",
+                               "startPoint": "#navbarVerticalNavMenuEg2",
+                               "endPoint": "#stickyBlockEndPointEg2",
+                               "stickyOffsetTop": 20
+                             }'&gt;
+                            &lt;li class="nav-item"&gt;
+                              &lt;a class="nav-link active" href="#content"&gt;1. Accounts&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class="nav-item"&gt;
+                              &lt;a class="nav-link" href="#linksToOtherWebsInfo"&gt;2. Links to other websites&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class="nav-item"&gt;
+                              &lt;a class="nav-link" href="#terminationInfo"&gt;3. Termination&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class="nav-item"&gt;
+                              &lt;a class="nav-link" href="#goveringLawInfo"&gt;4. Governing law&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class="nav-item"&gt;
+                              &lt;a class="nav-link" href="#changesInfo"&gt;5. Changes&lt;/a&gt;
+                            &lt;/li&gt;
+                          &lt;/ul&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Navbar Collapse --&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Navbar --&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Col --&gt;
+
+                    &lt;div class="col-md-8 col-lg-9"&gt;
+                      &lt;div class="mb-7"&gt;
+                        &lt;p&gt;Thanks for using our products and services ("Services"). The Services are provided by Pixeel Ltd. ("Front"), located at 153 Williamson Plaza, Maggieberg, MT 09514, England, United Kingdom.&lt;/p&gt;
+
+                        &lt;p&gt;By using our Services, you are agreeing to these terms. Please read them carefully.&lt;/p&gt;
+
+                        &lt;p&gt;Our Services are very diverse, so sometimes additional terms or product requirements (including age requirements) may apply. Additional terms will be available with the relevant Services, and those additional terms become part of your agreement with us if you use those Services.&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;div id="accountInfo" class="mb-7"&gt;
+                        &lt;h4&gt;1. Accounts&lt;/h4&gt;
+
+                        &lt;p&gt;When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.&lt;/p&gt;
+
+                        &lt;p&gt;You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.&lt;/p&gt;
+
+                        &lt;p&gt;You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;div id="linksToOtherWebsInfo" class="mb-7"&gt;
+                        &lt;h4&gt;2. Links to other websites&lt;/h4&gt;
+
+                        &lt;p&gt;Our Service may contain links to third-party web sites or services that are not owned or controlled by Front.&lt;/p&gt;
+
+                        &lt;p&gt;Front has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Front shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.&lt;/p&gt;
+
+                        &lt;p&gt;We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;div id="terminationInfo" class="mb-7"&gt;
+                        &lt;h4&gt;3. Termination&lt;/h4&gt;
+
+                        &lt;p&gt;We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.&lt;/p&gt;
+
+                        &lt;p&gt;All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.&lt;/p&gt;
+
+                        &lt;p&gt;We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.&lt;/p&gt;
+
+                        &lt;p&gt;Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.&lt;/p&gt;
+
+                        &lt;p&gt;All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;div id="goveringLawInfo" class="mb-7"&gt;
+                        &lt;h4&gt;4. Governing law&lt;/h4&gt;
+
+                        &lt;p&gt;These Terms shall be governed and construed in accordance with the laws of Jersey, without regard to its conflict of law provisions.&lt;/p&gt;
+
+                        &lt;p&gt;Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;div id="changesInfo" class="mb-7"&gt;
+                        &lt;h4&gt;5. Changes&lt;/h4&gt;
+
+                        &lt;p&gt;We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.&lt;/p&gt;
+
+                        &lt;p&gt;By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;!-- End Sticky End Point --&gt;
+                      &lt;div id="stickyBlockEndPointEg2"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Col --&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Row --&gt;
+                &lt;/div&gt;
+                &lt;!-- End Description --&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js1" role="tabpanel" aria-labelledby="nav-jsTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Implementing Plugins --&gt;
+                &lt;!-- bundlejs:vendor [..] --&gt;
+                &lt;script src="../assets/vendor/hs-sticky-block/dist/hs-sticky-block.min.js"&gt;&lt;/script&gt;
+                &lt;script src="../assets/vendor/hs-scrollspy/dist/hs-scrollspy.min.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF STICKY BLOCKS
+                    // =======================================================
+                    Promise.all(Array.from(document.images)
+                      .filter(img => !img.complete)
+                      .map(img => new Promise(resolve => {
+                        img.onload = img.onerror = resolve
+                      })))
+                      .then(() => {
+                        new HSStickyBlock('.js-sticky-block', {
+                          targetSelector: document.getElementById('header').classList.contains('navbar-fixed') ? '#header' : null
+                        })
+                      })
+
+
+                    // INITIALIZATION OF SCROLLSPY
+                    // =======================================================
+                    new bootstrap.ScrollSpy(document.body, {
+                      target: '#navbarSettingsEg2',
+                      offset: 10
+                    })
+
+                    new HSScrollspy('#navbarVerticalNavMenuEg2', {
+                      breakpoint: 'lg'
+                    })
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="methods" class="hs-docs-heading">
+        Methods <a class="anchorjs-link" href="#methods" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Table -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th style="width: 50%;">Description</th>
+                <th class="text-nowrap">Default value</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <p><code>collapsibleNav</code></p>
+                </td>
+                <td>Navigation selector to be collapsed before the scroll animation.</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>breakpoint</code></p>
+                </td>
+                <td>Breakpoint navigation.</td>
+                <td><code>lg</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>resetOffset</code></p>
+                </td>
+                <td>Disable offset on at a certain resolution.</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>resolutionsList</code></p>
+                </td>
+                <td>Resolutions for breakpoint.</td>
+                <td><code>{
+                  xs: 0,
+                  sm: 576,
+                  md: 768,
+                  lg: 992,
+                  xl: 1200
+                  }</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>scrollspyContainer</code></p>
+                </td>
+                <td>Element selector for which scrollspy is enabled.</td>
+                <td><code>body</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Table -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": "2rem"
+         },
+         "show": {
+           "bottom": "2rem"
+         },
+         "hide": {
+           "bottom": "-2rem"
+         }
+       }
+     }'>
+    <i class="bi-chevron-up"></i>
+  </a>
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/js/vendor.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="../assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('../assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF STICKY BLOCKS
+      // =======================================================
+      new HSStickyBlock('.js-sticky-block', {
+        targetSelector: document.getElementById('header').classList.contains('navbar-fixed') ? '#header' : null
+      })
+
+
+      // INITIALIZATION OF SCROLLSPY
+      // =======================================================
+      new bootstrap.ScrollSpy(document.body, {
+        target: '#navbarSettingsEg2',
+        offset: 90
+      })
+
+      new HSScrollspy('#navbarVerticalNavMenuEg2', {
+        breakpoint: 'lg',
+        resetOffset: 'sm'
+      })
+    })()
+  </script>
+</body>
+
+<!-- Mirrored from htmlstream.com/preview/front-v4.2/html/documentation/scrollspy.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Aug 2022 18:21:35 GMT -->
+</html>

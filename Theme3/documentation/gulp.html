@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from htmlstream.com/preview/front-v4.2/html/documentation/gulp.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Aug 2022 18:19:38 GMT -->
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Gulp - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/css/vendor.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../assets/css/theme.minc619.css?v=1.0">
+  <link rel="stylesheet" href="../assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="navbar navbar-expand navbar-fixed navbar-end navbar-light navbar-sticky-lg-top bg-white">
+    <div class="container-fluid">
+      <nav class="navbar-nav-wrap">
+        <div class="row flex-grow-1">
+          <!-- Default Logo -->
+          <div class="docs-navbar-sidebar-container d-flex align-items-center mb-2 mb-lg-0">
+            <a class="navbar-brand" href="index.html" aria-label="Space">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a href="changelog.html">
+              <span class="badge bg-soft-primary text-primary">v4.2</span>
+            </a>
+          </div>
+          <!-- End Default Logo -->
+
+          <div class="col-md px-lg-0">
+            <div class="d-flex justify-content-between align-items-center px-lg-5 px-xl-10">
+              <div class="d-none d-md-block">
+                <!-- Search Form -->
+                <form id="docsSearch" class="position-relative" data-hs-list-options='{
+                       "searchMenu": true,
+                       "keyboard": true,
+                       "item": "searchTemplate",
+                       "valueNames": ["component", "category", {"name": "link", "attr": "href"}],
+                       "empty": "#searchNoResults"
+                     }'>
+                  <!-- Input Group -->
+                  <div class="input-group input-group-merge navbar-input-group">
+                    <div class="input-group-prepend input-group-text">
+                      <i class="bi-search"></i>
+                    </div>
+
+                    <input type="search" class="search form-control form-control-sm" placeholder="Search in docs" aria-label="Search in docs">
+
+                    <a class="input-group-append input-group-text" href="javascript:;">
+                      <i id="clearSearchResultsIcon" class="bi-x" style="display: none;"></i>
+                    </a>
+                  </div>
+                  <!-- End Input Group -->
+
+                  <!-- List -->
+                  <div class="list dropdown-menu navbar-dropdown-menu-borderless w-100 overflow-auto" style="max-height: 16rem;"></div>
+                  <!-- End List -->
+
+                  <!-- Empty -->
+                  <div id="searchNoResults" style="display: none;">
+                    <div class="text-center p-4">
+                      <img class="mb-3" src="../assets/svg/illustrations/oc-error.svg" alt="Image Description" style="width: 10rem;">
+                      <p class="mb-0">No Results</p>
+                    </div>
+                  </div>
+                  <!-- End Empty -->
+                </form>
+                <!-- End Search Form -->
+
+                <!-- List Item Template -->
+                <div class="d-none">
+                  <div id="searchTemplate" class="dropdown-item">
+                    <a class="d-block link" href="#">
+                      <span class="category d-block fw-normal text-muted mb-1"></span>
+                      <span class="component text-dark"></span>
+                    </a>
+                  </div>
+                </div>
+                <!-- End List Item Template -->
+              </div>
+
+              <!-- Navbar -->
+              <ul class="navbar-nav p-0">
+                <li class="nav-item">
+                  <a class="btn btn-ghost-secondary btn-sm" href="https://htmlstream.com/contact-us" target="_blank">
+                    Get Support <i class="bi-box-arrow-up-right ms-1"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-primary btn-sm" href="../index.html">
+                    <i class="bi-eye me-1"></i> Preview Demo
+                  </a>
+                </li>
+              </ul>
+              <!-- End Navbar -->
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </nav>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    <nav class="js-nav-scroller navbar navbar-expand-lg navbar-sidebar navbar-vertical navbar-light bg-white border-end" data-hs-nav-scroller-options='{
+            "type": "vertical",
+            "target": ".navbar-nav .active",
+            "offset": 80
+           }'>
+      <!-- Navbar Toggle -->
+      <button type="button" class="navbar-toggler btn btn-white d-grid w-100" data-bs-toggle="collapse" data-bs-target="#navbarVerticalNavMenu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarVerticalNavMenu">
+        <span class="d-flex justify-content-between align-items-center">
+          <span class="h3 mb-0">Nav menu</span>
+
+          <span class="navbar-toggler-default">
+            <i class="bi-list"></i>
+          </span>
+
+          <span class="navbar-toggler-toggled">
+            <i class="bi-x"></i>
+          </span>
+        </span>
+      </button>
+      <!-- End Navbar Toggle -->
+
+      <!-- Navbar Collapse -->
+      <div id="navbarVerticalNavMenu" class="collapse navbar-collapse">
+        <div class="navbar-brand-wrapper border-end" style="height: auto;">
+          <!-- Default Logo -->
+          <div class="d-flex align-items-center mb-3">
+            <a class="navbar-brand" href="index.html" aria-label="Space">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a class="navbar-brand-badge" href="changelog.html">
+              <span class="badge bg-soft-primary text-primary ms-2">v4.2</span>
+            </a>
+          </div>
+          <!-- End Default Logo -->
+
+          <!-- Nav -->
+          <ul class="nav nav-segment nav-fill nav-justified">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Docs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../snippets/index.html">Snippets</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+
+        <div class="docs-navbar-sidebar-aside-body navbar-sidebar-aside-body">
+          <ul id="navbarSettings" class="navbar-nav nav nav-vertical nav-tabs nav-tabs-borderless nav-sm">
+            <li class="nav-item">
+              <span class="nav-subtitle">Documentation</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Introduction</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Getting started</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="getting-started.html">Getting Started</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="gulp.html">Gulp</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="customization.html">Customization</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="credits.html">Credits</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="changelog.html">Changelog</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Design &amp; Graphics</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="bs-icons.html">Bootstrap Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="duotone-icons.html">Duotone Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="illustrations.html">Illustrations</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Components</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="accordion.html">Accordion</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="alerts.html">Alerts</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="avatars.html">Avatars</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="badge.html">Badge</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="breadcrumb.html">Breadcrumb</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="buttons.html">Buttons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="cards.html">Cards</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="collapse.html">Collapse</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="column-divider.html">Column Divider</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="devices.html">Devices</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="divider.html">Divider</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="dropdowns.html">Dropdowns</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="icons.html">Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="list-group.html">List Group</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="lists.html">Lists</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="legend-indicator.html">Legend Indicator</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="modal.html">Modal</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="offcanvas.html">Offcanvas</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="page-header.html">Page Header</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="pagination.html">Pagination</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="popovers.html">Popovers</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="progress.html">Progress</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="profile.html">Profile</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="shapes.html">Shapes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="spinners.html">Spinners</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="steps.html">Steps</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="tab.html">Tab</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="tables.html">Tables</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="text-highlight.html">Text Highlight</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toasts.html">Toasts</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="tooltips.html">Tooltips</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="typography.html">Typography</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Navbars</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="navbar.html">Navbar</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="navs.html">Navs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="mega-menu.html">Mega Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="scrollspy.html">Scrollspy</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Basic forms</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="basic-forms.html">Basic Forms</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="checks-and-switches.html">Checks &amp; Switches</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="input-group.html">Input Group</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Advanced Forms</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="select.html">Advanced Select</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="file-attachments.html">File Attachments</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="dropzone.html">Drag’ n’ Drop File Uploads</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="quill.html">WYSIWYG Editor</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="quantity-counter.html">Quantity Counter</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="input-mask.html">Input Mask</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="step-forms.html">Step Forms (Wizards)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="range-slider.html">Range Slider (noUiSlider)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="add-field.html">Add Field</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toggle-password.html">Toggle Password</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="count-characters.html">Count Characters</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toggle-switch.html">Toggle Switch</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toggle-state.html">Toggle State</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="switch.html">Switch</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Media</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="fslightbox.html">Fullscreen Lightbox</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="video-bg.html">Video Background</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="video-player.html">Video Player</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="swiper.html">Swiper</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Others</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="maps-leaflet.html">Maps (Leaflet)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="chartjs.html">Chart.js</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="circles.html">Circles.js (Pie Chart)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="sticky-block.html">Sticky Block</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="countdown.html">Countdown</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="sorting.html">Sorting (Shuffle.js)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="go-to.html">Go To</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="show-animation.html">Show Animation</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="typedjs.html">Typed.js</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Utilities</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="backgrounds.html">Backgrounds</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="borders.html">Borders</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="colors.html">Colors</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="links.html">Links</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="position.html">Position</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="rotations.html">Rotations</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="shadows.html">Shadows</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="sizing.html">Sizing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="spacing.html">Spacing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="z-index.html">Z-index</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Navbar Collapse -->
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Gulp</h1>
+            <p class="docs-page-header-text">Learn how to use and automate your time-consuming tasks in your development workflow with Front's powerful Gulp Toolkit extension.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="quick-setup" class="hs-docs-heading">
+        Quick Setup <a class="anchorjs-link" href="#quick-setup" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p><strong>Installing and running Gulp is super easy</strong> in Front, please follow these steps and you should be ready to rock:</p>
+
+      <ol class="list-py-1">
+        <li><a class="link" href="https://nodejs.org/en/" target="_blank">Download and install Node.js <i class="bi-box-arrow-up-right"></i></a>, which we use to manage our dependencies. If Node.js is already installed in your machine, please make sure the installed version is <code>v12.x</code> and jump to step 2.</li>
+        <li>Run <code>npm install --global gulp-cli</code> command. If you already installed <code>Gulp CLI</code> previously, you can skip this step and jump to step 3.</li>
+        <li>Navigate to the root <code>/front</code> directory and run <code>npm install</code> or to install our local dependencies listed in <code>package.json</code>.</li>
+        <li>Run <code>gulp</code> command.</li>
+      </ol>
+
+      <p>Yup, that's it!</p>
+
+      <!-- Heading -->
+      <h2 id="introduction" class="hs-docs-heading">
+        Toolkit Introduction <a class="anchorjs-link" href="#introduction" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Alert -->
+      <div class="alert alert-soft-dark mb-4" role="alert">
+        <div class="d-flex align-items-baseline">
+          <div class="flex-shrink-0">
+            <i class="bi-info-circle me-1"></i>
+          </div>
+
+          <div class="flex-grow-1 ms-2">Please note, the use of Gulp and its advanced settings is completely optional.</div>
+        </div>
+      </div>
+      <!-- End Alert -->
+
+      <p class="mb-4">Front uses <a class="link" href="https://docs.npmjs.com/misc/scripts" target="_blank">NPM scripts <i class="bi-box-arrow-up-right"></i></a> including custom JavaScript scripts written by Htmlstream Team for its build system. The goal was to utilize the power of Gulp to achieve maximum automation in static HTML Templates to help developers saving precious time for any kind of manual tasks and file changes.</p>
+
+      <p class="mb-4">Briefly speaking Front's Gulp Toolkit able to compile codes, minification js/css files, combine js/css files, auto path detection, pasting variables over HTML and SVG files, preparing build package and lots of others. On this page we will cover all Front's Gulp Toolkit features with detailed information and examples.</p>
+
+      <p class="mb-4">The following files powers the Gulp Toolkit:</p>
+
+      <ul class="list-py-1 list-unstyled ps-4 mb-5">
+        <li>
+          <details open>
+            <summary>
+              <i class="bi-folder text-secondary me-1"></i> <strong>gulpfiles</strong>
+            </summary>
+            <ul class="list-unstyled ps-4">
+              <li><i class="bi-file-text me-1"></i> build.js</li>
+              <li><i class="bi-file-text me-1"></i> core.js</li>
+              <li><i class="bi-file-text me-1"></i> dist.js</li>
+              <li><i class="bi-file-text me-1"></i> paths.js</li>
+              <li><i class="bi-file-text me-1"></i> preview.js</li>
+              <li><i class="bi-file-text me-1"></i> watch.js</li>
+              <li><i class="bi-file-text me-1"></i> svg-compiler.js</li>
+            </ul>
+          </details>
+        </li>
+        <li><i class="bi-file-text me-1"></i> config.js</li>
+        <li><i class="bi-file-text me-1"></i> gulpfile.js</li>
+        <li><i class="bi-file-text me-1"></i> package-lock.json</li>
+        <li><i class="bi-file-text me-1"></i> package.json</li>
+      </ul>
+
+      <p><strong>Heads up!</strong> The main core file for development is <code class="fw-semi-bold">config.js</code> and you don't need to worry about the rest files. We highly don't recommend touching the rest files since all settings included inside <code class="fw-semi-bold">config.js</code> file. Learn more below at <a class="link" href="#configuration">Configuration</a> section for all available setting options.</p>
+
+      <!-- Heading -->
+      <h2 id="gulp-commands" class="hs-docs-heading">
+        Gulp Commands <a class="anchorjs-link" href="#gulp-commands" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Alert -->
+      <div class="alert alert-soft-dark mb-4" role="alert">
+        <div class="d-flex align-items-baseline">
+          <div class="flex-shrink-0">
+            <i class="bi-info-circle me-1"></i>
+          </div>
+
+          <div class="flex-grow-1 ms-2">Please read first <a class="link" href="index.html#file-structure">Introduction Page</a> to understand how <strong>File Structure</strong> is organized in Front.</div>
+        </div>
+      </div>
+      <!-- End Alert -->
+
+      <div class="my-4">
+        <p>Gulp Toolkit includes the following simple Gulp commands:</p>
+
+        <ol class="list-py-1">
+          <li><code>gulp</code></li>
+          <li><code>gulp dist</code></li>
+          <li><code>gulp build</code></li>
+        </ol>
+
+        <p>On top of it, any Gulp or NPM commands can be also used.</p>
+      </div>
+
+      <hr class="my-4">
+
+      <!-- Heading -->
+      <h4 id="gulp" class="mb-3">
+        1. gulp: <a class="anchorjs-link" href="#gulp" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h4>
+      <!-- End Heading -->
+
+      <p><code>gulp</code> is the main command to start compiling and watching SASS / HTML files. When you run <code>gulp</code> it starts a server poping up a new tab in your default browser. Any changes from the source files are instantly compiled on the fly and updates browser tab instantly with the help of Live Reload (Browsersync).</p>
+
+      <hr class="my-4">
+
+      <!-- Heading -->
+      <h4 id="gulp-dist" class="mb-3">
+        2. gulp dist: <a class="anchorjs-link" href="#gulp-dist" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h4>
+      <!-- End Heading -->
+
+      <p><code>gulp dist</code> command compiles and copies all files from <code>./src/*</code> folder into <code>./dist/*</code> folder and prepares production files. Basically, it copies whole complied assets into <code>./dist/*</code> folder with minified theme css/js files. Under the hood it performs the following processes:</p>
+
+      <ol class="list-py-1">
+        <li>Minifies any CSS files from <code>./src/assets/css/*</code></li>
+        <li>Minifies all JavaScript files from <code>./src/assets/js/*</code> and concatenates to <code>theme.min.js</code> file</li>
+        <li>Compiles any files where <code>gulp-file-include</code> is used (learn more about <a class="link" href="#gulp-file-include">Gulp File Include</a> below)</li>
+        <li>Then copies all files from <code>./src/*</code> (including libraries from <code>./node_modules/*</code>) and saves into <code>./dist/*</code></li>
+      </ol>
+
+      <hr class="my-4">
+
+      <!-- Heading -->
+      <h4 id="gulp-build" class="mb-3">
+        3. gulp build: <a class="anchorjs-link" href="#gulp-build" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h4>
+      <!-- End Heading -->
+
+      <p><code>gulp build</code> command prepares performance ready fully production files of your project into <code>./build/*</code> folder by automatically detecting all used asset sources from HTML pages. Under the hood it performs the following processes:</p>
+
+      <ol class="list-py-1 mb-4">
+        <li>Does the same work as <code>dist</code> process above, and:</li>
+        <li>Minifies and concatenates any used CSS vendor files in HTML pages and saves as <code>vendor.min.css</code> into <code>./build/assets/css/*</code> </li>
+        <li>Minifies and concatenates all used JavaScript vendor files in HTML pages and saves as <code>vendor.min.js</code> into <code>./build/assets/js/*</code></li>
+        <li>Automatically detects any used <code>jpg|png|svg|mp4|webm|ogv|json</code> file formats from HTML pages and copies to relevant folders</li>
+      </ol>
+
+      <p>The main difference between <code>dist</code> and <code>build</code> processes, <code>build</code> sorts out what's used on the pages and prepares only used asset sources, while <code>dist</code> just copy and pastes the compiled and generated files into <code>./dist/</code> folder.</p>
+
+      <hr class="my-4">
+
+      <!-- Alert -->
+      <div class="alert alert-soft-dark" role="alert">
+        <h4>Heads up!</h4>
+        <p>Do more with <code>config.js</code> file to control <code>gulp dist</code> and <code>gulp build</code> processes:</p>
+
+        <ul class="list-py-1">
+          <li>Change directory folder and bundle file names</li>
+          <li>Exclude any css/js files from bundle files</li>
+          <li>Copy dependencies from one to another location</li>
+          <li>and so on</li>
+        </ul>
+
+        <p class="mb-0">More detailed information of <code>config.js</code> options can be found on <a class="link" href="#configuration">Configuration</a> section below on this page.</p>
+      </div>
+      <!-- End Alert -->
+
+      <!-- Heading -->
+      <h2 id="gulp-file-include" class="hs-docs-heading">
+        Gulp File Include <a class="anchorjs-link" href="#gulp-file-include" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p class="mb-4">Front uses <a class="link" href="https://www.npmjs.com/package/gulp-file-include" target="_blank">Gulp File Include <i class="bi-box-arrow-up-right"></i></a> NPM package to provide convenience for development. With the help of <strong>Gulp File Include</strong> most common used components (e.g. header, sidebar, footer etc.) can be globally updated at once. It's like PHP include function when changes made from the single file - it updates all pages instantly where the component is used.</p>
+
+      <p class="mb-4">All used partials can be found at <code>./src/partials/*</code> and new ones can be easily added. Create new <code>.html</code> partial file inside <code>partials/</code> folder and use with <code>@@include</code> in your HTML pages. Please read the <a class="link" href="https://www.npmjs.com/package/gulp-file-include" target="_blank">official documentation <i class="bi-box-arrow-up-right"></i></a> for more options and details. In addition, <code>config.js</code> file includes variables with other options. More information can be obtained at the <a class="link" href="#configuration">Configuration</a> section below.</p>
+
+      <!-- Heading -->
+      <h2 id="reserved-variables" class="hs-docs-heading mt-0">
+        Reserved Variables <a class="anchorjs-link" href="#reserved-variables" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>On top of Gulp File Include, the usage of variables are extended in Gulp Toolkit to perform some specific tasks. Read below for more details and use cases:</p>
+
+      <!-- Auto Path -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h5 class="card-header-title">Auto Path</h5>
+        </div>
+
+        <!-- Table -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><code>@@autopath</code></td>
+                <td>Automatically determines the path to the assets files, regardless of the nesting level of the HTML file</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Table -->
+
+        <hr class="my-0">
+
+        <div class="card-body">
+          <h5>Overview</h5>
+          <p>Since <code>@@autopath</code> is used within <code>./src/</code> folder, it's default path starts at <code>./src/</code> directory. The default directory name can be changed with the help of directoryNames property from <code>config.js</code> file if needed.</p>
+
+          <h5>Example</h5>
+          <p>Considering the file is located at the roof of <code>./src/</code> folder:</p>
+
+          <pre class="rounded prism-light mb-4">
+            <code class="language-html" data-lang="html">
+              &lt;link rel="stylesheet" href="@@autopath/assets/css/theme.css"&gt;
+            </code>
+          </pre>
+
+          <p>Will be compiled to:</p>
+
+          <pre class="rounded prism-light mb-4">
+            <code class="language-html" data-lang="html">
+              &lt;link rel="stylesheet" href="./assets/css/theme.css"&gt;
+            </code>
+          </pre>
+
+          <!-- Alert -->
+          <div class="alert alert-soft-dark" role="alert">
+            <div class="d-flex align-items-baseline">
+              <div class="flex-shrink-0">
+                <i class="bi-info-circle me-1"></i>
+              </div>
+
+              <div class="flex-grow-1 ms-2">Please note, due to the technical limitation of Gulp File Include the <code>@@autopath</code> is not supported for <code>@@include</code> function inside partial files. However, you can still use <code>@@autopath</code> to link any asset files within partial files.</div>
+            </div>
+          </div>
+          <!-- End Alert -->
+        </div>
+      </div>
+      <!-- End Auto Path -->
+
+      <!-- Delete Line -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h5 class="card-header-title">Delete Line</h5>
+        </div>
+
+        <!-- Table -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><code>@@deleteLine</code></td>
+                <td>Deletes a line in both <code>dist</code> &amp; <code>build</code> processes.</td>
+              </tr>
+
+              <tr>
+                <td><code>&commat;deleteLine:dist</code></td>
+                <td>Deletes a line only in <code>dist</code> process.</td>
+              </tr>
+
+              <tr>
+                <td><code>&commat;deleteLine:build</code></td>
+                <td>Deletes a line only in <code>buld</code> process.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Table -->
+
+        <hr class="my-0">
+
+        <div class="card-body">
+          <h5>Overview</h5>
+          <p>Delete lines are usually used for comments while bundling files into one in <code>build</code> process.</p>
+
+          <h5>Example</h5>
+
+          <pre class="rounded prism-light mb-2">
+            <code class="language-html" data-lang="html">
+              &lt;!-- JS Global Compulsory @@deleteLine --&gt;
+            </code>
+          </pre>
+
+          <pre class="rounded prism-light mb-2">
+            <code class="language-html" data-lang="html">
+              &lt;!-- JS Global Compulsory @@deleteLine:dist --&gt;
+            </code>
+          </pre>
+
+          <pre class="rounded prism-light mb-2">
+            <code class="language-html" data-lang="html">
+              &lt;!-- JS Global Compulsory @@deleteLine:build --&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- End Delete Line -->
+
+      <!-- Heading -->
+      <h2 id="build-mode-files" class="hs-docs-heading mt-0">
+        Build Mode Files <a class="anchorjs-link" href="#build-mode-files" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>The Build Modes Files generates two type of bundle files - <code>.css</code> and <code>.js</code> files in <code>build</code> process:</p>
+
+      <ol class="list-py-1 mb-4">
+        <li>
+          <strong>Theme Files</strong>
+          <ul class="list-unstyled">
+            <li><i class="bi-file-text me-1"></i> theme.min.css</li>
+            <li><i class="bi-file-text me-1"></i> theme.min.js</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>Vendor Files</strong>
+          <ul class="list-unstyled">
+            <li><i class="bi-file-text me-1"></i> vendor.min.css</li>
+            <li><i class="bi-file-text me-1"></i> vendor.min.js</li>
+          </ul>
+        </li>
+      </ol>
+
+      <p>Any generated output file names can be changed from <kbd>fileNames</kbd> property in <code>config.js</code> file.</p>
+
+      <p>In order to build these type of files the <code>build</code> process includes reserved comments with special syntaxes in Gulp Toolkit. Read below for more details and examples:</p>
+
+      <!-- Alert -->
+      <div class="alert alert-soft-dark" role="alert">
+        <div class="d-flex align-items-baseline">
+          <div class="flex-shrink-0">
+            <i class="bi-info-circle me-1"></i>
+          </div>
+
+          <div class="flex-grow-1 ms-2">Please note, Build Mode reserved comments can be only used in <code>.html</code> files at <code>./src/*</code> folder.</div>
+        </div>
+      </div>
+      <!-- End Alert -->
+
+      <!-- Theme CSS File -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h5 class="card-header-title">Theme CSS File</h5>
+        </div>
+
+        <!-- Table -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Reserved Comment</th>
+                <th>Description</th>
+                <th>Gulp Mode</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><kbd>&lt;!-- bundlecss:theme [@@autopath] --&gt;</kbd></td>
+                <td>Generates Theme CSS file as <code>theme.min.css</code></td>
+                <td>dist, build</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Table -->
+
+        <hr class="my-0">
+
+        <div class="card-body">
+          <h5>Overview</h5>
+          <p>Minifies <code>theme.css</code> file into <code>min.theme.css</code> file and replaces in all HTML pages.</p>
+
+          <h5>Example</h5>
+          <p>Placing <kbd>bundlecss:theme</kbd> reserved comment in HTML file:</p>
+          <pre class="rounded prism-light mb-4">
+            <code class="language-html" data-lang="html">
+              &lt;!-- CSS Front --&gt;
+              &lt;!-- bundlecss:theme [@@autopath] --&gt;
+              &lt;link rel="stylesheet" href="@@autopath/assets/css/theme.css"&gt;
+            </code>
+          </pre>
+
+          <p>now, the <code>theme.css</code> file is minified and replaced with <code>theme.min.css</code> file automatically in HTML page(<b>s</b>):</p>
+          <pre class="rounded prism-light mb-2">
+            <code class="language-html" data-lang="html">
+              &lt;!-- CSS Front --&gt;
+              &lt;link rel="stylesheet" href="./assets/css/theme.min.css"&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- End Theme CSS File -->
+
+      <!-- Theme JavaScript File -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h5 class="card-header-title">Theme JavaScript File</h5>
+        </div>
+
+        <!-- Table -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Reserved Comment</th>
+                <th>Description</th>
+                <th>Gulp Mode</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><kbd>&lt;!-- bundlejs:theme [@@autopath] --&gt;</kbd></td>
+                <td>Generates Theme JavaScript bundle file as <code>theme.min.js</code></td>
+                <td>dist, build</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Table -->
+
+        <hr class="my-0">
+
+        <div class="card-body">
+          <h5>Overview</h5>
+          <p>Concatenates and minifies <strong>all</strong> <code>.js</code> files from <code>.src/assets/js/*</code> folder in <code>gulp dist</code> process and saves as <code>theme.min.js</code> file, then replaces in all HTML pages.</p>
+
+          <p>The <code>gulp build</code> process does the same process as <code>gulp dist</code> but instead of processing all <code>.js</code> files, it selects only used JavaScript files from HTML pages.</p>
+
+          <h5>Example</h5>
+          <p>Placing <kbd>bundlejs:theme</kbd> reserved comment in HTML file:</p>
+          <pre class="rounded prism-light mb-4">
+            <code class="language-html" data-lang="html">
+              &lt;!-- JS Front --&gt;
+              &lt;!-- bundlejs:theme [@@autopath] --&gt;
+              &lt;script src="@@autopath/assets/js/hs.core.js"&gt;&lt;/script&gt;
+              &lt;script src="@@autopath/assets/js/hs.file-1.js"&gt;&lt;/script&gt;
+              &lt;script src="@@autopath/assets/js/hs.file-2.js"&gt;&lt;/script&gt;
+              &lt;script src="@@autopath/assets/js/hs.file-3.js"&gt;&lt;/script&gt;
+              ...
+              etc.
+            </code>
+          </pre>
+
+          <p>then, it transforms into:</p>
+          <pre class="rounded prism-light mb-2">
+            <code class="language-html" data-lang="html">
+              &lt;!-- JS Front --&gt;
+              &lt;script src="./assets/js/theme.min.js"&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- End Theme JavaScript File -->
+
+      <!-- Vendor CSS File -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h5 class="card-header-title">Vendor CSS File</h5>
+        </div>
+
+        <!-- Table -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Reserved Comment</th>
+                <th>Description</th>
+                <th>Gulp Mode</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><kbd>&lt;!-- bundlecss:vendor [@@autopath] --&gt;</kbd></td>
+                <td>Generates Vendor CSS bundle file as <code>vendor.min.css</code></td>
+                <td>build</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Table -->
+
+        <hr class="my-0">
+
+        <div class="card-body">
+          <h5>Overview</h5>
+          <p>Concatenates and minifies all used CSS library files in HTML pages and saves as <code>vendor.min.css</code> file, then replaces in all HTML pages.</p>
+
+          <h5>Example</h5>
+          <p>Placing <kbd>bundlecss:vendor</kbd> reserved comment in HTML file:</p>
+          <pre class="rounded prism-light mb-4">
+            <code class="language-html" data-lang="html">
+              &lt;!-- CSS Implementing Plugins --&gt;
+              &lt;!-- bundlecss:vendor [@@autopath] --&gt;
+              &lt;link rel="stylesheet" href="@@autopath/node_modules/bootstrap-icons/font/bootstrap-icons.css"&gt;
+              ...
+              etc.
+            </code>
+          </pre>
+
+          <p>then, it transforms into:</p>
+          <pre class="rounded prism-light mb-2">
+            <code class="language-html" data-lang="html">
+              &lt;!-- CSS Implementing Plugins --&gt;
+              &lt;link rel="stylesheet" href="./assets/css/vendor.min.css"&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- End Vendor CSS File -->
+
+      <!-- Vendor JavaScript File -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h5 class="card-header-title">Vendor JavaScript File</h5>
+        </div>
+
+        <!-- Table -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Reserved Comment</th>
+                <th>Description</th>
+                <th>Gulp Mode</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><kbd>&lt;!-- bundlejs:vendor [@@autopath] --&gt;</kbd></td>
+                <td>Generates Theme JavaScript bundle file as <code>vendor.min.js</code></td>
+                <td>build</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Table -->
+
+        <hr class="my-0">
+
+        <div class="card-body">
+          <h5>Overview</h5>
+          <p>Concatenates and minifies only used JavaScript library files in HTML pages and saves as <code>vendor.min.js</code> file, then replaces in all HTML pages.</p>
+
+          <h5>Example</h5>
+          <p>Placing <kbd>bundlejs:vendor</kbd> reserved comment in HTML file:</p>
+          <pre class="rounded prism-light mb-4">
+            <code class="language-html" data-lang="html">
+              &lt;!-- JS Global Compulsory @@deleteLine:build --&gt;
+              &lt;script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+
+              &lt;!-- JS Implementing Plugins --&gt;
+              &lt;!-- bundlejs:vendor [@@autopath] --&gt;
+              &lt;script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"&gt;&lt;/script&gt;
+              &lt;script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"&gt;&lt;/script&gt;
+              ...
+              etc.
+            </code>
+          </pre>
+
+          <p>then, it transforms into:</p>
+          <pre class="rounded prism-light mb-2">
+            <code class="language-html" data-lang="html">
+              &lt;!-- JS Implementing Plugins --&gt;
+              &lt;script src="./assets/js/vendor.min.js"&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- End Vendor JavaScript File -->
+
+      <!-- Heading -->
+      <h2 id="configuration" class="hs-docs-heading">
+        Configuration <a class="anchorjs-link" href="#configuration" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>All configuration options can be found inside the <code>./config.js</code> file. As mentioned above, you don't need to worry about the rest Gulp files. We heighly don't recommend touching the other Gulp related files, since all settings included inside this <code>config.js</code> file - unless there are cases where project needs to be extended the Gulp Toolkit further. To keep the development process as much as flexible, the configuration options are provided. Read below for more detailed descriptions and examples.</p>
+
+      <!-- Alert -->
+      <div class="alert alert-soft-dark" role="alert">
+        <div class="d-flex align-items-baseline">
+          <div class="flex-shrink-0">
+            <i class="bi-info-circle me-1"></i>
+          </div>
+
+          <div class="flex-grow-1 ms-2">Please note, applying any changes in <code>./config.js</code> file requires to restart the Gulp.</div>
+        </div>
+      </div>
+      <!-- End Alert -->
+
+      <!-- Start Path -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h4 class="card-header-title">Start Path</h4>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th>String</th>
+                <th style="width: 50%;">Description</th>
+                <th>Default</th>
+                <th class="text-nowrap">Gulp Mode</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><code>startPath</code></td>
+                <td><code>string</code></td>
+                <td>Start path when launching a Gulp</td>
+                <td><code>"/index.html"</code></td>
+                <td>default</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="my-0">
+
+        <div class="card-body">
+          <h5>config code</h5>
+          <pre class="rounded prism-light mb-4">
+            <code class="language-js" data-lang="js">
+              startPath: "/index.html",
+            </code>
+          </pre>
+
+          <h5>Overview</h5>
+          <p>When you run <code>gulp</code> command it opens up <code>index.html</code> page on your browser from <code>./src/*</code> folder. You can set the Starting page to any page from the <code>./src/*</code> folder.</p>
+        </div>
+      </div>
+      <!-- End Start Path -->
+
+      <!-- Variables -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h4 class="card-header-title">Variables</h4>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th>String</th>
+                <th style="width: 50%;">Description</th>
+                <th>Default</th>
+                <th class="text-nowrap">Gulp Mode</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><code>vars</code></td>
+                <td><code>object</code></td>
+                <td>Variables that can be used in HTML pages and SVG files</td>
+                <td><code>{}</code></td>
+                <td>all</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="my-0">
+
+        <div class="card-body">
+          <h5>config code</h5>
+          <pre class="rounded prism-light mb-4">
+            <code class="language-js" data-lang="js">
+              vars: {
+                themeFont: "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap",
+                version: "?v=1.0",
+                style: {
+                  color: '#377dff', // Primary Color
+                  font: 'Roboto' // Primary Font
+                }
+              },
+            </code>
+          </pre>
+
+          <h5>Overview</h5>
+          <p>Any new variables can be added inside <code>var {..}</code> object and used in HTML pages with double at <code>@@vars</code>. Variables are very practical to use when there are some repetitive values which should be updated at once in all pages. It helps to avoid manual changes from each HTML pages and gives handy automation.</p>
+
+          <p>Let's take an example of Google Fonts which is used in all HTML pages in Front:</p>
+
+          <pre class="rounded prism-light mb-3">
+            <code class="language-markup" data-lang="html">
+              &lt;!-- Google Font --&gt;
+              &lt;link href="@@vars.themeFont" rel="stylesheet"&gt;
+            </code>
+          </pre>
+
+          <p>and that will be compiled into:</p>
+
+          <pre class="rounded prism-light mb-3">
+            <code class="language-markup" data-lang="html">
+              &lt;!-- Google Font --&gt;
+              &lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"&gt;
+            </code>
+          </pre>
+
+          <p>In a same way, any variables can be passed to HTML page and used as above example.</p>
+
+          <h5>Variables in SVG files</h5>
+          <p>In Front, we extended the usage of variables even further and added compatibility to SVG files. The SVG files where variables are used, should be saved inside <code>svg-src/*</code> folder instead of <code>svg/*</code> folder at <code>./src/assets/*</code>. Any SVG files at <code>./src/assets/svg-src/*</code> will be compiled and saved into <code>svg/*</code> folder.</p>
+
+          <p>The examples can be found in any SVG files at <code>./src/assets/svg-src/*</code> folder.</p>
+
+          <h5>Variables in functions</h5>
+          <p>In addition, we added color functions that can be used inside <code>html</code> and <code>svg</code> files.</p>
+
+          <p>Convert HEX color to rgba with <code>gulpRGBA[color, opacity]</code> function. The opacity values can be between <code>0.1</code> to <code>1</code> same like in SASS.</p>
+          <pre class="rounded prism-light mb-4">
+            <code class="language-js" data-lang="js">
+              gulpRGBA[@@vars.style.color,.5]
+            </code>
+          </pre>
+
+          <p>Make color lighter with <code>gulpLighten[color, value]</code> function. The larger the integer value, the lighter.</p>
+          <pre class="rounded prism-light mb-4">
+            <code class="language-js" data-lang="js">
+              gulpLighten[@@vars.style.color, 50]
+            </code>
+          </pre>
+
+          <p>Make color darker with <code>gulpDarken[color, value]</code> function. The larger the integer value, the lighter.</p>
+          <pre class="rounded prism-light">
+            <code class="language-js" data-lang="js">
+              gulpDarken[@@vars.style.color, 50]
+            </code>
+          </pre>
+
+          <br>
+
+          <!-- Alert -->
+          <div class="alert alert-soft-dark" role="alert">
+            <div class="d-flex align-items-baseline">
+              <div class="flex-shrink-0">
+                <i class="bi-info-circle me-1"></i>
+              </div>
+
+              <div class="flex-grow-1 ms-2">Please note, compiling the SVG files or applying any changes to <code>config.js</code> file requires to restart the Gulp.</div>
+            </div>
+          </div>
+          <!-- End Alert -->
+        </div>
+      </div>
+      <!-- End Variables -->
+
+      <!-- Layout Builder -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h4 class="card-header-title">Layout Builder</h4>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th>String</th>
+                <th style="width: 50%;">Description</th>
+                <th>Default</th>
+                <th class="text-nowrap">Gulp Mode</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><code>layoutBuilder</code></td>
+                <td><code>object</code></td>
+                <td>Layout builder to customize look and feel of siderbar and navbar</td>
+                <td><code>{}</code></td>
+                <td>all</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="my-0">
+
+        <div class="card-body">
+          <h5>config code</h5>
+          <pre class="rounded prism-light mb-4">
+            <code class="language-js" data-lang="js">
+              layoutBuilder: {
+                skin: 'default', // default, dark, light
+                header: {
+                  layoutMode: 'default', // default, single, double
+                  containerMode: 'container' // container, container-fluid
+                },
+                sidebarLayout: 'default', // default, compact, mini
+              },
+            </code>
+          </pre>
+
+          <h5>Overview</h5>
+          <p>The Gulp Layout Builder shares the same features as the live Builder example. Furthermore, over 15 layout examples can be found on <a class="link" href="../layouts/layouts.html">Layouts</a> page.</p>
+
+          <h5>Properties of <code class="text-dark">layoutBuilder</code></h5>
+          <p>Easily customize the Layouts and Navbar Skins by changing the following property options:</p>
+
+          <div class="table-responsive">
+            <table class="table">
+              <thead class="thead-light">
+                <tr>
+                  <th>Property</th>
+                  <th>Option</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><code>skin</code></td>
+                  <td class="text-nowrap text-dark"><code class="text-dark">default</code> | <code class="text-dark">dark</code> | <code class="text-dark">light</code></td>
+                  <td>Skins are not applied to Double Line Header option.</td>
+                </tr>
+
+                <tr>
+                  <td><code>header.layoutMode</code></td>
+                  <td class="text-nowrap text-dark"><code class="text-dark">default</code> | <code class="text-dark">single</code> | <code class="text-dark">double</code></td>
+                  <td>When <code>header</code> options are set - the <code>sidebarLayout</code> will not be applied. It means the pages will not have Sidebar as they will be replaced with headers.</td>
+                </tr>
+
+                <tr>
+                  <td><code>header.containerMode</code></td>
+                  <td class="text-nowrap text-dark"><code class="text-dark">container</code> | <code class="text-dark">container-fluid</code></td>
+                  <td>To change the Container Mode, please first set <code>header.layoutMode</code> to <code class="text-dark">single</code> or <code class="text-dark">double</code>. </td>
+                </tr>
+
+                <tr>
+                  <td><code>sidebarLayout</code></td>
+                  <td class="text-nowrap text-dark"><code class="text-dark">default</code> | <code class="text-dark">compact</code> | <code class="text-dark">mini</code></td>
+                  <td>Make sure to set <code>header.layoutMode</code> to <code class="text-dark">default</code> when using <code>sidebarLayout</code> options.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- End Layout Builder -->
+
+      <!-- Skip Files From Bundle -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h4 class="card-header-title">Skip Files from Bundle</h4>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th>String</th>
+                <th style="width: 50%;">Description</th>
+                <th>Default</th>
+                <th class="text-nowrap">Gulp Mode</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><code>skipFilesFromBundle</code></td>
+                <td><code>array</code></td>
+                <td>Skip CSS &amp; JavaScript files from bundle files (e.g. vendor.min.css)</td>
+                <td><code>[]</code></td>
+                <td>dist, build</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="my-0">
+
+        <div class="card-body">
+          <h5>config code</h5>
+          <pre class="rounded prism-light mb-3">
+            <code class="language-js" data-lang="js">
+              skipFilesFromBundle: {
+                dist: [
+                  "assets/js/hs.chartjs-matrix.js",
+                ],
+
+                build: [
+                  "assets/css/docs.css",
+                  "assets/vendor/icon-set/style.css",
+                  "assets/js/hs.chartjs-matrix.js",
+                  ...
+                ]
+              },
+            </code>
+          </pre>
+
+          <!-- Alert -->
+          <div class="alert alert-soft-dark" role="alert">
+            <div class="d-flex align-items-baseline">
+              <div class="flex-shrink-0">
+                <i class="bi-info-circle me-1"></i>
+              </div>
+
+              <div class="flex-grow-1 ms-2">Please note, the skipFilesFromBundle parameter <strong class="text-uppercase">only</strong> supports <code>.css</code> and <code>.js</code> file formats.</div>
+            </div>
+          </div>
+          <!-- End Alert -->
+
+          <h5>Overview</h5>
+          <p>Sometimes projects require to keep some files separately from concatenated bundle files. For that, there might be lots of reasons during the project development. The <code>skipFilesFromBundle</code> property helps to control what files should be avoided from the bundle files while <code>gulp dist</code> and <code>gulp build</code> processes.</p>
+        </div>
+      </div>
+      <!-- End Skip Files From Bundle -->
+
+      <!-- Copy Dependencies -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h4 class="card-header-title">Copy Dependencies</h4>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th>String</th>
+                <th style="width: 50%;">Description</th>
+                <th>Default</th>
+                <th class="text-nowrap">Gulp Mode</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><code>dependencies</code></td>
+                <td><code>object</code></td>
+                <td>Copy/Paste files and folders into different path</td>
+                <td><code>{}</code></td>
+                <td>dist, build</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="my-0">
+
+        <div class="card-body">
+          <h5>config code</h5>
+          <pre class="rounded prism-light mb-4">
+            <code class="language-js" data-lang="js">
+              copyDependencies: {
+                dist: {
+                  "*assets/js/theme-custom.js": ""
+                },
+
+                build: {
+                  "*assets/js/theme-custom.js": ""
+                }
+              },
+            </code>
+          </pre>
+
+          <h5>Overview</h5>
+          <p>Gulp Toolkit while processing <code>dist</code> and <code>build</code> packages, it reads the source code from HTML files to detect what asset files are used. There's are some scenarios when asset files are not linked through HTML files and in order to save those files into generated packages copyDependencies property can be helpful and used.</p>
+
+          <p>Below, a few scenarios are given:</p>
+
+          <ul class="list-py-1">
+            <li>When files are not used in HTML pages like <code>theme-custom.js</code> in our case, as it's created for end user to include the custom JavaScript codes. However, we still need to provide the file in <code>.dist/*</code> folder and with the help of copyDependencies property it's copied and pasted into <code>./dist/*</code> folder.</li>
+
+            <li>When asset files are included in the bundle packages but their sources are linked through CSS files like Font Files, Background Images and so on. Since, Gulp Toolkit reads files from HTML files, it can not detect asset files if they are linked through CSS or JavaScript files.</li>
+
+            <li>Or you may want include some asset files for some purpose in the generated packages even if they are not used on the pages.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Copy Dependencies -->
+
+      <!-- Build Folder -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h4 class="card-header-title">Build Folder</h4>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th>String</th>
+                <th style="width: 50%;">Description</th>
+                <th>Default</th>
+                <th class="text-nowrap">Gulp Mode</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><code>buildFolder</code></td>
+                <td><code>string</code></td>
+                <td>An option to set custom folder name for <code>build</code> process</td>
+                <td><code>""</code></td>
+                <td>build</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="my-0">
+
+        <div class="card-body">
+          <h5>config code</h5>
+          <pre class="rounded prism-light mb-4">
+            <code class="language-js" data-lang="js">
+              buildFolder: "", // my-project folder
+            </code>
+          </pre>
+
+          <h5>Overview</h5>
+          <p>By default, a <code>gulp build</code> function processes the whole project from <code>./src/*</code> folder when the option is set to empty <code>""</code>. However, a custom folder name like <code>my-project</code> can be added and set for <code>build</code> process.</p>
+
+          <p>Here is how it looks when you set <code>my-project</code> folder:</p>
+
+          <pre class="rounded prism-light mb-4">
+            <code class="language-js" data-lang="js">
+              buildFolder: "my-project",
+            </code>
+          </pre>
+
+          <p>Now, when <code>gulp build</code> command is run, it <strong class="text-uppercase">only</strong> checks all HTML pages from <code>./src/my-project/*</code> and prepares a <code>./build/my-project/*</code> folder with relevant assets files.</p>
+        </div>
+      </div>
+      <!-- End Build Folder -->
+
+      <!-- Replace Paths to CDN -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h4 class="card-header-title">Replace Paths to CDN</h4>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th>String</th>
+                <th style="width: 50%;">Description</th>
+                <th>Default</th>
+                <th class="text-nowrap">Gulp Mode</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><code>replacePathsToCDN</code></td>
+                <td><code>object</code></td>
+                <td>Replace an asset paths in HTML to CDN</td>
+                <td><code>{}</code></td>
+                <td>build</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="my-0">
+
+        <div class="card-body">
+          <h5>config code</h5>
+          <pre class="rounded prism-light mb-4">
+            <code class="language-js" data-lang="js">
+              replacePathsToCDN: {},
+            </code>
+          </pre>
+
+          <h5>Overview</h5>
+          <p>Sometimes to enhance the site speed (page load), often CDN links are used. With the help of replacePathsToCDN property, the library asset paths can be replaced with the CDN links in <code>./build/*</code> folder.</p>
+
+          <h5>Example</h5>
+          <pre class="rounded prism-light mb-4">
+            <code class="language-js" data-lang="js">
+              replacePathsToCDN: {  "assets/vendor/example/example.min.css": "https://cdn.example.com/example/css/example.min.css" }
+            </code>
+          </pre>
+        </div>
+      </div>
+      <!-- End Replace Paths to CDN -->
+
+      <!-- Directory Names -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h4 class="card-header-title">Directory Names</h4>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th>String</th>
+                <th style="width: 50%;">Description</th>
+                <th>Default</th>
+                <th class="text-nowrap">Gulp Mode</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><code>directoryNames</code></td>
+                <td><code>object</code></td>
+                <td>Change directory folder names</td>
+                <td><code>{}</code></td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="my-0">
+
+        <div class="card-body">
+          <h5>config code</h5>
+          <pre class="rounded prism-light mb-4">
+            <code class="language-js" data-lang="js">
+              directoryNames: {
+                src: "./src",
+                dist: "./dist",
+                build: "./build"
+              },
+            </code>
+          </pre>
+
+          <h5>Overview</h5>
+          <p>From time to time projects might have different or existing File Structure and <code>directoryNames</code> options allows to change folder names for <code>build</code> processes.</p>
+
+          <p>Let's say if <kbd>build: "./build"</kbd> is changed to <kbd>build: "./my-project"</kbd> the <code>gulp build</code> process will generate <code>./my-folder</code> folder instead of <code>./build/</code> folder.</p>
+        </div>
+      </div>
+      <!-- End Directory Names -->
+
+      <!-- File Names -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h4 class="card-header-title">File Names</h4>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th>String</th>
+                <th style="width: 50%;">Description</th>
+                <th>Default</th>
+                <th class="text-nowrap">Gulp Mode</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><code>fileNames</code></td>
+                <td><code>object</code></td>
+                <td>Change bundle file names</td>
+                <td><code>{}</code></td>
+                <td>dist, build</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="my-0">
+
+        <div class="card-body">
+          <h5>config code</h5>
+          <pre class="rounded prism-light mb-4">
+            <code class="language-js" data-lang="js">
+              fileNames: {
+                dist: {
+                  js: "theme.min.js",
+                  css: "theme.min.css"
+                },
+
+                build: {
+                  css: "theme.min.css",
+                  js: "theme.min.js",
+                  vendorCSS: "vendor.min.css",
+                  vendorJS: "vendor.min.js",
+                }
+              },
+            </code>
+          </pre>
+
+          <h5>Overview</h5>
+          <p>A property with options to control bundle fine names in <code>build</code> processes. For example, <kbd>theme.min.js</kbd> can be changed to <kbd class="text-nowrap">myBrandName.min.js</kbd> in <code>./dist/*</code> and <code>./build/*</code> folders.</p>
+        </div>
+      </div>
+      <!-- End File Names -->
+
+      <!-- File Types -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <h4 class="card-header-title">File Types</h4>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th>String</th>
+                <th style="width: 50%;">Description</th>
+                <th>Default</th>
+                <th class="text-nowrap">Gulp Mode</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><code>fileType</code></td>
+                <td><code>string</code></td>
+                <td>Files types that will be copied to the <code>./build/*</code> folder</td>
+                <td><code>""</code></td>
+                <td>build</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="my-0">
+
+        <div class="card-body">
+          <h5>config code</h5>
+          <pre class="rounded prism-light mb-4">
+            <code class="language-js" data-lang="js">
+              fileTypes: "jpg|png|svg|mp4|webm|ogv|json",
+            </code>
+          </pre>
+
+          <h5>Overview</h5>
+          <p>Since the Gulp Toolkit in <code>build</code> process able to <strong>automatically</strong> detect and prepare the asset files which are used in HTML pages, it should know which file types to be looked. If other file types are you used in HTML pages, the file types should be specified at <code>fileTypes</code> property.</p>
+        </div>
+      </div>
+      <!-- End File Types -->
+
+      <!-- Alert -->
+      <div class="alert alert-soft-dark" role="alert">
+        <div class="d-flex align-items-baseline">
+          <div class="flex-shrink-0">
+            <i class="bi-info-circle me-1"></i>
+          </div>
+
+          <div class="flex-grow-1 ms-2">As always, if things aren’t clear, we encourage you to reach us at <a class="link" href="https://htmlstream.com/contact-us" target="_blank">https://htmlstream.com/contact-us <i class="bi-box-arrow-up-right"></i></a> for clarification.</div>
+        </div>
+      </div>
+      <!-- End Alert -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": "2rem"
+         },
+         "show": {
+           "bottom": "2rem"
+         },
+         "hide": {
+           "bottom": "-2rem"
+         }
+       }
+     }'>
+    <i class="bi-chevron-up"></i>
+  </a>
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/js/vendor.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="../assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('../assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
+</body>
+
+<!-- Mirrored from htmlstream.com/preview/front-v4.2/html/documentation/gulp.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Aug 2022 18:19:38 GMT -->
+</html>

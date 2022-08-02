@@ -1,0 +1,2820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from htmlstream.com/preview/front-v4.2/html/documentation/step-forms.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Aug 2022 18:21:35 GMT -->
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Step Forms (Wizard) - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/css/vendor.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../assets/css/theme.minc619.css?v=1.0">
+  <link rel="stylesheet" href="../assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="navbar navbar-expand navbar-fixed navbar-end navbar-light navbar-sticky-lg-top bg-white">
+    <div class="container-fluid">
+      <nav class="navbar-nav-wrap">
+        <div class="row flex-grow-1">
+          <!-- Default Logo -->
+          <div class="docs-navbar-sidebar-container d-flex align-items-center mb-2 mb-lg-0">
+            <a class="navbar-brand" href="index.html" aria-label="Space">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a href="changelog.html">
+              <span class="badge bg-soft-primary text-primary">v4.2</span>
+            </a>
+          </div>
+          <!-- End Default Logo -->
+
+          <div class="col-md px-lg-0">
+            <div class="d-flex justify-content-between align-items-center px-lg-5 px-xl-10">
+              <div class="d-none d-md-block">
+                <!-- Search Form -->
+                <form id="docsSearch" class="position-relative" data-hs-list-options='{
+                       "searchMenu": true,
+                       "keyboard": true,
+                       "item": "searchTemplate",
+                       "valueNames": ["component", "category", {"name": "link", "attr": "href"}],
+                       "empty": "#searchNoResults"
+                     }'>
+                  <!-- Input Group -->
+                  <div class="input-group input-group-merge navbar-input-group">
+                    <div class="input-group-prepend input-group-text">
+                      <i class="bi-search"></i>
+                    </div>
+
+                    <input type="search" class="search form-control form-control-sm" placeholder="Search in docs" aria-label="Search in docs">
+
+                    <a class="input-group-append input-group-text" href="javascript:;">
+                      <i id="clearSearchResultsIcon" class="bi-x" style="display: none;"></i>
+                    </a>
+                  </div>
+                  <!-- End Input Group -->
+
+                  <!-- List -->
+                  <div class="list dropdown-menu navbar-dropdown-menu-borderless w-100 overflow-auto" style="max-height: 16rem;"></div>
+                  <!-- End List -->
+
+                  <!-- Empty -->
+                  <div id="searchNoResults" style="display: none;">
+                    <div class="text-center p-4">
+                      <img class="mb-3" src="../assets/svg/illustrations/oc-error.svg" alt="Image Description" style="width: 10rem;">
+                      <p class="mb-0">No Results</p>
+                    </div>
+                  </div>
+                  <!-- End Empty -->
+                </form>
+                <!-- End Search Form -->
+
+                <!-- List Item Template -->
+                <div class="d-none">
+                  <div id="searchTemplate" class="dropdown-item">
+                    <a class="d-block link" href="#">
+                      <span class="category d-block fw-normal text-muted mb-1"></span>
+                      <span class="component text-dark"></span>
+                    </a>
+                  </div>
+                </div>
+                <!-- End List Item Template -->
+              </div>
+
+              <!-- Navbar -->
+              <ul class="navbar-nav p-0">
+                <li class="nav-item">
+                  <a class="btn btn-ghost-secondary btn-sm" href="https://htmlstream.com/contact-us" target="_blank">
+                    Get Support <i class="bi-box-arrow-up-right ms-1"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-primary btn-sm" href="../index.html">
+                    <i class="bi-eye me-1"></i> Preview Demo
+                  </a>
+                </li>
+              </ul>
+              <!-- End Navbar -->
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </nav>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    <nav class="js-nav-scroller navbar navbar-expand-lg navbar-sidebar navbar-vertical navbar-light bg-white border-end" data-hs-nav-scroller-options='{
+            "type": "vertical",
+            "target": ".navbar-nav .active",
+            "offset": 80
+           }'>
+      <!-- Navbar Toggle -->
+      <button type="button" class="navbar-toggler btn btn-white d-grid w-100" data-bs-toggle="collapse" data-bs-target="#navbarVerticalNavMenu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarVerticalNavMenu">
+        <span class="d-flex justify-content-between align-items-center">
+          <span class="h3 mb-0">Nav menu</span>
+
+          <span class="navbar-toggler-default">
+            <i class="bi-list"></i>
+          </span>
+
+          <span class="navbar-toggler-toggled">
+            <i class="bi-x"></i>
+          </span>
+        </span>
+      </button>
+      <!-- End Navbar Toggle -->
+
+      <!-- Navbar Collapse -->
+      <div id="navbarVerticalNavMenu" class="collapse navbar-collapse">
+        <div class="navbar-brand-wrapper border-end" style="height: auto;">
+          <!-- Default Logo -->
+          <div class="d-flex align-items-center mb-3">
+            <a class="navbar-brand" href="index.html" aria-label="Space">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a class="navbar-brand-badge" href="changelog.html">
+              <span class="badge bg-soft-primary text-primary ms-2">v4.2</span>
+            </a>
+          </div>
+          <!-- End Default Logo -->
+
+          <!-- Nav -->
+          <ul class="nav nav-segment nav-fill nav-justified">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Docs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../snippets/index.html">Snippets</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+
+        <div class="docs-navbar-sidebar-aside-body navbar-sidebar-aside-body">
+          <ul id="navbarSettings" class="navbar-nav nav nav-vertical nav-tabs nav-tabs-borderless nav-sm">
+            <li class="nav-item">
+              <span class="nav-subtitle">Documentation</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Introduction</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Getting started</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="getting-started.html">Getting Started</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="gulp.html">Gulp</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="customization.html">Customization</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="credits.html">Credits</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="changelog.html">Changelog</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Design &amp; Graphics</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="bs-icons.html">Bootstrap Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="duotone-icons.html">Duotone Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="illustrations.html">Illustrations</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Components</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="accordion.html">Accordion</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="alerts.html">Alerts</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="avatars.html">Avatars</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="badge.html">Badge</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="breadcrumb.html">Breadcrumb</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="buttons.html">Buttons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="cards.html">Cards</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="collapse.html">Collapse</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="column-divider.html">Column Divider</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="devices.html">Devices</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="divider.html">Divider</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="dropdowns.html">Dropdowns</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="icons.html">Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="list-group.html">List Group</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="lists.html">Lists</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="legend-indicator.html">Legend Indicator</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="modal.html">Modal</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="offcanvas.html">Offcanvas</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="page-header.html">Page Header</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="pagination.html">Pagination</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="popovers.html">Popovers</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="progress.html">Progress</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="profile.html">Profile</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="shapes.html">Shapes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="spinners.html">Spinners</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="steps.html">Steps</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="tab.html">Tab</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="tables.html">Tables</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="text-highlight.html">Text Highlight</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toasts.html">Toasts</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="tooltips.html">Tooltips</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="typography.html">Typography</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Navbars</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="navbar.html">Navbar</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="navs.html">Navs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="mega-menu.html">Mega Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="scrollspy.html">Scrollspy</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Basic forms</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="basic-forms.html">Basic Forms</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="checks-and-switches.html">Checks &amp; Switches</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="input-group.html">Input Group</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Advanced Forms</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="select.html">Advanced Select</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="file-attachments.html">File Attachments</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="dropzone.html">Drag’ n’ Drop File Uploads</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="quill.html">WYSIWYG Editor</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="quantity-counter.html">Quantity Counter</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="input-mask.html">Input Mask</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="step-forms.html">Step Forms (Wizards)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="range-slider.html">Range Slider (noUiSlider)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="add-field.html">Add Field</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toggle-password.html">Toggle Password</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="count-characters.html">Count Characters</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toggle-switch.html">Toggle Switch</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toggle-state.html">Toggle State</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="switch.html">Switch</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Media</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="fslightbox.html">Fullscreen Lightbox</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="video-bg.html">Video Background</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="video-player.html">Video Player</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="swiper.html">Swiper</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Others</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="maps-leaflet.html">Maps (Leaflet)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="chartjs.html">Chart.js</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="circles.html">Circles.js (Pie Chart)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="sticky-block.html">Sticky Block</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="countdown.html">Countdown</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="sorting.html">Sorting (Shuffle.js)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="go-to.html">Go To</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="show-animation.html">Show Animation</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="typedjs.html">Typed.js</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Utilities</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="backgrounds.html">Backgrounds</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="borders.html">Borders</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="colors.html">Colors</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="links.html">Links</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="position.html">Position</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="rotations.html">Rotations</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="shadows.html">Shadows</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="sizing.html">Sizing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="spacing.html">Spacing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="z-index.html">Z-index</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Navbar Collapse -->
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Step Forms (Wizard)</h1>
+            <p class="docs-page-header-text">Create a multi-step form to get more leads and increase engagement.</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="how-to-use" class="hs-docs-heading">
+        How to use <a class="anchorjs-link" href="#how-to-use" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Copy-paste the following <code>&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing Plugins</u></em> to enable it.</p>
+
+      <pre class="rounded mb-4">
+        <code class="language-html" data-lang="html">
+          &lt;script src="./assets/vendor/hs-step-form/dist/hs-step-form.min.js"&gt;&lt;/script&gt;
+        </code>
+      </pre>
+
+      <pre class="rounded">
+        <code class="language-html" data-lang="html">
+          &lt;script&gt;
+            (function() {
+              // INITIALIZATION OF STEP FORM
+              // =======================================================
+              new HSStepForm('.js-step-form', {
+                finish ($el) {
+                  const $successMessageTempalte = $el.querySelector('.js-success-message').cloneNode(true)
+
+                  $successMessageTempalte.style.display = 'block'
+
+                  $el.style.display = 'none'
+                  $el.parentElement.appendChild($successMessageTempalte)
+                }
+              })
+            });
+          &lt;/script&gt;
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h2 id="basic-example" class="hs-docs-heading">
+        Basic example <a class="anchorjs-link" href="#basic-example" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <!-- Step Form -->
+            <form class="js-step-form" data-hs-step-form-options='{
+                    "progressSelector": "#basicStepFormProgress",
+                    "stepsSelector": "#basicStepFormContent",
+                    "endSelector": "#createProjectFinishBtn"
+                  }'>
+              <!-- Step -->
+              <ul id="basicStepFormProgress" class="js-step-progress step step-sm step-icon-sm step-inline step-item-between mb-7">
+                <li class="step-item">
+                  <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                      "targetSelector": "#basicStepDetails"
+                    }'>
+                    <span class="step-icon step-icon-soft-dark">1</span>
+                    <div class="step-content">
+                      <span class="step-title">Details</span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="step-item">
+                  <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                       "targetSelector": "#basicStepTerms"
+                     }'>
+                    <span class="step-icon step-icon-soft-dark">2</span>
+                    <div class="step-content">
+                      <span class="step-title">Terms</span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="step-item">
+                  <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                       "targetSelector": "#basicStepMembers"
+                     }'>
+                    <span class="step-icon step-icon-soft-dark">3</span>
+                    <div class="step-content">
+                      <span class="step-title">Members</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <!-- End Step -->
+
+              <!-- Content Step Form -->
+              <div id="basicStepFormContent">
+                <div id="basicStepDetails" class="active">
+                  <h4>Details content</h4>
+
+                  <p>...</p>
+
+                  <!-- Footer -->
+                  <div class="d-flex align-items-center">
+                    <div class="ms-auto">
+                      <button type="button" class="btn btn-primary" data-hs-step-form-next-options='{
+                                "targetSelector": "#basicStepTerms"
+                              }'>
+                        Next <i class="bi-chevron-right small"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- End Footer -->
+                </div>
+
+                <div id="basicStepTerms" style="display: none;">
+                  <h4>Terms content</h4>
+
+                  <p>...</p>
+
+                  <!-- Footer -->
+                  <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-ghost-secondary me-2" data-hs-step-form-prev-options='{
+                         "targetSelector": "#basicStepDetails"
+                       }'>
+                      <i class="bi-chevron-left small"></i> Previous step
+                    </button>
+
+                    <div class="ms-auto">
+                      <button type="button" class="btn btn-primary" data-hs-step-form-next-options='{
+                                "targetSelector": "#basicStepMembers"
+                              }'>
+                        Next <i class="bi-chevron-right small"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- End Footer -->
+                </div>
+
+                <div id="basicStepMembers" style="display: none;">
+                  <h4>Members content</h4>
+
+                  <p>...</p>
+
+                  <!-- Footer -->
+                  <div class="d-sm-flex align-items-center">
+                    <button type="button" class="btn btn-ghost-secondary mb-3 mb-sm-0 me-2" data-hs-step-form-prev-options='{
+                         "targetSelector": "#basicStepTerms"
+                       }'>
+                      <i class="bi-chevron-left small"></i> Previous step
+                    </button>
+
+                    <div class="d-flex justify-content-end ms-auto">
+                      <button type="button" class="btn btn-white me-2" data-dismiss="modal" aria-label="Close">Cancel</button>
+                      <button id="createProjectFinishBtn" type="button" class="btn btn-primary">Create project</button>
+                    </div>
+                  </div>
+                  <!-- End Footer -->
+                </div>
+              </div>
+              <!-- End Content Step Form -->
+
+              <!-- Message Body -->
+              <div id="basicStepSuccessMessage" class="js-success-message" style="display:none;">
+                <div class="text-center">
+                  <img class="img-fluid mb-3" src="../assets/svg/illustrations/oc-hi-five.svg" alt="Image Description" style="max-width: 15rem;">
+
+                  <div class="mb-4">
+                    <h2>Successful!</h2>
+                    <p>New project has been successfully created.</p>
+                  </div>
+
+                  <div class="d-flex justify-content-center gap-3">
+                    <a class="btn btn-white" href="#">
+                      <i class="bi-chevron-left small ms-1"></i> Back to projects
+                    </a>
+                    <a class="btn btn-primary" href="#">
+                      <i class="tio-city me-1"></i> Add new project
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Message Body -->
+            </form>
+            <!-- End Step Form -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Step Form --&gt;
+                &lt;form class="js-step-form"
+                      data-hs-step-form-options='{
+                        "progressSelector": "#basicStepFormProgress",
+                        "stepsSelector": "#basicStepFormContent",
+                        "endSelector": "#createProjectFinishBtn"
+                      }'&gt;
+                  &lt;!-- Step --&gt;
+                  &lt;ul id="basicStepFormProgress" class="js-step-progress step step-sm step-icon-sm step-inline step-item-between mb-7"&gt;
+                    &lt;li class="step-item"&gt;
+                      &lt;a class="step-content-wrapper" href="javascript:;"
+                         data-hs-step-form-next-options='{
+                          "targetSelector": "#basicStepDetails"
+                        }'&gt;
+                        &lt;span class="step-icon step-icon-soft-dark"&gt;1&lt;/span&gt;
+                        &lt;div class="step-content"&gt;
+                          &lt;span class="step-title"&gt;Details&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+
+                    &lt;li class="step-item"&gt;
+                      &lt;a class="step-content-wrapper" href="javascript:;"
+                         data-hs-step-form-next-options='{
+                           "targetSelector": "#basicStepTerms"
+                         }'&gt;
+                        &lt;span class="step-icon step-icon-soft-dark"&gt;2&lt;/span&gt;
+                        &lt;div class="step-content"&gt;
+                          &lt;span class="step-title"&gt;Terms&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+
+                    &lt;li class="step-item"&gt;
+                      &lt;a class="step-content-wrapper" href="javascript:;"
+                         data-hs-step-form-next-options='{
+                           "targetSelector": "#basicStepMembers"
+                         }'&gt;
+                        &lt;span class="step-icon step-icon-soft-dark"&gt;3&lt;/span&gt;
+                        &lt;div class="step-content"&gt;
+                          &lt;span class="step-title"&gt;Members&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;!-- End Step --&gt;
+
+                  &lt;!-- Content Step Form --&gt;
+                  &lt;div id="basicStepFormContent"&gt;
+                    &lt;div id="basicStepDetails" class="active"&gt;
+                      &lt;h4&gt;Details content&lt;/h4&gt;
+
+                      &lt;p&gt;...&lt;/p&gt;
+
+                      &lt;!-- Footer --&gt;
+                      &lt;div class="d-flex align-items-center"&gt;
+                        &lt;div class="ms-auto"&gt;
+                          &lt;button type="button" class="btn btn-primary"
+                                  data-hs-step-form-next-options='{
+                                    "targetSelector": "#basicStepTerms"
+                                  }'&gt;
+                            Next &lt;i class="bi-chevron-right small"&gt;&lt;/i&gt;
+                          &lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Footer --&gt;
+                    &lt;/div&gt;
+
+                    &lt;div id="basicStepTerms" style="display: none;"&gt;
+                      &lt;h4&gt;Terms content&lt;/h4&gt;
+
+                      &lt;p&gt;...&lt;/p&gt;
+
+                      &lt;!-- Footer --&gt;
+                      &lt;div class="d-flex align-items-center"&gt;
+                        &lt;button type="button" class="btn btn-ghost-secondary me-2"
+                           data-hs-step-form-prev-options='{
+                             "targetSelector": "#basicStepDetails"
+                           }'&gt;
+                          &lt;i class="bi-chevron-left small"&gt;&lt;/i&gt; Previous step
+                        &lt;/button&gt;
+
+                        &lt;div class="ms-auto"&gt;
+                          &lt;button type="button" class="btn btn-primary"
+                                  data-hs-step-form-next-options='{
+                                    "targetSelector": "#basicStepMembers"
+                                  }'&gt;
+                            Next &lt;i class="bi-chevron-right small"&gt;&lt;/i&gt;
+                          &lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Footer --&gt;
+                    &lt;/div&gt;
+
+                    &lt;div id="basicStepMembers" style="display: none;"&gt;
+                      &lt;h4&gt;Members content&lt;/h4&gt;
+
+                      &lt;p&gt;...&lt;/p&gt;
+
+                      &lt;!-- Footer --&gt;
+                      &lt;div class="d-sm-flex align-items-center"&gt;
+                        &lt;button type="button" class="btn btn-ghost-secondary mb-3 mb-sm-0 me-2"
+                           data-hs-step-form-prev-options='{
+                             "targetSelector": "#basicStepTerms"
+                           }'&gt;
+                          &lt;i class="bi-chevron-left small"&gt;&lt;/i&gt; Previous step
+                        &lt;/button&gt;
+
+                        &lt;div class="d-flex justify-content-end ms-auto"&gt;
+                          &lt;button type="button" class="btn btn-white me-2" data-dismiss="modal" aria-label="Close"&gt;Cancel&lt;/button&gt;
+                          &lt;button id="createProjectFinishBtn" type="button" class="btn btn-primary"&gt;Create project&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Footer --&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Content Step Form --&gt;
+
+                  &lt;!-- Message Body --&gt;
+                  &lt;div id="basicStepSuccessMessage" class="js-success-message" style="display:none;"&gt;
+                    &lt;div class="text-center"&gt;
+                      &lt;img class="img-fluid mb-3" src="../assets/svg/illustrations/oc-hi-five.svg" alt="Image Description" style="max-width: 15rem;"&gt;
+
+                      &lt;div class="mb-4"&gt;
+                        &lt;h2&gt;Successful!&lt;/h2&gt;
+                        &lt;p&gt;New project has been successfully created.&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;div class="d-flex justify-content-center gap-3"&gt;
+                        &lt;a class="btn btn-white" href="#"&gt;
+                          &lt;i class="bi-chevron-left small ms-1"&gt;&lt;/i&gt; Back to projects
+                        &lt;/a&gt;
+                        &lt;a class="btn btn-primary" href="#"&gt;
+                          &lt;i class="tio-city me-1"&gt;&lt;/i&gt; Add new project
+                        &lt;/a&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Message Body --&gt;
+                &lt;/form&gt;
+                &lt;!-- End Step Form --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="vertical-steps" class="hs-docs-heading">
+        Vertical steps <a class="anchorjs-link" href="#vertical-steps" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <!-- Step Form -->
+            <form class="js-step-form" data-hs-step-form-options='{
+                    "progressSelector": "#basicVerStepFormProgress",
+                    "stepsSelector": "#basicVerStepFormContent",
+                    "endSelector": "#basicVerStepFinishBtn"
+                  }'>
+              <div class="row">
+                <div class="col-lg-3">
+                  <!-- Step -->
+                  <ul id="basicVerStepFormProgress" class="js-step-progress step step-icon-sm mb-7">
+                    <li class="step-item">
+                      <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                          "targetSelector": "#basicVerStepDetails"
+                        }'>
+                        <span class="step-icon step-icon-soft-dark">1</span>
+                        <div class="step-content pb-5">
+                          <span class="step-title">Details</span>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="step-item">
+                      <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                           "targetSelector": "#basicVerStepTerms"
+                         }'>
+                        <span class="step-icon step-icon-soft-dark">2</span>
+                        <div class="step-content pb-5">
+                          <span class="step-title">Terms</span>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li class="step-item">
+                      <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                           "targetSelector": "#basicVerStepMembers"
+                         }'>
+                        <span class="step-icon step-icon-soft-dark">3</span>
+                        <div class="step-content pb-5">
+                          <span class="step-title">Members</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- End Step -->
+                </div>
+
+                <div class="col-lg-9">
+                  <!-- Content Step Form -->
+                  <div id="basicVerStepFormContent">
+                    <div id="basicVerStepDetails" class="card card-body active" style="min-height: 15rem;">
+                      <h4>Details content</h4>
+
+                      <p>...</p>
+
+                      <!-- Footer -->
+                      <div class="d-flex align-items-center mt-auto">
+                        <div class="ms-auto">
+                          <button type="button" class="btn btn-primary" data-hs-step-form-next-options='{
+                                    "targetSelector": "#basicVerStepTerms"
+                                  }'>
+                            Next <i class="bi-chevron-right small"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- End Footer -->
+                    </div>
+
+                    <div id="basicVerStepTerms" class="card card-body" style="display: none; min-height: 15rem;">
+                      <h4>Terms content</h4>
+
+                      <p>...</p>
+
+                      <!-- Footer -->
+                      <div class="d-flex align-items-center mt-auto">
+                        <button type="button" class="btn btn-ghost-secondary me-2" data-hs-step-form-prev-options='{
+                             "targetSelector": "#basicVerStepDetails"
+                           }'>
+                          <i class="bi-chevron-left small"></i> Previous step
+                        </button>
+
+                        <div class="ms-auto">
+                          <button type="button" class="btn btn-primary" data-hs-step-form-next-options='{
+                                    "targetSelector": "#basicVerStepMembers"
+                                  }'>
+                            Next <i class="bi-chevron-right small"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- End Footer -->
+                    </div>
+
+                    <div id="basicVerStepMembers" class="card card-body" style="display: none; min-height: 15rem;">
+                      <h4>Members content</h4>
+
+                      <p>...</p>
+
+                      <!-- Footer -->
+                      <div class="d-sm-flex align-items-center mt-auto">
+                        <button type="button" class="btn btn-ghost-secondary mb-3 mb-sm-0 me-2" data-hs-step-form-prev-options='{
+                             "targetSelector": "#basicVerStepTerms"
+                           }'>
+                          <i class="bi-chevron-left small"></i> Previous step
+                        </button>
+
+                        <div class="d-flex justify-content-end ms-auto">
+                          <button type="button" class="btn btn-white me-2" data-dismiss="modal" aria-label="Close">Cancel</button>
+                          <button id="basicVerStepFinishBtn" type="button" class="btn btn-primary">Create project</button>
+                        </div>
+                      </div>
+                      <!-- End Footer -->
+                    </div>
+                  </div>
+                  <!-- End Content Step Form -->
+                </div>
+              </div>
+              <!-- End Row -->
+
+              <!-- Message Body -->
+              <div id="basicVerStepSuccessMessage" class="js-success-message" style="display:none;">
+                <div class="text-center">
+                  <img class="img-fluid mb-3" src="../assets/svg/illustrations/oc-hi-five.svg" alt="Image Description" style="max-width: 15rem;">
+
+                  <div class="mb-4">
+                    <h2>Successful!</h2>
+                    <p>New project has been successfully created.</p>
+                  </div>
+
+                  <div class="d-flex justify-content-center">
+                    <a class="btn btn-white me-3" href="#">
+                      <i class="bi-chevron-left small ms-1"></i> Back to projects
+                    </a>
+                    <a class="btn btn-primary" href="#">
+                      <i class="tio-city me-1"></i> Add new project
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Message Body -->
+            </form>
+            <!-- End Step Form -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Step Form --&gt;
+                &lt;form class="js-step-form"
+                      data-hs-step-form-options='{
+                        "progressSelector": "#basicVerStepFormProgress",
+                        "stepsSelector": "#basicVerStepFormContent",
+                        "endSelector": "#basicVerStepFinishBtn"
+                      }'&gt;
+                  &lt;div class="row"&gt;
+                    &lt;div class="col-lg-3"&gt;
+                      &lt;!-- Step --&gt;
+                      &lt;ul id="basicVerStepFormProgress" class="js-step-progress step step-icon-sm mb-7"&gt;
+                        &lt;li class="step-item"&gt;
+                          &lt;a class="step-content-wrapper" href="javascript:;"
+                             data-hs-step-form-next-options='{
+                              "targetSelector": "#basicVerStepDetails"
+                            }'&gt;
+                            &lt;span class="step-icon step-icon-soft-dark"&gt;1&lt;/span&gt;
+                            &lt;div class="step-content pb-5"&gt;
+                              &lt;span class="step-title"&gt;Details&lt;/span&gt;
+                            &lt;/div&gt;
+                          &lt;/a&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;a class="step-content-wrapper" href="javascript:;"
+                             data-hs-step-form-next-options='{
+                               "targetSelector": "#basicVerStepTerms"
+                             }'&gt;
+                            &lt;span class="step-icon step-icon-soft-dark"&gt;2&lt;/span&gt;
+                            &lt;div class="step-content pb-5"&gt;
+                              &lt;span class="step-title"&gt;Terms&lt;/span&gt;
+                            &lt;/div&gt;
+                          &lt;/a&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="step-item"&gt;
+                          &lt;a class="step-content-wrapper" href="javascript:;"
+                             data-hs-step-form-next-options='{
+                               "targetSelector": "#basicVerStepMembers"
+                             }'&gt;
+                            &lt;span class="step-icon step-icon-soft-dark"&gt;3&lt;/span&gt;
+                            &lt;div class="step-content pb-5"&gt;
+                              &lt;span class="step-title"&gt;Members&lt;/span&gt;
+                            &lt;/div&gt;
+                          &lt;/a&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Step --&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="col-lg-9"&gt;
+                      &lt;!-- Content Step Form --&gt;
+                      &lt;div id="basicVerStepFormContent"&gt;
+                        &lt;div id="basicVerStepDetails" class="card card-body active" style="min-height: 15rem;"&gt;
+                          &lt;h4&gt;Details content&lt;/h4&gt;
+
+                          &lt;p&gt;...&lt;/p&gt;
+
+                          &lt;!-- Footer --&gt;
+                          &lt;div class="d-flex align-items-center mt-auto"&gt;
+                            &lt;div class="ms-auto"&gt;
+                              &lt;button type="button" class="btn btn-primary"
+                                      data-hs-step-form-next-options='{
+                                        "targetSelector": "#basicVerStepTerms"
+                                      }'&gt;
+                                Next &lt;i class="bi-chevron-right small"&gt;&lt;/i&gt;
+                              &lt;/button&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Footer --&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="basicVerStepTerms" class="card card-body" style="display: none; min-height: 15rem;"&gt;
+                          &lt;h4&gt;Terms content&lt;/h4&gt;
+
+                          &lt;p&gt;...&lt;/p&gt;
+
+                          &lt;!-- Footer --&gt;
+                          &lt;div class="d-flex align-items-center mt-auto"&gt;
+                            &lt;button type="button" class="btn btn-ghost-secondary me-2"
+                               data-hs-step-form-prev-options='{
+                                 "targetSelector": "#basicVerStepDetails"
+                               }'&gt;
+                              &lt;i class="bi-chevron-left small"&gt;&lt;/i&gt; Previous step
+                            &lt;/button&gt;
+
+                            &lt;div class="ms-auto"&gt;
+                              &lt;button type="button" class="btn btn-primary"
+                                      data-hs-step-form-next-options='{
+                                        "targetSelector": "#basicVerStepMembers"
+                                      }'&gt;
+                                Next &lt;i class="bi-chevron-right small"&gt;&lt;/i&gt;
+                              &lt;/button&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Footer --&gt;
+                        &lt;/div&gt;
+
+                        &lt;div id="basicVerStepMembers" class="card card-body" style="display: none; min-height: 15rem;"&gt;
+                          &lt;h4&gt;Members content&lt;/h4&gt;
+
+                          &lt;p&gt;...&lt;/p&gt;
+
+                          &lt;!-- Footer --&gt;
+                          &lt;div class="d-sm-flex align-items-center mt-auto"&gt;
+                            &lt;button type="button" class="btn btn-ghost-secondary mb-3 mb-sm-0 me-2"
+                               data-hs-step-form-prev-options='{
+                                 "targetSelector": "#basicVerStepTerms"
+                               }'&gt;
+                              &lt;i class="bi-chevron-left small"&gt;&lt;/i&gt; Previous step
+                            &lt;/button&gt;
+
+                            &lt;div class="d-flex justify-content-end ms-auto"&gt;
+                              &lt;button type="button" class="btn btn-white me-2" data-dismiss="modal" aria-label="Close"&gt;Cancel&lt;/button&gt;
+                              &lt;button id="basicVerStepFinishBtn" type="button" class="btn btn-primary"&gt;Create project&lt;/button&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Footer --&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Content Step Form --&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Row --&gt;
+
+                  &lt;!-- Message Body --&gt;
+                  &lt;div id="basicVerStepSuccessMessage" class="js-success-message" style="display:none;"&gt;
+                    &lt;div class="text-center"&gt;
+                      &lt;img class="img-fluid mb-3" src="../assets/svg/illustrations/oc-hi-five.svg" alt="Image Description" style="max-width: 15rem;"&gt;
+
+                      &lt;div class="mb-4"&gt;
+                        &lt;h2&gt;Successful!&lt;/h2&gt;
+                        &lt;p&gt;New project has been successfully created.&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;div class="d-flex justify-content-center"&gt;
+                        &lt;a class="btn btn-white me-3" href="#"&gt;
+                          &lt;i class="bi-chevron-left small ms-1"&gt;&lt;/i&gt; Back to projects
+                        &lt;/a&gt;
+                        &lt;a class="btn btn-primary" href="#"&gt;
+                          &lt;i class="tio-city me-1"&gt;&lt;/i&gt; Add new project
+                        &lt;/a&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Message Body --&gt;
+                &lt;/form&gt;
+                &lt;!-- End Step Form --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="basic-form-example" class="hs-docs-heading">
+        Basic form example <a class="anchorjs-link" href="#basic-form-example" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab3" href="#nav-result3" data-bs-toggle="pill" data-bs-target="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab3" href="#nav-html3" data-bs-toggle="pill" data-bs-target="#nav-html3" role="tab" aria-controls="nav-html3" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent3">
+          <div class="tab-pane fade p-4 show active" id="nav-result3" role="tabpanel" aria-labelledby="nav-resultTab3">
+            <!-- Step Form -->
+            <form class="js-step-form" data-hs-step-form-options='{
+                    "progressSelector": "#basicFormProgress",
+                    "stepsSelector": "#basicFormContent",
+                    "endSelector": "#basicFormFinishBtn"
+                  }'>
+              <!-- Step -->
+              <ul id="basicFormProgress" class="js-step-progress step step-sm step-icon-sm step-inline step-item-between mb-7">
+                <li class="step-item">
+                  <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                      "targetSelector": "#basicFormAccount"
+                    }'>
+                    <span class="step-icon step-icon-soft-dark">1</span>
+                    <div class="step-content">
+                      <span class="step-title">Account</span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="step-item">
+                  <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                       "targetSelector": "#basicFormProfile"
+                     }'>
+                    <span class="step-icon step-icon-soft-dark">2</span>
+                    <div class="step-content">
+                      <span class="step-title">Profile</span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="step-item">
+                  <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                       "targetSelector": "#basicFormAddress"
+                     }'>
+                    <span class="step-icon step-icon-soft-dark">3</span>
+                    <div class="step-content">
+                      <span class="step-title">Address</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <!-- End Step -->
+
+              <!-- Content Step Form -->
+              <div id="basicFormContent">
+                <div id="basicFormAccount" class="active">
+                  <!-- Form Group -->
+                  <div class="row mb-4">
+                    <label for="currentPasswordLabel" class="col-sm-3 col-form-label form-label">Username</label>
+
+                    <div class="col-sm-9">
+                      <input type="password" class="form-control" name="username" id="usernameLabel" placeholder="Username" aria-label="Username">
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Form Group -->
+                  <div class="row mb-4">
+                    <label for="currentPasswordLabel" class="col-sm-3 col-form-label form-label">New password</label>
+
+                    <div class="col-sm-9">
+                      <input type="password" class="form-control" name="newPassword" id="newPasswordLabel" placeholder="New password" aria-label="New password">
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Form Group -->
+                  <div class="row mb-4">
+                    <label for="currentPasswordLabel" class="col-sm-3 col-form-label form-label">Current password</label>
+
+                    <div class="col-sm-9">
+                      <input type="password" class="form-control" name="currentPassword" id="currentPasswordLabel" placeholder="Current password" aria-label="Current password">
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Footer -->
+                  <div class="d-flex align-items-center">
+                    <div class="ms-auto">
+                      <button type="button" class="btn btn-primary" data-hs-step-form-next-options='{
+                                "targetSelector": "#basicFormProfile"
+                              }'>
+                        Next <i class="bi-chevron-right small"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- End Footer -->
+                </div>
+
+                <div id="basicFormProfile" style="display: none;">
+                  <!-- Form Group -->
+                  <div class="row mb-4">
+                    <label for="currentPasswordLabel" class="col-sm-3 col-form-label form-label">First name</label>
+
+                    <div class="col-sm-9">
+                      <input type="password" class="form-control" name="firstName" id="firstNameLabel" placeholder="First name" aria-label="First name">
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Form Group -->
+                  <div class="row mb-4">
+                    <label for="currentPasswordLabel" class="col-sm-3 col-form-label form-label">Last name</label>
+
+                    <div class="col-sm-9">
+                      <input type="password" class="form-control" name="lastName" id="lastNameLabel" placeholder="Last name" aria-label="Last name">
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Form Group -->
+                  <div class="row mb-4">
+                    <label for="currentPasswordLabel" class="col-sm-3 col-form-label form-label">Email</label>
+
+                    <div class="col-sm-9">
+                      <input type="password" class="form-control" name="email" id="emailLabel" placeholder="Email address" aria-label="Email address">
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Footer -->
+                  <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-ghost-secondary me-2" data-hs-step-form-prev-options='{
+                         "targetSelector": "#basicFormAccount"
+                       }'>
+                      <i class="bi-chevron-left small"></i> Previous step
+                    </button>
+
+                    <div class="ms-auto">
+                      <button type="button" class="btn btn-primary" data-hs-step-form-next-options='{
+                                "targetSelector": "#basicFormAddress"
+                              }'>
+                        Next <i class="bi-chevron-right small"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- End Footer -->
+                </div>
+
+                <div id="basicFormAddress" style="display: none;">
+                  <!-- Form Group -->
+                  <div class="row mb-4">
+                    <label for="currentPasswordLabel" class="col-sm-3 col-form-label form-label">Address 1</label>
+
+                    <div class="col-sm-9">
+                      <input type="password" class="form-control" name="address1" id="address1Label" placeholder="Address 1" aria-label="Address 1">
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Form Group -->
+                  <div class="row mb-4">
+                    <label for="currentPasswordLabel" class="col-sm-3 col-form-label form-label">Address 2 <span class="form-label-secondary">(Optional)</span></label>
+
+                    <div class="col-sm-9">
+                      <input type="password" class="form-control" name="address2" id="address2Label" placeholder="Address 2" aria-label="Address 2">
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Footer -->
+                  <div class="d-sm-flex align-items-center">
+                    <button type="button" class="btn btn-ghost-secondary mb-3 mb-sm-0 me-2" data-hs-step-form-prev-options='{
+                         "targetSelector": "#basicFormProfile"
+                       }'>
+                      <i class="bi-chevron-left small"></i> Previous step
+                    </button>
+
+                    <div class="d-flex justify-content-end ms-auto">
+                      <button type="button" class="btn btn-white me-2" data-dismiss="modal" aria-label="Close">Cancel</button>
+                      <button id="basicFormFinishBtn" type="button" class="btn btn-primary">Save Changes</button>
+                    </div>
+                  </div>
+                  <!-- End Footer -->
+                </div>
+              </div>
+              <!-- End Content Step Form -->
+
+              <!-- Message Body -->
+              <div id="basicFormSuccessMessage" class="js-success-message" style="display:none;">
+                <div class="text-center">
+                  <img class="img-fluid mb-3" src="../assets/svg/illustrations/oc-hi-five.svg" alt="Image Description" style="max-width: 15rem;">
+
+                  <div class="mb-4">
+                    <h2>Successful!</h2>
+                    <p>Your changes have been successfully saved.</p>
+                  </div>
+
+                  <div class="d-flex justify-content-center">
+                    <a class="btn btn-white me-3" href="#">
+                      <i class="bi-chevron-left small ms-1"></i> Back to projects
+                    </a>
+                    <a class="btn btn-primary" href="#">
+                      <i class="tio-city me-1"></i> Add new project
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Message Body -->
+            </form>
+            <!-- End Step Form -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html3" role="tabpanel" aria-labelledby="nav-htmlTab3">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Step Form --&gt;
+                &lt;form class="js-step-form"
+                      data-hs-step-form-options='{
+                        "progressSelector": "#basicFormProgress",
+                        "stepsSelector": "#basicFormContent",
+                        "endSelector": "#basicFormFinishBtn"
+                      }'&gt;
+                  &lt;!-- Step --&gt;
+                  &lt;ul id="basicFormProgress" class="js-step-progress step step-sm step-icon-sm step-inline step-item-between mb-7"&gt;
+                    &lt;li class="step-item"&gt;
+                      &lt;a class="step-content-wrapper" href="javascript:;"
+                         data-hs-step-form-next-options='{
+                          "targetSelector": "#basicFormAccount"
+                        }'&gt;
+                        &lt;span class="step-icon step-icon-soft-dark"&gt;1&lt;/span&gt;
+                        &lt;div class="step-content"&gt;
+                          &lt;span class="step-title"&gt;Account&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+
+                    &lt;li class="step-item"&gt;
+                      &lt;a class="step-content-wrapper" href="javascript:;"
+                         data-hs-step-form-next-options='{
+                           "targetSelector": "#basicFormProfile"
+                         }'&gt;
+                        &lt;span class="step-icon step-icon-soft-dark"&gt;2&lt;/span&gt;
+                        &lt;div class="step-content"&gt;
+                          &lt;span class="step-title"&gt;Profile&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+
+                    &lt;li class="step-item"&gt;
+                      &lt;a class="step-content-wrapper" href="javascript:;"
+                         data-hs-step-form-next-options='{
+                           "targetSelector": "#basicFormAddress"
+                         }'&gt;
+                        &lt;span class="step-icon step-icon-soft-dark"&gt;3&lt;/span&gt;
+                        &lt;div class="step-content"&gt;
+                          &lt;span class="step-title"&gt;Address&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;!-- End Step --&gt;
+
+                  &lt;!-- Content Step Form --&gt;
+                  &lt;div id="basicFormContent"&gt;
+                    &lt;div id="basicFormAccount" class="active"&gt;
+                      &lt;!-- Form Group --&gt;
+                      &lt;div class="row mb-4"&gt;
+                        &lt;label for="currentPasswordLabel" class="col-sm-3 col-form-label form-label"&gt;Username&lt;/label&gt;
+
+                        &lt;div class="col-sm-9"&gt;
+                          &lt;input type="password" class="form-control" name="username" id="usernameLabel" placeholder="Username" aria-label="Username"&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Form Group --&gt;
+
+                      &lt;!-- Form Group --&gt;
+                      &lt;div class="row mb-4"&gt;
+                        &lt;label for="currentPasswordLabel" class="col-sm-3 col-form-label form-label"&gt;New password&lt;/label&gt;
+
+                        &lt;div class="col-sm-9"&gt;
+                          &lt;input type="password" class="form-control" name="newPassword" id="newPasswordLabel" placeholder="New password" aria-label="New password"&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Form Group --&gt;
+
+                      &lt;!-- Form Group --&gt;
+                      &lt;div class="row mb-4"&gt;
+                        &lt;label for="currentPasswordLabel" class="col-sm-3 col-form-label form-label"&gt;Current password&lt;/label&gt;
+
+                        &lt;div class="col-sm-9"&gt;
+                          &lt;input type="password" class="form-control" name="currentPassword" id="currentPasswordLabel" placeholder="Current password" aria-label="Current password"&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Form Group --&gt;
+
+                      &lt;!-- Footer --&gt;
+                      &lt;div class="d-flex align-items-center"&gt;
+                        &lt;div class="ms-auto"&gt;
+                          &lt;button type="button" class="btn btn-primary"
+                                  data-hs-step-form-next-options='{
+                                    "targetSelector": "#basicFormProfile"
+                                  }'&gt;
+                            Next &lt;i class="bi-chevron-right small"&gt;&lt;/i&gt;
+                          &lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Footer --&gt;
+                    &lt;/div&gt;
+
+                    &lt;div id="basicFormProfile" style="display: none;"&gt;
+                      &lt;!-- Form Group --&gt;
+                      &lt;div class="row mb-4"&gt;
+                        &lt;label for="currentPasswordLabel" class="col-sm-3 col-form-label form-label"&gt;First name&lt;/label&gt;
+
+                        &lt;div class="col-sm-9"&gt;
+                          &lt;input type="password" class="form-control" name="firstName" id="firstNameLabel" placeholder="First name" aria-label="First name"&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Form Group --&gt;
+
+                      &lt;!-- Form Group --&gt;
+                      &lt;div class="row mb-4"&gt;
+                        &lt;label for="currentPasswordLabel" class="col-sm-3 col-form-label form-label"&gt;Last name&lt;/label&gt;
+
+                        &lt;div class="col-sm-9"&gt;
+                          &lt;input type="password" class="form-control" name="lastName" id="lastNameLabel" placeholder="Last name" aria-label="Last name"&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Form Group --&gt;
+
+                      &lt;!-- Form Group --&gt;
+                      &lt;div class="row mb-4"&gt;
+                        &lt;label for="currentPasswordLabel" class="col-sm-3 col-form-label form-label"&gt;Email&lt;/label&gt;
+
+                        &lt;div class="col-sm-9"&gt;
+                          &lt;input type="password" class="form-control" name="email" id="emailLabel" placeholder="Email address" aria-label="Email address"&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Form Group --&gt;
+
+                      &lt;!-- Footer --&gt;
+                      &lt;div class="d-flex align-items-center"&gt;
+                        &lt;button type="button" class="btn btn-ghost-secondary me-2"
+                           data-hs-step-form-prev-options='{
+                             "targetSelector": "#basicFormAccount"
+                           }'&gt;
+                          &lt;i class="bi-chevron-left small"&gt;&lt;/i&gt; Previous step
+                        &lt;/button&gt;
+
+                        &lt;div class="ms-auto"&gt;
+                          &lt;button type="button" class="btn btn-primary"
+                                  data-hs-step-form-next-options='{
+                                    "targetSelector": "#basicFormAddress"
+                                  }'&gt;
+                            Next &lt;i class="bi-chevron-right small"&gt;&lt;/i&gt;
+                          &lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Footer --&gt;
+                    &lt;/div&gt;
+
+                    &lt;div id="basicFormAddress" style="display: none;"&gt;
+                      &lt;!-- Form Group --&gt;
+                      &lt;div class="row mb-4"&gt;
+                        &lt;label for="currentPasswordLabel" class="col-sm-3 col-form-label form-label"&gt;Address 1&lt;/label&gt;
+
+                        &lt;div class="col-sm-9"&gt;
+                          &lt;input type="password" class="form-control" name="address1" id="address1Label" placeholder="Address 1" aria-label="Address 1"&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Form Group --&gt;
+
+                      &lt;!-- Form Group --&gt;
+                      &lt;div class="row mb-4"&gt;
+                        &lt;label for="currentPasswordLabel" class="col-sm-3 col-form-label form-label"&gt;Address 2 &lt;span class="form-label-secondary"&gt;(Optional)&lt;/span&gt;&lt;/label&gt;
+
+                        &lt;div class="col-sm-9"&gt;
+                          &lt;input type="password" class="form-control" name="address2" id="address2Label" placeholder="Address 2" aria-label="Address 2"&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Form Group --&gt;
+
+                      &lt;!-- Footer --&gt;
+                      &lt;div class="d-sm-flex align-items-center"&gt;
+                        &lt;button type="button" class="btn btn-ghost-secondary mb-3 mb-sm-0 me-2"
+                           data-hs-step-form-prev-options='{
+                             "targetSelector": "#basicFormProfile"
+                           }'&gt;
+                          &lt;i class="bi-chevron-left small"&gt;&lt;/i&gt; Previous step
+                        &lt;/button&gt;
+
+                        &lt;div class="d-flex justify-content-end ms-auto"&gt;
+                          &lt;button type="button" class="btn btn-white me-2" data-dismiss="modal" aria-label="Close"&gt;Cancel&lt;/button&gt;
+                          &lt;button id="basicFormFinishBtn" type="button" class="btn btn-primary"&gt;Save Changes&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Footer --&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Content Step Form --&gt;
+
+                  &lt;!-- Message Body --&gt;
+                  &lt;div id="basicFormSuccessMessage" class="js-success-message" style="display:none;"&gt;
+                    &lt;div class="text-center"&gt;
+                      &lt;img class="img-fluid mb-3" src="../assets/svg/illustrations/oc-hi-five.svg" alt="Image Description" style="max-width: 15rem;"&gt;
+
+                      &lt;div class="mb-4"&gt;
+                        &lt;h2&gt;Successful!&lt;/h2&gt;
+                        &lt;p&gt;Your changes have been successfully saved.&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;div class="d-flex justify-content-center"&gt;
+                        &lt;a class="btn btn-white me-3" href="#"&gt;
+                          &lt;i class="bi-chevron-left small ms-1"&gt;&lt;/i&gt; Back to projects
+                        &lt;/a&gt;
+                        &lt;a class="btn btn-primary" href="#"&gt;
+                          &lt;i class="tio-city me-1"&gt;&lt;/i&gt; Add new project
+                        &lt;/a&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Message Body --&gt;
+                &lt;/form&gt;
+                &lt;!-- End Step Form --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="validation-form" class="hs-docs-heading">
+        Validation form <a class="anchorjs-link" href="#validation-form" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab4" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab4" href="#nav-result4" data-bs-toggle="pill" data-bs-target="#nav-result4" role="tab" aria-controls="nav-result4" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab4" href="#nav-html4" data-bs-toggle="pill" data-bs-target="#nav-html4" role="tab" aria-controls="nav-html4" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab4" href="#nav-js4" data-bs-toggle="pill" data-bs-target="#nav-js4" role="tab" aria-controls="nav-js4" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent4">
+          <div class="tab-pane fade p-4 show active" id="nav-result4" role="tabpanel" aria-labelledby="nav-resultTab4">
+            <!-- Step Form -->
+            <form class="js-step-form-validate js-validate" data-hs-step-form-options='{
+                    "progressSelector": "#validationFormProgress",
+                    "stepsSelector": "#validationFormContent",
+                    "endSelector": "#validationFormFinishBtn",
+                    "isValidate": true
+                  }'>
+              <!-- Step -->
+              <ul id="validationFormProgress" class="js-step-progress step step-sm step-icon-sm step-inline step-item-between mb-7">
+                <li class="step-item">
+                  <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                      "targetSelector": "#validationFormAccount"
+                    }'>
+                    <span class="step-icon step-icon-soft-dark">1</span>
+                    <div class="step-content">
+                      <span class="step-title">Account</span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="step-item">
+                  <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                       "targetSelector": "#validationFormProfile"
+                     }'>
+                    <span class="step-icon step-icon-soft-dark">2</span>
+                    <div class="step-content">
+                      <span class="step-title">Profile</span>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="step-item">
+                  <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                       "targetSelector": "#validationFormAddress"
+                     }'>
+                    <span class="step-icon step-icon-soft-dark">3</span>
+                    <div class="step-content">
+                      <span class="step-title">Address</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <!-- End Step -->
+
+              <!-- Content Step Form -->
+              <div id="validationFormContent">
+                <div id="validationFormAccount" class="active">
+                  <!-- Form Group -->
+                  <div class="row mb-4">
+                    <label for="validationFormUsernameLabel" class="col-sm-3 col-form-label form-label">Username</label>
+
+                    <div class="col-sm-9">
+                      <div class="js-form-message">
+                        <input type="password" class="form-control" name="username" id="validationFormUsernameLabel" placeholder="Username" aria-label="Username" required data-msg="Please enter your username.">
+                        <span class="invalid-feedback">Please enter a valid username.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Form Group -->
+                  <div class="row mb-4">
+                    <label for="validationFormNewPasswordLabel" class="col-sm-3 col-form-label form-label">New password</label>
+
+                    <div class="col-sm-9">
+                      <div class="js-form-message">
+                        <input type="password" class="form-control" name="newPassword" id="validationFormNewPasswordLabel" placeholder="New password" aria-label="New password" required data-msg="Your password is invalid. Please try again.">
+                        <span class="invalid-feedback">Please enter a valid password.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Form Group -->
+                  <div class="row mb-4">
+                    <label for="validationFormCurrentPasswordLabel" class="col-sm-3 col-form-label form-label">Current password</label>
+
+                    <div class="col-sm-9">
+                      <div class="js-form-message">
+                        <input type="password" class="form-control" name="currentPassword" id="validationFormCurrentPasswordLabel" placeholder="Current password" aria-label="Current password" required data-msg="Password does not match the confirm password.">
+                        <span class="invalid-feedback">Please enter a valid current password.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Footer -->
+                  <div class="d-flex align-items-center">
+                    <div class="ms-auto">
+                      <button type="button" class="btn btn-primary" data-hs-step-form-next-options='{
+                                "targetSelector": "#validationFormProfile"
+                              }'>
+                        Next <i class="bi-chevron-right small"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- End Footer -->
+                </div>
+
+                <div id="validationFormProfile" style="display: none;">
+                  <!-- Form Group -->
+                  <div class="row mb-4">
+                    <label for="validationFormFirstNameLabel" class="col-sm-3 col-form-label form-label">First name</label>
+
+                    <div class="col-sm-9">
+                      <div class="js-form-message">
+                        <input type="password" class="form-control" name="firstName" id="validationFormFirstNameLabel" placeholder="First name" aria-label="First name" required data-msg="Please enter your first name.">
+                        <span class="invalid-feedback">Please enter a valid first name.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Form Group -->
+                  <div class="row mb-4">
+                    <label for="validationFormLastNameLabel" class="col-sm-3 col-form-label form-label">Last name</label>
+
+                    <div class="col-sm-9">
+                      <div class="js-form-message">
+                        <input type="password" class="form-control" name="lastName" id="validationFormLastNameLabel" placeholder="Last name" aria-label="Last name" required data-msg="Please enter your last name.">
+                        <span class="invalid-feedback">Please enter a valid last name.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Form Group -->
+                  <div class="row mb-4">
+                    <label for="validationFormEmailLabel" class="col-sm-3 col-form-label form-label">Email</label>
+
+                    <div class="col-sm-9">
+                      <div class="js-form-message">
+                        <input type="password" class="form-control" name="email" id="validationFormEmailLabel" placeholder="Email address" aria-label="Email address" required data-msg="Please enter a valid email address.">
+                        <span class="invalid-feedback">Please enter a valid email.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Footer -->
+                  <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-ghost-secondary me-2" data-hs-step-form-prev-options='{
+                         "targetSelector": "#validationFormAccount"
+                       }'>
+                      <i class="bi-chevron-left small"></i> Previous step
+                    </button>
+
+                    <div class="ms-auto">
+                      <button type="button" class="btn btn-primary" data-hs-step-form-next-options='{
+                                "targetSelector": "#validationFormAddress"
+                              }'>
+                        Next <i class="bi-chevron-right small"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- End Footer -->
+                </div>
+
+                <div id="validationFormAddress" style="display: none;">
+                  <!-- Form Group -->
+                  <div class="row mb-4">
+                    <label for="validationFormAddress1Label" class="col-sm-3 col-form-label form-label">Address 1</label>
+
+                    <div class="col-sm-9">
+                      <div class="js-form-message">
+                        <input type="password" class="form-control" name="address1" id="validationFormAddress1Label" placeholder="Address 1" aria-label="Address 1" required data-msg="Please enter your address.">
+                        <span class="invalid-feedback">Please enter a valid address.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Form Group -->
+                  <div class="row mb-4">
+                    <label for="validationFormAddress2Label" class="col-sm-3 col-form-label form-label">Address 2 <span class="form-label-secondary">(Optional)</span></label>
+
+                    <div class="col-sm-9">
+                      <input type="password" class="form-control" name="address2" id="validationFormAddress2Label" placeholder="Address 2" aria-label="Address 2">
+                    </div>
+                  </div>
+                  <!-- End Form Group -->
+
+                  <!-- Footer -->
+                  <div class="d-sm-flex align-items-center">
+                    <button type="button" class="btn btn-ghost-secondary mb-3 mb-sm-0 me-2" data-hs-step-form-prev-options='{
+                         "targetSelector": "#validationFormProfile"
+                       }'>
+                      <i class="bi-chevron-left small"></i> Previous step
+                    </button>
+
+                    <div class="d-flex justify-content-end ms-auto">
+                      <button type="button" class="btn btn-white me-2" data-dismiss="modal" aria-label="Close">Cancel</button>
+                      <button id="validationFormFinishBtn" type="button" class="btn btn-primary">Save Changes</button>
+                    </div>
+                  </div>
+                  <!-- End Footer -->
+                </div>
+              </div>
+              <!-- End Content Step Form -->
+
+              <!-- Message Body -->
+              <div id="validationFormSuccessMessage" class="js-success-message" style="display:none;">
+                <div class="text-center">
+                  <img class="img-fluid mb-3" src="../assets/svg/illustrations/oc-hi-five.svg" alt="Image Description" style="max-width: 15rem;">
+
+                  <div class="mb-4">
+                    <h2>Successful!</h2>
+                    <p>Your changes have been successfully saved.</p>
+                  </div>
+
+                  <div class="d-flex justify-content-center">
+                    <a class="btn btn-white me-3" href="#">
+                      <i class="bi-chevron-left small ms-1"></i> Back to projects
+                    </a>
+                    <a class="btn btn-primary" href="#">
+                      <i class="tio-city me-1"></i> Add new project
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Message Body -->
+            </form>
+            <!-- End Step Form -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html4" role="tabpanel" aria-labelledby="nav-htmlTab4">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Step Form --&gt;
+                &lt;form class=&quot;js-step-form-validate js-validate&quot;
+                  data-hs-step-form-options='{
+                    &quot;progressSelector&quot;: &quot;#validationFormProgress&quot;,
+                    &quot;stepsSelector&quot;: &quot;#validationFormContent&quot;,
+                    &quot;endSelector&quot;: &quot;#validationFormFinishBtn&quot;,
+                    &quot;isValidate&quot;: true
+                  }'&gt;
+                  &lt;!-- Step --&gt;
+                  &lt;ul id=&quot;validationFormProgress&quot; class=&quot;js-step-progress step step-sm step-icon-sm step-inline step-item-between mb-7&quot;&gt;
+                    &lt;li class=&quot;step-item&quot;&gt;
+                      &lt;a class=&quot;step-content-wrapper&quot; href=&quot;javascript:;&quot;
+                         data-hs-step-form-next-options='{
+                          &quot;targetSelector&quot;: &quot;#validationFormAccount&quot;
+                        }'&gt;
+                        &lt;span class=&quot;step-icon step-icon-soft-dark&quot;&gt;1&lt;/span&gt;
+                        &lt;div class=&quot;step-content&quot;&gt;
+                          &lt;span class=&quot;step-title&quot;&gt;Account&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+
+                    &lt;li class=&quot;step-item&quot;&gt;
+                      &lt;a class=&quot;step-content-wrapper&quot; href=&quot;javascript:;&quot;
+                         data-hs-step-form-next-options='{
+                           &quot;targetSelector&quot;: &quot;#validationFormProfile&quot;
+                         }'&gt;
+                        &lt;span class=&quot;step-icon step-icon-soft-dark&quot;&gt;2&lt;/span&gt;
+                        &lt;div class=&quot;step-content&quot;&gt;
+                          &lt;span class=&quot;step-title&quot;&gt;Profile&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+
+                    &lt;li class=&quot;step-item&quot;&gt;
+                      &lt;a class=&quot;step-content-wrapper&quot; href=&quot;javascript:;&quot;
+                         data-hs-step-form-next-options='{
+                           &quot;targetSelector&quot;: &quot;#validationFormAddress&quot;
+                         }'&gt;
+                        &lt;span class=&quot;step-icon step-icon-soft-dark&quot;&gt;3&lt;/span&gt;
+                        &lt;div class=&quot;step-content&quot;&gt;
+                          &lt;span class=&quot;step-title&quot;&gt;Address&lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/a&gt;
+                    &lt;/li&gt;
+                  &lt;/ul&gt;
+                  &lt;!-- End Step --&gt;
+
+                  &lt;!-- Content Step Form --&gt;
+                  &lt;div id=&quot;validationFormContent&quot;&gt;
+                    &lt;div id=&quot;validationFormAccount&quot; class=&quot;active&quot;&gt;
+                      &lt;!-- Form Group --&gt;
+                      &lt;div class=&quot;row mb-4&quot;&gt;
+                        &lt;label for=&quot;validationFormUsernameLabel&quot; class=&quot;col-sm-3 col-form-label form-label&quot;&gt;Username&lt;/label&gt;
+
+                        &lt;div class=&quot;col-sm-9&quot;&gt;
+                          &lt;div class=&quot;js-form-message&quot;&gt;
+                            &lt;input type=&quot;password&quot; class=&quot;form-control&quot; name=&quot;username&quot; id=&quot;validationFormUsernameLabel&quot; placeholder=&quot;Username&quot; aria-label=&quot;Username&quot; required data-msg=&quot;Please enter your username.&quot;&gt;
+                            &lt;span class=&quot;invalid-feedback&quot;&gt;Please enter a valid username.&lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Form Group --&gt;
+
+                      &lt;!-- Form Group --&gt;
+                      &lt;div class=&quot;row mb-4&quot;&gt;
+                        &lt;label for=&quot;validationFormNewPasswordLabel&quot; class=&quot;col-sm-3 col-form-label form-label&quot;&gt;New password&lt;/label&gt;
+
+                        &lt;div class=&quot;col-sm-9&quot;&gt;
+                          &lt;div class=&quot;js-form-message&quot;&gt;
+                            &lt;input type=&quot;password&quot; class=&quot;form-control&quot; name=&quot;newPassword&quot; id=&quot;validationFormNewPasswordLabel&quot; placeholder=&quot;New password&quot; aria-label=&quot;New password&quot; required data-msg=&quot;Your password is invalid. Please try again.&quot;&gt;
+                            &lt;span class=&quot;invalid-feedback&quot;&gt;Please enter a valid password.&lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Form Group --&gt;
+
+                      &lt;!-- Form Group --&gt;
+                      &lt;div class=&quot;row mb-4&quot;&gt;
+                        &lt;label for=&quot;validationFormCurrentPasswordLabel&quot; class=&quot;col-sm-3 col-form-label form-label&quot;&gt;Current password&lt;/label&gt;
+
+                        &lt;div class=&quot;col-sm-9&quot;&gt;
+                          &lt;div class=&quot;js-form-message&quot;&gt;
+                            &lt;input type=&quot;password&quot; class=&quot;form-control&quot; name=&quot;currentPassword&quot; id=&quot;validationFormCurrentPasswordLabel&quot; placeholder=&quot;Current password&quot; aria-label=&quot;Current password&quot; required data-msg=&quot;Password does not match the confirm password.&quot;&gt;
+                            &lt;span class=&quot;invalid-feedback&quot;&gt;Please enter a valid current password.&lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Form Group --&gt;
+
+                      &lt;!-- Footer --&gt;
+                      &lt;div class=&quot;d-flex align-items-center&quot;&gt;
+                        &lt;div class=&quot;ms-auto&quot;&gt;
+                          &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;
+                                  data-hs-step-form-next-options='{
+                                    &quot;targetSelector&quot;: &quot;#validationFormProfile&quot;
+                                  }'&gt;
+                            Next &lt;i class=&quot;bi-chevron-right small&quot;&gt;&lt;/i&gt;
+                          &lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Footer --&gt;
+                    &lt;/div&gt;
+
+                    &lt;div id=&quot;validationFormProfile&quot; style=&quot;display: none;&quot;&gt;
+                      &lt;!-- Form Group --&gt;
+                      &lt;div class=&quot;row mb-4&quot;&gt;
+                        &lt;label for=&quot;validationFormFirstNameLabel&quot; class=&quot;col-sm-3 col-form-label form-label&quot;&gt;First name&lt;/label&gt;
+
+                        &lt;div class=&quot;col-sm-9&quot;&gt;
+                          &lt;div class=&quot;js-form-message&quot;&gt;
+                            &lt;input type=&quot;password&quot; class=&quot;form-control&quot; name=&quot;firstName&quot; id=&quot;validationFormFirstNameLabel&quot; placeholder=&quot;First name&quot; aria-label=&quot;First name&quot; required data-msg=&quot;Please enter your first name.&quot;&gt;
+                            &lt;span class=&quot;invalid-feedback&quot;&gt;Please enter a valid first name.&lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Form Group --&gt;
+
+                      &lt;!-- Form Group --&gt;
+                      &lt;div class=&quot;row mb-4&quot;&gt;
+                        &lt;label for=&quot;validationFormLastNameLabel&quot; class=&quot;col-sm-3 col-form-label form-label&quot;&gt;Last name&lt;/label&gt;
+
+                        &lt;div class=&quot;col-sm-9&quot;&gt;
+                          &lt;div class=&quot;js-form-message&quot;&gt;
+                            &lt;input type=&quot;password&quot; class=&quot;form-control&quot; name=&quot;lastName&quot; id=&quot;validationFormLastNameLabel&quot; placeholder=&quot;Last name&quot; aria-label=&quot;Last name&quot; required data-msg=&quot;Please enter your last name.&quot;&gt;
+                            &lt;span class=&quot;invalid-feedback&quot;&gt;Please enter a valid last name.&lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Form Group --&gt;
+
+                      &lt;!-- Form Group --&gt;
+                      &lt;div class=&quot;row mb-4&quot;&gt;
+                        &lt;label for=&quot;validationFormEmailLabel&quot; class=&quot;col-sm-3 col-form-label form-label&quot;&gt;Email&lt;/label&gt;
+
+                        &lt;div class=&quot;col-sm-9&quot;&gt;
+                          &lt;div class=&quot;js-form-message&quot;&gt;
+                            &lt;input type=&quot;password&quot; class=&quot;form-control&quot; name=&quot;email&quot; id=&quot;validationFormEmailLabel&quot; placeholder=&quot;Email address&quot; aria-label=&quot;Email address&quot; required data-msg=&quot;Please enter a valid email address.&quot;&gt;
+                            &lt;span class=&quot;invalid-feedback&quot;&gt;Please enter a valid email.&lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Form Group --&gt;
+
+                      &lt;!-- Footer --&gt;
+                      &lt;div class=&quot;d-flex align-items-center&quot;&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-ghost-secondary me-2&quot;
+                           data-hs-step-form-prev-options='{
+                             &quot;targetSelector&quot;: &quot;#validationFormAccount&quot;
+                           }'&gt;
+                          &lt;i class=&quot;bi-chevron-left small&quot;&gt;&lt;/i&gt; Previous step
+                        &lt;/button&gt;
+
+                        &lt;div class=&quot;ms-auto&quot;&gt;
+                          &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;
+                                  data-hs-step-form-next-options='{
+                                    &quot;targetSelector&quot;: &quot;#validationFormAddress&quot;
+                                  }'&gt;
+                            Next &lt;i class=&quot;bi-chevron-right small&quot;&gt;&lt;/i&gt;
+                          &lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Footer --&gt;
+                    &lt;/div&gt;
+
+                    &lt;div id=&quot;validationFormAddress&quot; style=&quot;display: none;&quot;&gt;
+                      &lt;!-- Form Group --&gt;
+                      &lt;div class=&quot;row mb-4&quot;&gt;
+                        &lt;label for=&quot;validationFormAddress1Label&quot; class=&quot;col-sm-3 col-form-label form-label&quot;&gt;Address 1&lt;/label&gt;
+
+                        &lt;div class=&quot;col-sm-9&quot;&gt;
+                          &lt;div class=&quot;js-form-message&quot;&gt;
+                            &lt;input type=&quot;password&quot; class=&quot;form-control&quot; name=&quot;address1&quot; id=&quot;validationFormAddress1Label&quot; placeholder=&quot;Address 1&quot; aria-label=&quot;Address 1&quot; required data-msg=&quot;Please enter your address.&quot;&gt;
+                            &lt;span class=&quot;invalid-feedback&quot;&gt;Please enter a valid address.&lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Form Group --&gt;
+
+                      &lt;!-- Form Group --&gt;
+                      &lt;div class=&quot;row mb-4&quot;&gt;
+                        &lt;label for=&quot;validationFormAddress2Label&quot; class=&quot;col-sm-3 col-form-label form-label&quot;&gt;Address 2 &lt;span class=&quot;form-label-secondary&quot;&gt;(Optional)&lt;/span&gt;&lt;/label&gt;
+
+                        &lt;div class=&quot;col-sm-9&quot;&gt;
+                          &lt;input type=&quot;password&quot; class=&quot;form-control&quot; name=&quot;address2&quot; id=&quot;validationFormAddress2Label&quot; placeholder=&quot;Address 2&quot; aria-label=&quot;Address 2&quot;&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Form Group --&gt;
+
+                      &lt;!-- Footer --&gt;
+                      &lt;div class=&quot;d-sm-flex align-items-center&quot;&gt;
+                        &lt;button type=&quot;button&quot; class=&quot;btn btn-ghost-secondary mb-3 mb-sm-0 me-2&quot;
+                           data-hs-step-form-prev-options='{
+                             &quot;targetSelector&quot;: &quot;#validationFormProfile&quot;
+                           }'&gt;
+                          &lt;i class=&quot;bi-chevron-left small&quot;&gt;&lt;/i&gt; Previous step
+                        &lt;/button&gt;
+
+                        &lt;div class=&quot;d-flex justify-content-end ms-auto&quot;&gt;
+                          &lt;button type=&quot;button&quot; class=&quot;btn btn-white me-2&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;Cancel&lt;/button&gt;
+                          &lt;button id=&quot;validationFormFinishBtn&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save Changes&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Footer --&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Content Step Form --&gt;
+
+                  &lt;!-- Message Body --&gt;
+                  &lt;div id=&quot;validationFormSuccessMessage&quot; class=&quot;js-success-message&quot; style=&quot;display:none;&quot;&gt;
+                    &lt;div class=&quot;text-center&quot;&gt;
+                      &lt;img class=&quot;img-fluid mb-3&quot; src=&quot;../assets/svg/illustrations/oc-hi-five.svg&quot; alt=&quot;Image Description&quot; style=&quot;max-width: 15rem;&quot;&gt;
+
+                      &lt;div class=&quot;mb-4&quot;&gt;
+                        &lt;h2&gt;Successful!&lt;/h2&gt;
+                        &lt;p&gt;Your changes have been successfully saved.&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;div class=&quot;d-flex justify-content-center&quot;&gt;
+                        &lt;a class=&quot;btn btn-white me-3&quot; href=&quot;#&quot;&gt;
+                          &lt;i class=&quot;bi-chevron-left small ms-1&quot;&gt;&lt;/i&gt; Back to projects
+                        &lt;/a&gt;
+                        &lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot;&gt;
+                          &lt;i class=&quot;tio-city me-1&quot;&gt;&lt;/i&gt; Add new project
+                        &lt;/a&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Message Body --&gt;
+                &lt;/form&gt;
+                &lt;!-- End Step Form --&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js4" role="tabpanel" aria-labelledby="nav-jsTab4">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Front --&gt;
+                &lt;script src="../assets/js/hs.bs-validation.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF STEP FORM
+                    // =======================================================
+                     new HSStepForm('.js-step-form-validate', {
+                       validator: HSBsValidation.init('.js-validate'),
+                       finish ($el) {
+                         const $successMessageTempalte = $el.querySelector('.js-success-message').cloneNode(true)
+
+                         $successMessageTempalte.style.display = 'block'
+
+                         $el.style.display = 'none'
+                         $el.parentElement.appendChild($successMessageTempalte)
+                       }
+                    })
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="modal-example" class="hs-docs-heading">
+        Modal example <a class="anchorjs-link" href="#modal-example" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab5" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab5" href="#nav-result5" data-bs-toggle="pill" data-bs-target="#nav-result5" role="tab" aria-controls="nav-result5" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab5" href="#nav-html5" data-bs-toggle="pill" data-bs-target="#nav-html5" role="tab" aria-controls="nav-html5" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent5">
+          <div class="tab-pane fade p-4 show active" id="nav-result5" role="tabpanel" aria-labelledby="nav-resultTab5">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Open modal</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Step Forms</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body">
+                    <!-- Step Form -->
+                    <form class="js-step-form" data-hs-step-form-options='{
+                            "progressSelector": "#modalStepFormProgress",
+                            "stepsSelector": "#modalStepFormContent",
+                            "endSelector": "#modalStepFinishBtn"
+                          }'>
+                      <!-- Step -->
+                      <ul id="modalStepFormProgress" class="js-step-progress step step-sm step-icon-sm step-inline step-item-between mb-7">
+                        <li class="step-item">
+                          <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                              "targetSelector": "#modalStepDetails"
+                            }'>
+                            <span class="step-icon step-icon-soft-dark">1</span>
+                            <div class="step-content">
+                              <span class="step-title">Details</span>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="step-item">
+                          <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                               "targetSelector": "#modalStepTerms"
+                             }'>
+                            <span class="step-icon step-icon-soft-dark">2</span>
+                            <div class="step-content">
+                              <span class="step-title">Terms</span>
+                            </div>
+                          </a>
+                        </li>
+
+                        <li class="step-item">
+                          <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options='{
+                               "targetSelector": "#modalStepMembers"
+                             }'>
+                            <span class="step-icon step-icon-soft-dark">3</span>
+                            <div class="step-content">
+                              <span class="step-title">Members</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- End Step -->
+
+                      <!-- Content Step Form -->
+                      <div id="modalStepFormContent">
+                        <div id="modalStepDetails" class="active">
+                          <h4>Details content</h4>
+
+                          <p>...</p>
+
+                          <!-- Footer -->
+                          <div class="d-flex align-items-center">
+                            <div class="ms-auto">
+                              <button type="button" class="btn btn-primary" data-hs-step-form-next-options='{
+                                        "targetSelector": "#modalStepTerms"
+                                      }'>
+                                Next <i class="bi-chevron-right small"></i>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- End Footer -->
+                        </div>
+
+                        <div id="modalStepTerms" style="display: none;">
+                          <h4>Terms content</h4>
+
+                          <p>...</p>
+
+                          <!-- Footer -->
+                          <div class="d-flex align-items-center">
+                            <button type="button" class="btn btn-ghost-secondary me-2" data-hs-step-form-prev-options='{
+                                 "targetSelector": "#modalStepDetails"
+                               }'>
+                              <i class="bi-chevron-left small"></i> Previous step
+                            </button>
+
+                            <div class="ms-auto">
+                              <button type="button" class="btn btn-primary" data-hs-step-form-next-options='{
+                                        "targetSelector": "#modalStepMembers"
+                                      }'>
+                                Next <i class="bi-chevron-right small"></i>
+                              </button>
+                            </div>
+                          </div>
+                          <!-- End Footer -->
+                        </div>
+
+                        <div id="modalStepMembers" style="display: none;">
+                          <h4>Members content</h4>
+
+                          <p>...</p>
+
+                          <!-- Footer -->
+                          <div class="d-sm-flex align-items-center">
+                            <button type="button" class="btn btn-ghost-secondary mb-3 mb-sm-0 me-2" data-hs-step-form-prev-options='{
+                                 "targetSelector": "#modalStepTerms"
+                               }'>
+                              <i class="bi-chevron-left small"></i> Previous step
+                            </button>
+
+                            <div class="d-flex justify-content-end ms-auto">
+                              <button type="button" class="btn btn-white me-2" data-dismiss="modal" aria-label="Close">Cancel</button>
+                              <button id="modalStepFinishBtn" type="button" class="btn btn-primary">Create project</button>
+                            </div>
+                          </div>
+                          <!-- End Footer -->
+                        </div>
+                      </div>
+                      <!-- End Content Step Form -->
+
+                      <!-- Message Body -->
+                      <div id="modalStepSuccessMessage" class="js-success-message" style="display:none;">
+                        <div class="text-center">
+                          <img class="img-fluid mb-3" src="../assets/svg/illustrations/oc-hi-five.svg" alt="Image Description" style="max-width: 15rem;">
+
+                          <div class="mb-4">
+                            <h2>Successful!</h2>
+                            <p>New project has been successfully created.</p>
+                          </div>
+
+                          <div class="d-flex justify-content-center">
+                            <a class="btn btn-white me-3" href="#">
+                              <i class="bi-chevron-left small ms-1"></i> Back to projects
+                            </a>
+                            <a class="btn btn-primary" href="#">
+                              <i class="tio-city me-1"></i> Add new project
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Message Body -->
+                    </form>
+                    <!-- End Step Form -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Modal -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html5" role="tabpanel" aria-labelledby="nav-htmlTab5">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"&gt;Open modal&lt;/button&gt;
+
+                &lt;!-- Modal --&gt;
+                &lt;div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+                  &lt;div class="modal-dialog"&gt;
+                    &lt;div class="modal-content"&gt;
+                      &lt;div class="modal-header"&gt;
+                        &lt;h5 class="modal-title" id="exampleModalLabel"&gt;Step Forms&lt;/h5&gt;
+                        &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"&gt;&lt;/button&gt;
+                      &lt;/div&gt;
+
+                      &lt;div class="modal-body"&gt;
+                        &lt;!-- Step Form --&gt;
+                        &lt;form class="js-step-form"
+                              data-hs-step-form-options='{
+                                "progressSelector": "#modalStepFormProgress",
+                                "stepsSelector": "#modalStepFormContent",
+                                "endSelector": "#createProjectFinishBtn"
+                              }'&gt;
+                          &lt;!-- Step --&gt;
+                          &lt;ul id="modalStepFormProgress" class="js-step-progress step step-sm step-icon-sm step-inline step-item-between mb-7"&gt;
+                            &lt;li class="step-item"&gt;
+                              &lt;a class="step-content-wrapper" href="javascript:;"
+                                 data-hs-step-form-next-options='{
+                                  "targetSelector": "#modalStepDetails"
+                                }'&gt;
+                                &lt;span class="step-icon step-icon-soft-dark"&gt;1&lt;/span&gt;
+                                &lt;div class="step-content"&gt;
+                                  &lt;span class="step-title"&gt;Details&lt;/span&gt;
+                                &lt;/div&gt;
+                              &lt;/a&gt;
+                            &lt;/li&gt;
+
+                            &lt;li class="step-item"&gt;
+                              &lt;a class="step-content-wrapper" href="javascript:;"
+                                 data-hs-step-form-next-options='{
+                                   "targetSelector": "#modalStepTerms"
+                                 }'&gt;
+                                &lt;span class="step-icon step-icon-soft-dark"&gt;2&lt;/span&gt;
+                                &lt;div class="step-content"&gt;
+                                  &lt;span class="step-title"&gt;Terms&lt;/span&gt;
+                                &lt;/div&gt;
+                              &lt;/a&gt;
+                            &lt;/li&gt;
+
+                            &lt;li class="step-item"&gt;
+                              &lt;a class="step-content-wrapper" href="javascript:;"
+                                 data-hs-step-form-next-options='{
+                                   "targetSelector": "#modalStepMembers"
+                                 }'&gt;
+                                &lt;span class="step-icon step-icon-soft-dark"&gt;3&lt;/span&gt;
+                                &lt;div class="step-content"&gt;
+                                  &lt;span class="step-title"&gt;Members&lt;/span&gt;
+                                &lt;/div&gt;
+                              &lt;/a&gt;
+                            &lt;/li&gt;
+                          &lt;/ul&gt;
+                          &lt;!-- End Step --&gt;
+
+                          &lt;!-- Content Step Form --&gt;
+                          &lt;div id="modalStepFormContent"&gt;
+                            &lt;div id="modalStepDetails" class="active"&gt;
+                              &lt;h4&gt;Details content&lt;/h4&gt;
+
+                              &lt;p&gt;...&lt;/p&gt;
+
+                              &lt;!-- Footer --&gt;
+                              &lt;div class="d-flex align-items-center"&gt;
+                                &lt;div class="ms-auto"&gt;
+                                  &lt;button type="button" class="btn btn-primary"
+                                          data-hs-step-form-next-options='{
+                                            "targetSelector": "#modalStepTerms"
+                                          }'&gt;
+                                    Next &lt;i class="bi-chevron-right small"&gt;&lt;/i&gt;
+                                  &lt;/button&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;!-- End Footer --&gt;
+                            &lt;/div&gt;
+
+                            &lt;div id="modalStepTerms" style="display: none;"&gt;
+                              &lt;h4&gt;Terms content&lt;/h4&gt;
+
+                              &lt;p&gt;...&lt;/p&gt;
+
+                              &lt;!-- Footer --&gt;
+                              &lt;div class="d-flex align-items-center"&gt;
+                                &lt;button type="button" class="btn btn-ghost-secondary me-2"
+                                   data-hs-step-form-prev-options='{
+                                     "targetSelector": "#modalStepDetails"
+                                   }'&gt;
+                                  &lt;i class="bi-chevron-left small"&gt;&lt;/i&gt; Previous step
+                                &lt;/button&gt;
+
+                                &lt;div class="ms-auto"&gt;
+                                  &lt;button type="button" class="btn btn-primary"
+                                          data-hs-step-form-next-options='{
+                                            "targetSelector": "#modalStepMembers"
+                                          }'&gt;
+                                    Next &lt;i class="bi-chevron-right small"&gt;&lt;/i&gt;
+                                  &lt;/button&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;!-- End Footer --&gt;
+                            &lt;/div&gt;
+
+                            &lt;div id="modalStepMembers" style="display: none;"&gt;
+                              &lt;h4&gt;Members content&lt;/h4&gt;
+
+                              &lt;p&gt;...&lt;/p&gt;
+
+                              &lt;!-- Footer --&gt;
+                              &lt;div class="d-sm-flex align-items-center"&gt;
+                                &lt;button type="button" class="btn btn-ghost-secondary mb-3 mb-sm-0 me-2"
+                                   data-hs-step-form-prev-options='{
+                                     "targetSelector": "#modalStepTerms"
+                                   }'&gt;
+                                  &lt;i class="bi-chevron-left small"&gt;&lt;/i&gt; Previous step
+                                &lt;/button&gt;
+
+                                &lt;div class="d-flex justify-content-end ms-auto"&gt;
+                                  &lt;button type="button" class="btn btn-white me-2" data-dismiss="modal" aria-label="Close"&gt;Cancel&lt;/button&gt;
+                                  &lt;button id="createProjectFinishBtn" type="button" class="btn btn-primary"&gt;Create project&lt;/button&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                              &lt;!-- End Footer --&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Content Step Form --&gt;
+
+                          &lt;!-- Message Body --&gt;
+                          &lt;div id="modalStepSuccessMessage" class="js-success-message" style="display:none;"&gt;
+                            &lt;div class="text-center"&gt;
+                              &lt;img class="img-fluid mb-3" src="../assets/svg/illustrations/oc-hi-five.svg" alt="Image Description" style="max-width: 15rem;"&gt;
+
+                              &lt;div class="mb-4"&gt;
+                                &lt;h2&gt;Successful!&lt;/h2&gt;
+                                &lt;p&gt;New project has been successfully created.&lt;/p&gt;
+                              &lt;/div&gt;
+
+                              &lt;div class="d-flex justify-content-center"&gt;
+                                &lt;a class="btn btn-white me-3" href="#"&gt;
+                                  &lt;i class="bi-chevron-left small ms-1"&gt;&lt;/i&gt; Back to projects
+                                &lt;/a&gt;
+                                &lt;a class="btn btn-primary" href="#"&gt;
+                                  &lt;i class="tio-city me-1"&gt;&lt;/i&gt; Add new project
+                                &lt;/a&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Message Body --&gt;
+                        &lt;/form&gt;
+                        &lt;!-- End Step Form --&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Modal --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="methods" class="hs-docs-heading">
+        Methods <a class="anchorjs-link" href="#methods" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Table -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th>Parameters</th>
+                <th style="width: 50%;">Description</th>
+                <th class="text-nowrap">Default value</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <p><code>progressSelector</code></p>
+                </td>
+                <td>A selector that contains a block with progress in the form of numbered or text identifiers of a specific form</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>stepsSelector</code></p>
+                </td>
+                <td>ID of the block that contains the blocks with steps</td>
+                <td><code>null</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>nextSelector</code></p>
+                </td>
+                <td>Selector, when clicked, the transition to the next step will be carried out</td>
+                <td><code>'[data-hs-step-form-next-options]'</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>prevSelector</code></p>
+                </td>
+                <td>Selector, when clicked, the transition to the previous step will be carried out</td>
+                <td><code>'[data-hs-step-form-prev-options]'</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>isValidate</code></p>
+                </td>
+                <td>If true, then includes field validation at each step, according to the rules of the <code>jquery.validation</code> plugin</td>
+                <td><code>false</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>classMap.active</code></p>
+                </td>
+                <td>Class that will be given to the element of progress with an active step</td>
+                <td><code>'active'</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>classMap.error</code></p>
+                </td>
+                <td>Will be add to step item if validation has errors</td>
+                <td><code>'is-invalid'</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>classMap.checked</code></p>
+                </td>
+                <td>Class to be given to the validated progress element</td>
+                <td><code>'checked'</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>classMap.focus</code></p>
+                </td>
+                <td>Class to be given to the focused progress element</td>
+                <td><code>'focus'</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>classMap.required</code></p>
+                </td>
+                <td>Сlass that should be added to <code>.step-item</code> if the step container has a required field</td>
+                <td><code>.js-step-required</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>finish</code></p>
+                </td>
+                <td>Сalled after the last step</td>
+                <td><code>() => {}</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>onNextStep</code></p>
+                </td>
+                <td>Сalled after going to the next step</td>
+                <td><code>() => {}</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>onPrevStep</code></p>
+                </td>
+                <td>Сalled after going to the previous step</td>
+                <td><code>() => {}</code></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p><code>preventNextStep</code></p>
+                </td>
+                <td>Сalled before going to the next step. Return promise is required</td>
+                <td><code>() => {
+                  return new Promise((resolve, reject) => {
+                    resolve()
+                  })
+                }</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End Table -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": "2rem"
+         },
+         "show": {
+           "bottom": "2rem"
+         },
+         "hide": {
+           "bottom": "-2rem"
+         }
+       }
+     }'>
+    <i class="bi-chevron-up"></i>
+  </a>
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/js/vendor.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="../assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('../assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF STEP FORM
+      // =======================================================
+      new HSStepForm('.js-step-form', {
+        finish ($el) {
+          const $successMessageTempalte = $el.querySelector('.js-success-message').cloneNode(true)
+
+          $successMessageTempalte.style.display = 'block'
+
+          $el.style.display = 'none'
+          $el.parentElement.appendChild($successMessageTempalte)
+        }
+      })
+
+      new HSStepForm('.js-step-form-validate', {
+        validator: HSBsValidation.init('.js-validate'),
+        finish ($el) {
+          const $successMessageTempalte = $el.querySelector('.js-success-message').cloneNode(true)
+
+          $successMessageTempalte.style.display = 'block'
+
+          $el.style.display = 'none'
+          $el.parentElement.appendChild($successMessageTempalte)
+        }
+      })
+    })()
+  </script>
+</body>
+
+<!-- Mirrored from htmlstream.com/preview/front-v4.2/html/documentation/step-forms.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Aug 2022 18:21:35 GMT -->
+</html>

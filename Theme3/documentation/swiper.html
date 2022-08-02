@@ -1,0 +1,4231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from htmlstream.com/preview/front-v4.2/html/documentation/swiper.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Aug 2022 18:21:39 GMT -->
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Swiper - Documentation | Front - Multipurpose Responsive Template</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/css/vendor.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="../assets/css/theme.minc619.css?v=1.0">
+  <link rel="stylesheet" href="../assets/css/docs.css">
+</head>
+
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="navbar navbar-expand navbar-fixed navbar-end navbar-light navbar-sticky-lg-top bg-white">
+    <div class="container-fluid">
+      <nav class="navbar-nav-wrap">
+        <div class="row flex-grow-1">
+          <!-- Default Logo -->
+          <div class="docs-navbar-sidebar-container d-flex align-items-center mb-2 mb-lg-0">
+            <a class="navbar-brand" href="index.html" aria-label="Space">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a href="changelog.html">
+              <span class="badge bg-soft-primary text-primary">v4.2</span>
+            </a>
+          </div>
+          <!-- End Default Logo -->
+
+          <div class="col-md px-lg-0">
+            <div class="d-flex justify-content-between align-items-center px-lg-5 px-xl-10">
+              <div class="d-none d-md-block">
+                <!-- Search Form -->
+                <form id="docsSearch" class="position-relative" data-hs-list-options='{
+                       "searchMenu": true,
+                       "keyboard": true,
+                       "item": "searchTemplate",
+                       "valueNames": ["component", "category", {"name": "link", "attr": "href"}],
+                       "empty": "#searchNoResults"
+                     }'>
+                  <!-- Input Group -->
+                  <div class="input-group input-group-merge navbar-input-group">
+                    <div class="input-group-prepend input-group-text">
+                      <i class="bi-search"></i>
+                    </div>
+
+                    <input type="search" class="search form-control form-control-sm" placeholder="Search in docs" aria-label="Search in docs">
+
+                    <a class="input-group-append input-group-text" href="javascript:;">
+                      <i id="clearSearchResultsIcon" class="bi-x" style="display: none;"></i>
+                    </a>
+                  </div>
+                  <!-- End Input Group -->
+
+                  <!-- List -->
+                  <div class="list dropdown-menu navbar-dropdown-menu-borderless w-100 overflow-auto" style="max-height: 16rem;"></div>
+                  <!-- End List -->
+
+                  <!-- Empty -->
+                  <div id="searchNoResults" style="display: none;">
+                    <div class="text-center p-4">
+                      <img class="mb-3" src="../assets/svg/illustrations/oc-error.svg" alt="Image Description" style="width: 10rem;">
+                      <p class="mb-0">No Results</p>
+                    </div>
+                  </div>
+                  <!-- End Empty -->
+                </form>
+                <!-- End Search Form -->
+
+                <!-- List Item Template -->
+                <div class="d-none">
+                  <div id="searchTemplate" class="dropdown-item">
+                    <a class="d-block link" href="#">
+                      <span class="category d-block fw-normal text-muted mb-1"></span>
+                      <span class="component text-dark"></span>
+                    </a>
+                  </div>
+                </div>
+                <!-- End List Item Template -->
+              </div>
+
+              <!-- Navbar -->
+              <ul class="navbar-nav p-0">
+                <li class="nav-item">
+                  <a class="btn btn-ghost-secondary btn-sm" href="https://htmlstream.com/contact-us" target="_blank">
+                    Get Support <i class="bi-box-arrow-up-right ms-1"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-primary btn-sm" href="../index.html">
+                    <i class="bi-eye me-1"></i> Preview Demo
+                  </a>
+                </li>
+              </ul>
+              <!-- End Navbar -->
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </nav>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    <nav class="js-nav-scroller navbar navbar-expand-lg navbar-sidebar navbar-vertical navbar-light bg-white border-end" data-hs-nav-scroller-options='{
+            "type": "vertical",
+            "target": ".navbar-nav .active",
+            "offset": 80
+           }'>
+      <!-- Navbar Toggle -->
+      <button type="button" class="navbar-toggler btn btn-white d-grid w-100" data-bs-toggle="collapse" data-bs-target="#navbarVerticalNavMenu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarVerticalNavMenu">
+        <span class="d-flex justify-content-between align-items-center">
+          <span class="h3 mb-0">Nav menu</span>
+
+          <span class="navbar-toggler-default">
+            <i class="bi-list"></i>
+          </span>
+
+          <span class="navbar-toggler-toggled">
+            <i class="bi-x"></i>
+          </span>
+        </span>
+      </button>
+      <!-- End Navbar Toggle -->
+
+      <!-- Navbar Collapse -->
+      <div id="navbarVerticalNavMenu" class="collapse navbar-collapse">
+        <div class="navbar-brand-wrapper border-end" style="height: auto;">
+          <!-- Default Logo -->
+          <div class="d-flex align-items-center mb-3">
+            <a class="navbar-brand" href="index.html" aria-label="Space">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a class="navbar-brand-badge" href="changelog.html">
+              <span class="badge bg-soft-primary text-primary ms-2">v4.2</span>
+            </a>
+          </div>
+          <!-- End Default Logo -->
+
+          <!-- Nav -->
+          <ul class="nav nav-segment nav-fill nav-justified">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Docs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../snippets/index.html">Snippets</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+
+        <div class="docs-navbar-sidebar-aside-body navbar-sidebar-aside-body">
+          <ul id="navbarSettings" class="navbar-nav nav nav-vertical nav-tabs nav-tabs-borderless nav-sm">
+            <li class="nav-item">
+              <span class="nav-subtitle">Documentation</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Introduction</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Getting started</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="getting-started.html">Getting Started</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="gulp.html">Gulp</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="customization.html">Customization</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="credits.html">Credits</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="changelog.html">Changelog</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Design &amp; Graphics</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="bs-icons.html">Bootstrap Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="duotone-icons.html">Duotone Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="illustrations.html">Illustrations</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Components</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="accordion.html">Accordion</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="alerts.html">Alerts</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="avatars.html">Avatars</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="badge.html">Badge</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="breadcrumb.html">Breadcrumb</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="buttons.html">Buttons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="cards.html">Cards</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="collapse.html">Collapse</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="column-divider.html">Column Divider</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="devices.html">Devices</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="divider.html">Divider</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="dropdowns.html">Dropdowns</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="icons.html">Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="list-group.html">List Group</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="lists.html">Lists</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="legend-indicator.html">Legend Indicator</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="modal.html">Modal</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="offcanvas.html">Offcanvas</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="page-header.html">Page Header</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="pagination.html">Pagination</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="popovers.html">Popovers</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="progress.html">Progress</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="profile.html">Profile</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="shapes.html">Shapes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="spinners.html">Spinners</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="steps.html">Steps</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="tab.html">Tab</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="tables.html">Tables</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="text-highlight.html">Text Highlight</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toasts.html">Toasts</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="tooltips.html">Tooltips</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="typography.html">Typography</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Navbars</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="navbar.html">Navbar</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="navs.html">Navs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="mega-menu.html">Mega Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="scrollspy.html">Scrollspy</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Basic forms</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="basic-forms.html">Basic Forms</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="checks-and-switches.html">Checks &amp; Switches</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="input-group.html">Input Group</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Advanced Forms</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="select.html">Advanced Select</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="file-attachments.html">File Attachments</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="dropzone.html">Drag’ n’ Drop File Uploads</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="quill.html">WYSIWYG Editor</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="quantity-counter.html">Quantity Counter</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="input-mask.html">Input Mask</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="step-forms.html">Step Forms (Wizards)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="range-slider.html">Range Slider (noUiSlider)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="add-field.html">Add Field</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toggle-password.html">Toggle Password</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="count-characters.html">Count Characters</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toggle-switch.html">Toggle Switch</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="toggle-state.html">Toggle State</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="switch.html">Switch</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Media</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="fslightbox.html">Fullscreen Lightbox</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="video-bg.html">Video Background</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="video-player.html">Video Player</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="swiper.html">Swiper</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Others</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="maps-leaflet.html">Maps (Leaflet)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="chartjs.html">Chart.js</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="circles.html">Circles.js (Pie Chart)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="sticky-block.html">Sticky Block</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="countdown.html">Countdown</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="sorting.html">Sorting (Shuffle.js)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="go-to.html">Go To</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="show-animation.html">Show Animation</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="typedjs.html">Typed.js</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Utilities</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="backgrounds.html">Backgrounds</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="borders.html">Borders</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="colors.html">Colors</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="links.html">Links</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="position.html">Position</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="rotations.html">Rotations</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="shadows.html">Shadows</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="sizing.html">Sizing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="spacing.html">Spacing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="z-index.html">Z-index</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Navbar Collapse -->
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Swiper</h1>
+            <p class="docs-page-header-text">Most modern mobile touch slider.</p>
+            <a class="link" href="https://swiperjs.com/" target="_blank">Swiper documentation <i class="bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Heading -->
+      <h2 id="how-to-use" class="hs-docs-heading">
+        How to use <a class="anchorjs-link" href="#how-to-use" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Copy-paste the stylesheet <code>&lt;link&gt;</code> into your <code>&lt;head&gt;</code> to load the CSS.</p>
+
+      <pre class="rounded mb-4">
+        <code class="language-html" data-lang="html">
+          &lt;link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css"&gt;
+        </code>
+      </pre>
+
+      <p>Copy-paste the following <code>&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing Plugins</u></em> to enable it.</p>
+
+      <pre class="rounded mb-4">
+        <code class="language-html" data-lang="html">
+          &lt;script src="../node_modules/swiper/swiper-bundle.min.js"&gt;&lt;/script&gt;
+        </code>
+      </pre>
+
+      <p>Copy-paste the init function under <em><u>JS Plugins Init.</u></em>, before the closing <code>&lt;/body&gt;</code> tag, to enable it.</p>
+
+      <pre class="rounded">
+        <code class="language-html" data-lang="html">
+          &lt;script&gt;
+            (function() {
+              // INITIALIZATION OF SWIPER
+              // =======================================================
+              var swiper = new Swiper('.swiper');
+            });
+          &lt;/script&gt;
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h2 id="default" class="hs-docs-heading">
+        Default <a class="anchorjs-link" href="#default" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
+            <!-- Swiper -->
+            <div class="js-swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+            </div>
+            <!-- End Swiper -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="navigation" class="hs-docs-heading">
+        Navigation <a class="anchorjs-link" href="#navigation" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab2" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab2" href="#nav-js2" data-bs-toggle="pill" data-bs-target="#nav-js2" role="tab" aria-controls="nav-js2" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent2">
+          <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
+            <!-- Swiper -->
+            <div class="js-swiper-navigation swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="js-swiper-navigation-button-next swiper-button-next"></div>
+              <div class="js-swiper-navigation-button-prev swiper-button-prev"></div>
+            </div>
+            <!-- End Swiper -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html2" role="tabpanel" aria-labelledby="nav-htmlTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-navigation swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Arrows --&gt;
+                  &lt;div class="js-swiper-navigation-button-next"&gt;&lt;/div&gt;
+                  &lt;div class="js-swiper-navigation-button-prev"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js2" role="tabpanel" aria-labelledby="nav-jsTab2">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var navigation = new Swiper('.js-swiper-navigation', {
+                      navigation: {
+                        nextEl: '.js-swiper-navigation-button-next',
+                        prevEl: '.js-swiper-navigation-button-prev',
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="pagination" class="hs-docs-heading">
+        Pagination <a class="anchorjs-link" href="#pagination" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card mb-7">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab3" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab3" href="#nav-result3" data-bs-toggle="pill" data-bs-target="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab3" href="#nav-html3" data-bs-toggle="pill" data-bs-target="#nav-html3" role="tab" aria-controls="nav-html3" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab3" href="#nav-js3" data-bs-toggle="pill" data-bs-target="#nav-js3" role="tab" aria-controls="nav-js3" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent3">
+          <div class="tab-pane fade p-4 show active" id="nav-result3" role="tabpanel" aria-labelledby="nav-resultTab3">
+            <!-- Swiper -->
+            <div class="js-swiper-pagination swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-pagination-element swiper-pagination"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html3" role="tabpanel" aria-labelledby="nav-htmlTab3">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-pagination swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-pagination-element swiper-pagination"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js3" role="tabpanel" aria-labelledby="nav-jsTab3">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var navigation = new Swiper('.js-swiper-pagination', {
+                      pagination: {
+                        el: '.js-swiper-pagination',
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Alert -->
+      <div class="alert alert-soft-dark" role="alert">
+        Use <code>.swiper-pagination-light</code> class for lighter style
+      </div>
+      <!-- End Alert -->
+
+      <!-- Heading -->
+      <h2 id="pagination-dynamic" class="hs-docs-heading">
+        Pagination Dynamic <a class="anchorjs-link" href="#pagination-dynamic" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab4" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab4" href="#nav-result4" data-bs-toggle="pill" data-bs-target="#nav-result4" role="tab" aria-controls="nav-result4" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab4" href="#nav-html4" data-bs-toggle="pill" data-bs-target="#nav-html4" role="tab" aria-controls="nav-html4" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab4" href="#nav-js4" data-bs-toggle="pill" data-bs-target="#nav-js4" role="tab" aria-controls="nav-js4" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent4">
+          <div class="tab-pane fade p-4 show active" id="nav-result4" role="tabpanel" aria-labelledby="nav-resultTab4">
+            <!-- Swiper -->
+            <div class="js-swiper-pagination-dynamic swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-pagination-dynamic-element swiper-pagination"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html4" role="tabpanel" aria-labelledby="nav-htmlTab4">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-pagination-dynamic swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-pagination-dynamic-element swiper-pagination"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js4" role="tabpanel" aria-labelledby="nav-jsTab4">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var paginationDynamic = new Swiper('.js-swiper-pagination-dynamic', {
+                      pagination: {
+                        el: '.js-swiper-pagination-dynamic-element',
+                        dynamicBullets: true,
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="pagination-progress" class="hs-docs-heading">
+        Pagination Progress <a class="anchorjs-link" href="#pagination-progress" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab5" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab5" href="#nav-result5" data-bs-toggle="pill" data-bs-target="#nav-result5" role="tab" aria-controls="nav-result5" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab5" href="#nav-html5" data-bs-toggle="pill" data-bs-target="#nav-html5" role="tab" aria-controls="nav-html5" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab5" href="#nav-js5" data-bs-toggle="pill" data-bs-target="#nav-js5" role="tab" aria-controls="nav-js5" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent5">
+          <div class="tab-pane fade p-4 show active" id="nav-result5" role="tabpanel" aria-labelledby="nav-resultTab5">
+            <!-- Swiper -->
+            <div class="js-swiper-pagination-progress swiper">
+              <!-- Swiper Pagination -->
+              <div class="js-swiper-pagination-progress-element swiper-pagination mt-0"></div>
+
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="js-swiper-pagination-progress-button-next swiper-button-next"></div>
+              <div class="js-swiper-pagination-progress-button-prev swiper-button-prev"></div>
+            </div>
+            <!-- End Swiper -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html5" role="tabpanel" aria-labelledby="nav-htmlTab5">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-pagination-progress swiper"&gt;
+                  &lt;!-- Swiper Pagination --&gt;
+                  &lt;div class="js-swiper-pagination-progress-element swiper-pagination mt-0"&gt;&lt;/div&gt;
+
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Arrows --&gt;
+                  &lt;div class="js-swiper-pagination-progress-button-next"&gt;&lt;/div&gt;
+                  &lt;div class="js-swiper-pagination-progress-button-prev"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js5" role="tabpanel" aria-labelledby="nav-jsTab5">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var paginationProgress = new Swiper('.js-swiper-pagination-progress', {
+                      pagination: {
+                        el: '.js-swiper-pagination-progress-element',
+                        type: 'progressbar',
+                      },
+                      navigation: {
+                        nextEl: '.js-swiper-pagination-progress-button-next',
+                        prevEl: '.js-swiper-pagination-progress-button-prev',
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="pagination-progress-with-thumbs" class="hs-docs-heading">
+        Pagination Progress with Thumbs <a class="anchorjs-link" href="#pagination-progress-with-thumbs" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p><code>.swiper-pagination-progress-light</code> for light version.</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab6" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab6" href="#nav-result6" data-bs-toggle="pill" data-bs-target="#nav-result6" role="tab" aria-controls="nav-result6" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab6" href="#nav-html6" data-bs-toggle="pill" data-bs-target="#nav-html6" role="tab" aria-controls="nav-html6" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab6" href="#nav-js6" data-bs-toggle="pill" data-bs-target="#nav-js6" role="tab" aria-controls="nav-js6" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent6">
+          <div class="tab-pane fade p-4 show active" id="nav-result6" role="tabpanel" aria-labelledby="nav-resultTab6">
+            <!-- Swiper Main -->
+            <div class="js-swiper-pagination-progress-with-thumbs-main swiper mb-5">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+            </div>
+            <!-- End Swiper Main -->
+
+            <!-- Swiper Thumbs -->
+            <div class="js-swiper-pagination-progress-with-thumbs swiper">
+              <div class="swiper-wrapper">
+                <!-- Slide -->
+                <div class="swiper-slide swiper-pagination-progress">
+                  <div class="swiper-pagination-progress-body mb-4">
+                    <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                  </div>
+                  <span>Discover how to build and maintain coding systems using our documentation.</span>
+                </div>
+                <!-- End Slide -->
+
+                <!-- Slide -->
+                <div class="swiper-slide swiper-pagination-progress">
+                  <div class="swiper-pagination-progress-body mb-4">
+                    <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                  </div>
+                  <span>Start browsing our snippets pages with copy-to-clipboard snippets to match Bootstrap's level of quality.</span>
+                </div>
+                <!-- End Slide -->
+
+                <!-- Slide -->
+                <div class="swiper-slide swiper-pagination-progress">
+                  <div class="swiper-pagination-progress-body mb-4">
+                    <div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"></div>
+                  </div>
+                  <span>Apart from 70+ HTML-pages, the theme comes with 3 ready-to-use and stand-alone demo options.</span>
+                </div>
+                <!-- End Slide -->
+              </div>
+            </div>
+            <!-- End Swiper Thumbs -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html6" role="tabpanel" aria-labelledby="nav-htmlTab6">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper Main --&gt;
+                &lt;div class="js-swiper-pagination-progress-with-thumbs-main swiper mb-5"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper Main --&gt;
+
+                &lt;!-- Swiper Thumbs --&gt;
+                &lt;div class="js-swiper-pagination-progress-with-thumbs swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;!-- Slide --&gt;
+                    &lt;div class="swiper-slide swiper-pagination-progress"&gt;
+                      &lt;div class="swiper-pagination-progress-body mb-4"&gt;
+                        &lt;div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"&gt;&lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;span&gt;Discover how to build and maintain coding systems using our documentation.&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Slide --&gt;
+
+                    &lt;!-- Slide --&gt;
+                    &lt;div class="swiper-slide swiper-pagination-progress"&gt;
+                      &lt;div class="swiper-pagination-progress-body mb-4"&gt;
+                        &lt;div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"&gt;&lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;span&gt;Start browsing our snippets pages with copy-to-clipboard snippets to match Bootstrap's level of quality.&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Slide --&gt;
+
+                    &lt;!-- Slide --&gt;
+                    &lt;div class="swiper-slide swiper-pagination-progress"&gt;
+                      &lt;div class="swiper-pagination-progress-body mb-4"&gt;
+                        &lt;div class="js-swiper-pagination-progress-body-helper swiper-pagination-progress-body-helper"&gt;&lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;span&gt;Apart from 70+ HTML-pages, the theme comes with 3 ready-to-use and stand-alone demo options.&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Slide --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper Thumbs --&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js6" role="tabpanel" aria-labelledby="nav-jsTab6">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var paginationProgressWithThumbsThumbs = new Swiper('.js-swiper-pagination-progress-with-thumbs', {
+                      watchSlidesVisibility: true,
+                      watchSlidesProgress: true,
+                      history: false,
+                      breakpoints: {
+                        480: {
+                          slidesPerView: 2,
+                          spaceBetween: 15,
+                        },
+                        768: {
+                          slidesPerView: 3,
+                          spaceBetween: 15,
+                        },
+                        1024: {
+                          slidesPerView: 3,
+                          spaceBetween: 15,
+                        },
+                      },
+                      on: {
+                        'afterInit': function (swiper) {
+                          swiper.el.querySelectorAll('.js-swiper-pagination-progress-body-helper')
+                          .forEach($progress => $progress.style.transitionDuration = `${swiper.params.autoplay.delay}ms`)
+                        }
+                      }
+                    });
+
+                    var paginationProgressWithThumbsMain = new Swiper('.js-swiper-pagination-progress-with-thumbs-main', {
+                      effect: 'fade',
+                      autoplay: true,
+                      loop: true,
+                      thumbs: {
+                        swiper: paginationProgressWithThumbsThumbs
+                      }
+                    })
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="pagination-fraction" class="hs-docs-heading">
+        Pagination Fraction <a class="anchorjs-link" href="#pagination-fraction" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab7" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab7" href="#nav-result7" data-bs-toggle="pill" data-bs-target="#nav-result7" role="tab" aria-controls="nav-result7" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab7" href="#nav-html7" data-bs-toggle="pill" data-bs-target="#nav-html7" role="tab" aria-controls="nav-html7" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab7" href="#nav-js7" data-bs-toggle="pill" data-bs-target="#nav-js7" role="tab" aria-controls="nav-js7" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent7">
+          <div class="tab-pane fade p-4 show active" id="nav-result7" role="tabpanel" aria-labelledby="nav-resultTab7">
+            <!-- Swiper -->
+            <div class="js-swiper-pagination-fraction swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="js-swiper-pagination-fraction-button-next swiper-button-next"></div>
+              <div class="js-swiper-pagination-fraction-button-prev swiper-button-prev"></div>
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-pagination-fraction-element swiper-pagination swiper-pagination-fraction"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html7" role="tabpanel" aria-labelledby="nav-htmlTab7">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-pagination-fraction swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Arrows --&gt;
+                  &lt;div class="js-swiper-pagination-fraction-button-next"&gt;&lt;/div&gt;
+                  &lt;div class="js-swiper-pagination-fraction-button-prev"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-pagination-fraction-element swiper-pagination swiper-pagination-fraction"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js7" role="tabpanel" aria-labelledby="nav-jsTab7">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var paginationProgress = new Swiper('.js-swiper-pagination-fraction', {
+                      pagination: {
+                        el: '.js-swiper-pagination-fraction-element',
+                        type: 'fraction',
+                      },
+                      navigation: {
+                        nextEl: '.js-swiper-pagination-fraction-button-next',
+                        prevEl: '.js-swiper-pagination-fraction-button-prev',
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="vertical" class="hs-docs-heading">
+        Vertical <a class="anchorjs-link" href="#vertical" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Any vertical sliding need to rely on your element must have a valid height of such conditions, if it is full-screen sliding, this height should be <code>100%</code>.</p>
+      <p><a class="link" href="https://github.com/surmon-china/vue-awesome-swiper/issues/119">Learn more here <i class="bi-box-arrow-up-right"></i></a></p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab8" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab8" href="#nav-result8" data-bs-toggle="pill" data-bs-target="#nav-result8" role="tab" aria-controls="nav-result8" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab8" href="#nav-html8" data-bs-toggle="pill" data-bs-target="#nav-html8" role="tab" aria-controls="nav-html8" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab8" href="#nav-js8" data-bs-toggle="pill" data-bs-target="#nav-js8" role="tab" aria-controls="nav-js8" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent8">
+          <div class="tab-pane fade p-4 show active" id="nav-result8" role="tabpanel" aria-labelledby="nav-resultTab8">
+            <!-- Swiper -->
+            <div class="js-swiper-vertical swiper" style="height: 37rem;">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <!-- Swiper Pagination -->
+              <div class="js-swiper-vertical-pagination swiper-pagination swiper-pagination-light"></div>
+            </div>
+            <!-- End Swiper -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html8" role="tabpanel" aria-labelledby="nav-htmlTab8">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-vertical swiper" style="height: 37rem;"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  
+                  &lt;!-- Swiper Pagination --&gt;
+                  &lt;div class="js-swiper-vertical-pagination swiper-pagination swiper-pagination-light"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js8" role="tabpanel" aria-labelledby="nav-jsTab8">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var vertical = new Swiper('.js-swiper-vertical', {
+                      direction: 'vertical',
+                      pagination: {
+                        el: '.js-swiper-vertical-pagination',
+                        clickable: true,
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="space-between" class="hs-docs-heading">
+        Space Between <a class="anchorjs-link" href="#space-between" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab9" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab9" href="#nav-result9" data-bs-toggle="pill" data-bs-target="#nav-result9" role="tab" aria-controls="nav-result9" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab9" href="#nav-html9" data-bs-toggle="pill" data-bs-target="#nav-html9" role="tab" aria-controls="nav-html9" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab9" href="#nav-js9" data-bs-toggle="pill" data-bs-target="#nav-js9" role="tab" aria-controls="nav-js9" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent9">
+          <div class="tab-pane fade p-4 show active" id="nav-result9" role="tabpanel" aria-labelledby="nav-resultTab9">
+            <!-- Swiper -->
+            <div class="js-swiper-space-between swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-space-between-pagination swiper-pagination"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html9" role="tabpanel" aria-labelledby="nav-htmlTab9">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-space-between swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-space-between-pagination swiper-pagination"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js9" role="tabpanel" aria-labelledby="nav-jsTab9">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var spaceBetween = new Swiper('.js-swiper-space-between', {
+                      spaceBetween: 30,
+                      pagination: {
+                        el: '.js-swiper-space-between-pagination',
+                        clickable: true,
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="slides-per-view" class="hs-docs-heading">
+        Slides Per View <a class="anchorjs-link" href="#slides-per-view" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab10" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab10" href="#nav-result10" data-bs-toggle="pill" data-bs-target="#nav-result10" role="tab" aria-controls="nav-result10" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab10" href="#nav-html10" data-bs-toggle="pill" data-bs-target="#nav-html10" role="tab" aria-controls="nav-html10" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab10" href="#nav-js10" data-bs-toggle="pill" data-bs-target="#nav-js10" role="tab" aria-controls="nav-js10" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent10">
+          <div class="tab-pane fade p-4 show active" id="nav-result10" role="tabpanel" aria-labelledby="nav-resultTab10">
+            <!-- Swiper -->
+            <div class="js-swiper-slides-per-view swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="js-swiper-slides-per-view-button-next swiper-button-next"></div>
+              <div class="js-swiper-slides-per-view-button-prev swiper-button-prev"></div>
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-slides-per-view-pagination swiper-pagination"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html10" role="tabpanel" aria-labelledby="nav-htmlTab10">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-slides-per-view swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Arrows --&gt;
+                  &lt;div class="js-swiper-slides-per-view-button-next swiper-button-next"&gt;&lt;/div&gt;
+                  &lt;div class="js-swiper-slides-per-view-button-prev swiper-button-prev"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-slides-per-view-pagination swiper-pagination"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js10" role="tabpanel" aria-labelledby="nav-jsTab10">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var slidesPerView = new Swiper('.js-swiper-slides-per-view', {
+                      slidesPerView: 3,
+                      spaceBetween: 30,
+                      pagination: {
+                        el: '.js-swiper-slides-per-view-pagination',
+                        clickable: true,
+                      },
+                      navigation: {
+                        nextEl: '.js-swiper-slides-per-view-button-next',
+                        prevEl: '.js-swiper-slides-per-view-button-prev',
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="slides-per-view-auto" class="hs-docs-heading">
+        Slides Per View Auto <a class="anchorjs-link" href="#slides-per-view-auto" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab11" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab11" href="#nav-result11" data-bs-toggle="pill" data-bs-target="#nav-result11" role="tab" aria-controls="nav-result11" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab11" href="#nav-html11" data-bs-toggle="pill" data-bs-target="#nav-html11" role="tab" aria-controls="nav-html11" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab11" href="#nav-js11" data-bs-toggle="pill" data-bs-target="#nav-js11" role="tab" aria-controls="nav-js11" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent11">
+          <div class="tab-pane fade p-4 show active" id="nav-result11" role="tabpanel" aria-labelledby="nav-resultTab11">
+            <!-- Swiper -->
+            <div class="js-swiper-slides-per-view-auto swiper swiper-equal-height">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="width: 60%">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide" style="width: 60%">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide" style="width: 30%">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide" style="width: 50%">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide" style="width: 20%">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide" style="width: 60%">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="js-swiper-slides-per-view-auto-button-next swiper-button-next"></div>
+              <div class="js-swiper-slides-per-view-auto-button-prev swiper-button-prev"></div>
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-slides-per-view-auto-pagination swiper-pagination"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html11" role="tabpanel" aria-labelledby="nav-htmlTab11">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-slides-per-view-auto swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide" style="width: 60%"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide" style="width: 60%"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide" style="width: 30%"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide" style="width: 50%"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide" style="width: 20%"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide" style="width: 60%"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Arrows --&gt;
+                  &lt;div class="js-swiper-slides-per-view-auto-button-next swiper-button-next"&gt;&lt;/div&gt;
+                  &lt;div class="js-swiper-slides-per-view-auto-button-prev swiper-button-prev"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-slides-per-view-auto-pagination swiper-pagination"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js11" role="tabpanel" aria-labelledby="nav-jsTab11">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var slidesPerView = new Swiper('.js-swiper-slides-per-view-auto', {
+                      slidesPerView: 3,
+                      spaceBetween: 30,
+                      pagination: {
+                        el: '.js-swiper-slides-per-view-auto-pagination',
+                        clickable: true,
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="responsive-breakpoint" class="hs-docs-heading">
+        Responsive Breakpoint <a class="anchorjs-link" href="#responsive-breakpoint" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab12" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab12" href="#nav-result12" data-bs-toggle="pill" data-bs-target="#nav-result12" role="tab" aria-controls="nav-result12" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab12" href="#nav-html12" data-bs-toggle="pill" data-bs-target="#nav-html12" role="tab" aria-controls="nav-html12" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab12" href="#nav-js12" data-bs-toggle="pill" data-bs-target="#nav-js12" role="tab" aria-controls="nav-js12" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent12">
+          <div class="tab-pane fade p-4 show active" id="nav-result12" role="tabpanel" aria-labelledby="nav-resultTab12">
+            <!-- Swiper -->
+            <div class="js-swiper-responsive-breakpoint swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="js-swiper-responsive-breakpoint-button-next swiper-button-next"></div>
+              <div class="js-swiper-responsive-breakpoint-button-prev swiper-button-prev"></div>
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-responsive-breakpoint-pagination swiper-pagination"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html12" role="tabpanel" aria-labelledby="nav-htmlTab12">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-responsive-breakpoint swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Arrows --&gt;
+                  &lt;div class="js-swiper-responsive-breakpoint-button-next swiper-button-next"&gt;&lt;/div&gt;
+                  &lt;div class="js-swiper-responsive-breakpoint-button-prev swiper-button-prev"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-responsive-breakpoint-pagination swiper-pagination"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js12" role="tabpanel" aria-labelledby="nav-jsTab12">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var responsiveBreakpoint = new Swiper('.js-swiper-responsive-breakpoint', {
+                      slidesPerView: 1,
+                      spaceBetween: 10,
+                      pagination: {
+                        el: '.js-swiper-responsive-breakpoint-pagination',
+                        clickable: true,
+                      },
+                      breakpoints: {
+                        640: {
+                          slidesPerView: 2,
+                          spaceBetween: 20,
+                        },
+                        768: {
+                          slidesPerView: 2,
+                          spaceBetween: 40,
+                        },
+                        1024: {
+                          slidesPerView: 3,
+                          spaceBetween: 50,
+                        },
+                      }
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="centered" class="hs-docs-heading">
+        Centered <a class="anchorjs-link" href="#centered" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab13" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab13" href="#nav-result13" data-bs-toggle="pill" data-bs-target="#nav-result13" role="tab" aria-controls="nav-result13" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab13" href="#nav-html13" data-bs-toggle="pill" data-bs-target="#nav-html13" role="tab" aria-controls="nav-html13" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab13" href="#nav-js13" data-bs-toggle="pill" data-bs-target="#nav-js13" role="tab" aria-controls="nav-js13" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent13">
+          <div class="tab-pane fade p-4 show active" id="nav-result13" role="tabpanel" aria-labelledby="nav-resultTab13">
+            <!-- Swiper -->
+            <div class="js-swiper-centered swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="js-swiper-centered-button-next swiper-button-next"></div>
+              <div class="js-swiper-centered-button-prev swiper-button-prev"></div>
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-centered-pagination swiper-pagination"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html13" role="tabpanel" aria-labelledby="nav-htmlTab13">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-centered swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Arrows --&gt;
+                  &lt;div class="js-swiper-centered-button-next swiper-button-next"&gt;&lt;/div&gt;
+                  &lt;div class="js-swiper-centered-button-prev swiper-button-prev"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-centered-pagination swiper-pagination"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js13" role="tabpanel" aria-labelledby="nav-jsTab13">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var centered = new Swiper('.js-swiper-centered', {
+                      slidesPerView: 4,
+                      spaceBetween: 30,
+                      centeredSlides: true,
+                      pagination: {
+                        el: '.js-swiper-centered-pagination',
+                        clickable: true,
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="centered-auto" class="hs-docs-heading">
+        Centered Auto <a class="anchorjs-link" href="#centered-auto" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab14" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab14" href="#nav-result14" data-bs-toggle="pill" data-bs-target="#nav-result14" role="tab" aria-controls="nav-result14" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab14" href="#nav-html14" data-bs-toggle="pill" data-bs-target="#nav-html14" role="tab" aria-controls="nav-html14" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab14" href="#nav-js14" data-bs-toggle="pill" data-bs-target="#nav-js14" role="tab" aria-controls="nav-js14" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent14">
+          <div class="tab-pane fade p-4 show active" id="nav-result14" role="tabpanel" aria-labelledby="nav-resultTab14">
+            <!-- Swiper -->
+            <div class="js-swiper-centered-auto swiper swiper-equal-height">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="width: 60%">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide" style="width: 60%">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide" style="width: 30%">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide" style="width: 50%">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide" style="width: 20%">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide" style="width: 60%">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="js-swiper-centered-auto-button-next swiper-button-next"></div>
+              <div class="js-swiper-centered-auto-button-prev swiper-button-prev"></div>
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-centered-auto-pagination swiper-pagination"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html14" role="tabpanel" aria-labelledby="nav-htmlTab14">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-centered-auto swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide" style="width: 60%"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide" style="width: 60%"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide" style="width: 30%"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide" style="width: 50%"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide" style="width: 20%"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide" style="width: 60%"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Arrows --&gt;
+                  &lt;div class="js-swiper-centered-auto-button-next swiper-button-next"&gt;&lt;/div&gt;
+                  &lt;div class="js-swiper-centered-auto-button-prev swiper-button-prev"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-centered-auto-pagination swiper-pagination"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js14" role="tabpanel" aria-labelledby="nav-jsTab14">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var centeredAuto = new Swiper('.js-swiper-centered-auto', {
+                      slidesPerView: 'auto',
+                      centeredSlides: true,
+                      spaceBetween: 30,
+                      pagination: {
+                        el: '.js-swiper-centered-auto-pagination',
+                        clickable: true,
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="freemode" class="hs-docs-heading">
+        Freemode <a class="anchorjs-link" href="#freemode" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab22" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab22" href="#nav-result22" data-bs-toggle="pill" data-bs-target="#nav-result22" role="tab" aria-controls="nav-result22" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab22" href="#nav-html22" data-bs-toggle="pill" data-bs-target="#nav-html22" role="tab" aria-controls="nav-html22" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab22" href="#nav-js22" data-bs-toggle="pill" data-bs-target="#nav-js22" role="tab" aria-controls="nav-js22" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent22">
+          <div class="tab-pane fade p-4 show active" id="nav-result22" role="tabpanel" aria-labelledby="nav-resultTab22">
+            <!-- Swiper -->
+            <div class="js-swiper-freemode swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="js-swiper-freemode-button-next swiper-button-next"></div>
+              <div class="js-swiper-freemode-button-prev swiper-button-prev"></div>
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-freemode-pagination swiper-pagination"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html22" role="tabpanel" aria-labelledby="nav-htmlTab22">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-freemode swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Arrows --&gt;
+                  &lt;div class="js-swiper-freemode-button-next swiper-button-next"&gt;&lt;/div&gt;
+                  &lt;div class="js-swiper-freemode-button-prev swiper-button-prev"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-freemode-pagination swiper-pagination"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js22" role="tabpanel" aria-labelledby="nav-jsTab22">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var freemode = new Swiper('.js-swiper-freemode', {
+                      slidesPerView: 3,
+                      spaceBetween: 30,
+                      freeMode: true,
+                      pagination: {
+                        el: '.js-swiper-freemode-pagination',
+                        clickable: true,
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="infinite-loop" class="hs-docs-heading">
+        Infinite Loop <a class="anchorjs-link" href="#infinite-loop" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab15" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab15" href="#nav-result15" data-bs-toggle="pill" data-bs-target="#nav-result15" role="tab" aria-controls="nav-result15" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab15" href="#nav-html15" data-bs-toggle="pill" data-bs-target="#nav-html15" role="tab" aria-controls="nav-html15" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab15" href="#nav-js15" data-bs-toggle="pill" data-bs-target="#nav-js15" role="tab" aria-controls="nav-js15" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent15">
+          <div class="tab-pane fade p-4 show active" id="nav-result15" role="tabpanel" aria-labelledby="nav-resultTab15">
+            <!-- Swiper -->
+            <div class="js-swiper-infinite-loop swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="js-swiper-infinite-loop-button-next swiper-button-next"></div>
+              <div class="js-swiper-infinite-loop-button-prev swiper-button-prev"></div>
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-infinite-loop-pagination swiper-pagination"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html15" role="tabpanel" aria-labelledby="nav-htmlTab15">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-infinite-loop swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Arrows --&gt;
+                  &lt;div class="js-swiper-infinite-loop-button-next"&gt;&lt;/div&gt;
+                  &lt;div class="js-swiper-infinite-loop-button-prev"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-infinite-loop-pagination swiper-pagination"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js15" role="tabpanel" aria-labelledby="nav-jsTab15">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var infiniteLoop = new Swiper('.js-swiper-infinite-loop', {
+                      slidesPerView: 1,
+                      spaceBetween: 30,
+                      loop: true,
+                      pagination: {
+                        el: '.js-swiper-infinite-loop-pagination',
+                        clickable: true,
+                      },
+                      navigation: {
+                        nextEl: '.js-swiper-infinite-loop-button-next',
+                        prevEl: '.js-swiper-infinite-loop-button-prev',
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="effect-fade" class="hs-docs-heading">
+        Effect Mode <a class="anchorjs-link" href="#effect-fade" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab16" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab16" href="#nav-result16" data-bs-toggle="pill" data-bs-target="#nav-result16" role="tab" aria-controls="nav-result16" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab16" href="#nav-html16" data-bs-toggle="pill" data-bs-target="#nav-html16" role="tab" aria-controls="nav-html16" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab16" href="#nav-js16" data-bs-toggle="pill" data-bs-target="#nav-js16" role="tab" aria-controls="nav-js16" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent16">
+          <div class="tab-pane fade p-4 show active" id="nav-result16" role="tabpanel" aria-labelledby="nav-resultTab16">
+            <!-- Swiper -->
+            <div class="js-swiper-effect-fade swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="js-swiper-effect-fade-button-next swiper-button-next"></div>
+              <div class="js-swiper-effect-fade-button-prev swiper-button-prev"></div>
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-effect-fade-pagination swiper-pagination"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html16" role="tabpanel" aria-labelledby="nav-htmlTab16">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-effect-fade swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Arrows --&gt;
+                  &lt;div class="js-swiper-effect-fade-button-next"&gt;&lt;/div&gt;
+                  &lt;div class="js-swiper-effect-fade-button-prev"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-effect-fade-pagination swiper-pagination"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js16" role="tabpanel" aria-labelledby="nav-jsTab16">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var effectFade = new Swiper('.js-swiper-effect-fade', {
+                      spaceBetween: 30,
+                      effect: 'fade',
+                      pagination: {
+                        el: '.js-swiper-effect-fade-pagination',
+                        clickable: true,
+                      },
+                      navigation: {
+                        nextEl: '.js-swiper-effect-fade-button-next',
+                        prevEl: '.js-swiper-effect-fade-button-prev',
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="mousewheel" class="hs-docs-heading">
+        Mousewheel <a class="anchorjs-link" href="#mousewheel" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab17" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab17" href="#nav-result17" data-bs-toggle="pill" data-bs-target="#nav-result17" role="tab" aria-controls="nav-result17" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab17" href="#nav-html17" data-bs-toggle="pill" data-bs-target="#nav-html17" role="tab" aria-controls="nav-html17" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab17" href="#nav-js17" data-bs-toggle="pill" data-bs-target="#nav-js17" role="tab" aria-controls="nav-js17" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent17">
+          <div class="tab-pane fade p-4 show active" id="nav-result17" role="tabpanel" aria-labelledby="nav-resultTab17">
+            <!-- Swiper -->
+            <div class="js-swiper-mousewheel swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="js-swiper-mousewheel-button-next swiper-button-next"></div>
+              <div class="js-swiper-mousewheel-button-prev swiper-button-prev"></div>
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-mousewheel-pagination swiper-pagination"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html17" role="tabpanel" aria-labelledby="nav-htmlTab17">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-mousewheel swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Arrows --&gt;
+                  &lt;div class="js-swiper-mousewheel-button-next"&gt;&lt;/div&gt;
+                  &lt;div class="js-swiper-mousewheel-button-prev"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-mousewheel-pagination swiper-pagination"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js17" role="tabpanel" aria-labelledby="nav-jsTab17">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var mousewheel = new Swiper('.js-swiper-mousewheel', {
+                      slidesPerView: 1,
+                      spaceBetween: 30,
+                      mousewheel: true,
+                      pagination: {
+                        el: '.js-swiper-mousewheel-pagination',
+                        clickable: true,
+                      },
+                      navigation: {
+                        nextEl: '.js-swiper-mousewheel-button-next',
+                        prevEl: '.js-swiper-mousewheel-button-prev',
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="autoplay" class="hs-docs-heading">
+        Autoplay <a class="anchorjs-link" href="#autoplay" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab18" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab18" href="#nav-result18" data-bs-toggle="pill" data-bs-target="#nav-result18" role="tab" aria-controls="nav-result18" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab18" href="#nav-html18" data-bs-toggle="pill" data-bs-target="#nav-html18" role="tab" aria-controls="nav-html18" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab18" href="#nav-js18" data-bs-toggle="pill" data-bs-target="#nav-js18" role="tab" aria-controls="nav-js18" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent18">
+          <div class="tab-pane fade p-4 show active" id="nav-result18" role="tabpanel" aria-labelledby="nav-resultTab18">
+            <!-- Swiper -->
+            <div class="js-swiper-autoplay swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="js-swiper-autoplay-button-next swiper-button-next"></div>
+              <div class="js-swiper-autoplay-button-prev swiper-button-prev"></div>
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-autoplay-pagination swiper-pagination"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html18" role="tabpanel" aria-labelledby="nav-htmlTab18">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-autoplay swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Arrows --&gt;
+                  &lt;div class="js-swiper-autoplay-button-next"&gt;&lt;/div&gt;
+                  &lt;div class="js-swiper-autoplay-button-prev"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-autoplay-pagination swiper-pagination"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js18" role="tabpanel" aria-labelledby="nav-jsTab18">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var autoplay = new Swiper('.js-swiper-autoplay', {
+                      spaceBetween: 30,
+                      centeredSlides: true,
+                      autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                      },
+                      pagination: {
+                        el: '.js-swiper-autoplay-pagination',
+                        clickable: true,
+                      },
+                      navigation: {
+                        nextEl: '.js-swiper-autoplay-button-next',
+                        prevEl: '.js-swiper-autoplay-button-prev',
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="equal-height" class="hs-docs-heading">
+        Equal Height <a class="anchorjs-link" href="#equal-height" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab19" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab19" href="#nav-result19" data-bs-toggle="pill" data-bs-target="#nav-result19" role="tab" aria-controls="nav-result19" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab19" href="#nav-html19" data-bs-toggle="pill" data-bs-target="#nav-html19" role="tab" aria-controls="nav-html19" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab19" href="#nav-js19" data-bs-toggle="pill" data-bs-target="#nav-js19" role="tab" aria-controls="nav-js19" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent19">
+          <div class="tab-pane fade p-4 show active" id="nav-result19" role="tabpanel" aria-labelledby="nav-resultTab19">
+            <!-- Swiper -->
+            <div class="js-swiper-equal-height swiper swiper-equal-height">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <!-- Card -->
+                    <div class="card bg-soft-primary-light shadow-none">
+                      <div class="card-body">
+                        <blockquote class="blockquote">“ This is a beautiful template with exciting components and endless features. ”</blockquote>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <!-- Card -->
+                    <div class="card bg-soft-primary-light shadow-none">
+                      <div class="card-body">
+                        <blockquote class="blockquote">“ I plan to use Front in many more projects, and almost want to keep it to myself ”</blockquote>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <!-- Card -->
+                    <div class="card bg-soft-primary-light shadow-none">
+                      <div class="card-body">
+                        <blockquote class="blockquote">“ Great design and thorough documentation, all backed with amazing support. ”</blockquote>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <!-- Card -->
+                    <div class="card bg-soft-primary-light shadow-none">
+                      <div class="card-body">
+                        <blockquote class="blockquote">“ It has many landing page variations to choose from, which one is always a big advantage. ”</blockquote>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <!-- Card -->
+                    <div class="card bg-soft-primary-light shadow-none">
+                      <div class="card-body">
+                        <blockquote class="blockquote blockquote-sm">“ It is a breeze to work with and really love the snippets to pick out what you want in your design. ”</blockquote>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <!-- Card -->
+                    <div class="card bg-soft-primary-light shadow-none">
+                      <div class="card-body">
+                        <blockquote class="blockquote">“ This is a beautiful template with exciting components and endless features. ”</blockquote>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="js-swiper-equal-height-button-next swiper-button-next"></div>
+              <div class="js-swiper-equal-height-button-prev swiper-button-prev"></div>
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-equal-height-pagination swiper-pagination"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html19" role="tabpanel" aria-labelledby="nav-htmlTab19">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-equal-height swiper swiper-equal-height"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;div class="swiper-slide"&gt;
+                        &lt;!-- Card --&gt;
+                        &lt;div class="card bg-soft-primary-light shadow-none"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;blockquote class="blockquote"&gt;“ This is a beautiful template with exciting components and endless features. ”&lt;/blockquote&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Card --&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;div class="swiper-slide"&gt;
+                        &lt;!-- Card --&gt;
+                        &lt;div class="card bg-soft-primary-light shadow-none"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;blockquote class="blockquote"&gt;“ I plan to use Front in many more projects, and almost want to keep it to myself ”&lt;/blockquote&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Card --&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;div class="swiper-slide"&gt;
+                        &lt;!-- Card --&gt;
+                        &lt;div class="card bg-soft-primary-light shadow-none"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;blockquote class="blockquote"&gt;“ Great design and thorough documentation, all backed with amazing support. ”&lt;/blockquote&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Card --&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;div class="swiper-slide"&gt;
+                        &lt;!-- Card --&gt;
+                        &lt;div class="card bg-soft-primary-light shadow-none"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;blockquote class="blockquote"&gt;“ It has many landing page variations to choose from, which one is always a big advantage. ”&lt;/blockquote&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Card --&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;div class="swiper-slide"&gt;
+                        &lt;!-- Card --&gt;
+                        &lt;div class="card bg-soft-primary-light shadow-none"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;blockquote class="blockquote blockquote-sm"&gt;“ It is a breeze to work with and really love the snippets to pick out what you want in your design. ”&lt;/blockquote&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Card --&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;div class="swiper-slide"&gt;
+                        &lt;!-- Card --&gt;
+                        &lt;div class="card bg-soft-primary-light shadow-none"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;blockquote class="blockquote"&gt;“ This is a beautiful template with exciting components and endless features. ”&lt;/blockquote&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Card --&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Arrows --&gt;
+                  &lt;div class="js-swiper-equal-height-button-next swiper-button-next"&gt;&lt;/div&gt;
+                  &lt;div class="js-swiper-equal-height-button-prev swiper-button-prev"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-equal-height-pagination swiper-pagination"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js19" role="tabpanel" aria-labelledby="nav-jsTab19">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var equalHeight = new Swiper('.js-swiper-equal-height', {
+                      pagination: {
+                        el: '.js-swiper-equal-height-pagination',
+                        clickable: true,
+                      },
+                      breakpoints: {
+                        580: {
+                          slidesPerView: 1,
+                          spaceBetween: 15,
+                        },
+                        768: {
+                          slidesPerView: 2,
+                          spaceBetween: 15,
+                        },
+                        1024: {
+                          slidesPerView: 3,
+                          spaceBetween: 15,
+                        },
+                      }
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="auto-height" class="hs-docs-heading">
+        Auto Height <a class="anchorjs-link" href="#auto-height" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab20" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab20" href="#nav-result20" data-bs-toggle="pill" data-bs-target="#nav-result20" role="tab" aria-controls="nav-result20" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab20" href="#nav-html20" data-bs-toggle="pill" data-bs-target="#nav-html20" role="tab" aria-controls="nav-html20" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab20" href="#nav-js20" data-bs-toggle="pill" data-bs-target="#nav-js20" role="tab" aria-controls="nav-js20" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent20">
+          <div class="tab-pane fade p-4 show active" id="nav-result20" role="tabpanel" aria-labelledby="nav-resultTab20">
+            <!-- Swiper -->
+            <div class="js-swiper-auto-height swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <!-- Card -->
+                    <div class="card bg-soft-primary-light shadow-none">
+                      <div class="card-body">
+                        <blockquote class="blockquote">“ This is a beautiful template with exciting components and endless features. ”</blockquote>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <!-- Card -->
+                    <div class="card bg-soft-primary-light shadow-none">
+                      <div class="card-body">
+                        <blockquote class="blockquote">“ I plan to use Front in many more projects, and almost want to keep it to myself ”</blockquote>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <!-- Card -->
+                    <div class="card bg-soft-primary-light shadow-none">
+                      <div class="card-body">
+                        <blockquote class="blockquote">“ Great design and thorough documentation, all backed with amazing support. ”</blockquote>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <!-- Card -->
+                    <div class="card bg-soft-primary-light shadow-none">
+                      <div class="card-body">
+                        <blockquote class="blockquote">“ It has many landing page variations to choose from, which one is always a big advantage. ”</blockquote>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <!-- Card -->
+                    <div class="card bg-soft-primary-light shadow-none">
+                      <div class="card-body">
+                        <blockquote class="blockquote blockquote-sm">“ It is a breeze to work with and really love the snippets to pick out what you want in your design. ”</blockquote>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <!-- Card -->
+                    <div class="card bg-soft-primary-light shadow-none">
+                      <div class="card-body">
+                        <blockquote class="blockquote">“ This is a beautiful template with exciting components and endless features. ”</blockquote>
+                      </div>
+                    </div>
+                    <!-- End Card -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-auto-height-pagination swiper-pagination"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html20" role="tabpanel" aria-labelledby="nav-htmlTab20">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-auto-height swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;div class="swiper-slide"&gt;
+                        &lt;!-- Card --&gt;
+                        &lt;div class="card bg-soft-primary-light shadow-none"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;blockquote class="blockquote"&gt;“ This is a beautiful template with exciting components and endless features. ”&lt;/blockquote&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Card --&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;div class="swiper-slide"&gt;
+                        &lt;!-- Card --&gt;
+                        &lt;div class="card bg-soft-primary-light shadow-none"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;blockquote class="blockquote"&gt;“ I plan to use Front in many more projects, and almost want to keep it to myself ”&lt;/blockquote&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Card --&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;div class="swiper-slide"&gt;
+                        &lt;!-- Card --&gt;
+                        &lt;div class="card bg-soft-primary-light shadow-none"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;blockquote class="blockquote"&gt;“ Great design and thorough documentation, all backed with amazing support. ”&lt;/blockquote&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Card --&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;div class="swiper-slide"&gt;
+                        &lt;!-- Card --&gt;
+                        &lt;div class="card bg-soft-primary-light shadow-none"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;blockquote class="blockquote"&gt;“ It has many landing page variations to choose from, which one is always a big advantage. ”&lt;/blockquote&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Card --&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;div class="swiper-slide"&gt;
+                        &lt;!-- Card --&gt;
+                        &lt;div class="card bg-soft-primary-light shadow-none"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;blockquote class="blockquote blockquote-sm"&gt;“ It is a breeze to work with and really love the snippets to pick out what you want in your design. ”&lt;/blockquote&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Card --&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;div class="swiper-slide"&gt;
+                        &lt;!-- Card --&gt;
+                        &lt;div class="card bg-soft-primary-light shadow-none"&gt;
+                          &lt;div class="card-body"&gt;
+                            &lt;blockquote class="blockquote"&gt;“ This is a beautiful template with exciting components and endless features. ”&lt;/blockquote&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Card --&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-auto-height-pagination swiper-pagination"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js20" role="tabpanel" aria-labelledby="nav-jsTab20">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var autoHeight = new Swiper('.js-swiper-auto-height', {
+                      autoHeight: true, //enable auto height
+                      spaceBetween: 20,
+                      pagination: {
+                        el: '.js-swiper-auto-height-pagination',
+                        clickable: true,
+                      },
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="thumbs-gallery" class="hs-docs-heading">
+        Thumbs Gallery <a class="anchorjs-link" href="#thumbs-gallery" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab21" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab21" href="#nav-result21" data-bs-toggle="pill" data-bs-target="#nav-result21" role="tab" aria-controls="nav-result21" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab21" href="#nav-html21" data-bs-toggle="pill" data-bs-target="#nav-html21" role="tab" aria-controls="nav-html21" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab21" href="#nav-js21" data-bs-toggle="pill" data-bs-target="#nav-js21" role="tab" aria-controls="nav-js21" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent21">
+          <div class="tab-pane fade p-4 show active" id="nav-result21" role="tabpanel" aria-labelledby="nav-resultTab21">
+            <!-- Swiper Main -->
+            <div class="js-swiper-gallery-main swiper mb-2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="js-swiper-gallery-button-next swiper-button-next"></div>
+              <div class="js-swiper-gallery-button-prev swiper-button-prev"></div>
+            </div>
+            <!-- End Swiper Main -->
+
+            <!-- Swiper Thumbs -->
+            <div class="js-swiper-gallery-thumbs swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3.jpg" alt="Image Description">
+                </div>
+              </div>
+            </div>
+            <!-- End Swiper Thumbs -->
+          </div>
+
+          <div class="tab-pane fade" id="nav-html21" role="tabpanel" aria-labelledby="nav-htmlTab21">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper Main --&gt;
+                &lt;div class="js-swiper-gallery-main swiper mb-2"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Arrows --&gt;
+                  &lt;div class="js-swiper-gallery-button-next swiper-button-next"&gt;&lt;/div&gt;
+                  &lt;div class="js-swiper-gallery-button-prev swiper-button-prev"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper Main --&gt;
+
+                &lt;!-- Swiper Thumbs --&gt;
+                &lt;div class="js-swiper-gallery-thumbs swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper Thumbs --&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js21" role="tabpanel" aria-labelledby="nav-jsTab21">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var galleryThumbs = new Swiper('.js-swiper-gallery-thumbs', {
+                      spaceBetween: 10,
+                      slidesPerView: 3,
+                      freeMode: true,
+                      watchSlidesVisibility: true,
+                      watchSlidesProgress: true,
+                    });
+
+                    var galleryTop = new Swiper('.js-swiper-gallery-main', {
+                      spaceBetween: 10,
+                      navigation: {
+                        nextEl: '.js-swiper-gallery-button-next',
+                        prevEl: '.js-swiper-gallery-button-prev',
+                      },
+                      thumbs: {
+                        swiper: galleryThumbs
+                      }
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="preloader" class="hs-docs-heading">
+        Preloader <a class="anchorjs-link" href="#preloader" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab23" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-resultTab23" href="#nav-result23" data-bs-toggle="pill" data-bs-target="#nav-result23" role="tab" aria-controls="nav-result23" aria-selected="true">Preview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-htmlTab23" href="#nav-html23" data-bs-toggle="pill" data-bs-target="#nav-html23" role="tab" aria-controls="nav-html23" aria-selected="false">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-jsTab23" href="#nav-js23" data-bs-toggle="pill" data-bs-target="#nav-js23" role="tab" aria-controls="nav-js23" aria-selected="false">JS</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent23">
+          <div class="tab-pane fade p-4 show active" id="nav-result23" role="tabpanel" aria-labelledby="nav-resultTab23">
+            <!-- Swiper -->
+            <div class="js-swiper-preloader swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description">
+                </div>
+                <div class="swiper-slide">
+                  <img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description">
+                </div>
+              </div>
+
+              <!-- Arrows -->
+              <div class="js-swiper-preloader-button-next swiper-button-next"></div>
+              <div class="js-swiper-preloader-button-prev swiper-button-prev"></div>
+
+              <!-- Preloader -->
+              <div class="js-swiper-preloader swiper-preloader">
+                <div class="spinner-border text-primary" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+              <!-- End Preloader -->
+            </div>
+            <!-- End Swiper -->
+
+            <!-- Swiper Pagination -->
+            <div class="js-swiper-preloader-pagination swiper-pagination"></div>
+          </div>
+
+          <div class="tab-pane fade" id="nav-html23" role="tabpanel" aria-labelledby="nav-htmlTab23">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- Swiper --&gt;
+                &lt;div class="js-swiper-preloader swiper"&gt;
+                  &lt;div class="swiper-wrapper"&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img1-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img2-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img3-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img4-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img5-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="swiper-slide"&gt;
+                      &lt;img class="img-fluid" src="../assets/img/documentation/img6-lg.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Arrows --&gt;
+                  &lt;div class="js-swiper-preloader-button-next swiper-button-next"&gt;&lt;/div&gt;
+                  &lt;div class="js-swiper-preloader-button-prev swiper-button-prev"&gt;&lt;/div&gt;
+
+                  &lt;!-- Preloader --&gt;
+                  &lt;div class="js-swiper-preloader swiper-preloader"&gt;
+                    &lt;div class="spinner-border text-primary" role="status"&gt;
+                      &lt;span class="visually-hidden"&gt;Loading...&lt;/span&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Preloader --&gt;
+                &lt;/div&gt;
+                &lt;!-- End Swiper --&gt;
+                
+                &lt;!-- Swiper Pagination --&gt;
+                &lt;div class="js-swiper-preloader-pagination swiper-pagination"&gt;&lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-js23" role="tabpanel" aria-labelledby="nav-jsTab23">
+            <pre>
+              <code class="language-markup" data-lang="html">
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  (function() {
+                    // INITIALIZATION OF SWIPER
+                    // =======================================================
+                    var preloader = new Swiper('.js-swiper-preloader', {
+                      slidesPerView: 3,
+                      spaceBetween: 30,
+                      pagination: {
+                        el: '.js-swiper-preloader-pagination',
+                        clickable: true,
+                      },
+                      navigation: {
+                        nextEl: '.js-swiper-preloader-button-next',
+                        prevEl: '.js-swiper-preloader-button-prev',
+                      },
+                      on: {
+                        'imagesReady': function (swiper) {
+                          const preloader = swiper.el.querySelector('.js-swiper-preloader')
+                          preloader.parentNode.removeChild(preloader)
+                        }
+                      }
+                    });
+                  })()
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+    </div>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": "2rem"
+         },
+         "show": {
+           "bottom": "2rem"
+         },
+         "hide": {
+           "bottom": "-2rem"
+         }
+       }
+     }'>
+    <i class="bi-chevron-up"></i>
+  </a>
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Implementing Plugins -->
+  <script src="../assets/js/vendor.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="../assets/js/theme.min.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
+
+
+      // INITIALIZATION OF NAV SCROLLER
+      // =======================================================
+      new HsNavScroller('.js-nav-scroller', {
+        delay: 400,
+        offset: 140
+      })
+
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('../assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+
+
+      // INITIALIZATION OF SWIPER
+      // =======================================================
+      var swiper = new Swiper('.js-swiper');
+
+      // Navigation
+      var navigation = new Swiper('.js-swiper-navigation', {
+        navigation: {
+          nextEl: '.js-swiper-navigation-button-next',
+          prevEl: '.js-swiper-navigation-button-prev',
+        },
+      });
+
+      // Pagination
+      var pagination = new Swiper('.js-swiper-pagination', {
+        pagination: {
+          el: '.js-swiper-pagination-element',
+          clickable: true,
+        },
+      });
+
+      // Pagination Dynamic
+      var paginationDynamic = new Swiper('.js-swiper-pagination-dynamic', {
+        pagination: {
+          el: '.js-swiper-pagination-dynamic-element',
+          dynamicBullets: true,
+        },
+      });
+
+      // Pagination Progress
+      var paginationProgress = new Swiper('.js-swiper-pagination-progress', {
+        pagination: {
+          el: '.js-swiper-pagination-progress-element',
+          type: 'progressbar',
+        },
+        navigation: {
+          nextEl: '.js-swiper-pagination-progress-button-next',
+          prevEl: '.js-swiper-pagination-progress-button-prev',
+        },
+      });
+
+      // Pagination Thumbs
+      var paginationProgressWithThumbsThumbs = new Swiper('.js-swiper-pagination-progress-with-thumbs', {
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        history: false,
+        breakpoints: {
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+        },
+        on: {
+          'afterInit': function (swiper) {
+            swiper.el.querySelectorAll('.js-swiper-pagination-progress-body-helper')
+            .forEach($progress => $progress.style.transitionDuration = `${swiper.params.autoplay.delay}ms`)
+          }
+        }
+      });
+
+      var paginationProgressWithThumbsMain = new Swiper('.js-swiper-pagination-progress-with-thumbs-main', {
+        effect: 'fade',
+        autoplay: true,
+        loop: true,
+        thumbs: {
+          swiper: paginationProgressWithThumbsThumbs
+        }
+      })
+
+      // Pagination Fraction
+      var paginationFraction = new Swiper('.js-swiper-pagination-fraction', {
+        pagination: {
+          el: '.js-swiper-pagination-fraction-element',
+          type: 'fraction',
+        },
+        navigation: {
+          nextEl: '.js-swiper-pagination-fraction-button-next',
+          prevEl: '.js-swiper-pagination-fraction-button-prev',
+        },
+      });
+
+      // Vertical
+      var vertical = new Swiper('.js-swiper-vertical', {
+        direction: 'vertical',
+        pagination: {
+          el: '.js-swiper-vertical-pagination',
+          clickable: true,
+        },
+      });
+
+      // Space Between
+      var spaceBetween = new Swiper('.js-swiper-space-between', {
+        spaceBetween: 30,
+        pagination: {
+          el: '.js-swiper-space-between-pagination',
+          clickable: true,
+        },
+      });
+
+      // Sliders Per View
+      var slidesPerView = new Swiper('.js-swiper-slides-per-view', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: '.js-swiper-slides-per-view-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.js-swiper-slides-per-view-button-next',
+          prevEl: '.js-swiper-slides-per-view-button-prev',
+        },
+      });
+
+      // Sliders Per View Auto
+      var slidesPerView = new Swiper('.js-swiper-slides-per-view-auto', {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        pagination: {
+          el: '.js-swiper-slides-per-view-auto-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.js-swiper-slides-per-view-auto-button-next',
+          prevEl: '.js-swiper-slides-per-view-auto-button-prev',
+        },
+      });
+
+      // Responsive Breakpoint
+      var responsiveBreakpoint = new Swiper('.js-swiper-responsive-breakpoint', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: '.js-swiper-responsive-breakpoint-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.js-swiper-responsive-breakpoint-button-next',
+          prevEl: '.js-swiper-responsive-breakpoint-button-prev',
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        }
+      });
+
+      // Centered
+      var centered = new Swiper('.js-swiper-centered', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        centeredSlides: true,
+        pagination: {
+          el: '.js-swiper-centered-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.js-swiper-centered-button-next',
+          prevEl: '.js-swiper-centered-button-prev',
+        },
+      });
+
+      // Centered Auto
+      var centeredAuto = new Swiper('.js-swiper-centered-auto', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: '.js-swiper-centered-auto-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.js-swiper-centered-auto-button-next',
+          prevEl: '.js-swiper-centered-auto-button-prev',
+        },
+      });
+
+      // Freemode
+      var freemode = new Swiper('.js-swiper-freemode', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: '.js-swiper-freemode-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.js-swiper-freemode-button-next',
+          prevEl: '.js-swiper-freemode-button-prev',
+        },
+      });
+
+      // Infinite Loop
+      var infiniteLoop = new Swiper('.js-swiper-infinite-loop', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: '.js-swiper-infinite-loop-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.js-swiper-infinite-loop-button-next',
+          prevEl: '.js-swiper-infinite-loop-button-prev',
+        },
+      });
+
+      // Effect Fade
+      var effectFade = new Swiper('.js-swiper-effect-fade', {
+        spaceBetween: 30,
+        effect: 'fade',
+        pagination: {
+          el: '.js-swiper-effect-fade-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.js-swiper-effect-fade-button-next',
+          prevEl: '.js-swiper-effect-fade-button-prev',
+        },
+      });
+
+      // Mousewheel
+      var mousewheel = new Swiper('.js-swiper-mousewheel', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        pagination: {
+          el: '.js-swiper-mousewheel-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.js-swiper-mousewheel-button-next',
+          prevEl: '.js-swiper-mousewheel-button-prev',
+        },
+      });
+
+      // Autoplay
+      var autoplay = new Swiper('.js-swiper-autoplay', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.js-swiper-autoplay-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.js-swiper-autoplay-button-next',
+          prevEl: '.js-swiper-autoplay-button-prev',
+        },
+      });
+
+      // Equal Height
+      var equalHeight = new Swiper('.js-swiper-equal-height', {
+        pagination: {
+          el: '.js-swiper-equal-height-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.js-swiper-equal-height-button-next',
+          prevEl: '.js-swiper-equal-height-button-prev',
+        },
+        breakpoints: {
+          580: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+        }
+      });
+
+      // Auto Height
+      var autoHeight = new Swiper('.js-swiper-auto-height', {
+        autoHeight: true, //enable auto height
+        spaceBetween: 20,
+        pagination: {
+          el: '.js-swiper-auto-height-pagination',
+          clickable: true,
+        },
+      });
+
+      // Thumbs Gallery
+      var galleryThumbs = new Swiper('.js-swiper-gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+
+      var galleryTop = new Swiper('.js-swiper-gallery-main', {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: '.js-swiper-gallery-button-next',
+          prevEl: '.js-swiper-gallery-button-prev',
+        },
+        thumbs: {
+          swiper: galleryThumbs
+        }
+      });
+
+
+      // Preloader
+      var preloader = new Swiper('.js-swiper-preloader', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: '.js-swiper-preloader-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.js-swiper-preloader-button-next',
+          prevEl: '.js-swiper-preloader-button-prev',
+        },
+        on: {
+          'imagesReady': function (swiper) {
+            const preloader = swiper.el.querySelector('.js-swiper-preloader')
+            preloader.parentNode.removeChild(preloader)
+          }
+        }
+      });
+    })()
+  </script>
+</body>
+
+<!-- Mirrored from htmlstream.com/preview/front-v4.2/html/documentation/swiper.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Aug 2022 18:21:43 GMT -->
+</html>
