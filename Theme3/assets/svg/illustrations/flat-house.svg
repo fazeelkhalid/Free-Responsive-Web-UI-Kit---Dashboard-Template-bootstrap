@@ -1,0 +1,59 @@
+<svg width="330" height="285" viewBox="0 0 330 285" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M287.5 285H45L46.7 104.2L116 85.9H214.1L285.8 98.8L287.5 285Z" fill="#E7EAF3"/>
+<g opacity="0.7">
+<path opacity="0.7" d="M138.8 7.89999H121.1V42.8H138.8V7.89999Z" fill="url(#paint0_linear)"/>
+</g>
+<path d="M121.1 115.5V77.8H44.2L31.2 115.5V119.3H121.5V115.5H121.1Z" fill="#F8FAFD"/>
+<path d="M121.1 115.5H32.1L45 78.2H121.1V115.5Z" fill="#377dff"/>
+<path d="M121.5 115.5H32.1V119.3H121.5V115.5Z" fill="#2369EB"/>
+<path d="M286.6 78.2H209.5V116.4H209.1V120.3H299.7V116.4L286.6 78.2Z" fill="#F8FAFD"/>
+<path d="M209.5 79.2H285.6L298.5 116.5H209.5V79.2Z" fill="#377dff"/>
+<path d="M298.4 115H209V118.8H298.4V115Z" fill="#2369EB"/>
+<path opacity="0.5" d="M104.3 216.1H56V246.2H104.3V216.1Z" fill="#F8FAFD"/>
+<path opacity="0.1" d="M107.2 244.1H53.2V249.4H107.2V244.1Z" fill="#8C98A4"/>
+<path d="M107.2 243.6H53.2V248.9H107.2V243.6Z" fill="#8C98A4"/>
+<path d="M104.3 216.1H56V228.1H104.3V216.1Z" fill="#BDC5D1"/>
+<path opacity="0.5" d="M275 216.1H226.7V246.2H275V216.1Z" fill="#F8FAFD"/>
+<path opacity="0.1" d="M277.9 244.1H223.9V249.4H277.9V244.1Z" fill="#8C98A4"/>
+<path d="M277.9 243.6H223.9V248.9H277.9V243.6Z" fill="#8C98A4"/>
+<path d="M275.1 216.1H226.8V228.1H275.1V216.1Z" fill="#BDC5D1"/>
+<path opacity="0.5" d="M275 145.8H226.7V175.9H275V145.8Z" fill="#F8FAFD"/>
+<path opacity="0.1" d="M277.9 173.8H223.9V179.1H277.9V173.8Z" fill="#8C98A4"/>
+<path d="M277.9 173.3H223.9V178.6H277.9V173.3Z" fill="#8C98A4"/>
+<path d="M275.1 145.8H226.8V157.8H275.1V145.8Z" fill="#BDC5D1"/>
+<path opacity="0.5" d="M105.8 145.8H57.5V175.9H105.8V145.8Z" fill="#F8FAFD"/>
+<path opacity="0.1" d="M108.6 173.8H54.6V179.1H108.6V173.8Z" fill="#8C98A4"/>
+<path d="M108.6 173.3H54.6V178.6H108.6V173.3Z" fill="#8C98A4"/>
+<path d="M105.8 145.8H57.5V157.8H105.8V145.8Z" fill="#BDC5D1"/>
+<g opacity="0.7">
+<path opacity="0.7" d="M224.4 58.2L165.5 12.6L108.4 58.2L103.9 52.6L165.4 3.5L228.8 52.6L224.4 58.2Z" fill="#377dff"/>
+</g>
+<path d="M138.3 8.39999H121.6V42.8H138.3V8.39999Z" fill="#DE4437"/>
+<path d="M218.9 283.6H111.8V52.1L165.8 50L218.9 52.1V283.6Z" fill="#E7EAF3"/>
+<path d="M217.4 283.6H113.2V51.2L165.3 12L218.4 52.7L217.4 283.6Z" fill="white"/>
+<path d="M178.5 239.6H152.2V283.6H178.5V239.6Z" fill="#377dff"/>
+<path d="M192.3 200.2H138.3V205.5H192.3V200.2Z" fill="#8C98A4"/>
+<path d="M189.5 172.2H141.2V202.3H189.5V172.2Z" fill="#8C98A4"/>
+<path d="M192.3 199.7H138.3V205H192.3V199.7Z" fill="#8C98A4"/>
+<path d="M189.5 172.2H141.2V184.2H189.5V172.2Z" fill="#8C98A4"/>
+<path d="M189.5 113.1H141.2V143.2H189.5V113.1Z" fill="#8C98A4"/>
+<path d="M192.3 140.6H138.3V145.9H192.3V140.6Z" fill="#8C98A4"/>
+<path d="M189.5 113.1H141.2V125.1H189.5V113.1Z" fill="#8C98A4"/>
+<path d="M189.5 54.1H141.2V84.2H189.5V54.1Z" fill="#8C98A4"/>
+<path d="M192.3 81.6H138.3V86.9H192.3V81.6Z" fill="#8C98A4"/>
+<path d="M189.5 54.1H141.2V66.1H189.5V54.1Z" fill="#8C98A4"/>
+<path d="M224.4 59.9L165.5 14.3L108.4 59.9L103.9 54.3L165.4 5.20001L228.8 54.2L224.4 59.9Z" fill="#377dff"/>
+<path d="M174.6 263.5C175.649 263.5 176.5 262.649 176.5 261.6C176.5 260.551 175.649 259.7 174.6 259.7C173.551 259.7 172.7 260.551 172.7 261.6C172.7 262.649 173.551 263.5 174.6 263.5Z" fill="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="129.95" y1="42.85" x2="129.95" y2="7.94999" gradientUnits="userSpaceOnUse">
+<stop stop-color="#808080" stop-opacity="0.25"/>
+<stop offset="0.54" stop-color="#808080" stop-opacity="0.12"/>
+<stop offset="1" stop-color="#808080" stop-opacity="0.1"/>
+</linearGradient>
+<clipPath id="clip0">
+<rect width="330" height="285" fill="white"/>
+</clipPath>
+</defs>
+</svg>
