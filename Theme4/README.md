@@ -1,4 +1,4 @@
-<h1 align="center"> Theme3 Demo</h1>
+<h1 align="center"> Theme4 Demo</h1>
 
 <p float="left">
   <img src="./Demo%20Images/1.png"  width = 45%/>
@@ -11,6 +11,8 @@
   <img src="./Demo%20Images/8.png"  width = 45%/>
   <img src="./Demo%20Images/9.png"  width = 45%/>
   <img src="./Demo%20Images/10.png"  width = 45%/>
+  <img src="./Demo%20Images/11.png"  width = 45%/>
+  <img src="./Demo%20Images/12.png"  width = 45%/>
 </p>
 
 
