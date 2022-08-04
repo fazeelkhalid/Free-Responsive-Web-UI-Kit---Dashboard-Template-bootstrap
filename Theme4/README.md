@@ -18,7 +18,7 @@
 
 
 <div class="theme-description">
-                        <h3><strong>Our dear customers! </strong><strong>Some of you might noticed slower responce time of our support. This happens because our team is from Ukraine. Most of you are probably aware of the current situation in our country. So we hope for your understanding. We’ll keep providing you with quality support, updates and new themes.</strong></h3>
+                        
 <p>&nbsp;</p>
 <p><strong>Silicon is a multipurpose template with focus in technology business niches</strong>. It offers demos for&nbsp;<strong>creative businesses,&nbsp;IT,&nbsp;software development</strong>&nbsp;as well as&nbsp;<strong>corporate segment</strong>&nbsp;and&nbsp;<strong>startups</strong>. Below you will find the complete list of all page templates and landing pages.</p>
 <p>Silicon also includes a&nbsp;<strong>complete set of frequently used inner and specialty page&nbsp;designs</strong>&nbsp;as well as&nbsp;<strong>Blog and Portfolio</strong>&nbsp;listings and single pages.</p>
