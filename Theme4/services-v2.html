@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from silicon.createx.studio/services-v2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:41:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Silicon | Services v.2</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
+        <div class="container px-3">
+          <a href="index.html" class="navbar-brand pe-3">
+            <img src="assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Landings</a>
+                  <div class="dropdown-menu p-0">
+                    <div class="d-lg-flex">
+                      <div class="mega-dropdown-column bg-position-center bg-repeat-0 bg-size-cover rounded-3 rounded-end-0" style="background-image: url(assets/img/landings.jpg); margin: -1px;"></div>
+                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                        <ul class="list-unstyled mb-0">
+                          <li><a href="index.html" class="dropdown-item">Template Intro Page</a></li>
+                          <li><a href="landing-mobile-app-showcase-v1.html" class="dropdown-item">Mobile App Showcase v.1</a></li>
+                          <li><a href="landing-mobile-app-showcase-v2.html" class="dropdown-item">Mobile App Showcase v.2</a></li>
+                          <li><a href="landing-saas-v1.html" class="dropdown-item">SaaS v.1</a></li>
+                          <li><a href="landing-saas-v2.html" class="dropdown-item">SaaS v.2</a></li>
+                          <li><a href="landing-saas-v3.html" class="dropdown-item">SaaS v.3</a></li>
+                          <li><a href="landing-financial.html" class="dropdown-item">Financial Consulting</a></li>
+                          <li><a href="landing-online-courses.html" class="dropdown-item">Online Courses</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                        <ul class="list-unstyled mb-0">
+                          <li><a href="landing-medical.html" class="dropdown-item">Medical</a></li>
+                          <li><a href="landing-software-company.html" class="dropdown-item">IT (Software) Company</a></li>
+                          <li><a href="landing-conference.html" class="dropdown-item">Conference</a></li>
+                          <li><a href="landing-digital-agency.html" class="dropdown-item">Digital Agency</a></li>
+                          <li><a href="landing-blog.html" class="dropdown-item">Blog Homepage</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                  <div class="dropdown-menu">
+                    <div class="d-lg-flex pt-lg-3">
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">About</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="about-v1.html" class="dropdown-item py-1">About v.1</a></li>
+                          <li><a href="about-v2.html" class="dropdown-item py-1">About v.2</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Blog</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="blog-list-with-sidebar.html" class="dropdown-item py-1">List View with Sidebar</a></li>
+                          <li><a href="blog-grid-with-sidebar.html" class="dropdown-item py-1">Grid View with Sidebar</a></li>
+                          <li><a href="blog-list-no-sidebar.html" class="dropdown-item py-1">List View no Sidebar</a></li>
+                          <li><a href="blog-grid-no-sidebar.html" class="dropdown-item py-1">Grid View no Sidebar</a></li>
+                          <li><a href="blog-simple-feed.html" class="dropdown-item py-1">Simple Feed</a></li>
+                          <li><a href="blog-single.html" class="dropdown-item py-1">Single Post</a></li>
+                          <li><a href="blog-podcast.html" class="dropdown-item py-1">Podcast</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">Portfolio</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="portfolio-grid.html" class="dropdown-item py-1">Grid View</a></li>
+                          <li><a href="portfolio-list.html" class="dropdown-item py-1">List View</a></li>
+                          <li><a href="portfolio-slider.html" class="dropdown-item py-1">Slider View</a></li>
+                          <li><a href="portfolio-courses.html" class="dropdown-item py-1">Courses</a></li>
+                          <li><a href="portfolio-single-project.html" class="dropdown-item py-1">Single Project</a></li>
+                          <li><a href="portfolio-single-course.html" class="dropdown-item py-1">Single Course</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Services</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="services-v1.html" class="dropdown-item py-1">Services v.1</a></li>
+                          <li><a href="services-v2.html" class="dropdown-item py-1">Services v.2</a></li>
+                          <li><a href="services-single-v1.html" class="dropdown-item py-1">Service Details v.1</a></li>
+                          <li><a href="services-single-v2.html" class="dropdown-item py-1">Service Details v.2</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">Pricing</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="pricing.html" class="dropdown-item py-1">Pricing Page</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Contacts</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="contacts-v1.html" class="dropdown-item py-1">Contacts v.1</a></li>
+                          <li><a href="contacts-v2.html" class="dropdown-item py-1">Contacts v.2</a></li>
+                          <li><a href="contacts-v3.html" class="dropdown-item py-1">Contacts v.3</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Specialty</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="404-v1.html" class="dropdown-item py-1">404 Error v.1</a></li>
+                          <li><a href="404-v2.html" class="dropdown-item py-1">404 Error v.2</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
+                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
+                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
+                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
+                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
+                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
+                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
+                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
+                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="components/typography.html" class="nav-link">UI Kit</a>
+                </li>
+                <li class="nav-item">
+                  <a href="docs/getting-started.html" class="nav-link">Docs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="offcanvas-header border-top">
+              <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
+                <i class="bx bx-cart fs-4 lh-1 me-1"></i>
+                &nbsp;Buy now
+              </a>
+            </div>      
+          </div>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-5 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </header>
+
+
+      <!-- Breadcrumb -->
+      <nav class="container py-4 mb-lg-2" aria-label="breadcrumb">
+        <ol class="breadcrumb pt-lg-3 mb-0">
+          <li class="breadcrumb-item">
+            <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Services v.2</li>
+        </ol>
+      </nav>
+      
+      <!-- Page title -->
+      <h1 class="container pb-4 mt-n1 mt-lg-0">Services v.2</h1>
+
+
+      <!-- Service -->
+      <section class="container mb-md-3 mb-lg-5 pb-5">
+        <div class="row">
+          <div class="col-md-6 pb-2 pb-md-0 mb-4 mb-md-0">
+            <div class="pe-lg-5">
+              <img src="assets/img/services/service01.jpg" class="rounded-3" alt="Image">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2 class="h3 mb-sm-4">Consulting Services</h2>
+            <p class="d-md-none d-xl-block pb-2 pb-md-3 mb-3">Orci, ac libero sit ultrices enim volutpat augue. Congue sit nulla velit ornare cras. Facilisis tempus non erat ornare imperdiet. In ac ullamcorper proin urna, lacus, tortor, ullamcorper egestas mattis mauris.</p>
+            <div class="border rounded-3 mb-4 mb-lg-5">
+              <div class="row row-cols-1 row-cols-sm-2 g-0">
+                <div class="col d-flex align-items-center border-end-sm border-bottom p-3">
+                  <img src="assets/img/services/icons/digital.svg" width="48" alt="Icon">
+                  <div class="ps-2 ms-1">
+                    <h3 class="h6 mb-0">Digital transformation</h3>
+                    <p class="fs-xs mb-0">Aliquam quis odio senectus.</p>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center border-bottom p-3">
+                  <img src="assets/img/services/icons/chart.svg" width="48" alt="Icon">
+                  <div class="ps-2 ms-1">
+                    <h3 class="h6 mb-0">Analytics services</h3>
+                    <p class="fs-xs mb-0">Curabitur neque ut morbi sapien.</p>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center border-end-sm p-3">
+                  <img src="assets/img/services/icons/marketing.svg" width="48" alt="Icon">
+                  <div class="ps-2 ms-1">
+                    <h3 class="h6 mb-0">Marketing &amp; sales</h3>
+                    <p class="fs-xs mb-0">At faucibus molestie egestas sed.</p>
+                  </div>
+                </div>
+                <hr class="d-sm-none">
+                <div class="col d-flex align-items-center p-3">
+                  <img src="assets/img/services/icons/cybersecurity.svg" width="48" alt="Icon">
+                  <div class="ps-2 ms-1">
+                    <h3 class="h6 mb-0">Cybersecurity &amp; strategy</h3>
+                    <p class="fs-xs mb-0">Orci bibendum ullamcorper lorem.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row">
+              <a href="#" class="btn btn-primary mb-3 mb-sm-0 me-sm-3">Send request</a>
+              <a href="#" class="btn btn-outline-primary">
+                Learn more
+                <i class="bx bx-right-arrow-alt fs-xl ms-2 me-n1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Service -->
+      <section class="container pt-2 pt-lg-3 mb-md-3 mb-lg-5 pb-5">
+        <div class="row">
+          <div class="col-md-6 order-md-2 pb-2 pb-md-0 mb-4 mb-md-0">
+            <div class="ps-lg-5">
+              <img src="assets/img/services/service02.jpg" class="rounded-3" alt="Image">
+            </div>
+          </div>
+          <div class="col-md-6 ordr-md-1">
+            <h2 class="h3 mb-sm-4">Banking Expertise</h2>
+            <ul class="list-unstyled d-md-none d-xl-block pb-2 pb-md-3 mb-3">
+              <li class="d-flex align-items-center mb-2">
+                <i class="bx bx-check lead text-primary me-2"></i>
+                Sagittis quam egestas sit sit convallis turpis sit augue interdum morbi.
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <i class="bx bx-check lead text-primary me-2"></i>
+                Sollicitudin cursus habitasse adipiscing est sed aenean sapien.
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="bx bx-check lead text-primary me-2"></i>
+                At arcu arcu morbi scelerisque nibh. Quam velit fermentum porta facilisi massa.
+              </li>
+            </ul>
+            <div class="border rounded-3 mb-4 mb-lg-5">
+              <div class="row row-cols-1 row-cols-sm-2 g-0">
+                <div class="col d-flex align-items-center border-end-sm border-bottom p-3">
+                  <img src="assets/img/services/icons/insurance.svg" width="48" alt="Icon">
+                  <div class="ps-2 ms-1">
+                    <h3 class="h6 mb-0">Insurance</h3>
+                    <p class="fs-xs mb-0">Nunc dui aliquam volutpat augue.</p>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center border-bottom p-3">
+                  <img src="assets/img/services/icons/banking.svg" width="48" alt="Icon">
+                  <div class="ps-2 ms-1">
+                    <h3 class="h6 mb-0">Banking risk</h3>
+                    <p class="fs-xs mb-0">Habitasse adipiscing aenean sapien.</p>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center border-end-sm p-3">
+                  <img src="assets/img/services/icons/payments.svg" width="48" alt="Icon">
+                  <div class="ps-2 ms-1">
+                    <h3 class="h6 mb-0">Payments</h3>
+                    <p class="fs-xs mb-0">At faucibus molestie egestas sed.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row">
+              <a href="#" class="btn btn-primary mb-3 mb-sm-0 me-sm-3">Send request</a>
+              <a href="#" class="btn btn-outline-primary">
+                Learn more
+                <i class="bx bx-right-arrow-alt fs-xl ms-2 me-n1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Service -->
+      <section class="container pt-2 pt-lg-3 mb-md-3 mb-lg-5 pb-5">
+        <div class="row">
+          <div class="col-md-6 pb-2 pb-md-0 mb-4 mb-md-0">
+            <div class="pe-lg-5">
+              <img src="assets/img/services/service03.jpg" class="rounded-3" alt="Image">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2 class="h3 mb-sm-4">Product Solutions</h2>
+            <p class="d-md-none d-xl-block pb-2 pb-md-3 mb-3">Sem scelerisque laoreet commodo velit. Fringilla tempor egestas mattis mauris eu dui in. Viverra enim velit fringilla turpis suspendisse amet ipsum, nisi sed.</p>
+            <div class="border rounded-3 mb-4 mb-lg-5">
+              <div class="row row-cols-1 row-cols-sm-2 g-0">
+                <div class="col d-flex align-items-center border-end-sm border-bottom p-3">
+                  <img src="assets/img/services/icons/asset.svg" width="48" alt="Icon">
+                  <div class="ps-2 ms-1">
+                    <h3 class="h6 mb-0">Asset management</h3>
+                    <p class="fs-xs mb-0">Mattis sodales tellus risus placerat in.</p>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center border-bottom p-3">
+                  <img src="assets/img/services/icons/operations.svg" width="48" alt="Icon">
+                  <div class="ps-2 ms-1">
+                    <h3 class="h6 mb-0">Operations &amp; technology</h3>
+                    <p class="fs-xs mb-0">Viverra volutpat tellus orci enim.</p>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center border-end-sm p-3">
+                  <img src="assets/img/services/icons/finance.svg" width="48" alt="Icon">
+                  <div class="ps-2 ms-1">
+                    <h3 class="h6 mb-0">Corporate finance</h3>
+                    <p class="fs-xs mb-0">Aliquet amet pharetra fermentum sem.</p>
+                  </div>
+                </div>
+                <hr class="d-sm-none">
+                <div class="col d-flex align-items-center p-3">
+                  <img src="assets/img/services/icons/audit.svg" width="48" alt="Icon">
+                  <div class="ps-2 ms-1">
+                    <h3 class="h6 mb-0">Audit services</h3>
+                    <p class="fs-xs mb-0">Venenatis congue iaculis malesuada.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row">
+              <a href="#" class="btn btn-primary mb-3 mb-sm-0 me-sm-3">Send request</a>
+              <a href="#" class="btn btn-outline-primary">
+                Learn more
+                <i class="bx bx-right-arrow-alt fs-xl ms-2 me-n1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Industries -->
+      <section class="container pt-2 pt-lg-0 pb-5 mb-md-4 mb-lg-5">
+        <h2 class="h1 text-center pb-3 pb-lg-4">Industries We Serve</h2>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs flex-nowrap justify-content-lg-center overflow-auto pb-2 mb-3 mb-lg-4" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-nowrap active" id="education-tab" data-bs-toggle="tab" data-bs-target="#education" type="button" role="tab" aria-controls="education" aria-selected="true">
+              <i class="bx bxs-graduation fs-xl opacity-60 me-2"></i>
+              Education
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-nowrap" id="ecommerce-tab" data-bs-toggle="tab" data-bs-target="#ecommerce" type="button" role="tab" aria-controls="ecommerce" aria-selected="false">
+              <i class="bx bx-cart-alt fs-lg opacity-60 me-2"></i>
+              E-Commerce
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-nowrap" id="sports-tab" data-bs-toggle="tab" data-bs-target="#sports" type="button" role="tab" aria-controls="sports" aria-selected="false">
+              <i class="bx bx-run fs-xl opacity-60 me-2"></i>
+              Sports
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-nowrap" id="construction-tab" data-bs-toggle="tab" data-bs-target="#construction" type="button" role="tab" aria-controls="construction" aria-selected="false">
+              <i class="bx bx-paint-roll fs-lg opacity-60 me-2"></i>
+              Construstion
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-nowrap" id="medicine-tab" data-bs-toggle="tab" data-bs-target="#medicine" type="button" role="tab" aria-controls="medicine" aria-selected="false">
+              <i class="bx bx-plus-medical fs-bse opacity-60 me-2"></i>
+              Medicine
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-nowrap" id="real-estate-tab" data-bs-toggle="tab" data-bs-target="#real-estate" type="button" role="tab" aria-controls="real-estate" aria-selected="false">
+              <i class="bx bx-buildings fs-lg opacity-60 me-2"></i>
+              Real Estate
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-nowrap" id="wellness-tab" data-bs-toggle="tab" data-bs-target="#wellness" type="button" role="tab" aria-controls="wellness" aria-selected="false">
+              <i class="bx bx-spa fs-lg opacity-60 me-2"></i>
+              Wellness
+            </button>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content bg-secondary rounded-3 py-4">
+
+          <!-- Education -->
+          <div class="tab-pane fade show active" id="education" role="tabpanel" aria-labelledby="education-tab">
+            <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+              <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+                <h3 class="mb-lg-4">Education</h3>
+                <p>Vestibulum nunc lectus auctor quis. Natoque lectus tortor lacus, eu. Nunc feugiat nisl maecenas nulla hac morbi. Vitae, donec facilisis sed nunc netus. Venenatis posuere faucibus enim est. Vel dignissim morbi blandit morbi tellus. Arcu ullamcorper quis enim.</p>
+              </div>
+              <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+                <img src="assets/img/services/industries/education.jpg" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+              </div>
+            </div>
+          </div>
+
+          <!-- E-Commerce -->
+          <div class="tab-pane fade" id="ecommerce" role="tabpanel" aria-labelledby="ecommerce-tab">
+            <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+              <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+                <h3 class="mb-lg-4">E-Commerce</h3>
+                <p>Curabitur auctor quam ut iaculis suscipit. Morbi ullamcorper tellus eu purus dictum convallis. Duis posuere dui sit amet pellentesque malesuada. Morbi ultrices tortor ut diam molestie, vel pharetra lectus lacinia. Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+                <img src="assets/img/services/industries/ecommerce.jpg" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+              </div>
+            </div>
+          </div>
+
+          <!-- Sports -->
+          <div class="tab-pane fade" id="sports" role="tabpanel" aria-labelledby="sports-tab">
+            <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+              <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+                <h3 class="mb-lg-4">Sports</h3>
+                <p>Etiam vehicula commodo nunc, ut tincidunt risus aliquam sit amet. Vivamus ut velit ut odio malesuada tincidunt ut non eros. Curabitur vel quam varius, ullamcorper mi quis, ultrices eros. Nam eget mi ut diam elementum facilisis vehicula eget augue.</p>
+              </div>
+              <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+                <img src="assets/img/services/industries/sports.jpg" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+              </div>
+            </div>
+          </div>
+
+          <!-- Construction -->
+          <div class="tab-pane fade" id="construction" role="tabpanel" aria-labelledby="construction-tab">
+            <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+              <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+                <h3 class="mb-lg-4">Construction</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus, nunc in iaculis vestibulum, nunc ex convallis est, ut viverra velit sapien ac erat. Vivamus aliquet mi tellus, vel viverra ex blandit sed. Sed blandit lobortis risus. Aliquam blandit cursus ex sed iaculis.</p>
+              </div>
+              <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+                <img src="assets/img/services/industries/construction.jpg" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+              </div>
+            </div>
+          </div>
+
+          <!-- Medicine -->
+          <div class="tab-pane fade" id="medicine" role="tabpanel" aria-labelledby="medicine-tab">
+            <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+              <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+                <h3 class="mb-lg-4">Medicine</h3>
+                <p>In vel nulla ac enim pellentesque tristique vel non dui. Integer vulputate ex leo, in accumsan purus consectetur quis. Cras scelerisque orci vel dapibus volutpat. In et consectetur enim. Maecenas lobortis viverra tortor, quis fermentum sem volutpat sit amet.</p>
+              </div>
+              <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+                <img src="assets/img/services/industries/medicine.jpg" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+              </div>
+            </div>
+          </div>
+
+          <!-- Real Estate -->
+          <div class="tab-pane fade" id="real-estate" role="tabpanel" aria-labelledby="real-estate-tab">
+            <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+              <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+                <h3 class="mb-lg-4">Real Estate</h3>
+                <p>Donec consequat nibh at urna tincidunt tempor. Integer quis lobortis felis. Nulla id quam vestibulum, aliquam mauris vitae, auctor ex. Aliquam augue nulla, faucibus sed lacus ac, placerat elementum nisi. Curabitur enim nunc, dictum et accumsan.</p>
+              </div>
+              <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+                <img src="assets/img/services/industries/real-estate.jpg" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+              </div>
+            </div>
+          </div>
+
+          <!-- Wellness -->
+          <div class="tab-pane fade" id="wellness" role="tabpanel" aria-labelledby="wellness-tab">
+            <div class="row align-items-center pt-3 pt-sm-4 pt-md-0 px-3 px-sm-4 px-lg-0">
+              <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+                <h3 class="mb-lg-4">Wellness</h3>
+                <p>Morbi ullamcorper tellus eu purus dictum convallis. Duis posuere dui sit amet pellentesque malesuada. Morbi ultrices tortor ut diam molestie, vel pharetra lectus lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius lectus lectus.</p>
+              </div>
+              <div class="col-lg-6 col-md-7 mt-2 mb-3 mt-md-3">
+                <img src="assets/img/services/industries/wellness.jpg" class="d-block rounded-3 my-lg-2 mx-auto me-md-0" width="564" alt="Image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Contact form -->
+      <section class="position-relative pt-2 pt-lg-0 pb-5">
+        <div class="container position-relative zindex-5 pb-2 pb-md-4 pb-lg-5">
+          <div class="row justify-content-center text-center pt-xl-2 pb-4 mb-1 mb-lg-3">
+            <div class="col-xl-6 col-lg-7 col-md-8 col-sm-11">
+              <h2 class="mb-4">Let's Change the Game Together</h2>
+              <p class="text-muted mb-0">Like what you have seen? Let’s get started. Just fill in a few details and we will get in touch as soon as possible.</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+              <form class="row needs-validation" novalidate>
+                <div class="col-sm-6 mb-4">
+                  <label for="fn" class="form-label">First name</label>
+                  <input type="text" id="fn" class="form-control" required>
+                  <div class="invalid-feedback">Please, enter your first name!</div>
+                </div>
+                <div class="col-sm-6 mb-4">
+                  <label for="ln" class="form-label">Last name</label>
+                  <input type="text" id="ln" class="form-control" required>
+                  <div class="invalid-feedback">Please, enter your last name!</div>
+                </div>
+                <div class="col-sm-6 mb-4">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" id="email" class="form-control" required>
+                  <div class="invalid-feedback">Please, provide a valid email address!</div>
+                </div>
+                <div class="col-sm-6 mb-4">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input type="text" id="phone" class="form-control" data-format='{"numericOnly": true, "delimiters": ["+1 ", " ", " "], "blocks": [0, 3, 3, 2]}' placeholder="+1 ___ ___ __">
+                </div>
+                <div class="col-sm-6 mb-4">
+                  <label for="city" class="form-label">City</label>
+                  <select id="city" class="form-select" required>
+                    <option value="" disabled selected>Choose city</option>
+                    <option value="Boston">Boston</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Miami">Miami</option>
+                    <option value="New York">New York</option>
+                    <option value="Philadelphia">Philadelphia</option>
+                  </select>
+                  <div class="invalid-feedback">Please, choose your city!</div>
+                </div>
+                <div class="col-sm-6 mb-4">
+                  <label for="company" class="form-label">Your company</label>
+                  <input type="text" id="company" class="form-control">
+                </div>
+                <div class="col-sm-6 mb-4">
+                  <label for="position" class="form-label">Your position</label>
+                  <select id="position" class="form-select">
+                    <option value="Owner">Owner</option>
+                    <option value="CEO">CEO</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Accountant">Accountant</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 mb-4">
+                  <label for="people" class="form-label">People in company</label>
+                  <select id="people" class="form-select">
+                    <option value="0-10">0-10</option>
+                    <option value="10-25">10-25</option>
+                    <option value="25-50">25-50</option>
+                    <option value="50-100">50-100</option>
+                  </select>
+                </div>
+                <div class="col-12 mb-4">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" class="form-control" rows="4" required></textarea>
+                  <div class="invalid-feedback">Please, enter your message!</div>
+                </div>
+                <div class="col-12 text-center pt-2 pt-md-3 pt-lg-4">
+                  <button type="submit" class="btn btn-primary shadow-primary btn-lg">Send a request</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- BG shape -->
+        <div class="position-absolute end-0 bottom-0 text-primary">
+          <svg width="469" height="343" viewBox="0 0 469 343" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.08" fill-rule="evenodd" clip-rule="evenodd" d="M273.631 680.872C442.436 768.853 639.315 708.216 717.593 558.212C795.871 408.208 732.941 212.157 564.137 124.176C395.333 36.195 198.453 96.8326 120.175 246.836C41.8972 396.84 104.827 592.891 273.631 680.872ZM236.335 752.344C440.804 858.914 688.289 788.686 789.109 595.486C889.928 402.286 805.903 159.274 601.433 52.7043C396.964 -53.8654 149.479 16.3623 48.6595 209.562C-52.1598 402.762 31.8652 645.774 236.335 752.344Z" fill="currentColor"/><path opacity="0.08" fill-rule="evenodd" clip-rule="evenodd" d="M298.401 633.404C434.98 704.59 598.31 656.971 664.332 530.451C730.355 403.932 675.946 242.827 539.367 171.642C402.787 100.457 239.458 148.076 173.435 274.595C107.413 401.114 161.822 562.219 298.401 633.404ZM288.455 652.464C434.545 728.606 611.369 678.429 683.403 540.391C755.437 402.353 695.402 228.725 549.312 152.583C403.222 76.4404 226.398 126.617 154.365 264.655C82.331 402.693 142.365 576.321 288.455 652.464Z" fill="currentColor"/></svg>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer dark-mode bg-dark border-top border-light pt-5 pb-4 pb-lg-5">
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+              <img src="assets/img/logo.svg" width="47" alt="Silicon">
+              Silicon
+            </div>
+            <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros.</p>
+            <form class="needs-validation" novalidate>
+              <label for="subscr-email" class="form-label">Subscribe to our newsletter</label>
+              <div class="input-group">
+                <input type="email" id="subscr-email" class="form-control rounded-start ps-5" placeholder="Your email" required>
+                <i class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+                <div class="invalid-tooltip position-absolute top-100 start-0">Please provide a valid email address.</div>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+            <div id="footer-links" class="row">
+              <div class="col-lg-4">
+                <h6 class="mb-2">
+                  <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Useful Links</a>
+                </h6>
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Our Clients</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">News</a></li>
+                  </ul>
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Terms &amp; Conditions</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Privacy Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-3">
+                <h6 class="mb-2">
+                  <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Socials</a>
+                </h6>
+                <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+                <h6 class="mb-2">Contact Us</h6>
+                <a href="mailto:email@example.com" class="fw-medium">email@example.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+          <span class="text-light opacity-50">&copy; All rights reserved. Made by </span>
+          <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a>
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/cleave.js/dist/cleave.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from silicon.createx.studio/services-v2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:41:53 GMT -->
+</html>
