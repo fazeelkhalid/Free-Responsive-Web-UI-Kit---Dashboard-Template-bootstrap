@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from silicon.createx.studio/components/carousel.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:44:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Silicon UI Kit | Carousel (Slider)</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/themes/prism.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css"/>
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body data-bs-spy="scroll" data-bs-target="#jumpToNav" tabindex="0">
+
+        
+    <!-- Navbar -->
+    <header class="header navbar navbar-expand bg-light border-bottom border-light shadow fixed-top" data-scroll-header>
+      <div class="container-fluid pe-lg-4">
+        <div class="d-flex align-items-center">
+          <a href="typography.html" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
+            <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <span class="badge bg-warning">UI Kit</span>
+        </div>
+        <div class="d-flex align-items-center w-100">
+          <ul class="navbar-nav d-none d-lg-flex" style="padding-left: 11.75rem;">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">
+                <i class="bx bx-desktop opacity-70 fs-lg me-1"></i>
+                &nbsp;Live preview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../docs/getting-started.html" class="nav-link">
+                <i class="bx bx-file opacity-70 fs-lg me-1"></i>
+                &nbsp;Documentation
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="navbar-toggler d-block d-lg-none ms-auto me-4" data-bs-toggle="offcanvas" data-bs-target="#componentsNav" aria-controls="componentsNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-lg-auto" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode">Dark</label>
+          </div>
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary btn-sm fs-sm rounded ms-4 d-none d-lg-inline-flex" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-5 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Main sidebar navigation -->
+    <aside class="dark-mode">
+      <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 21rem; z-index: 1045;">
+        <div class="offcanvas-header d-none d-lg-flex justify-content-start">
+          <a href="typography.html" class="navbar-brand text-dark d-none d-lg-flex py-0">
+            <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <span class="badge bg-warning d-none d-lg-inline-block">UI Kit</span>
+        </div>
+        <div class="offcanvas-header d-block d-lg-none border-bottom">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h5 class="d-lg-none mb-0">Menu</h5>
+            <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#componentsNav"></button>
+          </div>
+          <div class="list-group list-group-flush mx-n4">
+            <a href="../index.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-2 px-4">
+              <i class="bx bx-desktop fs-lg opacity-80 me-2"></i>
+              Preview
+            </a>
+            <a href="../docs/getting-started.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-2 px-4">
+              <i class="bx bx-file fs-lg opacity-80 me-2"></i>
+              Documentation
+            </a>
+          </div>
+        </div>
+        <div class="offcanvas-body swiper scrollbar-hover overflow-hidden w-100 p-4" data-swiper-options='{
+          "direction": "vertical",
+          "slidesPerView": "auto",
+          "freeMode": true,
+          "scrollbar": {
+            "el": ".swiper-scrollbar"
+          },
+          "mousewheel": true
+        }'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide h-auto">
+              <h3 class="fs-lg">Content</h3>
+              <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
+                <a href="typography.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Typography</a>
+                <a href="https://boxicons.com/" class="list-group-item list-group-item-action border-0 py-2 px-4" target="_blank" rel="noopener">Icon font</a>
+                <a href="code.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Code</a>
+                <a href="images.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Images &amp; figures</a>
+                <a href="tables.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tables</a>
+              </div>
+              <h3 class="fs-lg">Components</h3>
+              <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
+                <a href="accordion.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Accordion</a>
+                <a href="alerts.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Alerts</a>
+                <a href="audio-player.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Audio player</a>
+                <a href="badges.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Badges</a>
+                <a href="blog-components.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Blog components</a>
+                <a href="breadcrumb.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Breadcrumb</a>
+                <a href="buttons.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Buttons</a>
+                <a href="button-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Button group</a>
+                <a href="cards.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Cards</a>
+                <a href="carousel.html" class="list-group-item list-group-item-action border-0 py-2 px-4 active">Carousel (Slider)</a>
+                <a href="collapse.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Collapse</a>
+                <a href="dropdowns.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Dropdowns</a>
+                <a href="forms.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Forms</a>
+                <a href="gallery.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Gallery (Lightbox)</a>
+                <a href="image-comparison-slider.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Image comparison slider</a>
+                <a href="input-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Input group</a>
+                <a href="list-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">List group</a>
+                <a href="modal.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Modal</a>
+                <a href="navbar.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Navbar</a>
+                <a href="offcanvas.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Offcanvas</a>
+                <a href="pagination.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pagination</a>
+                <a href="parallax.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Parallax</a>
+                <a href="pills.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pills</a>
+                <a href="placeholders.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Placeholders</a>
+                <a href="popovers.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Popovers</a>
+                <a href="portfolio-components.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Portfolio components</a>
+                <a href="pricing.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pricing</a>
+                <a href="progress-bars.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Progress bars</a>
+                <a href="social-buttons.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Social buttons</a>
+                <a href="spinners.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Spinners</a>
+                <a href="steps.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Steps</a>
+                <a href="tabs.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tabs</a>
+                <a href="team.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Team</a>
+                <a href="testimonials.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Testimonials / reviews</a>
+                <a href="toasts.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Toasts</a>
+                <a href="tooltips.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tooltips</a>
+                <a href="video-popup.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Video popup</a>
+              </div>
+              <h3 class="fs-lg">Utilities</h3>
+              <div class="list-group list-group-flush mx-n4 pb-2">
+                <a href="https://getbootstrap.com/docs/5.2/utilities/background/" class="list-group-item list-group-item-action border-0 py-2 px-4" target="_blank" rel="noopener">Bootstrap</a>
+                <a href="utilities.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Silicon</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar end-0"></div>
+        </div>
+        <div class="offcanvas-header border-top">
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-4 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </div>
+    </aside>
+
+
+    <!-- Page container -->
+    <main class="docs-container pt-5">
+      <div class="container-fluid px-xxl-5 px-lg-4 pt-4 pt-lg-5 pb-2 pb-lg-4">
+        
+        <!-- Page title -->
+        <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 pt-4 mb-n3">
+          <div class="me-4">
+            <h1 class="pb-1">Carousel (Slider)</h1>
+            <p class="text-muted fs-lg mb-2">A slideshow component for cycling through elements (images or slides with any content) like a carousel.</p>
+          </div>
+          <span class="badge bg-warning mb-2">Silicon component</span>
+        </div>
+
+        <!-- Info alert -->
+        <div class="alert alert-info mt-5 mb-n1 mb-lg-0" role="alert">
+          <div class="d-flex">
+            <i class="bx bx-info-circle lead me-2 me-sm-3"></i>
+            <div class="text-break">
+              <p class="mb-2"><strong>Carousel component</strong> depends on <strong>Swiper plugin</strong>. Make sure to link to <strong>Swiper css and js</strong> files in your document:</p>
+              <ul class="list-unstyled mb-2">
+                <li><strong>assets/vendor/swiper/swiper-bundle.min.css</strong></li>
+                <li><strong>assets/vendor/swiper/swiper-bundle.min.js</strong></li>
+              </ul>
+              <p>Use this page as a reference.</p>
+              <p>You can pass almost any slider option to <code>data-swiper-options='{}'</code></p>
+              <p class="fw-bold mb-2">Usefull links</p>
+              <ul class="list-unstyled mb-1">
+                <li class="mb-1">
+                  <a href="https://swiperjs.com/demos" class="d-flex align-items-center fw-medium text-decoration-none" target="_blank" rel="noopener">
+                    <i class="bx bx-link-external me-2"></i>
+                    Swiper slider demos with code examples
+                  </a>
+                </li>
+                <li>
+                  <a href="https://swiperjs.com/swiper-api" class="d-flex align-items-center fw-medium text-decoration-none" target="_blank" rel="noopener">
+                    <i class="bx bx-link-external me-2"></i>
+                    Swiper slider API: options, methods and events
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Navigation (Prev / next buttons) -->
+        <section id="carousel-navigation" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Navigation (Prev / next buttons)</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview1" data-bs-toggle="tab" role="tab" aria-controls="preview1" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html1" data-bs-toggle="tab" role="tab" aria-controls="html1" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+              <div class="d-flex flex-wrap align-items-center">
+                <div class="d-flex my-2 me-4">
+                  <button type="button" class="btn btn-prev btn-icon btn-xl me-2">
+                    <i class="bx bx-chevron-left"></i>
+                  </button>
+                  <button type="button" class="btn btn-next btn-icon btn-xl ms-2">
+                    <i class="bx bx-chevron-right"></i>
+                  </button>
+                </div>
+                <div class="d-flex my-2 me-4">
+                  <button type="button" class="btn btn-prev btn-icon btn-lg me-2">
+                    <i class="bx bx-chevron-left"></i>
+                  </button>
+                  <button type="button" class="btn btn-next btn-icon btn-lg ms-2">
+                    <i class="bx bx-chevron-right"></i>
+                  </button>
+                </div>
+                <div class="d-flex my-2 me-4">
+                  <button type="button" class="btn btn-prev btn-icon me-2">
+                    <i class="bx bx-chevron-left"></i>
+                  </button>
+                  <button type="button" class="btn btn-next btn-icon ms-2">
+                    <i class="bx bx-chevron-right"></i>
+                  </button>
+                </div>
+                <div class="d-flex my-2">
+                  <button type="button" class="btn btn-prev btn-icon btn-sm me-2">
+                    <i class="bx bx-chevron-left"></i>
+                  </button>
+                  <button type="button" class="btn btn-next btn-icon btn-sm ms-2">
+                    <i class="bx bx-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html1" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Extra large prev/next buttons --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-prev btn-icon btn-xl me-2&quot;&gt;
+  &lt;i class=&quot;bx bx-chevron-left&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-next btn-icon btn-xl ms-2&quot;&gt;
+  &lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;!-- Large prev/next buttons --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-prev btn-icon btn-lg me-2&quot;&gt;
+  &lt;i class=&quot;bx bx-chevron-left&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-next btn-icon btn-lg ms-2&quot;&gt;
+  &lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;!-- Normal prev/next buttons --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-prev btn-icon me-2&quot;&gt;
+  &lt;i class=&quot;bx bx-chevron-left&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-next btn-icon ms-2&quot;&gt;
+  &lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+
+&lt;!-- Small prev/next buttons --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-prev btn-icon btn-sm me-2&quot;&gt;
+  &lt;i class=&quot;bx bx-chevron-left&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-next btn-icon btn-sm ms-2&quot;&gt;
+  &lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Pagination -->
+        <section id="carousel-pagination" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Pagination</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview2" data-bs-toggle="tab" role="tab" aria-controls="preview2" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html2" data-bs-toggle="tab" role="tab" aria-controls="html2" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+              <div class="row row-cols-md-2 row-cols-xl-2 g-4">
+                <div class="col">
+                  <div class="swiper swiper-nav-onhover" data-swiper-options='{
+                    "spaceBetween": 20,
+                    "loop": true,
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "clickable": true
+                    },
+                    "navigation": {
+                      "prevEl": ".btn-prev",
+                      "nextEl": ".btn-next"
+                    }
+                  }'>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">1</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">2</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">3</div>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-prev btn-icon btn-sm me-2">
+                      <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <button type="button" class="btn btn-next btn-icon btn-sm ms-2">
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="swiper swiper-nav-onhover" data-swiper-options='{
+                    "spaceBetween": 20,
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "progressbar"
+                    },
+                    "navigation": {
+                      "prevEl": ".btn-prev",
+                      "nextEl": ".btn-next"
+                    }
+                  }'>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">1</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">2</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">3</div>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-prev btn-icon btn-sm me-2">
+                      <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <button type="button" class="btn btn-next btn-icon btn-sm ms-2">
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="swiper swiper-nav-onhover" data-swiper-options='{
+                    "spaceBetween": 20,
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "fraction"
+                    },
+                    "navigation": {
+                      "prevEl": ".btn-prev",
+                      "nextEl": ".btn-next"
+                    }
+                  }'>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">1</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">2</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">3</div>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-prev btn-icon btn-sm me-2">
+                      <i class="bx bx-chevron-left"></i>
+                    </button>
+                    <button type="button" class="btn btn-next btn-icon btn-sm ms-2">
+                      <i class="bx bx-chevron-right"></i>
+                    </button>
+                    <div class="swiper-pagination text-muted fs-4 lh-1 opacity-50 fw-bold"></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="swiper swiper-pager swiper-nav-onhover" data-swiper-options='{
+                    "spaceBetween": 20,
+                    "loop": true,
+                    "pager": true,
+                    "navigation": {
+                      "prevEl": ".page-prev",
+                      "nextEl": ".page-next"
+                    }
+                  }'>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">1</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">2</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-16x9 bg-secondary">
+                          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">3</div>
+                        </div>
+                      </div>
+                    </div>
+                    <nav class="pagination d-flex justify-content-center position-absolute bottom-0 zindex-2 start-50 translate-middle-x px-2 mb-3">
+                      <div class="page-item me-2">
+                        <a class="page-link page-prev btn-icon btn-sm" href="#">
+                          <i class="bx bx-chevron-left"></i>
+                        </a>
+                      </div>
+                      <ul class="list-unstyled d-flex justify-content-center mb-0"></ul>
+                      <div class="page-item ms-2">
+                        <a class="page-link page-next btn-icon btn-sm" href="#">
+                          <i class="bx bx-chevron-right"></i>
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html2" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Pagination: Bullets --&gt;
+&lt;div class=&quot;swiper swiper-nav-onhover&quot; data-swiper-options='{
+  &quot;spaceBetween&quot;: 20,
+  &quot;loop&quot;: true,
+  &quot;pagination&quot;: {
+    &quot;el&quot;: &quot;.swiper-pagination&quot;,
+    &quot;clickable&quot;: true
+  },
+  &quot;navigation&quot;: {
+    &quot;prevEl&quot;: &quot;.btn-prev&quot;,
+    &quot;nextEl&quot;: &quot;.btn-next&quot;
+  }
+}'&gt;
+  &lt;div class=&quot;swiper-wrapper&quot;&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;div class=&quot;swiper-slide&quot;&gt;
+      &lt;div class=&quot;ratio ratio-16x9 bg-secondary&quot;&gt;
+        &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4&quot;&gt;1&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;div class=&quot;swiper-slide&quot;&gt;
+      &lt;div class=&quot;ratio ratio-16x9 bg-secondary&quot;&gt;
+        &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4&quot;&gt;2&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;div class=&quot;swiper-slide&quot;&gt;
+      &lt;div class=&quot;ratio ratio-16x9 bg-secondary&quot;&gt;
+        &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4&quot;&gt;3&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Prev button --&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-prev btn-icon btn-sm me-2&quot;&gt;
+    &lt;i class=&quot;bx bx-chevron-left&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+
+  &lt;!-- Next button --&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-next btn-icon btn-sm ms-2&quot;&gt;
+    &lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+
+  &lt;!-- Pagination --&gt;
+  &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;!-- Pagination: Progress bar --&gt;
+&lt;div class=&quot;swiper swiper-nav-onhover&quot; data-swiper-options='{
+  &quot;spaceBetween&quot;: 20,
+  &quot;pagination&quot;: {
+    &quot;el&quot;: &quot;.swiper-pagination&quot;,
+    &quot;type&quot;: &quot;progressbar&quot;
+  },
+  &quot;navigation&quot;: {
+    &quot;prevEl&quot;: &quot;.btn-prev&quot;,
+    &quot;nextEl&quot;: &quot;.btn-next&quot;
+  }
+}'&gt;
+  &lt;div class=&quot;swiper-wrapper&quot;&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;div class=&quot;swiper-slide&quot;&gt;
+      &lt;div class=&quot;ratio ratio-16x9 bg-secondary&quot;&gt;
+        &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4&quot;&gt;1&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;div class=&quot;swiper-slide&quot;&gt;
+      &lt;div class=&quot;ratio ratio-16x9 bg-secondary&quot;&gt;
+        &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4&quot;&gt;2&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;div class=&quot;swiper-slide&quot;&gt;
+      &lt;div class=&quot;ratio ratio-16x9 bg-secondary&quot;&gt;
+        &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4&quot;&gt;3&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Prev button --&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-prev btn-icon btn-sm me-2&quot;&gt;
+    &lt;i class=&quot;bx bx-chevron-left&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+
+  &lt;!-- Next button --&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-next btn-icon btn-sm ms-2&quot;&gt;
+    &lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+
+  &lt;!-- Pagination --&gt;
+  &lt;div class=&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;!-- Pagination: Fraction --&gt;
+&lt;div class=&quot;swiper swiper-nav-onhover&quot; data-swiper-options='{
+  &quot;spaceBetween&quot;: 20,
+  &quot;pagination&quot;: {
+    &quot;el&quot;: &quot;.swiper-pagination&quot;,
+    &quot;type&quot;: &quot;fraction&quot;
+  },
+  &quot;navigation&quot;: {
+    &quot;prevEl&quot;: &quot;.btn-prev&quot;,
+    &quot;nextEl&quot;: &quot;.btn-next&quot;
+  }
+}'&gt;
+  &lt;div class=&quot;swiper-wrapper&quot;&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;div class=&quot;swiper-slide&quot;&gt;
+      &lt;div class=&quot;ratio ratio-16x9 bg-secondary&quot;&gt;
+        &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4&quot;&gt;1&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;div class=&quot;swiper-slide&quot;&gt;
+      &lt;div class=&quot;ratio ratio-16x9 bg-secondary&quot;&gt;
+        &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4&quot;&gt;2&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;div class=&quot;swiper-slide&quot;&gt;
+      &lt;div class=&quot;ratio ratio-16x9 bg-secondary&quot;&gt;
+        &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4&quot;&gt;3&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Prev button --&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-prev btn-icon btn-sm me-2&quot;&gt;
+    &lt;i class=&quot;bx bx-chevron-left&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+
+  &lt;!-- Next button --&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-next btn-icon btn-sm ms-2&quot;&gt;
+    &lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+
+  &lt;!-- Pagination --&gt;
+  &lt;div class=&quot;swiper-pagination text-muted fs-4 lh-1 opacity-50 fw-bold&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;!-- Pagination: Pager --&gt;
+&lt;div class=&quot;swiper swiper-pager swiper-nav-onhover&quot; data-swiper-options='{
+  &quot;spaceBetween&quot;: 20,
+  &quot;loop&quot;: true,
+  &quot;pager&quot;: true,
+  &quot;navigation&quot;: {
+    &quot;prevEl&quot;: &quot;.page-prev&quot;,
+    &quot;nextEl&quot;: &quot;.page-next&quot;
+  }
+}'&gt;
+  &lt;div class=&quot;swiper-wrapper&quot;&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;div class=&quot;swiper-slide&quot;&gt;
+      &lt;div class=&quot;ratio ratio-16x9 bg-secondary&quot;&gt;
+        &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4&quot;&gt;1&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;div class=&quot;swiper-slide&quot;&gt;
+      &lt;div class=&quot;ratio ratio-16x9 bg-secondary&quot;&gt;
+        &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4&quot;&gt;2&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;div class=&quot;swiper-slide&quot;&gt;
+      &lt;div class=&quot;ratio ratio-16x9 bg-secondary&quot;&gt;
+        &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4&quot;&gt;3&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Pagination (pager) --&gt;
+  &lt;nav class=&quot;pagination d-flex justify-content-center position-absolute bottom-0 zindex-2 start-50 translate-middle-x px-2 mb-3&quot;&gt;
+    &lt;div class=&quot;page-item me-2&quot;&gt;
+      &lt;a class=&quot;page-link page-prev btn-icon btn-sm&quot; href=&quot;#&quot;&gt;
+        &lt;i class=&quot;bx bx-chevron-left&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;list-unstyled d-flex justify-content-center mb-0&quot;&gt;&lt;/ul&gt;
+    &lt;div class=&quot;page-item ms-2&quot;&gt;
+      &lt;a class=&quot;page-link page-next btn-icon btn-sm&quot; href=&quot;#&quot;&gt;
+        &lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Multiple slides (Responsive) + Arrows and bullets outside -->
+        <section id="carousel-multiple-slides" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Multiple slides (Responsive) + Arrows and bullets outside</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview3" data-bs-toggle="tab" role="tab" aria-controls="preview3" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html3" data-bs-toggle="tab" role="tab" aria-controls="html3" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+              <div class="position-relative px-xl-5">
+                <button type="button" id="prev-news" class="btn btn-prev btn-icon btn-sm position-absolute top-50 start-0 translate-middle-y d-none d-xl-inline-flex">
+                  <i class="bx bx-chevron-left"></i>
+                </button>
+                <button type="button" id="next-news" class="btn btn-next btn-icon btn-sm position-absolute top-50 end-0 translate-middle-y d-none d-xl-inline-flex">
+                  <i class="bx bx-chevron-right"></i>
+                </button>
+                <div class="px-xl-2">
+                  <div class="swiper mx-n2" data-swiper-options='{
+                    "slidesPerView": 1,
+                    "loop": true,
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "clickable": true
+                    },
+                    "navigation": {
+                      "prevEl": "#prev-news",
+                      "nextEl": "#next-news"
+                    },
+                    "breakpoints": {
+                      "500": {
+                        "slidesPerView": 2
+                      },
+                      "1600": {
+                        "slidesPerView": 3
+                      }
+                    }
+                  }'>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide h-auto pb-3">
+                        <article class="card h-100 border-0 shadow-sm mx-2">
+                          <div class="position-relative">
+                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                            <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                              <i class="bx bx-bookmark"></i>
+                            </a>
+                            <img src="../assets/img/landing/financial/news/01.jpg" class="card-img-top" alt="Image">
+                          </div>
+                          <div class="card-body pb-4">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                              <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Business</a>
+                              <span class="fs-sm text-muted">12 hours ago</span>
+                            </div>
+                            <h3 class="h5 mb-0">
+                              <a href="#">How agile is your forecasting process?</a>
+                            </h3>
+                          </div>
+                          <div class="card-footer py-4">
+                            <a href="#" class="d-flex align-items-center text-decoration-none">
+                              <img src="../assets/img/avatar/40.jpg" class="rounded-circle" width="48" alt="Avatar">
+                              <div class="ps-3">
+                                <h6 class="fs-base fw-semibold mb-0">Marvin McKinney</h6>
+                                <span class="fs-sm text-muted">Deputy Director</span>
+                              </div>
+                            </a>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="swiper-slide h-auto pb-3">
+                        <article class="card h-100 border-0 shadow-sm mx-2">
+                          <div class="position-relative">
+                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                            <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                              <i class="bx bx-bookmark"></i>
+                            </a>
+                            <img src="../assets/img/landing/financial/news/02.jpg" class="card-img-top" alt="Image">
+                          </div>
+                          <div class="card-body pb-4">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                              <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Enterprise</a>
+                              <span class="fs-sm text-muted">1 day ago</span>
+                            </div>
+                            <h3 class="h5 mb-0">
+                              <a href="#">A future with high public debt: low-for-long is not low forever</a>
+                            </h3>
+                          </div>
+                          <div class="card-footer py-4">
+                            <a href="#" class="d-flex align-items-center text-decoration-none">
+                              <img src="../assets/img/avatar/04.jpg" class="rounded-circle" width="48" alt="Avatar">
+                              <div class="ps-3">
+                                <h6 class="fs-base fw-semibold mb-0">Jenny Wilson</h6>
+                                <span class="fs-sm text-muted">Financial Expert</span>
+                              </div>
+                            </a>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="swiper-slide h-auto pb-3">
+                        <article class="card h-100 border-0 shadow-sm mx-2">
+                          <div class="position-relative">
+                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                            <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                              <i class="bx bx-bookmark"></i>
+                            </a>
+                            <img src="../assets/img/landing/financial/news/03.jpg" class="card-img-top" alt="Image">
+                          </div>
+                          <div class="card-body pb-4">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                              <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Finance</a>
+                              <span class="fs-sm text-muted">Nov 24, 2021</span>
+                            </div>
+                            <h3 class="h5 mb-0">
+                              <a href="#">Understanding the rise in long-term rates</a>
+                            </h3>
+                          </div>
+                          <div class="card-footer py-4">
+                            <a href="#" class="d-flex align-items-center text-decoration-none">
+                              <img src="../assets/img/avatar/05.jpg" class="rounded-circle" width="48" alt="Avatar">
+                              <div class="ps-3">
+                                <h6 class="fs-base fw-semibold mb-0">Albert Flores</h6>
+                                <span class="fs-sm text-muted">Financial Counsellor</span>
+                              </div>
+                            </a>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="swiper-slide h-auto pb-3">
+                        <article class="card h-100 border-0 shadow-sm mx-2">
+                          <div class="position-relative">
+                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                            <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                              <i class="bx bx-bookmark"></i>
+                            </a>
+                            <img src="../assets/img/landing/financial/news/04.jpg" class="card-img-top" alt="Image">
+                          </div>
+                          <div class="card-body pb-4">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                              <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Ticks &amp; Trips</a>
+                              <span class="fs-sm text-muted">Oct 13, 2021</span>
+                            </div>
+                            <h3 class="h5 mb-0">
+                              <a href="#">Stocks making the biggest moves after hours</a>
+                            </h3>
+                          </div>
+                          <div class="card-footer py-4">
+                            <a href="#" class="d-flex align-items-center text-decoration-none">
+                              <img src="../assets/img/avatar/41.jpg" class="rounded-circle" width="48" alt="Avatar">
+                              <div class="ps-3">
+                                <h6 class="fs-base fw-semibold mb-0">Jerome Bell</h6>
+                                <span class="fs-sm text-muted">Business Analyst</span>
+                              </div>
+                            </a>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination position-relative bottom-0 mt-4 mb-lg-2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html3" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Multiple slides responsive slider with external Prev / Next buttons and bullets outside --&gt;
+&lt;div class=&quot;position-relative px-xl-5&quot;&gt;
+
+  &lt;!-- Slider prev/next buttons --&gt;
+  &lt;button type=&quot;button&quot; id=&quot;prev-news&quot; class=&quot;btn btn-prev btn-icon btn-sm position-absolute top-50 start-0 translate-middle-y d-none d-xl-inline-flex&quot;&gt;
+    &lt;i class=&quot;bx bx-chevron-left&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; id=&quot;next-news&quot; class=&quot;btn btn-next btn-icon btn-sm position-absolute top-50 end-0 translate-middle-y d-none d-xl-inline-flex&quot;&gt;
+    &lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+
+  &lt;!-- Slider --&gt;
+  &lt;div class=&quot;px-xl-2&quot;&gt;
+    &lt;div class=&quot;swiper mx-n2&quot; data-swiper-options='{
+      &quot;slidesPerView&quot;: 1,
+      &quot;loop&quot;: true,
+      &quot;pagination&quot;: {
+        &quot;el&quot;: &quot;.swiper-pagination&quot;,
+        &quot;clickable&quot;: true
+      },
+      &quot;navigation&quot;: {
+        &quot;prevEl&quot;: &quot;#prev-news&quot;,
+        &quot;nextEl&quot;: &quot;#next-news&quot;
+      },
+      &quot;breakpoints&quot;: {
+        &quot;500&quot;: {
+          &quot;slidesPerView&quot;: 2
+        },
+        &quot;1000&quot;: {
+          &quot;slidesPerView&quot;: 3
+        }
+      }
+    }'&gt;
+      &lt;div class=&quot;swiper-wrapper&quot;&gt;
+
+        &lt;!-- Item --&gt;
+        &lt;div class=&quot;swiper-slide h-auto pb-3&quot;&gt;
+          &lt;article class=&quot;card h-100 border-0 shadow-sm mx-2&quot;&gt;
+            &lt;div class=&quot;position-relative&quot;&gt;
+              &lt;a href=&quot;#&quot; class=&quot;position-absolute top-0 start-0 w-100 h-100&quot; aria-label=&quot;Read more&quot;&gt;&lt;/a&gt;
+              &lt;a href=&quot;#&quot; class=&quot;btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;left&quot; title=&quot;Read later&quot;&gt;
+                &lt;i class=&quot;bx bx-bookmark&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;img src=&quot;assets/img/landing/financial/news/01.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;Image&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body pb-4&quot;&gt;
+              &lt;div class=&quot;d-flex align-items-center justify-content-between mb-3&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;badge fs-sm text-nav bg-secondary text-decoration-none&quot;&gt;Business&lt;/a&gt;
+                &lt;span class=&quot;fs-sm text-muted&quot;&gt;12 hours ago&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;h3 class=&quot;h5 mb-0&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;How agile is your forecasting process?&lt;/a&gt;
+              &lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-footer py-4&quot;&gt;
+              &lt;a href=&quot;#&quot; class=&quot;d-flex align-items-center text-decoration-none&quot;&gt;
+                &lt;img src=&quot;assets/img/avatar/40.jpg&quot; class=&quot;rounded-circle&quot; width=&quot;48&quot; alt=&quot;Avatar&quot;&gt;
+                &lt;div class=&quot;ps-3&quot;&gt;
+                  &lt;h6 class=&quot;fs-base fw-semibold mb-0&quot;&gt;Marvin McKinney&lt;/h6&gt;
+                  &lt;span class=&quot;fs-sm text-muted&quot;&gt;Deputy Director, Capital Department&lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/article&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Item --&gt;
+        &lt;div class=&quot;swiper-slide h-auto pb-3&quot;&gt;
+          &lt;article class=&quot;card h-100 border-0 shadow-sm mx-2&quot;&gt;
+            &lt;div class=&quot;position-relative&quot;&gt;
+              &lt;a href=&quot;#&quot; class=&quot;position-absolute top-0 start-0 w-100 h-100&quot; aria-label=&quot;Read more&quot;&gt;&lt;/a&gt;
+              &lt;a href=&quot;#&quot; class=&quot;btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;left&quot; title=&quot;Read later&quot;&gt;
+                &lt;i class=&quot;bx bx-bookmark&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;img src=&quot;assets/img/landing/financial/news/02.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;Image&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body pb-4&quot;&gt;
+              &lt;div class=&quot;d-flex align-items-center justify-content-between mb-3&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;badge fs-sm text-nav bg-secondary text-decoration-none&quot;&gt;Enterprise&lt;/a&gt;
+                &lt;span class=&quot;fs-sm text-muted&quot;&gt;1 day ago&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;h3 class=&quot;h5 mb-0&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;A future with high public debt: low-for-long is not low forever&lt;/a&gt;
+              &lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-footer py-4&quot;&gt;
+              &lt;a href=&quot;#&quot; class=&quot;d-flex align-items-center text-decoration-none&quot;&gt;
+                &lt;img src=&quot;assets/img/avatar/04.jpg&quot; class=&quot;rounded-circle&quot; width=&quot;48&quot; alt=&quot;Avatar&quot;&gt;
+                &lt;div class=&quot;ps-3&quot;&gt;
+                  &lt;h6 class=&quot;fs-base fw-semibold mb-0&quot;&gt;Jenny Wilson&lt;/h6&gt;
+                  &lt;span class=&quot;fs-sm text-muted&quot;&gt;Financial Sector Expert&lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/article&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Item --&gt;
+        &lt;div class=&quot;swiper-slide h-auto pb-3&quot;&gt;
+          &lt;article class=&quot;card h-100 border-0 shadow-sm mx-2&quot;&gt;
+            &lt;div class=&quot;position-relative&quot;&gt;
+              &lt;a href=&quot;#&quot; class=&quot;position-absolute top-0 start-0 w-100 h-100&quot; aria-label=&quot;Read more&quot;&gt;&lt;/a&gt;
+              &lt;a href=&quot;#&quot; class=&quot;btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;left&quot; title=&quot;Read later&quot;&gt;
+                &lt;i class=&quot;bx bx-bookmark&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;img src=&quot;assets/img/landing/financial/news/03.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;Image&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body pb-4&quot;&gt;
+              &lt;div class=&quot;d-flex align-items-center justify-content-between mb-3&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;badge fs-sm text-nav bg-secondary text-decoration-none&quot;&gt;Finance&lt;/a&gt;
+                &lt;span class=&quot;fs-sm text-muted&quot;&gt;Nov 24, 2021&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;h3 class=&quot;h5 mb-0&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;Understanding the rise in long-term rates&lt;/a&gt;
+              &lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-footer py-4&quot;&gt;
+              &lt;a href=&quot;#&quot; class=&quot;d-flex align-items-center text-decoration-none&quot;&gt;
+                &lt;img src=&quot;assets/img/avatar/05.jpg&quot; class=&quot;rounded-circle&quot; width=&quot;48&quot; alt=&quot;Avatar&quot;&gt;
+                &lt;div class=&quot;ps-3&quot;&gt;
+                  &lt;h6 class=&quot;fs-base fw-semibold mb-0&quot;&gt;Albert Flores&lt;/h6&gt;
+                  &lt;span class=&quot;fs-sm text-muted&quot;&gt;Financial Counsellor and Director&lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/article&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Item --&gt;
+        &lt;div class=&quot;swiper-slide h-auto pb-3&quot;&gt;
+          &lt;article class=&quot;card h-100 border-0 shadow-sm mx-2&quot;&gt;
+            &lt;div class=&quot;position-relative&quot;&gt;
+              &lt;a href=&quot;#&quot; class=&quot;position-absolute top-0 start-0 w-100 h-100&quot; aria-label=&quot;Read more&quot;&gt;&lt;/a&gt;
+              &lt;a href=&quot;#&quot; class=&quot;btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3&quot; data-bs-toggle=&quot;tooltip&quot; data-bs-placement=&quot;left&quot; title=&quot;Read later&quot;&gt;
+                &lt;i class=&quot;bx bx-bookmark&quot;&gt;&lt;/i&gt;
+              &lt;/a&gt;
+              &lt;img src=&quot;assets/img/landing/financial/news/04.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;Image&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-body pb-4&quot;&gt;
+              &lt;div class=&quot;d-flex align-items-center justify-content-between mb-3&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;badge fs-sm text-nav bg-secondary text-decoration-none&quot;&gt;Ticks &amp; Trips&lt;/a&gt;
+                &lt;span class=&quot;fs-sm text-muted&quot;&gt;Oct 13, 2021&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;h3 class=&quot;h5 mb-0&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;Stocks making the biggest moves after hours&lt;/a&gt;
+              &lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;card-footer py-4&quot;&gt;
+              &lt;a href=&quot;#&quot; class=&quot;d-flex align-items-center text-decoration-none&quot;&gt;
+                &lt;img src=&quot;assets/img/avatar/41.jpg&quot; class=&quot;rounded-circle&quot; width=&quot;48&quot; alt=&quot;Avatar&quot;&gt;
+                &lt;div class=&quot;ps-3&quot;&gt;
+                  &lt;h6 class=&quot;fs-base fw-semibold mb-0&quot;&gt;Jerome Bell&lt;/h6&gt;
+                  &lt;span class=&quot;fs-sm text-muted&quot;&gt;Business Analyst&lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/article&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Pagination (bullets) --&gt;
+      &lt;div class=&quot;swiper-pagination position-relative bottom-0 mt-4 mb-lg-2&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Link slides to outside content -->
+        <section id="carousel-link-to-content" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Link slides to outside content</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview4" data-bs-toggle="tab" role="tab" aria-controls="preview4" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html4" data-bs-toggle="tab" role="tab" aria-controls="html4" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <div class="position-relative py-lg-2 py-xl-4">
+                <div class="swiper-tabs position-absolute top-0 start-0 w-100 h-100">
+                  <div id="image-1" class="position-absolute top-0 start-0 w-100 h-100 bg-position-center bg-repeat-0 bg-size-cover swiper-tab active" style="background-image: url(../assets/img/landing/software-company/case-study01.jpg);">
+                    <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35"></span>
+                  </div>
+                  <div id="image-2" class="position-absolute top-0 start-0 w-100 h-100 bg-position-center bg-repeat-0 bg-size-cover swiper-tab" style="background-image: url(../assets/img/landing/software-company/case-study02.jpg);">
+                    <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35"></span>
+                  </div>
+                </div>
+                <div class="container position-relative zindex-5 ps-md-5 py-5">
+                  <div class="row py-2 py-md-3">
+                    <div class="col-xxl-6 col-xl-7 col-md-9">
+                      <div class="d-flex justify-content-center justify-content-md-start pb-3 mb-3">
+                        <button type="button" id="case-study-prev" class="btn btn-prev btn-icon btn-sm bg-white me-2">
+                          <i class="bx bx-chevron-left"></i>
+                        </button>
+                        <button type="button" id="case-study-next" class="btn btn-next btn-icon btn-sm bg-white ms-2">
+                          <i class="bx bx-chevron-right"></i>
+                        </button>
+                      </div>
+                      <div class="card bg-white shadow-sm p-3">
+                        <div class="card-body">
+                          <div class="swiper" data-swiper-options='{
+                            "spaceBetween": 30,
+                            "loop": true,
+                            "tabs": true,
+                            "pagination": {
+                              "el": "#case-study-pagination",
+                              "clickable": true
+                            },
+                            "navigation": {
+                              "prevEl": "#case-study-prev",
+                              "nextEl": "#case-study-next"
+                            }
+                          }'>
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide" data-swiper-tab="#image-1">
+                                <img src="../assets/img/landing/software-company/case-study-logo01.png" class="d-block mb-3" width="72" alt="Logo">
+                                <h3 class="mb-2">Cashless payment case study</h3>
+                                <p class="fs-sm text-muted border-bottom pb-3 mb-3">Payment Service Provider Company</p>
+                                <p class="pb-2 pb-lg-3 mb-3">Aenean dolor elit tempus tellus imperdiet. Elementum, ac convallis morbi sit est feugiat ultrices. Cras tortor maecenas pulvinar nec ac justo. Massa sem eget semper...</p>
+                                <a href="#" class="btn btn-primary">View case study</a>
+                              </div>
+                              <div class="swiper-slide" data-swiper-tab="#image-2">
+                                <img src="../assets/img/landing/software-company/case-study-logo02.png" class="d-block mb-3" width="72" alt="Logo">
+                                <h3 class="mb-2">Smart tech case study</h3>
+                                <p class="fs-sm text-muted border-bottom pb-3 mb-3">Data Analytics Company</p>
+                                <p class="pb-2 pb-lg-3 mb-3">Adipiscing quis a at ligula. Gravida gravida diam rhoncus cursus in. Turpis sagittis tempor gravida phasellus sapien. Faucibus donec consectetur sed id sit nisl.</p>
+                                <a href="#" class="btn btn-primary">View case study</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dark-mode pt-4 mt-3">
+                        <div id="case-study-pagination" class="swiper-pagination position-relative bottom-0"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html4" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Link swiper slides to any content via swiper-tabs. Place outside of any container --&gt;
+&lt;div class=&quot;position-relative py-lg-4 py-xl-5&quot;&gt;
+
+  &lt;!-- Swiper tabs --&gt;
+  &lt;div class=&quot;swiper-tabs position-absolute top-0 start-0 w-100 h-100&quot;&gt;
+    &lt;div id=&quot;image-1&quot; class=&quot;position-absolute top-0 start-0 w-100 h-100 bg-position-center bg-repeat-0 bg-size-cover swiper-tab active&quot; style=&quot;background-image: url(assets/img/landing/software-company/case-study01.jpg);&quot;&gt;
+      &lt;span class=&quot;position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;image-2&quot; class=&quot;position-absolute top-0 start-0 w-100 h-100 bg-position-center bg-repeat-0 bg-size-cover swiper-tab&quot; style=&quot;background-image: url(assets/img/landing/software-company/case-study02.jpg);&quot;&gt;
+      &lt;span class=&quot;position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Swiper slider --&gt;
+  &lt;div class=&quot;container position-relative zindex-5 py-5&quot;&gt;
+    &lt;div class=&quot;row py-2 py-md-3&quot;&gt;
+      &lt;div class=&quot;col-xl-5 col-lg-7 col-md-9&quot;&gt;
+
+        &lt;!-- Slider controls (Prev / next) --&gt;
+        &lt;div class=&quot;d-flex justify-content-center justify-content-md-start pb-3 mb-3&quot;&gt;
+          &lt;button type=&quot;button&quot; id=&quot;case-study-prev&quot; class=&quot;btn btn-prev btn-icon btn-sm bg-white me-2&quot;&gt;
+            &lt;i class=&quot;bx bx-chevron-left&quot;&gt;&lt;/i&gt;
+          &lt;/button&gt;
+          &lt;button type=&quot;button&quot; id=&quot;case-study-next&quot; class=&quot;btn btn-next btn-icon btn-sm bg-white ms-2&quot;&gt;
+            &lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Card --&gt;
+        &lt;div class=&quot;card bg-white shadow-sm p-3&quot;&gt;
+          &lt;div class=&quot;card-body&quot;&gt;
+            &lt;div class=&quot;swiper&quot; data-swiper-options='{
+              &quot;spaceBetween&quot;: 30,
+              &quot;loop&quot;: true,
+              &quot;tabs&quot;: true,
+              &quot;pagination&quot;: {
+                &quot;el&quot;: &quot;#case-study-pagination&quot;,
+                &quot;clickable&quot;: true
+              },
+              &quot;navigation&quot;: {
+                &quot;prevEl&quot;: &quot;#case-study-prev&quot;,
+                &quot;nextEl&quot;: &quot;#case-study-next&quot;
+              }
+            }'&gt;
+              &lt;div class=&quot;swiper-wrapper&quot;&gt;
+
+                &lt;!-- Item --&gt;
+                &lt;div class=&quot;swiper-slide&quot; data-swiper-tab=&quot;#image-1&quot;&gt;
+                  &lt;img src=&quot;assets/img/landing/software-company/case-study-logo01.png&quot; class=&quot;d-block mb-3&quot; width=&quot;72&quot; alt=&quot;Logo&quot;&gt;
+                  &lt;h3 class=&quot;mb-2&quot;&gt;Cashless payment &quot;udy&lt;/h3&gt;
+                  &lt;p class=&quot;fs-sm text-muted border-bottom pb-3 mb-3&quot;&gt;Payment Service Provider Company&lt;/p&gt;
+                  &lt;p class=&quot;pb-2 pb-lg-3 mb-3&quot;&gt;Aenean dolor elit tempus tellus imperdiet. Elementum, ac convallis morbi sit est feugiat ultrices. Cras tortor maecenas pulvinar nec ac justo. Massa sem eget semper...&lt;/p&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;View &quot;udy&lt;/a&gt;
+                &lt;/div&gt;
+
+                &lt;!-- Item --&gt;
+                &lt;div class=&quot;swiper-slide&quot; data-swiper-tab=&quot;#image-2&quot;&gt;
+                  &lt;img src=&quot;assets/img/landing/software-company/case-study-logo02.png&quot; class=&quot;d-block mb-3&quot; width=&quot;72&quot; alt=&quot;Logo&quot;&gt;
+                  &lt;h3 class=&quot;mb-2&quot;&gt;Smart tech &quot;udy&lt;/h3&gt;
+                  &lt;p class=&quot;fs-sm text-muted border-bottom pb-3 mb-3&quot;&gt;Data Analytics Company&lt;/p&gt;
+                  &lt;p class=&quot;pb-2 pb-lg-3 mb-3&quot;&gt;Adipiscing quis a at ligula. Gravida gravida diam rhoncus cursus in. Turpis sagittis tempor gravida phasellus sapien. Faucibus donec consectetur sed id sit nisl.&lt;/p&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;View &quot;udy&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Pagination (bullets) --&gt;
+        &lt;div class=&quot;dark-mode pt-4 mt-3&quot;&gt;
+          &lt;div id=&quot;case-study-pagination&quot; class=&quot;swiper-pagination position-relative bottom-0&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Fade transition -->
+        <section id="carousel-fade" class="py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Fade transition</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview5" data-bs-toggle="tab" role="tab" aria-controls="preview5" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html5" data-bs-toggle="tab" role="tab" aria-controls="html5" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview5" role="tabpanel">
+              <div class="swiper swiper-nav-onhover" data-swiper-options='{
+                "effect": "fade",
+                "loop": true,
+                "navigation": {
+                  "prevEl": ".btn-prev",
+                  "nextEl": ".btn-next"
+                }
+              }'>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide bg-light">
+                    <div class="ratio ratio-21x9 bg-faded-info">
+                      <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">1</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide bg-light">
+                    <div class="ratio ratio-21x9 bg-faded-success">
+                      <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">2</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide bg-light">
+                    <div class="ratio ratio-21x9 bg-faded-warning">
+                      <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4">3</div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-prev btn-icon btn-sm me-2">
+                  <i class="bx bx-chevron-left"></i>
+                </button>
+                <button type="button" class="btn btn-next btn-icon btn-sm ms-2">
+                  <i class="bx bx-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html5" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Fade transition --&gt;
+&lt;div class=&quot;swiper swiper-nav-onhover&quot; data-swiper-options='{
+  &quot;effect&quot;: &quot;fade&quot;,
+  &quot;loop&quot;: true,
+  &quot;navigation&quot;: {
+    &quot;prevEl&quot;: &quot;.btn-prev&quot;,
+    &quot;nextEl&quot;: &quot;.btn-next&quot;
+  }
+}'&gt;
+  &lt;div class=&quot;swiper-wrapper&quot;&gt;
+
+    &lt;!-- Slide --&gt;
+    &lt;div class=&quot;swiper-slide bg-light&quot;&gt;
+      &lt;div class=&quot;ratio ratio-21x9 bg-faded-info&quot;&gt;
+        &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4&quot;&gt;1&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Slide --&gt;
+    &lt;div class=&quot;swiper-slide bg-light&quot;&gt;
+      &lt;div class=&quot;ratio ratio-21x9 bg-faded-success&quot;&gt;
+        &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4&quot;&gt;2&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Slide --&gt;
+    &lt;div class=&quot;swiper-slide bg-light&quot;&gt;
+      &lt;div class=&quot;ratio ratio-21x9 bg-faded-warning&quot;&gt;
+        &lt;div class=&quot;position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center display-4&quot;&gt;3&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Prev / next buttons --&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-prev btn-icon btn-sm me-2&quot;&gt;
+    &lt;i class=&quot;bx bx-chevron-left&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-next btn-icon btn-sm ms-2&quot;&gt;
+    &lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+
+    <!-- Jump to anchor navigation -->
+    <aside id="jumpToNav" class="side-nav side-nav-end d-none d-xxl-block position-fixed top-0 end-0 vh-100 py-5" style="width: 20rem;">
+      <h3 class="fs-lg mt-5 pt-5">Jump to</h3>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#carousel-navigation" class="nav-link" data-scroll data-scroll-offset="-6">Navigation (Prev / next buttons)</a>
+        </li>
+        <li class="nav-item">
+          <a href="#carousel-pagination" class="nav-link" data-scroll data-scroll-offset="-6">Pagination</a>
+        </li>
+        <li class="nav-item">
+          <a href="#carousel-multiple-slides" class="nav-link" data-scroll data-scroll-offset="-6">Multiple slides (Responsive) + Arrows and bullets outside</a>
+        </li>
+        <li class="nav-item">
+          <a href="#carousel-link-to-content" class="nav-link" data-scroll data-scroll-offset="-6">Link slides to outside content</a>
+        </li>
+        <li class="nav-item">
+          <a href="#carousel-fade" class="nav-link" data-scroll data-scroll-offset="-6">Fade transition</a>
+        </li>
+      </ul>
+    </aside>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-core.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-markup.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-clike.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="../assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from silicon.createx.studio/components/carousel.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:44:02 GMT -->
+</html>

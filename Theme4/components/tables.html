@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from silicon.createx.studio/components/tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:44:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Silicon UI Kit | Tables</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/themes/prism.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css"/>
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body data-bs-spy="scroll" data-bs-target="#jumpToNav" tabindex="0">
+
+        
+    <!-- Navbar -->
+    <header class="header navbar navbar-expand bg-light border-bottom border-light shadow fixed-top" data-scroll-header>
+      <div class="container-fluid pe-lg-4">
+        <div class="d-flex align-items-center">
+          <a href="typography.html" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
+            <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <span class="badge bg-warning">UI Kit</span>
+        </div>
+        <div class="d-flex align-items-center w-100">
+          <ul class="navbar-nav d-none d-lg-flex" style="padding-left: 11.75rem;">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">
+                <i class="bx bx-desktop opacity-70 fs-lg me-1"></i>
+                &nbsp;Live preview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../docs/getting-started.html" class="nav-link">
+                <i class="bx bx-file opacity-70 fs-lg me-1"></i>
+                &nbsp;Documentation
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="navbar-toggler d-block d-lg-none ms-auto me-4" data-bs-toggle="offcanvas" data-bs-target="#componentsNav" aria-controls="componentsNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-lg-auto" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode">Dark</label>
+          </div>
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary btn-sm fs-sm rounded ms-4 d-none d-lg-inline-flex" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-5 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Main sidebar navigation -->
+    <aside class="dark-mode">
+      <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 21rem; z-index: 1045;">
+        <div class="offcanvas-header d-none d-lg-flex justify-content-start">
+          <a href="typography.html" class="navbar-brand text-dark d-none d-lg-flex py-0">
+            <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <span class="badge bg-warning d-none d-lg-inline-block">UI Kit</span>
+        </div>
+        <div class="offcanvas-header d-block d-lg-none border-bottom">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h5 class="d-lg-none mb-0">Menu</h5>
+            <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#componentsNav"></button>
+          </div>
+          <div class="list-group list-group-flush mx-n4">
+            <a href="../index.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-2 px-4">
+              <i class="bx bx-desktop fs-lg opacity-80 me-2"></i>
+              Preview
+            </a>
+            <a href="../docs/getting-started.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-2 px-4">
+              <i class="bx bx-file fs-lg opacity-80 me-2"></i>
+              Documentation
+            </a>
+          </div>
+        </div>
+        <div class="offcanvas-body swiper scrollbar-hover overflow-hidden w-100 p-4" data-swiper-options='{
+          "direction": "vertical",
+          "slidesPerView": "auto",
+          "freeMode": true,
+          "scrollbar": {
+            "el": ".swiper-scrollbar"
+          },
+          "mousewheel": true
+        }'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide h-auto">
+              <h3 class="fs-lg">Content</h3>
+              <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
+                <a href="typography.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Typography</a>
+                <a href="https://boxicons.com/" class="list-group-item list-group-item-action border-0 py-2 px-4" target="_blank" rel="noopener">Icon font</a>
+                <a href="code.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Code</a>
+                <a href="images.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Images &amp; figures</a>
+                <a href="tables.html" class="list-group-item list-group-item-action border-0 py-2 px-4 active">Tables</a>
+              </div>
+              <h3 class="fs-lg">Components</h3>
+              <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
+                <a href="accordion.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Accordion</a>
+                <a href="alerts.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Alerts</a>
+                <a href="audio-player.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Audio player</a>
+                <a href="badges.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Badges</a>
+                <a href="blog-components.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Blog components</a>
+                <a href="breadcrumb.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Breadcrumb</a>
+                <a href="buttons.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Buttons</a>
+                <a href="button-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Button group</a>
+                <a href="cards.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Cards</a>
+                <a href="carousel.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Carousel (Slider)</a>
+                <a href="collapse.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Collapse</a>
+                <a href="dropdowns.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Dropdowns</a>
+                <a href="forms.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Forms</a>
+                <a href="gallery.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Gallery (Lightbox)</a>
+                <a href="image-comparison-slider.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Image comparison slider</a>
+                <a href="input-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Input group</a>
+                <a href="list-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">List group</a>
+                <a href="modal.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Modal</a>
+                <a href="navbar.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Navbar</a>
+                <a href="offcanvas.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Offcanvas</a>
+                <a href="pagination.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pagination</a>
+                <a href="parallax.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Parallax</a>
+                <a href="pills.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pills</a>
+                <a href="placeholders.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Placeholders</a>
+                <a href="popovers.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Popovers</a>
+                <a href="portfolio-components.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Portfolio components</a>
+                <a href="pricing.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pricing</a>
+                <a href="progress-bars.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Progress bars</a>
+                <a href="social-buttons.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Social buttons</a>
+                <a href="spinners.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Spinners</a>
+                <a href="steps.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Steps</a>
+                <a href="tabs.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tabs</a>
+                <a href="team.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Team</a>
+                <a href="testimonials.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Testimonials / reviews</a>
+                <a href="toasts.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Toasts</a>
+                <a href="tooltips.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tooltips</a>
+                <a href="video-popup.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Video popup</a>
+              </div>
+              <h3 class="fs-lg">Utilities</h3>
+              <div class="list-group list-group-flush mx-n4 pb-2">
+                <a href="https://getbootstrap.com/docs/5.2/utilities/background/" class="list-group-item list-group-item-action border-0 py-2 px-4" target="_blank" rel="noopener">Bootstrap</a>
+                <a href="utilities.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Silicon</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar end-0"></div>
+        </div>
+        <div class="offcanvas-header border-top">
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-4 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </div>
+    </aside>
+
+
+    <!-- Page container -->
+    <main class="docs-container pt-5">
+      <div class="container-fluid px-xxl-5 px-lg-4 pt-4 pt-lg-5 pb-2 pb-lg-4">
+        
+        <!-- Page title -->
+        <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 pt-4 mb-n3">
+          <div class="me-4">
+            <h1 class="pb-1">Tables</h1>
+            <p class="text-muted fs-lg mb-2">Examples for opt-in styling of tables.</p>
+          </div>
+          <a href="https://getbootstrap.com/docs/5.2/content/tables/" class="btn btn-link px-0" target="_blank" rel="noopener">
+            Bootstrap docs
+            <i class="bx bx-link-external fs-lg ms-2"></i>
+          </a>
+        </div>
+        
+
+        <!-- Basic example -->
+        <section id="tables-basic" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Basic example</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview1" data-bs-toggle="tab" role="tab" aria-controls="preview1" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html1" data-bs-toggle="tab" role="tab" aria-controls="html1" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+              <div class="table-responsive">
+                <table class="table mb-0">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Position</th>
+                      <th>Phone</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>CEO, Founder</td>
+                      <td>+3 555 68 70</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Anna</td>
+                      <td>Cabana</td>
+                      <td>Designer</td>
+                      <td>+3 434 65 93</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Kale</td>
+                      <td>Thornton</td>
+                      <td>Developer</td>
+                      <td>+3 285 42 88</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Jane</td>
+                      <td>Birkins</td>
+                      <td>Support</td>
+                      <td>+3 774 28 50</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html1" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Basic table --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;4&lt;/th&gt;
+        &lt;td&gt;Jane&lt;/td&gt;
+        &lt;td&gt;Birkins&lt;/td&gt;
+        &lt;td&gt;Support&lt;/td&gt;
+        &lt;td&gt;+3 774 28 50&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Dark table -->
+        <section id="tables-dark" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Dark table</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview2" data-bs-toggle="tab" role="tab" aria-controls="preview2" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html2" data-bs-toggle="tab" role="tab" aria-controls="html2" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+              <div class="table-responsive">
+                <table class="table table-dark mb-0">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Position</th>
+                      <th>Phone</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>CEO, Founder</td>
+                      <td>+3 555 68 70</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Anna</td>
+                      <td>Cabana</td>
+                      <td>Designer</td>
+                      <td>+3 434 65 93</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Kale</td>
+                      <td>Thornton</td>
+                      <td>Developer</td>
+                      <td>+3 285 42 88</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Jane</td>
+                      <td>Birkins</td>
+                      <td>Support</td>
+                      <td>+3 774 28 50</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html2" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Dark table --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-dark&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;4&lt;/th&gt;
+        &lt;td&gt;Jane&lt;/td&gt;
+        &lt;td&gt;Birkins&lt;/td&gt;
+        &lt;td&gt;Support&lt;/td&gt;
+        &lt;td&gt;+3 774 28 50&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Striped rows -->
+        <section id="tables-striped-rows" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Striped rows</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview3" data-bs-toggle="tab" role="tab" aria-controls="preview3" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html3" data-bs-toggle="tab" role="tab" aria-controls="html3" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+              <div class="table-responsive mb-3">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Position</th>
+                      <th>Phone</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>CEO, Founder</td>
+                      <td>+3 555 68 70</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Anna</td>
+                      <td>Cabana</td>
+                      <td>Designer</td>
+                      <td>+3 434 65 93</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Kale</td>
+                      <td>Thornton</td>
+                      <td>Developer</td>
+                      <td>+3 285 42 88</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-dark table-striped mb-0">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Position</th>
+                      <th>Phone</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>CEO, Founder</td>
+                      <td>+3 555 68 70</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Anna</td>
+                      <td>Cabana</td>
+                      <td>Designer</td>
+                      <td>+3 434 65 93</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Kale</td>
+                      <td>Thornton</td>
+                      <td>Developer</td>
+                      <td>+3 285 42 88</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>                    
+            </div>
+            <div class="tab-pane fade" id="html3" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Light table with striped rows --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-striped&quot;&gt;
+    &lt;thead;&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;!-- Dark table with striped rows --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-dark table-striped&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Striped columns -->
+        <section id="tables-striped-columns" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Striped columns</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview7" data-bs-toggle="tab" role="tab" aria-controls="preview7" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html7" data-bs-toggle="tab" role="tab" aria-controls="html7" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview7" role="tabpanel">
+              <div class="table-responsive mb-3">
+                <table class="table table-striped-columns">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Position</th>
+                      <th>Phone</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>CEO, Founder</td>
+                      <td>+3 555 68 70</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Anna</td>
+                      <td>Cabana</td>
+                      <td>Designer</td>
+                      <td>+3 434 65 93</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Kale</td>
+                      <td>Thornton</td>
+                      <td>Developer</td>
+                      <td>+3 285 42 88</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-dark table-striped-columns mb-0">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Position</th>
+                      <th>Phone</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>CEO, Founder</td>
+                      <td>+3 555 68 70</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Anna</td>
+                      <td>Cabana</td>
+                      <td>Designer</td>
+                      <td>+3 434 65 93</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Kale</td>
+                      <td>Thornton</td>
+                      <td>Developer</td>
+                      <td>+3 285 42 88</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>                    
+            </div>
+            <div class="tab-pane fade" id="html7" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Light table with striped columns --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-striped-columns&quot;&gt;
+    &lt;thead;&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;!-- Dark table with striped columns --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-dark table-striped-columns&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Bordered table -->
+        <section id="tables-bordered" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Bordered table</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview4" data-bs-toggle="tab" role="tab" aria-controls="preview4" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html4" data-bs-toggle="tab" role="tab" aria-controls="html4" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <div class="table-responsive mb-3">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Position</th>
+                      <th>Phone</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>CEO, Founder</td>
+                      <td>+3 555 68 70</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Anna</td>
+                      <td>Cabana</td>
+                      <td>Designer</td>
+                      <td>+3 434 65 93</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Kale</td>
+                      <td>Thornton</td>
+                      <td>Developer</td>
+                      <td>+3 285 42 88</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-dark table-bordered mb-0">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Position</th>
+                      <th>Phone</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>CEO, Founder</td>
+                      <td>+3 555 68 70</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Anna</td>
+                      <td>Cabana</td>
+                      <td>Designer</td>
+                      <td>+3 434 65 93</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Kale</td>
+                      <td>Thornton</td>
+                      <td>Developer</td>
+                      <td>+3 285 42 88</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html4" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Light bordered table --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-bordered&quot;&gt;
+    &lt;thead;&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;!-- Dark bordered table --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-dark table-bordered&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Hoverable rows -->
+        <section id="tables-hoverable" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Hoverable rows</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview5" data-bs-toggle="tab" role="tab" aria-controls="preview5" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html5" data-bs-toggle="tab" role="tab" aria-controls="html5" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview5" role="tabpanel">
+              <div class="table-responsive mb-3">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Position</th>
+                      <th>Phone</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>CEO, Founder</td>
+                      <td>+3 555 68 70</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Anna</td>
+                      <td>Cabana</td>
+                      <td>Designer</td>
+                      <td>+3 434 65 93</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Kale</td>
+                      <td>Thornton</td>
+                      <td>Developer</td>
+                      <td>+3 285 42 88</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-dark table-hover mb-0">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Position</th>
+                      <th>Phone</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>CEO, Founder</td>
+                      <td>+3 555 68 70</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Anna</td>
+                      <td>Cabana</td>
+                      <td>Designer</td>
+                      <td>+3 434 65 93</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Kale</td>
+                      <td>Thornton</td>
+                      <td>Developer</td>
+                      <td>+3 285 42 88</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html5" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Light table with hoverable rows --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-hover&quot;&gt;
+    &lt;thead;&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+&lt;!-- Dark table with hoverable rows --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+  &lt;table class=&quot;table table-dark table-hover&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;First Name&lt;/th&gt;
+        &lt;th&gt;Last Name&lt;/th&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Phone&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;CEO, Founder&lt;/td&gt;
+        &lt;td&gt;+3 555 68 70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Anna&lt;/td&gt;
+        &lt;td&gt;Cabana&lt;/td&gt;
+        &lt;td&gt;Designer&lt;/td&gt;
+        &lt;td&gt;+3 434 65 93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Kale&lt;/td&gt;
+        &lt;td&gt;Thornton&lt;/td&gt;
+        &lt;td&gt;Developer&lt;/td&gt;
+        &lt;td&gt;+3 285 42 88&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Color borders -->
+        <section id="tables-color-borders" class="py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Color borders</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview6" data-bs-toggle="tab" role="tab" aria-controls="preview6" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html6" data-bs-toggle="tab" role="tab" aria-controls="html6" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview6" role="tabpanel">
+              <div class="table-responsive mb-3">
+                <table class="table table-bordered border-success">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Position</th>
+                      <th>Phone</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>CEO, Founder</td>
+                      <td>+3 555 68 70</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Anna</td>
+                      <td>Cabana</td>
+                      <td>Designer</td>
+                      <td>+3 434 65 93</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-bordered border-danger mb-0">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Position</th>
+                      <th>Phone</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>CEO, Founder</td>
+                      <td>+3 555 68 70</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Anna</td>
+                      <td>Cabana</td>
+                      <td>Designer</td>
+                      <td>+3 434 65 93</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html6" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Color borders on tables --&gt;
+&lt;table class=&quot;table table-bordered border-success&quot;&gt;
+  ...
+&lt;/table&gt;
+&lt;table class=&quot;table table-bordered border-danger&quot;&gt;
+  ...
+&lt;/table&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+
+    <!-- Jump to anchor navigation -->
+    <aside id="jumpToNav" class="side-nav side-nav-end d-none d-xxl-block position-fixed top-0 end-0 vh-100 py-5" style="width: 20rem;">
+      <h3 class="fs-lg mt-5 pt-5">Jump to</h3>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#tables-basic" class="nav-link" data-scroll data-scroll-offset="-6">Basic example</a>
+        </li>
+        <li class="nav-item">
+          <a href="#tables-dark" class="nav-link" data-scroll data-scroll-offset="-6">Dark table</a>
+        </li>
+        <li class="nav-item">
+          <a href="#tables-striped-rows" class="nav-link" data-scroll data-scroll-offset="-6">Striped rows</a>
+        </li>
+        <li class="nav-item">
+          <a href="#tables-striped-columns" class="nav-link" data-scroll data-scroll-offset="-6">Striped columns</a>
+        </li>
+        <li class="nav-item">
+          <a href="#tables-bordered" class="nav-link" data-scroll data-scroll-offset="-6">Bordered table</a>
+        </li>
+        <li class="nav-item">
+          <a href="#tables-hoverable" class="nav-link" data-scroll data-scroll-offset="-6">Hoverable rows</a>
+        </li>
+        <li class="nav-item">
+          <a href="#tables-color-borders" class="nav-link" data-scroll data-scroll-offset="-6">Color borders</a>
+        </li>
+      </ul>
+    </aside>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-core.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-markup.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-clike.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="../assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from silicon.createx.studio/components/tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:44:01 GMT -->
+</html>

@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from silicon.createx.studio/components/forms.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:44:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Silicon UI Kit | Forms</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/nouislider/dist/nouislider.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/themes/prism.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css"/>
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body data-bs-spy="scroll" data-bs-target="#jumpToNav" tabindex="0">
+
+        
+    <!-- Navbar -->
+    <header class="header navbar navbar-expand bg-light border-bottom border-light shadow fixed-top" data-scroll-header>
+      <div class="container-fluid pe-lg-4">
+        <div class="d-flex align-items-center">
+          <a href="typography.html" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
+            <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <span class="badge bg-warning">UI Kit</span>
+        </div>
+        <div class="d-flex align-items-center w-100">
+          <ul class="navbar-nav d-none d-lg-flex" style="padding-left: 11.75rem;">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">
+                <i class="bx bx-desktop opacity-70 fs-lg me-1"></i>
+                &nbsp;Live preview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../docs/getting-started.html" class="nav-link">
+                <i class="bx bx-file opacity-70 fs-lg me-1"></i>
+                &nbsp;Documentation
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="navbar-toggler d-block d-lg-none ms-auto me-4" data-bs-toggle="offcanvas" data-bs-target="#componentsNav" aria-controls="componentsNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-lg-auto" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode">Dark</label>
+          </div>
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary btn-sm fs-sm rounded ms-4 d-none d-lg-inline-flex" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-5 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Main sidebar navigation -->
+    <aside class="dark-mode">
+      <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 21rem; z-index: 1045;">
+        <div class="offcanvas-header d-none d-lg-flex justify-content-start">
+          <a href="typography.html" class="navbar-brand text-dark d-none d-lg-flex py-0">
+            <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <span class="badge bg-warning d-none d-lg-inline-block">UI Kit</span>
+        </div>
+        <div class="offcanvas-header d-block d-lg-none border-bottom">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h5 class="d-lg-none mb-0">Menu</h5>
+            <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#componentsNav"></button>
+          </div>
+          <div class="list-group list-group-flush mx-n4">
+            <a href="../index.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-2 px-4">
+              <i class="bx bx-desktop fs-lg opacity-80 me-2"></i>
+              Preview
+            </a>
+            <a href="../docs/getting-started.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-2 px-4">
+              <i class="bx bx-file fs-lg opacity-80 me-2"></i>
+              Documentation
+            </a>
+          </div>
+        </div>
+        <div class="offcanvas-body swiper scrollbar-hover overflow-hidden w-100 p-4" data-swiper-options='{
+          "direction": "vertical",
+          "slidesPerView": "auto",
+          "freeMode": true,
+          "scrollbar": {
+            "el": ".swiper-scrollbar"
+          },
+          "mousewheel": true
+        }'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide h-auto">
+              <h3 class="fs-lg">Content</h3>
+              <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
+                <a href="typography.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Typography</a>
+                <a href="https://boxicons.com/" class="list-group-item list-group-item-action border-0 py-2 px-4" target="_blank" rel="noopener">Icon font</a>
+                <a href="code.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Code</a>
+                <a href="images.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Images &amp; figures</a>
+                <a href="tables.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tables</a>
+              </div>
+              <h3 class="fs-lg">Components</h3>
+              <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
+                <a href="accordion.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Accordion</a>
+                <a href="alerts.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Alerts</a>
+                <a href="audio-player.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Audio player</a>
+                <a href="badges.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Badges</a>
+                <a href="blog-components.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Blog components</a>
+                <a href="breadcrumb.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Breadcrumb</a>
+                <a href="buttons.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Buttons</a>
+                <a href="button-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Button group</a>
+                <a href="cards.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Cards</a>
+                <a href="carousel.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Carousel (Slider)</a>
+                <a href="collapse.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Collapse</a>
+                <a href="dropdowns.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Dropdowns</a>
+                <a href="forms.html" class="list-group-item list-group-item-action border-0 py-2 px-4 active">Forms</a>
+                <a href="gallery.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Gallery (Lightbox)</a>
+                <a href="image-comparison-slider.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Image comparison slider</a>
+                <a href="input-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Input group</a>
+                <a href="list-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">List group</a>
+                <a href="modal.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Modal</a>
+                <a href="navbar.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Navbar</a>
+                <a href="offcanvas.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Offcanvas</a>
+                <a href="pagination.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pagination</a>
+                <a href="parallax.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Parallax</a>
+                <a href="pills.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pills</a>
+                <a href="placeholders.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Placeholders</a>
+                <a href="popovers.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Popovers</a>
+                <a href="portfolio-components.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Portfolio components</a>
+                <a href="pricing.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pricing</a>
+                <a href="progress-bars.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Progress bars</a>
+                <a href="social-buttons.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Social buttons</a>
+                <a href="spinners.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Spinners</a>
+                <a href="steps.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Steps</a>
+                <a href="tabs.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tabs</a>
+                <a href="team.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Team</a>
+                <a href="testimonials.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Testimonials / reviews</a>
+                <a href="toasts.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Toasts</a>
+                <a href="tooltips.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tooltips</a>
+                <a href="video-popup.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Video popup</a>
+              </div>
+              <h3 class="fs-lg">Utilities</h3>
+              <div class="list-group list-group-flush mx-n4 pb-2">
+                <a href="https://getbootstrap.com/docs/5.2/utilities/background/" class="list-group-item list-group-item-action border-0 py-2 px-4" target="_blank" rel="noopener">Bootstrap</a>
+                <a href="utilities.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Silicon</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar end-0"></div>
+        </div>
+        <div class="offcanvas-header border-top">
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-4 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </div>
+    </aside>
+
+
+    <!-- Page container -->
+    <main class="docs-container pt-5">
+      <div class="container-fluid px-xxl-5 px-lg-4 pt-4 pt-lg-5 pb-2 pb-lg-4">
+        
+        <!-- Page title -->
+        <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 pt-4 mb-n3">
+          <div class="me-4">
+            <h1 class="pb-1">Forms</h1>
+            <p class="text-muted fs-lg mb-2">Form control styles, layout options, and custom components.</p>
+          </div>
+          <a href="https://getbootstrap.com/docs/5.2/forms/overview/" class="btn btn-link px-0" target="_blank" rel="noopener">
+            Bootstrap docs
+            <i class="bx bx-link-external fs-lg ms-2"></i>
+          </a>
+        </div>
+
+        <!-- Info alert -->
+        <div class="alert alert-info mt-5 mb-n1 mb-lg-0" role="alert">
+          <div class="d-flex">
+            <i class="bx bx-info-circle lead me-2 me-sm-3"></i>
+            <div class="text-break">
+              <p class="mb-3"><strong>Range slider</strong> depends on <strong>noUISlider plugin</strong>. Make sure to link to <strong>noUISlider css and js</strong> files in your document: <strong>assets/vendor/nouislider/dist/nouislider.min.css</strong> and <strong>assets/vendor/nouislider/dist/nouislider.min.js</strong>. Use this page as a reference.</p>
+              <p class="mb-0">To enable input text content formatting please make sure to link to <strong>Cleave.js</strong> plugin in your document: <strong>assets/vendor/cleave.js/dist/cleave.min.js</strong>. Use this page as a reference.</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Supported input types -->
+        <section id="forms-types" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Supported input types</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview1" data-bs-toggle="tab" role="tab" aria-controls="preview1" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html1" data-bs-toggle="tab" role="tab" aria-controls="html1" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+              <div class="mb-4 row align-items-center">
+                <label class="col-md-2 col-form-label fs-sm" for="text-input">Text</label>
+                <div class="col-md-10">
+                  <input class="form-control" type="text" id="text-input" value="Artisanal kale">
+                </div>
+              </div>
+              <div class="mb-4 row align-items-center">
+                <label class="col-md-2 col-form-label fs-sm" for="search-input">Search</label>
+                <div class="col-md-10">
+                  <input class="form-control" type="search" id="search-input" value="How do I shoot web">
+                </div>
+              </div>
+              <div class="mb-4 row align-items-center">
+                <label class="col-md-2 col-form-label fs-sm" for="email-input">Email</label>
+                <div class="col-md-10">
+                  <input class="form-control" type="email" id="email-input" value="email@example.com">
+                </div>
+              </div>
+              <div class="mb-4 row align-items-center">
+                <label class="col-md-2 col-form-label fs-sm" for="url-input">URL</label>
+                <div class="col-md-10">
+                  <input class="form-control" type="url" id="url-input" value="https://getbootstrap.com/">
+                </div>
+              </div>
+              <div class="mb-4 row align-items-center">
+                <label class="col-md-2 col-form-label fs-sm" for="tel-input">Phone</label>
+                <div class="col-md-10">
+                  <input class="form-control" type="tel" id="tel-input" value="1-(770)-334-2518">
+                </div>
+              </div>
+              <div class="mb-4 row align-items-center">
+                <label class="col-md-2 col-form-label fs-sm" for="pass-input">Password</label>
+                <div class="col-md-10">
+                  <input class="form-control" type="password" id="pass-input" value="mypasswordexample">
+                </div>
+              </div>
+              <div class="mb-4 row">
+                <label class="col-md-2 col-form-label fs-sm" for="textarea-input">Textarea</label>
+                <div class="col-md-10">
+                  <textarea class="form-control" id="textarea-input" rows="5">Hello World!</textarea>
+                </div>
+              </div>
+              <div class="mb-4 row align-items-center">
+                <label class="col-md-2 col-form-label fs-sm" for="select-input">Select</label>
+                <div class="col-md-10">
+                  <select class="form-select" id="select-input">
+                    <option>Choose option...</option>
+                    <option>Option item 1</option>
+                    <option>Option item 2</option>
+                    <option>Option item 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-4 row align-items-center">
+                <label class="col-md-2 col-form-label fs-sm" for="multiselect-input">Multiselect</label>
+                <div class="col-md-10">
+                  <select class="form-select" id="multiselect-input" size="3" multiple>
+                    <option>Option item 1</option>
+                    <option>Option item 2</option>
+                    <option>Option item 3</option>
+                    <option>Option item 4</option>
+                    <option>Option item 5</option>
+                    <option>Option item 6</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-4 row align-items-center">
+                <label class="col-md-2 col-form-label fs-sm" for="file-input">File</label>
+                <div class="col-md-10">
+                  <input class="form-control" type="file" id="file-input">
+                </div>
+              </div>
+              <div class="mb-4 row align-items-center">
+                <label class="col-md-2 col-form-label fs-sm" for="number-input">Number</label>
+                <div class="col-md-10">
+                  <input class="form-control" type="number" id="number-input" value="37">
+                </div>
+              </div>
+              <div class="mb-4 row align-items-center">
+                <label class="col-md-2 col-form-label fs-sm" for="datalist-input">Datalist</label>
+                <div class="col-md-10">
+                  <input class="form-control" list="datalist-options" id="datalist-input" placeholder="Type to search...">
+                  <datalist id="datalist-options">
+                    <option value="San Francisco"></option>
+                    <option value="New York"></option>
+                    <option value="Seattle"></option>
+                    <option value="Los Angeles"></option>
+                    <option value="Chicago"></option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="mb-4 row align-items-center">
+                <label class="col-md-2 col-form-label fs-sm" for="range-input">Range</label>
+                <div class="col-md-10">
+                  <input class="form-range" type="range" id="range-input">
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <label class="col-md-2 col-form-label fs-sm" for="color-input">Color</label>
+                <div class="col-md-10">
+                  <input class="form-control form-control-color" type="color" id="color-input" value="#d946ef">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html1" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Text input --&gt;
+&lt;div class=&quot;mb-4&quot;&gt;
+  &lt;label for=&quot;text-input&quot; class=&quot;form-label&quot;&gt;Text&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;text-input&quot; value=&quot;Artisanal kale&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Search input --&gt;
+&lt;div class=&quot;mb-4&quot;&gt;
+  &lt;label for=&quot;search-input&quot; class=&quot;form-label&quot;&gt;Search&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;search&quot; id=&quot;search-input&quot; value=&quot;How do I shoot web&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Email input --&gt;
+&lt;div class=&quot;mb-4&quot;&gt;
+  &lt;label for=&quot;email-input&quot; class=&quot;form-label&quot;&gt;Email&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;email&quot; id=&quot;email-input&quot; value=&quot;email@example.com&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- URL Input --&gt;
+&lt;div class=&quot;mb-4&quot;&gt;
+  &lt;label for=&quot;url-input&quot; class=&quot;form-label&quot;&gt;URL&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;url&quot; id=&quot;url-input&quot; value=&quot;https://getbootstrap.com&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Phone Input --&gt;
+&lt;div class=&quot;mb-4&quot;&gt;
+  &lt;label for=&quot;tel-input&quot; class=&quot;form-label&quot;&gt;Phone&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;tel&quot; id=&quot;tel-input&quot; value=&quot;1-(770)-334-2518&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Password Input --&gt;
+&lt;div class=&quot;mb-4&quot;&gt;
+  &lt;label for=&quot;pass-input&quot; class=&quot;form-label&quot;&gt;Password&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;password&quot; id=&quot;pass-input&quot; value=&quot;mypasswordexample&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Textarea --&gt;
+&lt;div class=&quot;mb-4&quot;&gt;
+  &lt;label for=&quot;textarea-input&quot; class=&quot;form-label&quot;&gt;Textarea&lt;/label&gt;
+  &lt;textarea class=&quot;form-control&quot; id=&quot;textarea-input&quot; rows=&quot;5&quot;&gt;Hello World!&lt;/textarea&gt;
+&lt;/div&gt;
+
+&lt;!-- Select --&gt;
+&lt;div class=&quot;mb-4&quot;&gt;
+  &lt;label for=&quot;select-input&quot; class=&quot;form-label&quot;&gt;Select&lt;/label&gt;
+  &lt;select class=&quot;form-select&quot; id=&quot;select-input&quot;&gt;
+    &lt;option&gt;Choose option...&lt;/option&gt;
+    &lt;option&gt;Option item 1&lt;/option&gt;
+    &lt;option&gt;Option item 2&lt;/option&gt;
+    &lt;option&gt;Option item 3&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;!-- Multiselect --&gt;
+&lt;div class=&quot;mb-4&quot;&gt;
+  &lt;label for=&quot;multiselect-input&quot; class=&quot;form-label&quot;&gt;Multiselect&lt;/label&gt;
+  &lt;select class=&quot;form-select&quot; id=&quot;multiselect-input&quot; size=&quot;3&quot; multiple&gt;
+    &lt;option&gt;Option item 1&lt;/option&gt;
+    &lt;option&gt;Option item 2&lt;/option&gt;
+    &lt;option&gt;Option item 3&lt;/option&gt;
+    &lt;option&gt;Option item 4&lt;/option&gt;
+    &lt;option&gt;Option item 5&lt;/option&gt;
+    &lt;option&gt;Option item 6&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;!-- File input --&gt;
+&lt;div class=&quot;mb-4&quot;&gt;
+  &lt;label for=&quot;file-input&quot; class=&quot;form-label&quot;&gt;File&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;file&quot; id=&quot;file-input&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Number input --&gt;
+&lt;div class=&quot;mb-4&quot;&gt;
+  &lt;label for=&quot;number-input&quot; class=&quot;form-label&quot;&gt;Number&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;number&quot; id=&quot;number-input&quot; value=&quot;37&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Datalist --&gt;
+&lt;div class=&quot;mb-4&quot;&gt;
+  &lt;label for=&quot;datalist-input&quot; class=&quot;form-label&quot;&gt;Datalist&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; list=&quot;datalist-options&quot; id=&quot;datalist-input&quot; placeholder=&quot;Type to search...&quot;&gt;
+  &lt;datalist id=&quot;datalist-options&quot;&gt;
+    &lt;option value=&quot;San Francisco&quot;&gt;
+    &lt;option value=&quot;New York&quot;&gt;
+    &lt;option value=&quot;Seattle&quot;&gt;
+    &lt;option value=&quot;Los Angeles&quot;&gt;
+    &lt;option value=&quot;Chicago&quot;&gt;
+  &lt;/datalist&gt;
+&lt;/div&gt;
+
+&lt;!-- Range input --&gt;
+&lt;div class=&quot;mb-4&quot;&gt;
+  &lt;label for=&quot;range-input&quot; class=&quot;form-label&quot;&gt;Range&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;range&quot; id=&quot;range-input&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Color input --&gt;
+&lt;div class=&quot;mb-4&quot;&gt;
+  &lt;label for=&quot;color-input&quot; class=&quot;form-label&quot;&gt;Color&lt;/label&gt;
+  &lt;input class=&quot;form-control form-control-color&quot; type=&quot;color&quot; id=&quot;color-input&quot; value=&quot;#d946ef&quot;&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Floating labels -->
+        <section id="forms-floating-labels" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Floating labels</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview2" data-bs-toggle="tab" role="tab" aria-controls="preview2" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html2" data-bs-toggle="tab" role="tab" aria-controls="html2" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+              <div class="form-floating mb-4">
+                <input class="form-control" type="text" id="fl-text" placeholder="Your name">
+                <label for="fl-text">Your name</label>
+              </div>
+              <div class="form-floating mb-4">
+                <select class="form-select" id="fl-select">
+                  <option selected>Argentina</option>
+                  <option>Belgium</option>
+                  <option>France</option>
+                  <option>Germany</option>
+                  <option>Japan</option>
+                  <option>Spain</option>
+                  <option>USA</option>
+                </select>
+                <label for="fl-select">Your country</label>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" id="fl-textarea" style="height: 8rem;" placeholder="Your message"></textarea>
+                <label for="fl-textarea">Your message</label>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html2" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Floating label: Text input --&gt;
+&lt;div class=&quot;form-floating mb-4&quot;&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;fl-text&quot; placeholder=&quot;Your name&quot;&gt;
+  &lt;label for=&quot;fl-text&quot;&gt;Your name&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Floating label: Select --&gt;
+&lt;div class=&quot;form-floating mb-4&quot;&gt;
+  &lt;select class=&quot;form-select&quot; id=&quot;fl-select&quot;&gt;
+    &lt;option selected&gt;Argentina&lt;/option&gt;
+    &lt;option&gt;Belgium&lt;/option&gt;
+    &lt;option&gt;France&lt;/option&gt;
+    &lt;option&gt;Germany&lt;/option&gt;
+    &lt;option&gt;Japan&lt;/option&gt;
+    &lt;option&gt;Spain&lt;/option&gt;
+    &lt;option&gt;USA&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;label for=&quot;fl-select&quot;&gt;Your country&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Floating label: Textarea --&gt;
+&lt;div class=&quot;form-floating&quot;&gt;
+  &lt;textarea class=&quot;form-control&quot; id=&quot;fl-textarea&quot; style=&quot;height: 8rem;&quot; placeholder=&quot;Your message&quot;&gt;&lt;/textarea&gt;
+  &lt;label for=&quot;fl-textarea&quot;&gt;Your message&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Password visibility toggle -->
+        <section id="forms-password-toggle" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Password visibility toggle</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview3" data-bs-toggle="tab" role="tab" aria-controls="preview3" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html3" data-bs-toggle="tab" role="tab" aria-controls="html3" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+              <div style="max-width: 25rem;">
+                <label class="form-label" for="pass-visibility">Password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="pass-visibility" value="hidden@password">
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html3" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Password visibility toggle --&gt;
+&lt;div class=&quot;password-toggle&quot;&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;password&quot; value=&quot;hidden@password&quot;&gt;
+  &lt;label class=&quot;password-toggle-btn&quot; aria-label=&quot;Show/hide password&quot;&gt;
+    &lt;input class=&quot;password-toggle-check&quot; type=&quot;checkbox&quot;&gt;
+    &lt;span class=&quot;password-toggle-indicator&quot;&gt;&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Checkboxes -->
+        <section id="forms-checkboxes" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Checkboxes</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview4" data-bs-toggle="tab" role="tab" aria-controls="preview4" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html4" data-bs-toggle="tab" role="tab" aria-controls="html4" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="checkbox" id="ex-check-1">
+                <label class="form-check-label" for="ex-check-1">Check this checkbox</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="checkbox" id="ex-check-2" checked>
+                <label class="form-check-label" for="ex-check-2">Uncheck this checkbox</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="checkbox" id="ex-check-3" disabled>
+                <label class="form-check-label" for="ex-check-3">Disabled checkbox</label>
+              </div>
+              <div class="pt-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="ex-check-4">
+                  <label class="form-check-label" for="ex-check-4">Check this checkbox</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="ex-check-5" checked>
+                  <label class="form-check-label" for="ex-check-5">Uncheck this checkbox</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="ex-check-6" disabled>
+                  <label class="form-check-label" for="ex-check-6">Disabled checkbox</label>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html4" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Stacked checkboxes --&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;ex-check-1&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;ex-check-1&quot;&gt;Check this checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;ex-check-2&quot; checked&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;ex-check-2&quot;&gt;Uncheck this checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;ex-check-3&quot; disabled&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;ex-check-3&quot;&gt;Disabled checkbox&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Inline checkboxes --&gt;
+&lt;div class=&quot;form-check form-check-inline&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;ex-check-4&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;ex-check-4&quot;&gt;Check this checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check form-check-inline&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;ex-check-5&quot; checked&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;ex-check-5&quot;&gt;Uncheck this checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check form-check-inline&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;ex-check-6&quot; disabled&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;ex-check-6&quot;&gt;Disabled checkbox&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Radios -->
+        <section id="forms-radios" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Radios</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview5" data-bs-toggle="tab" role="tab" aria-controls="preview5" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html5" data-bs-toggle="tab" role="tab" aria-controls="html5" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview5" role="tabpanel">
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" id="ex-radio-1" name="radio">
+                <label class="form-check-label" for="ex-radio-1">Toggle this radio</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" id="ex-radio-2" name="radio" checked>
+                <label class="form-check-label" for="ex-radio-2">Toggle this radio</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" id="ex-radio-3" name="radio" disabled>
+                <label class="form-check-label" for="ex-radio-3">Disabled radio</label>
+              </div>
+              <div class="pt-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" id="ex-radio-4" name="radio2">
+                  <label class="form-check-label" for="ex-radio-4">Toggle this radio</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" id="ex-radio-5" name="radio2" checked>
+                  <label class="form-check-label" for="ex-radio-5">Toggle this radio</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" id="ex-radio-6" name="radio2" disabled>
+                  <label class="form-check-label" for="ex-radio-6">Disabled radio</label>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html5" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Stacked radio buttons --&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; id=&quot;ex-radio-1&quot; name=&quot;radio&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;ex-radio-1&quot;&gt;Toggle this radio&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; id=&quot;ex-radio-2&quot; name=&quot;radio&quot; checked&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;ex-radio-2&quot;&gt;Toggle this radio&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; id=&quot;ex-radio-3&quot; name=&quot;radio&quot; disabled&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;ex-radio-3&quot;&gt;Disabled radio&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Inline radio buttons --&gt;
+&lt;div class=&quot;form-check form-check-inline&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; id=&quot;ex-radio-4&quot; name=&quot;radio2&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;ex-radio-4&quot;&gt;Toggle this radio&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check form-check-inline&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; id=&quot;ex-radio-5&quot; name=&quot;radio2&quot; checked&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;ex-radio-5&quot;&gt;Toggle this radio&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check form-check-inline&quot;&gt;
+  &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; id=&quot;ex-radio-6&quot; name=&quot;radio2&quot; disabled&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;ex-radio-6&quot;&gt;Disabled radio&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Switches -->
+        <section id="forms-switches" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Switches</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview6" data-bs-toggle="tab" role="tab" aria-controls="preview6" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html6" data-bs-toggle="tab" role="tab" aria-controls="html6" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview6" role="tabpanel">
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="customSwitch1">
+                <label class="form-check-label" for="customSwitch1">Toggle this switch element</label>
+              </div>
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="customSwitch2" checked>
+                <label class="form-check-label" for="customSwitch2">Toggle this switch element</label>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="customSwitch3" disabled>
+                <label class="form-check-label" for="customSwitch3">Disabled switch element</label>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html6" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Switch --&gt;
+&lt;div class=&quot;form-check form-switch&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customSwitch1&quot;&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;customSwitch1&quot;&gt;Toggle this switch element&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Checked switch --&gt;
+&lt;div class=&quot;form-check form-switch&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customSwitch2&quot; checked&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;customSwitch2&quot;&gt;Toggle this switch element&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Disabled switch --&gt;
+&lt;div class=&quot;form-check form-switch&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customSwitch3&quot; disabled&gt;
+  &lt;label class=&quot;form-check-label&quot; for=&quot;customSwitch3&quot;&gt;Disabled switch element&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Theme mode switch -->
+        <section id="forms-theme-mode-switch" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Theme mode switch</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview7" data-bs-toggle="tab" role="tab" aria-controls="preview7" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html7" data-bs-toggle="tab" role="tab" aria-controls="html7" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview7" role="tabpanel">
+              <div class="form-check form-switch mode-switch mt-1">
+                <input type="checkbox" class="form-check-input" id="theme-mode-1">
+                <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode-1">Light</label>
+                <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode-1">Dark</label>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html7" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Theme mode switch. Can be used oly once on the page! --&gt;
+&lt;div class=&quot;form-check form-switch mode-switch&quot; data-bs-toggle=&quot;mode&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;theme-mode&quot;&gt;
+  &lt;label class=&quot;form-check-label d-none d-sm-block d-lg-none d-xl-block&quot; for=&quot;theme-mode&quot;&gt;Light&lt;/label&gt;
+  &lt;label class=&quot;form-check-label d-none d-sm-block d-lg-none d-xl-block&quot; for=&quot;theme-mode&quot;&gt;Dark&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Range slider (noUISlider) -->
+        <section id="forms-range-slider" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Range slider (noUISlider)</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview8" data-bs-toggle="tab" role="tab" aria-controls="preview8" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html8" data-bs-toggle="tab" role="tab" aria-controls="html8" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview8" role="tabpanel">
+              <h6 class="fs-sm">Two handles + inputs</h6>
+              <div class="range-slider mb-4 pb-3" data-start-min="280" data-start-max="720" data-min="0" data-max="1000" data-step="1" style="max-width: 20rem;">
+                <div class="range-slider-ui"></div>
+                <div class="d-flex align-items-center">
+                  <div class="w-50">
+                    <div class="input-group">
+                      <span class="input-group-text px-2">
+                        <i class="bx bx-dollar mx-1"></i>
+                      </span>
+                      <input class="form-control form-control-sm range-slider-value-min" type="number">
+                    </div>
+                  </div>
+                  <div class="mx-1 px-2 fs-xs">—</div>
+                  <div class="w-50">
+                    <div class="input-group">
+                      <span class="input-group-text px-2">
+                        <i class="bx bx-dollar mx-1"></i>
+                      </span>
+                      <input class="form-control form-control-sm range-slider-value-max" type="number">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h6 class="fs-sm">With value scale (pips)</h6>
+              <div class="range-slider mb-4 pb-3" data-start-min="250" data-start-max="680" data-min="0" data-max="1000" data-step="1" data-pips="true" style="max-width: 20rem;">
+                <div class="range-slider-ui"></div>
+                <div class="d-flex align-items-center">
+                  <div class="w-50">
+                    <div class="input-group">
+                      <span class="input-group-text px-2">
+                        <i class="bx bx-dollar mx-1"></i>
+                      </span>
+                      <input class="form-control form-control-sm range-slider-value-min" type="number">
+                    </div>
+                  </div>
+                  <div class="mx-1 px-2 fs-xs">—</div>
+                  <div class="w-50">
+                    <div class="input-group">
+                      <span class="input-group-text px-2">
+                        <i class="bx bx-dollar mx-1"></i>
+                      </span>
+                      <input class="form-control form-control-sm range-slider-value-max" type="number">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h6 class="fs-sm">One handle + no inputs</h6>
+              <div class="range-slider" data-start-min="450" data-min="0" data-max="1000" data-step="1" style="max-width: 20rem;">
+                <div class="range-slider-ui"></div>
+                <input class="form-control range-slider-value-min" type="hidden">
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html8" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Range slider: Two handles + inputs --&gt;
+&lt;div class=&quot;range-slider&quot; data-start-min=&quot;280&quot; data-start-max=&quot;720&quot; data-min=&quot;0&quot; data-max=&quot;1000&quot; data-step=&quot;1&quot;&gt;
+  &lt;div class=&quot;range-slider-ui&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;d-flex align-items-center&quot;&gt;
+    &lt;div class=&quot;w-50&quot;&gt;
+      &lt;div class=&quot;input-group&quot;&gt;
+        &lt;span class=&quot;input-group-text px-2&quot;&gt;
+          &lt;i class=&quot;bx bx-dollar mx-1&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+        &lt;input class=&quot;form-control form-control-sm range-slider-value-min&quot; type=&quot;number&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mx-1 px-2 fs-xs&quot;&gt;—&lt;/div&gt;
+    &lt;div class=&quot;w-50&quot;&gt;
+      &lt;div class=&quot;input-group&quot;&gt;
+        &lt;span class=&quot;input-group-text px-2&quot;&gt;
+          &lt;i class=&quot;bx bx-dollar mx-1&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+        &lt;input class=&quot;form-control form-control-sm range-slider-value-max&quot; type=&quot;number&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  
+&lt;!-- Range slider: With value scale (pips) --&gt;
+&lt;div class=&quot;range-slider&quot; data-start-min=&quot;250&quot; data-start-max=&quot;680&quot; data-min=&quot;0&quot; data-max=&quot;1000&quot; data-step=&quot;1&quot; data-pips=&quot;true&quot;&gt;
+  &lt;div class=&quot;range-slider-ui&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;d-flex align-items-center&quot;&gt;
+    &lt;div class=&quot;w-50&quot;&gt;
+      &lt;div class=&quot;input-group&quot;&gt;
+        &lt;span class=&quot;input-group-text px-2&quot;&gt;
+          &lt;i class=&quot;bx bx-dollar mx-1&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+        &lt;input class=&quot;form-control form-control-sm range-slider-value-min&quot; type=&quot;number&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mx-1 px-2 fs-xs&quot;&gt;—&lt;/div&gt;
+    &lt;div class=&quot;w-50&quot;&gt;
+      &lt;div class=&quot;input-group&quot;&gt;
+        &lt;span class=&quot;input-group-text px-2&quot;&gt;
+          &lt;i class=&quot;bx bx-dollar mx-1&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt;
+        &lt;input class=&quot;form-control form-control-sm range-slider-value-max&quot; type=&quot;number&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Range slider: One handle + no inputs --&gt;
+&lt;div class=&quot;range-slider&quot; data-start-min=&quot;450&quot; data-min=&quot;0&quot; data-max=&quot;1000&quot; data-step=&quot;1&quot;&gt;
+  &lt;div class=&quot;range-slider-ui&quot;&gt;&lt;/div&gt;
+  &lt;input class=&quot;form-control range-slider-value-min&quot; type=&quot;hidden&quot;&gt;
+&lt;/div&gt;
+</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Sizing -->
+        <section id="forms-sizing" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Sizing</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview9" data-bs-toggle="tab" role="tab" aria-controls="preview9" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html9" data-bs-toggle="tab" role="tab" aria-controls="html9" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview9" role="tabpanel">
+              <div class="d-sm-flex">
+                <div class="w-100 me-4">
+                  <div class="mb-3">
+                    <label class="form-label fs-base" for="input-lg">Large input</label>
+                    <input class="form-control form-control-lg" id="input-lg" type="text" placeholder="Large input placeholder">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="input-normal">Normal input</label>
+                    <input class="form-control" id="input-normal" type="text" placeholder="Normal input placeholder">
+                  </div>
+                  <div class="mb-3 mb-sm-0">
+                    <label class="form-label fs-xs" for="input-sm">Small input</label>
+                    <input class="form-control form-control-sm" id="input-sm" type="text" placeholder="Small input placeholder">
+                  </div>
+                </div>
+                <div class="w-100">
+                  <div class="mb-3">
+                    <label class="form-label fs-base" for="select-lg">Large select</label>
+                    <select class="form-select form-select-lg" id="select-lg">
+                      <option>Large select option</option>
+                      <option>Option item 1</option>
+                      <option>Option item 2</option>
+                      <option>Option item 3</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="select-normal">Normal select</label>
+                    <select class="form-select" id="select-normal">
+                      <option>Normal select option</option>
+                      <option>Option item 1</option>
+                      <option>Option item 2</option>
+                      <option>Option item 3</option>
+                    </select>
+                  </div>
+                  <div class="mb-3 mb-sm-0">
+                    <label class="form-label fs-xs" for="select-sm">Small select</label>
+                    <select class="form-select form-select-sm" id="select-sm">
+                      <option>Small select option</option>
+                      <option>Option item 1</option>
+                      <option>Option item 2</option>
+                      <option>Option item 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html9" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Large input --&gt;
+&lt;div class=&quot;mb-3&quot;&gt;
+  &lt;label class=&quot;form-label fs-base&quot; for=&quot;input-lg&quot;&gt;Large input&lt;/label&gt;
+  &lt;input class=&quot;form-control form-control-lg&quot; id=&quot;input-lg&quot; type=&quot;text&quot; placeholder=&quot;Large input placeholder&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Normal input --&gt;
+&lt;div class=&quot;mb-3&quot;&gt;
+  &lt;label for=&quot;input-normal&quot; class=&quot;form-label&quot;&gt;Normal input&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; id=&quot;input-normal&quot; type=&quot;text&quot; placeholder=&quot;Normal input placeholder&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Small input --&gt;
+&lt;div class=&quot;mb-3&quot;&gt;
+  &lt;label class=&quot;form-label fs-xs&quot; for=&quot;input-sm&quot;&gt;Small input&lt;/label&gt;
+  &lt;input class=&quot;form-control form-control-sm&quot; id=&quot;input-sm&quot; type=&quot;text&quot; placeholder=&quot;Small input placeholder&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Large select --&gt;
+&lt;div class=&quot;mb-3&quot;&gt;
+  &lt;label class=&quot;form-label fs-base&quot; for=&quot;select-lg&quot;&gt;Large select&lt;/label&gt;
+  &lt;select class=&quot;form-select form-select-lg&quot; id=&quot;select-lg&quot;&gt;
+    &lt;option&gt;Large select option&lt;/option&gt;
+    &lt;option&gt;Option item 1&lt;/option&gt;
+    &lt;option&gt;Option item 2&lt;/option&gt;
+    &lt;option&gt;Option item 3&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;!-- Normal select --&gt;
+&lt;div class=&quot;mb-3&quot;&gt;
+  &lt;label class=&quot;form-label&quot; for=&quot;select-normal&quot;&gt;Normal select&lt;/label&gt;
+  &lt;select class=&quot;form-select&quot; id=&quot;select-normal&quot;&gt;
+    &lt;option&gt;Normal select option&lt;/option&gt;
+    &lt;option&gt;Option item 1&lt;/option&gt;
+    &lt;option&gt;Option item 2&lt;/option&gt;
+    &lt;option&gt;Option item 3&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;!-- Small select --&gt;
+&lt;div class=&quot;mb-3&quot;&gt;
+  &lt;label class=&quot;form-label fs-xs&quot; for=&quot;select-sm&quot;&gt;Small select&lt;/label&gt;
+  &lt;select class=&quot;form-select form-select-sm&quot; id=&quot;select-sm&quot;&gt;
+    &lt;option&gt;Small select option&lt;/option&gt;
+    &lt;option&gt;Option item 1&lt;/option&gt;
+    &lt;option&gt;Option item 2&lt;/option&gt;
+    &lt;option&gt;Option item 3&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Readonly & disabled -->
+        <section id="forms-disabled" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Readonly &amp; disabled</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview10" data-bs-toggle="tab" role="tab" aria-controls="preview10" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html10" data-bs-toggle="tab" role="tab" aria-controls="html10" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview10" role="tabpanel" style="max-width: 25rem;">
+              <div class="mb-3">
+                <input class="form-control" type="text" placeholder="Readonly input here..." readonly>
+              </div>
+              <div class="mb-3">
+                <input class="form-control" type="text" id="disabled-input" placeholder="Disabled input here..." disabled>
+              </div>
+              <div class="mb-3">
+                <select class="form-select" id="disabled-select-input" disabled>
+                  <option>Disabled select here...</option>
+                  <option>Option item 1</option>
+                  <option>Option item 2</option>
+                  <option>Option item 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html10" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Readonly input --&gt;
+&lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Readonly input here...&quot; readonly&gt;
+
+&lt;!-- Disabled input --&gt;
+&lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Disabled input here...&quot; disabled&gt;
+
+&lt;!-- Disabled select --&gt;
+&lt;select class=&quot;form-select&quot; disabled&gt;
+  &lt;option&gt;Disabled select here...&lt;/option&gt;
+  &lt;option&gt;Option item 1&lt;/option&gt;
+  &lt;option&gt;Option item 2&lt;/option&gt;
+  &lt;option&gt;Option item 3&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Inline form -->
+        <section id="forms-inline" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Inline form</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview11" data-bs-toggle="tab" role="tab" aria-controls="preview11" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html11" data-bs-toggle="tab" role="tab" aria-controls="html11" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview11" role="tabpanel">
+              <form class="row row-cols-sm-auto g-3 align-items-center">
+                <div class="col-12">
+                  <input class="form-control" id="inline-form-input" type="text" placeholder="Full name">
+                </div>
+                <div class="col-12">
+                  <select class="form-select" id="inline-form-select">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" id="inline-form-check" type="checkbox">
+                    <label class="form-check-label" for="inline-form-check">Remember me</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="html11" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Inline form --&gt;
+&lt;form class=&quot;row row-cols-sm-auto g-3 align-items-center&quot;&gt;
+  &lt;div class=&quot;col-12&quot;&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;inline-form-input&quot; type=&quot;text&quot; placeholder=&quot;Username&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-12&quot;&gt;
+    &lt;select class=&quot;form-select&quot; id=&quot;inline-form-select&quot;&gt;
+      &lt;option selected&gt;Choose...&lt;/option&gt;
+      &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+      &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+      &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-12&quot;&gt;
+    &lt;div class=&quot;form-check&quot;&gt;
+      &lt;input class=&quot;form-check-input&quot; id=&quot;inline-form-check&quot; type=&quot;checkbox&quot;&gt;
+      &lt;label class=&quot;form-check-label&quot; for=&quot;inline-form-check&quot;&gt;Remember me&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-12&quot;&gt;
+    &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Help text -->
+        <section id="forms-help-text" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Help text</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview12" data-bs-toggle="tab" role="tab" aria-controls="preview12" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html12" data-bs-toggle="tab" role="tab" aria-controls="html12" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview12" role="tabpanel">
+              <div style="max-width: 28rem;">
+                <label class="form-label" for="help-text-input">Password</label>
+                <input class="form-control" type="password" id="help-text-input" placeholder="Your password here">
+                <div class="form-text">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html12" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Form help text --&gt;
+&lt;label for=&quot;help-text-input&quot; class=&quot;form-label&quot;&gt;Password&lt;/label&gt;
+&lt;input class=&quot;form-control&quot; type=&quot;password&quot; id=&quot;help-text-input&quot; placeholder=&quot;Your password here&quot;&gt;
+&lt;div class=&quot;form-text&quot;&gt;Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Validation: status text -->
+        <section id="forms-validation-text" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Validation: status text</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview13" data-bs-toggle="tab" role="tab" aria-controls="preview13" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html13" data-bs-toggle="tab" role="tab" aria-controls="html13" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview13" role="tabpanel">
+              <form class="needs-validation" style="max-width: 55rem;" novalidate>
+                <div class="row">
+                  <div class="col-md-4 mb-3">
+                    <label class="form-label" for="validationCustom01">First name</label>
+                    <input class="form-control" type="text" id="validationCustom01" placeholder="First name" value="John" required>
+                    <div class="valid-feedback">Looks good!</div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label class="form-label" for="validationCustom02">Last name</label>
+                    <input class="form-control" type="text" id="validationCustom02" placeholder="Last name" value="Doe" required>
+                    <div class="valid-feedback">Looks good!</div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label class="form-label" for="validationCustomUsername">Username</label>
+                    <input class="form-control" type="text" id="validationCustomUsername" placeholder="Username" required>
+                    <div class="invalid-feedback">Please choose a username.</div>
+                    <div class="valid-feedback">Looks good!</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label" for="validationCustom03">City</label>
+                    <select class="form-select" id="validationCustom03" required>
+                      <option value="">Choose city...</option>
+                      <option value="Dallas">Dallas</option>
+                      <option value="Houston">Houston</option>
+                      <option value="Los Angeles">Los Angeles</option>
+                      <option value="Miami">Miami</option>
+                      <option value="New York">New York</option>
+                    </select>
+                    <div class="invalid-feedback">Please provide a valid city.</div>
+                    <div class="valid-feedback">Looks good!</div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label class="form-label" for="validationCustom04">State</label>
+                    <select class="form-select" id="validationCustom04" required>
+                      <option value="">Choose state...</option>
+                      <option value="Arizona">Arizona</option>
+                      <option value="Colorado">Colorado</option>
+                      <option value="Florida">Florida</option>
+                      <option value="Indiana">Indiana</option>
+                      <option value="Kentucky">Kentucky</option>
+                      <option value="Texas">Texas</option>
+                    </select>
+                    <div class="invalid-feedback">Please provide a valid state.</div>
+                    <div class="valid-feedback">Looks good!</div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label class="form-label" for="validationCustom05">Zip</label>
+                    <input class="form-control" type="text" id="validationCustom05" placeholder="Zip" required>
+                    <div class="invalid-feedback">Please provide a valid zip.</div>
+                    <div class="valid-feedback">Looks good!</div>
+                  </div>
+                </div>
+                <div class="mb-3 py-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+                    <div class="invalid-feedback">You must agree before submitting.</div>
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit Form</button>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="html13" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Forms validation: status text --&gt;
+&lt;form class=&quot;needs-validation&quot; novalidate&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4 mb-3&quot;&gt;
+      &lt;label for=&quot;validationCustom01&quot; class=&quot;form-label&quot;&gt;First name&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;validationCustom01&quot; placeholder=&quot;First name&quot; value=&quot;John&quot; required&gt;
+      &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4 mb-3&quot;&gt;
+      &lt;label for=&quot;validationCustom02&quot; class=&quot;form-label&quot;&gt;Last name&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;validationCustom02&quot; placeholder=&quot;Last name&quot; value=&quot;Doe&quot; required&gt;
+      &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4 mb-3&quot;&gt;
+      &lt;label for=&quot;validationCustomUsername&quot; class=&quot;form-label&quot;&gt;Username&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;validationCustomUsername&quot; placeholder=&quot;Username&quot; required&gt;
+      &lt;div class=&quot;invalid-feedback&quot;&gt;Please choose a username.&lt;/div&gt;
+      &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-6 mb-3&quot;&gt;
+      &lt;label for=&quot;validationCustom03&quot; class=&quot;form-label&quot;&gt;City&lt;/label&gt;
+      &lt;select class=&quot;form-select&quot; id=&quot;validationCustom03&quot; required&gt;
+        &lt;option value=&quot;&quot;&gt;Choose city...&lt;/option&gt;
+        &lt;option value=&quot;Dallas&quot;&gt;Dallas&lt;/option&gt;
+        &lt;option value=&quot;Houston&quot;&gt;Houston&lt;/option&gt;
+        &lt;option value=&quot;Los Angeles&quot;&gt;Los Angeles&lt;/option&gt;
+        &lt;option value=&quot;Miami&quot;&gt;Miami&lt;/option&gt;
+        &lt;option value=&quot;New York&quot;&gt;New York&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;div class=&quot;invalid-feedback&quot;&gt;Please provide a valid city.&lt;/div&gt;
+      &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-3 mb-3&quot;&gt;
+      &lt;label for=&quot;validationCustom04&quot; class=&quot;form-label&quot;&gt;State&lt;/label&gt;
+      &lt;select class=&quot;form-select&quot; id=&quot;validationCustom04&quot; required&gt;
+        &lt;option value=&quot;&quot;&gt;Choose state...&lt;/option&gt;
+        &lt;option value=&quot;Arizona&quot;&gt;Arizona&lt;/option&gt;
+        &lt;option value=&quot;Colorado&quot;&gt;Colorado&lt;/option&gt;
+        &lt;option value=&quot;Florida&quot;&gt;Florida&lt;/option&gt;
+        &lt;option value=&quot;Indiana&quot;&gt;Indiana&lt;/option&gt;
+        &lt;option value=&quot;Kentucky&quot;&gt;Kentucky&lt;/option&gt;
+        &lt;option value=&quot;Texas&quot;&gt;Texas&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;div class=&quot;invalid-feedback&quot;&gt;Please provide a valid state.&lt;/div&gt;
+      &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-3 mb-3&quot;&gt;
+      &lt;label for=&quot;validationCustom05&quot; class=&quot;form-label&quot;&gt;Zip&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;validationCustom05&quot; placeholder=&quot;Zip&quot; required&gt;
+      &lt;div class=&quot;invalid-feedback&quot;&gt;Please provide a valid zip.&lt;/div&gt;
+      &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mb-3&quot;&gt;
+    &lt;div class=&quot;form-check&quot;&gt;
+      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;invalidCheck&quot; required&gt;
+      &lt;label class=&quot;form-check-label&quot; for=&quot;invalidCheck&quot;&gt;Agree to terms and conditions&lt;/label&gt;
+      &lt;div class=&quot;invalid-feedback&quot;&gt;You must agree before submitting.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Submit Form&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Validation: status tooltips -->
+        <section id="forms-validation-tooltips" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Validation: status tooltips</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview14" data-bs-toggle="tab" role="tab" aria-controls="preview14" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html14" data-bs-toggle="tab" role="tab" aria-controls="html14" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview14" role="tabpanel">
+              <form class="needs-validation" style="max-width: 55rem;" novalidate>
+                <div class="row">
+                  <div class="col-md-4 mb-3">
+                    <label class="form-label" for="validationTooltip01">First name</label>
+                    <input class="form-control" type="text" id="validationTooltip01" placeholder="First name" value="John" required>
+                    <div class="valid-tooltip">Looks good!</div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label class="form-label" for="validationTooltip02">Last name</label>
+                    <input class="form-control" type="text" id="validationTooltip02" placeholder="Last name" value="Doe" required>
+                    <div class="valid-tooltip">Looks good!</div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label class="form-label" for="validationTooltipUsername">Username</label>
+                    <input class="form-control" type="text" id="validationTooltipUsername" placeholder="Username" required>
+                    <div class="invalid-tooltip">Please choose a username.</div>
+                    <div class="valid-tooltip">Looks good!</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label" for="validationTooltip03">City</label>
+                    <select class="form-select" id="validationTooltip03" required>
+                      <option value="">Choose city...</option>
+                      <option value="Dallas">Dallas</option>
+                      <option value="Houston">Houston</option>
+                      <option value="Los Angeles">Los Angeles</option>
+                      <option value="Miami">Miami</option>
+                      <option value="New York">New York</option>
+                    </select>
+                    <div class="invalid-tooltip">Please provide a valid city.</div>
+                    <div class="valid-tooltip">Looks good!</div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label class="form-label" for="validationTooltip04">State</label>
+                    <select class="form-select" id="validationTooltip04" required>
+                      <option value="">Choose state...</option>
+                      <option value="Arizona">Arizona</option>
+                      <option value="Colorado">Colorado</option>
+                      <option value="Florida">Florida</option>
+                      <option value="Indiana">Indiana</option>
+                      <option value="Kentucky">Kentucky</option>
+                      <option value="Texas">Texas</option>
+                    </select>
+                    <div class="invalid-tooltip">Please provide a valid state.</div>
+                    <div class="valid-tooltip">Looks good!</div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label class="form-label" for="validationTooltip05">Zip</label>
+                    <input class="form-control" type="text" id="validationTooltip05" placeholder="Zip" required>
+                    <div class="invalid-tooltip">Please provide a valid zip.</div>
+                    <div class="valid-tooltip">Looks good!</div>
+                  </div>
+                </div>
+                <div class="mb-3 py-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="invalidCheck01" required>
+                    <label class="form-check-label" for="invalidCheck01">Agree to terms and conditions</label>
+                    <div class="invalid-tooltip">You must agree before submitting.</div>
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit Form</button>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="html14" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Forms validation: status tooltips --&gt;
+&lt;form class=&quot;needs-validation&quot; novalidate&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4 mb-3&quot;&gt;
+      &lt;label for=&quot;validationTooltip01&quot; class=&quot;form-label&quot;&gt;First name&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;validationTooltip01&quot; placeholder=&quot;First name&quot; value=&quot;John&quot; required&gt;
+      &lt;div class=&quot;valid-tooltip&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4 mb-3&quot;&gt;
+      &lt;label for=&quot;validationTooltip02&quot; class=&quot;form-label&quot;&gt;Last name&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;validationTooltip02&quot; placeholder=&quot;Last name&quot; value=&quot;Doe&quot; required&gt;
+      &lt;div class=&quot;valid-tooltip&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4 mb-3&quot;&gt;
+      &lt;label for=&quot;validationTooltipUsername&quot; class=&quot;form-label&quot;&gt;Username&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;validationTooltipUsername&quot; placeholder=&quot;Username&quot; required&gt;
+      &lt;div class=&quot;invalid-tooltip&quot;&gt;Please choose a username.&lt;/div&gt;
+      &lt;div class=&quot;valid-tooltip&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-6 mb-3&quot;&gt;
+      &lt;label for=&quot;validationTooltip03&quot; class=&quot;form-label&quot;&gt;City&lt;/label&gt;
+      &lt;select class=&quot;form-select&quot; id=&quot;validationTooltip03&quot; required&gt;
+        &lt;option value=&quot;&quot;&gt;Choose city...&lt;/option&gt;
+        &lt;option value=&quot;Dallas&quot;&gt;Dallas&lt;/option&gt;
+        &lt;option value=&quot;Houston&quot;&gt;Houston&lt;/option&gt;
+        &lt;option value=&quot;Los Angeles&quot;&gt;Los Angeles&lt;/option&gt;
+        &lt;option value=&quot;Miami&quot;&gt;Miami&lt;/option&gt;
+        &lt;option value=&quot;New York&quot;&gt;New York&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;div class=&quot;invalid-tooltip&quot;&gt;Please provide a valid city.&lt;/div&gt;
+      &lt;div class=&quot;valid-tooltip&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-3 mb-3&quot;&gt;
+      &lt;label for=&quot;validationTooltip04&quot; class=&quot;form-label&quot;&gt;State&lt;/label&gt;
+      &lt;select class=&quot;form-select&quot; id=&quot;validationTooltip04&quot; required&gt;
+        &lt;option value=&quot;&quot;&gt;Choose state...&lt;/option&gt;
+        &lt;option value=&quot;Arizona&quot;&gt;Arizona&lt;/option&gt;
+        &lt;option value=&quot;Colorado&quot;&gt;Colorado&lt;/option&gt;
+        &lt;option value=&quot;Florida&quot;&gt;Florida&lt;/option&gt;
+        &lt;option value=&quot;Indiana&quot;&gt;Indiana&lt;/option&gt;
+        &lt;option value=&quot;Kentucky&quot;&gt;Kentucky&lt;/option&gt;
+        &lt;option value=&quot;Texas&quot;&gt;Texas&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;div class=&quot;invalid-tooltip&quot;&gt;Please provide a valid state.&lt;/div&gt;
+      &lt;div class=&quot;valid-tooltip&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-3 mb-3&quot;&gt;
+      &lt;label for=&quot;validationTooltip05&quot; class=&quot;form-label&quot;&gt;Zip&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;validationTooltip05&quot; placeholder=&quot;Zip&quot; required&gt;
+      &lt;div class=&quot;invalid-tooltip&quot;&gt;Please provide a valid zip.&lt;/div&gt;
+      &lt;div class=&quot;valid-tooltip&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mb-3&quot;&gt;
+    &lt;div class=&quot;form-check&quot;&gt;
+      &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;invalidCheck01&quot; required&gt;
+      &lt;label class=&quot;form-check-label&quot; for=&quot;invalidCheck01&quot;&gt;Agree to terms and conditions&lt;/label&gt;
+      &lt;div class=&quot;invalid-tooltip&quot;&gt;You must agree before submitting.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Submit Form&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Input mask (Formatted content) -->
+        <section id="forms-formatted" class="py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Input mask (Formatted content)</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview15" data-bs-toggle="tab" role="tab" aria-controls="preview15" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html15" data-bs-toggle="tab" role="tab" aria-controls="html15" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview15" role="tabpanel" style="max-width: 25rem;">
+              <div class="mb-3">
+                <label for="cardFormat" class="form-label">Card number</label>
+                <div class="d-flex align-items-center border rounded-3">
+                  <input type="text" class="form-control border-0 bg-transparent shadow-none" id="cardFormat" data-format='{"creditCard": true}' placeholder="Enter credit card number">
+                  <div class="p-3">
+                    <div class="credit-card-icon"></div>
+                  </div>
+                </div>
+                <ul class="list-unstyled fs-sm pt-2">
+                  <li class="mb-1">
+                    <span class='fw-semibold'>Amex:</span> starts with 34/37
+                  </li>
+                  <li class="mb-1">
+                    <span class='fw-semibold'>VISA:</span> starts with 4
+                  </li>
+                  <li class="mb-1">
+                    <span class='fw-semibold'>Diners Club:</span> starts with 300-305/309
+                  </li>
+                  <li class="mb-1">
+                    <span class='fw-semibold'>MasterCard:</span> starts with 51-55/22-27
+                  </li>
+                  <li class="mb-1">
+                    <span class='fw-semibold'>JCB:</span> starts with 35/2131/1800
+                  </li>
+                  <li class="mb-1">
+                    <span class='fw-semibold'>Discover:</span> starts with 6011/65/644-649
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mb-3">
+                <label for="phoneFormat" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="phoneFormat" data-format='{"numericOnly": true, "delimiters": ["+1 ", " ", " "], "blocks": [0, 3, 3, 2]}' placeholder="+1 ___ ___ __">
+              </div>
+
+              <div class="mb-3">
+                <label for="dateFormat" class="form-label">Date</label>
+                <input type="text" class="form-control" id="dateFormat" data-format='{"date": true, "delimiter": "-", "datePattern": ["Y", "m", "d"]}' placeholder="yyyy-mm-dd">
+              </div>
+
+              <div class="mb-3">
+                <label for="dateShortFormat" class="form-label">Date short</label>
+                <input type="text" class="form-control" id="dateShortFormat" data-format='{"date": true, "datePattern": ["m", "y"]}' placeholder="mm/yy">
+              </div>
+
+              <div class="mb-3">
+                <label for="timeFormat" class="form-label">Time</label>
+                <input type="text" class="form-control" id="timeFormat" data-format='{"time": true, "timePattern": ["h", "m"]}' placeholder="hh:mm">
+              </div>
+
+              <div class="mb-3">
+                <label for="customFormat" class="form-label">Custom blocks</label>
+                <input type="text" class="form-control" id="customFormat" data-format='{"blocks": [4, 3, 3, 4, 2], "delimiters": [".", " ", "/", "-"]}' placeholder="blocks:[4, 3, 3, 4, 2], delimiters: ['.', ' ', '/', '-']">
+              </div>
+
+              <div class="mb-3">
+                <label for="prefixFormat" class="form-label">Prefix + uppercase</label>
+                <input type="text" class="form-control" id="prefixFormat" data-format='{"prefix": "PREFIX", "delimiter": "-", "blocks": [6, 4, 5, 3], "uppercase": true}'>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html15" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Format: Credit card number --&gt;
+&lt;div class=&quot;mb-3&quot;&gt;
+  &lt;label for=&quot;cardFormat&quot; class=&quot;form-label&quot;&gt;Card number&lt;/label&gt;
+  &lt;div class=&quot;d-flex align-items-center border rounded-3&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control border-0 bg-transparent shadow-none&quot; id=&quot;cardFormat&quot; data-format='{&quot;creditCard&quot;: true}' placeholder=&quot;Enter credit card number&quot;&gt;
+    &lt;div class=&quot;p-3&quot;&gt;
+      &lt;div class=&quot;credit-card-icon&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Format: Phone --&gt;
+&lt;div class=&quot;mb-3&quot;&gt;
+  &lt;label for=&quot;phoneFormat&quot; class=&quot;form-label&quot;&gt;Phone&lt;/label&gt;
+  &lt;input type=&quot;tel&quot; class=&quot;form-control&quot; id=&quot;phoneFormat&quot; data-format='{&quot;numericOnly&quot;: true, &quot;delimiters&quot;: [&quot;+1 &quot;, &quot; &quot;, &quot; &quot;], &quot;blocks&quot;: [0, 3, 3, 2]}' placeholder=&quot;+1 ___ ___ __&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Format: Date long --&gt;
+&lt;div class=&quot;mb-3&quot;&gt;
+  &lt;label for=&quot;dateFormat&quot; class=&quot;form-label&quot;&gt;Date&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;dateFormat&quot; data-format='{&quot;date&quot;: true, &quot;delimiter&quot;: &quot;-&quot;, &quot;datePattern&quot;: [&quot;Y&quot;, &quot;m&quot;, &quot;d&quot;]}' placeholder=&quot;yyyy-mm-dd&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Format: Date short --&gt;
+&lt;div class=&quot;mb-3&quot;&gt;
+  &lt;label for=&quot;dateShortFormat&quot; class=&quot;form-label&quot;&gt;Date short&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;dateShortFormat&quot; data-format='{&quot;date&quot;: true, &quot;datePattern&quot;: [&quot;m&quot;, &quot;y&quot;]}' placeholder=&quot;mm/yy&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Format: Time --&gt;
+&lt;div class=&quot;mb-3&quot;&gt;
+  &lt;label for=&quot;timeFormat&quot; class=&quot;form-label&quot;&gt;Time&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;timeFormat&quot; data-format='{&quot;time&quot;: true, &quot;timePattern&quot;: [&quot;h&quot;, &quot;m&quot;]}' placeholder=&quot;hh:mm&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Format: Custom blocks --&gt;
+&lt;div class=&quot;mb-3&quot;&gt;
+  &lt;label for=&quot;customFormat&quot; class=&quot;form-label&quot;&gt;Custom blocks&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;customFormat&quot; data-format='{&quot;blocks&quot;: [4, 3, 3, 4, 2], &quot;delimiters&quot;: [&quot;.&quot;, &quot; &quot;, &quot;/&quot;, &quot;-&quot;]}' placeholder=&quot;blocks:[4, 3, 3, 4, 2], delimiters: ['.', ' ', '/', '-']&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- Format: Prefix + uppercase --&gt;
+&lt;div class=&quot;mb-3&quot;&gt;
+  &lt;label for=&quot;prefixFormat&quot; class=&quot;form-label&quot;&gt;Prefix + uppercase&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;prefixFormat&quot; data-format='{&quot;prefix&quot;: &quot;PREFIX&quot;, &quot;delimiter&quot;: &quot;-&quot;, &quot;blocks&quot;: [6, 4, 5, 3], &quot;uppercase&quot;: true}'&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+
+    <!-- Jump to anchor navigation -->
+    <aside id="jumpToNav" class="side-nav side-nav-end d-none d-xxl-block position-fixed top-0 end-0 vh-100 py-5" style="width: 20rem;">
+      <h3 class="fs-lg mt-5 pt-5">Jump to</h3>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#forms-types" class="nav-link" data-scroll data-scroll-offset="-6">Supported input types</a>
+        </li>
+        <li class="nav-item">
+          <a href="#forms-floating-labels" class="nav-link" data-scroll data-scroll-offset="-6">Floating labels</a>
+        </li>
+        <li class="nav-item">
+          <a href="#forms-password-toggle" class="nav-link" data-scroll data-scroll-offset="-6">Password visibility toggle</a>
+        </li>
+        <li class="nav-item">
+          <a href="#forms-checkboxes" class="nav-link" data-scroll data-scroll-offset="-6">Checkboxes</a>
+        </li>
+        <li class="nav-item">
+          <a href="#forms-radios" class="nav-link" data-scroll data-scroll-offset="-6">Radios</a>
+        </li>
+        <li class="nav-item">
+          <a href="#forms-switches" class="nav-link" data-scroll data-scroll-offset="-6">Switches</a>
+        </li>
+        <li class="nav-item">
+          <a href="#forms-theme-mode-switch" class="nav-link" data-scroll data-scroll-offset="-6">Theme mode switch</a>
+        </li>
+        <li class="nav-item">
+          <a href="#forms-range-slider" class="nav-link" data-scroll data-scroll-offset="-6">Range slider</a>
+        </li>
+        <li class="nav-item">
+          <a href="#forms-sizing" class="nav-link" data-scroll data-scroll-offset="-6">Sizing</a>
+        </li>
+        <li class="nav-item">
+          <a href="#forms-disabled" class="nav-link" data-scroll data-scroll-offset="-6">Readonly &amp; disabled</a>
+        </li>
+        <li class="nav-item">
+          <a href="#forms-inline" class="nav-link" data-scroll data-scroll-offset="-6">Inline form</a>
+        </li>
+        <li class="nav-item">
+          <a href="#forms-help-text" class="nav-link" data-scroll data-scroll-offset="-6">Help text</a>
+        </li>
+        <li class="nav-item">
+          <a href="#forms-validation-text" class="nav-link" data-scroll data-scroll-offset="-6">Validation: status text</a>
+        </li>
+        <li class="nav-item">
+          <a href="#forms-validation-tooltips" class="nav-link" data-scroll data-scroll-offset="-6">Validation: status tooltips</a>
+        </li>
+        <li class="nav-item">
+          <a href="#forms-formatted" class="nav-link" data-scroll data-scroll-offset="-6">Input mask (Formatted content)</a>
+        </li>
+      </ul>
+    </aside>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/nouislider/dist/nouislider.min.js"></script>
+    <script src="../assets/vendor/cleave.js/dist/cleave.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-core.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-markup.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-clike.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="../assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from silicon.createx.studio/components/forms.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:44:04 GMT -->
+</html>

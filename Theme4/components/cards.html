@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from silicon.createx.studio/components/cards.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:44:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Silicon UI Kit | Cards</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/themes/prism.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css"/>
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body data-bs-spy="scroll" data-bs-target="#jumpToNav" tabindex="0">
+
+        
+    <!-- Navbar -->
+    <header class="header navbar navbar-expand bg-light border-bottom border-light shadow fixed-top" data-scroll-header>
+      <div class="container-fluid pe-lg-4">
+        <div class="d-flex align-items-center">
+          <a href="typography.html" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
+            <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <span class="badge bg-warning">UI Kit</span>
+        </div>
+        <div class="d-flex align-items-center w-100">
+          <ul class="navbar-nav d-none d-lg-flex" style="padding-left: 11.75rem;">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">
+                <i class="bx bx-desktop opacity-70 fs-lg me-1"></i>
+                &nbsp;Live preview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../docs/getting-started.html" class="nav-link">
+                <i class="bx bx-file opacity-70 fs-lg me-1"></i>
+                &nbsp;Documentation
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="navbar-toggler d-block d-lg-none ms-auto me-4" data-bs-toggle="offcanvas" data-bs-target="#componentsNav" aria-controls="componentsNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-lg-auto" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode">Dark</label>
+          </div>
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary btn-sm fs-sm rounded ms-4 d-none d-lg-inline-flex" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-5 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Main sidebar navigation -->
+    <aside class="dark-mode">
+      <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 21rem; z-index: 1045;">
+        <div class="offcanvas-header d-none d-lg-flex justify-content-start">
+          <a href="typography.html" class="navbar-brand text-dark d-none d-lg-flex py-0">
+            <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <span class="badge bg-warning d-none d-lg-inline-block">UI Kit</span>
+        </div>
+        <div class="offcanvas-header d-block d-lg-none border-bottom">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h5 class="d-lg-none mb-0">Menu</h5>
+            <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#componentsNav"></button>
+          </div>
+          <div class="list-group list-group-flush mx-n4">
+            <a href="../index.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-2 px-4">
+              <i class="bx bx-desktop fs-lg opacity-80 me-2"></i>
+              Preview
+            </a>
+            <a href="../docs/getting-started.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-2 px-4">
+              <i class="bx bx-file fs-lg opacity-80 me-2"></i>
+              Documentation
+            </a>
+          </div>
+        </div>
+        <div class="offcanvas-body swiper scrollbar-hover overflow-hidden w-100 p-4" data-swiper-options='{
+          "direction": "vertical",
+          "slidesPerView": "auto",
+          "freeMode": true,
+          "scrollbar": {
+            "el": ".swiper-scrollbar"
+          },
+          "mousewheel": true
+        }'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide h-auto">
+              <h3 class="fs-lg">Content</h3>
+              <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
+                <a href="typography.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Typography</a>
+                <a href="https://boxicons.com/" class="list-group-item list-group-item-action border-0 py-2 px-4" target="_blank" rel="noopener">Icon font</a>
+                <a href="code.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Code</a>
+                <a href="images.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Images &amp; figures</a>
+                <a href="tables.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tables</a>
+              </div>
+              <h3 class="fs-lg">Components</h3>
+              <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
+                <a href="accordion.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Accordion</a>
+                <a href="alerts.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Alerts</a>
+                <a href="audio-player.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Audio player</a>
+                <a href="badges.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Badges</a>
+                <a href="blog-components.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Blog components</a>
+                <a href="breadcrumb.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Breadcrumb</a>
+                <a href="buttons.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Buttons</a>
+                <a href="button-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Button group</a>
+                <a href="cards.html" class="list-group-item list-group-item-action border-0 py-2 px-4 active">Cards</a>
+                <a href="carousel.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Carousel (Slider)</a>
+                <a href="collapse.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Collapse</a>
+                <a href="dropdowns.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Dropdowns</a>
+                <a href="forms.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Forms</a>
+                <a href="gallery.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Gallery (Lightbox)</a>
+                <a href="image-comparison-slider.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Image comparison slider</a>
+                <a href="input-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Input group</a>
+                <a href="list-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">List group</a>
+                <a href="modal.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Modal</a>
+                <a href="navbar.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Navbar</a>
+                <a href="offcanvas.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Offcanvas</a>
+                <a href="pagination.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pagination</a>
+                <a href="parallax.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Parallax</a>
+                <a href="pills.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pills</a>
+                <a href="placeholders.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Placeholders</a>
+                <a href="popovers.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Popovers</a>
+                <a href="portfolio-components.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Portfolio components</a>
+                <a href="pricing.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pricing</a>
+                <a href="progress-bars.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Progress bars</a>
+                <a href="social-buttons.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Social buttons</a>
+                <a href="spinners.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Spinners</a>
+                <a href="steps.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Steps</a>
+                <a href="tabs.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tabs</a>
+                <a href="team.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Team</a>
+                <a href="testimonials.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Testimonials / reviews</a>
+                <a href="toasts.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Toasts</a>
+                <a href="tooltips.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tooltips</a>
+                <a href="video-popup.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Video popup</a>
+              </div>
+              <h3 class="fs-lg">Utilities</h3>
+              <div class="list-group list-group-flush mx-n4 pb-2">
+                <a href="https://getbootstrap.com/docs/5.2/utilities/background/" class="list-group-item list-group-item-action border-0 py-2 px-4" target="_blank" rel="noopener">Bootstrap</a>
+                <a href="utilities.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Silicon</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar end-0"></div>
+        </div>
+        <div class="offcanvas-header border-top">
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-4 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </div>
+    </aside>
+
+
+    <!-- Page container -->
+    <main class="docs-container pt-5">
+      <div class="container-fluid px-xxl-5 px-lg-4 pt-4 pt-lg-5 pb-2 pb-lg-4">
+        
+        <!-- Page title -->
+        <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 pt-4 mb-n3">
+          <div class="me-4">
+            <h1 class="pb-1">Cards</h1>
+            <p class="text-muted fs-lg mb-2">Flexible and extensible content container.</p>
+          </div>
+          <a href="https://getbootstrap.com/docs/5.2/components/card/" class="btn btn-link px-0" target="_blank" rel="noopener">
+            Bootstrap docs
+            <i class="bx bx-link-external fs-lg ms-2"></i>
+          </a>
+        </div>
+        
+
+        <!-- Basic example -->
+        <section id="cards-basic" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Basic example</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview1" data-bs-toggle="tab" role="tab" aria-controls="preview1" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html1" data-bs-toggle="tab" role="tab" aria-controls="html1" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+              <div class="card" style="max-width: 20rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p><a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html1" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Basic card example --&gt;
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Alternative style -->
+        <section id="cards-alt" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Alternative style</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview2" data-bs-toggle="tab" role="tab" aria-controls="preview2" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html2" data-bs-toggle="tab" role="tab" aria-controls="html2" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+              <div class="d-sm-flex">
+                <div class="card border-0 shadow-sm mb-4 mb-sm-0 me-sm-4" style="max-width: 20rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p><a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="max-width: 20rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p><a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html2" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Alternative card style: no border + shadow --&gt;
+&lt;div class=&quot;card border-0 shadow-sm&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Alternative card style: border + shadow --&gt;
+&lt;div class=&quot;card shadow-sm&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Hover effect -->
+        <section id="cards-hover" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Hover effect</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview3" data-bs-toggle="tab" role="tab" aria-controls="preview3" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html3" data-bs-toggle="tab" role="tab" aria-controls="html3" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+              <div class="d-sm-flex mb-4">
+                <div class="card card-hover mb-4 mb-sm-0 me-sm-4" style="max-width: 20rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p><a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card border-0 shadow-sm card-hover" style="max-width: 20rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p><a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-sm-flex">
+                <div class="card border-0 shadow-sm card-hover card-hover-primary mb-4 mb-sm-0 me-sm-4" style="max-width: 20rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p><a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card border-primary card-hover" style="max-width: 20rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p><a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html3" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Default card hover effect --&gt;
+&lt;div class=&quot;card card-hover&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- No border + shadow card hover effect --&gt;
+&lt;div class=&quot;card border-0 shadow-sm card-hover&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Primary background on hover --&gt;
+&lt;div class=&quot;card border-0 shadow-sm card-hover card-hover-primary&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Primary shadow on hover --&gt;
+&lt;div class=&quot;card border-primary card-hover&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Image top / bottom -->
+        <section id="cards-image-position" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Image top / bottom</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview4" data-bs-toggle="tab" role="tab" aria-controls="preview4" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html4" data-bs-toggle="tab" role="tab" aria-controls="html4" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <div class="d-sm-flex">
+                <div class="card mb-4 mb-sm-0 me-sm-4" style="max-width: 20rem;">
+                  <img class="card-img-top" src="../assets/img/landing/financial/services/01.jpg" alt="Card image">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p><a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="max-width: 20rem;">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p><a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                  </div>
+                  <img class="card-img-bottom" src="../assets/img/landing/financial/services/03.jpg" alt="Card image">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html4" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Image on top --&gt;
+&lt;div class=&quot;card&quot;&gt;
+  &lt;img src=&quot;assets/img/landing/financial/services/01.jpg&quot; class=&quot;card-img-top&quot; alt=&quot;Card image&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Image on bottom --&gt;
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;img src=&quot;assets/img/landing/financial/services/03.jpg&quot; class=&quot;card-img-bottom&quot; alt=&quot;Card image&quot;&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Horizontal layout -->
+        <section id="cards-horizontal" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Horizontal layout</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview5" data-bs-toggle="tab" role="tab" aria-controls="preview5" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html5" data-bs-toggle="tab" role="tab" aria-controls="html5" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview5" role="tabpanel">
+              <div class="card overflow-hidden mb-4" style="max-width: 42rem;">
+                <div class="row g-0">
+                  <div class="col-sm-4 bg-repeat-0 bg-size-cover" style="background-image: url(../assets/img/team/01.jpg); min-height: 12rem;"></div>
+                  <div class="col-sm-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p><a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card overflow-hidden" style="max-width: 42rem;">
+                <div class="row g-0">
+                  <div class="col-sm-4 order-sm-2 bg-repeat-0 bg-size-cover" style="background-image: url(../assets/img/team/02.jpg); min-height: 12rem;"></div>
+                  <div class="col-sm-8 order-sm-1">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p><a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html5" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Horizontal card: Image on the left --&gt;
+&lt;div class=&quot;card overflow-hidden&quot;&gt;
+  &lt;div class=&quot;row g-0&quot;&gt;
+    &lt;div class=&quot;col-sm-4 bg-repeat-0 bg-size-cover&quot; style=&quot;background-image: url(assets/img/team/01.jpg); min-height: 12rem;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-sm-8&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+        &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content within card's body.&lt;/p&gt;
+        &lt;a class=&quot;btn btn-sm btn-primary&quot; href=&quot;#&quot;&gt;Go somewhere&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Horizontal card: Image on the right --&gt;
+&lt;div class=&quot;card overflow-hidden&quot;&gt;
+  &lt;div class=&quot;row g-0&quot;&gt;
+    &lt;div class=&quot;col-sm-4 order-sm-2 bg-repeat-0 bg-size-cover&quot; style=&quot;background-image: url(assets/img/team/02.jpg); min-height: 12rem;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-sm-8 order-sm-1&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+        &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content within card's body.&lt;/p&gt;
+        &lt;a class=&quot;btn btn-sm btn-primary&quot; href=&quot;#&quot;&gt;Go somewhere&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Header and footer -->
+        <section id="cards-header-footer" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Header and footer</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview6" data-bs-toggle="tab" role="tab" aria-controls="preview6" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html6" data-bs-toggle="tab" role="tab" aria-controls="html6" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview6" role="tabpanel">
+              <div class="card text-center" style="max-width: 42rem;">
+                <div class="card-header">Featured</div>
+                <div class="card-body">
+                  <h4 class="card-title">Special title treatment</h4>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><a class="btn btn-primary" href="#">Go somewhere</a>
+                </div>
+                <div class="card-footer fs-sm text-muted">3 days ago</div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html6" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Header and footer --&gt;
+&lt;div class=&quot;card text-center&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;Featured&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h4 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h4&gt;
+    &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card-footer fs-sm text-muted&quot;&gt;3 days ago&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Text alignment -->
+        <section id="cards-text-alignment" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Text alignment</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview7" data-bs-toggle="tab" role="tab" aria-controls="preview7" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html7" data-bs-toggle="tab" role="tab" aria-controls="html7" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview7" role="tabpanel">
+              <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text fs-sm">With supporting text below as a natural lead-in to additional content.</p><a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text fs-sm">With supporting text below as a natural lead-in to additional content.</p><a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card text-end">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text fs-sm">With supporting text below as a natural lead-in to additional content.</p><a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html7" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Left aligned (default) --&gt;
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Center aligned --&gt;
+&lt;div class=&quot;card text-center&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Right aligned --&gt;
+&lt;div class=&quot;card text-end&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Navigation: Tabs -->
+        <section id="cards-nav-tabs" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Navigation: Tabs</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview8" data-bs-toggle="tab" role="tab" aria-controls="preview8" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html8" data-bs-toggle="tab" role="tab" aria-controls="html8" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview8" role="tabpanel">
+              <div class="card text-center" style="max-width: 42rem;">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#" data-bs-toggle="tab" role="tab">Active</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" data-bs-toggle="tab" role="tab">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" data-bs-toggle="tab" role="tab">Disabled</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Special title treatment</h4>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><a class="btn btn-primary" href="#">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html8" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Tabs inside card header --&gt;
+&lt;div class=&quot;card text-center&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;
+    &lt;ul class=&quot;nav nav-tabs card-header-tabs&quot;&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link active&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Active&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Link&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link disabled&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Disabled&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h4 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h4&gt;
+    &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Navigation: Alt tabs -->
+        <section id="cards-nav-tabs-alt" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Navigation: Alt tabs</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview14" data-bs-toggle="tab" role="tab" aria-controls="preview14" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html14" data-bs-toggle="tab" role="tab" aria-controls="html14" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview14" role="tabpanel">
+              <div class="card text-center" style="max-width: 42rem;">
+                <div class="card-header">
+                  <ul class="nav nav-tabs-alt card-header-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#" data-bs-toggle="tab" role="tab">Active</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" data-bs-toggle="tab" role="tab">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" data-bs-toggle="tab" role="tab">Disabled</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Special title treatment</h4>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><a class="btn btn-primary" href="#">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html14" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Alternative style tabs inside card header --&gt;
+&lt;div class=&quot;card text-center&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;
+    &lt;ul class=&quot;nav nav-tabs-alt card-header-tabs&quot;&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link active&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Active&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Link&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link disabled&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Disabled&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h4 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h4&gt;
+    &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Navigation: Pills -->
+        <section id="cards-nav-pills" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Navigation: Pills</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview9" data-bs-toggle="tab" role="tab" aria-controls="preview9" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html9" data-bs-toggle="tab" role="tab" aria-controls="html9" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview9" role="tabpanel">
+              <div class="card text-center" style="max-width: 42rem;">
+                <div class="card-header">
+                  <ul class="nav nav-pills card-header-pills">
+                    <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Special title treatment</h4>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p><a class="btn btn-primary" href="#">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html9" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Pills inside card header --&gt;
+&lt;div class=&quot;card text-center&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;
+    &lt;ul class=&quot;nav nav-pills card-header-pills&quot;&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link active&quot;&gt;Active&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Link&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link disabled&quot;&gt;Disabled&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h4 class=&quot;card-title&quot;&gt;Special title treatment&lt;/h4&gt;
+    &lt;p class=&quot;card-text&quot;&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- List group inside card -->
+        <section id="cards-list-group" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">List group inside card</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview10" data-bs-toggle="tab" role="tab" aria-controls="preview10" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html10" data-bs-toggle="tab" role="tab" aria-controls="html10" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview10" role="tabpanel">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card mb-4 mb-md-0">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text fs-sm text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Cras justo odio</li>
+                      <li class="list-group-item">Dapibus ac facilisis in</li>
+                      <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                    <div class="card-body">
+                      <a class="btn btn-primary" href="#">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text fs-sm text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="list-group list-group-flush">
+                      <a class="list-group-item list-group-item-action" href="#">Cras justo odio</a>
+                      <a class="list-group-item list-group-item-action" href="#">Dapibus ac facilisis in</a>
+                      <a class="list-group-item list-group-item-action" href="#">Vestibulum at eros</a>
+                    </div>
+                    <div class="card-body">
+                      <a class="btn btn-primary" href="#">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html10" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Simple list group inside card --&gt;
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm text-muted&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;list-group list-group-flush&quot;&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Actionable list group inside card --&gt;
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm text-muted&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;list-group list-group-flush&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;Cras justo odio&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;Dapibus ac facilisis in&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;list-group-item list-group-item-action&quot;&gt;Vestibulum at eros&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Card styles: Solid background -->
+        <section id="cards-bg-solid" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Card styles: Solid background</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview11" data-bs-toggle="tab" role="tab" aria-controls="preview11" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html11" data-bs-toggle="tab" role="tab" aria-controls="html11" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview11" role="tabpanel">
+              <div class="row g-4" style="max-width: 58rem;">
+                <div class="col-sm-6">
+                  <div class="card text-white bg-primary">
+                    <div class="card-header border-light">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Primary card title</h5>
+                      <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card bg-secondary">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Secondary card title</h5>
+                      <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card text-white bg-success">
+                    <div class="card-header border-light">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Success card title</h5>
+                      <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card text-white bg-danger">
+                    <div class="card-header border-light">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Danger card title</h5>
+                      <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card text-white bg-warning">
+                    <div class="card-header border-light">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Warning card title</h5>
+                      <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card text-white bg-info">
+                    <div class="card-header border-light">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Info card title</h5>
+                      <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card text-white bg-dark">
+                    <div class="card-header border-light">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Dark card title</h5>
+                      <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card text-white bg-gradient-primary">
+                    <div class="card-header border-light">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-white">Gradient card title</h5>
+                      <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html11" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Primary card --&gt;
+&lt;div class=&quot;card text-white bg-primary&quot;&gt;
+  &lt;div class=&quot;card-header border-light&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-white&quot;&gt;Primary card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Secondary card --&gt;
+&lt;div class=&quot;card bg-secondary&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Secondary card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Success card --&gt;
+&lt;div class=&quot;card text-white bg-success&quot;&gt;
+  &lt;div class=&quot;card-header border-light&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-white&quot;&gt;Success card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Danger card --&gt;
+&lt;div class=&quot;card text-white bg-danger&quot;&gt;
+  &lt;div class=&quot;card-header border-light&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-white&quot;&gt;Danger card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Warning card --&gt;
+&lt;div class=&quot;card text-white bg-warning&quot;&gt;
+  &lt;div class=&quot;card-header border-light&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-white&quot;&gt;Warning card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Info card --&gt;
+&lt;div class=&quot;card text-white bg-info&quot;&gt;
+  &lt;div class=&quot;card-header border-light&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-white&quot;&gt;Info card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Dark card --&gt;
+&lt;div class=&quot;card text-white bg-dark&quot;&gt;
+  &lt;div class=&quot;card-header border-light&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-white&quot;&gt;Dark card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Gradient card --&gt;
+&lt;div class=&quot;card text-white bg-gradient-primary&quot;&gt;
+  &lt;div class=&quot;card-header border-light&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-white&quot;&gt;Gradient card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Card styles: Faded background, border and color -->
+        <section id="cards-bg-faded" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Card styles: Faded background, border and color</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview12" data-bs-toggle="tab" role="tab" aria-controls="preview12" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html12" data-bs-toggle="tab" role="tab" aria-controls="html12" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview12" role="tabpanel">
+              <div class="row g-4" style="max-width: 58rem;">
+                <div class="col-sm-6">
+                  <div class="card border-primary bg-faded-primary">
+                    <div class="card-header border-primary text-primary">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">Primary card title</h5>
+                      <p class="card-text fs-sm text-primary">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card bg-faded-success border-success">
+                    <div class="card-header border-success text-success">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-success">Success card title</h5>
+                      <p class="card-text fs-sm text-success">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card bg-faded-danger border-danger">
+                    <div class="card-header border-danger text-danger">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-danger">Danger card title</h5>
+                      <p class="card-text fs-sm text-danger">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card bg-faded-warning border-warning">
+                    <div class="card-header border-warning text-warning">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-warning">Warning card title</h5>
+                      <p class="card-text fs-sm text-warning">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card bg-faded-info border-info">
+                    <div class="card-header border-info text-info">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-info">Info card title</h5>
+                      <p class="card-text fs-sm text-info">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card bg-faded-dark border-dark">
+                    <div class="card-header border-dark text-dark">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-dark">Dark card title</h5>
+                      <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html12" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Primary card --&gt;
+&lt;div class=&quot;card border-primary bg-faded-primary&quot;&gt;
+  &lt;div class=&quot;card-header border-primary text-primary&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-primary&quot;&gt;Primary card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm text-primary&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content within card's body.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Success card --&gt;
+&lt;div class=&quot;card bg-faded-success border-success&quot;&gt;
+  &lt;div class=&quot;card-header border-success text-success&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-success&quot;&gt;Success card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm text-success&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content within card's body.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Danger card --&gt;
+&lt;div class=&quot;card bg-faded-danger border-danger&quot;&gt;
+  &lt;div class=&quot;card-header border-danger text-danger&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-danger&quot;&gt;Danger card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm text-danger&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content within card's body.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Warning card --&gt;
+&lt;div class=&quot;card bg-faded-warning border-warning&quot;&gt;
+  &lt;div class=&quot;card-header border-warning text-warning&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-warning&quot;&gt;Warning card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm text-warning&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content within card's body.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Info card --&gt;
+&lt;div class=&quot;card bg-faded-info border-info&quot;&gt;
+  &lt;div class=&quot;card-header border-info text-info&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-info&quot;&gt;Info card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm text-info&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content within card's body.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Dark card --&gt;
+&lt;div class=&quot;card bg-faded-dark border-dark&quot;&gt;
+  &lt;div class=&quot;card-header border-dark text-dark&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-dark&quot;&gt;Dark card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content within card's body.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Card styles: Border and color -->
+        <section id="cards-border-color" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Card styles: Border and color</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview13" data-bs-toggle="tab" role="tab" aria-controls="preview13" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html13" data-bs-toggle="tab" role="tab" aria-controls="html13" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview13" role="tabpanel">
+              <div class="row g-4" style="max-width: 58rem;">
+                <div class="col-sm-6">
+                  <div class="card border-primary">
+                    <div class="card-header border-primary text-primary">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">Primary card title</h5>
+                      <p class="card-text fs-sm text-primary">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card border-success">
+                    <div class="card-header border-success text-success">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-success">Success card title</h5>
+                      <p class="card-text fs-sm text-success">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card border-danger">
+                    <div class="card-header border-danger text-danger">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-danger">Danger card title</h5>
+                      <p class="card-text fs-sm text-danger">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card border-warning">
+                    <div class="card-header border-warning text-warning">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-warning">Warning card title</h5>
+                      <p class="card-text fs-sm text-warning">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card border-info">
+                    <div class="card-header border-info text-info">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-info">Info card title</h5>
+                      <p class="card-text fs-sm text-info">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card border-dark">
+                    <div class="card-header border-dark text-dark">Header</div>
+                    <div class="card-body">
+                      <h5 class="card-title text-dark">Dark card title</h5>
+                      <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html13" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Primary card --&gt;
+&lt;div class=&quot;card border-primary&quot;&gt;
+  &lt;div class=&quot;card-header border-primary text-primary&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-primary&quot;&gt;Primary card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm text-primary&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content within card's body.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Success card --&gt;
+&lt;div class=&quot;card border-success&quot;&gt;
+  &lt;div class=&quot;card-header border-success text-success&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-success&quot;&gt;Success card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm text-success&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content within card's body.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Danger card --&gt;
+&lt;div class=&quot;card border-danger&quot;&gt;
+  &lt;div class=&quot;card-header border-danger text-danger&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-danger&quot;&gt;Danger card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm text-danger&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content within card's body.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Warning card --&gt;
+&lt;div class=&quot;card border-warning&quot;&gt;
+  &lt;div class=&quot;card-header border-warning text-warning&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-warning&quot;&gt;Warning card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm text-warning&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content within card's body.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Info card --&gt;
+&lt;div class=&quot;card border-info&quot;&gt;
+  &lt;div class=&quot;card-header border-info text-info&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-info&quot;&gt;Info card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm text-info&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content within card's body.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Dark card --&gt;
+&lt;div class=&quot;card border-dark&quot;&gt;
+  &lt;div class=&quot;card-header border-dark text-dark&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title text-dark&quot;&gt;Dark card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content within card's body.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Card group -->
+        <section id="cards-group" class="py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Card group</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview15" data-bs-toggle="tab" role="tab" aria-controls="preview15" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html15" data-bs-toggle="tab" role="tab" aria-controls="html15" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview15" role="tabpanel">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top" src="../assets/img/landing/financial/services/01.jpg" alt="Card image">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text fs-sm">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer border-top-0 pt-0">
+                    <a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="../assets/img/landing/financial/services/02.jpg" alt="Card image">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text fs-sm">This card has supporting text below as a natural lead-in to additional content.</p>
+                  </div>
+                  <div class="card-footer border-top-0 pt-0">
+                    <a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="../assets/img/landing/financial/services/03.jpg" alt="Card image">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text fs-sm">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                  <div class="card-footer border-top-0 pt-0">
+                    <a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html15" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Card group --&gt;
+&lt;div class=&quot;card-group&quot;&gt;
+
+  &lt;!-- Card --&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;img class=&quot;card-img-top&quot; src=&quot;assets/img/landing/financial/services/01.jpg&quot; alt=&quot;Card image&quot;&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+      &lt;p class=&quot;card-text fs-sm&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-footer border-top-0 pt-0&quot;&gt;
+      &lt;a class=&quot;btn btn-sm btn-primary&quot; href=&quot;#&quot;&gt;Go somewhere&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Card --&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;img class=&quot;card-img-top&quot; src=&quot;assets/img/landing/financial/services/02.jpg&quot; alt=&quot;Card image&quot;&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+      &lt;p class=&quot;card-text fs-sm&quot;&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-footer border-top-0 pt-0&quot;&gt;
+      &lt;a class=&quot;btn btn-sm btn-primary&quot; href=&quot;#&quot;&gt;Go somewhere&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Card --&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;img class=&quot;card-img-top&quot; src=&quot;assets/img/landing/financial/services/03.jpg&quot; alt=&quot;Card image&quot;&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+      &lt;p class=&quot;card-text fs-sm&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-footer border-top-0 pt-0&quot;&gt;
+      &lt;a class=&quot;btn btn-sm btn-primary&quot; href=&quot;#&quot;&gt;Go somewhere&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+
+    <!-- Jump to anchor navigation -->
+    <aside id="jumpToNav" class="side-nav side-nav-end d-none d-xxl-block position-fixed top-0 end-0 vh-100 py-5" style="width: 20rem;">
+      <h3 class="fs-lg mt-5 pt-5">Jump to</h3>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#cards-basic" class="nav-link" data-scroll data-scroll-offset="-6">Basic example</a>
+        </li>
+        <li class="nav-item">
+          <a href="#cards-alt" class="nav-link" data-scroll data-scroll-offset="-6">Alternative style</a>
+        </li>
+        <li class="nav-item">
+          <a href="#cards-hover" class="nav-link" data-scroll data-scroll-offset="-6">Hover effect</a>
+        </li>
+        <li class="nav-item">
+          <a href="#cards-image-position" class="nav-link" data-scroll data-scroll-offset="-6">Image top / bottom</a>
+        </li>
+        <li class="nav-item">
+          <a href="#cards-horizontal" class="nav-link" data-scroll data-scroll-offset="-6">Horizontal layout</a>
+        </li>
+        <li class="nav-item">
+          <a href="#cards-header-footer" class="nav-link" data-scroll data-scroll-offset="-6">Header and footer</a>
+        </li>
+        <li class="nav-item">
+          <a href="#cards-text-alignment" class="nav-link" data-scroll data-scroll-offset="-6">Text alignment</a>
+        </li>
+        <li class="nav-item">
+          <a href="#cards-nav-tabs" class="nav-link" data-scroll data-scroll-offset="-6">Navigation: Tabs</a>
+        </li>
+        <li class="nav-item">
+          <a href="#cards-nav-tabs-alt" class="nav-link" data-scroll data-scroll-offset="-6">Navigation: Alt tabs</a>
+        </li>
+        <li class="nav-item">
+          <a href="#cards-nav-pills" class="nav-link" data-scroll data-scroll-offset="-6">Navigation: Pills</a>
+        </li>
+        <li class="nav-item">
+          <a href="#cards-list-group" class="nav-link" data-scroll data-scroll-offset="-6">List group inside card</a>
+        </li>
+        <li class="nav-item">
+          <a href="#cards-bg-solid" class="nav-link" data-scroll data-scroll-offset="-6">Card styles: Solid background</a>
+        </li>
+        <li class="nav-item">
+          <a href="#cards-bg-faded" class="nav-link" data-scroll data-scroll-offset="-6">Card styles: Faded background, border and color</a>
+        </li>
+        <li class="nav-item">
+          <a href="#cards-border-color" class="nav-link" data-scroll data-scroll-offset="-6">Card styles: Border and color</a>
+        </li>
+        <li class="nav-item">
+          <a href="#cards-group" class="nav-link" data-scroll data-scroll-offset="-6">Card group</a>
+        </li>
+      </ul>
+    </aside>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-core.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-markup.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-clike.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="../assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from silicon.createx.studio/components/cards.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:44:02 GMT -->
+</html>

@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from silicon.createx.studio/components/gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:44:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Silicon UI Kit | Gallery</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/lightgallery/css/lightgallery-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/themes/prism.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css"/>
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body data-bs-spy="scroll" data-bs-target="#jumpToNav" tabindex="0">
+
+        
+    <!-- Navbar -->
+    <header class="header navbar navbar-expand bg-light border-bottom border-light shadow fixed-top" data-scroll-header>
+      <div class="container-fluid pe-lg-4">
+        <div class="d-flex align-items-center">
+          <a href="typography.html" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
+            <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <span class="badge bg-warning">UI Kit</span>
+        </div>
+        <div class="d-flex align-items-center w-100">
+          <ul class="navbar-nav d-none d-lg-flex" style="padding-left: 11.75rem;">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">
+                <i class="bx bx-desktop opacity-70 fs-lg me-1"></i>
+                &nbsp;Live preview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../docs/getting-started.html" class="nav-link">
+                <i class="bx bx-file opacity-70 fs-lg me-1"></i>
+                &nbsp;Documentation
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="navbar-toggler d-block d-lg-none ms-auto me-4" data-bs-toggle="offcanvas" data-bs-target="#componentsNav" aria-controls="componentsNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-lg-auto" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode">Dark</label>
+          </div>
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary btn-sm fs-sm rounded ms-4 d-none d-lg-inline-flex" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-5 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Main sidebar navigation -->
+    <aside class="dark-mode">
+      <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 21rem; z-index: 1045;">
+        <div class="offcanvas-header d-none d-lg-flex justify-content-start">
+          <a href="typography.html" class="navbar-brand text-dark d-none d-lg-flex py-0">
+            <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <span class="badge bg-warning d-none d-lg-inline-block">UI Kit</span>
+        </div>
+        <div class="offcanvas-header d-block d-lg-none border-bottom">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h5 class="d-lg-none mb-0">Menu</h5>
+            <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#componentsNav"></button>
+          </div>
+          <div class="list-group list-group-flush mx-n4">
+            <a href="../index.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-2 px-4">
+              <i class="bx bx-desktop fs-lg opacity-80 me-2"></i>
+              Preview
+            </a>
+            <a href="../docs/getting-started.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-2 px-4">
+              <i class="bx bx-file fs-lg opacity-80 me-2"></i>
+              Documentation
+            </a>
+          </div>
+        </div>
+        <div class="offcanvas-body swiper scrollbar-hover overflow-hidden w-100 p-4" data-swiper-options='{
+          "direction": "vertical",
+          "slidesPerView": "auto",
+          "freeMode": true,
+          "scrollbar": {
+            "el": ".swiper-scrollbar"
+          },
+          "mousewheel": true
+        }'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide h-auto">
+              <h3 class="fs-lg">Content</h3>
+              <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
+                <a href="typography.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Typography</a>
+                <a href="https://boxicons.com/" class="list-group-item list-group-item-action border-0 py-2 px-4" target="_blank" rel="noopener">Icon font</a>
+                <a href="code.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Code</a>
+                <a href="images.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Images &amp; figures</a>
+                <a href="tables.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tables</a>
+              </div>
+              <h3 class="fs-lg">Components</h3>
+              <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
+                <a href="accordion.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Accordion</a>
+                <a href="alerts.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Alerts</a>
+                <a href="audio-player.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Audio player</a>
+                <a href="badges.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Badges</a>
+                <a href="blog-components.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Blog components</a>
+                <a href="breadcrumb.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Breadcrumb</a>
+                <a href="buttons.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Buttons</a>
+                <a href="button-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Button group</a>
+                <a href="cards.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Cards</a>
+                <a href="carousel.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Carousel (Slider)</a>
+                <a href="collapse.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Collapse</a>
+                <a href="dropdowns.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Dropdowns</a>
+                <a href="forms.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Forms</a>
+                <a href="gallery.html" class="list-group-item list-group-item-action border-0 py-2 px-4 active">Gallery (Lightbox)</a>
+                <a href="image-comparison-slider.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Image comparison slider</a>
+                <a href="input-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Input group</a>
+                <a href="list-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">List group</a>
+                <a href="modal.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Modal</a>
+                <a href="navbar.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Navbar</a>
+                <a href="offcanvas.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Offcanvas</a>
+                <a href="pagination.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pagination</a>
+                <a href="parallax.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Parallax</a>
+                <a href="pills.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pills</a>
+                <a href="placeholders.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Placeholders</a>
+                <a href="popovers.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Popovers</a>
+                <a href="portfolio-components.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Portfolio components</a>
+                <a href="pricing.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pricing</a>
+                <a href="progress-bars.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Progress bars</a>
+                <a href="social-buttons.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Social buttons</a>
+                <a href="spinners.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Spinners</a>
+                <a href="steps.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Steps</a>
+                <a href="tabs.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tabs</a>
+                <a href="team.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Team</a>
+                <a href="testimonials.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Testimonials / reviews</a>
+                <a href="toasts.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Toasts</a>
+                <a href="tooltips.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tooltips</a>
+                <a href="video-popup.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Video popup</a>
+              </div>
+              <h3 class="fs-lg">Utilities</h3>
+              <div class="list-group list-group-flush mx-n4 pb-2">
+                <a href="https://getbootstrap.com/docs/5.2/utilities/background/" class="list-group-item list-group-item-action border-0 py-2 px-4" target="_blank" rel="noopener">Bootstrap</a>
+                <a href="utilities.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Silicon</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar end-0"></div>
+        </div>
+        <div class="offcanvas-header border-top">
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-4 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </div>
+    </aside>
+
+
+    <!-- Page container -->
+    <main class="docs-container pt-5">
+      <div class="container-fluid px-xxl-5 px-lg-4 pt-4 pt-lg-5 pb-2 pb-lg-4">
+        
+        <!-- Page title -->
+        <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 pt-4 mb-n3">
+          <div class="me-4">
+            <h1 class="pb-1">Gallery (Lightbox)</h1>
+            <p class="text-muted fs-lg mb-2">JavaScript based lightbox component for presenting various types of media.</p>
+          </div>
+          <span class="badge bg-warning mb-2">Silicon component</span>
+        </div>
+
+        <!-- Info alert -->
+        <div class="alert alert-info mt-5 mb-n1 mb-lg-0" role="alert">
+          <div class="d-flex">
+            <i class="bx bx-info-circle lead me-2 me-sm-3"></i>
+            <div class="text-break">
+              <p class="mb-2">Gallery component relies on 3rd party plugin. Make sure to link to <strong>Light Gallery css and js</strong> files in your document: <strong>assets/vendor/lightgallery/css/lightgallery-bundle.min.css</strong> and <strong>assets/vendor/lightgallery/lightgallery.min.js</strong>. If you need extra features like zooming, fullscreen view or video you need to include additional plugins:</p>
+              <ul class="mb-3">
+                <li><strong>assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js</strong></li>
+                <li><strong>assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js</strong></li>
+                <li><strong>assets/vendor/lightgallery/plugins/video/lg-video.min.js</strong></li>
+                <li><strong>assets/vendor/lightgallery/plugins/thumbnail/lg-thumbnail.min.js</strong></li>
+              </ul>
+              <p>For Carousel example you will need Swiper plugin css and js linked to your document: <strong>assets/vendor/swiper/swiper-bundle.min.css</strong> and <strong>assets/vendor/swiper/swiper-bundle.min.js</strong>.</p>
+              <p class="mb-2">Use this page as a reference.</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Media: Image -->
+        <section id="gallery-image" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Media: Image</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview1" data-bs-toggle="tab" role="tab" aria-controls="preview1" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html1" data-bs-toggle="tab" role="tab" aria-controls="html1" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+              <div class="gallery" style="max-width: 416px;">
+                <a href="../assets/img/portfolio/courses/08.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="text-light">Gallery image caption</h6>'>
+                  <img src="../assets/img/portfolio/courses/08.jpg" alt="Gallery thumbnail">
+                  <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                </a>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html1" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Image gallery --&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+  &lt;a href=&quot;assets/img/portfolio/courses/08.jpg&quot; class=&quot;gallery-item rounded-3&quot; data-sub-html='&lt;h6 class=&quot;text-light&quot;&gt;Gallery image caption&lt;/h6&gt;'&gt;
+    &lt;img src=&quot;assets/img/portfolio/courses/08.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+    &lt;div class=&quot;gallery-item-caption fs-sm fw-medium&quot;&gt;Gallery image caption&lt;/div&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Media: Video -->
+        <section id="gallery-video" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Media: Video</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview2" data-bs-toggle="tab" role="tab" aria-controls="preview2" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html2" data-bs-toggle="tab" role="tab" aria-controls="html2" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+              <div class="gallery" data-video="true" style="max-width: 416px;">
+                <a href="https://www.youtube.com/watch?v=8KaJRw-rfn8" class="gallery-item video-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Gallery video caption</h6>'>
+                  <img src="../assets/img/portfolio/courses/01.jpg" alt="Gallery thumbnail">
+                  <div class="gallery-item-caption fs-sm fw-medium">Gallery video caption</div>
+                </a>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html2" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Video gallery --&gt;
+&lt;div class=&quot;gallery&quot; data-video=&quot;true&quot;&gt;
+  &lt;a href=&quot;https://www.youtube.com/watch?v=8KaJRw-rfn8&quot; class=&quot;gallery-item video-item rounded-3&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Gallery video caption&lt;/h6&gt;'&gt;
+    &lt;img src=&quot;assets/img/portfolio/courses/01.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+    &lt;div class=&quot;gallery-item-caption fs-sm fw-medium&quot;&gt;Gallery video caption&lt;/div&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Media: Iframe (Google map) -->
+        <section id="gallery-iframe" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Media: Iframe (Google map)</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview3" data-bs-toggle="tab" role="tab" aria-controls="preview3" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html3" data-bs-toggle="tab" role="tab" aria-controls="html3" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+              <div class="gallery" style="max-width: 416px;">
+                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.91476818218!2d-74.11976253858133!3d40.69740344296443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sua!4v1568574342685!5m2!1sen!2sua" data-iframe="true" class="gallery-item rounded-2" data-sub-html='<h6 class="fs-sm text-light">Google map embed</h6>'>
+                  <img src="../assets/img/portfolio/courses/map.jpg" alt="Gallery thumbnail">
+                  <div class="gallery-item-caption fs-sm fw-medium">Google map embed</div>
+                </a>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html3" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Iframe (Google map) --&gt;
+&lt;div class=&quot;gallery&quot;&gt;
+  &lt;a href=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.91476818218!2d-74.11976253858133!3d40.69740344296443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sua!4v1568574342685!5m2!1sen!2sua&quot; data-iframe=&quot;true&quot; class=&quot;gallery-item rounded-2&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Google map embed&lt;/h6&gt;'&gt;
+    &lt;img src=&quot;assets/img/portfolio/courses/map.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+    &lt;div class=&quot;gallery-item-caption fs-sm fw-medium&quot;&gt;Google map embed&lt;/div&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Permanent hover state -->
+        <section id="gallery-hover" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Permanent hover state</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview4" data-bs-toggle="tab" role="tab" aria-controls="preview4" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html4" data-bs-toggle="tab" role="tab" aria-controls="html4" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview4" role="tabpanel">
+              <div class="gallery" data-video="true" style="max-width: 526px;">
+                <a href="https://www.youtube.com/watch?v=zPo5ZaH6sW8" class="gallery-item video-item is-hovered rounded-3" data-sub-html='<h6 class="fs-sm text-light">Silicon Inc. Showreel by Marvin McKinney</h6>'>
+                  <img src="../assets/img/about/gallery/01.jpg" alt="Gallery thumbnail">
+                  <div class="gallery-item-caption p-4">
+                    <h4 class="text-light mb-1">Silicon Inc.</h4>
+                    <p class="mb-0">Showreel by Marvin McKinney</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html4" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Permanent hover state --&gt;
+&lt;div class=&quot;gallery&quot; data-video=&quot;true&quot;&gt;
+  &lt;a href=&quot;https://www.youtube.com/watch?v=zPo5ZaH6sW8&quot; class=&quot;gallery-item video-item is-hovered rounded-3&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Silicon Inc. Showreel by Marvin McKinney&lt;/h6&gt;'&gt;
+    &lt;img src=&quot;assets/img/about/gallery/01.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+    &lt;div class=&quot;gallery-item-caption p-4&quot;&gt;
+      &lt;h4 class=&quot;text-light mb-1&quot;&gt;Silicon Inc.&lt;/h4&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;Showreel by Marvin McKinney&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Grid with gutters -->
+        <section id="gallery-grid-gutters" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Grid with gutters</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview5" data-bs-toggle="tab" role="tab" aria-controls="preview5" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html5" data-bs-toggle="tab" role="tab" aria-controls="html5" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview5" role="tabpanel">
+              <div class="gallery row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-2 row-cols-xl-3 g-4" data-video="true">
+                <div class="col">
+                  <a href="../assets/img/portfolio/courses/02.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                    <img src="../assets/img/portfolio/courses/02.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="https://www.youtube.com/watch?v=8KaJRw-rfn8" class="gallery-item video-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                    <img src="../assets/img/portfolio/courses/01.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery video caption</div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="../assets/img/portfolio/courses/03.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                    <img src="../assets/img/portfolio/courses/03.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="../assets/img/portfolio/courses/08.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                    <img src="../assets/img/portfolio/courses/08.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="../assets/img/portfolio/courses/07.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                    <img src="../assets/img/portfolio/courses/07.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="../assets/img/portfolio/courses/06.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                    <img src="../assets/img/portfolio/courses/06.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html5" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Gallery grid with gutters --&gt;
+&lt;div class=&quot;gallery row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4&quot; data-video=&quot;true&quot;&gt;
+
+  &lt;!-- Item --&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;a href=&quot;assets/img/portfolio/courses/02.jpg&quot; class=&quot;gallery-item rounded-3&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Gallery image caption&lt;/h6&gt;'&gt;
+      &lt;img src=&quot;assets/img/portfolio/courses/02.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+      &lt;div class=&quot;gallery-item-caption fs-sm fw-medium&quot;&gt;Gallery image caption&lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Item --&gt;
+  &lt;div class=&quot;col&quot;&gt;
+    &lt;a href=&quot;https://www.youtube.com/watch?v=8KaJRw-rfn8&quot; class=&quot;gallery-item video-item rounded-3&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Gallery image caption&lt;/h6&gt;'&gt;
+      &lt;img src=&quot;assets/img/portfolio/courses/01.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+      &lt;div class=&quot;gallery-item-caption fs-sm fw-medium&quot;&gt;Gallery video caption&lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Add as many items as you need --&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Grid no gutters -->
+        <section id="gallery-grid-nogutters" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Grid no gutters</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview6" data-bs-toggle="tab" role="tab" aria-controls="preview6" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html6" data-bs-toggle="tab" role="tab" aria-controls="html6" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview6" role="tabpanel">
+              <div class="gallery row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-2 row-cols-xl-3 g-0" data-video="true">
+                <div class="col border border-light">
+                  <a href="../assets/img/portfolio/courses/02.jpg" class="gallery-item" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                    <img src="../assets/img/portfolio/courses/02.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div>
+                <div class="col border border-light">
+                  <a href="https://www.youtube.com/watch?v=8KaJRw-rfn8" class="gallery-item video-item" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                    <img src="../assets/img/portfolio/courses/01.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery video caption</div>
+                  </a>
+                </div>
+                <div class="col border border-light">
+                  <a href="../assets/img/portfolio/courses/03.jpg" class="gallery-item" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                    <img src="../assets/img/portfolio/courses/03.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div>
+                <div class="col border border-light">
+                  <a href="../assets/img/portfolio/courses/08.jpg" class="gallery-item" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                    <img src="../assets/img/portfolio/courses/08.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div>
+                <div class="col border border-light">
+                  <a href="../assets/img/portfolio/courses/07.jpg" class="gallery-item" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                    <img src="../assets/img/portfolio/courses/07.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div>
+                <div class="col border border-light">
+                  <a href="../assets/img/portfolio/courses/06.jpg" class="gallery-item" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                    <img src="../assets/img/portfolio/courses/06.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html6" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Gallery grid no gutters --&gt;
+&lt;div class=&quot;gallery row row-cols-1 row-cols-sm-2 row-cols-md-3 g-0&quot; data-video=&quot;true&quot;&gt;
+
+  &lt;!-- Item --&gt;
+  &lt;div class=&quot;col border border-light&quot;&gt;
+    &lt;a href=&quot;assets/img/portfolio/courses/02.jpg&quot; class=&quot;gallery-item rounded-3&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Gallery image caption&lt;/h6&gt;'&gt;
+      &lt;img src=&quot;assets/img/portfolio/courses/02.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+      &lt;div class=&quot;gallery-item-caption fs-sm fw-medium&quot;&gt;Gallery image caption&lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Item --&gt;
+  &lt;div class=&quot;col border border-light&quot;&gt;
+    &lt;a href=&quot;https://www.youtube.com/watch?v=8KaJRw-rfn8&quot; class=&quot;gallery-item video-item rounded-3&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Gallery image caption&lt;/h6&gt;'&gt;
+      &lt;img src=&quot;assets/img/portfolio/courses/01.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+      &lt;div class=&quot;gallery-item-caption fs-sm fw-medium&quot;&gt;Gallery video caption&lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Add as many items as you need --&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Inside card -->
+        <section id="gallery-card" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Inside card</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview7" data-bs-toggle="tab" role="tab" aria-controls="preview7" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html7" data-bs-toggle="tab" role="tab" aria-controls="html7" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview7" role="tabpanel">
+              <div class="card gallery" style="max-width: 418px;">
+                <a href="../assets/img/portfolio/courses/03.jpg" class="gallery-item card-img-top" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                  <img src="../assets/img/portfolio/courses/03.jpg" alt="Gallery thumbnail">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Card with gallery thumbnail</h5>
+                  <p class="card-text fs-sm text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html7" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Gallery inside card --&gt;
+&lt;div class=&quot;card gallery&quot;&gt;
+  &lt;a href=&quot;assets/img/portfolio/courses/03.jpg&quot; class=&quot;gallery-item card-img-top&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Gallery image caption&lt;/h6&gt;'&gt;
+    &lt;img src=&quot;assets/img/portfolio/courses/03.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+  &lt;/a&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card with gallery thumbnail&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm text-muted&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Inside carousel -->
+        <section id="gallery-carousel" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Inside carousel</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview8" data-bs-toggle="tab" role="tab" aria-controls="preview8" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html8" data-bs-toggle="tab" role="tab" aria-controls="html8" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview8" role="tabpanel">
+              <div class="position-relative px-md-5">
+                <button type="button" id="prev" class="btn btn-prev btn-icon btn-sm position-absolute top-50 translate-middle-y start-0 d-none d-md-inline-flex mt-n4">
+                  <i class="bx bx-chevron-left"></i>
+                </button>
+                <button type="button" id="next" class="btn btn-next btn-icon btn-sm position-absolute top-50 translate-middle-y end-0 d-none d-md-inline-flex mt-n4">
+                  <i class="bx bx-chevron-right"></i>
+                </button>
+                <div class="swiper swiper-nav-onhover pt-1" data-swiper-options='{
+                  "slidesPerView": 1,
+                  "spaceBetween": 20,
+                  "loop": true,
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "clickable": true
+                  },
+                  "navigation": {
+                    "prevEl": "#prev",
+                    "nextEl": "#next"
+                  },
+                  "breakpoints": {
+                    "500": {
+                      "slidesPerView": 2,
+                      "spaceBetween": 16
+                    },
+                    "1200": {
+                      "slidesPerView": 2,
+                      "spaceBetween": 16
+                    },
+                    "1650": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 24
+                    }
+                  }
+                }'>
+                  <div class="swiper-wrapper gallery" data-video="true">
+                    <div class="swiper-slide">
+                      <a href="../assets/img/portfolio/courses/08.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                        <img src="../assets/img/portfolio/courses/08.jpg" alt="Gallery thumbnail">
+                        <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                      </a>    
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="https://www.youtube.com/watch?v=8KaJRw-rfn8" class="gallery-item video-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                        <img src="../assets/img/portfolio/courses/01.jpg" alt="Gallery thumbnail">
+                        <div class="gallery-item-caption fs-sm fw-medium">Gallery video caption</div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="../assets/img/portfolio/courses/03.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                        <img src="../assets/img/portfolio/courses/03.jpg" alt="Gallery thumbnail">
+                        <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="../assets/img/portfolio/courses/07.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                        <img src="../assets/img/portfolio/courses/07.jpg" alt="Gallery thumbnail">
+                        <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination position-relative pt-3 pt-sm-4 mt-4"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html8" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Gallery inside carousel --&gt;
+&lt;div class=&quot;position-relative px-md-5&quot;&gt;
+  &lt;button type=&quot;button&quot; id=&quot;prev&quot; class=&quot;btn btn-prev btn-icon btn-sm position-absolute top-50 translate-middle-y start-0 d-none d-md-inline-flex mt-n4&quot;&gt;
+    &lt;i class=&quot;bx bx-chevron-left&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; id=&quot;next&quot; class=&quot;btn btn-next btn-icon btn-sm position-absolute top-50 translate-middle-y end-0 d-none d-md-inline-flex mt-n4&quot;&gt;
+    &lt;i class=&quot;bx bx-chevron-right&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;swiper pt-1&quot; data-swiper-options='{
+    &quot;slidesPerView&quot;: 1,
+    &quot;spaceBetween&quot;: 20,
+    &quot;loop&quot;: true,
+    &quot;pagination&quot;: {
+      &quot;el&quot;: &quot;.swiper-pagination&quot;,
+      &quot;clickable&quot;: true
+    },
+    &quot;navigation&quot;: {
+      &quot;prevEl&quot;: &quot;#prev&quot;,
+      &quot;nextEl&quot;: &quot;#next&quot;
+    },
+    &quot;breakpoints&quot;: {
+      &quot;500&quot;: {
+        &quot;slidesPerView&quot;: 2,
+        &quot;spaceBetween&quot;: 16
+      },
+      &quot;700&quot;: {
+        &quot;slidesPerView&quot;: 2,
+        &quot;spaceBetween&quot;: 24
+      },
+      &quot;1000&quot;: {
+        &quot;slidesPerView&quot;: 3,
+        &quot;spaceBetween&quot;: 24
+      }
+    }
+  }'&gt;
+    &lt;div class=&quot;swiper-wrapper gallery&quot; data-video=&quot;true&quot;&gt;
+
+      &lt;!-- Item --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        &lt;a href=&quot;assets/img/portfolio/courses/08.jpg&quot; class=&quot;gallery-item rounded-3&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Gallery image caption&lt;/h6&gt;'&gt;
+          &lt;img src=&quot;assets/img/portfolio/courses/08.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+          &lt;div class=&quot;gallery-item-caption fs-sm fw-medium&quot;&gt;Gallery image caption&lt;/div&gt;
+        &lt;/a&gt;    
+      &lt;/div&gt;
+
+      &lt;!-- Item --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        &lt;a href=&quot;https://www.youtube.com/watch?v=8KaJRw-rfn8&quot; class=&quot;gallery-item video-item rounded-3&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Gallery image caption&lt;/h6&gt;'&gt;
+          &lt;img src=&quot;assets/img/portfolio/courses/01.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+          &lt;div class=&quot;gallery-item-caption fs-sm fw-medium&quot;&gt;Gallery video caption&lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Item --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        &lt;a href=&quot;assets/img/portfolio/courses/03.jpg&quot; class=&quot;gallery-item rounded-3&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Gallery image caption&lt;/h6&gt;'&gt;
+          &lt;img src=&quot;assets/img/portfolio/courses/03.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+          &lt;div class=&quot;gallery-item-caption fs-sm fw-medium&quot;&gt;Gallery image caption&lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Item --&gt;
+      &lt;div class=&quot;swiper-slide&quot;&gt;
+        &lt;a href=&quot;assets/img/portfolio/courses/07.jpg&quot; class=&quot;gallery-item rounded-3&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Gallery image caption&lt;/h6&gt;'&gt;
+          &lt;img src=&quot;assets/img/portfolio/courses/07.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+          &lt;div class=&quot;gallery-item-caption fs-sm fw-medium&quot;&gt;Gallery image caption&lt;/div&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;swiper-pagination position-relative pt-3 pt-sm-4 mt-4&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Thumbnails -->
+        <section id="gallery-thumbnails" class="py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Thumbnails</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview9" data-bs-toggle="tab" role="tab" aria-controls="preview9" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html9" data-bs-toggle="tab" role="tab" aria-controls="html9" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview9" role="tabpanel">
+              <div class="gallery row g-4" data-thumbnails="true">
+                <div class="col-md-5">
+                  <a href="../assets/img/about/gallery/01.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption 1</h6>'>
+                    <img src="../assets/img/about/gallery/01.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption 1</div>
+                  </a>
+                </div>
+                <div class="col-md-3 col-sm-5">
+                  <a href="../assets/img/about/gallery/02.jpg" class="gallery-item rounded-3 mb-4" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption 2</h6>'>
+                    <img src="../assets/img/about/gallery/02.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption 2</div>
+                  </a>
+                  <a href="../assets/img/about/gallery/03.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption 3</h6>'>
+                    <img src="../assets/img/about/gallery/03.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption 3</div>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-7">
+                  <a href="../assets/img/about/gallery/04.jpg" class="gallery-item rounded-3 mb-4" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption 4</h6>'>
+                    <img src="../assets/img/about/gallery/04.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption 4</div>
+                  </a>
+                  <a href="../assets/img/about/gallery/05.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light">Gallery image caption 5</h6>'>
+                    <img src="../assets/img/about/gallery/05.jpg" alt="Gallery thumbnail">
+                    <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption 5</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html9" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Gallery with thumbnails --&gt;
+&lt;div class=&quot;gallery row g-4&quot; data-thumbnails=&quot;true&quot;&gt;
+
+  &lt;!-- Item --&gt;
+  &lt;div class=&quot;col-md-5&quot;&gt;
+    &lt;a href=&quot;assets/img/about/gallery/01.jpg&quot; class=&quot;gallery-item rounded-3&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Gallery image caption 1&lt;/h6&gt;'&gt;
+      &lt;img src=&quot;assets/img/about/gallery/01.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+      &lt;div class=&quot;gallery-item-caption fs-sm fw-medium&quot;&gt;Gallery image caption 1&lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;col-md-3 col-sm-5&quot;&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;a href=&quot;assets/img/about/gallery/02.jpg&quot; class=&quot;gallery-item rounded-3 mb-4&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Gallery image caption 2&lt;/h6&gt;'&gt;
+      &lt;img src=&quot;assets/img/about/gallery/02.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+      &lt;div class=&quot;gallery-item-caption fs-sm fw-medium&quot;&gt;Gallery image caption 2&lt;/div&gt;
+    &lt;/a&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;a href=&quot;assets/img/about/gallery/03.jpg&quot; class=&quot;gallery-item rounded-3&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Gallery image caption 3&lt;/h6&gt;'&gt;
+      &lt;img src=&quot;assets/img/about/gallery/03.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+      &lt;div class=&quot;gallery-item-caption fs-sm fw-medium&quot;&gt;Gallery image caption 3&lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;col-md-4 col-sm-7&quot;&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;a href=&quot;assets/img/about/gallery/04.jpg&quot; class=&quot;gallery-item rounded-3 mb-4&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Gallery image caption 4&lt;/h6&gt;'&gt;
+      &lt;img src=&quot;assets/img/about/gallery/04.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+      &lt;div class=&quot;gallery-item-caption fs-sm fw-medium&quot;&gt;Gallery image caption 4&lt;/div&gt;
+    &lt;/a&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;a href=&quot;assets/img/about/gallery/05.jpg&quot; class=&quot;gallery-item rounded-3&quot; data-sub-html='&lt;h6 class=&quot;fs-sm text-light&quot;&gt;Gallery image caption 5&lt;/h6&gt;'&gt;
+      &lt;img src=&quot;assets/img/about/gallery/05.jpg&quot; alt=&quot;Gallery thumbnail&quot;&gt;
+      &lt;div class=&quot;gallery-item-caption fs-sm fw-medium&quot;&gt;Gallery image caption 5&lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+
+    <!-- Jump to anchor navigation -->
+    <aside id="jumpToNav" class="side-nav side-nav-end d-none d-xxl-block position-fixed top-0 end-0 vh-100 py-5" style="width: 20rem;">
+      <h3 class="fs-lg mt-5 pt-5">Jump to</h3>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#gallery-image" class="nav-link" data-scroll data-scroll-offset="-6">Media: Image</a>
+        </li>
+        <li class="nav-item">
+          <a href="#gallery-video" class="nav-link" data-scroll data-scroll-offset="-6">Media: Video</a>
+        </li>
+        <li class="nav-item">
+          <a href="#gallery-iframe" class="nav-link" data-scroll data-scroll-offset="-6">Media: Iframe (Google map)</a>
+        </li>
+        <li class="nav-item">
+          <a href="#gallery-hover" class="nav-link" data-scroll data-scroll-offset="-6">Permanent hover state</a>
+        </li>
+        <li class="nav-item">
+          <a href="#gallery-grid-gutters" class="nav-link" data-scroll data-scroll-offset="-6">Grid with gutters</a>
+        </li>
+        <li class="nav-item">
+          <a href="#gallery-grid-nogutters" class="nav-link" data-scroll data-scroll-offset="-6">Grid no gutters</a>
+        </li>
+        <li class="nav-item">
+          <a href="#gallery-card" class="nav-link" data-scroll data-scroll-offset="-6">Inside card</a>
+        </li>
+        <li class="nav-item">
+          <a href="#gallery-carousel" class="nav-link" data-scroll data-scroll-offset="-6">Inside carousel</a>
+        </li>
+        <li class="nav-item">
+          <a href="#gallery-thumbnails" class="nav-link" data-scroll data-scroll-offset="-6">Thumbnails</a>
+        </li>
+      </ul>
+    </aside>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="../assets/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="../assets/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="../assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="../assets/vendor/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-core.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-markup.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-clike.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="../assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from silicon.createx.studio/components/gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:44:05 GMT -->
+</html>

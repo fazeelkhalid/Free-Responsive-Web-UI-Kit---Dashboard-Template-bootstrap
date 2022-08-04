@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from silicon.createx.studio/components/navbar.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:44:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Silicon UI Kit | Navbar</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/themes/prism.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css"/>
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body data-bs-spy="scroll" data-bs-target="#jumpToNav" tabindex="0">
+
+        
+    <!-- Navbar -->
+    <header class="header navbar navbar-expand bg-light border-bottom border-light shadow fixed-top" data-scroll-header>
+      <div class="container-fluid pe-lg-4">
+        <div class="d-flex align-items-center">
+          <a href="typography.html" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
+            <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <span class="badge bg-warning">UI Kit</span>
+        </div>
+        <div class="d-flex align-items-center w-100">
+          <ul class="navbar-nav d-none d-lg-flex" style="padding-left: 11.75rem;">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">
+                <i class="bx bx-desktop opacity-70 fs-lg me-1"></i>
+                &nbsp;Live preview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../docs/getting-started.html" class="nav-link">
+                <i class="bx bx-file opacity-70 fs-lg me-1"></i>
+                &nbsp;Documentation
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="navbar-toggler d-block d-lg-none ms-auto me-4" data-bs-toggle="offcanvas" data-bs-target="#componentsNav" aria-controls="componentsNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-lg-auto" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode">Dark</label>
+          </div>
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary btn-sm fs-sm rounded ms-4 d-none d-lg-inline-flex" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-5 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Main sidebar navigation -->
+    <aside class="dark-mode">
+      <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 21rem; z-index: 1045;">
+        <div class="offcanvas-header d-none d-lg-flex justify-content-start">
+          <a href="typography.html" class="navbar-brand text-dark d-none d-lg-flex py-0">
+            <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <span class="badge bg-warning d-none d-lg-inline-block">UI Kit</span>
+        </div>
+        <div class="offcanvas-header d-block d-lg-none border-bottom">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h5 class="d-lg-none mb-0">Menu</h5>
+            <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#componentsNav"></button>
+          </div>
+          <div class="list-group list-group-flush mx-n4">
+            <a href="../index.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-2 px-4">
+              <i class="bx bx-desktop fs-lg opacity-80 me-2"></i>
+              Preview
+            </a>
+            <a href="../docs/getting-started.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-2 px-4">
+              <i class="bx bx-file fs-lg opacity-80 me-2"></i>
+              Documentation
+            </a>
+          </div>
+        </div>
+        <div class="offcanvas-body swiper scrollbar-hover overflow-hidden w-100 p-4" data-swiper-options='{
+          "direction": "vertical",
+          "slidesPerView": "auto",
+          "freeMode": true,
+          "scrollbar": {
+            "el": ".swiper-scrollbar"
+          },
+          "mousewheel": true
+        }'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide h-auto">
+              <h3 class="fs-lg">Content</h3>
+              <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
+                <a href="typography.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Typography</a>
+                <a href="https://boxicons.com/" class="list-group-item list-group-item-action border-0 py-2 px-4" target="_blank" rel="noopener">Icon font</a>
+                <a href="code.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Code</a>
+                <a href="images.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Images &amp; figures</a>
+                <a href="tables.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tables</a>
+              </div>
+              <h3 class="fs-lg">Components</h3>
+              <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
+                <a href="accordion.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Accordion</a>
+                <a href="alerts.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Alerts</a>
+                <a href="audio-player.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Audio player</a>
+                <a href="badges.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Badges</a>
+                <a href="blog-components.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Blog components</a>
+                <a href="breadcrumb.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Breadcrumb</a>
+                <a href="buttons.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Buttons</a>
+                <a href="button-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Button group</a>
+                <a href="cards.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Cards</a>
+                <a href="carousel.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Carousel (Slider)</a>
+                <a href="collapse.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Collapse</a>
+                <a href="dropdowns.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Dropdowns</a>
+                <a href="forms.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Forms</a>
+                <a href="gallery.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Gallery (Lightbox)</a>
+                <a href="image-comparison-slider.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Image comparison slider</a>
+                <a href="input-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Input group</a>
+                <a href="list-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">List group</a>
+                <a href="modal.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Modal</a>
+                <a href="navbar.html" class="list-group-item list-group-item-action border-0 py-2 px-4 active">Navbar</a>
+                <a href="offcanvas.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Offcanvas</a>
+                <a href="pagination.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pagination</a>
+                <a href="parallax.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Parallax</a>
+                <a href="pills.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pills</a>
+                <a href="placeholders.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Placeholders</a>
+                <a href="popovers.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Popovers</a>
+                <a href="portfolio-components.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Portfolio components</a>
+                <a href="pricing.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pricing</a>
+                <a href="progress-bars.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Progress bars</a>
+                <a href="social-buttons.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Social buttons</a>
+                <a href="spinners.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Spinners</a>
+                <a href="steps.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Steps</a>
+                <a href="tabs.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tabs</a>
+                <a href="team.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Team</a>
+                <a href="testimonials.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Testimonials / reviews</a>
+                <a href="toasts.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Toasts</a>
+                <a href="tooltips.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tooltips</a>
+                <a href="video-popup.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Video popup</a>
+              </div>
+              <h3 class="fs-lg">Utilities</h3>
+              <div class="list-group list-group-flush mx-n4 pb-2">
+                <a href="https://getbootstrap.com/docs/5.2/utilities/background/" class="list-group-item list-group-item-action border-0 py-2 px-4" target="_blank" rel="noopener">Bootstrap</a>
+                <a href="utilities.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Silicon</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar end-0"></div>
+        </div>
+        <div class="offcanvas-header border-top">
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-4 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </div>
+    </aside>
+
+
+    <!-- Page container -->
+    <main class="docs-container pt-5">
+      <div class="container-fluid px-xxl-5 px-lg-4 pt-4 pt-lg-5 pb-2 pb-lg-4">
+        
+        <!-- Page title -->
+        <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 pt-4 mb-n3">
+          <div class="me-4">
+            <h1 class="pb-1">Navbar</h1>
+            <p class="text-muted fs-lg mb-2">Responsive navigation header that includes support for branding, navigation, and more.</p>
+          </div>
+          <a href="https://getbootstrap.com/docs/5.2/components/navbar/" class="btn btn-link px-0" target="_blank" rel="noopener">
+            Bootstrap docs
+            <i class="bx bx-link-external fs-lg ms-2"></i>
+          </a>
+        </div>
+
+
+        <!-- Info alert -->
+        <div class="alert alert-info mt-5 mb-n1 mb-lg-0" role="alert">
+          <div class="d-flex">
+            <i class="bx bx-info-circle lead mt-1 me-2 me-sm-3"></i>
+            <p class="mt-1 mb-0">Add class <span class="fw-semibold">navbar-sticky</span> to <span class="fw-semibold">navbar</span> to make it stick to the top of the page when scrolling.</p>
+          </div>
+        </div>
+        
+
+        <!-- Supported content -->
+        <section id="navbar-content" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Supported content</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview1" data-bs-toggle="tab" role="tab" aria-controls="preview1" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html1" data-bs-toggle="tab" role="tab" aria-controls="html1" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+              <header class="navbar navbar-expand-lg bg-light shadow-sm border border-light rounded-3 mb-4">
+                <div class="container px-3">
+                  <a href="#" class="navbar-brand">
+                    <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+                    Silicon
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse1" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <nav id="navbarCollapse1" class="collapse navbar-collapse">
+                    <hr class="d-lg-none mt-3 mb-2">
+                    <ul class="navbar-nav me-auto">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="#" class="dropdown-item">Action link</a>
+                          </li>
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action link</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><a class="dropdown-item" href="#">Yet another link</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-item" href="#"> Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-sm fs-sm rounded my-3 my-lg-0">
+                      <i class="bx bx-user fs-lg me-2"></i>
+                      Sign up
+                    </a>
+                  </nav>
+                </div>
+              </header>
+              <header class="navbar navbar-expand-lg bg-light shadow-sm border border-light rounded-3 mb-4">
+                <div class="container px-3">
+                  <a href="#" class="navbar-brand">
+                    <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+                    Silicon
+                  </a>
+                  <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="form-check form-switch mode-switch order-lg-2 ms-4 ms-lg-auto me-lg-4">
+                    <input type="checkbox" class="form-check-input" id="theme-mode1">
+                    <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode1">Light</label>
+                    <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode1">Dark</label>
+                  </div>
+                  <a href="#" class="btn btn-secondary btn-sm fs-sm rounded order-lg-3 d-none d-lg-inline-flex">
+                    <i class="bx bx-log-in fs-lg me-2"></i>
+                    Sign in
+                  </a>
+                  <nav id="navbarCollapse2" class="collapse navbar-collapse">
+                    <hr class="d-lg-none mt-3 mb-2">
+                    <ul class="navbar-nav me-auto">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary btn-sm fs-sm rounded my-3 d-lg-none">
+                      <i class="bx bx-log-in fs-lg me-2"></i>
+                      Sign in
+                    </a>
+                  </nav>
+                </div>
+              </header>
+              <header class="d-flex flex-column bg-light shadow-sm border border-light rounded-3 mb-4">
+                <div id="searchCollapse" class="collapse order-lg-2">
+                  <div class="container px-3 py-3 pt-lg-2 pb-lg-4">
+                    <div class="position-relative">
+                      <input type="search" class="form-control form-control-lg ps-5" placeholder="Search...">
+                      <i class="bx bx-search fs-5 text-muted position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="navbar navbar-expand-lg order-lg-1">
+                  <div class="container px-3">
+                    <a href="#" class="navbar-brand">
+                      <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+                      Silicon
+                    </a>
+                    <div class="d-flex align-items-center order-lg-2 ms-auto">
+                      <a href="#searchCollapse" class="nav-link px-2" data-bs-toggle="collapse">
+                        <i class="bx bx-search fs-4 mx-1"></i>
+                      </a>
+                      <a href="#" class="nav-link d-none d-lg-block px-2">
+                        <i class="bx bx-user fs-4 mx-1"></i>
+                      </a>
+                      <a href="#" class="btn btn-icon btn-secondary rounded-circle position-relative ms-2">
+                        <span class="badge bg-danger rounded-circle position-absolute top-0 start-100 translate-middle-x ms-n1 mt-n2">2</span>
+                        <i class="bx bx-cart fs-4"></i>
+                      </a>
+                    </div>
+                    <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse3" aria-expanded="false">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav id="navbarCollapse3" class="collapse navbar-collapse">
+                      <hr class="d-lg-none mt-3 mb-2">
+                      <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                          <a href="#" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link">Contacts</a>
+                        </li>
+                        <li class="d-lg-none my-2"><hr></li>
+                        <li class="nav-item d-lg-none">
+                          <a href="#" class="nav-link">
+                            <i class="bx bx-user fs-5 me-2"></i>
+                            My account
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </header>
+              <header class="navbar navbar-expand-lg bg-light shadow-sm border border-light rounded-3 mb-4">
+                <div class="container px-3">
+                  <a href="#" class="navbar-brand">
+                    <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+                    Silicon
+                  </a>
+                  <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse4" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="d-flex d-lg-none order-lg-3">
+                    <a href="tel:4055550128" class="nav-link px-2 ms-2">
+                      <i class="bx bx-mobile-alt fs-2"></i>
+                    </a>
+                    <a href="mailto:hello@example.com" class="nav-link px-2">
+                      <i class="bx bx-chat fs-2"></i>
+                    </a>
+                  </div>
+                  <div class="d-none d-lg-flex order-lg-3">
+                    <a href="tel:4055550128" class="d-flex align-items-center text-decoration-none ms-4">
+                      <i class="bx bx-mobile-alt fs-2 text-primary"></i>
+                      <div class="fs-sm text-nowrap ps-2">
+                        <h6 class="fs-sm mb-0">Call us</h6>
+                        <span class="text-nav">(405) 555-0128</span>
+                      </div>
+                    </a>
+                    <a href="mailto:hello@example.com" class="d-flex align-items-center text-decoration-none ms-4">
+                      <i class="bx bx-chat fs-2 text-primary"></i>
+                      <div class="fs-sm ps-2">
+                        <h6 class="fs-sm mb-0">Talk to us</h6>
+                        <span class="text-nav">hello@example.com</span>
+                      </div>
+                    </a>
+                  </div>
+                  <nav id="navbarCollapse4" class="collapse navbar-collapse order-lg-2">
+                    <hr class="d-lg-none mt-3 mb-2">
+                    <ul class="navbar-nav me-auto">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </header>
+              <header class="navbar navbar-expand-lg bg-light shadow-sm border border-light rounded-3">
+                <div class="container px-3">
+                  <a href="#" class="navbar-brand">
+                    <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+                    Silicon
+                  </a>
+                  <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse5" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="nav dropdown d-block order-lg-3 ms-4">
+                    <a href="#" class="d-flex nav-link p-0" data-bs-toggle="dropdown">
+                      <img src="../assets/img/avatar/09.jpg" class="rounded-circle" width="48" alt="Avatar">
+                      <div class="d-none d-sm-block ps-2">
+                        <div class="fs-xs lh-1 opacity-60">Hello,</div>
+                        <div class="fs-sm dropdown-toggle">Alexander</div>
+                      </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end my-1" style="width: 14rem;">
+                      <li>
+                        <a href="#" class="dropdown-item d-flex align-items-center">
+                          <i class="bx bx-shopping-bag fs-base opacity-60 me-2"></i>
+                          Orders
+                          <span class="bg-success rounded-circle mt-n2 ms-1" style="width: 5px; height: 5px;"></span>
+                          <span class="ms-auto fs-xs text-muted">2</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item d-flex align-items-center">
+                          <i class="bx bx-dollar fs-base opacity-60 me-2"></i>
+                          Sales
+                          <span class="ms-auto fs-xs text-muted">$735.00</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item d-flex align-items-center">
+                          <i class="bx bx-chat fs-base opacity-60 me-2"></i>
+                          Messages
+                          <span class="bg-success rounded-circle mt-n2 ms-1" style="width: 5px; height: 5px;"></span>
+                          <span class="ms-auto fs-xs text-muted">1</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item d-flex align-items-center">
+                          <i class="bx bx-group fs-base opacity-60 me-2"></i>
+                          Followers
+                          <span class="ms-auto fs-xs text-muted">146</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item d-flex align-items-center">
+                          <i class="bx bx-star fs-base opacity-60 me-2"></i>
+                          Reviews
+                          <span class="ms-auto fs-xs text-muted">15</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <i class="bx bx-heart fs-base opacity-60 me-2"></i>
+                          Favorites
+                          <span class="ms-auto fs-xs text-muted">6</span>
+                        </a>
+                      </li>
+                      <li class="dropdown-divider"></li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                          <i class="bx bx-log-out fs-base opacity-60 me-2"></i>
+                          Sign out
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <nav id="navbarCollapse5" class="collapse navbar-collapse order-lg-2">
+                    <hr class="d-lg-none mt-3 mb-2">
+                    <ul class="navbar-nav me-auto">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Contacts</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </header>
+            </div>
+            <div class="tab-pane fade" id="html1" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Menu with dropdown + Button --&gt;
+&lt;header class=&quot;navbar navbar-expand-lg bg-light shadow-sm&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;navbar-brand&quot;&gt;
+      &lt;img src=&quot;assets/img/logo.svg&quot; width=&quot;47&quot; alt=&quot;Silicon&quot;&gt;
+      Silicon
+    &lt;/a&gt;
+    &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarCollapse1&quot; aria-expanded=&quot;false&quot;&gt;
+      &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;nav id=&quot;navbarCollapse1&quot; class=&quot;collapse navbar-collapse&quot;&gt;
+      &lt;hr class=&quot;d-lg-none mt-3 mb-2&quot;&gt;
+      &lt;ul class=&quot;navbar-nav me-auto&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link active&quot;&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Link&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item dropdown&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; data-bs-auto-close=&quot;outside&quot; aria-expanded=&quot;false&quot;&gt;Dropdown&lt;/a&gt;
+          &lt;ul class=&quot;dropdown-menu&quot;&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Action link&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;dropdown&quot;&gt;
+              &lt;a href=&quot;#&quot; class=&quot;dropdown-item dropdown-toggle&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Dropdown&lt;/a&gt;
+              &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action link&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Yet another link&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt; Another action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot;&gt;Disabled&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-sm fs-sm rounded my-3 my-lg-0&quot;&gt;
+        &lt;i class=&quot;bx bx-user fs-lg me-2&quot;&gt;&lt;/i&gt;
+        Sign up
+      &lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;!-- Menu + Theme mode switch + Button --&gt;
+&lt;header class=&quot;navbar navbar-expand-lg bg-light shadow-sm&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;navbar-brand&quot;&gt;
+      &lt;img src=&quot;assets/img/logo.svg&quot; width=&quot;47&quot; alt=&quot;Silicon&quot;&gt;
+      Silicon
+    &lt;/a&gt;
+    &lt;button class=&quot;navbar-toggler ms-auto&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarCollapse2&quot; aria-expanded=&quot;false&quot;&gt;
+      &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;form-check form-switch mode-switch order-lg-2 ms-4 ms-lg-auto me-lg-4&quot; data-bs-toggle=&quot;mode&quot;&gt;
+      &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;theme-mode&quot;&gt;
+      &lt;label class=&quot;form-check-label d-none d-sm-block d-lg-none d-xl-block&quot; for=&quot;theme-mode&quot;&gt;Light&lt;/label&gt;
+      &lt;label class=&quot;form-check-label d-none d-sm-block d-lg-none d-xl-block&quot; for=&quot;theme-mode&quot;&gt;Dark&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-sm fs-sm rounded order-lg-3 d-none d-lg-inline-flex&quot;&gt;
+      &lt;i class=&quot;bx bx-log-in fs-lg me-2&quot;&gt;&lt;/i&gt;
+      Sign in
+    &lt;/a&gt;
+    &lt;nav id=&quot;navbarCollapse2&quot; class=&quot;collapse navbar-collapse&quot;&gt;
+      &lt;hr class=&quot;d-lg-none mt-3 mb-2&quot;&gt;
+      &lt;ul class=&quot;navbar-nav me-auto&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link active&quot;&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Services&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;About&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;a href=&quot;#&quot; class=&quot;btn btn-secondary btn-sm fs-sm rounded my-3 d-lg-none&quot;&gt;
+        &lt;i class=&quot;bx bx-log-in fs-lg me-2&quot;&gt;&lt;/i&gt;
+        Sign in
+      &lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;!-- Menu + Search + Account + Shopping cart --&gt;
+&lt;header class=&quot;d-flex flex-column bg-light shadow-sm&quot;&gt;
+  &lt;div id=&quot;searchCollapse&quot; class=&quot;collapse order-lg-2&quot;&gt;
+    &lt;div class=&quot;container py-3 pt-lg-2 pb-lg-4&quot;&gt;
+      &lt;div class=&quot;position-relative&quot;&gt;
+      &lt;input type=&quot;search&quot; class=&quot;form-control form-control-lg ps-5&quot; placeholder=&quot;Search...&quot;&gt;
+      &lt;i class=&quot;bx bx-search fs-5 text-muted position-absolute top-50 start-0 translate-middle-y ms-3&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;navbar navbar-expand-lg order-lg-1&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;navbar-brand&quot;&gt;
+        &lt;img src=&quot;assets/img/logo.svg&quot; width=&quot;47&quot; alt=&quot;Silicon&quot;&gt;
+        Silicon
+      &lt;/a&gt;
+      &lt;div class=&quot;d-flex align-items-center order-lg-2 ms-auto&quot;&gt;
+        &lt;a href=&quot;#searchCollapse&quot; class=&quot;nav-link px-2&quot; data-bs-toggle=&quot;collapse&quot;&gt;
+          &lt;i class=&quot;bx bx-search fs-4 mx-1&quot;&gt;&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link d-none d-lg-block px-2&quot;&gt;
+          &lt;i class=&quot;bx bx-user fs-4 mx-1&quot;&gt;&lt;/i&gt;
+        &lt;/a&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-icon btn-secondary rounded-circle position-relative ms-2&quot;&gt;
+          &lt;span class=&quot;badge bg-danger rounded-circle position-absolute top-0 start-100 translate-middle-x ms-n1 mt-n2&quot;&gt;2&lt;/span&gt;
+          &lt;i class=&quot;bx bx-cart fs-4&quot;&gt;&lt;/i&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;button class=&quot;navbar-toggler ms-3&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarCollapse3&quot; aria-expanded=&quot;false&quot;&gt;
+        &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;nav id=&quot;navbarCollapse3&quot; class=&quot;collapse navbar-collapse&quot;&gt;
+        &lt;hr class=&quot;d-lg-none mt-3 mb-2&quot;&gt;
+        &lt;ul class=&quot;navbar-nav me-auto&quot;&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link active&quot;&gt;Home&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Services&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;About&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Contacts&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;d-lg-none my-2&quot;&gt;&lt;hr&gt;&lt;/li&gt;
+          &lt;li class=&quot;nav-item d-lg-none&quot;&gt;
+            &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;
+              &lt;i class=&quot;bx bx-user fs-5 me-2&quot;&gt;&lt;/i&gt;
+              My account
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;!-- Menu + Contact (Phone / Email) links --&gt;
+&lt;header class=&quot;navbar navbar-expand-lg bg-light shadow-sm&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;navbar-brand&quot;&gt;
+      &lt;img src=&quot;assets/img/logo.svg&quot; width=&quot;47&quot; alt=&quot;Silicon&quot;&gt;
+      Silicon
+    &lt;/a&gt;
+    &lt;button class=&quot;navbar-toggler ms-auto&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarCollapse4&quot; aria-expanded=&quot;false&quot;&gt;
+      &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;d-flex d-lg-none order-lg-3&quot;&gt;
+      &lt;a href=&quot;tel:4055550128&quot; class=&quot;nav-link px-2 ms-2&quot;&gt;
+        &lt;i class=&quot;bx bx-mobile-alt fs-2&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+      &lt;a href=&quot;mailto:hello@example.com&quot; class=&quot;nav-link px-2&quot;&gt;
+        &lt;i class=&quot;bx bx-chat fs-2&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;d-none d-lg-flex order-lg-3&quot;&gt;
+      &lt;a href=&quot;tel:4055550128&quot; class=&quot;d-flex align-items-center text-decoration-none ms-4&quot;&gt;
+        &lt;i class=&quot;bx bx-mobile-alt fs-2 text-primary&quot;&gt;&lt;/i&gt;
+        &lt;div class=&quot;fs-sm text-nowrap ps-2&quot;&gt;
+          &lt;h6 class=&quot;fs-sm mb-0&quot;&gt;Call us&lt;/h6&gt;
+          &lt;span class=&quot;text-nav&quot;&gt;(405) 555-0128&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/a&gt;
+      &lt;a href=&quot;mailto:hello@example.com&quot; class=&quot;d-flex align-items-center text-decoration-none ms-4&quot;&gt;
+        &lt;i class=&quot;bx bx-chat fs-2 text-primary&quot;&gt;&lt;/i&gt;
+        &lt;div class=&quot;fs-sm ps-2&quot;&gt;
+          &lt;h6 class=&quot;fs-sm mb-0&quot;&gt;Talk to us&lt;/h6&gt;
+          &lt;span class=&quot;text-nav&quot;&gt;hello@example.com&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;nav id=&quot;navbarCollapse4&quot; class=&quot;collapse navbar-collapse order-lg-2&quot;&gt;
+      &lt;hr class=&quot;d-lg-none mt-3 mb-2&quot;&gt;
+      &lt;ul class=&quot;navbar-nav me-auto&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link active&quot;&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Services&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;About&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;!-- User logged in state. User account dropdown --&gt;
+&lt;header class=&quot;navbar navbar-expand-lg bg-light shadow-sm&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;navbar-brand&quot;&gt;
+      &lt;img src=&quot;assets/img/logo.svg&quot; width=&quot;47&quot; alt=&quot;Silicon&quot;&gt;
+      Silicon
+    &lt;/a&gt;
+    &lt;button class=&quot;navbar-toggler ms-auto&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#navbarCollapse5&quot; aria-expanded=&quot;false&quot;&gt;
+      &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;nav dropdown d-block order-lg-3 ms-4&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;d-flex nav-link p-0&quot; data-bs-toggle=&quot;dropdown&quot;&gt;
+        &lt;img src=&quot;assets/img/avatar/09.jpg&quot; class=&quot;rounded-circle&quot; width=&quot;48&quot; alt=&quot;Avatar&quot;&gt;
+        &lt;div class=&quot;d-none d-sm-block ps-2&quot;&gt;
+          &lt;div class=&quot;fs-xs lh-1 opacity-60&quot;&gt;Hello,&lt;/div&gt;
+          &lt;div class=&quot;fs-sm dropdown-toggle&quot;&gt;Alexander&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/a&gt;
+      &lt;ul class=&quot;dropdown-menu dropdown-menu-end my-1&quot; style=&quot;width: 14rem;&quot;&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;
+            &lt;i class=&quot;bx bx-shopping-bag fs-base opacity-60 me-2&quot;&gt;&lt;/i&gt;
+            Orders
+            &lt;span class=&quot;bg-success rounded-circle mt-n2 ms-1&quot; style=&quot;width: 5px; height: 5px;&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;ms-auto fs-xs text-muted&quot;&gt;2&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;
+            &lt;i class=&quot;bx bx-dollar fs-base opacity-60 me-2&quot;&gt;&lt;/i&gt;
+            Sales
+            &lt;span class=&quot;ms-auto fs-xs text-muted&quot;&gt;$735.00&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;
+            &lt;i class=&quot;bx bx-chat fs-base opacity-60 me-2&quot;&gt;&lt;/i&gt;
+            Messages
+            &lt;span class=&quot;bg-success rounded-circle mt-n2 ms-1&quot; style=&quot;width: 5px; height: 5px;&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;ms-auto fs-xs text-muted&quot;&gt;1&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;
+            &lt;i class=&quot;bx bx-group fs-base opacity-60 me-2&quot;&gt;&lt;/i&gt;
+            Followers
+            &lt;span class=&quot;ms-auto fs-xs text-muted&quot;&gt;146&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#&quot; class=&quot;dropdown-item d-flex align-items-center&quot;&gt;
+            &lt;i class=&quot;bx bx-star fs-base opacity-60 me-2&quot;&gt;&lt;/i&gt;
+            Reviews
+            &lt;span class=&quot;ms-auto fs-xs text-muted&quot;&gt;15&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a class=&quot;dropdown-item d-flex align-items-center&quot; href=&quot;#&quot;&gt;
+            &lt;i class=&quot;bx bx-heart fs-base opacity-60 me-2&quot;&gt;&lt;/i&gt;
+            Favorites
+            &lt;span class=&quot;ms-auto fs-xs text-muted&quot;&gt;6&lt;/span&gt;
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;
+          &lt;a class=&quot;dropdown-item d-flex align-items-center&quot; href=&quot;#&quot;&gt;
+            &lt;i class=&quot;bx bx-log-out fs-base opacity-60 me-2&quot;&gt;&lt;/i&gt;
+            Sign out
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;nav id=&quot;navbarCollapse5&quot; class=&quot;collapse navbar-collapse order-lg-2&quot;&gt;
+      &lt;hr class=&quot;d-lg-none mt-3 mb-2&quot;&gt;
+      &lt;ul class=&quot;navbar-nav me-auto&quot;&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link active&quot;&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Services&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;About&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Contacts&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Color schemes -->
+        <section id="navbar-colors" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Color schemes</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview2" data-bs-toggle="tab" role="tab" aria-controls="preview2" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html2" data-bs-toggle="tab" role="tab" aria-controls="html2" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+              <header class="navbar navbar-expand-lg navbar-dark bg-dark border border-light rounded-3 mb-4">
+                <div class="container px-3">
+                  <a href="#" class="navbar-brand">
+                    <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+                    Silicon
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDarkCollapse" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <nav id="navbarDarkCollapse" class="collapse navbar-collapse">
+                    <hr class="d-lg-none text-light opacity-15 mt-3 mb-2">
+                    <ul class="navbar-nav me-auto">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li>
+                            <a href="#" class="dropdown-item">Action link</a>
+                          </li>
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="#">Action link</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><a class="dropdown-item" href="#">Yet another link</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-item" href="#"> Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-sm fs-sm rounded my-3 my-lg-0">
+                      <i class="bx bx-user fs-lg me-2"></i>
+                      Sign up
+                    </a>
+                  </nav>
+                </div>
+              </header>
+              <header class="navbar navbar-expand-lg bg-secondary rounded-3">
+                <div class="container px-3">
+                  <a href="#" class="navbar-brand">
+                    <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+                    Silicon
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSecondaryCollapse" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <nav id="navbarSecondaryCollapse" class="collapse navbar-collapse">
+                    <hr class="d-lg-none mt-3 mb-2">
+                    <ul class="navbar-nav me-auto">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a href="#" class="dropdown-item">Action link</a>
+                          </li>
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action link</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><a class="dropdown-item" href="#">Yet another link</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-item" href="#"> Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-sm fs-sm rounded my-3 my-lg-0">
+                      <i class="bx bx-user fs-lg me-2"></i>
+                      Sign up
+                    </a>
+                  </nav>
+                </div>
+              </header>
+            </div>
+            <div class="tab-pane fade" id="html2" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Dark navbar --&gt;
+&lt;header class=&quot;navbar navbar-expand-lg navbar-dark bg-dark&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;!-- Gray navbar --&gt;
+&lt;header class=&quot;navbar navbar-expand-lg bg-secondary&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Responsive offcanvas menu -->
+        <section id="navbar-offcanvas" class="py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Responsive offcanvas menu</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview3" data-bs-toggle="tab" role="tab" aria-controls="preview3" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html3" data-bs-toggle="tab" role="tab" aria-controls="html3" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+              <iframe class="w-100 shadow mt-2" src="navbar-offcanvas.html" height="500" style="max-width: 375px;"></iframe>
+            </div>
+            <div class="tab-pane fade" id="html3" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Navbar with offcanvas menu on mobile --&gt;
+&lt;header class=&quot;navbar navbar-expand-lg bg-light shadow-sm&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;navbar-brand flex-shrink-0&quot;&gt;
+      &lt;img src=&quot;assets/img/logo.svg&quot; width=&quot;47&quot; alt=&quot;Silicon&quot;&gt;
+      Silicon
+    &lt;/a&gt;
+    &lt;button type=&quot;button&quot; class=&quot;navbar-toggler ms-auto&quot; data-bs-toggle=&quot;offcanvas&quot; data-bs-target=&quot;#navbarNav&quot; aria-controls=&quot;navbarNav&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+      &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class=&quot;offcanvas offcanvas-end&quot; id=&quot;navbarNav&quot;&gt;
+      &lt;div class=&quot;offcanvas-header shadow-sm&quot;&gt;
+        &lt;h6 class=&quot;offcanvas-title&quot;&gt;Menu&lt;/h6&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;offcanvas&quot;&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;ul class=&quot;navbar-nav offcanvas-body pt-3&quot;&gt;
+        &lt;li class=&quot;nav-item active&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Link&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item dropdown&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; role=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Dropdown&lt;/a&gt;
+          &lt;ul class=&quot;dropdown-menu&quot;&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Action link&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;dropdown&quot;&gt;
+              &lt;a href=&quot;#&quot; class=&quot;dropdown-item dropdown-toggle&quot; role=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Dropdown&lt;/a&gt;
+              &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                &lt;li&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Action link&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Another action&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Something else here&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Yet another link&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Another action&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Something else here&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;nav-link disabled&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+
+    <!-- Jump to anchor navigation -->
+    <aside id="jumpToNav" class="side-nav side-nav-end d-none d-xxl-block position-fixed top-0 end-0 vh-100 py-5" style="width: 20rem;">
+      <h3 class="fs-lg mt-5 pt-5">Jump to</h3>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#navbar-content" class="nav-link" data-scroll data-scroll-offset="-6">Supported content</a>
+        </li>
+        <li class="nav-item">
+          <a href="#navbar-colors" class="nav-link" data-scroll data-scroll-offset="-6">Color schemes</a>
+        </li>
+        <li class="nav-item">
+          <a href="#navbar-offcanvas" class="nav-link" data-scroll data-scroll-offset="-6">Responsive offcanvas menu</a>
+        </li>
+      </ul>
+    </aside>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-core.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-markup.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-clike.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="../assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from silicon.createx.studio/components/navbar.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:44:06 GMT -->
+</html>

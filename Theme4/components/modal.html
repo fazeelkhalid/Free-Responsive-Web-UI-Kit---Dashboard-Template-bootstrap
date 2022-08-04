@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from silicon.createx.studio/components/modal.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:44:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Silicon UI Kit | Modal</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="../assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/themes/prism.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css"/>
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Modal static example -->
+    <style>
+      .example-modal .modal {
+        display: block;
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        z-index: 1;
+      }
+    </style>
+</head>
+
+
+  <!-- Body -->
+  <body data-bs-spy="scroll" data-bs-target="#jumpToNav" tabindex="0">
+
+        
+    <!-- Navbar -->
+    <header class="header navbar navbar-expand bg-light border-bottom border-light shadow fixed-top" data-scroll-header>
+      <div class="container-fluid pe-lg-4">
+        <div class="d-flex align-items-center">
+          <a href="typography.html" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
+            <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <span class="badge bg-warning">UI Kit</span>
+        </div>
+        <div class="d-flex align-items-center w-100">
+          <ul class="navbar-nav d-none d-lg-flex" style="padding-left: 11.75rem;">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">
+                <i class="bx bx-desktop opacity-70 fs-lg me-1"></i>
+                &nbsp;Live preview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../docs/getting-started.html" class="nav-link">
+                <i class="bx bx-file opacity-70 fs-lg me-1"></i>
+                &nbsp;Documentation
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="navbar-toggler d-block d-lg-none ms-auto me-4" data-bs-toggle="offcanvas" data-bs-target="#componentsNav" aria-controls="componentsNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-lg-auto" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block d-lg-none d-xl-block" for="theme-mode">Dark</label>
+          </div>
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary btn-sm fs-sm rounded ms-4 d-none d-lg-inline-flex" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-5 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- Main sidebar navigation -->
+    <aside class="dark-mode">
+      <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 21rem; z-index: 1045;">
+        <div class="offcanvas-header d-none d-lg-flex justify-content-start">
+          <a href="typography.html" class="navbar-brand text-dark d-none d-lg-flex py-0">
+            <img src="../assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <span class="badge bg-warning d-none d-lg-inline-block">UI Kit</span>
+        </div>
+        <div class="offcanvas-header d-block d-lg-none border-bottom">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h5 class="d-lg-none mb-0">Menu</h5>
+            <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#componentsNav"></button>
+          </div>
+          <div class="list-group list-group-flush mx-n4">
+            <a href="../index.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-2 px-4">
+              <i class="bx bx-desktop fs-lg opacity-80 me-2"></i>
+              Preview
+            </a>
+            <a href="../docs/getting-started.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-2 px-4">
+              <i class="bx bx-file fs-lg opacity-80 me-2"></i>
+              Documentation
+            </a>
+          </div>
+        </div>
+        <div class="offcanvas-body swiper scrollbar-hover overflow-hidden w-100 p-4" data-swiper-options='{
+          "direction": "vertical",
+          "slidesPerView": "auto",
+          "freeMode": true,
+          "scrollbar": {
+            "el": ".swiper-scrollbar"
+          },
+          "mousewheel": true
+        }'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide h-auto">
+              <h3 class="fs-lg">Content</h3>
+              <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
+                <a href="typography.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Typography</a>
+                <a href="https://boxicons.com/" class="list-group-item list-group-item-action border-0 py-2 px-4" target="_blank" rel="noopener">Icon font</a>
+                <a href="code.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Code</a>
+                <a href="images.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Images &amp; figures</a>
+                <a href="tables.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tables</a>
+              </div>
+              <h3 class="fs-lg">Components</h3>
+              <div class="list-group list-group-flush border-bottom pb-3 mb-4 mx-n4">
+                <a href="accordion.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Accordion</a>
+                <a href="alerts.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Alerts</a>
+                <a href="audio-player.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Audio player</a>
+                <a href="badges.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Badges</a>
+                <a href="blog-components.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Blog components</a>
+                <a href="breadcrumb.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Breadcrumb</a>
+                <a href="buttons.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Buttons</a>
+                <a href="button-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Button group</a>
+                <a href="cards.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Cards</a>
+                <a href="carousel.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Carousel (Slider)</a>
+                <a href="collapse.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Collapse</a>
+                <a href="dropdowns.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Dropdowns</a>
+                <a href="forms.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Forms</a>
+                <a href="gallery.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Gallery (Lightbox)</a>
+                <a href="image-comparison-slider.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Image comparison slider</a>
+                <a href="input-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Input group</a>
+                <a href="list-group.html" class="list-group-item list-group-item-action border-0 py-2 px-4">List group</a>
+                <a href="modal.html" class="list-group-item list-group-item-action border-0 py-2 px-4 active">Modal</a>
+                <a href="navbar.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Navbar</a>
+                <a href="offcanvas.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Offcanvas</a>
+                <a href="pagination.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pagination</a>
+                <a href="parallax.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Parallax</a>
+                <a href="pills.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pills</a>
+                <a href="placeholders.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Placeholders</a>
+                <a href="popovers.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Popovers</a>
+                <a href="portfolio-components.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Portfolio components</a>
+                <a href="pricing.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Pricing</a>
+                <a href="progress-bars.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Progress bars</a>
+                <a href="social-buttons.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Social buttons</a>
+                <a href="spinners.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Spinners</a>
+                <a href="steps.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Steps</a>
+                <a href="tabs.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tabs</a>
+                <a href="team.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Team</a>
+                <a href="testimonials.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Testimonials / reviews</a>
+                <a href="toasts.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Toasts</a>
+                <a href="tooltips.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Tooltips</a>
+                <a href="video-popup.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Video popup</a>
+              </div>
+              <h3 class="fs-lg">Utilities</h3>
+              <div class="list-group list-group-flush mx-n4 pb-2">
+                <a href="https://getbootstrap.com/docs/5.2/utilities/background/" class="list-group-item list-group-item-action border-0 py-2 px-4" target="_blank" rel="noopener">Bootstrap</a>
+                <a href="utilities.html" class="list-group-item list-group-item-action border-0 py-2 px-4">Silicon</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar end-0"></div>
+        </div>
+        <div class="offcanvas-header border-top">
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-4 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </div>
+    </aside>
+
+
+    <!-- Page container -->
+    <main class="docs-container pt-5">
+      <div class="container-fluid px-xxl-5 px-lg-4 pt-4 pt-lg-5 pb-2 pb-lg-4">
+        
+        <!-- Page title -->
+        <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 pt-4 mb-n3">
+          <div class="me-4">
+            <h1 class="pb-1">Modal</h1>
+            <p class="text-muted fs-lg mb-2">Add dialogs to your site for lightboxes, user notifications or custom content.</p>
+          </div>
+          <a href="https://getbootstrap.com/docs/5.2/components/modal/" class="btn btn-link px-0" target="_blank" rel="noopener">
+            Bootstrap docs
+            <i class="bx bx-link-external fs-lg ms-2"></i>
+          </a>
+        </div>
+
+
+        <!-- Small modal-->
+        <div class="modal fade" id="modalSmall" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Default modal-->
+        <div class="modal fade" id="modalDefault" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary btn-sm" type="button">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Large modal-->
+        <div class="modal fade" id="modalLarge" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary btn-sm" type="button">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Extra large modal-->
+        <div class="modal fade" id="modalXL" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary btn-sm" type="button">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Long modal-->
+        <div class="modal fade" id="modalLong" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary btn-sm" type="button">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scrolling content-->
+        <div class="modal fade" id="modalScroll" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary btn-sm" type="button">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vertically centered modal-->
+        <div class="modal fade" id="modalCentered" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary btn-sm" type="button">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Full screen modal-->
+        <div class="modal fade" id="modalFullscreen" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-fullscreen" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary btn-sm" type="button">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Modal markup -->
+        <section id="modal-markup" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Modal markup</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview1" data-bs-toggle="tab" role="tab" aria-controls="preview1" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html1" data-bs-toggle="tab" role="tab" aria-controls="html1" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview1" role="tabpanel">
+              <div class="example-modal">
+                <div class="modal" tabindex="-1" role="dialog">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary btn-sm" type="button">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html1" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Modal markup --&gt;
+&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;h5 class=&quot;modal-title&quot;&gt;Modal title&lt;/h5&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Modal body text goes here.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-sm&quot; data-bs-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Tabs and forms -->
+        <section id="modal-tabs-forms" class="border-bottom py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Tabs and forms</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview2" data-bs-toggle="tab" role="tab" aria-controls="preview2" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html2" data-bs-toggle="tab" role="tab" aria-controls="html2" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview2" role="tabpanel">
+              <div class="example-modal">
+                <div class="modal" tabindex="-1" role="dialog">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <ul class="nav nav-tabs mb-0" role="tablist">
+                          <li class="nav-item fs-sm mb-0">
+                            <a class="nav-link active" href="#signin" data-bs-toggle="tab" role="tab" aria-selected="true">
+                              <i class="bx bx-lock-open fs-base me-2"></i>
+                              Sign in
+                            </a>
+                          </li>
+                          <li class="nav-item fs-sm mb-0">
+                            <a class="nav-link" href="#signup" data-bs-toggle="tab" role="tab" aria-selected="false">
+                              <i class="bx bx-user fs-base me-2"></i>
+                              Sign up
+                            </a>
+                          </li>
+                        </ul>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body tab-content py-4">
+                        <form class="tab-pane fade show active" autocomplete="off" id="signin">
+                          <div class="mb-3">
+                            <label class="form-label" for="email1">Email address</label>
+                            <input class="form-control" type="email" id="email1" placeholder="johndoe@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label" for="pass1">Password</label>
+                            <div class="password-toggle">
+                              <input class="form-control" type="password" id="pass1">
+                              <label class="password-toggle-btn">
+                                <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="mb-3 d-flex flex-wrap justify-content-between">
+                            <div class="form-check mb-2">
+                              <input class="form-check-input" type="checkbox" id="remember">
+                              <label class="form-check-label" for="remember">Remember me</label>
+                            </div><a class="fs-sm" href="#">Forgot password?</a>
+                          </div>
+                          <button class="btn btn-primary d-block w-100" type="submit">Sign in</button>
+                        </form>
+                        <form class="tab-pane fade" autocomplete="off" id="signup">
+                          <div class="mb-3">
+                            <label class="form-label" for="name">Full name</label>
+                            <input class="form-control" type="text" id="name" placeholder="John Doe">
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label" for="email2">Email address</label>
+                            <input class="form-control" type="email" id="email2" placeholder="johndoe@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label" for="pass2">Password</label>
+                            <div class="password-toggle">
+                              <input class="form-control" type="password" id="pass2">
+                              <label class="password-toggle-btn">
+                                <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="mb-4">
+                            <label class="form-label" for="pass3">Confirm password</label>
+                            <div class="password-toggle">
+                              <input class="form-control" type="password" id="pass3">
+                              <label class="password-toggle-btn">
+                                <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <button class="btn btn-primary d-block" type="submit">Sign up</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="html2" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Modal with tabs and forms --&gt;
+&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-content&quot;&gt;
+
+    &lt;!-- Modal header with nav tabs --&gt;
+    &lt;div class=&quot;modal-header&quot;&gt;
+      &lt;ul class=&quot;nav nav-tabs mb-0&quot; role=&quot;tablist&quot;&gt;
+        &lt;li class=&quot;nav-item fs-sm mb-0&quot;&gt;
+          &lt;a class=&quot;nav-link active&quot; href=&quot;#signin&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot; aria-selected=&quot;true&quot;&gt;
+            &lt;i class=&quot;bx bx-lock-open fs-base me-2&quot;&gt;&lt;/i&gt;
+            Sign in
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;nav-item fs-sm mb-0&quot;&gt;
+          &lt;a class=&quot;nav-link&quot; href=&quot;#signup&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;
+            &lt;i class=&quot;bx bx-user fs-base me-2&quot;&gt;&lt;/i&gt;
+            Sign up
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;button class=&quot;btn-close&quot; type=&quot;button&quot; data-bs-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Modal body with tab panes --&gt;
+    &lt;div class=&quot;modal-body tab-content py-4&quot;&gt;
+
+      &lt;!-- Sign in form --&gt;
+      &lt;form class=&quot;tab-pane fade show active&quot; autocomplete=&quot;off&quot; id=&quot;signin&quot;&gt;
+        &lt;div class=&quot;mb-3&quot;&gt;
+          &lt;label class=&quot;form-label&quot; for=&quot;email1&quot;&gt;Email address&lt;/label&gt;
+          &lt;input class=&quot;form-control&quot; type=&quot;email&quot; id=&quot;email1&quot; placeholder=&quot;johndoe@example.com&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;mb-3&quot;&gt;
+          &lt;label class=&quot;form-label&quot; for=&quot;pass1&quot;&gt;Password&lt;/label&gt;
+          &lt;div class=&quot;password-toggle&quot;&gt;
+            &lt;input class=&quot;form-control&quot; type=&quot;password&quot; id=&quot;pass1&quot;&gt;
+            &lt;label class=&quot;password-toggle-btn&quot;&gt;
+              &lt;input class=&quot;password-toggle-check&quot; type=&quot;checkbox&quot;&gt;&lt;span class=&quot;password-toggle-indicator&quot;&gt;&lt;/span&gt;
+            &lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;mb-3 d-flex flex-wrap justify-content-between&quot;&gt;
+          &lt;div class=&quot;form-check mb-2&quot;&gt;
+            &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;remember&quot;&gt;
+            &lt;label class=&quot;form-check-label&quot; for=&quot;remember&quot;&gt;Remember me&lt;/label&gt;
+          &lt;/div&gt;&lt;a class=&quot;fs-sm&quot; href=&quot;#&quot;&gt;Forgot password?&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;button class=&quot;btn btn-primary d-block w-100&quot; type=&quot;submit&quot;&gt;Sign in&lt;/button&gt;
+      &lt;/form&gt;
+
+      &lt;!-- Sign up form --&gt;
+      &lt;form class=&quot;tab-pane fade&quot; autocomplete=&quot;off&quot; id=&quot;signup&quot;&gt;
+        &lt;div class=&quot;mb-3&quot;&gt;
+          &lt;label class=&quot;form-label&quot; for=&quot;name&quot;&gt;Full name&lt;/label&gt;
+          &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;name&quot; placeholder=&quot;John Doe&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;mb-3&quot;&gt;
+          &lt;label class=&quot;form-label&quot; for=&quot;email2&quot;&gt;Email address&lt;/label&gt;
+          &lt;input class=&quot;form-control&quot; type=&quot;email&quot; id=&quot;email2&quot; placeholder=&quot;johndoe@example.com&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;mb-3&quot;&gt;
+          &lt;label class=&quot;form-label&quot; for=&quot;pass2&quot;&gt;Password&lt;/label&gt;
+          &lt;div class=&quot;password-toggle&quot;&gt;
+            &lt;input class=&quot;form-control&quot; type=&quot;password&quot; id=&quot;pass2&quot;&gt;
+            &lt;label class=&quot;password-toggle-btn&quot;&gt;
+              &lt;input class=&quot;password-toggle-check&quot; type=&quot;checkbox&quot;&gt;&lt;span class=&quot;password-toggle-indicator&quot;&gt;&lt;/span&gt;
+            &lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;mb-4&quot;&gt;
+          &lt;label class=&quot;form-label&quot; for=&quot;pass3&quot;&gt;Confirm password&lt;/label&gt;
+          &lt;div class=&quot;password-toggle&quot;&gt;
+            &lt;input class=&quot;form-control&quot; type=&quot;password&quot; id=&quot;pass3&quot;&gt;
+            &lt;label class=&quot;password-toggle-btn&quot;&gt;
+              &lt;input class=&quot;password-toggle-check&quot; type=&quot;checkbox&quot;&gt;&lt;span class=&quot;password-toggle-indicator&quot;&gt;&lt;/span&gt;
+            &lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button class=&quot;btn btn-primary d-block&quot; type=&quot;submit&quot;&gt;Sign up&lt;/button&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Live demo (Sizes) -->
+        <section id="modal-live-demo" class="py-5 ps-lg-2 ps-xxl-0">
+          <h2 class="h4">Live demo (Sizes)</h2>
+          <div class="d-table">
+            <ul class="nav nav-tabs-alt" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#preview3" data-bs-toggle="tab" role="tab" aria-controls="preview3" aria-selected="true">
+                  <i class="bx bx-show-alt fs-base opacity-70 me-2"></i>
+                  Preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#html3" data-bs-toggle="tab" role="tab" aria-controls="html3" aria-selected="false">
+                  <i class="bx bx-code-alt fs-base opacity-70 me-2"></i>
+                  HTML
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content pt-1">
+            <div class="tab-pane fade show active" id="preview3" role="tabpanel">
+              <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalSmall">Small modal</button>
+              <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalDefault">Default modal</button>
+              <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalLarge">Large modal</button>
+              <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalXL">Extra large modal</button>
+              <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalLong">Long modal</button>
+              <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalScroll">Srolling content</button>
+              <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalCentered">Vertically centered modal</button>
+              <button class="btn btn-outline-secondary mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalFullscreen">Full screen modal</button>
+            </div>
+            <div class="tab-pane fade" id="html3" role="tabpanel">
+              <pre class="line-numbers"><code class="lang-html">&lt;!-- Launch modal button --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#modalId&quot;&gt;
+  Launch modal
+&lt;/button&gt;
+
+&lt;!-- Small modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;modalId&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-sm&quot; role=&quot;document&quot;&gt;
+    &lt;div class="modal-content"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Default modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;modalId&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+    &lt;div class="modal-content"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Large modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;modalId&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-lg&quot; role=&quot;document&quot;&gt;
+    &lt;div class="modal-content"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Extra large modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;modalId&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-xl&quot; role=&quot;document&quot;&gt;
+    &lt;div class="modal-content"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Modal with srolling content --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;modalId&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-dialog-scrollable&quot; role=&quot;document&quot;&gt;
+    &lt;div class="modal-content"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Vertically centered modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;modalId&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-dialog-centered&quot; role=&quot;document&quot;&gt;
+    &lt;div class="modal-content"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Full screen modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;modalId&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-fullscreen&quot; role=&quot;document&quot;&gt;
+    &lt;div class="modal-content"&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+
+    <!-- Jump to anchor navigation -->
+    <aside id="jumpToNav" class="side-nav side-nav-end d-none d-xxl-block position-fixed top-0 end-0 vh-100 py-5" style="width: 20rem;">
+      <h3 class="fs-lg mt-5 pt-5">Jump to</h3>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#modal-markup" class="nav-link" data-scroll data-scroll-offset="-6">Modal markup</a>
+        </li>
+        <li class="nav-item">
+          <a href="#modal-tabs-forms" class="nav-link" data-scroll data-scroll-offset="-6">Tabs and forms</a>
+        </li>
+        <li class="nav-item">
+          <a href="#modal-live-demo" class="nav-link" data-scroll data-scroll-offset="-6">Live demo (Sizes)</a>
+        </li>
+      </ul>
+    </aside>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-core.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-markup.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-clike.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="../assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from silicon.createx.studio/components/modal.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:44:05 GMT -->
+</html>
