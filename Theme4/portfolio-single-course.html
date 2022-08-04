@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from silicon.createx.studio/portfolio-single-course.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:41:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Silicon | Single Course</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg bg-light navbar-sticky">
+        <div class="container px-3">
+          <a href="landing-online-courses.html" class="navbar-brand pe-3">
+            <img src="assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Landings</a>
+                  <div class="dropdown-menu p-0">
+                    <div class="d-lg-flex">
+                      <div class="mega-dropdown-column bg-position-center bg-repeat-0 bg-size-cover rounded-3 rounded-end-0" style="background-image: url(assets/img/landings.jpg); margin: -1px;"></div>
+                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                        <ul class="list-unstyled mb-0">
+                          <li><a href="index.html" class="dropdown-item">Template Intro Page</a></li>
+                          <li><a href="landing-mobile-app-showcase-v1.html" class="dropdown-item">Mobile App Showcase v.1</a></li>
+                          <li><a href="landing-mobile-app-showcase-v2.html" class="dropdown-item">Mobile App Showcase v.2</a></li>
+                          <li><a href="landing-saas-v1.html" class="dropdown-item">SaaS v.1</a></li>
+                          <li><a href="landing-saas-v2.html" class="dropdown-item">SaaS v.2</a></li>
+                          <li><a href="landing-saas-v3.html" class="dropdown-item">SaaS v.3</a></li>
+                          <li><a href="landing-financial.html" class="dropdown-item">Financial Consulting</a></li>
+                          <li><a href="landing-online-courses.html" class="dropdown-item">Online Courses</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                        <ul class="list-unstyled mb-0">
+                          <li><a href="landing-medical.html" class="dropdown-item">Medical</a></li>
+                          <li><a href="landing-software-company.html" class="dropdown-item">IT (Software) Company</a></li>
+                          <li><a href="landing-conference.html" class="dropdown-item">Conference</a></li>
+                          <li><a href="landing-digital-agency.html" class="dropdown-item">Digital Agency</a></li>
+                          <li><a href="landing-blog.html" class="dropdown-item">Blog Homepage</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                  <div class="dropdown-menu">
+                    <div class="d-lg-flex pt-lg-3">
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">About</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="about-v1.html" class="dropdown-item py-1">About v.1</a></li>
+                          <li><a href="about-v2.html" class="dropdown-item py-1">About v.2</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Blog</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="blog-list-with-sidebar.html" class="dropdown-item py-1">List View with Sidebar</a></li>
+                          <li><a href="blog-grid-with-sidebar.html" class="dropdown-item py-1">Grid View with Sidebar</a></li>
+                          <li><a href="blog-list-no-sidebar.html" class="dropdown-item py-1">List View no Sidebar</a></li>
+                          <li><a href="blog-grid-no-sidebar.html" class="dropdown-item py-1">Grid View no Sidebar</a></li>
+                          <li><a href="blog-simple-feed.html" class="dropdown-item py-1">Simple Feed</a></li>
+                          <li><a href="blog-single.html" class="dropdown-item py-1">Single Post</a></li>
+                          <li><a href="blog-podcast.html" class="dropdown-item py-1">Podcast</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">Portfolio</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="portfolio-grid.html" class="dropdown-item py-1">Grid View</a></li>
+                          <li><a href="portfolio-list.html" class="dropdown-item py-1">List View</a></li>
+                          <li><a href="portfolio-slider.html" class="dropdown-item py-1">Slider View</a></li>
+                          <li><a href="portfolio-courses.html" class="dropdown-item py-1">Courses</a></li>
+                          <li><a href="portfolio-single-project.html" class="dropdown-item py-1">Single Project</a></li>
+                          <li><a href="portfolio-single-course.html" class="dropdown-item py-1">Single Course</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Services</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="services-v1.html" class="dropdown-item py-1">Services v.1</a></li>
+                          <li><a href="services-v2.html" class="dropdown-item py-1">Services v.2</a></li>
+                          <li><a href="services-single-v1.html" class="dropdown-item py-1">Service Details v.1</a></li>
+                          <li><a href="services-single-v2.html" class="dropdown-item py-1">Service Details v.2</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">Pricing</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="pricing.html" class="dropdown-item py-1">Pricing Page</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Contacts</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="contacts-v1.html" class="dropdown-item py-1">Contacts v.1</a></li>
+                          <li><a href="contacts-v2.html" class="dropdown-item py-1">Contacts v.2</a></li>
+                          <li><a href="contacts-v3.html" class="dropdown-item py-1">Contacts v.3</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Specialty</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="404-v1.html" class="dropdown-item py-1">404 Error v.1</a></li>
+                          <li><a href="404-v2.html" class="dropdown-item py-1">404 Error v.2</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
+                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
+                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
+                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
+                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
+                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
+                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
+                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
+                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="components/typography.html" class="nav-link">UI Kit</a>
+                </li>
+                <li class="nav-item">
+                  <a href="docs/getting-started.html" class="nav-link">Docs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="offcanvas-header border-top">
+              <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
+                <i class="bx bx-cart fs-4 lh-1 me-1"></i>
+                &nbsp;Buy now
+              </a>
+            </div>      
+          </div>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-5 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </header>
+
+
+      <!-- Hero -->
+      <section class="jarallax dark-mode bg-dark pt-2 pt-lg-3 pb-lg-5" data-jarallax data-speed="0.35">
+        <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-70"></span>
+        <div class="jarallax-img" style="background-image: url(assets/img/portfolio/courses/single.jpg);"></div>
+        <div class="container position-relative zindex-5 pb-5">
+
+          <!-- Breadcrumb -->
+          <nav class="py-4" aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item">
+                <a href="landing-online-courses.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="portfolio-courses.html">Courses</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">Fullstack Web Developer Course from Scratch</li>
+            </ol>
+          </nav>
+
+          <!-- Badges -->
+          <div class="d-flex pt-3 pb-4 py-sm-4 pt-lg-5">
+            <span class="badge bg-success fs-sm me-2">Best Seller</span>
+            <a href="#" class="badge bg-white text-nav fs-sm text-decoration-none">Web Development</a>
+          </div>
+
+          <!-- Title -->
+          <h1>Fullstack Web Developer Course from Scratch</h1>
+          <p class="fs-lg text-light opacity-70">Egestas feugiat lorem eu neque suspendisse ullamcorper scelerisque aliquam mauris.</p>
+
+          <!-- Stats -->
+          <div class="d-sm-flex py-3 py-md-4 py-xl-5">
+            <div class="d-flex border-sm-end pe-sm-3 me-sm-3 mb-2 mb-sm-0">
+              <div class="text-nowrap me-1">
+                <i class="bx bxs-star text-warning"></i>
+                <i class="bx bxs-star text-warning"></i>
+                <i class="bx bxs-star text-warning"></i>
+                <i class="bx bxs-star text-warning"></i>
+                <i class="bx bx-star text-muted opacity-75"></i>
+              </div>
+              <span class="text-light opacity-70">(1.2K reviews)</span>
+            </div>
+            <div class="d-flex border-sm-end pe-sm-3 me-sm-3 mb-2 mb-sm-0">
+              <i class="bx bx-like fs-xl text-light opacity-70 me-1"></i>
+              <span class="text-light opacity-70">4.2K likes</span>
+            </div>
+            <div class="d-flex">
+              <i class="bx bx-time fs-xl text-light opacity-70 me-1"></i>
+              <span class="text-light opacity-70">220 hours</span>
+            </div>
+          </div>
+
+          <!-- Author -->
+          <div class="d-flex align-items-center mt-xl-5 pt-2 pt-md-4 pt-lg-5">
+            <img src="assets/img/avatar/17.jpg" class="rounded-circle" width="60" alt="Albert Flores">
+            <div class="ps-3">
+              <div class="text-light opacity-80 mb-1">Created by</div>
+              <h6>Albert Flores</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Course description -->
+      <section class="container pt-5 mt-2 mt-lg-4 mt-xl-5">
+        <div class="row">
+
+          <!-- Sidebar (Course summary) -->
+          <aside class="col-lg-4 col-md-5 offset-xl-1 order-md-2 mb-5">
+            <div style="margin-top: -96px;"></div>
+            <div class="position-sticky top-0 pt-5">
+              <div class="pt-5 mt-md-3">
+                <div class="card shadow-sm p-sm-3">
+                  <div class="card-body">
+                    <h4 class="mb-4">This course includes:</h4>
+                    <ul class="list-unstyled pb-3">
+                      <li class="d-flex align-items-center mb-2">
+                        <i class="bx bx-slideshow fs-xl text-muted me-2 pe-1"></i>
+                        220 hours on-demand video
+                      </li>
+                      <li class="d-flex align-items-center mb-2">
+                        <i class="bx bx-file fs-xl text-muted me-2 pe-1"></i>
+                        18 articles
+                      </li>
+                      <li class="d-flex align-items-center mb-2">
+                        <i class="bx bx-download fs-xl text-muted me-2 pe-1"></i>
+                        25 downloadable resources
+                      </li>
+                      <li class="d-flex align-items-center mb-2">
+                        <i class="bx bx-infinite fs-xl text-muted me-2 pe-1"></i>
+                        Full lifetime access
+                      </li>
+                      <li class="d-flex align-items-center mb-2">
+                        <i class="bx bx-trophy fs-xl text-muted me-2 pe-1"></i>
+                        Certificate of completion
+                      </li>
+                    </ul>
+                    <div class="h2 d-flex align-items-center mb-4">$28.99<del class="text-muted fs-xl fw-normal ms-2">49.99</del></div>
+                    <a href="#" class="btn btn-primary btn-lg shadow-primary">Join the course</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Content -->
+          <div class="col-xl-7 col-lg-8 col-md-7 order-md-1 mb-5">
+            <h2 class="h1 pb-md-2 pb-lg-3">Course description</h2>
+            <p class="pb-4 mb-3">Suspendisse natoque sagittis, consequat turpis. Sed tristique tellus morbi magna. At vel senectus accumsan, arcu mattis id tempor. Tellus sagittis, euismod porttitor sed tortor est id. Feugiat velit velit, tortor ut. Ut libero cursus nibh lorem urna amet tristique leo. Viverra lorem arcu nam nunc at ipsum quam. A proin id sagittis dignissim mauris condimentum ornare. Tempus mauris sed dictum ultrices.</p>
+            <h3 class="mb-4">What you'll learn</h3>
+            <ul class="list-unstyled mb-5">
+              <li class="d-flex align-items-center mb-2">
+                <i class="bx bx-check-circle text-primary fs-xl me-2"></i>
+                Sed lectus donec amet eu turpis interdum.
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <i class="bx bx-check-circle text-primary fs-xl me-2"></i>
+                Nulla at consectetur vitae dignissim porttitor.
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <i class="bx bx-check-circle text-primary fs-xl me-2"></i>
+                Phasellus id vitae dui aliquet mi.
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <i class="bx bx-check-circle text-primary fs-xl me-2"></i>
+                Integer cursus vitae, odio feugiat iaculis aliquet diam, et purus.
+              </li>
+              <li class="d-flex align-items-center mb-2">
+                <i class="bx bx-check-circle text-primary fs-xl me-2"></i>
+                In aenean dolor diam tortor orci eu.
+              </li>
+            </ul>
+
+            <h2 class="h1 pt-md-2 pt-lg-4 pt-xl-5 pb-md-3 pb-lg-4 mb-md-4">Program details</h2>
+            <div class="steps steps-sm">
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">1</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">Introduction. Getting started</h4>
+                  <p class="mb-0">Nulla faucibus mauris pellentesque blandit faucibus non. Sit ut et at suspendisse gravida hendrerit tempus placerat.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">2</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">The ultimate HTML developer: advanced HTML</h4>
+                  <p class="mb-0">Lobortis diam elit id nibh ultrices sed penatibus donec. Nibh iaculis eu sit cras ultricies. Nam eu eget etiam egestas donec scelerisque ut ac enim. Vitae ac nisl, enim nec accumsan vitae est.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">3</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">CSS & CSS3: basic</h4>
+                  <p class="mb-0">Duis euismod enim, facilisis risus tellus pharetra lectus diam neque. Nec ultrices mi faucibus est. Magna ullamcorper potenti elementum ultricies auctor.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">4</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">JavaScript basics for beginners</h4>
+                  <p class="mb-0">Morbi porttitor risus imperdiet a, nisl mattis. Amet, faucibus eget in platea vitae, velit, erat eget velit. At lacus ut proin erat.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">5</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">Understanding APIs</h4>
+                  <p class="mb-0">Risus morbi euismod in congue scelerisque fusce pellentesque diam consequat. Nisi mauris nibh sed est morbi amet arcu urna. Malesuada feugiat quisque consectetur elementum diam vitae. Dictumst facilisis odio eu quis maecenas risus odio fames bibendum ullamcorper.</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">
+                  <div class="step-number-inner">6</div>
+                </div>
+                <div class="step-body">
+                  <h4 class="mb-2">Python from beginner to advanced</h4>
+                  <p class="mb-0">Quis risus quisque diam diam. Volutpat neque eget eu faucibus sed urna fermentum risus. Est, mauris morbi nibh massa.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Course author -->
+      <section class="container py-lg-4 py-xl-5 mt-3 mb-5">
+        <div class="row g-0 bg-dark bg-repeat-0 bg-position-center border rounded-3 overflow-hidden" style="background-image: url(assets/img/portfolio/courses/author-pattern.svg);">
+          <div class="col-md-5 bg-repeat-0 bg-position-top-center bg-size-cover" style="background-image: url(assets/img/portfolio/courses/author.jpg); min-height: 350px;"></div>
+          <div class="col-md-7 py-xl-5 px-4">
+            <div class="py-5 mx-auto" style="max-width: 530px;">
+              <div class="fs-xl text-light opacity-50 mb-2">Learn from the best</div>
+              <h2 class="h1 text-light mb-4">Albert Flores</h2>
+              <p class="text-light opacity-70 pb-4">Dolor ipsum amet cursus quisque porta adipiscing. Lorem convallis malesuada sed maecenas. Ac dui at vitae mauris cursus in nullam porta sem. Quis pellentesque elementum ac bibendum. Nunc aliquam in tortor facilisis. Vulputate eget risus, metus phasellus. Pellentesque faucibus amet, eleifend diam quam condimentum convallis ultricies placerat. Duis habitasse placerat amet, odio pellentesque rhoncus, feugiat at. Eget pellentesque tristique felis magna fringilla.</p>
+              <div class="d-flex flex-column flex-sm-row">
+                <a href="#" class="btn btn-danger me-sm-4 mb-3 mb-sm-0">
+                  <i class="bx bxl-youtube fs-xl me-2"></i>
+                  240k subscribers
+                </a>
+                <a href="#" class="btn btn-info">
+                  <i class="bx bxl-facebook-square fs-xl me-2"></i>
+                  180k followers
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Testimonials -->
+      <section class="pt-2 pb-lg-4 pb-xl-5 mb-5">
+        <h2 class="h1 text-center pb-3 pb-md-4 pb-xl-5">Why students love this course</h2>
+        <div class="px-2 px-sm-0">
+          <div class="swiper" data-swiper-options='{
+            "slidesPerView": 1,
+            "centeredSlides": true,
+            "spaceBetween": 8,
+            "loop": true,
+            "pagination": {
+              "el": ".swiper-pagination",
+              "clickable": true
+            },
+            "breakpoints": {
+              "500": {
+                "slidesPerView": 2,
+                "spaceBetween": 24
+              },
+              "1000": {
+                "slidesPerView": 4,
+                "spaceBetween": 24
+              },
+              "1500": {
+                "slidesPerView": 6,
+                "spaceBetween": 24
+              }
+            }
+          }'>
+            <div class="swiper-wrapper">
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto pt-4">
+                <figure class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                  <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                    <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                      <i class="bx bxs-quote-left"></i>
+                    </span>
+                    <blockquote class="card-body pb-3 mb-0">
+                      <p class="mb-0">Id mollis consectetur congue egestas egestas suspendisse blandit justo. Tellus augue commodo id quis tempus etiam pulvinar at maecenas.</p>
+                    </blockquote>
+                    <div class="card-footer border-0 text-nowrap pt-0">
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bx-star text-muted opacity-75"></i>
+                      <i class="bx bx-star text-muted opacity-75"></i>
+                    </div>
+                  </div>
+                  <figcaption class="d-flex align-items-center ps-4 pt-4">
+                    <img src="assets/img/avatar/03.jpg" width="48" class="rounded-circle" alt="Fannie Summers">
+                    <div class="ps-3">
+                      <h6 class="fs-sm fw-semibold mb-0">Fannie Summers</h6>
+                      <span class="fs-xs text-muted">Designer</span>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto pt-4">
+                <figure class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                  <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                    <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                      <i class="bx bxs-quote-left"></i>
+                    </span>
+                    <blockquote class="card-body pb-3 mb-0">
+                      <p class="mb-0">Phasellus luctus nisi id orci condimentum, at cursus nisl vestibulum. Orci varius natoque penatibus et magnis dis parturient montes.</p>
+                    </blockquote>
+                    <div class="card-footer border-0 text-nowrap pt-0">
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                    </div>
+                  </div>
+                  <figcaption class="d-flex align-items-center ps-4 pt-4">
+                    <img src="assets/img/avatar/02.jpg" width="48" class="rounded-circle" alt="Robert Fox">
+                    <div class="ps-3">
+                      <h6 class="fs-sm fw-semibold mb-0">Robert Fox</h6>
+                      <span class="fs-xs text-muted">QA Engineer</span>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto pt-4">
+                <figure class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                  <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                    <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                      <i class="bx bxs-quote-left"></i>
+                    </span>
+                    <blockquote class="card-body pb-3 mb-0">
+                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum odio, bibendum ornare mi at, efficitur urna.</p>
+                    </blockquote>
+                    <div class="card-footer border-0 text-nowrap pt-0">
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bx-star text-muted opacity-75"></i>
+                    </div>
+                  </div>
+                  <figcaption class="d-flex align-items-center ps-4 pt-4">
+                    <img src="assets/img/avatar/04.jpg" width="48" class="rounded-circle" alt="Annette Black">
+                    <div class="ps-3">
+                      <h6 class="fs-sm fw-semibold mb-0">Annette Black</h6>
+                      <span class="fs-xs text-muted">Project Manager</span>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto pt-4">
+                <figure class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                  <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                    <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                      <i class="bx bxs-quote-left"></i>
+                    </span>
+                    <blockquote class="card-body pb-3 mb-0">
+                      <p class="mb-0">Etiam augue ante, imperdiet et nunc sed, bibendum faucibus est. Suspendisse egestas facilisis erat eu eleifend.</p>
+                    </blockquote>
+                    <div class="card-footer border-0 text-nowrap pt-0">
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bx-star text-muted opacity-75"></i>
+                      <i class="bx bx-star text-muted opacity-75"></i>
+                    </div>
+                  </div>
+                  <figcaption class="d-flex align-items-center ps-4 pt-4">
+                    <img src="assets/img/avatar/05.jpg" width="48" class="rounded-circle" alt="Jerome Bell">
+                    <div class="ps-3">
+                      <h6 class="fs-sm fw-semibold mb-0">Jerome Bell</h6>
+                      <span class="fs-xs text-muted">Developer</span>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto pt-4">
+                <figure class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                  <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                    <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                      <i class="bx bxs-quote-left"></i>
+                    </span>
+                    <blockquote class="card-body pb-3 mb-0">
+                      <p class="mb-0">Pellentesque finibus congue egestas egestas suspendisse blandit justo. Tellus augue commodo id quis tempus etiam pulvinar at maecenas.</p>
+                    </blockquote>
+                    <div class="card-footer border-0 text-nowrap pt-0">
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bx-star text-muted opacity-75"></i>
+                    </div>
+                  </div>
+                  <figcaption class="d-flex align-items-center ps-4 pt-4">
+                    <img src="assets/img/avatar/01.jpg" width="48" class="rounded-circle" alt="Albert Flores">
+                    <div class="ps-3">
+                      <h6 class="fs-sm fw-semibold mb-0">Albert Flores</h6>
+                      <span class="fs-xs text-muted">PR Director</span>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto pt-4">
+                <figure class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                  <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                    <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                      <i class="bx bxs-quote-left"></i>
+                    </span>
+                    <blockquote class="card-body pb-3 mb-0">
+                      <p class="mb-0">Nulla volutpat consectetur congue egestas egestas uni suspendisse blandit parturient.</p>
+                    </blockquote>
+                    <div class="card-footer border-0 text-nowrap pt-0">
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                    </div>
+                  </div>
+                  <figcaption class="d-flex align-items-center ps-4 pt-4">
+                    <img src="assets/img/avatar/06.jpg" width="48" class="rounded-circle" alt="Jenny Wilson">
+                    <div class="ps-3">
+                      <h6 class="fs-sm fw-semibold mb-0">Jenny Wilson</h6>
+                      <span class="fs-xs text-muted">Marketing</span>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto pt-4">
+                <figure class="d-flex flex-column h-100 px-2 px-sm-0 mb-0">
+                  <div class="card h-100 position-relative border-0 shadow-sm pt-4">
+                    <span class="btn btn-icon btn-primary shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4">
+                      <i class="bx bxs-quote-left"></i>
+                    </span>
+                    <blockquote class="card-body pb-3 mb-0">
+                      <p class="mb-0">Vivamus iaculis facilisis pretium. Pellentesque vitae mi odio. Donec imperdiet pellentesque ipsum quis pharetra. Nullam dolor sem.</p>
+                    </blockquote>
+                    <div class="card-footer border-0 text-nowrap pt-0">
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bxs-star text-warning"></i>
+                      <i class="bx bx-star text-muted opacity-75"></i>
+                    </div>
+                  </div>
+                  <figcaption class="d-flex align-items-center ps-4 pt-4">
+                    <img src="assets/img/avatar/07.jpg" width="48" class="rounded-circle" alt="Cameron Williamson">
+                    <div class="ps-3">
+                      <h6 class="fs-sm fw-semibold mb-0">Cameron Williamson</h6>
+                      <span class="fs-xs text-muted">Illustrator</span>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <!-- Pagination (bullets) -->
+            <div class="swiper-pagination position-relative pt-1 pt-sm-3 mt-5"></div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- FAQ -->
+      <section class="container pb-5 mb-md-3 mb-lg-4 mb-xl-5">
+        <div class="row pb-3">
+          <div class="col-md-5 mb-4 mb-md-0">
+            <div class="card bg-dark h-100 p-lg-5">
+              <div class="card-body p-lg-2">
+                <h2 class="h1 text-light">Still Have Any Questions?</h2>
+                <p class="fs-xl text-light opacity-70 mb-0">Check out the FAQs.</p>
+              </div>
+              <div class="card-footer border-0 w-100 pt-0 p-4 p-lg-2">
+                <div class="h2 d-flex align-items-center text-light mb-4">$28.99<del class="fs-xl fw-normal opacity-70 ms-2">49.99</del></div>
+                <a href="#" class="btn btn-primary btn-lg shadow-primary">Join the course</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="accordion" id="faq">
+
+              <!-- Item -->
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h3 class="accordion-header">
+                  <button class="accordion-button shadow-none rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#q-1" aria-expanded="true" aria-controls="q-1">YouTube is full of free tutorials, videos and courses. Why should I take courses here?</button>
+                </h3>
+                <div class="accordion-collapse collapse show" id="q-1" data-bs-parent="#faq">
+                  <div class="accordion-body fs-sm pt-0">
+                    <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h3 class="accordion-header">
+                  <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-2" aria-expanded="false" aria-controls="q-2">What if I don't have any professional background?</button>
+                </h3>
+                <div class="accordion-collapse collapse" id="q-2" data-bs-parent="#faq">
+                  <div class="accordion-body fs-sm pt-0">
+                    <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h3 class="accordion-header">
+                  <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-3" aria-expanded="false" aria-controls="q-3">How is this different from other courses on the market?</button>
+                </h3>
+                <div class="accordion-collapse collapse" id="q-3" data-bs-parent="#faq">
+                  <div class="accordion-body fs-sm pt-0">
+                    <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                <h3 class="accordion-header">
+                  <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-4" aria-expanded="false" aria-controls="q-4">How much time does it take to do my homework per week? What if I don't like it?</button>
+                </h3>
+                <div class="accordion-collapse collapse" id="q-4" data-bs-parent="#faq">
+                  <div class="accordion-body fs-sm pt-0">
+                    <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="accordion-item border-0 rounded-3 shadow-sm">
+                <h3 class="accordion-header">
+                  <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q-5" aria-expanded="false" aria-controls="q-5">Is there any kind of certificate of completion?</button>
+                </h3>
+                <div class="accordion-collapse collapse" id="q-5" data-bs-parent="#faq">
+                  <div class="accordion-body fs-sm pt-0">
+                    <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Related courses (Carousel on narrow screens) -->
+      <section class="bg-secondary pt-5 pb-4 pb-lg-5">
+        <div class="container py-2 pt-lg-4 pb-lg-0">
+          <h2 class="h1 text-center pb-4">More courses like this</h2>
+          <div class="swiper mx-n2" data-swiper-options='{
+            "slidesPerView": 1,
+            "spaceBetween": 8,
+            "pagination": {
+              "el": ".swiper-pagination",
+              "clickable": true
+            },
+            "breakpoints": {
+              "560": {
+                "slidesPerView": 2
+              },
+              "1000": {
+                "slidesPerView": 3
+              }
+            }
+          }'>
+            <div class="swiper-wrapper">
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto pb-3">
+                <article class="card h-100 border-0 shadow-sm mx-2">
+                  <div class="position-relative">
+                    <a href="#" class="d-block position-absolute w-100 h-100 top-0 start-0"></a>
+                    <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-2 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Save to Favorites">
+                      <i class="bx bx-bookmark"></i>
+                    </a>
+                    <img src="assets/img/portfolio/courses/02.jpg" class="card-img-top" alt="Image">
+                  </div>
+                  <div class="card-body pb-3">
+                    <h3 class="h5 mb-2">
+                      <a href="#">HTML, CSS, JavaScript Web Developer</a>
+                    </h3>
+                    <p class="fs-sm mb-2">By Jenny Wilson &amp; Marvin McKinney</p>
+                    <p class="fs-lg fw-semibold text-primary mb-0">$15.99</p>
+                  </div>
+                  <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+                    <div class="d-flex align-items-center me-4">
+                      <i class="bx bx-time fs-xl me-1"></i>
+                      160 hours
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="bx bx-like fs-xl me-1"></i>
+                      92% (3.1K)
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto pb-3">
+                <article class="card h-100 border-0 shadow-sm mx-2">
+                  <div class="position-relative">
+                    <a href="#" class="d-block position-absolute w-100 h-100 top-0 start-0"></a>
+                    <span class="badge bg-danger position-absolute top-0 start-0 zindex-2 mt-3 ms-3">Sale!</span>
+                    <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-2 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Save to Favorites">
+                      <i class="bx bx-bookmark"></i>
+                    </a>
+                    <img src="assets/img/portfolio/courses/03.jpg" class="card-img-top" alt="Image">
+                  </div>
+                  <div class="card-body pb-3">
+                    <h3 class="h5 mb-2">
+                      <a href="#">HTML, CSS, JavaScript Web Developer</a>
+                    </h3>
+                    <p class="fs-sm mb-2">By Robert Fox</p>
+                    <p class="text-muted mb-0"><span class="fs-lg fw-semibold text-danger me-2">$9.99</span><del>$44.99</del></p>
+                  </div>
+                  <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+                    <div class="d-flex align-items-center me-4">
+                      <i class="bx bx-time fs-xl me-1"></i>
+                      210 hours
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="bx bx-like fs-xl me-1"></i>
+                      98% (2.7K)
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Item -->
+              <div class="swiper-slide h-auto pb-3">
+                <article class="card h-100 border-0 shadow-sm mx-2">
+                  <div class="position-relative">
+                    <a href="#" class="d-block position-absolute w-100 h-100 top-0 start-0"></a>
+                    <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-2 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Save to Favorites">
+                      <i class="bx bx-bookmark"></i>
+                    </a>
+                    <img src="assets/img/portfolio/courses/09.jpg" class="card-img-top" alt="Image">
+                  </div>
+                  <div class="card-body pb-3">
+                    <h3 class="h5 mb-2">
+                      <a href="#">Learn JMETER from Scratch on Live Apps-Performance Testing</a>
+                    </h3>
+                    <p class="fs-sm mb-2">By Jenny Wilson</p>
+                    <p class="fs-lg fw-semibold text-primary mb-0">$14.50</p>
+                  </div>
+                  <div class="card-footer d-flex align-items-center fs-sm text-muted py-4">
+                    <div class="d-flex align-items-center me-4">
+                      <i class="bx bx-time fs-xl me-1"></i>
+                      120 hours
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="bx bx-like fs-xl me-1"></i>
+                      92% (3.8K)
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Pagination (bullets) -->
+            <div class="swiper-pagination position-relative pt-2 pt-sm-3 mt-4"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-4 pb-lg-5">
+      <div class="container pt-lg-4">
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
+              <img src="assets/img/logo.svg" width="47" alt="Silicon">
+              Silicon
+            </div>
+            <p class="fs-sm pb-lg-3 mb-4">Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros.</p>
+            <form class="needs-validation" novalidate>
+              <label for="subscr-email" class="form-label">Subscribe to our newsletter</label>
+              <div class="input-group">
+                <input type="email" id="subscr-email" class="form-control rounded-start ps-5" placeholder="Your email" required>
+                <i class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+                <div class="invalid-tooltip position-absolute top-100 start-0">Please provide a valid email address.</div>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+            <div id="footer-links" class="row">
+              <div class="col-lg-4">
+                <h6 class="mb-2">
+                  <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Useful Links</a>
+                </h6>
+                <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Courses</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Careers</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Blog</a></li>
+                  </ul>
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Terms &amp; Conditions</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Privacy Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-3">
+                <h6 class="mb-2">
+                  <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2" data-bs-toggle="collapse">Socials</a>
+                </h6>
+                <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                  <ul class="nav flex-column mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+                <h6 class="mb-2">Contact Us</h6>
+                <a href="mailto:email@example.com" class="fw-medium">email@example.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+          &copy; All rights reserved. Made by 
+          <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a>
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from silicon.createx.studio/portfolio-single-course.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:41:35 GMT -->
+</html>
