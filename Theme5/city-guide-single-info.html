@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from finder.createx.studio/city-guide-single-info.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:24:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Finder | City Guide | Single Place - Info</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Finder - Directory &amp; Listings Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, directory, listings, e-commerce, car dealer, city guide, real estate, job board, user account, multipurpose, ui kit, html5, css3, javascript, gallery, slider, touch">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #666276;;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #bbb7c5;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+      
+    </script>
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/lightgallery/css/lightgallery-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/nouislider/dist/nouislider.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/flatpickr/dist/flatpickr.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+    <!-- Demo switcher (offcanvas)-->
+    <button class="btn btn-icon btn-light rounded-circle shadow position-fixed top-50 end-0 translate-middle-y me-3" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Choose Demo" style="z-index: 1035;"><span class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100 rounded-circle" data-bs-toggle="offcanvas" data-bs-target="#demo-switcher"><i class="fi-layers"></i></span></button>
+    <div class="offcanvas offcanvas-end" id="demo-switcher">
+      <div class="offcanvas-header d-block border-bottom">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+          <h2 class="h5 mb-0">Choose Demo</h2>
+          <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="d-flex"><a class="btn btn-outline-secondary btn-sm w-100 me-2" href="index.html"><i class="fi-home me-2"></i>Main Page</a><a class="btn btn-outline-secondary btn-sm w-100" href="components/typography.html"><i class="fi-file me-2"></i>Docs / UI Kit</a></div>
+      </div>
+      <div class="offcanvas-body">
+        <div class="card card-hover shadow-sm mb-4"><img class="card-img-top" src="img/intro/demos/offcanvas/car-finder.jpg" alt="Car Finder Demo">
+          <div class="card-body p-3">
+            <h3 class="fs-base card-title text-center"><a class="nav-link stretched-link" href="car-finder-home.html">Car Finder Demo</a></h3>
+          </div>
+        </div>
+        <div class="card card-hover shadow-sm mb-4"><img class="card-img-top" src="img/intro/demos/offcanvas/real-estate.jpg" alt="Real Estate Demo">
+          <div class="card-body p-3">
+            <h3 class="fs-base card-title text-center"><a class="nav-link stretched-link" href="real-estate-home-v1.html">Real Estate Demo</a></h3>
+          </div>
+        </div>
+        <div class="card card-hover shadow-sm mb-4"><img class="card-img-top" src="img/intro/demos/offcanvas/job-board.jpg" alt="Job Board Demo">
+          <div class="card-body p-3">
+            <h3 class="fs-base card-title text-center"><a class="nav-link stretched-link" href="job-board-home-v1.html">Job Board Demo</a></h3>
+          </div>
+        </div>
+        <div class="card card-hover shadow-sm mb-4"><img class="card-img-top" src="img/intro/demos/offcanvas/city-guide.jpg" alt="City Guide Demo">
+          <div class="card-body p-3">
+            <h3 class="fs-base card-title text-center"><a class="nav-link stretched-link" href="city-guide-home-v1.html">City Guide Demo</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-footer border-top"><a class="btn btn-primary btn-lg w-100" href="https://themes.getbootstrap.com/product/finder-directory-listings-template-ui-kit/" target="_blank" rel="noopener"><i class="fi-cart fs-lg me-2"></i>Buy Finder</a></div>
+    </div>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <main class="page-wrapper">
+      <!-- Sign In Modal-->
+      <div class="modal fade" id="signin-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered p-2 my-0 mx-auto" style="max-width: 950px;">
+          <div class="modal-content">
+            <div class="modal-body px-0 py-2 py-sm-0">
+              <button class="btn-close position-absolute top-0 end-0 mt-3 me-3" type="button" data-bs-dismiss="modal"></button>
+              <div class="row mx-0 align-items-center">
+                <div class="col-md-6 border-end-md p-4 p-sm-5">
+                  <h2 class="h3 mb-4 mb-sm-5">Hey there!<br>Welcome back.</h2><img class="d-block mx-auto" src="img/signin-modal/signin.svg" width="344" alt="Illustartion">
+                  <div class="mt-4 mt-sm-5">Don't have an account? <a href="#signup-modal" data-bs-toggle="modal" data-bs-dismiss="modal">Sign up here</a></div>
+                </div>
+                <div class="col-md-6 px-4 pt-2 pb-4 px-sm-5 pb-sm-5 pt-md-5"><a class="btn btn-outline-info rounded-pill w-100 mb-3" href="#"><i class="fi-google fs-lg me-1"></i>Sign in with Google</a><a class="btn btn-outline-info rounded-pill w-100 mb-3" href="#"><i class="fi-facebook fs-lg me-1"></i>Sign in with Facebook</a>
+                  <div class="d-flex align-items-center py-3 mb-3">
+                    <hr class="w-100">
+                    <div class="px-3">Or</div>
+                    <hr class="w-100">
+                  </div>
+                  <form class="needs-validation" novalidate>
+                    <div class="mb-4">
+                      <label class="form-label mb-2" for="signin-email">Email address</label>
+                      <input class="form-control" type="email" id="signin-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-4">
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <label class="form-label mb-0" for="signin-password">Password</label><a class="fs-sm" href="#">Forgot password?</a>
+                      </div>
+                      <div class="password-toggle">
+                        <input class="form-control" type="password" id="signin-password" placeholder="Enter password" required>
+                        <label class="password-toggle-btn" aria-label="Show/hide password">
+                          <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-lg rounded-pill w-100" type="submit">Sign in</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sign Up Modal-->
+      <div class="modal fade" id="signup-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered p-2 my-0 mx-auto" style="max-width: 950px;">
+          <div class="modal-content">
+            <div class="modal-body px-0 py-2 py-sm-0">
+              <button class="btn-close position-absolute top-0 end-0 mt-3 me-3" type="button" data-bs-dismiss="modal"></button>
+              <div class="row mx-0 align-items-center">
+                <div class="col-md-6 border-end-md p-4 p-sm-5">
+                  <h2 class="h3 mb-4 mb-sm-5">Join Finder.<br>Get premium benefits:</h2>
+                  <ul class="list-unstyled mb-4 mb-sm-5">
+                    <li class="d-flex mb-2"><i class="fi-check-circle text-primary mt-1 me-2"></i><span>Add and promote your listings</span></li>
+                    <li class="d-flex mb-2"><i class="fi-check-circle text-primary mt-1 me-2"></i><span>Easily manage your wishlist</span></li>
+                    <li class="d-flex mb-0"><i class="fi-check-circle text-primary mt-1 me-2"></i><span>Leave reviews</span></li>
+                  </ul><img class="d-block mx-auto" src="img/signin-modal/signup.svg" width="344" alt="Illustartion">
+                  <div class="mt-sm-4 pt-md-3">Already have an account? <a href="#signin-modal" data-bs-toggle="modal" data-bs-dismiss="modal">Sign in</a></div>
+                </div>
+                <div class="col-md-6 px-4 pt-2 pb-4 px-sm-5 pb-sm-5 pt-md-5"><a class="btn btn-outline-info rounded-pill w-100 mb-3" href="#"><i class="fi-google fs-lg me-1"></i>Sign in with Google</a><a class="btn btn-outline-info rounded-pill w-100 mb-3" href="#"><i class="fi-facebook fs-lg me-1"></i>Sign in with Facebook</a>
+                  <div class="d-flex align-items-center py-3 mb-3">
+                    <hr class="w-100">
+                    <div class="px-3">Or</div>
+                    <hr class="w-100">
+                  </div>
+                  <form class="needs-validation" novalidate>
+                    <div class="mb-4">
+                      <label class="form-label" for="signup-name">Full name</label>
+                      <input class="form-control" type="text" id="signup-name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="mb-4">
+                      <label class="form-label" for="signup-email">Email address</label>
+                      <input class="form-control" type="email" id="signup-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-4">
+                      <label class="form-label" for="signup-password">Password <span class='fs-sm text-muted'>min. 8 char</span></label>
+                      <div class="password-toggle">
+                        <input class="form-control" type="password" id="signup-password" minlength="8" required>
+                        <label class="password-toggle-btn" aria-label="Show/hide password">
+                          <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <label class="form-label" for="signup-password-confirm">Confirm password</label>
+                      <div class="password-toggle">
+                        <input class="form-control" type="password" id="signup-password-confirm" minlength="8" required>
+                        <label class="password-toggle-btn" aria-label="Show/hide password">
+                          <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-check mb-4">
+                      <input class="form-check-input" type="checkbox" id="agree-to-terms" required>
+                      <label class="form-check-label" for="agree-to-terms">By joining, I agree to the <a href='#'>Terms of use</a> and <a href='#'>Privacy policy</a></label>
+                    </div>
+                    <button class="btn btn-primary btn-lg rounded-pill w-100" type="submit">Sign up</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar-->
+      <header class="navbar navbar-expand-lg navbar-light fixed-top" data-scroll-header>
+        <div class="container"><a class="navbar-brand me-3 me-xl-4" href="city-guide-home-v1.html"><img class="d-block" src="img/logo/logo-dark.svg" width="116" alt="Finder"></a>
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="btn btn-sm text-primary d-none d-lg-block order-lg-3" href="#signin-modal" data-bs-toggle="modal"><i class="fi-user me-2"></i>Sign in</a><a class="btn btn-primary btn-sm rounded-pill ms-2 order-lg-3" href="city-guide-add-business.html"><i class="fi-plus me-2"></i>Add<span class='d-none d-sm-inline'> business</span></a>
+          <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+            <ul class="navbar-nav navbar-nav-scroll" style="max-height: 35rem;">
+              <!-- Demos switcher-->
+              <li class="nav-item dropdown me-lg-2"><a class="nav-link dropdown-toggle align-items-center pe-lg-4" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false"><i class="fi-layers me-2"></i>Demos<span class="d-none d-lg-block position-absolute top-50 end-0 translate-middle-y border-end" style="width: 1px; height: 30px;"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="real-estate-home-v1.html"><i class="fi-building fs-base opacity-50 me-2"></i>Real Estate Demo</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="car-finder-home.html"><i class="fi-car fs-base opacity-50 me-2"></i>Car Finder Demo</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="job-board-home-v1.html"><i class="fi-briefcase fs-base opacity-50 me-2"></i>Job Board Demo</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="city-guide-home-v1.html"><i class="fi-map-pin fs-base opacity-50 me-2"></i>City Guide Demo</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html"><i class="fi-home fs-base opacity-50 me-2"></i>Main Page</a></li>
+                  <li><a class="dropdown-item" href="components/typography.html"><i class="fi-list fs-base opacity-50 me-2"></i>Components</a></li>
+                  <li><a class="dropdown-item" href="docs/dev-setup.html"><i class="fi-file fs-base opacity-50 me-2"></i>Documentation</a></li>
+                </ul>
+              </li>
+              <!-- Menu items-->
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="city-guide-home-v1.html">Homepage v.1</a></li>
+                  <li><a class="dropdown-item" href="city-guide-home-v2.html">Homepage v.2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catalog</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="city-guide-catalog.html">Grid with Filters</a></li>
+                  <li><a class="dropdown-item" href="city-guide-single.html">Single Place - Gallery</a></li>
+                  <li><a class="dropdown-item" href="city-guide-single-info.html">Single Place - Info</a></li>
+                  <li><a class="dropdown-item" href="city-guide-single-reviews.html">Single Place - Reviews</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="city-guide-account-info.html">Personal Info</a></li>
+                  <li><a class="dropdown-item" href="city-guide-account-favorites.html">Favorites</a></li>
+                  <li><a class="dropdown-item" href="city-guide-account-reviews.html">Reviews</a></li>
+                  <li><a class="dropdown-item" href="city-guide-account-notifications.html">Notifications</a></li>
+                  <li><a class="dropdown-item" href="signin-light.html">Sign In</a></li>
+                  <li><a class="dropdown-item" href="signup-light.html">Sign Up</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vendor</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="city-guide-add-business.html">Add Business</a></li>
+                  <li><a class="dropdown-item" href="city-guide-business-promotion.html">Business Promotion</a></li>
+                  <li><a class="dropdown-item" href="city-guide-vendor-businesses.html">My Businesses</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="city-guide-about.html">About</a></li>
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="city-guide-blog.html">Blog Grid</a></li>
+                      <li><a class="dropdown-item" href="city-guide-blog-single.html">Single Post</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="city-guide-contacts.html">Contacts</a></li>
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Help Center</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="city-guide-help-center.html">Help Topics</a></li>
+                      <li><a class="dropdown-item" href="city-guide-help-center-single-topic.html">Single Topic</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="city-guide-404.html">404 Not Found</a></li>
+                </ul>
+              </li>
+              <li class="nav-item d-lg-none"><a class="nav-link" href="#signin-modal" data-bs-toggle="modal"><i class="fi-user me-2"></i>Sign in</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- Page content-->
+      <!-- Page header-->
+      <section class="container pt-5 mt-5">
+        <!-- Breadcrumb-->
+        <nav class="mb-3 pt-md-3" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="city-guide-home-v1.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="city-guide-catalog.html">Find accommodation</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Berlin Business Hotel</li>
+          </ol>
+        </nav>
+        <div class="d-sm-flex align-items-center justify-content-between mb-4 pb-sm-2">
+          <h1 class="h2 me-3 mb-sm-0">Berlin Business Hotel</h1>
+          <div class="text-nowrap">
+            <button class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle" type="button" data-bs-toggle="tooltip" title="Add to Wishlist"><i class="fi-heart"></i></button>
+            <div class="dropdown d-inline-block" data-bs-toggle="tooltip" title="Share">
+              <button class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle ms-2" type="button" data-bs-toggle="dropdown"><i class="fi-share"></i></button>
+              <div class="dropdown-menu dropdown-menu-end my-1">
+                <button class="dropdown-item" type="button"><i class="fi-facebook fs-base opacity-75 me-2"></i>Facebook</button>
+                <button class="dropdown-item" type="button"><i class="fi-twitter fs-base opacity-75 me-2"></i>Twitter</button>
+                <button class="dropdown-item" type="button"><i class="fi-instagram fs-base opacity-75 me-2"></i>Instagram</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Nav pills-->
+        <ul class="nav nav-pills border-bottom pb-3 mb-4">
+          <li class="nav-item"><a class="nav-link d-flex align-items-center" href="city-guide-single.html"><i class="fi-image me-2"></i>Gallery</a></li>
+          <li class="nav-item"><a class="nav-link d-flex align-items-center active" href="city-guide-single-info.html"><i class="fi-info-circle me-2"></i>Info</a></li>
+          <li class="nav-item"><a class="nav-link d-flex align-items-center" href="city-guide-single-reviews.html"><i class="fi-edit me-2"></i>Reviews</a></li>
+        </ul>
+      </section>
+      <!-- Page content -->
+      <section class="container pb-5 mb-md-4">
+        <div class="row">
+          <!-- Left column-->
+          <div class="col-md-7 mb-md-0 mb-4 pb-md-0 pb-2">
+            <h2 class="h4">About</h2>
+            <ul class="list-unstyled">
+              <li><i class="fi-star-filled mt-n1 me-1 text-warning align-middle"></i><b>4.9 </b><span class="text-muted">(48 reviews)</span></li>
+              <li><i class="fi-wallet mt-n1 me-1 align-middle opacity-70"></i>$$</li>
+              <li><i class="fi-map-pin mt-n1 me-1 align-middle opacity-70"></i>1.4 km from center</li>
+            </ul>
+            <div class="mb-4 pb-md-3">
+              <p class="mb-1">Lorem tincidunt lectus vitae id vulputate diam quam. Imperdiet non scelerisque turpis sed etiam ultrices. Blandit mollis dignissim egestas consectetur porttitor. Vulputate dolor pretium, dignissim eu augue sit ut convallis. Lectus est, magna urna feugiat sed ultricies sed in lacinia. Fusce potenti sit id pharetra vel ornare. Vestibulum sed tellus ullamcorper arcu.</p>
+              <div class="collapse" id="seeMoreAbout">
+                <p class="mb-1">Asperiores eos molestias, aspernatur assumenda vel corporis ex, magni excepturi totam exercitationem quia inventore quod amet labore impedit quae distinctio? Officiis blanditiis consequatur alias, atque, sed est incidunt accusamus repudiandae tempora repellendus obcaecati delectus ducimus inventore tempore harum numquam autem eligendi culpa.</p>
+              </div><a class="collapse-label collapsed" href="#seeMoreAbout" data-bs-toggle="collapse" data-bs-label-collapsed="Show more" data-bs-label-expanded="Show less" role="button" aria-expanded="false" aria-controls="seeMoreAbout"></a>
+            </div>
+            <!-- Amenities-->
+            <div class="mb-4 pb-md-3">
+              <h2 class="h4">Amenities</h2>
+              <ul class="list-unstyled row row-cols-lg-3 row-cols-md-2 row-cols-1 gy-1 mb-1 text-nowrap">
+                <li class="col"><i class="fi-wifi mt-n1 me-2 fs-lg align-middle"></i>Free WiFi</li>
+                <li class="col"><i class="fi-swimming-pool mt-n1 me-2 fs-lg align-middle"></i>2 swimming pools</li>
+                <li class="col"><i class="fi-pet mt-n1 me-2 fs-lg align-middle"></i>Pets-friendly</li>
+                <li class="col"><i class="fi-parking mt-n1 me-2 fs-lg align-middle"></i>Free parking</li>
+                <li class="col"><i class="fi-spa mt-n1 me-2 fs-lg align-middle"></i>Spa lounge</li>
+                <li class="col"><i class="fi-cafe mt-n1 me-2 fs-lg align-middle"></i>Restaurant</li>
+                <li class="col"><i class="fi-hotel-bell mt-n1 me-2 fs-lg align-middle"></i>Room service</li>
+                <li class="col"><i class="fi-cocktail mt-n1 me-2 fs-lg align-middle"></i>Bar</li>
+                <li class="col"><i class="fi-dumbell mt-n1 me-2 fs-lg align-middle"></i>Fitness Center</li>
+              </ul>
+              <div class="collapse" id="seeMoreAmenities">
+                <ul class="list-unstyled row row-cols-lg-3 row-cols-md-2 row-cols-1 gy-1 mb-1 text-nowrap">
+                  <li class="col"><i class="fi-dish mt-n1 me-2 fs-lg align-middle"></i>Dishwasher</li>
+                  <li class="col"><i class="fi-thermometer mt-n1 me-2 fs-lg align-middle"></i>Heating</li>
+                </ul>
+              </div><a class="collapse-label collapsed" href="#seeMoreAmenities" data-bs-toggle="collapse" data-bs-label-collapsed="Show more" data-bs-label-expanded="Show less" role="button" aria-expanded="false" aria-controls="seeMoreAmenities"></a>
+            </div>
+            <!-- Room types-->
+            <div class="mb-4 pb-md-3">
+              <h2 class="h4">Room types</h2>
+              <ul class="list-unstyled row row-cols-lg-3 row-cols-md-2 row-cols-1 gy-1 mb-1 text-nowrap">
+                <li class="col"><i class="fi-no-smoke mt-n1 me-2 fs-lg align-middle"></i>Non-smoking rooms</li>
+                <li class="col"><i class="fi-single-bed mt-n1 me-2 fs-lg align-middle"></i>Single rooms</li>
+                <li class="col"><i class="fi-double-bed mt-n1 me-2 fs-lg align-middle"></i>Family suites</li>
+              </ul>
+            </div>
+            <!-- Awards-->
+            <h2 class="h4">Awards</h2>
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-center mb-2"><img class="flex-shrink-0 me-2" src="img/city-guide/single/awards/01.jpg" width="40" alt="Award logo">
+                <div>2020 Traveler’s Choice</div>
+              </li>
+              <li class="d-flex align-items-center mb-2"><img class="flex-shrink-0 me-2" src="img/city-guide/single/awards/02.jpg" width="40" alt="Award logo">
+                <div>TUI Top Quality 2020</div>
+              </li>
+              <li class="d-flex align-items-center mb-2"><img class="flex-shrink-0 me-2" src="img/city-guide/single/awards/03.jpg" width="40" alt="Award logo">
+                <div>TUI Holly 2019</div>
+              </li>
+            </ul>
+            <hr class="my-4">
+            <!-- Payment-->
+            <div class="d-lg-flex align-items-center pb-2 pb-lg-0">
+              <h4 class="fs-lg mb-lg-0">Cards accepted at this hotel:</h4>
+              <div class="ps-lg-3"><img class="me-2 border rounded-1 shadow-sm" src="img/city-guide/single/payment/visa.svg" width="54" alt="Visa"><img class="me-2 border rounded-1 shadow-sm" src="img/city-guide/single/payment/mastercard.svg" width="54" alt="Mastercard"><img class="me-2 border rounded-1 shadow-sm" src="img/city-guide/single/payment/maestro.svg" width="54" alt="Maestro"><img class="border rounded-1 shadow-sm" src="img/city-guide/single/payment/american-express.svg" width="54" alt="American Express"></div>
+            </div>
+          </div>
+          <!-- Sidebar-->
+          <aside class="col-md-5">
+            <!-- Place card-->
+            <div class="card mb-4 p-2 shadow-sm">
+              <div class="card-body">
+                <!-- Place info-->
+                <div class="d-flex align-items-start mb-3 pb-2 border-bottom"><img src="img/city-guide/brands/hotel.svg" width="60" alt="Thumbnail">
+                  <div class="ps-2 ms-1">
+                    <h3 class="h5 mb-2"> Berlin Business Hotel</h3>
+                    <ul class="list-unstyled d-flex flex-wrap fs-sm">
+                      <li class="me-2 mb-1 pe-1"><i class="fi-star-filled mt-n1 me-1 text-warning align-middle opacity-70"></i><b>4.9 </b>(48)</li>
+                      <li class="me-2 mb-1 pe-1"><i class="fi-wallet mt-n1 me-1 align-middle opacity-70"></i>$$</li>
+                      <li class="me-2 mb-1 pe-1"><i class="fi-map-pin mt-n1 me-1 align-middle opacity-70"></i>1.4 km from center</li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Place contacts-->
+                <div class="mb-3 pb-3 border-bottom">
+                  <h4 class="h5 mb-2">Contacts:</h4>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal d-flex align-items-start" href="#"><i class="fi-map-pin mt-1 me-2 align-middle opacity-70"></i>Ollenhauer Str. 29, 10118, Berlin</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link d-inline-block p-0 fw-normal d-inline-flex align-items-start" href="tel:3025550107"><i class="fi-phone mt-1 me-2 align-middle opacity-70"></i>(302) 555-0107</a>, <a class="nav-link d-inline-block p-0 fw-normal" href="tel:3025550208">(302) 555-0208</a></li>
+                    <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal d-flex align-items-start" href="#"><i class="fi-globe mt-1 me-2 align-middle opacity-60"></i>bb-hotel.com</a></li>
+                    <li class="nav-item"><a class="nav-link p-0 fw-normal d-flex align-items-start" href="mailto:bb-hotel@example.com"><i class="fi-mail mt-1 me-2 align-middle opacity-70"></i>bb-hotel@example.com</a></li>
+                  </ul>
+                </div>
+                <!-- Place pricing-->
+                <div class="mb-3 pb-4 border-bottom">
+                  <div class="row row-cols-1">
+                    <div class="col mb-3">
+                      <h4 class="h5 mb-0"><span class="fs-4">$50-100&nbsp;</span><span class="fs-base fw-normal text-body">/night</span></h4>
+                    </div>
+                    <div class="col"><a class="btn btn-primary btn-lg rounded-pill w-sm-auto w-100" href="#">Book now<i class="fi-chevron-right fs-sm ms-2"></i></a></div>
+                  </div>
+                </div>
+                <!-- Place following-->
+                <div class="d-flex align-items-center">
+                  <h4 class="h5 mb-0 me-3">Follow:</h4>
+                  <div class="text-nowrap"><a class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2" href="#"><i class="fi-facebook"></i></a><a class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle me-2" href="#"><i class="fi-instagram"></i></a><a class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle" href="#"><i class="fi-twitter"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- Location (Map)-->
+            <div class="position-relative"><img class="rounded-3" src="img/city-guide/single/map-sm.jpg" alt="Map">
+              <div class="d-flex w-100 h-100 flex-column align-items-center justify-content-center position-absolute top-0 start-0"><img class="d-block mx-auto mb-4 rounded-circle bg-white shadow" src="img/city-guide/brands/hotel.svg" width="40" alt="Place logo"><a class="btn btn-primary rounded-pill stretched-link" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2423.924340088787!2d13.428504251724927!3d52.58906113876177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a85284201593ab%3A0x28af69e02ce0e2fc!2sBusinesshotel%20Berlin!5e0!3m2!1sru!2sua!4v1618908622013!5m2!1sru!2sua" data-iframe="true" data-bs-toggle="lightbox"><i class="fi-route me-2"></i>Get directions</a></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <!-- Recently viewed-->
+      <section class="container pb-5 mb-lg-4">
+        <div class="d-flex align-items-center justify-content-between mb-4 pb-2">
+          <h2 class="h3 mb-0">Recently viewed</h2><a class="btn btn-link fw-normal ms-sm-3 p-0" href="city-guide-catalog.html">View all<i class="fi-arrow-long-right ms-2"></i></a>
+        </div>
+        <div class="tns-carousel-wrapper tns-controls-outside-xxl tns-nav-outside mb-xxl-2">
+          <div class="tns-carousel-inner" data-carousel-options="{&quot;items&quot;: 3, &quot;gutter&quot;: 24, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1,&quot;nav&quot;:true},&quot;500&quot;:{&quot;items&quot;:2},&quot;850&quot;:{&quot;items&quot;:3},&quot;1400&quot;:{&quot;items&quot;:3,&quot;nav&quot;:false}}}">
+            <!-- Item-->
+            <div>
+              <div class="position-relative">
+                <div class="position-relative mb-3">
+                  <button class="btn btn-icon btn-light-primary btn-xs text-primary rounded-circle position-absolute top-0 end-0 m-3 zindex-5" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist"><i class="fi-heart"></i></button><img class="rounded-3" src="img/city-guide/catalog/09.jpg" alt="Article img">
+                </div>
+                <h3 class="mb-2 fs-lg"><a class="nav-link stretched-link" href="#">Repose Hotel</a></h3>
+                <ul class="list-inline mb-0 fs-xs">
+                  <li class="list-inline-item pe-1"><i class="fi-star-filled mt-n1 me-1 fs-base text-warning align-middle"></i><b>5.0</b><span class="text-muted">&nbsp;(48)</span></li>
+                  <li class="list-inline-item pe-1"><i class="fi-credit-card mt-n1 me-1 fs-base text-muted align-middle"></i>$$</li>
+                  <li class="list-inline-item pe-1"><i class="fi-map-pin mt-n1 me-1 fs-base text-muted align-middle"></i>1.4 km from center</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Item-->
+            <div>
+              <div class="position-relative">
+                <div class="position-relative mb-3">
+                  <button class="btn btn-icon btn-light-primary btn-xs text-primary rounded-circle position-absolute top-0 end-0 m-3 zindex-5" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist"><i class="fi-heart"></i></button><img class="rounded-3" src="img/city-guide/catalog/05.jpg" alt="Article img">
+                </div>
+                <h3 class="mb-2 fs-lg"><a class="nav-link stretched-link" href="#">Leisure Inn</a></h3>
+                <ul class="list-inline mb-0 fs-xs">
+                  <li class="list-inline-item pe-1"><i class="fi-star-filled mt-n1 me-1 fs-base text-warning align-middle"></i><b>4.8</b><span class="text-muted">&nbsp;(24)</span></li>
+                  <li class="list-inline-item pe-1"><i class="fi-credit-card mt-n1 me-1 fs-base text-muted align-middle"></i>$$$</li>
+                  <li class="list-inline-item pe-1"><i class="fi-map-pin mt-n1 me-1 fs-base text-muted align-middle"></i>0.5 km from center</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Item-->
+            <div>
+              <div class="position-relative">
+                <div class="position-relative mb-3">
+                  <button class="btn btn-icon btn-light-primary btn-xs text-primary rounded-circle position-absolute top-0 end-0 m-3 zindex-5" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist"><i class="fi-heart"></i></button><img class="rounded-3" src="img/city-guide/catalog/11.jpg" alt="Article img">
+                </div>
+                <h3 class="mb-2 fs-lg"><a class="nav-link stretched-link" href="#">Soothe &amp; Stay</a></h3>
+                <ul class="list-inline mb-0 fs-xs">
+                  <li class="list-inline-item pe-1"><i class="fi-star-filled mt-n1 me-1 fs-base text-warning align-middle"></i><b>4.9</b><span class="text-muted">&nbsp;(43)</span></li>
+                  <li class="list-inline-item pe-1"><i class="fi-credit-card mt-n1 me-1 fs-base text-muted align-middle"></i>$$$</li>
+                  <li class="list-inline-item pe-1"><i class="fi-map-pin mt-n1 me-1 fs-base text-muted align-middle"></i>1.8 km from center</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Item-->
+            <div>
+              <div class="position-relative">
+                <div class="position-relative mb-3">
+                  <button class="btn btn-icon btn-light-primary btn-xs text-primary rounded-circle position-absolute top-0 end-0 m-3 zindex-5" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist"><i class="fi-heart"></i></button><img class="rounded-3" src="img/city-guide/catalog/04.jpg" alt="Article img">
+                </div>
+                <h3 class="mb-2 fs-lg"><a class="nav-link stretched-link" href="#">Merry Berry Motel</a></h3>
+                <ul class="list-inline mb-0 fs-xs">
+                  <li class="list-inline-item pe-1"><i class="fi-star-filled mt-n1 me-1 fs-base text-warning align-middle"></i><b>4.5</b><span class="text-muted">&nbsp;(13)</span></li>
+                  <li class="list-inline-item pe-1"><i class="fi-credit-card mt-n1 me-1 fs-base text-muted align-middle"></i>$$</li>
+                  <li class="list-inline-item pe-1"><i class="fi-map-pin mt-n1 me-1 fs-base text-muted align-middle"></i>0.4 km from center</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer pt-lg-5 pt-4 bg-dark text-light">
+      <div class="container mb-4 py-4 pb-lg-5">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6 col-sm-4">
+            <div class="mb-4 pb-sm-3"><a class="d-inline-block" href="city-guide-home-v1.html"><img src="img/logo/logo-light.svg" width="116" alt="Logo"></a></div>
+            <ul class="nav nav-light flex-column">
+              <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal text-light text-nowrap" href="mailto:example@gmail.com"><i class="fi-mail mt-n1 me-1 align-middle text-primary"></i>example@gmail.com</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal text-light text-nowrap" href="tel:4065550120"><i class="fi-device-mobile mt-n1 me-1 align-middle text-primary"></i>(406) 555-0120</a></li>
+            </ul>
+          </div>
+          <!-- Links-->
+          <div class="col-lg-2 col-md-3 col-sm-4">
+            <h3 class="fs-base text-light">Quick links</h3>
+            <ul class="list-unstyled fs-sm">
+              <li><a class="nav-link-light" href="#">Top cities</a></li>
+              <li><a class="nav-link-light" href="#">Accommodation</a></li>
+              <li><a class="nav-link-light" href="#">Cafes &amp; restaurants</a></li>
+              <li><a class="nav-link-light" href="#">Events</a></li>
+            </ul>
+          </div>
+          <!-- Links-->
+          <div class="col-lg-2 col-md-3 col-sm-4">
+            <h3 class="fs-base text-light">Profile</h3>
+            <ul class="list-unstyled fs-sm">
+              <li><a class="nav-link-light" href="#">My account</a></li>
+              <li><a class="nav-link-light" href="#">Favorites</a></li>
+              <li><a class="nav-link-light" href="#">My listings</a></li>
+              <li><a class="nav-link-light" href="#">Add listing</a></li>
+            </ul>
+          </div>
+          <!-- Subscription form-->
+          <div class="col-lg-4 offset-lg-1">
+            <h3 class="h4 text-light">Subscribe to our newsletter</h3>
+            <p class="fs-sm mb-4 opacity-60">Don’t miss any relevant vacancies!</p>
+            <form class="form-group form-group-light rounded-pill" style="max-width: 500px;">
+              <div class="input-group input-group-sm"><span class="input-group-text text-muted"><i class="fi-mail"></i></span>
+                <input class="form-control" type="email" placeholder="Your email">
+              </div>
+              <button class="btn btn-primary btn-sm rounded-pill" type="button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 border-top border-light">
+        <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between py-2">
+          <!-- Copyright-->
+          <p class="order-lg-1 order-2 fs-sm mb-2 mb-lg-0"><span class="text-light opacity-60">&copy; All rights reserved. Made by </span><a class="nav-link-light fw-bold" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a></p>
+          <div class="d-flex flex-lg-row flex-column align-items-center order-lg-2 order-1 ms-lg-4 mb-lg-0 mb-4">
+            <!-- Links-->
+            <div class="d-flex flex-wrap fs-sm mb-lg-0 mb-4 pe-lg-4"><a class="nav-link-light px-2 mx-1" href="#">About</a><a class="nav-link-light px-2 mx-1" href="#">Blog</a><a class="nav-link-light px-2 mx-1" href="#">Support</a><a class="nav-link-light px-2 mx-1" href="#">Contacts</a></div>
+            <div class="d-flex align-items-center">
+              <!-- Language switcher-->
+              <div class="dropdown"><a class="nav-link nav-link-light dropdown-toggle fs-sm align-items-center p-0 fw-normal" href="#" id="langSwitcher" data-bs-toggle="dropdown" role="button" aria-expanded="false"><i class="fi-globe mt-n1 me-2 align-middle"></i>Eng</a>
+                <ul class="dropdown-menu dropdown-menu-dark my-1" aria-labelledby="langSwitcher">
+                  <li><a class="dropdown-item text-nowrap py-1" href="#"><img class="me-2" src="img/flags/de.png" width="20" alt="Deutsch">Deutsch</a></li>
+                  <li><a class="dropdown-item text-nowrap py-1" href="#"><img class="me-2" src="img/flags/fr.png" width="20" alt="Français">Français</a></li>
+                  <li><a class="dropdown-item text-nowrap py-1" href="#"><img class="me-2" src="img/flags/es.png" width="20" alt="Español">Español</a></li>
+                </ul>
+              </div>
+              <!-- Socials-->
+              <div class="ms-4 ps-lg-2 text-nowrap"><a class="btn btn-icon btn-translucent-light btn-xs rounded-circle ms-2" href="#"><i class="fi-facebook"></i></a><a class="btn btn-icon btn-translucent-light btn-xs rounded-circle ms-2" href="#"><i class="fi-twitter"></i></a><a class="btn btn-icon btn-translucent-light btn-xs rounded-circle ms-2" href="#"><i class="fi-telegram"></i></a><a class="btn btn-icon btn-translucent-light btn-xs rounded-circle ms-2" href="#"><i class="fi-messenger"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon fi-chevron-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="vendor/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from finder.createx.studio/city-guide-single-info.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:24:12 GMT -->
+</html>

@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from finder.createx.studio/car-finder-sell-car.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:21:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Finder | Car Finder | Sell Car</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Finder - Directory &amp; Listings Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, directory, listings, e-commerce, car dealer, city guide, real estate, job board, user account, multipurpose, ui kit, html5, css3, javascript, gallery, slider, touch">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #1f1b2d;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #fff;;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #9691a4;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+      
+    </script>
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/filepond/dist/filepond.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+  <!-- Body-->
+  <body class="bg-dark">
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+    <!-- Demo switcher (offcanvas)-->
+    <button class="btn btn-icon btn-light rounded-circle shadow position-fixed top-50 end-0 translate-middle-y me-3" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Choose Demo" style="z-index: 1035;"><span class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100 rounded-circle" data-bs-toggle="offcanvas" data-bs-target="#demo-switcher"><i class="fi-layers"></i></span></button>
+    <div class="offcanvas offcanvas-end" id="demo-switcher">
+      <div class="offcanvas-header d-block border-bottom">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+          <h2 class="h5 mb-0">Choose Demo</h2>
+          <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="d-flex"><a class="btn btn-outline-secondary btn-sm w-100 me-2" href="index.html"><i class="fi-home me-2"></i>Main Page</a><a class="btn btn-outline-secondary btn-sm w-100" href="components/typography.html"><i class="fi-file me-2"></i>Docs / UI Kit</a></div>
+      </div>
+      <div class="offcanvas-body">
+        <div class="card card-hover shadow-sm mb-4"><img class="card-img-top" src="img/intro/demos/offcanvas/car-finder.jpg" alt="Car Finder Demo">
+          <div class="card-body p-3">
+            <h3 class="fs-base card-title text-center"><a class="nav-link stretched-link" href="car-finder-home.html">Car Finder Demo</a></h3>
+          </div>
+        </div>
+        <div class="card card-hover shadow-sm mb-4"><img class="card-img-top" src="img/intro/demos/offcanvas/real-estate.jpg" alt="Real Estate Demo">
+          <div class="card-body p-3">
+            <h3 class="fs-base card-title text-center"><a class="nav-link stretched-link" href="real-estate-home-v1.html">Real Estate Demo</a></h3>
+          </div>
+        </div>
+        <div class="card card-hover shadow-sm mb-4"><img class="card-img-top" src="img/intro/demos/offcanvas/job-board.jpg" alt="Job Board Demo">
+          <div class="card-body p-3">
+            <h3 class="fs-base card-title text-center"><a class="nav-link stretched-link" href="job-board-home-v1.html">Job Board Demo</a></h3>
+          </div>
+        </div>
+        <div class="card card-hover shadow-sm mb-4"><img class="card-img-top" src="img/intro/demos/offcanvas/city-guide.jpg" alt="City Guide Demo">
+          <div class="card-body p-3">
+            <h3 class="fs-base card-title text-center"><a class="nav-link stretched-link" href="city-guide-home-v1.html">City Guide Demo</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-footer border-top"><a class="btn btn-primary btn-lg w-100" href="https://themes.getbootstrap.com/product/finder-directory-listings-template-ui-kit/" target="_blank" rel="noopener"><i class="fi-cart fs-lg me-2"></i>Buy Finder</a></div>
+    </div>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <main class="page-wrapper">
+      <!-- Navbar-->
+      <header class="navbar navbar-expand-lg navbar-dark fixed-top" data-scroll-header>
+        <div class="container"><a class="navbar-brand me-3 me-xl-4" href="car-finder-home.html"><img class="d-block" src="img/logo/logo-light.svg" width="116" alt="Finder"></a>
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="dropdown d-none d-lg-block order-lg-3 my-n2 me-3"><a class="d-block py-2" href="car-finder-account-info.html"><img class="rounded-circle" src="img/avatars/02.jpg" width="40" alt="Robert Fox"></a>
+            <div class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+              <div class="d-flex align-items-start border-bottom border-light px-3 py-1 mb-2" style="width: 16rem;"><img class="rounded-circle" src="img/avatars/01.jpg" width="48" alt="Robert Fox">
+                <div class="ps-2">
+                  <h6 class="fs-base text-light mb-0">Robert Fox</h6><span class="star-rating star-rating-sm"><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i></span>
+                  <div class="fs-xs py-2">(302) 555-0107<br>robert_fox@email.com</div>
+                </div>
+              </div><a class="dropdown-item" href="car-finder-account-info.html"><i class="fi-user me-2"></i>Personal Info</a><a class="dropdown-item" href="car-finder-account-security.html"><i class="fi-lock me-2"></i>Password &amp; Security</a><a class="dropdown-item" href="car-finder-account-cars.html"><i class="fi-car me-2"></i>My Cars</a><a class="dropdown-item" href="car-finder-account-wishlist.html"><i class="fi-heart me-2"></i>Wishlist<span class="badge bg-faded-light ms-2">4</span></a><a class="dropdown-item" href="car-finder-account-reviews.html"><i class="fi-star me-2"></i>Reviews</a><a class="dropdown-item" href="car-finder-account-notifications.html"><i class="fi-bell me-2"></i>Notifications</a>
+              <div class="dropdown-divider"></div><a class="dropdown-item" href="car-finder-help-center.html">Help</a><a class="dropdown-item" href="signin-dark.html">Sign Out</a>
+            </div>
+          </div><a class="btn btn-primary btn-sm ms-2 order-lg-3" href="car-finder-sell-car.html"><i class="fi-plus me-2"></i>Sell car</a>
+          <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+            <ul class="navbar-nav navbar-nav-scroll" style="max-height: 35rem;">
+              <!-- Demos switcher-->
+              <li class="nav-item dropdown me-lg-2"><a class="nav-link dropdown-toggle align-items-center pe-lg-4" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false"><i class="fi-layers me-2"></i>Demos<span class="d-none d-lg-block position-absolute top-50 end-0 translate-middle-y border-end border-light" style="width: 1px; height: 30px;"></span></a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="real-estate-home-v1.html"><i class="fi-building fs-base me-2"></i>Real Estate Demo</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="car-finder-home.html"><i class="fi-car fs-base me-2"></i>Car Finder Demo</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="job-board-home-v1.html"><i class="fi-briefcase fs-base me-2"></i>Job Board Demo</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="city-guide-home-v1.html"><i class="fi-map-pin fs-base me-2"></i>City Guide Demo</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html"><i class="fi-home fs-base me-2"></i>Main Page</a></li>
+                  <li><a class="dropdown-item" href="components/typography.html"><i class="fi-list fs-base me-2"></i>Components</a></li>
+                  <li><a class="dropdown-item" href="docs/dev-setup.html"><i class="fi-file fs-base me-2"></i>Documentation</a></li>
+                </ul>
+              </li>
+              <!-- Menu items-->
+              <li class="nav-item"><a class="nav-link" href="car-finder-home.html">Home</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catalog</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="car-finder-catalog-list.html">List View</a></li>
+                  <li><a class="dropdown-item" href="car-finder-catalog-grid.html">Grid View</a></li>
+                  <li><a class="dropdown-item" href="car-finder-single.html">Car Single Page</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="car-finder-account-info.html">Personal Info</a></li>
+                  <li><a class="dropdown-item" href="car-finder-account-security.html">Password &amp; Security</a></li>
+                  <li><a class="dropdown-item" href="car-finder-account-cars.html">My Cars</a></li>
+                  <li><a class="dropdown-item" href="car-finder-account-wishlist.html">Wishlist</a></li>
+                  <li><a class="dropdown-item" href="car-finder-account-reviews.html">Reviews</a></li>
+                  <li><a class="dropdown-item" href="car-finder-account-notifications.html">Notifications</a></li>
+                  <li><a class="dropdown-item" href="signin-dark.html">Sign In</a></li>
+                  <li><a class="dropdown-item" href="signup-dark.html">Sign Up</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vendor</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="car-finder-sell-car.html">Sell Car</a></li>
+                  <li><a class="dropdown-item" href="car-finder-promotion.html">Ad Promotion Page</a></li>
+                  <li><a class="dropdown-item" href="car-finder-vendor.html">Vendor Page</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="car-finder-about.html">About</a></li>
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="car-finder-blog.html">Blog Grid</a></li>
+                      <li><a class="dropdown-item" href="car-finder-blog-single.html">Single Post</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="car-finder-contacts.html">Contacts</a></li>
+                  <li><a class="dropdown-item" href="car-finder-help-center.html">Help Center</a></li>
+                  <li><a class="dropdown-item" href="car-finder-404.html">404 Not Found</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown d-lg-none"><a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="rounded-circle me-2" src="img/avatars/02.jpg" width="30" alt="Robert Fox">Robert Fox</a>
+                <div class="dropdown-menu dropdown-menu-dark">
+                  <div class="ps-3"><span class="star-rating star-rating-sm"><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i></span>
+                    <div class="fs-xs py-2">(302) 555-0107<br>robert_fox@email.com</div>
+                  </div><a class="dropdown-item" href="car-finder-account-info.html"><i class="fi-user me-2"></i>Personal Info</a><a class="dropdown-item" href="car-finder-account-security.html"><i class="fi-lock me-2"></i>Password &amp; Security</a><a class="dropdown-item" href="car-finder-account-cars.html"><i class="fi-car me-2"></i>My Cars</a><a class="dropdown-item" href="car-finder-account-wishlist.html"><i class="fi-heart me-2"></i>Wishlist<span class="badge bg-faded-light ms-2">4</span></a><a class="dropdown-item" href="car-finder-account-reviews.html"><i class="fi-star me-2"></i>Reviews</a><a class="dropdown-item" href="car-finder-account-notifications.html"><i class="fi-bell me-2"></i>Notifications</a>
+                  <div class="dropdown-divider"></div><a class="dropdown-item" href="car-finder-help-center.html">Help</a><a class="dropdown-item" href="signin-dark.html">Sign Out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- Page content-->
+      <!-- Preview modal-->
+      <div class="modal fade" id="preview-modal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen" role="document">
+          <div class="modal-content bg-dark border-light">
+            <div class="modal-header d-block d-sm-flex border-light">
+              <h3 class="h5 text-light opacity-60 fw-normal modal-title d-none d-sm-block">Ad preview</h3>
+              <div class="d-flex align-items-center"><a class="btn btn-primary btn-sm me-4" href="car-finder-promotion.html">Save and continue</a><span class="fs-xs text-light opacity-60 ms-auto me-2">[ESC]</span>
+                <button class="btn-close btn-close-white ms-0" type="button" data-bs-dismiss="modal"></button>
+              </div>
+            </div>
+            <div class="modal-body p-0">
+              <div class="container mt-2 mt-sm-0 py-4 py-sm-5">
+                <!-- Title-->
+                <h1 class="h2 text-light mb-3 mb-md-4"> Mercedes-Benz E 400 Cabriolet</h1>
+                <div class="d-md-none">
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="h3 mb-0 text-light">$31,900</div>
+                    <div class="text-nowrap ps-3"><span class="badge bg-info fs-base me-2">Used</span><span class="badge bg-success fs-base me-2" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-html="true" data-bs-content="&lt;div class=&quot;d-flex&quot;&gt;&lt;i class=&quot;fi-award mt-1 me-2&quot;&gt;&lt;/i&gt;&lt;div&gt;This car is checked and&lt;br&gt;certified by Finder.&lt;/div&gt;&lt;/div&gt;">Certified</span></div>
+                  </div>
+                  <div class="d-flex flex-wrap align-items-center text-light mb-2">
+                    <div class="text-nowrap border-end border-light pe-3 me-3"><i class="fi-dashboard fs-lg opacity-70 me-2"></i><span class="align-middle">25K miles</span></div>
+                    <div class="text-nowrap"><i class="fi-map-pin fs-lg opacity-70 me-2"></i><span class="align-middle">Chicago, IL 60603</span></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-7">
+                    <!-- Gallery-->
+                    <div class="tns-carousel-wrapper">
+                      <div class="tns-slides-count text-light"><i class="fi-image fs-lg me-2"></i>
+                        <div class="ps-1"><span class="tns-current-slide fs-5 fw-bold"></span><span class="fs-5 fw-bold">/</span><span class="tns-total-slides fs-5 fw-bold"></span></div>
+                      </div>
+                      <div class="tns-carousel-inner" data-carousel-options="{&quot;navAsThumbnails&quot;: true, &quot;navContainer&quot;: &quot;#thumbnails&quot;, &quot;gutter&quot;: 12, &quot;responsive&quot;: {&quot;0&quot;:{&quot;controls&quot;: false},&quot;500&quot;:{&quot;controls&quot;: true}}}">
+                        <div><img class="rounded-3" src="img/car-finder/single/gallery/01.jpg" alt="Image"></div>
+                        <div><img class="rounded-3" src="img/car-finder/single/gallery/02.jpg" alt="Image"></div>
+                        <div><img class="rounded-3" src="img/car-finder/single/gallery/03.jpg" alt="Image"></div>
+                        <div><img class="rounded-3" src="img/car-finder/single/gallery/04.jpg" alt="Image"></div>
+                        <div><img class="rounded-3" src="img/car-finder/single/gallery/05.jpg" alt="Image"></div>
+                      </div>
+                    </div>
+                    <ul class="tns-thumbnails" id="thumbnails">
+                      <li class="tns-thumbnail"><img src="img/car-finder/single/gallery/th01.jpg" alt="Thumbnail"></li>
+                      <li class="tns-thumbnail"><img src="img/car-finder/single/gallery/th02.jpg" alt="Thumbnail"></li>
+                      <li class="tns-thumbnail"><img src="img/car-finder/single/gallery/th03.jpg" alt="Thumbnail"></li>
+                      <li class="tns-thumbnail"><img src="img/car-finder/single/gallery/th04.jpg" alt="Thumbnail"></li>
+                      <li class="tns-thumbnail"><img src="img/car-finder/single/gallery/th05.jpg" alt="Thumbnail"></li>
+                    </ul>
+                    <!-- Specs-->
+                    <div class="pt-3 pb-1">
+                      <h2 class="h4 text-light mb-4">Specifications</h2>
+                      <div class="row text-light">
+                        <div class="col-sm-6 col-md-12 col-lg-6">
+                          <ul class="list-unstyled">
+                            <li class="mb-2"><strong>Manufacturing Year:</strong><span class="opacity-70 ms-1">2018</span></li>
+                            <li class="mb-2"><strong>Mileage:</strong><span class="opacity-70 ms-1">25K miles</span></li>
+                            <li class="mb-2"><strong>Body Type:</strong><span class="opacity-70 ms-1">Convertible</span></li>
+                            <li class="mb-2"><strong>Drivetrain:</strong><span class="opacity-70 ms-1">Front Wheel Drive</span></li>
+                            <li class="mb-2"><strong>Engine:</strong><span class="opacity-70 ms-1">2.5L Turbo 6 Cylinder</span></li>
+                            <li class="mb-2"><strong>Transmission:</strong><span class="opacity-70 ms-1">7-Speed Shiftable Automatic</span></li>
+                          </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-6">
+                          <ul class="list-unstyled">
+                            <li class="mb-2"><strong>Fuel Type:</strong><span class="opacity-70 ms-1">Gasoline</span></li>
+                            <li class="mb-2"><strong>City MPG:</strong><span class="opacity-70 ms-1">20</span><i class='fi-alert-circle fs-sm text-primary ms-2' data-bs-toggle='tooltip' title='Vrified by seller'></i></li>
+                            <li class="mb-2"><strong>Highway MPG:</strong><span class="opacity-70 ms-1">29</span><i class='fi-alert-circle fs-sm text-primary ms-2' data-bs-toggle='tooltip' title='Vrified by seller'></i></li>
+                            <li class="mb-2"><strong>Exterior Color:</strong><span class="opacity-70 ms-1">Aspen White</span></li>
+                            <li class="mb-2"><strong>Interior Color:</strong><span class="opacity-70 ms-1">Charcoal</span></li>
+                            <li class="mb-2"><strong>VIN:</strong><span class="opacity-70 ms-1">2VW821AU9JM754284</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Features-->
+                    <h2 class="h4 text-light pt-3 mb-4">Features</h2>
+                    <div class="accordion accordion-light" id="features-accordion">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingExterior">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#exterior" aria-expanded="false" aria-controls="exterior">Exterior</button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="exterior" aria-labelledby="headingExterior" data-bs-parent="#features-accordion">
+                          <div class="accordion-body fs-sm text-light opacity-70">
+                            <ul>
+                              <li>Alloy Wheels</li>
+                              <li>Sunroof / Moonroof</li>
+                              <li>Tinged glass</li>
+                              <li>LED Headlights</li>
+                              <li>Foldable Roof</li>
+                              <li>Tow Hitch</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingInterior">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#interior" aria-expanded="true" aria-controls="interior">Interior</button>
+                        </h2>
+                        <div class="accordion-collapse collapse show" id="interior" aria-labelledby="headingInterior" data-bs-parent="#features-accordion">
+                          <div class="accordion-body fs-sm text-light opacity-70">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <ul>
+                                  <li>Adjustable Steering Wheel</li>
+                                  <li>Auto-Dimming Rearview Mirror</li>
+                                  <li>Driver Adjustable Lumbar</li>
+                                  <li>Driver Illuminated Vanity Mirror</li>
+                                  <li>Universal Garage Door Opener</li>
+                                  <li>Steering Wheel Audio Controls</li>
+                                </ul>
+                              </div>
+                              <div class="col-sm-6">
+                                <ul>
+                                  <li>Heated Front Seats</li>
+                                  <li>Leather Seats</li>
+                                  <li>Leather Steering Wheel</li>
+                                  <li>Pass-Through Rear Seat</li>
+                                  <li>Passenger Adjustable Lumbar</li>
+                                  <li>Passenger Illuminated Visor Mirror</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSafety">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#safety" aria-expanded="false" aria-controls="safety">Safety</button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="safety" aria-labelledby="headingSafety" data-bs-parent="#features-accordion">
+                          <div class="accordion-body fs-sm text-light opacity-70">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <ul>
+                                  <li>Airbag: Driver</li>
+                                  <li>Airbag: Passenger</li>
+                                  <li>Adaptive Cruise Control</li>
+                                  <li>Blind Spot Monitor</li>
+                                  <li>Alarm</li>
+                                  <li>Antilock Brakes</li>
+                                </ul>
+                              </div>
+                              <div class="col-sm-6">
+                                <ul>
+                                  <li>Brake Assist</li>
+                                  <li>Lane Departure Warning</li>
+                                  <li>Stability Control</li>
+                                  <li>Fog Lights</li>
+                                  <li>Power Door Locks</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTechnology">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#technology" aria-expanded="false" aria-controls="technology">Technology</button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="technology" aria-labelledby="headingTechnology" data-bs-parent="#features-accordion">
+                          <div class="accordion-body fs-sm text-light opacity-70">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <ul>
+                                  <li>Multi-Zone A/C</li>
+                                  <li>Climate Control</li>
+                                  <li>Navigation System</li>
+                                  <li>Remote Start</li>
+                                  <li>Bluetooth</li>
+                                  <li>Remote Start</li>
+                                </ul>
+                              </div>
+                              <div class="col-sm-6">
+                                <ul>
+                                  <li>Apple CarPlay</li>
+                                  <li>Android Auto</li>
+                                  <li>Backup Camera</li>
+                                  <li>HomeLink</li>
+                                  <li>Keyless Start</li>
+                                  <li>Premium Sound System</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Description-->
+                    <div class="pb-4 mb-3">
+                      <h2 class="h4 text-light pt-4 mt-3">Seller's Description</h2>
+                      <p class="text-light opacity-70 mb-1">Lorem tincidunt lectus vitae id vulputate diam quam. Imperdiet non scelerisque turpis sed etiam ultrices. Blandit mollis dignissim egestas consectetur porttitor. Vulputate dolor pretium, dignissim eu augue sit ut convallis. Lectus est, magna urna feugiat sed ultricies sed in lacinia. Fusce potenti sit id pharetra vel ornare. Vestibulum sed tellus ullamcorper arcu.</p>
+                      <div class="collapse" id="seeMoreDescription">
+                        <p class="text-light opacity-70 mb-1">Asperiores eos molestias, aspernatur assumenda vel corporis ex, magni excepturi totam exercitationem quia inventore quod amet labore impedit quae distinctio? Officiis blanditiis consequatur alias, atque, sed est incidunt accusamus repudiandae tempora repellendus obcaecati delectus ducimus inventore tempore harum numquam autem eligendi culpa.</p>
+                      </div><a class="collapse-label collapsed" href="#seeMoreDescription" data-bs-toggle="collapse" data-bs-label-collapsed="Show more" data-bs-label-expanded="Show less" role="button" aria-expanded="false" aria-controls="seeMoreDescription"></a>
+                    </div>
+                    <!-- Post meta-->
+                    <div class="d-flex flex-wrap border-top border-light fs-sm text-light pt-4 pb-2">
+                      <div class="border-end border-light pe-3 me-3"><span class="opacity-70">Published: <strong>May 9, 2021</strong></span></div>
+                      <div class="border-end border-light pe-3 me-3"><span class="opacity-70">Ad number: <strong>681013232</strong></span></div>
+                      <div class="opacity-70">Views: <strong>57</strong></div>
+                    </div>
+                  </div>
+                  <!-- Sidebar-->
+                  <div class="col-md-5 pt-5 pt-md-0 mt-n5">
+                    <div class="sticky-top pt-5">
+                      <div class="d-none d-md-block">
+                        <div class="d-flex mb-4"><span class="badge bg-info fs-base me-2">Used</span><span class="badge bg-success fs-base me-2" data-bs-toggle="popover" data-bs-placement="top" data-bs-trigger="hover" data-bs-html="true" data-bs-content="&lt;div class=&quot;d-flex&quot;&gt;&lt;i class=&quot;fi-award mt-1 me-2&quot;&gt;&lt;/i&gt;&lt;div&gt;This car is checked and&lt;br&gt;certified by Finder.&lt;/div&gt;&lt;/div&gt;">Certified</span></div>
+                        <div class="h3 text-light">$31,900</div>
+                        <div class="d-flex align-items-center text-light pb-4 mb-2">
+                          <div class="text-nowrap border-end border-light pe-3 me-3"><i class="fi-dashboard fs-lg opacity-70 me-2"></i><span class="align-middle">25K miles</span></div>
+                          <div class="text-nowrap"><i class="fi-map-pin fs-lg opacity-70 me-2"></i><span class="align-middle">Chicago, IL 60603</span></div>
+                        </div>
+                      </div>
+                      <div class="card card-light card-body">
+                        <div class="text-light mb-2">Private Seller</div>
+                        <div class="d-flex align-items-center mb-3"><img class="rounded-circle" src="img/avatars/33.jpg" width="48" alt="Devon Lane">
+                          <div class="ps-2">
+                            <h5 class="text-light mb-0">Devon Lane</h5><span class="star-rating"><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i><i class="star-rating-icon fi-star-filled active"></i></span><span class="fs-sm text-light opacity-70 align-middle ms-1">(5 reviews)</span>
+                          </div>
+                        </div><a class="text-light" href="#">Other ads by this seller</a>
+                        <div class="pt-4 mt-2">
+                          <button class="btn btn-outline-light btn-lg px-4 mb-3" type="button"><i class="fi-phone me-2"></i>(316) *** **** – reveal</button><br>
+                          <button class="btn btn-primary btn-lg" type="button"><i class="fi-chat-left me-2"></i>Send message</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page container-->
+      <div class="container mt-5 mb-md-4 py-5">
+        <div class="row">
+          <!-- Page content-->
+          <div class="col-lg-8">
+            <!-- Breadcrumb-->
+            <nav class="mb-3 pt-md-3" aria-label="Breadcrumb">
+              <ol class="breadcrumb breadcrumb-light">
+                <li class="breadcrumb-item"><a href="car-finder-home.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Sell car</li>
+              </ol>
+            </nav>
+            <!-- Title-->
+            <div class="mb-4">
+              <h1 class="h2 text-light mb-0">Sell car</h1>
+              <div class="d-lg-none text-light pt-3 mb-2">80% content filled</div>
+              <div class="progress progress-light d-lg-none mb-4" style="height: .25rem;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <!-- Basic info-->
+            <section class="card card-light card-body border-0 shadow-sm p-4 mb-4" id="basic-info">
+              <h2 class="h4 text-light mb-4"><i class="fi-info-circle text-primary fs-5 mt-n1 me-2"></i>Basic info</h2>
+              <div class="mb-3">
+                <label class="form-label text-light" for="sc-title">Title <span class="text-danger">*</span></label>
+                <input class="form-control form-control-light" type="text" id="sc-title" placeholder="Title for your property" value="Mercedes-Benz E 400 Cabriolet" required><span class="form-text text-light opacity-50">48 characters left</span>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mb-3">
+                  <label class="form-label text-light" for="sc-condition">Vehicle condition <span class="text-danger">*</span></label>
+                  <select class="form-select form-select-light" id="sc-condition" required>
+                    <option value="" disabled hidden>Choose condition</option>
+                    <option value="Used">Used</option>
+                    <option value="New">New</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-label text-light fw-bold pt-3 pb-2">Are you listing on Finder as part of a company?</div>
+              <div class="form-check form-check-light">
+                <input class="form-check-input" type="radio" id="sc-dealer" name="sc-seller-type">
+                <label class="form-check-label" for="sc-dealer">I am a registered dealer</label>
+              </div>
+              <div class="form-check form-check-light">
+                <input class="form-check-input" type="radio" id="sc-individual" name="sc-seller-type" checked>
+                <label class="form-check-label" for="sc-individual">I am a private seller</label>
+              </div>
+            </section>
+            <!-- Price-->
+            <section class="card card-light card-body border-0 shadow-sm p-4 mb-4" id="price">
+              <h2 class="h4 text-light mb-4"><i class="fi-cash text-primary fs-5 mt-n1 me-2"></i>Price</h2>
+              <label class="form-label text-light" for="sc-price">Price <span class="text-danger">*</span></label>
+              <div class="d-sm-flex mb-2">
+                <select class="form-select form-select-light w-25 me-2 mb-2">
+                  <option value="usd">&#36;</option>
+                  <option value="eur">&#8364;</option>
+                  <option value="gbp">&#163;</option>
+                  <option value="jpy">&#165;</option>
+                </select>
+                <input class="form-control form-control-light w-100 me-2 mb-2" type="number" id="sc-price" min="200" step="50" value="31900" required>
+              </div>
+              <div class="form-check form-switch form-switch-light">
+                <input class="form-check-input" type="checkbox" id="negotiated-price">
+                <label class="form-check-label" for="negotiated-price">Negotiated price</label>
+              </div>
+            </section>
+            <!-- Vehicle information-->
+            <section class="card card-light card-body border-0 shadow-sm p-4 mb-4" id="vehicle-info">
+              <h2 class="h4 text-light mb-4"><i class="fi-car text-primary fs-5 mt-n1 me-2"></i>Vehicle information</h2>
+              <div class="row pb-2">
+                <div class="col-sm-6 mb-3">
+                  <label class="form-label text-light" for="sc-make">Make <span class="text-danger">*</span></label>
+                  <select class="form-select form-select-light" id="sc-make">
+                    <option value="" disabled>Select make</option>
+                    <option value="Acura">Acura</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Citroen">Citroen</option>
+                    <option value="Lexus">Lexus</option>
+                    <option value="Mercedes-Benz" selected>Mercedes-Benz</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Toyota">Toyota</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 mb-3">
+                  <label class="form-label text-light" for="sc-model">Model <span class="text-danger">*</span></label>
+                  <select class="form-select form-select-light" id="sc-model">
+                    <option value="" disabled>Select model</option>
+                    <option value="A-Class">A-Class</option>
+                    <option value="B-Class">B-Class</option>
+                    <option value="C-Class">C-Class</option>
+                    <option value="E 220">E 220</option>
+                    <option value="E 400" selected>E 400</option>
+                    <option value="GLS 550">GLS 550</option>
+                    <option value="GLE-Class">GLE-Class</option>
+                    <option value="ML 350">ML 350</option>
+                    <option value="Viano">Viano</option>
+                  </select>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                  <label class="form-label text-light" for="sc-year">Year <span class="text-danger">*</span></label>
+                  <select class="form-select form-select-light" id="sc-year">
+                    <option value="" disabled>Select year</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018" selected>2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                  </select>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                  <label class="form-label text-light" for="sc-mileage">Mileage <span class="text-danger">*</span></label>
+                  <input class="form-control form-control-light" type="number" id="sc-mileage" min="200" step="100" value="25000" placeholder="Enter mileage">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label text-light" for="sc-vin">VIN</label>
+                  <input class="form-control form-control-light" type="text" id="sc-vin" value="2VW821AU9JM754284" placeholder="Enter VIN code">
+                </div>
+              </div>
+              <div class="border-top border-light mt-2 pt-4">
+                <div class="row pb-2">
+                  <div class="col-md-6">
+                    <label class="form-label text-light" for="sc-body">Body type <span class="text-danger">*</span></label>
+                    <select class="form-select form-select-light mb-3" id="sc-body">
+                      <option value="" disabled>Select body type</option>
+                      <option value="Compact">Compact</option>
+                      <option value="Convertible" selected>Convertible</option>
+                      <option value="Crossover">Crossover</option>
+                      <option value="Coupe">Coupe</option>
+                      <option value="Family MPV">Family MPV</option>
+                      <option value="Pickup">Pickup</option>
+                      <option value="Sedan">Sedan</option>
+                      <option value="SUV">SUV</option>
+                      <option value="Wagon">Wagon</option>
+                    </select>
+                    <label class="form-label text-light" for="sc-fuel">Fuel type <span class="text-danger">*</span></label>
+                    <select class="form-select form-select-light mb-3" id="sc-fuel">
+                      <option value="" disabled>Select fuel type</option>
+                      <option value="Gasoline" selected>Gasoline</option>
+                      <option value="Diesel">Diesel</option>
+                      <option value="Hybrid">Hybrid</option>
+                      <option value="Electric">Electric</option>
+                    </select>
+                    <label class="form-label text-light" for="sc-engine">Engine <span class="text-danger">*</span></label>
+                    <select class="form-select form-select-light mb-3" id="sc-engine">
+                      <option value="" disabled>Select engine</option>
+                      <option value="1.5 Turbo 3 Cylinder Engine">1.5 Turbo 3 Cylinder Engine</option>
+                      <option value="2.4L 4 Cylinder Engine">2.4L 4 Cylinder Engine</option>
+                      <option value="3.5L 4 Cylinder Engine">3.5L 4 Cylinder Engine</option>
+                      <option value="2.5L Turbo 6 Cylinder" selected>2.5L Turbo 6 Cylinder</option>
+                    </select>
+                    <label class="form-label text-light" for="sc-transmission">Transmission <span class="text-danger">*</span></label>
+                    <select class="form-select form-select-light mb-3" id="sc-transmission">
+                      <option value="" disabled>Select transmission</option>
+                      <option value="Manual">Manual</option>
+                      <option value="Automatic" selected>Automatic</option>
+                    </select>
+                    <label class="form-label text-light" for="sc-drivetrain">Drivetrain <span class="text-danger">*</span></label>
+                    <select class="form-select form-select-light mb-3" id="sc-drivetrain">
+                      <option value="" disabled>Select drivetrain</option>
+                      <option value="Front Wheel Drive" selected>Front Wheel Drive</option>
+                      <option value="Rear Wheel Drive">Rear Wheel Drive</option>
+                      <option value="All Wheel Drive">All Wheel Drive</option>
+                    </select>
+                    <label class="form-label text-light" for="sc-color">Color </label>
+                    <input class="form-control form-control-light mb-3" type="text" id="sc-color" value="Aspen White" placeholder="Enter color">
+                  </div>
+                </div>
+              </div>
+              <div class="border-top border-light mt-2 pt-4">
+                <label class="form-label text-light" for="sc-description">Description </label>
+                <textarea class="form-control form-control-light" id="sc-description" rows="5" placeholder="Describe your vehicle"></textarea><span class="form-text text-light opacity-50">3000 characters left</span>
+              </div>
+            </section>
+            <!-- Features-->
+            <section class="card card-light card-body border-0 shadow-sm p-4 mb-4" id="features">
+              <h2 class="h4 text-light mb-4"><i class="fi-check-circle text-primary fs-5 mt-n1 me-2"></i>Features</h2>
+              <div class="mb-4">
+                <label class="form-label d-block text-light fw-bold mb-2 pb-1">Exterior</label>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-check form-check-light">
+                      <input class="form-check-input" type="checkbox" id="alloy-wheels">
+                      <label class="form-check-label" for="alloy-wheels">Alloy wheels</label>
+                    </div>
+                    <div class="form-check form-check-light">
+                      <input class="form-check-input" type="checkbox" id="sunroof">
+                      <label class="form-check-label" for="sunroof">Sunroof / moonroof</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-check form-check-light">
+                      <input class="form-check-input" type="checkbox" id="panoramic-roof">
+                      <label class="form-check-label" for="panoramic-roof">Panoramic roof</label>
+                    </div>
+                    <div class="form-check form-check-light">
+                      <input class="form-check-input" type="checkbox" id="tinted-glass">
+                      <label class="form-check-label" for="tinted-glass">Tinted glass</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label class="form-label d-block text-light fw-bold mb-2 pb-1">Interior</label>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-check form-check-light">
+                      <input class="form-check-input" type="checkbox" id="ac">
+                      <label class="form-check-label" for="ac">Multi-zone A/C</label>
+                    </div>
+                    <div class="form-check form-check-light">
+                      <input class="form-check-input" type="checkbox" id="heated-seats">
+                      <label class="form-check-label" for="heated-seats">Heated front seats</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-check form-check-light">
+                      <input class="form-check-input" type="checkbox" id="navi">
+                      <label class="form-check-label" for="navi">Navigation system</label>
+                    </div>
+                    <div class="form-check form-check-light">
+                      <input class="form-check-input" type="checkbox" id="leather-seats">
+                      <label class="form-check-label" for="leather-seats">Leather seats</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-check form-check-light">
+                      <input class="form-check-input" type="checkbox" id="wipers">
+                      <label class="form-check-label" for="wipers">Intermittent wipers</label>
+                    </div>
+                    <div class="form-check form-check-light">
+                      <input class="form-check-input" type="checkbox" id="memory-seat">
+                      <label class="form-check-label" for="memory-seat">Memory seat</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="moreInterior">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-check form-check-light">
+                        <input class="form-check-input" type="checkbox" id="premium-sound">
+                        <label class="form-check-label" for="premium-sound">Premium sound system</label>
+                      </div>
+                      <div class="form-check form-check-light">
+                        <input class="form-check-input" type="checkbox" id="bluetooth">
+                        <label class="form-check-label" for="bluetooth">Bluetooth</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-check form-check-light">
+                        <input class="form-check-input" type="checkbox" id="usb">
+                        <label class="form-check-label" for="usb">USB port</label>
+                      </div>
+                      <div class="form-check form-check-light">
+                        <input class="form-check-input" type="checkbox" id="leather-wheel">
+                        <label class="form-check-label" for="leather-wheel">Leather steering wheel</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-check form-check-light">
+                        <input class="form-check-input" type="checkbox" id="apple-play">
+                        <label class="form-check-label" for="apple-play">Apple CarPlay</label>
+                      </div>
+                      <div class="form-check form-check-light">
+                        <input class="form-check-input" type="checkbox" id="android-auto">
+                        <label class="form-check-label" for="android-auto">Android Auto</label>
+                      </div>
+                    </div>
+                  </div>
+                </div><a class="collapse-label collapsed fs-sm" href="#moreInterior" data-bs-toggle="collapse" data-bs-label-collapsed="Show more" data-bs-label-expanded="Show less" role="button" aria-expanded="false" aria-controls="moreInterior"></a>
+              </div>
+              <div class="mb-4">
+                <label class="form-label d-block text-light fw-bold mb-2 pb-1">Safety</label>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-check form-check-light">
+                      <input class="form-check-input" type="checkbox" id="airbag-driver">
+                      <label class="form-check-label" for="airbag-driver">Airbag: driver</label>
+                    </div>
+                    <div class="form-check form-check-light">
+                      <input class="form-check-input" type="checkbox" id="airbag-pasenger">
+                      <label class="form-check-label" for="airbag-pasenger">Airbag: passenger</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-check form-check-light">
+                      <input class="form-check-input" type="checkbox" id="alarm">
+                      <label class="form-check-label" for="alarm">Alarm</label>
+                    </div>
+                    <div class="form-check form-check-light">
+                      <input class="form-check-input" type="checkbox" id="antilock">
+                      <label class="form-check-label" for="antilock">Antilock brakes</label>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-check form-check-light">
+                      <input class="form-check-input" type="checkbox" id="stability-control">
+                      <label class="form-check-label" for="stability-control">Stability control</label>
+                    </div>
+                    <div class="form-check form-check-light">
+                      <input class="form-check-input" type="checkbox" id="fog-lights">
+                      <label class="form-check-label" for="fog-lights">Fog lights</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="moreSafety">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="form-check form-check-light">
+                        <input class="form-check-input" type="checkbox" id="adaptive-cruise">
+                        <label class="form-check-label" for="adaptive-cruise">Adaptive cruise control</label>
+                      </div>
+                      <div class="form-check form-check-light">
+                        <input class="form-check-input" type="checkbox" id="blind-monitor">
+                        <label class="form-check-label" for="blind-monitor">Blind spot monitor</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="form-check form-check-light">
+                        <input class="form-check-input" type="checkbox" id="brake-assist">
+                        <label class="form-check-label" for="brake-assist">Brake assist</label>
+                      </div>
+                      <div class="form-check form-check-light">
+                        <input class="form-check-input" type="checkbox" id="lane-warning">
+                        <label class="form-check-label" for="lane-warning">Lane departure warning</label>
+                      </div>
+                    </div>
+                  </div>
+                </div><a class="collapse-label collapsed fs-sm" href="#moreSafety" data-bs-toggle="collapse" data-bs-label-collapsed="Show more" data-bs-label-expanded="Show less" role="button" aria-expanded="false" aria-controls="moreSafety"></a>
+              </div>
+            </section>
+            <!-- Photos / video-->
+            <section class="card card-light card-body shadow-sm p-4 mb-4" id="photos">
+              <h2 class="h4 text-light mb-4"><i class="fi-image text-primary fs-5 mt-n1 me-2"></i>Photos / video</h2>
+              <div class="alert alert-warning bg-faded-warning border-warning mb-4" role="alert">
+                <div class="d-flex"><i class="fi-alert-circle me-2 me-sm-3"></i>
+                  <p class="fs-sm mb-1">The maximum photo size is 8 MB. Formats: jpeg, jpg, png. Put the main picture first.<br>The maximum video size is 10 MB. Formats: mp4, mov.</p>
+                </div>
+              </div>
+              <input class="file-uploader file-uploader-grid bg-faded-light border-light" type="file" multiple data-max-file-size="10MB" accept="image/png, image/jpeg, video/mp4, video/mov" data-label-idle="&lt;div class=&quot;btn btn-primary mb-3&quot;&gt;&lt;i class=&quot;fi-cloud-upload me-1&quot;&gt;&lt;/i&gt;Upload photos / video&lt;/div&gt;&lt;div class=&quot;text-light opacity-70&quot;&gt;or drag them in&lt;/div&gt;">
+            </section>
+            <!-- Location-->
+            <section class="card card-light card-body border-0 shadow-sm p-4 mb-4" id="location">
+              <h2 class="h4 text-light mb-4"><i class="fi-map-pin text-primary fs-5 mt-n1 me-2"></i>Location</h2>
+              <div class="row">
+                <div class="col-sm-6 mb-3">
+                  <label class="form-label text-light" for="sc-country">Country / region <span class="text-danger">*</span></label>
+                  <select class="form-select form-select-light" id="sc-country" required>
+                    <option value="" disabled>Choose country</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Germany">Germany</option>
+                    <option value="United States" selected>United States</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 mb-3">
+                  <label class="form-label text-light" for="sc-state">State <span class="text-danger">*</span></label>
+                  <select class="form-select form-select-light" id="sc-state" required>
+                    <option value="" disabled>Choose state</option>
+                    <option value="Alabama">Alabama</option>
+                    <option value="California">California</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Illinois" selected>Illinois</option>
+                    <option value="Indiana">Indiana</option>
+                    <option value="Kansas">Kansas</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-8 mb-3">
+                  <label class="form-label text-light" for="sc-city">City <span class="text-danger">*</span></label>
+                  <select class="form-select form-select-light" id="sc-city" required>
+                    <option value="" disabled>Choose city</option>
+                    <option value="Chicago" selected>Chicago</option>
+                    <option value="Dallas">Dallas</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="New York">New York</option>
+                    <option value="San Diego">San Diego</option>
+                  </select>
+                </div>
+                <div class="col-sm-4 mb-3">
+                  <label class="form-label text-light" for="sc-zip">Zip code  <span class="text-danger">*</span></label>
+                  <input class="form-control form-control-light" type="text" id="sc-zip" placeholder="Enter Zip code" value="60603" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-light" for="ap-address">Street address <span class="text-danger">*</span></label>
+                <input class="form-control form-control-light" type="text" id="ap-address" value="1904 S Michigan Avenue" required>
+              </div>
+              <div class="form-label text-light fw-bold pt-3 pb-2">Display on the map</div>
+              <div class="interactive-map rounded-3" data-map-options="{&quot;mapLayer&quot;: &quot;https://api.maptiler.com/maps/pastel/{z}/{x}/{y}.png?key=5vRQzd34MMsINEyeKPIs&quot;, &quot;coordinates&quot;: [41.75, -87.7], &quot;zoom&quot;: 9, &quot;scrollWheelZoom&quot;: false, &quot;markers&quot;: [{&quot;coordinates&quot;: [41.75, -87.7], &quot;className&quot;: &quot;custom-marker-dot&quot;, &quot;popup&quot;: &quot;&lt;div class='p-3'&gt;&lt;h6 class='fs-base'&gt;Mercedes-Benz E 400&lt;/h6&gt;&lt;p class='fs-xs text-muted pt-1 mt-n3 mb-0'&gt;1904 S Michigan Avenue, Chicago, IL&lt;/p&gt;&lt;/div&gt;&quot;}]}" style="height: 250px;"></div>
+            </section>
+            <!-- Contacts-->
+            <section class="card card-light card-body border-0 shadow-sm p-4 mb-4" id="contacts">
+              <h2 class="h4 text-light mb-4"><i class="fi-phone text-primary fs-5 mt-n1 me-2"></i>Contacts</h2>
+              <div class="row">
+                <div class="col-sm-6 mb-3">
+                  <label class="form-label text-light" for="sc-fn">First name <span class="text-danger">*</span></label>
+                  <input class="form-control form-control-light" type="text" id="sc-fn" value="Devon" placeholder="Enter your first name" required>
+                </div>
+                <div class="col-sm-6 mb-3">
+                  <label class="form-label text-light" for="sc-sn">Second name <span class="text-danger">*</span></label>
+                  <input class="form-control form-control-light" type="text" id="sc-sn" value="Lane" placeholder="Enter your second name" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 mb-3">
+                  <label class="form-label text-light" for="sc-email">Email<span class="text-danger">*</span></label>
+                  <input class="form-control form-control-light" type="text" id="sc-email" value="devone_lane@email.com" placeholder="Enter your email">
+                </div>
+                <div class="col-sm-6 mb-3">
+                  <label class="form-label text-light" for="sc-phone">Phone number <span class="text-danger">*</span></label>
+                  <input class="form-control form-control-light" type="tel" id="sc-phone" data-format="custom" data-delimiter="-" data-blocks="3 3 4" value="316-442-0597" placeholder="000-000-0000">
+                </div>
+              </div>
+              <label class="form-label text-light" for="sc-website">Website</label>
+              <input class="form-control form-control-light mb-3" type="text" id="sc-website" placeholder="Enter company name">
+              <div class="text-light py-3">Social accounts</div>
+              <div class="d-flex align-items-center mb-3">
+                <div class="btn btn-icon btn-translucent-light btn-xs rounded-circle pe-none flex-shrink-0 me-3"><i class="fi-facebook"></i></div>
+                <input class="form-control form-control-light" type="text" placeholder="Your Facebook account">
+              </div>
+              <div class="d-flex align-items-center mb-3">
+                <div class="btn btn-icon btn-translucent-light btn-xs rounded-circle pe-none flex-shrink-0 me-3"><i class="fi-linkedin"></i></div>
+                <input class="form-control form-control-light" type="text" placeholder="Your LinkedIn account">
+              </div>
+              <div class="d-flex align-items-center mb-3">
+                <div class="btn btn-icon btn-translucent-light btn-xs rounded-circle pe-none flex-shrink-0 me-3"><i class="fi-twitter"></i></div>
+                <input class="form-control form-control-light" type="text" placeholder="Your Twitter account">
+              </div>
+              <div class="collapse" id="showMoreSocials">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="btn btn-icon btn-translucent-light btn-xs rounded-circle pe-none flex-shrink-0 me-3"><i class="fi-instagram"></i></div>
+                  <input class="form-control form-control-light" type="text" placeholder="Your Instagram account">
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <div class="btn btn-icon btn-translucent-light btn-xs rounded-circle pe-none flex-shrink-0 me-3"><i class="fi-pinterest"></i></div>
+                  <input class="form-control form-control-light" type="text" placeholder="Your Pinterest account">
+                </div>
+              </div><a class="nav-link-light collapse-label collapsed d-inline-block fs-sm fw-bold pt-2 pb-3" href="#showMoreSocials" data-bs-toggle="collapse" data-bs-label-collapsed="Show more" data-bs-label-expanded="Show less" role="button" aria-expanded="false" aria-controls="showMoreSocials"><i class="fi-arrow-down me-2"></i></a>
+            </section>
+            <div class="d-sm-flex justify-content-between pt-2"><a class="btn btn-outline-light btn-lg d-block mb-3 mb-sm-2" href="#preview-modal" data-bs-toggle="modal"><i class="fi-eye-on ms-n1 me-2"></i>Preview</a><a class="btn btn-primary btn-lg d-block mb-2" href="car-finder-promotion.html">Save and continue</a></div>
+          </div>
+          <!-- Progress of completion-->
+          <aside class="col-lg-3 offset-lg-1 d-none d-lg-block">
+            <div class="sticky-top pt-5">
+              <h6 class="text-light pt-5 mt-3 mb-2">80% content filled</h6>
+              <div class="progress progress-light mb-4" style="height: .25rem;">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <ul class="list-unstyled">
+                <li class="d-flex align-items-center"><i class="fi-check text-primary me-2"></i><a class="nav-link-light ps-1" href="#basic-info" data-scroll data-scroll-offset="20">Basic info</a></li>
+                <li class="d-flex align-items-center"><i class="fi-check text-primary me-2"></i><a class="nav-link-light ps-1" href="#price" data-scroll data-scroll-offset="20">Price</a></li>
+                <li class="d-flex align-items-center"><i class="fi-check text-primary me-2"></i><a class="nav-link-light ps-1" href="#vehicle-info" data-scroll data-scroll-offset="20">Vehicle information</a></li>
+                <li class="d-flex align-items-center"><i class="fi-check text-light opacity-60 me-2"></i><a class="nav-link-light ps-1" href="#features" data-scroll data-scroll-offset="20">Features</a></li>
+                <li class="d-flex align-items-center"><i class="fi-check text-light opacity-60 me-2"></i><a class="nav-link-light ps-1" href="#photos" data-scroll data-scroll-offset="20">Photos / video</a></li>
+                <li class="d-flex align-items-center"><i class="fi-check text-primary me-2"></i><a class="nav-link-light ps-1" href="#location" data-scroll data-scroll-offset="20">Location</a></li>
+                <li class="d-flex align-items-center"><i class="fi-check text-primary me-2"></i><a class="nav-link-light ps-1" href="#contacts" data-scroll data-scroll-offset="20">Contacts</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <!-- Footer-->
+    <footer class="footer bg-faded-light">
+      <div class="border-bottom border-light py-4">
+        <div class="container d-sm-flex align-items-center justify-content-between"><a class="d-inline-block" href="real-estate-home-v1.html"><img src="img/logo/logo-light.svg" width="116" alt="logo"></a>
+          <div class="d-flex pt-3 pt-sm-0">
+            <div class="dropdown ms-n3">
+              <button class="btn btn-light btn-link btn-sm dropdown-toggle fw-normal py-2" type="button" data-bs-toggle="dropdown"><i class="fi-globe me-2"></i>Eng</button>
+              <div class="dropdown-menu dropdown-menu-dark w-100"><a class="dropdown-item" href="#">Deutsch</a><a class="dropdown-item" href="#">Français</a><a class="dropdown-item" href="#">Español</a></div>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-light btn-link btn-sm dropdown-toggle fw-normal py-2 pe-0" type="button" data-bs-toggle="dropdown"><i class="fi-map-pin me-2"></i>New York</button>
+              <div class="dropdown-menu dropdown-menu-dark dropdown-menu-sm-end" style="min-width: 7.5rem;"><a class="dropdown-item" href="#">Chicago</a><a class="dropdown-item" href="#">Dallas</a><a class="dropdown-item" href="#">Los Angeles</a><a class="dropdown-item" href="#">San Diego</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-4 pb-3 pt-lg-5 pb-lg-4">
+        <div class="row pt-2 pt-lg-0">
+          <div class="col-lg-3 pb-2 mb-4">
+            <h3 class="h5 text-light mb-2">Subscribe to our newsletter</h3>
+            <p class="fs-sm text-light opacity-70">Don’t miss any relevant offers!</p>
+            <form class="form-group form-group-light w-100">
+              <div class="input-group input-group-sm"><span class="input-group-text"> <i class="fi-mail"></i></span>
+                <input class="form-control" type="text" placeholder="Your email">
+              </div>
+              <button class="btn btn-primary btn-icon btn-sm" type="button"><i class="fi-send"></i></button>
+            </form>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 offset-xl-1 mb-2 mb-sm-4">
+            <h3 class="fs-base text-light">Buying &amp; Selling</h3>
+            <ul class="list-unstyled fs-sm">
+              <li><a class="nav-link-light" href="#">Find a car</a></li>
+              <li><a class="nav-link-light" href="#">Sell your car</a></li>
+              <li><a class="nav-link-light" href="#">Car dealers</a></li>
+              <li><a class="nav-link-light" href="#">Compare cars</a></li>
+              <li><a class="nav-link-light" href="#">Online car appraisal</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 mb-2 mb-sm-4">
+            <h3 class="fs-base text-light">About</h3>
+            <ul class="list-unstyled fs-sm">
+              <li><a class="nav-link-light" href="#">About Finder</a></li>
+              <li><a class="nav-link-light" href="#">Contact us</a></li>
+              <li><a class="nav-link-light" href="#">FAQs &amp; support</a></li>
+              <li><a class="nav-link-light" href="#">Mobile app</a></li>
+              <li><a class="nav-link-light" href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 mb-2 mb-sm-4">
+            <h3 class="fs-base text-light">Profile</h3>
+            <ul class="list-unstyled fs-sm">
+              <li><a class="nav-link-light" href="#">My account</a></li>
+              <li><a class="nav-link-light" href="#">Wishlist</a></li>
+              <li><a class="nav-link-light" href="#">My listings</a></li>
+              <li><a class="nav-link-light" href="#">Add listing</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-sm-6 col-md-3 mb-2 mb-sm-4"><a class="d-flex align-items-center text-decoration-none mb-2" href="tel:4065550120"><i class="fi-device-mobile me-2"></i><span class="text-light">(406) 555-0120</span></a><a class="d-flex align-items-center text-decoration-none mb-2" href="mailto:example@email.com"><i class="fi-mail me-2"></i><span class="text-light">example@email.com</span></a>
+            <div class="d-flex flex-wrap pt-4"><a class="btn btn-icon btn-translucent-light btn-xs rounded-circle mb-2 me-2" href="#"><i class="fi-facebook"></i></a><a class="btn btn-icon btn-translucent-light btn-xs rounded-circle mb-2 me-2" href="#"><i class="fi-twitter"></i></a><a class="btn btn-icon btn-translucent-light btn-xs rounded-circle mb-2 me-2" href="#"><i class="fi-telegram"></i></a><a class="btn btn-icon btn-translucent-light btn-xs rounded-circle mb-2" href="#"><i class="fi-messenger"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="container d-lg-flex align-items-center justify-content-between fs-sm pb-3">
+        <div class="d-flex flex-wrap justify-content-center order-lg-2 mb-3"><a class="nav-link nav-link-light fw-normal" href="#">Terms of use</a><a class="nav-link nav-link-light fw-normal" href="#">Privacy policy</a><a class="nav-link nav-link-light fw-normal" href="#">Accessibility statement</a><a class="nav-link nav-link-light fw-normal pe-0" href="#">Interest based ads</a></div>
+        <p class="text-center text-lg-start order-lg-1 mb-lg-0"><span class="text-light opacity-50">&copy; All rights reserved. Made by </span><a class="nav-link-light fw-bold" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a></p>
+      </div>
+    </footer>
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon fi-chevron-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/leaflet/dist/leaflet.js"></script>
+    <script src="vendor/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.min.js"></script>
+    <script src="vendor/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.min.js"></script>
+    <script src="vendor/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"></script>
+    <script src="vendor/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.min.js"></script>
+    <script src="vendor/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.min.js"></script>
+    <script src="vendor/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.min.js"></script>
+    <script src="vendor/filepond/dist/filepond.min.js"></script>
+    <script src="vendor/cleave.js/dist/cleave.min.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from finder.createx.studio/car-finder-sell-car.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:21:44 GMT -->
+</html>

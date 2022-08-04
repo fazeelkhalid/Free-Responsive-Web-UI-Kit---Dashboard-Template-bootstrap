@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from finder.createx.studio/components/carousel.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:22:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Finder | Carousel (Slider)</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Finder - Directory &amp; Listings Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, directory, listings, e-commerce, car dealer, city guide, real estate, job board, user account, multipurpose, ui kit, html5, css3, javascript, gallery, slider, touch">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="../vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/prismjs/themes/prism.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/prismjs/plugins/toolbar/prism-toolbar.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/prismjs/plugins/line-numbers/prism-line-numbers.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/tiny-slider/dist/tiny-slider.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+    <main class="container-fluid px-xl-4 pb-3 pb-lg-4">
+      <!-- Main content-->
+      <section class="offcanvas-enabled-start row">
+        <div class="col-xl-9">
+          <!-- Navbar-->
+          <header class="navbar navbar-expand justify-content-end navbar-light bg-light fixed-top shadow-sm px-3 px-xl-4" data-scroll-header data-fixed-element><a class="navbar-brand d-lg-none" href="typography.html"><img src="../img/logo/logo-dark.svg" width="116" alt="Finder"></a>
+            <button class="navbar-toggler d-block d-lg-none me-3 ms-auto border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#componentsNav"><span class="navbar-toggler-icon"></span></button>
+            <ul class="navbar-nav ms-auto d-none d-lg-flex">
+              <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fi-eye-on align-middle fs-base me-2"></i>Live preview</a></li>
+              <li class="nav-item mx-2 border-end"></li>
+              <li class="nav-item"><a class="nav-link" href="../docs/dev-setup.html"><i class="fi-file align-middle fs-base me-2"></i>Documentation</a></li>
+              <li class="nav-item mx-2 border-end"></li>
+            </ul><a class="btn btn-primary ms-lg-3" href="https://themes.getbootstrap.com/product/finder-directory-listings-template-ui-kit/" target="_blank" rel="noopener"><i class="fi-cart me-2 d-none d-sm-inline-block fs-lg"></i>Buy now</a>
+          </header>
+          <!-- Side navigation (Offcanvas)-->
+          <aside class="offcanvas offcanvas-start offcanvas-expand bg-dark" id="componentsNav">
+            <div class="offcanvas-header d-none d-lg-block pt-3 pb-4 bg-dark"><a class="navbar-brand py-2" href="typography.html"><img src="../img/logo/logo-light.svg" width="116" alt="Finder"></a><span class="badge bg-success">UI Kit</span></div>
+            <div class="offcanvas-header d-flex d-lg-none align-items-center">
+              <div class="d-flex align-items-center">
+                <h5 class="offcanvas-title me-3 text-white">Menu</h5><span class="badge bg-success">UI Kit</span>
+              </div>
+              <button class="btn-close btn-close-white" type="button" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="d-flex d-lg-none align-items-center py-4 px-3 border-top border-bottom border-light"><a class="btn btn-light btn-sm d-block w-100 me-2" href="../index.html"><i class="fi-eye-on me-2 fs-base"></i>Preview</a><a class="btn btn-info btn-sm d-block w-100" href="../docs/dev-setup.html"><i class="fi-file me-2 fs-base"></i>Documentation</a></div>
+            <div class="offcanvas-body pt-lg-2 pb-4" data-simplebar data-simplebar-inverse>
+              <h6 class="fs-base text-light mb-1 py-2">Content</h6>
+              <nav class="nav nav-light flex-column"><a class="nav-link fs-sm" href="typography.html">Typography</a><a class="nav-link fs-sm" href="icon-font.html">Icon font</a><a class="nav-link fs-sm" href="code.html">Code</a><a class="nav-link fs-sm" href="images.html">Images &amp; figures</a><a class="nav-link fs-sm" href="tables.html">Tables</a></nav>
+              <hr class="text-light opacity-15 mx-n4 mt-4">
+              <h6 class="fs-base text-light mx-n4 mb-1 pt-4 pb-2 px-4">Components</h6>
+              <nav class="nav nav-light flex-column"><a class="nav-link fs-sm" href="accordion.html">Accordion</a><a class="nav-link fs-sm" href="alerts.html">Alerts</a><a class="nav-link fs-sm" href="badge.html">Badges</a><a class="nav-link fs-sm" href="breadcrumb.html">Breadcrumb</a><a class="nav-link fs-sm" href="buttons.html">Buttons</a><a class="nav-link fs-sm" href="button-group.html">Button group</a><a class="nav-link fs-sm" href="cards-basic.html">Cards: Basic</a><a class="nav-link fs-sm" href="cards-advanced.html">Cards: Advanced</a><a class="nav-link fs-sm active" href="carousel.html">Carousel (Slider)</a><a class="nav-link fs-sm" href="collapse.html">Collapse</a><a class="nav-link fs-sm" href="date-picker.html">Date / time picker</a><a class="nav-link fs-sm" href="dropdowns.html">Dropdowns</a><a class="nav-link fs-sm" href="file-uploader.html">File uploader</a><a class="nav-link fs-sm" href="forms.html">Forms</a><a class="nav-link fs-sm" href="form-group.html">Form group</a><a class="nav-link fs-sm" href="gallery.html">Gallery</a><a class="nav-link fs-sm" href="input-group.html">Input group</a><a class="nav-link fs-sm" href="icon-box.html">Icon box</a><a class="nav-link fs-sm" href="maps.html">Interactive maps</a><a class="nav-link fs-sm" href="list-group.html">List group</a><a class="nav-link fs-sm" href="modal.html">Modal</a><a class="nav-link fs-sm" href="navbar.html">Navbar</a><a class="nav-link fs-sm" href="offcanvas.html">Offcanvas</a><a class="nav-link fs-sm" href="pagination.html">Pagination</a><a class="nav-link fs-sm" href="parallax.html">Parallax</a><a class="nav-link fs-sm" href="pills.html">Pills</a><a class="nav-link fs-sm" href="placeholders.html">Placeholders</a><a class="nav-link fs-sm" href="popovers.html">Popovers</a><a class="nav-link fs-sm" href="pricing.html">Pricing</a><a class="nav-link fs-sm" href="progress.html">Progress</a><a class="nav-link fs-sm" href="social-buttons.html">Social buttons</a><a class="nav-link fs-sm" href="spinners.html">Spinners</a><a class="nav-link fs-sm" href="steps.html">Steps</a><a class="nav-link fs-sm" href="tabs.html">Tabs</a><a class="nav-link fs-sm" href="testimonials.html">Testimonials / reviews</a><a class="nav-link fs-sm" href="toasts.html">Toasts</a><a class="nav-link fs-sm" href="tooltips.html">Tooltips</a></nav>
+              <hr class="text-light opacity-15 mx-n4 mt-4">
+              <h6 class="fs-base text-light mx-n4 mb-1 pt-4 pb-2 px-4">Utilities</h6>
+              <nav class="nav nav-light flex-column"><a class="nav-link fs-sm" href="https://getbootstrap.com/docs/5.1/utilities/background/" target="_blank" rel="noopener">Bootstrap</a><a class="nav-link fs-sm" href="utilities.html">Finder</a></nav>
+            </div>
+          </aside>
+          <!-- Page title-->
+          <div class="border-bottom mb-5 pt-5">
+            <h1 class="mt-5 pt-4">Carousel (Slider)</h1>
+            <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
+              <p class="text-muted">A slideshow component for cycling through elements (images or slides with any content) like a carousel.</p>
+              <div class="ps-md-4 mb-3"><span class="badge bg-success">Finder component</span></div>
+            </div>
+          </div>
+          <div class="alert alert-info mb-4" role="alert">
+            <div class="d-flex"><i class="fi-alert-circle lead me-2 me-sm-3"></i>
+              <div class="text-break">
+                <p class="mb-1">Make sure to link to <strong>Tiny Slider css and js</strong> files in your document: <strong>vendor/tiny-slider/dist/tiny-slider.css</strong> and <strong>vendor/tiny-slider/dist/min/tiny-slider.js</strong>. Use this page as a reference.</p>
+              </div>
+            </div>
+          </div>
+          <style>
+            .example-code {
+              padding-top: 0 !important;
+            }
+            div.code-toolbar > .example-code + .toolbar {
+              display: none;
+            }
+          </style>
+          <div class="bg-dark rounded p-4 mb-5">
+            <p class="fs-sm text-light opacity-70">You can alter carousel look and behaviour via modifier CSS classes and flexible data API.</p>
+            <h6 class="fs-sm text-light">Basic HTML structure:</h6>
+            <pre class="example-code"><code class="lang-html">&lt;div class=&quot;tns-carousel-wrapper tns-nav-enabled&quot;&gt;
+  &lt;div class=&quot;tns-carousel-inner&quot; data-carousel-options='{}'&gt;
+    &lt;!-- Carousel slides here --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <h6 class="fs-sm text-light">Modifier classes:</h6>
+            <ul class="list-unstyled fs-sm">
+              <li><code>tns-controls-static</code><span class="text-light opacity-70">&nbsp;- Controls (prev/next buttons) are always visible.</span></li>
+              <li><code>tns-controls-outside</code><span class="text-light opacity-70">&nbsp;- Always place controls (prev/next buttons) outside of carousel content.</span></li>
+              <li><code>tns-controls-outside-sm/-md/-lg/-xl/-xxl</code><span class="text-light opacity-70">&nbsp;- Responsive placement. Controls (prev/next buttons) are placed outside of carousel content on sm/md/lg/xl/xxl screen size and up.</span></li>
+              <li><code>tns-nav-outside</code><span class="text-light opacity-70">&nbsp;- Position nav (dots) outside of the carousel content.</span></li>
+              <li><code>tns-nav-outside-flush</code><span class="text-light opacity-70">&nbsp;- Removes top/bottom spacing from nav (dots) outside of the carousel content.</span></li>
+              <li><code>tns-carousel-light</code><span class="text-light opacity-70">&nbsp;- Switch controls (prev/next buttons) and nav (dots) skin to light version.</span></li>
+            </ul>
+            <h6 class="fs-sm text-light">Data API:</h6><code class="fs-sm">data-carousel-options = '{}'</code>:
+            <ul class="list-unstyled fs-sm mb-0">
+              <li><code>"mode": "carousel" | "gallery"</code><span class="text-light opacity-70">&nbsp;- With carousel everything slides to the side, while gallery uses fade animations and changes all slides at once.</span></li>
+              <li><code>"axis": "horizontal" | "vertical"</code><span class="text-light opacity-70">&nbsp;- The axis of the slider.</span></li>
+              <li><code>"items": 1</code><span class="text-light opacity-70">&nbsp;- How many items to display</span></li>
+              <li><code>"nav": true/false</code><span class="text-light opacity-70">&nbsp;- Enable/disable dots control</span></li>
+              <li><code>"controls": true/false</code><span class="text-light opacity-70">&nbsp;- Enable/disable prev / next arrow buttons</span></li>
+              <li><code>"loop": true/false</code><span class="text-light opacity-70">&nbsp;- Enable/disable infinite loop</span></li>
+              <li><code>"speed": 300</code><span class="text-light opacity-70">&nbsp;- Speed of the slide animation (in "ms")</span></li>
+              <li><code>"autoplay": true/false</code><span class="text-light opacity-70">&nbsp;- Toggles the automatic change of slides</span></li>
+              <li><code>"autoplayTimeout": 5000</code><span class="text-light opacity-70">&nbsp;- Timeou between transition. Value in ms | 1000ms = 1s</span></li>
+              <li><code>"gutter": 0</code><span class="text-light opacity-70">&nbsp;- Space between carousel items (in px)</span></li>
+              <li><code>"autoHeight": true/false</code><span class="text-light opacity-70">&nbsp;- Height of slider container changes according to each slide's height.</span></li>
+              <li><code>"navAsThumbnails": true/false</code><span class="text-light opacity-70">&nbsp;- Indicate if the nav (dots) are thumbnails. Set to true if you want to replace dots with thumbnails.</span></li>
+              <li><code>"navContainer": string</code><span class="text-light opacity-70">&nbsp;- The container element/selector around the dots. <code>navContainer</code> must have at least same number of children as the slides. Use this option to link your carousel to thumbnails <code>tns-thumbnails</code></span></li>
+              <li><code>"controlsContainer": string</code><span class="text-light opacity-70">&nbsp;- The container element/selector around the prev/next buttons. <code>controlsContainer</code> must have at least 2 child elements. Use this option to link your carousel to external controls <code>tns-carousel-controls</code></span></li>
+              <li><code>"responsive": {"0": {"items": 1}, "768": {"items": 2}, ...}</code><span class="text-light opacity-70">&nbsp;- How many items to display on each screen size. Options are not limited to number of items. You can change any option based on screen size.</span></li>
+              <li class="fw-medium text-light pt-3"><span class="opacity-70">For more options please visit</span><a class="text-light ms-2" href="https://github.com/ganlanyuan/tiny-slider#options" target="_blank" rel="noopener">https://github.com/ganlanyuan/tiny-slider#options</a></li>
+            </ul>
+          </div>
+          <!-- Controls on hover + Nav (dost) inside-->
+          <section class="pb-5 mb-md-2" id="carousel-example1">
+            <h2 class="h5 mb-3">Controls on hover + Nav (dost) inside</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result1" data-bs-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html1" data-bs-toggle="tab" role="tab" aria-controls="html1" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug1" data-bs-toggle="tab" role="tab" aria-controls="pug1" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                    <div class="tns-carousel-wrapper" style="max-width: 45rem;">
+                      <div class="tns-carousel-inner" data-carousel-options="{&quot;gutter&quot;: 16}"><img src="../img/real-estate/catalog/20.jpg" alt="Image"><img src="../img/real-estate/catalog/10.jpg" alt="Image"><img src="../img/real-estate/catalog/12.jpg" alt="Image"></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html1" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Controls on hover + Nav (dost) inside (Defaults) --&gt;
+&lt;div class=&quot;tns-carousel-wrapper&quot;&gt;
+  &lt;div class=&quot;tns-carousel-inner&quot; data-carousel-options='{&quot;gutter&quot;: 16}'&gt;
+    &lt;img src=&quot;path-to-image&quot; alt=&quot;Image&quot;&gt;
+    &lt;img src=&quot;path-to-image&quot; alt=&quot;Image&quot;&gt;
+    &lt;img src=&quot;path-to-image&quot; alt=&quot;Image&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug1" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Controls on hover + Nav (dost) inside (Defaults)
+.tns-carousel-wrapper
+  .tns-carousel-inner(data-carousel-options='{&quot;gutter&quot;: 16}')
+    img(src=&quot;path-to-image&quot;, alt=&quot;Image&quot;)
+    img(src=&quot;path-to-image&quot;, alt=&quot;Image&quot;)
+    img(src=&quot;path-to-image&quot;, alt=&quot;Image&quot;)
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Static controls + Nav (dost) outside + No loop-->
+          <section class="pb-5 mb-md-2" id="carousel-example2">
+            <h2 class="h5 mb-3">Static controls + Nav (dost) outside + No loop</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result2" data-bs-toggle="tab" role="tab" aria-controls="result2" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html2" data-bs-toggle="tab" role="tab" aria-controls="html2" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug2" data-bs-toggle="tab" role="tab" aria-controls="pug2" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result2" role="tabpanel">
+                    <div class="tns-carousel-wrapper tns-controls-static tns-nav-outside" style="max-width: 45rem;">
+                      <div class="tns-carousel-inner" data-carousel-options="{&quot;loop&quot;: false, &quot;gutter&quot;: 16}"><img src="../img/real-estate/catalog/09.jpg" alt="Image"><img src="../img/real-estate/catalog/06.jpg" alt="Image"><img src="../img/real-estate/catalog/07.jpg" alt="Image"></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html2" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Controls on hover + Nav (dost) inside (Defaults) --&gt;
+&lt;div class=&quot;tns-carousel-wrapper tns-controls-static tns-nav-outside&quot;&gt;
+  &lt;div class=&quot;tns-carousel-inner&quot; data-carousel-options='{&quot;loop&quot;: false, &quot;gutter&quot;: 16}'&gt;
+    &lt;img src=&quot;path-to-image&quot; alt=&quot;Image&quot;&gt;
+    &lt;img src=&quot;path-to-image&quot; alt=&quot;Image&quot;&gt;
+    &lt;img src=&quot;path-to-image&quot; alt=&quot;Image&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug2" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Controls on hover + Nav (dost) inside (Defaults)
+.tns-carousel-wrapper.tns-controls-static.tns-nav-outside
+  .tns-carousel-inner(data-carousel-options='{&quot;loop&quot;: false, &quot;gutter&quot;: 16}')
+    img(src=&quot;path-to-image&quot;, alt=&quot;Image&quot;)
+    img(src=&quot;path-to-image&quot;, alt=&quot;Image&quot;)
+    img(src=&quot;path-to-image&quot;, alt=&quot;Image&quot;)
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Fade transition + Layer animations-->
+          <section class="pb-5 mb-md-2" id="carousel-example3">
+            <h2 class="h4 mb-3">Fade transition + Layer animations</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result3" data-bs-toggle="tab" role="tab" aria-controls="result3" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html3" data-bs-toggle="tab" role="tab" aria-controls="html3" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug3" data-bs-toggle="tab" role="tab" aria-controls="pug3" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result3" role="tabpanel">
+                    <div class="tns-carousel-wrapper" style="max-width: 45rem;">
+                      <div class="tns-carousel-inner" data-carousel-options="{&quot;mode&quot;: &quot;gallery&quot;, &quot;nav&quot;: false}">
+                        <div>
+                          <div class="bg-faded-primary text-center py-5 px-3">
+                            <div class="py-4">
+                              <h3 class="from-top">From top to bottom</h3>
+                              <p class="fs-lg mb-4 pb-2 from-bottom delay-1">From bottom to top</p>
+                              <button class="btn btn-primary scale-down delay-2" type="button">Scale down</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="bg-faded-success text-center py-5 px-3">
+                            <div class="py-4">
+                              <h3 class="from-start">From left to right</h3>
+                              <p class="fs-lg mb-4 pb-2 from-end">From right to left</p>
+                              <button class="btn btn-success scale-up delay-2" type="button">Scale up</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html3" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Fade transition + Layer animations --&gt;
+&lt;div class=&quot;tns-carousel-wrapper&quot;&gt;
+  &lt;div class=&quot;tns-carousel-inner&quot; data-carousel-options='{&quot;mode&quot;: &quot;gallery&quot;, &quot;nav&quot;: false}'&gt;
+    &lt;div&gt;
+      &lt;div class=&quot;bg-faded-primary text-center py-5 px-3&quot;&gt;
+        &lt;h3 class=&quot;from-top&quot;&gt;From top to bottom&lt;/h3&gt;
+        &lt;p class=&quot;fs-lg mb-4 pb-2 from-bottom delay-1&quot;&gt;From bottom to top&lt;/p&gt;
+        &lt;button class=&quot;btn btn-primary scale-down delay-2&quot; type=&quot;button&quot;&gt;Scale down&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;div class=&quot;bg-faded-success text-center py-5 px-3&quot;&gt;
+        &lt;h3 class=&quot;from-start&quot;&gt;From left to right&lt;/h3&gt;
+        &lt;p class=&quot;fs-lg mb-4 pb-2 from-end&quot;&gt;From right to left&lt;/p&gt;
+        &lt;button class=&quot;btn btn-success scale-up delay-2&quot; type=&quot;button&quot;&gt;Scale up&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug3" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Fade transition + Layer animations
+.tns-carousel-wrapper
+  .tns-carousel-inner(data-carousel-options = '{&quot;mode&quot;: &quot;gallery&quot;, &quot;nav&quot;: false}')
+    div
+      .bg-faded-primary.text-center.py-5.px-3
+        h3.from-top From top to bottom
+        p.fs-lg.mb-4.pb-2.from-bottom.delay-1 From bottom to top
+        button(type=&quot;button&quot;).btn.btn-primary.scale-down.delay-2
+          | Scale down
+    div
+      .bg-faded-success.text-center.py-5.px-3
+        h3.from-start From left to right
+        p.fs-lg.mb-4.pb-2.from-end From right to left
+        button(type=&quot;button&quot;).btn.btn-success.scale-up.delay-2
+          | Scale up
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Vertical carousel-->
+          <section class="pb-5 mb-md-2" id="carousel-example4">
+            <h2 class="h4 mb-3">Vertical carousel</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result4" data-bs-toggle="tab" role="tab" aria-controls="result4" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html4" data-bs-toggle="tab" role="tab" aria-controls="html4" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug4" data-bs-toggle="tab" role="tab" aria-controls="pug4" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result4" role="tabpanel">
+                    <div class="tns-carousel-wrapper tns-controls-static" style="max-width: 45rem;">
+                      <div class="tns-carousel-inner" data-carousel-options="{&quot;axis&quot;: &quot;vertical&quot;, &quot;nav&quot;: false}"><img src="../img/real-estate/catalog/06.jpg" alt="Image"><img src="../img/real-estate/catalog/07.jpg" alt="Image"><img src="../img/real-estate/catalog/09.jpg" alt="Image"></div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html4" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Vertical carousel --&gt;
+&lt;div class=&quot;tns-carousel-wrapper tns-controls-static&quot;&gt;
+  &lt;div class=&quot;tns-carousel-inner&quot; data-carousel-options='{&quot;axis&quot;: &quot;vertical&quot;, &quot;nav&quot;: false}'&gt;
+    &lt;img src=&quot;path-to-image&quot; alt=&quot;Image&quot;&gt;
+    &lt;img src=&quot;path-to-image&quot; alt=&quot;Image&quot;&gt;
+    &lt;img src=&quot;path-to-image&quot; alt=&quot;Image&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug4" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Vertical carousel
+.tns-carousel-wrapper.tns-controls-static
+  .tns-carousel-inner(data-carousel-options='{&quot;axis&quot;: &quot;vertical&quot;, &quot;nav&quot;: false}')
+    img(src=&quot;path-to-image&quot;, alt=&quot;Image&quot;)
+    img(src=&quot;path-to-image&quot;, alt=&quot;Image&quot;)
+    img(src=&quot;path-to-image&quot;, alt=&quot;Image&quot;)
+
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Responsive with multiple items + Controls and nav outside-->
+          <section class="pb-5 mb-md-2" id="carousel-example5">
+            <h2 class="h4 mb-3">Responsive with multiple items + Controls and nav outside</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result5" data-bs-toggle="tab" role="tab" aria-controls="result5" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html5" data-bs-toggle="tab" role="tab" aria-controls="html5" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug5" data-bs-toggle="tab" role="tab" aria-controls="pug5" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result5" role="tabpanel">
+                    <div class="px-5">
+                      <div class="tns-carousel-wrapper tns-controls-outside tns-nav-outside">
+                        <div class="tns-carousel-inner" data-carousel-options="{&quot;items&quot;: 3, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;gutter&quot;: 24}}}"><img src="../img/real-estate/catalog/01.jpg" alt="Image"><img src="../img/real-estate/catalog/03.jpg" alt="Image"><img src="../img/real-estate/catalog/04.jpg" alt="Image"><img src="../img/real-estate/catalog/05.jpg" alt="Image"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html5" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Responsive with multiple items + Controls and nav outside --&gt;
+&lt;div class=&quot;tns-carousel-wrapper tns-controls-outside tns-nav-outside&quot;&gt;
+  &lt;div class=&quot;tns-carousel-inner&quot; data-carousel-options='{&quot;items&quot;: 3, &quot;nav&quot;: false, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;gutter&quot;: 24}}}'&gt;
+    &lt;img src=&quot;path-to-image&quot; alt=&quot;Image&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug5" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Responsive with multiple items + Controls and nav outside
+.tns-carousel-wrapper.tns-controls-outside.tns-nav-outside
+  .tns-carousel-inner(data-carousel-options='{&quot;items&quot;: 3, &quot;nav&quot;: false, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;gutter&quot;: 24}}}')
+    img(src=&quot;path-to-image&quot;, alt=&quot;Image&quot;)
+    ...  
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Light controls-->
+          <section class="pb-5 mb-md-2" id="carousel-example6">
+            <h2 class="h4 mb-3">Light controls</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result6" data-bs-toggle="tab" role="tab" aria-controls="result6" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html6" data-bs-toggle="tab" role="tab" aria-controls="html6" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug6" data-bs-toggle="tab" role="tab" aria-controls="pug6" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane m-n3 p-3 bg-dark fade show active" id="result6" role="tabpanel">
+                    <div class="pt-3 px-5">
+                      <div class="tns-carousel-wrapper tns-carousel-light tns-controls-outside tns-nav-outside">
+                        <div class="tns-carousel-inner" data-carousel-options="{&quot;items&quot;: 3, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;gutter&quot;: 24}}}"><img src="../img/real-estate/catalog/04.jpg" alt="Image"><img src="../img/real-estate/catalog/05.jpg" alt="Image"><img src="../img/real-estate/catalog/03.jpg" alt="Image"><img src="../img/real-estate/catalog/01.jpg" alt="Image"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html6" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Light Carousel: Responsive with multiple items + Controls and nav outside --&gt;
+&lt;div class=&quot;tns-carousel-wrapper tns-carousel-light tns-controls-outside tns-nav-outside&quot;&gt;
+  &lt;div class=&quot;tns-carousel-inner&quot; data-carousel-options='{&quot;items&quot;: 3, &quot;nav&quot;: false, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;gutter&quot;: 24}}}'&gt;
+    &lt;img src=&quot;path-to-image&quot; alt=&quot;Image&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug6" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Light Carousel: Responsive with multiple items + Controls and nav outside
+.tns-carousel-wrapper.tns-carousel-light.tns-controls-outside.tns-nav-outside
+  .tns-carousel-inner(data-carousel-options='{&quot;items&quot;: 3, &quot;nav&quot;: false, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;768&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;gutter&quot;: 24}}}')
+    img(src=&quot;path-to-image&quot;, alt=&quot;Image&quot;)
+    ...  
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Thumbnails nav + Slides count-->
+          <section class="pb-5 mb-md-2" id="carousel-example7">
+            <h2 class="h4 mb-3">Thumbnails nav + Slides count</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result7" data-bs-toggle="tab" role="tab" aria-controls="result7" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html7" data-bs-toggle="tab" role="tab" aria-controls="html7" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug7" data-bs-toggle="tab" role="tab" aria-controls="pug7" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result7" role="tabpanel">
+                    <div style="max-width: 746px;">
+                      <div class="tns-carousel-wrapper">
+                        <div class="tns-slides-count text-light"><i class="fi-image fs-lg me-2"></i>
+                          <div class="ps-1"><span class="tns-current-slide fs-5 fw-bold"></span><span class="fs-5 fw-bold">/</span><span class="tns-total-slides fs-5 fw-bold"></span></div>
+                        </div>
+                        <div class="tns-carousel-inner" data-carousel-options="{&quot;navAsThumbnails&quot;: true, &quot;navContainer&quot;: &quot;#thumbnails&quot;, &quot;gutter&quot;: 12, &quot;responsive&quot;: {&quot;0&quot;:{&quot;controls&quot;: false},&quot;500&quot;:{&quot;controls&quot;: true}}}">
+                          <div><img class="rounded-3" src="../img/car-finder/single/gallery/01.jpg" alt="Image"></div>
+                          <div><img class="rounded-3" src="../img/car-finder/single/gallery/02.jpg" alt="Image"></div>
+                          <div><img class="rounded-3" src="../img/car-finder/single/gallery/03.jpg" alt="Image"></div>
+                          <div><img class="rounded-3" src="../img/car-finder/single/gallery/04.jpg" alt="Image"></div>
+                          <div><img class="rounded-3" src="../img/car-finder/single/gallery/05.jpg" alt="Image"></div>
+                        </div>
+                      </div>
+                      <ul class="tns-thumbnails" id="thumbnails">
+                        <li class="tns-thumbnail"><img src="../img/car-finder/single/gallery/th01.jpg" alt="Thumbnail"></li>
+                        <li class="tns-thumbnail"><img src="../img/car-finder/single/gallery/th02.jpg" alt="Thumbnail"></li>
+                        <li class="tns-thumbnail"><img src="../img/car-finder/single/gallery/th03.jpg" alt="Thumbnail"></li>
+                        <li class="tns-thumbnail"><img src="../img/car-finder/single/gallery/th04.jpg" alt="Thumbnail"></li>
+                        <li class="tns-thumbnail"><img src="../img/car-finder/single/gallery/th05.jpg" alt="Thumbnail"></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html7" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Carousel with slides count --&gt;
+&lt;div class=&quot;tns-carousel-wrapper&quot;&gt;
+  &lt;div class=&quot;tns-slides-count text-light&quot;&gt;
+    &lt;i class=&quot;fi-image fs-lg me-2&quot;&gt;&lt;/i&gt;
+    &lt;div class=&quot;ps-1&quot;&gt;
+      &lt;span class=&quot;tns-current-slide fs-5 fw-bold&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;fs-5 fw-bold&quot;&gt;/&lt;/span&gt;
+      &lt;span class=&quot;tns-total-slides fs-5 fw-bold&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tns-carousel-inner&quot; data-carousel-options='{&quot;navAsThumbnails&quot;: true, &quot;navContainer&quot;: &quot;#thumbnails&quot;, &quot;gutter&quot;: 12, &quot;responsive&quot;: {&quot;0&quot;:{&quot;controls&quot;: false},&quot;500&quot;:{&quot;controls&quot;: true}}}'&gt;
+    &lt;div&gt;
+      &lt;img class=&quot;rounded-3&quot; src=&quot;path-to-preview-image1&quot; alt=&quot;Image&quot;&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;img class=&quot;rounded-3&quot; src=&quot;path-to-preview-image2&quot; alt=&quot;Image&quot;&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;img class=&quot;rounded-3&quot; src=&quot;path-to-preview-image3&quot; alt=&quot;Image&quot;&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;img class=&quot;rounded-3&quot; src=&quot;path-to-preview-image4&quot; alt=&quot;Image&quot;&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;img class=&quot;rounded-3&quot; src=&quot;path-to-preview-image5&quot; alt=&quot;Image&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Thumbnails nav --&gt;
+&lt;ul class=&quot;tns-thumbnails&quot; id=&quot;thumbnails&quot;&gt;
+  &lt;li class=&quot;tns-thumbnail&quot;&gt;
+    &lt;img src=&quot;path-to-thumbnail-image1&quot; alt=&quot;Thumbnail&quot;&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;tns-thumbnail&quot;&gt;
+    &lt;img src=&quot;path-to-thumbnail-image2&quot; alt=&quot;Thumbnail&quot;&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;tns-thumbnail&quot;&gt;
+    &lt;img src=&quot;path-to-thumbnail-image3&quot; alt=&quot;Thumbnail&quot;&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;tns-thumbnail&quot;&gt;
+    &lt;img src=&quot;path-to-thumbnail-image4&quot; alt=&quot;Thumbnail&quot;&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;tns-thumbnail&quot;&gt;
+    &lt;img src=&quot;path-to-thumbnail-image5&quot; alt=&quot;Thumbnail&quot;&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug7" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Carousel with slides count
+.tns-carousel-wrapper
+  .tns-slides-count.text-light
+    i.fi-image.fs-lg.me-2
+    .ps-1
+      span.tns-current-slide.fs-5.fw-bold
+      span.fs-5.fw-bold /
+      span.tns-total-slides.fs-5.fw-bold
+  .tns-carousel-inner(data-carousel-options='{&quot;navAsThumbnails&quot;: true, &quot;navContainer&quot;: &quot;#thumbnails&quot;, &quot;gutter&quot;: 12, &quot;responsive&quot;: {&quot;0&quot;:{&quot;controls&quot;: false},&quot;500&quot;:{&quot;controls&quot;: true}}}')
+    div
+      img(src=&quot;path-to-preview-image1&quot;, alt=&quot;Image&quot;).rounded-3
+    div
+      img(src=&quot;path-to-preview-image2&quot;, alt=&quot;Image&quot;).rounded-3
+    div
+      img(src=&quot;path-to-preview-image3&quot;, alt=&quot;Image&quot;).rounded-3
+    div
+      img(src=&quot;path-to-preview-image4&quot;, alt=&quot;Image&quot;).rounded-3
+    div
+      img(src=&quot;path-to-preview-image5&quot;, alt=&quot;Image&quot;).rounded-3
+
+// Thumbnails nav
+ul(id=&quot;thumbnails&quot;).tns-thumbnails
+  li.tns-thumbnail
+    img(src=&quot;path-to-thumbnail-image1&quot;, alt=&quot;Thumbnail&quot;)
+  li.tns-thumbnail
+    img(src=&quot;path-to-thumbnail-image2&quot;, alt=&quot;Thumbnail&quot;)
+  li.tns-thumbnail
+    img(src=&quot;path-to-thumbnail-image3&quot;, alt=&quot;Thumbnail&quot;)
+  li.tns-thumbnail
+    img(src=&quot;path-to-thumbnail-image4&quot;, alt=&quot;Thumbnail&quot;)
+  li.tns-thumbnail
+    img(src=&quot;path-to-thumbnail-image5&quot;, alt=&quot;Thumbnail&quot;)
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Inside card-->
+          <section class="pb-5 mb-md-2" id="carousel-example8">
+            <h2 class="h4 mb-3">Inside card</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result8" data-bs-toggle="tab" role="tab" aria-controls="result8" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html8" data-bs-toggle="tab" role="tab" aria-controls="html8" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug8" data-bs-toggle="tab" role="tab" aria-controls="pug8" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result8" role="tabpanel">
+                    <div class="card card-hover" style="max-width: 20rem;">
+                      <div class="tns-carousel-wrapper card-img-top card-img-hover"><span class="img-overlay"></span>
+                        <div class="tns-carousel-inner"><img src="../img/real-estate/catalog/04.jpg" alt="Image"><img src="../img/real-estate/catalog/03.jpg" alt="Image"><img src="../img/real-estate/catalog/05.jpg" alt="Image"></div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Hover over me</h5>
+                        <p class="card-text fs-sm">Some quick example text to build on the card title and make up the bulk of the card's content within card's body.</p><a class="btn btn-sm btn-primary" href="#">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html8" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Carousel inside card --&gt;
+&lt;div class=&quot;card card-hover&quot;&gt;
+  &lt;div class=&quot;tns-carousel-wrapper card-img-top card-img-hover&quot;&gt;
+    &lt;span class=&quot;img-overlay&quot;&gt;&lt;/span&gt;
+    &lt;div class=&quot;tns-carousel-inner&quot;&gt;
+      &lt;img src=&quot;path-to-image&quot; alt=&quot;Image&quot;&gt;
+      &lt;img src=&quot;path-to-image&quot; alt=&quot;Image&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Hover over me&lt;/h5&gt;
+    &lt;p class=&quot;card-text fs-sm&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content within card's body.&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug8" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Carousel inside card
+.card.card-hover
+  .tns-carousel-wrapper.card-img-top.card-img-hover
+    span.img-overlay
+    .tns-carousel-inner
+      img(src=&quot;path-to-image&quot;, alt=&quot;Image&quot;)
+      img(src=&quot;path-to-image&quot;, alt=&quot;Image&quot;)
+  .card-body
+    h5.card-title Hover over me
+    p.card-text.fs-sm Some quick example text to build on the card title and make up the bulk of the card's content within card's body.
+    a(href=&quot;#&quot;).btn.btn-sm.btn-primary
+      | Go somewhere
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Center slide-->
+          <section class="pb-5 mb-md-2" id="carousel-example9">
+            <h2 class="h4 mb-3">Center slide</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result9" data-bs-toggle="tab" role="tab" aria-controls="result9" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html9" data-bs-toggle="tab" role="tab" aria-controls="html9" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug9" data-bs-toggle="tab" role="tab" aria-controls="pug9" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result9" role="tabpanel">
+                    <div class="tns-carousel-wrapper tns-nav-outside tns-center">
+                      <div class="tns-carousel-inner" data-carousel-options="{&quot;items&quot;: 1, &quot;edgePadding&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;controls&quot;: false, &quot;gutter&quot;: 16},&quot;500&quot;:{&quot;controls&quot;: true, &quot;gutter&quot;: 16}, &quot;768&quot;: {&quot;gutter&quot;: 24}}}">
+                        <div>
+                          <div class="card border-0 bg-size-cover pt-5" style="background-image: url(../img/city-guide/home/upcoming-1.jpg);">
+                            <div class="d-none d-md-block" style="height: 13rem;"></div>
+                            <div class="card-body text-center text-md-start pt-4 pt-xl-0">
+                              <div class="d-md-flex justify-content-between align-items-end">
+                                <div class="me-2 mb-4 mb-md-0">
+                                  <div class="d-flex justify-content-center justify-content-md-start text-light fs-sm mb-2">
+                                    <div class="text-nowrap me-3"><i class="fi-calendar-alt me-1 opacity-70"></i><span class="align-middle">Nov 15</span></div>
+                                    <div class="text-nowrap"><i class="fi-clock me-1 opacity-70"></i><span class="align-middle">21:00</span></div>
+                                  </div>
+                                  <h3 class="h5 text-light mb-0">Simon Rock Concert</h3>
+                                </div>
+                                <div class="btn-group"><a class="btn btn-primary rounded-pill rounded-end-0 px-3" href="#">Tickets from $50</a>
+                                  <div class="position-relative border-start border-light zindex-5" style="margin-left: -1px;"></div>
+                                  <button class="btn btn-primary rounded-pill rounded-start-0 px-3" type="button"><i class="fi-heart"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="card border-0 bg-size-cover pt-5" style="background-image: url(../img/city-guide/home/upcoming-2.jpg);">
+                            <div class="d-none d-md-block" style="height: 13rem;"></div>
+                            <div class="card-body text-center text-md-start pt-4 pt-xl-0">
+                              <div class="d-md-flex justify-content-between align-items-end">
+                                <div class="me-2 mb-4 mb-md-0">
+                                  <div class="d-flex justify-content-center justify-content-md-start text-light fs-sm mb-2">
+                                    <div class="text-nowrap me-3"><i class="fi-calendar-alt me-1 opacity-70"></i><span class="align-middle">Dec 2</span></div>
+                                    <div class="text-nowrap"><i class="fi-clock me-1 opacity-70"></i><span class="align-middle">10:00</span></div>
+                                  </div>
+                                  <h3 class="h5 text-light mb-0">Holi Festival</h3>
+                                </div>
+                                <div class="btn-group"><a class="btn btn-primary rounded-pill rounded-end-0 px-3" href="#">Tickets from $35</a>
+                                  <div class="position-relative border-start border-light zindex-5" style="margin-left: -1px;"></div>
+                                  <button class="btn btn-primary rounded-pill rounded-start-0 px-3" type="button"><i class="fi-heart"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="card border-0 bg-size-cover pt-5" style="background-image: url(../img/city-guide/home/upcoming-3.jpg);">
+                            <div class="d-none d-md-block" style="height: 13rem;"></div>
+                            <div class="card-body text-center text-md-start pt-4 pt-xl-0">
+                              <div class="d-md-flex justify-content-between align-items-end">
+                                <div class="me-2 mb-4 mb-md-0">
+                                  <div class="d-flex justify-content-center justify-content-md-start text-light fs-sm mb-2">
+                                    <div class="text-nowrap me-3"><i class="fi-calendar-alt me-1 opacity-70"></i><span class="align-middle">No 11</span></div>
+                                    <div class="text-nowrap"><i class="fi-clock me-1 opacity-70"></i><span class="align-middle">18:00</span></div>
+                                  </div>
+                                  <h3 class="h5 text-light mb-0">Football Match</h3>
+                                </div>
+                                <div class="btn-group"><a class="btn btn-primary rounded-pill rounded-end-0 px-3" href="#">Tickets from $40</a>
+                                  <div class="position-relative border-start border-light zindex-5" style="margin-left: -1px;"></div>
+                                  <button class="btn btn-primary rounded-pill rounded-start-0 px-3" type="button"><i class="fi-heart"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html9" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Center slide carousel --&gt;
+&lt;div class=&quot;tns-carousel-wrapper tns-nav-outside tns-center&quot;&gt;
+  &lt;div class=&quot;tns-carousel-inner&quot; data-carousel-options='{&quot;items&quot;: 1, &quot;edgePadding&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;controls&quot;: false, &quot;gutter&quot;: 16},&quot;500&quot;:{&quot;controls&quot;: true, &quot;gutter&quot;: 16}, &quot;768&quot;: {&quot;gutter&quot;: 24}}}'&gt;
+
+    &lt;!-- Slide --&gt;
+    &lt;div&gt;
+      &lt;div class=&quot;card border-0 bg-size-cover pt-5&quot; style=&quot;background-image: url(path-to-image);&quot;&gt;
+        &lt;div class=&quot;d-none d-md-block&quot; style=&quot;height: 13rem;&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;card-body text-center text-md-start pt-4 pt-xl-0&quot;&gt;
+          &lt;div class=&quot;d-md-flex justify-content-between align-items-end&quot;&gt;
+            &lt;div class=&quot;me-2 mb-4 mb-md-0&quot;&gt;
+              &lt;div class=&quot;d-flex justify-content-center justify-content-md-start text-light fs-sm mb-2&quot;&gt;
+                &lt;div class=&quot;text-nowrap me-3&quot;&gt;
+                  &lt;i class=&quot;fi-calendar-alt me-1 opacity-70&quot;&gt;&lt;/i&gt;
+                  &lt;span class=&quot;align-middle&quot;&gt;Nov 15&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;text-nowrap&quot;&gt;
+                  &lt;i class=&quot;fi-clock me-1 opacity-70&quot;&gt;&lt;/i&gt;
+                  &lt;span class=&quot;align-middle&quot;&gt;21:00&lt;/span&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;h3 class=&quot;h5 text-light mb-0&quot;&gt;Simon Rock Concert&lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;btn-group&quot;&gt;
+              &lt;a href=&quot;#&quot; class=&quot;btn btn-primary rounded-pill rounded-end-0 px-3&quot;&gt;Tickets from $50&lt;/a&gt;
+              &lt;div className=&quot;position-relative border-start border-light zindex-5&quot; style=&quot;margin-left: -1px&quot;&gt;&lt;/div&gt;
+              &lt;button type=&quot;button&quot; class=&quot;btn btn-primary rounded-pill rounded-start-0 px-3&quot;&gt;
+                &lt;i class=&quot;fi-heart&quot;&gt;&lt;/i&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Add as many slides as you need --&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug9" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Center slide carousel
+.tns-carousel-wrapper.tns-nav-outside.tns-center
+  .tns-carousel-inner(data-carousel-options='{&quot;items&quot;: 1, &quot;edgePadding&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;controls&quot;: false, &quot;gutter&quot;: 16},&quot;500&quot;:{&quot;controls&quot;: true, &quot;gutter&quot;: 16}, &quot;768&quot;: {&quot;gutter&quot;: 24}}}')
+
+    // Slide
+    div
+      .card.border-0.bg-size-cover.pt-5(style=&quot;background-image: url(path-to-image);&quot;)
+        .d-none.d-md-block(style=&quot;height: 13rem;&quot;)
+        .card-body.text-center.text-md-start.pt-4.pt-xl-0
+          .d-md-flex.justify-content-between.align-items-end
+            div.me-2.mb-4.mb-md-0
+              .d-flex.justify-content-center.justify-content-md-start.text-light.fs-sm.mb-2
+                .text-nowrap.me-3
+                  i.fi-calendar-alt.me-1.opacity-70
+                  span.align-middle Nov 15
+                .text-nowrap
+                  i.fi-clock.me-1.opacity-70
+                  span.align-middle 21:00
+              h3.h5.text-light.mb-0 Simon Rock Concert
+            .btn-group
+              a(href=&quot;#&quot;).btn.btn-primary.rounded-pill.rounded-end-0.px-3
+                | Tickets from $50
+              .position-relative.border-start.border-light.zindex-5(style=&quot;margin-left: -1px;&quot;)
+              button(type=&quot;button&quot;).btn.btn-primary.rounded-pill.rounded-start-0.px-3
+                i.fi-heart
+    
+    // Add as many slides as you need
+    ...
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Content carousel with external controls-->
+          <section class="pb-5 mb-md-2" id="carousel-example10">
+            <h2 class="h4 mb-3">Content carousel with external controls</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result10" data-bs-toggle="tab" role="tab" aria-controls="result10" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html10" data-bs-toggle="tab" role="tab" aria-controls="html10" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug10" data-bs-toggle="tab" role="tab" aria-controls="pug10" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result10" role="tabpanel">
+                    <div class="pb-2" style="max-width: 40rem;">
+                      <div class="tns-carousel-wrapper">
+                        <div class="tns-carousel-inner" data-carousel-options="{&quot;controlsContainer&quot;: &quot;#external-controls&quot;, &quot;nav&quot;: false, &quot;gutter&quot;: 20}">
+                          <div class="text-center ps-1">
+                            <blockquote class="blockquote">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+                          </div>
+                          <div class="text-center ps-1">
+                            <blockquote class="blockquote">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tns-carousel-controls justify-content-center" id="external-controls">
+                        <button class="mx-2" type="button"><i class="fi-chevron-left"></i></button>
+                        <button class="mx-2" type="button"><i class="fi-chevron-right"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html10" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Carouel linked to external controls --&gt;
+&lt;div class=&quot;tns-carousel-wrapper&quot;&gt;
+  &lt;div class=&quot;tns-carousel-inner&quot; data-carousel-options='{&quot;controlsContainer&quot;: &quot;#external-controls&quot;, &quot;nav&quot;: false, &quot;gutter&quot;: 20}'&gt;
+
+    &lt;!-- Item --&gt;
+    &lt;div class=&quot;text-center ps-1&quot;&gt;
+      &lt;blockquote class=&quot;blockquote&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+        &lt;footer class=&quot;blockquote-footer&quot;&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+      &lt;/blockquote&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Add as many items as you need --&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- External controls (prev/next buttons) --&gt;
+&lt;div class=&quot;tns-carousel-controls justify-content-center&quot; id=&quot;external-controls&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;mx-2&quot;&gt;
+    &lt;i class=&quot;fi-chevron-left&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;mx-2&quot;&gt;
+    &lt;i class=&quot;fi-chevron-right&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug10" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Carouel linked to external controls
+.tns-carousel-wrapper
+  .tns-carousel-inner(data-carousel-options='{&quot;controlsContainer&quot;: &quot;#external-controls&quot;, &quot;nav&quot;: false, &quot;gutter&quot;: 20}')
+
+    // Item
+    .text-center.ps-1
+      blockquote.blockquote
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        footer.blockquote-footer Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;
+    
+    // Add as many items as you need
+    ...
+
+// External controls (prev/next buttons)
+#external-controls.tns-carousel-controls.justify-content-center
+  button(type=&quot;button&quot;).mx-2
+    i.fi-chevron-left
+  button(type=&quot;button&quot;).mx-2
+    i.fi-chevron-right</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Quick (anchor) navigation-->
+        <div class="col-xl-3 d-none d-xl-block ps-4 ps-xxl-5">
+          <aside class="sticky-top pt-5">
+            <div class="pt-5 mt-5">
+              <div class="ps-4 border-start">
+                <h3 class="h6">Jump to</h3><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#carousel-example1">Controls on hover + Nav (dost) inside</a><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#carousel-example2">Static controls + Nav (dost) outside + No loop</a><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#carousel-example3">Fade transition + Layer animations</a><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#carousel-example4">Vertical carousel</a><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#carousel-example5">Responsive with multiple items + Controls and nav outside</a><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#carousel-example6">Light controls</a><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#carousel-example7">Thumbnails nav + Slides count</a><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#carousel-example8">Inside card</a><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#carousel-example9">Center slide</a><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#carousel-example10">Content carousel with external controls</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon fi-chevron-up">   </i></a>
+    <!-- Vendor scripts: js libraries and plugins-->
+    <script src="../vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="../vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-core.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-markup.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-clike.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-javascript.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-pug.min.js"></script>
+    <script src="../vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="../vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="../vendor/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="../vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <!-- Main theme script-->
+    <script src="../js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from finder.createx.studio/components/carousel.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:22:30 GMT -->
+</html>

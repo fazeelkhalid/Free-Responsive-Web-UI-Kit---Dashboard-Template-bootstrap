@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from finder.createx.studio/city-guide-help-center.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:24:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Finder | City Guide | Help Center</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Finder - Directory &amp; Listings Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, directory, listings, e-commerce, car dealer, city guide, real estate, job board, user account, multipurpose, ui kit, html5, css3, javascript, gallery, slider, touch">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #666276;;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #bbb7c5;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+      
+    </script>
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+    <!-- Demo switcher (offcanvas)-->
+    <button class="btn btn-icon btn-light rounded-circle shadow position-fixed top-50 end-0 translate-middle-y me-3" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Choose Demo" style="z-index: 1035;"><span class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 w-100 h-100 rounded-circle" data-bs-toggle="offcanvas" data-bs-target="#demo-switcher"><i class="fi-layers"></i></span></button>
+    <div class="offcanvas offcanvas-end" id="demo-switcher">
+      <div class="offcanvas-header d-block border-bottom">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+          <h2 class="h5 mb-0">Choose Demo</h2>
+          <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="d-flex"><a class="btn btn-outline-secondary btn-sm w-100 me-2" href="index.html"><i class="fi-home me-2"></i>Main Page</a><a class="btn btn-outline-secondary btn-sm w-100" href="components/typography.html"><i class="fi-file me-2"></i>Docs / UI Kit</a></div>
+      </div>
+      <div class="offcanvas-body">
+        <div class="card card-hover shadow-sm mb-4"><img class="card-img-top" src="img/intro/demos/offcanvas/car-finder.jpg" alt="Car Finder Demo">
+          <div class="card-body p-3">
+            <h3 class="fs-base card-title text-center"><a class="nav-link stretched-link" href="car-finder-home.html">Car Finder Demo</a></h3>
+          </div>
+        </div>
+        <div class="card card-hover shadow-sm mb-4"><img class="card-img-top" src="img/intro/demos/offcanvas/real-estate.jpg" alt="Real Estate Demo">
+          <div class="card-body p-3">
+            <h3 class="fs-base card-title text-center"><a class="nav-link stretched-link" href="real-estate-home-v1.html">Real Estate Demo</a></h3>
+          </div>
+        </div>
+        <div class="card card-hover shadow-sm mb-4"><img class="card-img-top" src="img/intro/demos/offcanvas/job-board.jpg" alt="Job Board Demo">
+          <div class="card-body p-3">
+            <h3 class="fs-base card-title text-center"><a class="nav-link stretched-link" href="job-board-home-v1.html">Job Board Demo</a></h3>
+          </div>
+        </div>
+        <div class="card card-hover shadow-sm mb-4"><img class="card-img-top" src="img/intro/demos/offcanvas/city-guide.jpg" alt="City Guide Demo">
+          <div class="card-body p-3">
+            <h3 class="fs-base card-title text-center"><a class="nav-link stretched-link" href="city-guide-home-v1.html">City Guide Demo</a></h3>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-footer border-top"><a class="btn btn-primary btn-lg w-100" href="https://themes.getbootstrap.com/product/finder-directory-listings-template-ui-kit/" target="_blank" rel="noopener"><i class="fi-cart fs-lg me-2"></i>Buy Finder</a></div>
+    </div>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <main class="page-wrapper">
+      <!-- Sign In Modal-->
+      <div class="modal fade" id="signin-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered p-2 my-0 mx-auto" style="max-width: 950px;">
+          <div class="modal-content">
+            <div class="modal-body px-0 py-2 py-sm-0">
+              <button class="btn-close position-absolute top-0 end-0 mt-3 me-3" type="button" data-bs-dismiss="modal"></button>
+              <div class="row mx-0 align-items-center">
+                <div class="col-md-6 border-end-md p-4 p-sm-5">
+                  <h2 class="h3 mb-4 mb-sm-5">Hey there!<br>Welcome back.</h2><img class="d-block mx-auto" src="img/signin-modal/signin.svg" width="344" alt="Illustartion">
+                  <div class="mt-4 mt-sm-5">Don't have an account? <a href="#signup-modal" data-bs-toggle="modal" data-bs-dismiss="modal">Sign up here</a></div>
+                </div>
+                <div class="col-md-6 px-4 pt-2 pb-4 px-sm-5 pb-sm-5 pt-md-5"><a class="btn btn-outline-info rounded-pill w-100 mb-3" href="#"><i class="fi-google fs-lg me-1"></i>Sign in with Google</a><a class="btn btn-outline-info rounded-pill w-100 mb-3" href="#"><i class="fi-facebook fs-lg me-1"></i>Sign in with Facebook</a>
+                  <div class="d-flex align-items-center py-3 mb-3">
+                    <hr class="w-100">
+                    <div class="px-3">Or</div>
+                    <hr class="w-100">
+                  </div>
+                  <form class="needs-validation" novalidate>
+                    <div class="mb-4">
+                      <label class="form-label mb-2" for="signin-email">Email address</label>
+                      <input class="form-control" type="email" id="signin-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-4">
+                      <div class="d-flex align-items-center justify-content-between mb-2">
+                        <label class="form-label mb-0" for="signin-password">Password</label><a class="fs-sm" href="#">Forgot password?</a>
+                      </div>
+                      <div class="password-toggle">
+                        <input class="form-control" type="password" id="signin-password" placeholder="Enter password" required>
+                        <label class="password-toggle-btn" aria-label="Show/hide password">
+                          <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-lg rounded-pill w-100" type="submit">Sign in</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sign Up Modal-->
+      <div class="modal fade" id="signup-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered p-2 my-0 mx-auto" style="max-width: 950px;">
+          <div class="modal-content">
+            <div class="modal-body px-0 py-2 py-sm-0">
+              <button class="btn-close position-absolute top-0 end-0 mt-3 me-3" type="button" data-bs-dismiss="modal"></button>
+              <div class="row mx-0 align-items-center">
+                <div class="col-md-6 border-end-md p-4 p-sm-5">
+                  <h2 class="h3 mb-4 mb-sm-5">Join Finder.<br>Get premium benefits:</h2>
+                  <ul class="list-unstyled mb-4 mb-sm-5">
+                    <li class="d-flex mb-2"><i class="fi-check-circle text-primary mt-1 me-2"></i><span>Add and promote your listings</span></li>
+                    <li class="d-flex mb-2"><i class="fi-check-circle text-primary mt-1 me-2"></i><span>Easily manage your wishlist</span></li>
+                    <li class="d-flex mb-0"><i class="fi-check-circle text-primary mt-1 me-2"></i><span>Leave reviews</span></li>
+                  </ul><img class="d-block mx-auto" src="img/signin-modal/signup.svg" width="344" alt="Illustartion">
+                  <div class="mt-sm-4 pt-md-3">Already have an account? <a href="#signin-modal" data-bs-toggle="modal" data-bs-dismiss="modal">Sign in</a></div>
+                </div>
+                <div class="col-md-6 px-4 pt-2 pb-4 px-sm-5 pb-sm-5 pt-md-5"><a class="btn btn-outline-info rounded-pill w-100 mb-3" href="#"><i class="fi-google fs-lg me-1"></i>Sign in with Google</a><a class="btn btn-outline-info rounded-pill w-100 mb-3" href="#"><i class="fi-facebook fs-lg me-1"></i>Sign in with Facebook</a>
+                  <div class="d-flex align-items-center py-3 mb-3">
+                    <hr class="w-100">
+                    <div class="px-3">Or</div>
+                    <hr class="w-100">
+                  </div>
+                  <form class="needs-validation" novalidate>
+                    <div class="mb-4">
+                      <label class="form-label" for="signup-name">Full name</label>
+                      <input class="form-control" type="text" id="signup-name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="mb-4">
+                      <label class="form-label" for="signup-email">Email address</label>
+                      <input class="form-control" type="email" id="signup-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-4">
+                      <label class="form-label" for="signup-password">Password <span class='fs-sm text-muted'>min. 8 char</span></label>
+                      <div class="password-toggle">
+                        <input class="form-control" type="password" id="signup-password" minlength="8" required>
+                        <label class="password-toggle-btn" aria-label="Show/hide password">
+                          <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <label class="form-label" for="signup-password-confirm">Confirm password</label>
+                      <div class="password-toggle">
+                        <input class="form-control" type="password" id="signup-password-confirm" minlength="8" required>
+                        <label class="password-toggle-btn" aria-label="Show/hide password">
+                          <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form-check mb-4">
+                      <input class="form-check-input" type="checkbox" id="agree-to-terms" required>
+                      <label class="form-check-label" for="agree-to-terms">By joining, I agree to the <a href='#'>Terms of use</a> and <a href='#'>Privacy policy</a></label>
+                    </div>
+                    <button class="btn btn-primary btn-lg rounded-pill w-100" type="submit">Sign up</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar-->
+      <header class="navbar navbar-expand-lg navbar-light fixed-top" data-scroll-header>
+        <div class="container"><a class="navbar-brand me-3 me-xl-4" href="city-guide-home-v1.html"><img class="d-block" src="img/logo/logo-dark.svg" width="116" alt="Finder"></a>
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="btn btn-sm text-primary d-none d-lg-block order-lg-3" href="#signin-modal" data-bs-toggle="modal"><i class="fi-user me-2"></i>Sign in</a><a class="btn btn-primary btn-sm rounded-pill ms-2 order-lg-3" href="city-guide-add-business.html"><i class="fi-plus me-2"></i>Add<span class='d-none d-sm-inline'> business</span></a>
+          <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+            <ul class="navbar-nav navbar-nav-scroll" style="max-height: 35rem;">
+              <!-- Demos switcher-->
+              <li class="nav-item dropdown me-lg-2"><a class="nav-link dropdown-toggle align-items-center pe-lg-4" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false"><i class="fi-layers me-2"></i>Demos<span class="d-none d-lg-block position-absolute top-50 end-0 translate-middle-y border-end" style="width: 1px; height: 30px;"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="real-estate-home-v1.html"><i class="fi-building fs-base opacity-50 me-2"></i>Real Estate Demo</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="car-finder-home.html"><i class="fi-car fs-base opacity-50 me-2"></i>Car Finder Demo</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="job-board-home-v1.html"><i class="fi-briefcase fs-base opacity-50 me-2"></i>Job Board Demo</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="city-guide-home-v1.html"><i class="fi-map-pin fs-base opacity-50 me-2"></i>City Guide Demo</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html"><i class="fi-home fs-base opacity-50 me-2"></i>Main Page</a></li>
+                  <li><a class="dropdown-item" href="components/typography.html"><i class="fi-list fs-base opacity-50 me-2"></i>Components</a></li>
+                  <li><a class="dropdown-item" href="docs/dev-setup.html"><i class="fi-file fs-base opacity-50 me-2"></i>Documentation</a></li>
+                </ul>
+              </li>
+              <!-- Menu items-->
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="city-guide-home-v1.html">Homepage v.1</a></li>
+                  <li><a class="dropdown-item" href="city-guide-home-v2.html">Homepage v.2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catalog</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="city-guide-catalog.html">Grid with Filters</a></li>
+                  <li><a class="dropdown-item" href="city-guide-single.html">Single Place - Gallery</a></li>
+                  <li><a class="dropdown-item" href="city-guide-single-info.html">Single Place - Info</a></li>
+                  <li><a class="dropdown-item" href="city-guide-single-reviews.html">Single Place - Reviews</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="city-guide-account-info.html">Personal Info</a></li>
+                  <li><a class="dropdown-item" href="city-guide-account-favorites.html">Favorites</a></li>
+                  <li><a class="dropdown-item" href="city-guide-account-reviews.html">Reviews</a></li>
+                  <li><a class="dropdown-item" href="city-guide-account-notifications.html">Notifications</a></li>
+                  <li><a class="dropdown-item" href="signin-light.html">Sign In</a></li>
+                  <li><a class="dropdown-item" href="signup-light.html">Sign Up</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vendor</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="city-guide-add-business.html">Add Business</a></li>
+                  <li><a class="dropdown-item" href="city-guide-business-promotion.html">Business Promotion</a></li>
+                  <li><a class="dropdown-item" href="city-guide-vendor-businesses.html">My Businesses</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="city-guide-about.html">About</a></li>
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="city-guide-blog.html">Blog Grid</a></li>
+                      <li><a class="dropdown-item" href="city-guide-blog-single.html">Single Post</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="city-guide-contacts.html">Contacts</a></li>
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Help Center</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="city-guide-help-center.html">Help Topics</a></li>
+                      <li><a class="dropdown-item" href="city-guide-help-center-single-topic.html">Single Topic</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="city-guide-404.html">404 Not Found</a></li>
+                </ul>
+              </li>
+              <li class="nav-item d-lg-none"><a class="nav-link" href="#signin-modal" data-bs-toggle="modal"><i class="fi-user me-2"></i>Sign in</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- Page content-->
+      <!-- Page header-->
+      <section class="bg-secondary py-5">
+        <div class="container mb-md-2 mb-lg-4 py-5">
+          <!-- Breadcrumbs-->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb pt-3 mb-4">
+              <li class="breadcrumb-item"><a href="city-guide-home-v1.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Help center</li>
+            </ol>
+          </nav>
+          <!-- Page title-->
+          <div class="col-lg-8 col-md-10 px-0">
+            <h1 class="mb-4 pb-2">How can we help?</h1>
+            <!-- Search form-->
+            <form class="form-group rounded-pill">
+              <input class="form-control" type="text" placeholder="What are you looking for?">
+              <button class="btn btn-lg btn-primary rounded-pill px-sm-4 px-3" type="submit"><i class="fi-search me-sm-2"></i><span class="d-sm-inline d-none">Search</span></button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Page content-->
+      <section class="position-relative bg-white rounded-xxl-4 mb-5 pt-3 pb-lg-5 zindex-5" style="margin-top: -30px;">
+        <div class="container pt-2 pt-md-5">
+          <!-- Help topics grid-->
+          <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 gy-lg-5 gy-md-4 gy-0 gx-4">
+            <!-- Topic-->
+            <div class="col">
+              <div class="card border-0 card-hover h-100 bg-transparent">
+                <div class="card-body icon-box pb-0">
+                  <div class="icon-box-media bg-faded-accent text-accent rounded-circle mb-3"><i class="fi-settings"></i></div>
+                  <h3 class="h4">Getting started</h3><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Quis arcu euismod est, varius nisi?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Aliquam, commodo sed nibh?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Faucibus felis fames mauris dolor purus?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Odio diam, tellus facilisi?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Eu quisque libero, sed neque?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Lectus sed sit cursus amet, vitae tempor?</a>
+                </div>
+                <div class="card-footer pt-0 pb-4 border-top-0"><a href="city-guide-help-center-single-topic.html">View all</a></div>
+              </div>
+            </div>
+            <!-- Topic-->
+            <div class="col">
+              <div class="card border-0 card-hover h-100 bg-transparent">
+                <div class="card-body icon-box pb-0">
+                  <div class="icon-box-media bg-faded-warning text-warning rounded-circle mb-3"><i class="fi-file"></i></div>
+                  <h3 class="h4">Partnership</h3><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Tincidunt molestie scelerisque?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Nunc, ipsum ut augue fusce ornare?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Velit, mauris amet feugiat condimentum mollis?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Lacus, sed fames mi cras id?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Adipiscing magna suspendisse?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Libero pellentesque ultricies maecenas?</a>
+                </div>
+                <div class="card-footer pt-0 pb-4 border-top-0"><a href="city-guide-help-center-single-topic.html">View all</a></div>
+              </div>
+            </div>
+            <!-- Topic-->
+            <div class="col">
+              <div class="card border-0 card-hover h-100 bg-transparent">
+                <div class="card-body icon-box pb-0">
+                  <div class="icon-box-media bg-faded-danger text-danger rounded-circle mb-3"><i class="fi-user"></i></div>
+                  <h3 class="h4">Account &amp; profile</h3><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Cursus fusce volutpat tempor?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">A senectus auctor sodales gravida non elit?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Mauris accumsan vel rhoncus?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Cras nunc, semper lectus turpis?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Pulvinar sed morbi massa nulla dolor eget?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Bibendum mattis amet amet?</a>
+                </div>
+                <div class="card-footer pt-0 pb-4 border-top-0"><a href="city-guide-help-center-single-topic.html">View all</a></div>
+              </div>
+            </div>
+            <!-- Topic-->
+            <div class="col">
+              <div class="card border-0 card-hover h-100 bg-transparent">
+                <div class="card-body icon-box pb-0">
+                  <div class="icon-box-media bg-faded-success text-success rounded-circle mb-3"><i class="fi-security"></i></div>
+                  <h3 class="h4">Privacy &amp; security</h3><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Mauris accumsan vel rhoncus?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Eu quam bibendum adipiscing leo?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Massa fermentum, eget nec elementum?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">In quis pulvinar amet morbi praesent?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Eros, dolor in consequat netus?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Quis gravida felis dui non gravida?</a>
+                </div>
+                <div class="card-footer pt-0 pb-4 border-top-0"><a href="city-guide-help-center-single-topic.html">View all</a></div>
+              </div>
+            </div>
+            <!-- Topic-->
+            <div class="col">
+              <div class="card border-0 card-hover h-100 bg-transparent">
+                <div class="card-body icon-box pb-0">
+                  <div class="icon-box-media bg-faded-primary text-primary rounded-circle mb-3"><i class="fi-credit-card"></i></div>
+                  <h3 class="h4">Transactions</h3><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Nisl urna id aliquam sed vitae pellentesque?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Eu quam bibendum adipiscing leo?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Massa fermentum, eget nec elementum?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">In quis pulvinar amet morbi praesent?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Eros, dolor in consequat netus?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Quis gravida felis dui non gravida?</a>
+                </div>
+                <div class="card-footer pt-0 pb-4 border-top-0"><a href="city-guide-help-center-single-topic.html">View all</a></div>
+              </div>
+            </div>
+            <!-- Topic-->
+            <div class="col">
+              <div class="card border-0 card-hover h-100 bg-transparent">
+                <div class="card-body icon-box pb-0">
+                  <div class="icon-box-media bg-faded-info text-info rounded-circle mb-3"><i class="fi-dots-horisontal"></i></div>
+                  <h3 class="h4">More</h3><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Lacus eget amet blandit egestas?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Augue at donec molestie vulputate cum?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Viverra adipiscing nisl, lacus at et?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Sagittis dictum hendrerit faucibus malesuada?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Tempus est non sapien tempus?</a><a class="nav-link mb-2 p-0 fw-normal" href="city-guide-help-center-single-topic.html">Nunc est hendrerit volutpat nunc donec?</a>
+                </div>
+                <div class="card-footer pt-0 pb-4 border-top-0"><a href="city-guide-help-center-single-topic.html">View all</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Us-->
+      <section class="container mb-5 pb-lg-5">
+        <div class="py-md-4 py-5 bg-secondary rounded-3">
+          <div class="col-sm-10 col-11 d-flex flex-md-row flex-column align-items-center justify-content-between mx-auto px-0">
+            <div class="order-md-1 order-2 text-md-start text-center" style="max-width: 524px;">
+              <h2 class="mb-4 pb-md-3">Haven't found the answer? <br> We can help.</h2><a class="btn btn-lg btn-primary rounded-pill w-sm-auto w-100" href="city-guide-contacts.html">Contact us</a>
+            </div><img class="order-md-2 order-1 ms-md-4" src="img/city-guide/illustrations/support.svg" alt="Illustration">
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer pt-lg-5 pt-4 bg-dark text-light">
+      <div class="container mb-4 py-4 pb-lg-5">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6 col-sm-4">
+            <div class="mb-4 pb-sm-3"><a class="d-inline-block" href="city-guide-home-v1.html"><img src="img/logo/logo-light.svg" width="116" alt="Logo"></a></div>
+            <ul class="nav nav-light flex-column">
+              <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal text-light text-nowrap" href="mailto:example@gmail.com"><i class="fi-mail mt-n1 me-1 align-middle text-primary"></i>example@gmail.com</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 fw-normal text-light text-nowrap" href="tel:4065550120"><i class="fi-device-mobile mt-n1 me-1 align-middle text-primary"></i>(406) 555-0120</a></li>
+            </ul>
+          </div>
+          <!-- Links-->
+          <div class="col-lg-2 col-md-3 col-sm-4">
+            <h3 class="fs-base text-light">Quick links</h3>
+            <ul class="list-unstyled fs-sm">
+              <li><a class="nav-link-light" href="#">Top cities</a></li>
+              <li><a class="nav-link-light" href="#">Accommodation</a></li>
+              <li><a class="nav-link-light" href="#">Cafes &amp; restaurants</a></li>
+              <li><a class="nav-link-light" href="#">Events</a></li>
+            </ul>
+          </div>
+          <!-- Links-->
+          <div class="col-lg-2 col-md-3 col-sm-4">
+            <h3 class="fs-base text-light">Profile</h3>
+            <ul class="list-unstyled fs-sm">
+              <li><a class="nav-link-light" href="#">My account</a></li>
+              <li><a class="nav-link-light" href="#">Favorites</a></li>
+              <li><a class="nav-link-light" href="#">My listings</a></li>
+              <li><a class="nav-link-light" href="#">Add listing</a></li>
+            </ul>
+          </div>
+          <!-- Subscription form-->
+          <div class="col-lg-4 offset-lg-1">
+            <h3 class="h4 text-light">Subscribe to our newsletter</h3>
+            <p class="fs-sm mb-4 opacity-60">Don’t miss any relevant vacancies!</p>
+            <form class="form-group form-group-light rounded-pill" style="max-width: 500px;">
+              <div class="input-group input-group-sm"><span class="input-group-text text-muted"><i class="fi-mail"></i></span>
+                <input class="form-control" type="email" placeholder="Your email">
+              </div>
+              <button class="btn btn-primary btn-sm rounded-pill" type="button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 border-top border-light">
+        <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between py-2">
+          <!-- Copyright-->
+          <p class="order-lg-1 order-2 fs-sm mb-2 mb-lg-0"><span class="text-light opacity-60">&copy; All rights reserved. Made by </span><a class="nav-link-light fw-bold" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a></p>
+          <div class="d-flex flex-lg-row flex-column align-items-center order-lg-2 order-1 ms-lg-4 mb-lg-0 mb-4">
+            <!-- Links-->
+            <div class="d-flex flex-wrap fs-sm mb-lg-0 mb-4 pe-lg-4"><a class="nav-link-light px-2 mx-1" href="#">About</a><a class="nav-link-light px-2 mx-1" href="#">Blog</a><a class="nav-link-light px-2 mx-1" href="#">Support</a><a class="nav-link-light px-2 mx-1" href="#">Contacts</a></div>
+            <div class="d-flex align-items-center">
+              <!-- Language switcher-->
+              <div class="dropdown"><a class="nav-link nav-link-light dropdown-toggle fs-sm align-items-center p-0 fw-normal" href="#" id="langSwitcher" data-bs-toggle="dropdown" role="button" aria-expanded="false"><i class="fi-globe mt-n1 me-2 align-middle"></i>Eng</a>
+                <ul class="dropdown-menu dropdown-menu-dark my-1" aria-labelledby="langSwitcher">
+                  <li><a class="dropdown-item text-nowrap py-1" href="#"><img class="me-2" src="img/flags/de.png" width="20" alt="Deutsch">Deutsch</a></li>
+                  <li><a class="dropdown-item text-nowrap py-1" href="#"><img class="me-2" src="img/flags/fr.png" width="20" alt="Français">Français</a></li>
+                  <li><a class="dropdown-item text-nowrap py-1" href="#"><img class="me-2" src="img/flags/es.png" width="20" alt="Español">Español</a></li>
+                </ul>
+              </div>
+              <!-- Socials-->
+              <div class="ms-4 ps-lg-2 text-nowrap"><a class="btn btn-icon btn-translucent-light btn-xs rounded-circle ms-2" href="#"><i class="fi-facebook"></i></a><a class="btn btn-icon btn-translucent-light btn-xs rounded-circle ms-2" href="#"><i class="fi-twitter"></i></a><a class="btn btn-icon btn-translucent-light btn-xs rounded-circle ms-2" href="#"><i class="fi-telegram"></i></a><a class="btn btn-icon btn-translucent-light btn-xs rounded-circle ms-2" href="#"><i class="fi-messenger"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon fi-chevron-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from finder.createx.studio/city-guide-help-center.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:24:32 GMT -->
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from finder.createx.studio/components/maps.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:22:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Finder | Interactive maps</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Finder - Directory &amp; Listings Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, directory, listings, e-commerce, car dealer, city guide, real estate, job board, user account, multipurpose, ui kit, html5, css3, javascript, gallery, slider, touch">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="../vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/prismjs/themes/prism.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/prismjs/plugins/toolbar/prism-toolbar.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/prismjs/plugins/line-numbers/prism-line-numbers.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/leaflet/dist/leaflet.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+    <main class="container-fluid px-xl-4 pb-3 pb-lg-4">
+      <!-- Main content-->
+      <section class="offcanvas-enabled-start row">
+        <div class="col-xl-9">
+          <!-- Navbar-->
+          <header class="navbar navbar-expand justify-content-end navbar-light bg-light fixed-top shadow-sm px-3 px-xl-4" data-scroll-header data-fixed-element><a class="navbar-brand d-lg-none" href="typography.html"><img src="../img/logo/logo-dark.svg" width="116" alt="Finder"></a>
+            <button class="navbar-toggler d-block d-lg-none me-3 ms-auto border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#componentsNav"><span class="navbar-toggler-icon"></span></button>
+            <ul class="navbar-nav ms-auto d-none d-lg-flex">
+              <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fi-eye-on align-middle fs-base me-2"></i>Live preview</a></li>
+              <li class="nav-item mx-2 border-end"></li>
+              <li class="nav-item"><a class="nav-link" href="../docs/dev-setup.html"><i class="fi-file align-middle fs-base me-2"></i>Documentation</a></li>
+              <li class="nav-item mx-2 border-end"></li>
+            </ul><a class="btn btn-primary ms-lg-3" href="https://themes.getbootstrap.com/product/finder-directory-listings-template-ui-kit/" target="_blank" rel="noopener"><i class="fi-cart me-2 d-none d-sm-inline-block fs-lg"></i>Buy now</a>
+          </header>
+          <!-- Side navigation (Offcanvas)-->
+          <aside class="offcanvas offcanvas-start offcanvas-expand bg-dark" id="componentsNav">
+            <div class="offcanvas-header d-none d-lg-block pt-3 pb-4 bg-dark"><a class="navbar-brand py-2" href="typography.html"><img src="../img/logo/logo-light.svg" width="116" alt="Finder"></a><span class="badge bg-success">UI Kit</span></div>
+            <div class="offcanvas-header d-flex d-lg-none align-items-center">
+              <div class="d-flex align-items-center">
+                <h5 class="offcanvas-title me-3 text-white">Menu</h5><span class="badge bg-success">UI Kit</span>
+              </div>
+              <button class="btn-close btn-close-white" type="button" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="d-flex d-lg-none align-items-center py-4 px-3 border-top border-bottom border-light"><a class="btn btn-light btn-sm d-block w-100 me-2" href="../index.html"><i class="fi-eye-on me-2 fs-base"></i>Preview</a><a class="btn btn-info btn-sm d-block w-100" href="../docs/dev-setup.html"><i class="fi-file me-2 fs-base"></i>Documentation</a></div>
+            <div class="offcanvas-body pt-lg-2 pb-4" data-simplebar data-simplebar-inverse>
+              <h6 class="fs-base text-light mb-1 py-2">Content</h6>
+              <nav class="nav nav-light flex-column"><a class="nav-link fs-sm" href="typography.html">Typography</a><a class="nav-link fs-sm" href="icon-font.html">Icon font</a><a class="nav-link fs-sm" href="code.html">Code</a><a class="nav-link fs-sm" href="images.html">Images &amp; figures</a><a class="nav-link fs-sm" href="tables.html">Tables</a></nav>
+              <hr class="text-light opacity-15 mx-n4 mt-4">
+              <h6 class="fs-base text-light mx-n4 mb-1 pt-4 pb-2 px-4">Components</h6>
+              <nav class="nav nav-light flex-column"><a class="nav-link fs-sm" href="accordion.html">Accordion</a><a class="nav-link fs-sm" href="alerts.html">Alerts</a><a class="nav-link fs-sm" href="badge.html">Badges</a><a class="nav-link fs-sm" href="breadcrumb.html">Breadcrumb</a><a class="nav-link fs-sm" href="buttons.html">Buttons</a><a class="nav-link fs-sm" href="button-group.html">Button group</a><a class="nav-link fs-sm" href="cards-basic.html">Cards: Basic</a><a class="nav-link fs-sm" href="cards-advanced.html">Cards: Advanced</a><a class="nav-link fs-sm" href="carousel.html">Carousel (Slider)</a><a class="nav-link fs-sm" href="collapse.html">Collapse</a><a class="nav-link fs-sm" href="date-picker.html">Date / time picker</a><a class="nav-link fs-sm" href="dropdowns.html">Dropdowns</a><a class="nav-link fs-sm" href="file-uploader.html">File uploader</a><a class="nav-link fs-sm" href="forms.html">Forms</a><a class="nav-link fs-sm" href="form-group.html">Form group</a><a class="nav-link fs-sm" href="gallery.html">Gallery</a><a class="nav-link fs-sm" href="input-group.html">Input group</a><a class="nav-link fs-sm" href="icon-box.html">Icon box</a><a class="nav-link fs-sm active" href="maps.html">Interactive maps</a><a class="nav-link fs-sm" href="list-group.html">List group</a><a class="nav-link fs-sm" href="modal.html">Modal</a><a class="nav-link fs-sm" href="navbar.html">Navbar</a><a class="nav-link fs-sm" href="offcanvas.html">Offcanvas</a><a class="nav-link fs-sm" href="pagination.html">Pagination</a><a class="nav-link fs-sm" href="parallax.html">Parallax</a><a class="nav-link fs-sm" href="pills.html">Pills</a><a class="nav-link fs-sm" href="placeholders.html">Placeholders</a><a class="nav-link fs-sm" href="popovers.html">Popovers</a><a class="nav-link fs-sm" href="pricing.html">Pricing</a><a class="nav-link fs-sm" href="progress.html">Progress</a><a class="nav-link fs-sm" href="social-buttons.html">Social buttons</a><a class="nav-link fs-sm" href="spinners.html">Spinners</a><a class="nav-link fs-sm" href="steps.html">Steps</a><a class="nav-link fs-sm" href="tabs.html">Tabs</a><a class="nav-link fs-sm" href="testimonials.html">Testimonials / reviews</a><a class="nav-link fs-sm" href="toasts.html">Toasts</a><a class="nav-link fs-sm" href="tooltips.html">Tooltips</a></nav>
+              <hr class="text-light opacity-15 mx-n4 mt-4">
+              <h6 class="fs-base text-light mx-n4 mb-1 pt-4 pb-2 px-4">Utilities</h6>
+              <nav class="nav nav-light flex-column"><a class="nav-link fs-sm" href="https://getbootstrap.com/docs/5.1/utilities/background/" target="_blank" rel="noopener">Bootstrap</a><a class="nav-link fs-sm" href="utilities.html">Finder</a></nav>
+            </div>
+          </aside>
+          <!-- Page title-->
+          <div class="border-bottom mb-5 pt-5">
+            <h1 class="mt-5 pt-4">Interactive maps</h1>
+            <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
+              <p class="text-muted">Mobile-friendly interactive maps powered by Leaflet.js.</p>
+              <div class="ps-md-4 mb-3"><span class="badge bg-success">Finder component</span></div>
+            </div>
+          </div>
+          <div class="alert alert-info mb-4" role="alert">
+            <div class="d-flex"><i class="fi-alert-circle lead me-2 me-sm-3"></i>
+              <div class="text-break">
+                <p class="mb-1">In order to display maps on the page you need to include <strong>Leaflet css and js</strong> files in your document: <strong>vendor/leaflet/dist/leaflet.css</strong> and <strong>vendor/leaflet/dist/leaflet.js</strong>. See details below or use this page as a reference.</p>
+              </div>
+            </div>
+          </div>
+          <style>
+            .example-code {
+              padding-top: 0 !important;
+            }
+            div.code-toolbar > .example-code + .toolbar {
+              display: none;
+            }
+          </style>
+          <div class="bg-dark rounded p-4 mb-5">
+            <h5 class="fs-base text-light">Basic markup</h5>
+            <h6 class="fs-sm fw-bold text-light">Inline options:</h6>
+            <pre class="example-code"><code class="lang-html">&lt;div class=&quot;interactive-map&quot; style=&quot;height: 300px;&quot; data-map-options='{&lt;!--json options goes here--&gt;}'&gt;&lt;/div&gt;</code></pre>
+            <h6 class="fs-sm fw-bold text-light">External local JSON file:</h6>
+            <pre class="example-code"><code class="lang-html">&lt;div class=&quot;interactive-map&quot; style=&quot;height: 300px;&quot; data-map-options-json='{&lt;!--link to external local .json file--&gt;}'&gt;&lt;/div&gt;</code></pre>
+            <h5 class="fs-base text-light">Data API:</h5><code class="fs-sm">data-map-options = '{}'</code>:
+            <ul class="list-unstyled fs-sm mb-0">
+              <li><code>"mapLayer": "https://..." (link to API)</code><span class="text-light">&nbsp;- <span class='opacity-70'>This is a visual style (layer) of your map. We used <strong>Maptiler</strong> in this template to get map skins:</span> <a href='https://cloud.maptiler.com/maps' class='text-light' target='_blank' rel='noopener'>https://cloud.maptiler.com/maps</a>. <span class='opacity-70'>Choose the skin you like. Make sure to copy Raster tiles (HiDPI) link and pass it to "mapLayer" property.</span></span></li>
+              <li><code>"coordinates": [51.5, -0.09]</code><span class="text-light opacity-70">&nbsp;- An array of 2 values: latitude and longitude.</span></li>
+              <li><code>"zoom": 1</code><span class="text-light opacity-70">&nbsp;- Sets the zoom (scale) of the map. Default value: 1</span></li>
+              <li><code>"markers": [{...}, {...}]</code><span class="text-light opacity-70">&nbsp;- Array of objects. Each object is an individual marker. You can set as many markers as you need on a single map.</span></li>
+              <li>
+                <pre class="example-code pb-0"><code>"markers": [
+  {
+    "coordinates": [51.5, -0.09],
+    "iconUrl": "path-to-map-marker-icon.png",
+    "className": null || "custom-marker-icon" || "custom-marker-dot",
+    "popup": "&lt;div class='p-3'&gt;I'm a popup!&lt;/div&gt;"
+  }
+]</code></pre>
+              </li>
+              <li><code>markers[0].coordinates</code><span class="text-light opacity-70">&nbsp;- Position of the marker on the map. An array of 2 values: latitude and longitude.</span></li>
+              <li><code>markers[0].iconUrl</code><span class="text-light opacity-70">&nbsp;- Path to custom marker icon. If not provided default icon (pin) will be used. You can find all marker icons inside <code>dist/img/map</code> folder</span></li>
+              <li><code>markers[0].className</code><span class="text-light opacity-70">&nbsp;- Custom CSS class for marker. Useful if you need to style it differently. There are 2 pre-defined classes: <code>custom-marker-icon</code> (if you use one of the circle marker icons supplied with the template) and <code>custom-marker-dot</code> (alternative dot style marker). If not set, default map pin would be used.</span></li>
+              <li><code>markers[0].popup</code><span class="text-light opacity-70">&nbsp;- Pass HTML markup of the popup linked to this particular marker. Popups are revealed on click on the marker.</span></li>
+              <li class="fw-medium text-light pt-3"><span class="opacity-70">For more options please visit</span><a class="text-light ms-2" href="https://leafletjs.com/" target="_blank" rel="noopener">https://leafletjs.com/</a></li>
+            </ul>
+          </div>
+          <!-- Basic example (no options passed)-->
+          <section class="pb-5 mb-md-2" id="map-basic">
+            <h2 class="h5 mb-3">Basic example (no options passed)</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result1" data-bs-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html1" data-bs-toggle="tab" role="tab" aria-controls="html1" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug1" data-bs-toggle="tab" role="tab" aria-controls="pug1" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                    <div class="interactive-map" style="height: 400px;"></div>
+                  </div>
+                  <div class="tab-pane fade" id="html1" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Basic map example (no options passed) --&gt;
+&lt;div class=&quot;interactive-map&quot; style=&quot;height: 400px;&quot;&gt;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug1" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Basic map example (no options passed)
+.interactive-map(style='height: 400px;')
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Inline options: Default marker + alternative map style-->
+          <section class="pb-5 mb-md-2" id="map-inline-options-1">
+            <h2 class="h5 mb-3">Inline options: Default marker + alternative map style</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result2" data-bs-toggle="tab" role="tab" aria-controls="result2" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html2" data-bs-toggle="tab" role="tab" aria-controls="html2" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug2" data-bs-toggle="tab" role="tab" aria-controls="pug2" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result2" role="tabpanel">
+                    <div class="interactive-map" data-map-options="{&quot;mapLayer&quot;: &quot;https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=5vRQzd34MMsINEyeKPIs&quot;, &quot;coordinates&quot;: [51.5074, -0.1278], &quot;zoom&quot;: 10, &quot;markers&quot;: [{&quot;coordinates&quot;: [51.5074, -0.1278], &quot;popup&quot;: &quot;&lt;div class='p-3'&gt;&lt;h6&gt;Hi, I'm in London&lt;/h6&gt;&lt;p class='fs-sm pt-1 mt-n3 mb-0'&gt;Lorem ipsum dolor sit amet elit.&lt;/p&gt;&lt;/div&gt;&quot;}]}" style="height: 400px;"></div>
+                  </div>
+                  <div class="tab-pane fade" id="html2" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Inline options: Default marker + alternative map style --&gt;
+&lt;div class=&quot;interactive-map&quot; data-map-options='{&quot;mapLayer&quot;: &quot;https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=5vRQzd34MMsINEyeKPIs&quot;, &quot;coordinates&quot;: [51.5074, -0.1278], &quot;zoom&quot;: 10, &quot;markers&quot;: [{&quot;coordinates&quot;: [51.5074, -0.1278], &quot;popup&quot;: &quot;&lt;div class='p-3'&gt;&lt;h6&gt;Hi, I'm in London&lt;/h6&gt;&lt;p class='fs-sm pt-1 mt-n3 mb-0'&gt;Lorem ipsum dolor sit amet elit.&lt;/p&gt;&lt;/div&gt;&quot;}]}' style=&quot;height: 400px;&quot;&gt;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug2" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Inline options: Default marker + alternative map style
+.interactive-map(data-map-options='{&quot;mapLayer&quot;: &quot;https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=5vRQzd34MMsINEyeKPIs&quot;, &quot;coordinates&quot;: [51.5074, -0.1278], &quot;zoom&quot;: 10, &quot;markers&quot;: [{&quot;coordinates&quot;: [51.5074, -0.1278], &quot;popup&quot;: &quot;&lt;div class=\'p-3\'&gt;&lt;h6&gt;Hi, I\'m in London&lt;/h6&gt;&lt;p class=\'fs-sm pt-1 mt-n3 mb-0\'&gt;Lorem ipsum dolor sit amet elit.&lt;/p&gt;&lt;/div&gt;&quot;}]}', style=&quot;height: 400px;&quot;)
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Inline options: Dot markers + popups-->
+          <section class="pb-5 mb-md-2" id="map-inline-options-2">
+            <h2 class="h5 mb-3">Inline options: Dot markers + popups</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result3" data-bs-toggle="tab" role="tab" aria-controls="result3" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html3" data-bs-toggle="tab" role="tab" aria-controls="html3" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug3" data-bs-toggle="tab" role="tab" aria-controls="pug3" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result3" role="tabpanel">
+                    <div class="interactive-map" data-map-options="{&quot;mapLayer&quot;: &quot;https://api.maptiler.com/maps/pastel/{z}/{x}/{y}.png?key=5vRQzd34MMsINEyeKPIs&quot;, &quot;coordinates&quot;: [40.7128, -74.0060], &quot;zoom&quot;: 11, &quot;markers&quot;: [{&quot;coordinates&quot;: [40.702, -74.006], &quot;className&quot;: &quot;custom-marker-dot&quot;, &quot;popup&quot;: &quot;&lt;div class='p-3'&gt;&lt;h6&gt;Hi, I'm in New York&lt;/h6&gt;&lt;p class='fs-sm pt-1 mt-n3 mb-0'&gt;Lorem ipsum dolor sit amet elit.&lt;/p&gt;&lt;/div&gt;&quot;}, {&quot;coordinates&quot;: [40.716, -74.078], &quot;className&quot;: &quot;custom-marker-dot&quot;, &quot;popup&quot;: &quot;&lt;div class='p-3'&gt;&lt;h6&gt;Hi, I'm in Jersey Cty&lt;/h6&gt;&lt;p class='fs-sm pt-1 mt-n3 mb-0'&gt;Lorem ipsum dolor sit amet elit.&lt;/p&gt;&lt;/div&gt;&quot;}, {&quot;coordinates&quot;: [40.650, -74.209], &quot;className&quot;: &quot;custom-marker-dot&quot;, &quot;popup&quot;: &quot;&lt;div class='p-3'&gt;&lt;h6&gt;Hi, I'm in Elizabeth&lt;/h6&gt;&lt;p class='fs-sm pt-1 mt-n3 mb-0'&gt;Lorem ipsum dolor sit amet elit.&lt;/p&gt;&lt;/div&gt;&quot;}]}" style="height: 400px;"></div>
+                  </div>
+                  <div class="tab-pane fade" id="html3" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Inline options: Dot markers + popups --&gt;
+&lt;div class=&quot;interactive-map&quot; data-map-options='{&quot;mapLayer&quot;: &quot;https://api.maptiler.com/maps/pastel/{z}/{x}/{y}.png?key=5vRQzd34MMsINEyeKPIs&quot;, &quot;coordinates&quot;: [40.7128, -74.0060], &quot;zoom&quot;: 11, &quot;markers&quot;: [{&quot;coordinates&quot;: [40.702, -74.006], &quot;className&quot;: &quot;custom-marker-dot&quot;, &quot;popup&quot;: &quot;&lt;div class='p-3'&gt;&lt;h6&gt;Hi, I'm in New York&lt;/h6&gt;&lt;p class='fs-sm pt-1 mt-n3 mb-0'&gt;Lorem ipsum dolor sit amet elit.&lt;/p&gt;&lt;/div&gt;&quot;}, {&quot;coordinates&quot;: [40.716, -74.078], &quot;className&quot;: &quot;custom-marker-dot&quot;, &quot;popup&quot;: &quot;&lt;div class='p-3'&gt;&lt;h6&gt;Hi, I'm in Jersey Cty&lt;/h6&gt;&lt;p class='fs-sm pt-1 mt-n3 mb-0'&gt;Lorem ipsum dolor sit amet elit.&lt;/p&gt;&lt;/div&gt;&quot;}, {&quot;coordinates&quot;: [40.650, -74.209], &quot;className&quot;: &quot;custom-marker-dot&quot;, &quot;popup&quot;: &quot;&lt;div class='p-3'&gt;&lt;h6&gt;Hi, I'm in Elizabeth&lt;/h6&gt;&lt;p class='fs-sm pt-1 mt-n3 mb-0'&gt;Lorem ipsum dolor sit amet elit.&lt;/p&gt;&lt;/div&gt;&quot;}]}' style=&quot;height: 400px;&quot;&gt;&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug3" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Inline options: Dot markers + popups
+.interactive-map(data-map-options='{&quot;mapLayer&quot;: &quot;https://api.maptiler.com/maps/pastel/{z}/{x}/{y}.png?key=5vRQzd34MMsINEyeKPIs&quot;, &quot;coordinates&quot;: [40.7128, -74.0060], &quot;zoom&quot;: 11, &quot;markers&quot;: [{&quot;coordinates&quot;: [40.702, -74.006], &quot;className&quot;: &quot;custom-marker-dot&quot;, &quot;popup&quot;: &quot;&lt;div class=\'p-3\'&gt;&lt;h6&gt;Hi, I\'m in New York&lt;/h6&gt;&lt;p class=\'fs-sm pt-1 mt-n3 mb-0\'&gt;Lorem ipsum dolor sit amet elit.&lt;/p&gt;&lt;/div&gt;&quot;}, {&quot;coordinates&quot;: [40.716, -74.078], &quot;className&quot;: &quot;custom-marker-dot&quot;, &quot;popup&quot;: &quot;&lt;div class=\'p-3\'&gt;&lt;h6&gt;Hi, I\'m in Jersey Cty&lt;/h6&gt;&lt;p class=\'fs-sm pt-1 mt-n3 mb-0\'&gt;Lorem ipsum dolor sit amet elit.&lt;/p&gt;&lt;/div&gt;&quot;}, {&quot;coordinates&quot;: [40.650, -74.209], &quot;className&quot;: &quot;custom-marker-dot&quot;, &quot;popup&quot;: &quot;&lt;div class=\'p-3\'&gt;&lt;h6&gt;Hi, I\'m in Elizabeth&lt;/h6&gt;&lt;p class=\'fs-sm pt-1 mt-n3 mb-0\'&gt;Lorem ipsum dolor sit amet elit.&lt;/p&gt;&lt;/div&gt;&quot;}]}', style=&quot;height: 400px;&quot;)
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Complex options via external local .json file-->
+          <section class="pb-5 mb-md-2" id="map-external-options">
+            <h2 class="h5 mb-3">Complex options via external local .json file</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result4" data-bs-toggle="tab" role="tab" aria-controls="result4" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html4" data-bs-toggle="tab" role="tab" aria-controls="html4" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug4" data-bs-toggle="tab" role="tab" aria-controls="pug4" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result4" role="tabpanel">
+                    <div class="interactive-map" data-map-options-json="../json/map-options-example.json" style="height: 600px;"></div>
+                  </div>
+                  <div class="tab-pane fade" id="html4" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Complex options via external local .json file --&gt;
+&lt;div class=&quot;interactive-map&quot; data-map-options-json=&quot;path-to-external-json-with-map-options&quot; style=&quot;height: 600px;&quot;&gt;&lt;/div&gt;
+&lt;!-- Examples of .json files with map options you can find in dist/json folder --&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug4" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Complex options via external local .json file
+.interactive-map(data-map-options-json=&quot;path-to-external-json-with-map-options&quot;, style=&quot;height: 600px;&quot;)
+// Examples of .json files with map options you can find in dist/json folder</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Quick (anchor) navigation-->
+        <div class="col-xl-3 d-none d-xl-block ps-4 ps-xxl-5">
+          <aside class="sticky-top pt-5">
+            <div class="pt-5 mt-5">
+              <div class="ps-4 border-start">
+                <h3 class="h6">Jump to</h3><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#map-basic">Basic example (no options passed)</a><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#map-inline-options-1">Inline options: Default marker + alternative map style</a><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#map-inline-options-2">Inline options: Dot markers + popups</a><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#map-external-options">Complex options via external local .json file</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon fi-chevron-up">   </i></a>
+    <!-- Vendor scripts: js libraries and plugins-->
+    <script src="../vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="../vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-core.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-markup.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-clike.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-javascript.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-pug.min.js"></script>
+    <script src="../vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="../vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="../vendor/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="../vendor/leaflet/dist/leaflet.js"></script>
+    <!-- Main theme script-->
+    <script src="../js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from finder.createx.studio/components/maps.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:22:41 GMT -->
+</html>

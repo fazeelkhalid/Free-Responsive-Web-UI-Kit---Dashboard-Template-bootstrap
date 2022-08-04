@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from finder.createx.studio/components/modal.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:22:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Finder | Modal</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Finder - Directory &amp; Listings Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, directory, listings, e-commerce, car dealer, city guide, real estate, job board, user account, multipurpose, ui kit, html5, css3, javascript, gallery, slider, touch">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="../vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/prismjs/themes/prism.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/prismjs/plugins/toolbar/prism-toolbar.css"/>
+    <link rel="stylesheet" media="screen" href="../vendor/prismjs/plugins/line-numbers/prism-line-numbers.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+    <main class="container-fluid px-xl-4 pb-3 pb-lg-4">
+      <!-- Main content-->
+      <section class="offcanvas-enabled-start row">
+        <div class="col-xl-9">
+          <!-- Navbar-->
+          <header class="navbar navbar-expand justify-content-end navbar-light bg-light fixed-top shadow-sm px-3 px-xl-4" data-scroll-header data-fixed-element><a class="navbar-brand d-lg-none" href="typography.html"><img src="../img/logo/logo-dark.svg" width="116" alt="Finder"></a>
+            <button class="navbar-toggler d-block d-lg-none me-3 ms-auto border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#componentsNav"><span class="navbar-toggler-icon"></span></button>
+            <ul class="navbar-nav ms-auto d-none d-lg-flex">
+              <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fi-eye-on align-middle fs-base me-2"></i>Live preview</a></li>
+              <li class="nav-item mx-2 border-end"></li>
+              <li class="nav-item"><a class="nav-link" href="../docs/dev-setup.html"><i class="fi-file align-middle fs-base me-2"></i>Documentation</a></li>
+              <li class="nav-item mx-2 border-end"></li>
+            </ul><a class="btn btn-primary ms-lg-3" href="https://themes.getbootstrap.com/product/finder-directory-listings-template-ui-kit/" target="_blank" rel="noopener"><i class="fi-cart me-2 d-none d-sm-inline-block fs-lg"></i>Buy now</a>
+          </header>
+          <!-- Side navigation (Offcanvas)-->
+          <aside class="offcanvas offcanvas-start offcanvas-expand bg-dark" id="componentsNav">
+            <div class="offcanvas-header d-none d-lg-block pt-3 pb-4 bg-dark"><a class="navbar-brand py-2" href="typography.html"><img src="../img/logo/logo-light.svg" width="116" alt="Finder"></a><span class="badge bg-success">UI Kit</span></div>
+            <div class="offcanvas-header d-flex d-lg-none align-items-center">
+              <div class="d-flex align-items-center">
+                <h5 class="offcanvas-title me-3 text-white">Menu</h5><span class="badge bg-success">UI Kit</span>
+              </div>
+              <button class="btn-close btn-close-white" type="button" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="d-flex d-lg-none align-items-center py-4 px-3 border-top border-bottom border-light"><a class="btn btn-light btn-sm d-block w-100 me-2" href="../index.html"><i class="fi-eye-on me-2 fs-base"></i>Preview</a><a class="btn btn-info btn-sm d-block w-100" href="../docs/dev-setup.html"><i class="fi-file me-2 fs-base"></i>Documentation</a></div>
+            <div class="offcanvas-body pt-lg-2 pb-4" data-simplebar data-simplebar-inverse>
+              <h6 class="fs-base text-light mb-1 py-2">Content</h6>
+              <nav class="nav nav-light flex-column"><a class="nav-link fs-sm" href="typography.html">Typography</a><a class="nav-link fs-sm" href="icon-font.html">Icon font</a><a class="nav-link fs-sm" href="code.html">Code</a><a class="nav-link fs-sm" href="images.html">Images &amp; figures</a><a class="nav-link fs-sm" href="tables.html">Tables</a></nav>
+              <hr class="text-light opacity-15 mx-n4 mt-4">
+              <h6 class="fs-base text-light mx-n4 mb-1 pt-4 pb-2 px-4">Components</h6>
+              <nav class="nav nav-light flex-column"><a class="nav-link fs-sm" href="accordion.html">Accordion</a><a class="nav-link fs-sm" href="alerts.html">Alerts</a><a class="nav-link fs-sm" href="badge.html">Badges</a><a class="nav-link fs-sm" href="breadcrumb.html">Breadcrumb</a><a class="nav-link fs-sm" href="buttons.html">Buttons</a><a class="nav-link fs-sm" href="button-group.html">Button group</a><a class="nav-link fs-sm" href="cards-basic.html">Cards: Basic</a><a class="nav-link fs-sm" href="cards-advanced.html">Cards: Advanced</a><a class="nav-link fs-sm" href="carousel.html">Carousel (Slider)</a><a class="nav-link fs-sm" href="collapse.html">Collapse</a><a class="nav-link fs-sm" href="date-picker.html">Date / time picker</a><a class="nav-link fs-sm" href="dropdowns.html">Dropdowns</a><a class="nav-link fs-sm" href="file-uploader.html">File uploader</a><a class="nav-link fs-sm" href="forms.html">Forms</a><a class="nav-link fs-sm" href="form-group.html">Form group</a><a class="nav-link fs-sm" href="gallery.html">Gallery</a><a class="nav-link fs-sm" href="input-group.html">Input group</a><a class="nav-link fs-sm" href="icon-box.html">Icon box</a><a class="nav-link fs-sm" href="maps.html">Interactive maps</a><a class="nav-link fs-sm" href="list-group.html">List group</a><a class="nav-link fs-sm active" href="modal.html">Modal</a><a class="nav-link fs-sm" href="navbar.html">Navbar</a><a class="nav-link fs-sm" href="offcanvas.html">Offcanvas</a><a class="nav-link fs-sm" href="pagination.html">Pagination</a><a class="nav-link fs-sm" href="parallax.html">Parallax</a><a class="nav-link fs-sm" href="pills.html">Pills</a><a class="nav-link fs-sm" href="placeholders.html">Placeholders</a><a class="nav-link fs-sm" href="popovers.html">Popovers</a><a class="nav-link fs-sm" href="pricing.html">Pricing</a><a class="nav-link fs-sm" href="progress.html">Progress</a><a class="nav-link fs-sm" href="social-buttons.html">Social buttons</a><a class="nav-link fs-sm" href="spinners.html">Spinners</a><a class="nav-link fs-sm" href="steps.html">Steps</a><a class="nav-link fs-sm" href="tabs.html">Tabs</a><a class="nav-link fs-sm" href="testimonials.html">Testimonials / reviews</a><a class="nav-link fs-sm" href="toasts.html">Toasts</a><a class="nav-link fs-sm" href="tooltips.html">Tooltips</a></nav>
+              <hr class="text-light opacity-15 mx-n4 mt-4">
+              <h6 class="fs-base text-light mx-n4 mb-1 pt-4 pb-2 px-4">Utilities</h6>
+              <nav class="nav nav-light flex-column"><a class="nav-link fs-sm" href="https://getbootstrap.com/docs/5.1/utilities/background/" target="_blank" rel="noopener">Bootstrap</a><a class="nav-link fs-sm" href="utilities.html">Finder</a></nav>
+            </div>
+          </aside>
+          <!-- Page title-->
+          <div class="border-bottom mb-5 pt-5">
+            <h1 class="mt-5 pt-4">Modal</h1>
+            <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
+              <p class="text-muted">Add dialogs to your site for lightboxes, user notifications, etc.</p>
+              <p class="pt-1 fs-sm fw-bold ps-md-4"><a class="text-decoration-none text-nowrap" href="https://getbootstrap.com/docs/5.1/components/modal/" target="_blank" rel="noopener">Bootstrap docs<i class="fi-external-link align-middle ms-2 mt-n1"></i></a></p>
+            </div>
+          </div>
+          <!-- Small modal-->
+          <div class="modal fade" id="modalSmall" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Default modal-->
+          <div class="modal fade" id="modalDefault" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+                  <button class="btn btn-primary btn-shadow btn-sm" type="button">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Large modal-->
+          <div class="modal fade" id="modalLarge" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+                  <button class="btn btn-primary btn-shadow btn-sm" type="button">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Extra large modal-->
+          <div class="modal fade" id="modalXL" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-xl" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+                  <button class="btn btn-primary btn-shadow btn-sm" type="button">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Long modal-->
+          <div class="modal fade" id="modalLong" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body fs-sm">
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+                  <button class="btn btn-primary btn-shadow btn-sm" type="button">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Scrolling content-->
+          <div class="modal fade" id="modalScroll" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body fs-sm">
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                  <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                  <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+                  <button class="btn btn-primary btn-shadow btn-sm" type="button">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Vertically centered modal-->
+          <div class="modal fade" id="modalCentered" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+                  <button class="btn btn-primary btn-shadow btn-sm" type="button">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Full screen modal-->
+          <div class="modal fade" id="modalFullScreen" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-fullscreen" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal title</h4>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+                  <button class="btn btn-primary btn-shadow btn-sm" type="button">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal markup-->
+          <section class="pb-5 mb-md-2" id="modal-markup">
+            <h2 class="h5 mb-3">Modal markup</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result1" data-bs-toggle="tab" role="tab" aria-controls="result1" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html1" data-bs-toggle="tab" role="tab" aria-controls="html1" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug1" data-bs-toggle="tab" role="tab" aria-controls="pug1" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result1" role="tabpanel">
+                    <style>
+                      .example-modal .modal {
+                        display: block;
+                        position: relative;
+                        top: auto;
+                        right: auto;
+                        bottom: auto;
+                        left: auto;
+                        z-index: 1;
+                      }
+                    </style>
+                    <div class="example-modal">
+                      <div class="modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Modal title</h5>
+                              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p>Modal body text goes here.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button class="btn btn-secondary btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+                              <button class="btn btn-primary btn-shadow btn-sm" type="button">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html1" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Modal markup --&gt;
+&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;h5 class=&quot;modal-title&quot;&gt;Modal title&lt;/h5&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        &lt;p&gt;Modal body text goes here.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary btn-sm&quot; data-bs-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug1" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Modal markup
+.modal(tabindex=&quot;-1&quot;, role=&quot;dialog&quot;)
+  .modal-dialog(role=&quot;document&quot;)
+    .modal-content
+      .modal-header
+        h5.modal-title
+          | Modal title
+        button(type=&quot;button&quot;, class=&quot;btn-close&quot;, data-bs-dismiss=&quot;modal&quot;, aria-label=&quot;Close&quot;)
+      .modal-body
+        p Modal body text goes here.
+      .modal-footer
+        button(type=&quot;button&quot;, class=&quot;btn btn-secondary btn-sm&quot;, data-bs-dismiss=&quot;modal&quot;)
+          | Close
+        button(type=&quot;button&quot;, class=&quot;btn btn-primary btn-sm&quot;)
+          | Save changes
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Tabs and forms-->
+          <section class="pb-5 mb-md-2" id="modal-tabs-forms">
+            <h2 class="h5 mb-3">Tabs and forms</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result2" data-bs-toggle="tab" role="tab" aria-controls="result2" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html2" data-bs-toggle="tab" role="tab" aria-controls="html2" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug2" data-bs-toggle="tab" role="tab" aria-controls="pug2" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result2" role="tabpanel">
+                    <div class="example-modal">
+                      <div class="modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <ul class="nav nav-tabs mb-0" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" href="#signin" data-bs-toggle="tab" role="tab" aria-selected="true"><i class="fi-login fs-sm me-2 ms-n1"></i>Sign in</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#signup" data-bs-toggle="tab" role="tab" aria-selected="false"><i class="fi-user fs-sm me-2 ms-n1"></i>Sign up</a></li>
+                              </ul>
+                              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body tab-content py-4">
+                              <form class="tab-pane fade show active" autocomplete="off" id="signin">
+                                <div class="mb-3">
+                                  <label class="form-label" for="email1">Email address</label>
+                                  <input class="form-control" type="email" id="email1" placeholder="johndoe@example.com">
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label" for="pass1">Password</label>
+                                  <div class="password-toggle">
+                                    <input class="form-control" type="password" id="pass1">
+                                    <label class="password-toggle-btn">
+                                      <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="mb-3 d-flex flex-wrap justify-content-between">
+                                  <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="remember">
+                                    <label class="form-check-label" for="remember">Remember me</label>
+                                  </div><a class="fs-sm" href="#">Forgot password?</a>
+                                </div>
+                                <button class="btn btn-primary d-block w-100" type="submit">Sign in</button>
+                              </form>
+                              <form class="tab-pane fade" autocomplete="off" id="signup">
+                                <div class="mb-3">
+                                  <label class="form-label" for="name">Full name</label>
+                                  <input class="form-control" type="text" id="name" placeholder="John Doe">
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label" for="email2">Email address</label>
+                                  <input class="form-control" type="email" id="email2" placeholder="johndoe@example.com">
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label" for="pass2">Password</label>
+                                  <div class="password-toggle">
+                                    <input class="form-control" type="password" id="pass2">
+                                    <label class="password-toggle-btn">
+                                      <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="mb-3">
+                                  <label class="form-label" for="pass3">Confirm password</label>
+                                  <div class="password-toggle">
+                                    <input class="form-control" type="password" id="pass3">
+                                    <label class="password-toggle-btn">
+                                      <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                                    </label>
+                                  </div>
+                                </div>
+                                <button class="btn btn-primary d-block w-100" type="submit">Sign up</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="html2" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Modal with tabs and forms --&gt;
+&lt;div class=&quot;modal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;ul class=&quot;nav nav-tabs mb-0&quot; role=&quot;tablist&quot;&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link active&quot; href=&quot;#signin&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot; aria-selected=&quot;true&quot;&gt;
+              &lt;i class=&quot;fi-login fs-sm me-2 ms-n1&quot;&gt;&lt;/i&gt;
+              Sign in
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class=&quot;nav-item&quot;&gt;
+            &lt;a class=&quot;nav-link&quot; href=&quot;#signup&quot; data-bs-toggle=&quot;tab&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot;&gt;
+              &lt;i class=&quot;fi-user fs-sm me-2 ms-n1&quot;&gt;&lt;/i&gt;
+              Sign up
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;button class=&quot;btn-close&quot; type=&quot;button&quot; data-bs-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body tab-content py-4&quot;&gt;
+        &lt;form class=&quot;tab-pane fade show active&quot; autocomplete=&quot;off&quot; id=&quot;signin&quot;&gt;
+          &lt;div class=&quot;mb-3&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;email1&quot;&gt;Email address&lt;/label&gt;
+            &lt;input class=&quot;form-control&quot; type=&quot;email&quot; id=&quot;email1&quot; placeholder=&quot;johndoe@example.com&quot;&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;mb-3&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;pass1&quot;&gt;Password&lt;/label&gt;
+            &lt;div class=&quot;password-toggle&quot;&gt;
+              &lt;input class=&quot;form-control&quot; type=&quot;password&quot; id=&quot;pass1&quot;&gt;
+              &lt;label class=&quot;password-toggle-btn&quot;&gt;
+                &lt;input class=&quot;password-toggle-check&quot; type=&quot;checkbox&quot;&gt;
+                &lt;span class=&quot;password-toggle-indicator&quot;&gt;&lt;/span&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;mb-3 d-flex flex-wrap justify-content-between&quot;&gt;
+            &lt;div class=&quot;form-check mb-2&quot;&gt;
+              &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;remember&quot;&gt;
+              &lt;label class=&quot;form-check-label&quot; for=&quot;remember&quot;&gt;Remember me&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;a class=&quot;fs-sm&quot; href=&quot;#&quot;&gt;Forgot password?&lt;/a&gt;
+          &lt;/div&gt;
+          &lt;button class=&quot;btn btn-primary d-block w-100&quot; type=&quot;submit&quot;&gt;Sign in&lt;/button&gt;
+        &lt;/form&gt;
+        &lt;form class=&quot;tab-pane fade&quot; autocomplete=&quot;off&quot; id=&quot;signup&quot;&gt;
+          &lt;div class=&quot;mb-3&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;name&quot;&gt;Full name&lt;/label&gt;
+            &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;name&quot; placeholder=&quot;John Doe&quot;&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;mb-3&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;email2&quot;&gt;Email address&lt;/label&gt;
+            &lt;input class=&quot;form-control&quot; type=&quot;email&quot; id=&quot;email2&quot; placeholder=&quot;johndoe@example.com&quot;&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;mb-3&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;pass2&quot;&gt;Password&lt;/label&gt;
+            &lt;div class=&quot;password-toggle&quot;&gt;
+              &lt;input class=&quot;form-control&quot; type=&quot;password&quot; id=&quot;pass2&quot;&gt;
+              &lt;label class=&quot;password-toggle-btn&quot;&gt;
+                &lt;input class=&quot;password-toggle-check&quot; type=&quot;checkbox&quot;&gt;
+                &lt;span class=&quot;password-toggle-indicator&quot;&gt;&lt;/span&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;mb-3&quot;&gt;
+            &lt;label class=&quot;form-label&quot; for=&quot;pass3&quot;&gt;Confirm password&lt;/label&gt;
+            &lt;div class=&quot;password-toggle&quot;&gt;
+              &lt;input class=&quot;form-control&quot; type=&quot;password&quot; id=&quot;pass3&quot;&gt;
+              &lt;label class=&quot;password-toggle-btn&quot;&gt;
+                &lt;input class=&quot;password-toggle-check&quot; type=&quot;checkbox&quot;&gt;
+                &lt;span class=&quot;password-toggle-indicator&quot;&gt;&lt;/span&gt;
+              &lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;button class=&quot;btn btn-primary d-block w-100&quot; type=&quot;submit&quot;&gt;Sign up&lt;/button&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug2" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Modal with tabs and forms
+.modal(tabindex=&quot;-1&quot;, role=&quot;dialog&quot;)
+  .modal-dialog(role=&quot;document&quot;)
+    .modal-content
+      .modal-header
+        ul(role=&quot;tablist&quot;).nav.nav-tabs.mb-0
+          li.nav-item
+            a(href=&quot;#signin&quot;, data-bs-toggle=&quot;tab&quot;, role=&quot;tab&quot;, aria-selected=&quot;true&quot;).nav-link.active
+              i.fi-login.fs-sm.me-2.ms-n1
+              | Sign in
+          li.nav-item
+            a(href=&quot;#signup&quot;, data-bs-toggle=&quot;tab&quot;, role=&quot;tab&quot;, aria-selected=&quot;false&quot;).nav-link
+              i.fi-user.fs-sm.me-2.ms-n1
+              | Sign up
+        button(type=&quot;button&quot;, class=&quot;btn-close&quot;, data-bs-dismiss=&quot;modal&quot;, aria-label=&quot;Close&quot;)
+      .modal-body.tab-content.py-4
+        form(autocomplete=&quot;off&quot;)#signin.tab-pane.fade.show.active
+          .mb-3
+            label(for=&quot;email1&quot;).form-label Email address
+            input(type=&quot;email&quot;, id=&quot;email1&quot;, placeholder=&quot;johndoe@example.com&quot;).form-control
+          .mb-3
+            label(for=&quot;pass1&quot;).form-label Password
+            .password-toggle
+              input(type=&quot;password&quot;, id=&quot;pass1&quot;).form-control
+              label.password-toggle-btn
+                input(type=&quot;checkbox&quot;).password-toggle-check
+                span.password-toggle-indicator
+          .mb-3.d-flex.flex-wrap.justify-content-between
+            .form-check.mb-2
+              input(type=&quot;checkbox&quot;, id=&quot;remember&quot;).form-check-input
+              label(for=&quot;remember&quot;).form-check-label Remember me
+            a(href=&quot;#&quot;).fs-sm Forgot password?
+          button(type=&quot;submit&quot;).btn.btn-primary.d-block.w-100
+            | Sign in
+        form(autocomplete=&quot;off&quot;)#signup.tab-pane.fade
+          .mb-3
+            label(for=&quot;name&quot;).form-label Full name
+            input(type=&quot;text&quot;, id=&quot;name&quot;, placeholder=&quot;John Doe&quot;).form-control
+          .mb-3
+            label(for=&quot;email2&quot;).form-label Email address
+            input(type=&quot;email&quot;, id=&quot;email2&quot;, placeholder=&quot;johndoe@example.com&quot;).form-control
+          .mb-3
+            label(for=&quot;pass2&quot;).form-label Password
+            .password-toggle
+              input(type=&quot;password&quot;, id=&quot;pass2&quot;).form-control
+              label.password-toggle-btn
+                input(type=&quot;checkbox&quot;).password-toggle-check
+                span.password-toggle-indicator
+          .mb-3
+            label(for=&quot;pass3&quot;).form-label Confirm password
+            .password-toggle
+              input(type=&quot;password&quot;, id=&quot;pass3&quot;).form-control
+              label.password-toggle-btn
+                input(type=&quot;checkbox&quot;).password-toggle-check
+                span.password-toggle-indicator
+          button(type=&quot;submit&quot;).btn.btn-primary.d-block.w-100
+            | Sign up
+</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Live demo-->
+          <section class="pb-5 mb-md-2" id="modal-demo">
+            <h2 class="h5 mb-3">Live demo</h2>
+            <div class="card border-0 shadow-sm">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item"><a class="nav-link active" href="#result3" data-bs-toggle="tab" role="tab" aria-controls="result3" aria-selected="true">Result</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#html3" data-bs-toggle="tab" role="tab" aria-controls="html3" aria-selected="false">HTML</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pug3" data-bs-toggle="tab" role="tab" aria-controls="pug3" aria-selected="false">Pug</a></li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="result3" role="tabpanel">
+                    <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalSmall">Small modal</button>
+                    <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalDefault">Default modal</button>
+                    <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalLarge">Large modal</button>
+                    <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalXL">Extra large modal</button>
+                    <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalLong">Long modal</button>
+                    <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalScroll">Srolling content</button>
+                    <button class="btn btn-outline-secondary me-2 mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalCentered">Vertically centered modal</button>
+                    <button class="btn btn-outline-secondary mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalFullScreen">Full screen modal</button>
+                  </div>
+                  <div class="tab-pane fade" id="html3" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-html">&lt;!-- Small modal --&gt;
+&lt;div id=&quot;modalSmall&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-sm&quot; role=&quot;document&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#modalSmall&quot;&gt;
+  Small modal
+&lt;/button&gt;
+
+&lt;!-- Default modal --&gt;
+&lt;div id=&quot;modalDefault&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#modalDefault&quot;&gt;
+  Default modal
+&lt;/button&gt;
+
+&lt;!-- Large modal --&gt;
+&lt;div id=&quot;modalLarge&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-lg&quot; role=&quot;document&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#modalLarge&quot;&gt;
+  Large modal
+&lt;/button&gt;
+
+&lt;!-- Extra large modal --&gt;
+&lt;div id=&quot;modalXL&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-xl&quot; role=&quot;document&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#modalXL&quot;&gt;
+  Extra large modal
+&lt;/button&gt;
+
+&lt;!-- Modal with srolling content --&gt;
+&lt;div id=&quot;modalScroll&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-dialog-scrollable&quot; role=&quot;document&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#modalScroll&quot;&gt;
+  Srolling content
+&lt;/button&gt;
+
+&lt;!-- Vertically centered modal --&gt;
+&lt;div id=&quot;modalCentered&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-dialog-centered&quot; role=&quot;document&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#modalCentered&quot;&gt;
+  Vertically centered modal
+&lt;/button&gt;
+
+&lt;!-- Full screen modal --&gt;
+&lt;div id=&quot;modalFullScreen&quot; class=&quot;modal fade&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot;&gt;
+  &lt;div class=&quot;modal-dialog modal-fullscreen&quot; role=&quot;document&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot; data-bs-toggle=&quot;modal&quot; data-bs-target=&quot;#modalFullScreen&quot;&gt;
+  Full screen modal
+&lt;/button&gt;</code></pre>
+                  </div>
+                  <div class="tab-pane fade" id="pug3" role="tabpanel">
+                    <pre class="line-numbers"><code class="lang-pug">// Small modal
+div(id=&quot;modalSmall&quot;, tabindex=&quot;-1&quot;, role=&quot;dialog&quot;).modal.fade
+  .modal-dialog.modal-sm(role=&quot;document&quot;)
+    ...
+
+button(type=&quot;button&quot;, class=&quot;btn btn-outline-secondary&quot;, data-bs-toggle=&quot;modal&quot;, data-bs-target=&quot;#modalSmall&quot;)
+  | Small modal
+
+// Default modal
+div(id=&quot;modalDefault&quot;, tabindex=&quot;-1&quot;, role=&quot;dialog&quot;).modal.fade
+  .modal-dialog(role='document')
+    ...
+
+button(type=&quot;button&quot;, class=&quot;btn btn-outline-secondary&quot;, data-bs-toggle=&quot;modal&quot;, data-bs-target=&quot;#modalDefault&quot;)
+  | Default modal
+
+// Large modal
+div(id=&quot;modalLarge&quot;, tabindex=&quot;-1&quot;, role=&quot;dialog&quot;).modal.fade
+  .modal-dialog.modal-lg(role='document')
+    ...
+    
+button(type=&quot;button&quot;, class=&quot;btn btn-outline-secondary&quot;, data-bs-toggle=&quot;modal&quot;, data-bs-target=&quot;#modalLarge&quot;)
+  | Large modal
+
+// Extra large modal
+div(id=&quot;modalXL&quot;, tabindex=&quot;-1&quot;, role=&quot;dialog&quot;).modal.fade
+  .modal-dialog.modal-xl(role='document')
+    ...
+
+button(type=&quot;button&quot;, class=&quot;btn btn-outline-secondary&quot;, data-bs-toggle=&quot;modal&quot;, data-bs-target=&quot;#modalXL&quot;)
+  | Extra large modal
+
+// Modal with srolling content
+div(id=&quot;modalScroll&quot;, tabindex=&quot;-1&quot;, role=&quot;dialog&quot;).modal.fade
+  .modal-dialog.modal-dialog-scrollable(role='document')
+    ...
+
+button(type=&quot;button&quot;, class=&quot;btn btn-outline-secondary&quot;, data-bs-toggle=&quot;modal&quot;, data-bs-target=&quot;#modalScroll&quot;)
+  | Srolling content
+
+// Vertically centered modal
+div(id=&quot;modalCentered&quot;, tabindex=&quot;-1&quot;, role=&quot;dialog&quot;).modal.fade
+  .modal-dialog.modal-dialog-centered(role='document')
+    ...
+    
+button(type=&quot;button&quot;, class=&quot;btn btn-outline-secondary&quot;, data-bs-toggle=&quot;modal&quot;, data-bs-target=&quot;#modalCentered&quot;)
+  | Vertically centered modal
+
+// Full screen modal
+div(id=&quot;modalFullScreen&quot;, tabindex=&quot;-1&quot;, role=&quot;dialog&quot;).modal.fade
+  .modal-dialog.modal-fullscreen(role='document')
+    ...
+
+button(type=&quot;button&quot;, class=&quot;btn btn-outline-secondary&quot;, data-bs-toggle=&quot;modal&quot;, data-bs-target=&quot;#modalFullScreen&quot;)
+  | Full screen modal</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Quick (anchor) navigation-->
+        <div class="col-xl-3 d-none d-xl-block ps-4 ps-xxl-5">
+          <aside class="sticky-top pt-5">
+            <div class="pt-5 mt-5">
+              <div class="ps-4 border-start">
+                <h3 class="h6">Jump to</h3><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#modal-markup">Modal markup</a><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#modal-tabs-forms">Tabs and forms</a><a class="nav-link py-1 px-0 fs-sm fw-normal" data-scroll href="#modal-demo">Live demo</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon fi-chevron-up">   </i></a>
+    <!-- Vendor scripts: js libraries and plugins-->
+    <script src="../vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="../vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-core.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-markup.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-clike.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-javascript.min.js"></script>
+    <script src="../vendor/prismjs/components/prism-pug.min.js"></script>
+    <script src="../vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="../vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="../vendor/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <!-- Main theme script-->
+    <script src="../js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from finder.createx.studio/components/modal.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:22:41 GMT -->
+</html>
