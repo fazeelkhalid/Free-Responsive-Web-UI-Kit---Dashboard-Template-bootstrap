@@ -60,3 +60,4 @@
 <p align="center" >   
   <img src="https://github.com/fazeelkhalid/Free-Responsive-Web-UI-Kit---Dashboard-Template-bootstrap/blob/main/Theme1/Demo/Images/Chat.png" />  
 </p>
+<p>
