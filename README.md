@@ -22,6 +22,36 @@
     </p>
 </details>
 
+<details>
+    <summary><h2><strong>Theme3 Demo</strong></h2></summary>
+    <p float="left">
+        <img src="./Theme3/Demo%20Images/3.png"  width = 45%/>
+        <img src="./Theme3/Demo%20Images/4.png"  width = 45%/>
+        <img src="./Theme3/Demo%20Images/5.png"  width = 45%/>
+        <img src="./Theme3/Demo%20Images/6.png"  width = 45%/>
+    </p>
+</details>
+
+<details>
+    <summary><h2><strong>Theme4 Demo</strong></h2></summary>
+    <p float="left">
+        <img src="./Theme4/Demo%20Images/3.png"  width = 45%/>
+        <img src="./Theme4/Demo%20Images/4.png"  width = 45%/>
+        <img src="./Theme4/Demo%20Images/5.png"  width = 45%/>
+        <img src="./Theme4/Demo%20Images/6.png"  width = 45%/>
+    </p>
+</details>
+
+<details>
+    <summary><h2><strong>Theme5 Demo</strong></h2></summary>
+    <p float="left">
+        <img src="./Theme5/Demo%20Images/3.png"  width = 45%/>
+        <img src="./Theme5/Demo%20Images/4.png"  width = 45%/>
+        <img src="./Theme5/Demo%20Images/5.png"  width = 45%/>
+        <img src="./Theme5/Demo%20Images/6.png"  width = 45%/>
+    </p>
+</details>
+
 
 <p text-align: "center">
 This repository consist of fully-featured dashboard and admin template and many other websites templates that are totally free and all of them comes with tones of well-designed UI elements, components, widgets, and pages. The super clean and flexible layout would enable you to easily build web applications. It can be used to create a saas-based interface, custom admin panels, dashboard, CRM, CMS, e-commerce panel, etc.
