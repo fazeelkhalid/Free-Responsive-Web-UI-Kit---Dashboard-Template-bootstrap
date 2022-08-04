@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from silicon.createx.studio/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:35:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Silicon | Multipurpose Business / Technology Template</title>
+
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, construction, services, e-commerce, shopping cart, mobile app showcase, multipurpose, shop, ui kit, marketing, seo, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#6366f1">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#080032">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #0b0f19;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #9397ad;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #b4b7c9;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        border-color: rgba(255,255,255,.4);
+        border-right-color: transparent;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Theme mode -->
+    <script>
+      let mode = window.localStorage.getItem('mode'),
+          root = document.getElementsByTagName('html')[0];
+      if (mode !== null && mode === 'dark') {
+        root.classList.add('dark-mode');
+      } else {
+        root.classList.remove('dark-mode');
+      }
+    </script>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1000);
+        };
+      })();
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body>
+    
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    
+
+    <!-- Page wrapper for sticky footer -->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper">
+
+
+      <!-- Navbar -->
+      <!-- Remove "fixed-top" class to make navigation bar scrollable with the page -->
+      <header class="header navbar navbar-expand-lg bg-light shadow-sm fixed-top">
+        <div class="container px-3">
+          <a href="index.html" class="navbar-brand pe-3">
+            <img src="assets/img/logo.svg" width="47" alt="Silicon">
+            Silicon
+          </a>
+          <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-current="page">Landings</a>
+                  <div class="dropdown-menu p-0">
+                    <div class="d-lg-flex">
+                      <div class="mega-dropdown-column bg-position-center bg-repeat-0 bg-size-cover rounded-3 rounded-end-0" style="background-image: url(assets/img/landings.jpg); margin: -1px;"></div>
+                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                        <ul class="list-unstyled mb-0">
+                          <li><a href="index.html" class="dropdown-item">Template Intro Page</a></li>
+                          <li><a href="landing-mobile-app-showcase-v1.html" class="dropdown-item">Mobile App Showcase v.1</a></li>
+                          <li><a href="landing-mobile-app-showcase-v2.html" class="dropdown-item">Mobile App Showcase v.2</a></li>
+                          <li><a href="landing-saas-v1.html" class="dropdown-item">SaaS v.1</a></li>
+                          <li><a href="landing-saas-v2.html" class="dropdown-item">SaaS v.2</a></li>
+                          <li><a href="landing-saas-v3.html" class="dropdown-item">SaaS v.3</a></li>
+                          <li><a href="landing-financial.html" class="dropdown-item">Financial Consulting</a></li>
+                          <li><a href="landing-online-courses.html" class="dropdown-item">Online Courses</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
+                        <ul class="list-unstyled mb-0">
+                          <li><a href="landing-medical.html" class="dropdown-item">Medical</a></li>
+                          <li><a href="landing-software-company.html" class="dropdown-item">IT (Software) Company</a></li>
+                          <li><a href="landing-conference.html" class="dropdown-item">Conference</a></li>
+                          <li><a href="landing-digital-agency.html" class="dropdown-item">Digital Agency</a></li>
+                          <li><a href="landing-blog.html" class="dropdown-item">Blog Homepage</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                  <div class="dropdown-menu">
+                    <div class="d-lg-flex pt-lg-3">
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">About</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="about-v1.html" class="dropdown-item py-1">About v.1</a></li>
+                          <li><a href="about-v2.html" class="dropdown-item py-1">About v.2</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Blog</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="blog-list-with-sidebar.html" class="dropdown-item py-1">List View with Sidebar</a></li>
+                          <li><a href="blog-grid-with-sidebar.html" class="dropdown-item py-1">Grid View with Sidebar</a></li>
+                          <li><a href="blog-list-no-sidebar.html" class="dropdown-item py-1">List View no Sidebar</a></li>
+                          <li><a href="blog-grid-no-sidebar.html" class="dropdown-item py-1">Grid View no Sidebar</a></li>
+                          <li><a href="blog-simple-feed.html" class="dropdown-item py-1">Simple Feed</a></li>
+                          <li><a href="blog-single.html" class="dropdown-item py-1">Single Post</a></li>
+                          <li><a href="blog-podcast.html" class="dropdown-item py-1">Podcast</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">Portfolio</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="portfolio-grid.html" class="dropdown-item py-1">Grid View</a></li>
+                          <li><a href="portfolio-list.html" class="dropdown-item py-1">List View</a></li>
+                          <li><a href="portfolio-slider.html" class="dropdown-item py-1">Slider View</a></li>
+                          <li><a href="portfolio-courses.html" class="dropdown-item py-1">Courses</a></li>
+                          <li><a href="portfolio-single-project.html" class="dropdown-item py-1">Single Project</a></li>
+                          <li><a href="portfolio-single-course.html" class="dropdown-item py-1">Single Course</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Services</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="services-v1.html" class="dropdown-item py-1">Services v.1</a></li>
+                          <li><a href="services-v2.html" class="dropdown-item py-1">Services v.2</a></li>
+                          <li><a href="services-single-v1.html" class="dropdown-item py-1">Service Details v.1</a></li>
+                          <li><a href="services-single-v2.html" class="dropdown-item py-1">Service Details v.2</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-dropdown-column">
+                        <h6 class="px-3 mb-2">Pricing</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="pricing.html" class="dropdown-item py-1">Pricing Page</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Contacts</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="contacts-v1.html" class="dropdown-item py-1">Contacts v.1</a></li>
+                          <li><a href="contacts-v2.html" class="dropdown-item py-1">Contacts v.2</a></li>
+                          <li><a href="contacts-v3.html" class="dropdown-item py-1">Contacts v.3</a></li>
+                        </ul>
+                        <h6 class="px-3 mb-2">Specialty</h6>
+                        <ul class="list-unstyled">
+                          <li><a href="404-v1.html" class="dropdown-item py-1">404 Error v.1</a></li>
+                          <li><a href="404-v2.html" class="dropdown-item py-1">404 Error v.2</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
+                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
+                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
+                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
+                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
+                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
+                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
+                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
+                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="components/typography.html" class="nav-link">UI Kit</a>
+                </li>
+                <li class="nav-item">
+                  <a href="docs/getting-started.html" class="nav-link">Docs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="offcanvas-header border-top">
+              <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary w-100" target="_blank" rel="noopener">
+                <i class="bx bx-cart fs-4 lh-1 me-1"></i>
+                &nbsp;Buy now
+              </a>
+            </div>      
+          </div>
+          <div class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4" data-bs-toggle="mode">
+            <input type="checkbox" class="form-check-input" id="theme-mode">
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Light</label>
+            <label class="form-check-label d-none d-sm-block" for="theme-mode">Dark</label>
+          </div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="https://themes.getbootstrap.com/product/silicon-business-technology-template-ui-kit/" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" target="_blank" rel="noopener">
+            <i class="bx bx-cart fs-5 lh-1 me-1"></i>
+            &nbsp;Buy now
+          </a>
+        </div>
+      </header>
+
+
+      <!-- Hero -->
+      <section class="dark-mode vh-100 bg-repeat-0 bg-position-center bg-size-cover overflow-hidden" style="background-image: url(assets/img/landing/intro/hero/bg.jpg);">
+        <div class="container vh-100">
+          <div class="row flex-nowrap vh-100">
+            <div class="col-lg-4 col-md-5 d-flex flex-column text-center text-md-start py-5">
+              <h1 class="display-3 mt-auto mb-4">Silicon</h1>
+              <p class="lead text-light opacity-70 pb-5 mb-0 mb-md-3">Multipurpose Business /<br class="d-none d-md-inline"> Technology Template</p>
+              <img src="assets/img/landing/intro/hero/switcher.svg" width="212" class="d-block mx-auto mx-md-0" alt="Light / Dark Mode">
+              <div class="position-relative d-flex align-items-center justify-content-center justify-content-md-start mb-md-4 mb-lg-5 mt-auto">
+                <div class="btn btn-icon btn-secondary rounded-circle">
+                  <i class="bx bx-chevron-down"></i>
+                </div>
+                <a href="#landings" class="nav-link stretched-link text-light fw-normal opacity-80 py-2 px-3" data-scroll data-scroll-offset="70">View Landings</a>
+              </div>
+            </div>
+            <div class="d-flex flex-shrink-0 align-items-start">
+              <img src="assets/img/landing/intro/hero/screens01.png" class="rellax d-block flex-shrink-0 mt-n5" width="486" height="1390" alt="Screens" data-rellax-speed="4" data-disable-parallax-down="md">
+              <img src="assets/img/landing/intro/hero/screens02.png" class="rellax d-block flex-shrink-0 mt-5" width="486" height="1470" alt="Screens" data-rellax-speed="-4" data-disable-parallax-down="md">
+              <img src="assets/img/landing/intro/hero/screens03.png" class="rellax d-block flex-shrink-0" width="486" height="1480" alt="Screens" data-rellax-speed="4" data-disable-parallax-down="md">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Main features (Slider on narrow scrreens) -->
+      <section class="container pt-5">
+        <div class="swiper mt-n3 mt-md-0 pt-md-4 pt-lg-5 mx-n2" data-swiper-options='{
+          "slidesPerView": 1,
+          "spaceBetween": 8,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "clickable": true
+          },
+          "navigation": {
+            "prevEl": "#prev-news",
+            "nextEl": "#next-news"
+          },
+          "breakpoints": {
+            "500": {
+              "slidesPerView": 2
+            },
+            "700": {
+              "slidesPerView": 3
+            },
+            "1000": {
+              "slidesPerView": 4
+            }
+          }
+        }'>
+          <div class="swiper-wrapper">
+
+            <!-- Item -->
+            <div class="swiper-slide h-auto pb-3">
+              <div class="card card-hover bg-light border-0 animation-on-hover h-100 mx-2">
+                <lottie-player class="d-dark-mode-none mx-auto mt-4 mb-2" src="assets/json/animation-feature-1-light.json" background="transparent.html" speed="1.25" loop style="width: 180px;"></lottie-player>
+                <lottie-player class="d-none d-dark-mode-block mx-auto mt-4 mb-2" src="assets/json/animation-feature-1-dark.json" background="transparent.html" speed="1.25" loop style="width: 180px;"></lottie-player>
+                <div class="card-body fs-lg fw-semibold text-center">Light / Dark Mode</div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide h-auto pb-3">
+              <div class="card card-hover bg-light border-0 animation-on-hover h-100 mx-2">
+                <lottie-player class="d-dark-mode-none mx-auto mt-4 mb-2" src="assets/json/animation-feature-2-light.json" background="transparent.html" speed="1.25" loop style="width: 180px;"></lottie-player>
+                <lottie-player class="d-none d-dark-mode-block mx-auto mt-4 mb-2" src="assets/json/animation-feature-2-dark.json" background="transparent.html" speed="1.25" loop style="width: 180px;"></lottie-player>
+                <div class="card-body fs-lg fw-semibold text-center">Figma Files Included</div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide h-auto pb-3">
+              <div class="card card-hover bg-light border-0 animation-on-hover h-100 mx-2">
+                <lottie-player class="d-dark-mode-none mx-auto mt-4 mb-2" src="assets/json/animation-feature-3-light.json" background="transparent.html" speed="1.25" loop style="width: 180px;"></lottie-player>
+                <lottie-player class="d-none d-dark-mode-block mx-auto mt-4 mb-2" src="assets/json/animation-feature-3-dark.json" background="transparent.html" speed="1.25" loop style="width: 180px;"></lottie-player>
+                <div class="card-body fs-lg fw-semibold text-center">50+ UI Flexible Components</div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="swiper-slide h-auto pb-3">
+              <div class="card card-hover bg-light border-0 animation-on-hover h-100 mx-2">
+                <lottie-player class="d-dark-mode-none mx-auto mt-4 mb-2" src="assets/json/animation-feature-4-light.json" background="transparent.html" speed="1.25" loop style="width: 180px;"></lottie-player>
+                <lottie-player class="d-none d-dark-mode-block mx-auto mt-4 mb-2" src="assets/json/animation-feature-4-dark.json" background="transparent.html" speed="1.25" loop style="width: 180px;"></lottie-player>
+                <div class="card-body fs-lg fw-semibold text-center">Free Lifetime Updates</div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Pagination (bullets) -->
+          <div class="swiper-pagination position-relative bottom-0 mt-2"></div>
+        </div>
+      </section>
+
+
+      <!-- Landings (Grid) -->
+      <section id="landings" class="container text-center pt-5 mt-2 mt-md-4 mt-lg-5">
+        <h2 class="h1 pt-2 pt-lg-0">Landing Pages</h2>
+        <p class="fs-lg pb-2 pb-md-3 pb-lg-0 mb-4 mb-lg-5">Choose from pre-built layouts of our unique landing pages</p>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+          <div class="col position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/mobile-app-showcase-v1.jpg" class="b-block border rounded-3 shadow-sm" alt="Mobile App Showcase v.1">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-mobile-app-showcase-v1.html" class="stretched-link">Mobile App Showcase v.1</a>
+            </h3>
+          </div>
+          <div class="col position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/mobile-app-showcase-v2.jpg" class="b-block border rounded-3 shadow-sm" alt="Mobile App Showcase v.2">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-mobile-app-showcase-v2.html" class="stretched-link">Mobile App Showcase v.2</a>
+            </h3>
+          </div>
+          <div class="col position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/saas-v1.jpg" class="b-block border rounded-3 shadow-sm" alt="SaaS v.1">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-saas-v1.html" class="stretched-link">SaaS v.1</a>
+            </h3>
+          </div>
+          <div class="col position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/saas-v2.jpg" class="b-block border rounded-3 shadow-sm" alt="SaaS v.2">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-saas-v2.html" class="stretched-link">SaaS v.2</a>
+            </h3>
+          </div>
+          <div class="col position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/saas-v3.jpg" class="b-block border rounded-3 shadow-sm" alt="SaaS v.3">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-saas-v3.html" class="stretched-link">SaaS v.3</a>
+            </h3>
+          </div>
+          <div class="col position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/financial.jpg" class="b-block border rounded-3 shadow-sm" alt="Financial Consulting">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-financial.html" class="stretched-link">Financial Consulting</a>
+            </h3>
+          </div>
+          <div class="col position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/online-courses.jpg" class="b-block border rounded-3 shadow-sm" alt="Online Courses">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-online-courses.html" class="stretched-link">Online Courses</a>
+            </h3>
+          </div>
+          <div class="col position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/medical.jpg" class="b-block border rounded-3 shadow-sm" alt="Medical">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-medical.html" class="stretched-link">Medical</a>
+            </h3>
+          </div>
+          <div class="col position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/digital-agency.jpg" class="b-block border rounded-3 shadow-sm" alt="Digital Agency">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-digital-agency.html" class="stretched-link">Digital Agency</a>
+            </h3>
+          </div>
+          <div class="col position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/conference.jpg" class="b-block border rounded-3 shadow-sm" alt="Conference">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-conference.html" class="stretched-link">Conference</a>
+            </h3>
+          </div>
+          <div class="col position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/software-company.jpg" class="b-block border rounded-3 shadow-sm" alt="IT (Software) Company">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-software-company.html" class="stretched-link">IT (Software) Company</a>
+            </h3>
+          </div>
+          <div class="col position-relative mb-4 mb-lg-5">
+            <img src="assets/img/landing/intro/landings/blog-homepage.jpg" class="b-block border rounded-3 shadow-sm" alt="Blog Homepage">
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <a href="landing-blog.html" class="stretched-link">Blog Homepage</a>
+            </h3>
+          </div>
+          <!-- <div class="col position-relative mb-4 mb-lg-5">
+            <div class="position-relative">
+              <img src="assets/img/landing/intro/landings/placeholder.jpg" class="b-block border rounded-3 shadow-sm" alt="Placeholder">
+              <div class="position-absolute" style="top: 38.4%; padding-left: 15.38%; padding-right: 15.38%;">
+                <img src="assets/img/landing/intro/landings/wireframe.svg" class="placeholder placeholder-wave bg-transparent opacity-80" alt="">
+              </div>
+            </div>
+            <h3 class="h5 mt-4 mb-3 mb-lg-0">
+              <span class="nav-link justify-content-center fw-bold pe-none p-0">Coming Soon</span>
+            </h3>
+          </div> -->
+        </div>
+      </section>
+
+
+      <!-- More features (Grid) -->
+      <section class="container pt-4 pb-5 py-lg-5">
+        <h2 class="h1 text-center pt-1 pt-md-3 pt-lg-4 pb-3 pb-md-4 mb-0 mb-lg-3">More Silicon Features</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-2 g-lg-3 g-xl-4 pb-md-3 pb-lg-5">
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card h-100 card-hover bg-light border-0">
+              <div class="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
+                <i class="bx bxl-bootstrap fs-2 text-gradient-primary" style="padding: .375rem;"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h6">Built with Bootstrap 5</h3>
+                <p class="fs-sm mb-0">Silicon is the powerful front-end solution based on Bootstrap 5 — the world’s most popular responsive, mobile-first front-end component library.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card h-100 card-hover bg-light border-0">
+              <div class="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
+                <i class="bx bx-file fs-2 text-gradient-primary" style="padding: .375rem;"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h6">Detailed Documentation</h3>
+                <p class="fs-sm mb-0">Download package includes the documentation that covers all crucial information about how to get started, customize template and components usage.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card h-100 card-hover bg-light border-0">
+              <div class="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
+                <i class="bx bx-mobile fs-2 text-gradient-primary" style="padding: .375rem;"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h6">Mobile Freindly Interface</h3>
+                <p class="fs-sm mb-0">It's not a surprise that nowadays over 80% of users surf the inernet using their mobile devices. Silicon is 100% responsive and optimized for small touch screens.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card h-100 card-hover bg-light border-0">
+              <div class="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
+                <svg class="m-1" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none"><g clip-path="url(#D)"><path d="M6.706 11.335c0-4.925 4.007-8.932 8.932-8.932s8.932 4.007 8.932 8.932a9 9 0 0 1-.169 1.73l2.358.463c.142-.723.214-1.461.214-2.193A11.35 11.35 0 0 0 15.638 0 11.35 11.35 0 0 0 4.303 11.335c0 2.566.883 5.081 2.486 7.082l1.875-1.503a8.83 8.83 0 0 1-1.958-5.579z" fill="url(#A)"/><path d="M15.638 6.407c2.716 0 4.927 2.21 4.927 4.927h2.403a7.34 7.34 0 0 0-7.33-7.33 7.34 7.34 0 0 0-7.33 7.33 7.33 7.33 0 0 0 .959 3.623l2.088-1.19c-.421-.739-.643-1.581-.643-2.433 0-2.716 2.21-4.927 4.926-4.927z" fill="url(#B)"/><path d="M28.375 17.3a3.31 3.31 0 0 0-1.06.173 3.33 3.33 0 0 0-3.186-2.374c-.392 0-.767.069-1.116.193a3.33 3.33 0 0 0-3.129-2.203c-.32 0-.628.046-.921.131v-1.884a3.33 3.33 0 0 0-3.324-3.324 3.33 3.33 0 0 0-3.324 3.324v6.998c-.293-.084-.602-.131-.921-.131a3.33 3.33 0 0 0-3.324 3.324v6.236a8.25 8.25 0 0 0 8.237 8.237h7.157a8.25 8.25 0 0 0 8.237-8.237v-7.14a3.33 3.33 0 0 0-3.324-3.324zm.921 10.464c0 3.217-2.617 5.834-5.834 5.834h-7.157c-3.217 0-5.834-2.617-5.834-5.834v-6.236c0-.508.413-.921.921-.921s.921.413.921.921v4.852h2.403V11.336c0-.508.413-.921.921-.921s.921.413.921.921v5.077 3.526.684h2.403v-.684-3.526c0-.508.413-.921.921-.921s.921.413.921.921v4.211h2.403v-2.201c0-.508.413-.921.921-.921s.921.413.921.921v2.201h2.403c0-.508.413-.921.921-.921s.921.413.921.921v7.14z" fill="url(#C)"/></g><defs><linearGradient id="A" x1="4.303" y1="9.252" x2="26.973" y2="9.252" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6366f1"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#d946ef"/></linearGradient><linearGradient id="B" x1="8.309" y1="9.506" x2="22.968" y2="9.506" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6366f1"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#d946ef"/></linearGradient><linearGradient id="C" x1="8.068" y1="22.073" x2="31.7" y2="22.073" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6366f1"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#d946ef"/></linearGradient><clipPath id="D"><path fill="#fff" d="M0 0h36v36H0z"/></clipPath></defs></svg>
+              </div>
+              <div class="card-body">
+                <h3 class="h6">Touch-Enabled Sliders</h3>
+                <p class="fs-sm mb-0">In the era of touch screens it's important to ensure great user experience on mobile, especially when it comes to such frequently used interface component as slider.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card h-100 card-hover bg-light border-0">
+              <div class="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
+                <i class="bx bxl-html5 text-gradient-primary m-1" style="font-size: 2.25rem;"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h6">W3C Valid HTML Code</h3>
+                <p class="fs-sm mb-0">All HTML files are checked via W3C validator to ensure 100% valid code. As you probably know invalid HTML limits innovation, but Silicon is innovative at its core.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card h-100 card-hover bg-light border-0">
+              <div class="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
+                <i class="bx bxl-nodejs text-gradient-primary m-1" style="font-size: 2.25rem;"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h6">Kick-Start Your Development</h3>
+                <p class="fs-sm mb-0">Start your development process fast and easy with Node.js and Gulp setup. Configuration files are included in download package. Full tasks automation.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card h-100 card-hover bg-light border-0">
+              <div class="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
+                <i class="bx bxl-sass text-gradient-primary m-1" style="font-size: 2.25rem;"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h6">Easy to Customize with Sass</h3>
+                <p class="fs-sm mb-0">Silicon is built using Sass. Easily change colors, typography and much more. It is the most mature, stable, and powerful CSS extension language in the world.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="col">
+            <div class="card h-100 card-hover bg-light border-0">
+              <div class="bg-secondary rounded-3 w-auto lh-1 p-2 mt-4 ms-4 me-auto">
+                <i class="bx bxl-javascript text-gradient-primary m-1" style="font-size: 2.25rem;"></i>
+              </div>
+              <div class="card-body">
+                <h3 class="h6">Future Proof Java-Script</h3>
+                <p class="fs-sm mb-0">Silicon core scripts as well as all dependencies are written in vanilla JS. And now with Bootstrap 5 we finally drop jQuery and use ES6 modules.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer border-top pt-5 pb-4 pb-lg-5">
+      <div class="container text-center pt-2 pt-md-4 pt-lg-5 pb-xl-3">
+        <div class="row justify-content-center pt-xxl-2">
+          <div class="col-xl-6 col-lg-7 col-md-9 col-sm-11">
+            <h2 class="h1 pb-3 mb-3">Subscribe to Our Newsletter</h2>
+            <form class="subscription-form position-relative validate" action="https://studio.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=29ca296126" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+              <div class="d-flex flex-column flex-sm-row">
+                <div class="position-relative w-100 mb-3 mb-sm-0 me-sm-3">
+                  <input class="form-control form-control-lg ps-5" type="email" name="EMAIL" placeholder="Your email" required>
+                  <i class="bx bx-envelope fs-xl text-muted position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                </div>
+                <button class="btn btn-primary shadow-primary btn-lg" type="submit" name="subscribe">Subscribe*</button>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input class="subscription-form-antispam" type="text" name="b_c7103e2c981361a6639545bd5_29ca296126" tabindex="-1">
+              </div>
+              <p class="mt-4 mb-0">*Enjoy using Silicon Template and stay tuned for the latest updates and news.</p>
+              <div class="subscription-status position-absolute top-100 start-50 translate-middle-x"></div>
+            </form>
+          </div>
+        </div>
+        <div class="pt-5 mt-lg-3 mt-xl-4">
+          <p class="text-muted mb-0">&copy; All rights reserved. Made with <i class="bx bx-heart d-inline-block fs-lg text-gradient-primary align-middle mt-n1 mx-1"></i> by&nbsp; <a href="https://createx.studio/" class="text-muted" target="_blank" rel="noopener">Createx Studio</a></p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a href="#top" class="btn-scroll-top" data-scroll>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+    </a>
+
+
+    <!-- Vendor Scripts -->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/rellax/rellax.min.js"></script>
+    <script src="assets/vendor/%40lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main Theme Script -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from silicon.createx.studio/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Aug 2022 19:35:50 GMT -->
+</html>
