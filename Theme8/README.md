@@ -18,6 +18,8 @@
   <img src="./Demo%20Images/15.png"  width = 45%/>
   <img src="./Demo%20Images/16.png"  width = 45%/>
   <img src="./Demo%20Images/17.png"  width = 45%/>
+  <img src="./Demo%20Images/18.png"  width = 45%/>
+  <img src="./Demo%20Images/19.png"  width = 45%/>
   <img src="./Demo%20Images/20.png"  width = 45%/>
 </p>
 
