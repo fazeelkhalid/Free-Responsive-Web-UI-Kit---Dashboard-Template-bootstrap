@@ -1,58 +1,6 @@
 # Free Responsive Web UI Kit & Dashboard Template bootstrap
 
 
-<details>
-    <summary><h2><strong>Theme1 Demo</strong></h2></summary>
-    <p float="left">
-    <img src="https://github.com/fazeelkhalid/Free-Responsive-Web-UI-Kit---Dashboard-Template-bootstrap/blob/main/Theme1/Demo/Images/Index.png" width = 45%/> 
-    <img src="https://github.com/fazeelkhalid/Free-Responsive-Web-UI-Kit---Dashboard-Template-bootstrap/blob/main/Theme1/Demo/Images/ProjectDetails.png" width = 45%/>
-    <img src="https://github.com/fazeelkhalid/Free-Responsive-Web-UI-Kit---Dashboard-Template-bootstrap/blob/main/Theme1/Demo/Images/Screenshot%20(106).png" width = 45%/>  
-    <img src="https://github.com/fazeelkhalid/Free-Responsive-Web-UI-Kit---Dashboard-Template-bootstrap/blob/main/Theme1/Demo/Images/UserProfiles.png" width = 45%/> 
-    </p>
-</details>
-
-
-<details>
-    <summary><h2><strong>Theme2 Demo</strong></h2></summary>
-    <p float="left">
-        <img src="./Theme2/Demo%20Images/3.png"  width = 45%/>
-        <img src="./Theme2/Demo%20Images/4.png"  width = 45%/>
-        <img src="./Theme2/Demo%20Images/5.png"  width = 45%/>
-        <img src="./Theme2/Demo%20Images/6.png"  width = 45%/>
-    </p>
-</details>
-
-<details>
-    <summary><h2><strong>Theme3 Demo</strong></h2></summary>
-    <p float="left">
-        <img src="./Theme3/Demo%20Images/3.png"  width = 45%/>
-        <img src="./Theme3/Demo%20Images/4.png"  width = 45%/>
-        <img src="./Theme3/Demo%20Images/5.png"  width = 45%/>
-        <img src="./Theme3/Demo%20Images/6.png"  width = 45%/>
-    </p>
-</details>
-
-<details>
-    <summary><h2><strong>Theme4 Demo</strong></h2></summary>
-    <p float="left">
-        <img src="./Theme4/Demo%20Images/3.png"  width = 45%/>
-        <img src="./Theme4/Demo%20Images/4.png"  width = 45%/>
-        <img src="./Theme4/Demo%20Images/5.png"  width = 45%/>
-        <img src="./Theme4/Demo%20Images/6.png"  width = 45%/>
-    </p>
-</details>
-
-<details>
-    <summary><h2><strong>Theme5 Demo</strong></h2></summary>
-    <p float="left">
-        <img src="./Theme5/Demo%20Images/3.png"  width = 45%/>
-        <img src="./Theme5/Demo%20Images/4.png"  width = 45%/>
-        <img src="./Theme5/Demo%20Images/5.png"  width = 45%/>
-        <img src="./Theme5/Demo%20Images/6.png"  width = 45%/>
-    </p>
-</details>
-
-
 <p text-align: "center">
 This repository consist of fully-featured dashboard and admin template and many other websites templates that are totally free and all of them comes with tones of well-designed UI elements, components, widgets, and pages. The super clean and flexible layout would enable you to easily build web applications. It can be used to create a saas-based interface, custom admin panels, dashboard, CRM, CMS, e-commerce panel, etc.
 Both Bootstrap 4 and 5 versions of Hyper are available for free.
@@ -150,3 +98,56 @@ Both Bootstrap 4 and 5 versions of Hyper are available for free.
   &emsp;We have created Angular, Laravel, and Django samples with Hyper integrated into them as well. To get the sample projects, contact us at fazeel.k.khalid@gmail.com. These are provided as complimentary with Hyper. 
   </p>
 </p>
+
+
+<details>
+    <summary><h2><strong>Theme1 Demo</strong></h2></summary>
+    <p float="left">
+    <img src="https://github.com/fazeelkhalid/Free-Responsive-Web-UI-Kit---Dashboard-Template-bootstrap/blob/main/Theme1/Demo/Images/Index.png" width = 45%/> 
+    <img src="https://github.com/fazeelkhalid/Free-Responsive-Web-UI-Kit---Dashboard-Template-bootstrap/blob/main/Theme1/Demo/Images/ProjectDetails.png" width = 45%/>
+    <img src="https://github.com/fazeelkhalid/Free-Responsive-Web-UI-Kit---Dashboard-Template-bootstrap/blob/main/Theme1/Demo/Images/Screenshot%20(106).png" width = 45%/>  
+    <img src="https://github.com/fazeelkhalid/Free-Responsive-Web-UI-Kit---Dashboard-Template-bootstrap/blob/main/Theme1/Demo/Images/UserProfiles.png" width = 45%/> 
+    </p>
+</details>
+
+
+<details>
+    <summary><h2><strong>Theme2 Demo</strong></h2></summary>
+    <p float="left">
+        <img src="./Theme2/Demo%20Images/3.png"  width = 45%/>
+        <img src="./Theme2/Demo%20Images/4.png"  width = 45%/>
+        <img src="./Theme2/Demo%20Images/5.png"  width = 45%/>
+        <img src="./Theme2/Demo%20Images/6.png"  width = 45%/>
+    </p>
+</details>
+
+<details>
+    <summary><h2><strong>Theme3 Demo</strong></h2></summary>
+    <p float="left">
+        <img src="./Theme3/Demo%20Images/3.png"  width = 45%/>
+        <img src="./Theme3/Demo%20Images/4.png"  width = 45%/>
+        <img src="./Theme3/Demo%20Images/5.png"  width = 45%/>
+        <img src="./Theme3/Demo%20Images/6.png"  width = 45%/>
+    </p>
+</details>
+
+<details>
+    <summary><h2><strong>Theme4 Demo</strong></h2></summary>
+    <p float="left">
+        <img src="./Theme4/Demo%20Images/3.png"  width = 45%/>
+        <img src="./Theme4/Demo%20Images/4.png"  width = 45%/>
+        <img src="./Theme4/Demo%20Images/5.png"  width = 45%/>
+        <img src="./Theme4/Demo%20Images/6.png"  width = 45%/>
+    </p>
+</details>
+
+<details>
+    <summary><h2><strong>Theme5 Demo</strong></h2></summary>
+    <p float="left">
+        <img src="./Theme5/Demo%20Images/3.png"  width = 45%/>
+        <img src="./Theme5/Demo%20Images/4.png"  width = 45%/>
+        <img src="./Theme5/Demo%20Images/5.png"  width = 45%/>
+        <img src="./Theme5/Demo%20Images/6.png"  width = 45%/>
+    </p>
+</details>
+
