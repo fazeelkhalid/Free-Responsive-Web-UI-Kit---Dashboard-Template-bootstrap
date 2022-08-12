@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from freshcart.codescandy.com/docs/working-with-gulp.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Aug 2022 17:47:47 GMT -->
+<head>
+
+  <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="FreshCart is a beautiful eCommerce HTML template specially designed for multipurpose shops & online stores selling products. Most Loved by Developers to build a store website easily.">
+<meta content="Codescandy" name="author" />
+
+
+<!-- Favicon icon-->
+<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon/favicon.ico">
+
+
+
+<!-- Libs CSS -->
+<link href="../assets/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+<link href="../assets/libs/feather-webfont/dist/feather-icons.css" rel="stylesheet" />
+<link href="../assets/libs/slick-carousel/slick/slick.css" rel="stylesheet" />
+<link href="../assets/libs/slick-carousel/slick/slick-theme.css" rel="stylesheet" />
+<link href="../assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet" />
+<link href="../assets/libs/nouislider/dist/nouislider.min.css" rel="stylesheet">
+<link href="../assets/libs/tiny-slider/dist/tiny-slider.css" rel="stylesheet">
+<link href="../assets/libs/dropzone/dist/min/dropzone.min.css" rel="stylesheet" />
+<link href="../assets/libs/prismjs/themes/prism-okaidia.min.css" rel="stylesheet">
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="../assets/css/theme.min.css">
+  <title>Working with Gulp | FreshCart - eCommerce HTML Template</title>
+
+</head>
+
+<body class="bg-white">
+  <!-- Main wrapper -->
+  <div class="docs-main-wrapper">
+    <!-- Docs header -->
+<div class="docs-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top ms-0">
+       <a class="navbar-brand me-0" href="../index.html"><img src="../assets/images/logo/freshcart-logo.svg" alt=""> </a>
+       <ul class="navbar-nav ms-auto flex-row">
+         <li class="nav-item d-none d-md-block">
+            <a class="nav-link me-4 border-bottom-0" href="../index.html"><i class="feather-icon icon-monitor me-2"></i>Live Preview</a>
+         </li>
+          <li class="nav-item docs-header-btn">
+             <a class="btn btn-primary me-2 me-lg-0" href="https://bit.ly/freshcart"><i class="feather-icon icon-shopping-cart me-2"></i>Buy now</a>
+          </li>
+          <li class="nav-item d-md-none">
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+             </button>
+          </li>
+       </ul>
+    </nav>
+ </div>
+
+    <!-- Left sidebar -->
+    <!-- Nav Sidebar -->
+<div class="docs-nav-sidebar">
+  <div class="py-8"></div>
+  <div class=" docs-nav " data-simplebar>
+    <nav class="navbar navbar-expand-md">
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav flex-column" id="sidebarnav">
+          <li class="navbar-header">
+            <h5 class="heading">Getting Started</h5>
+          </li>
+          <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+          <li class="nav-item"><a href="environment-setup.html" class="nav-link">Environment setup</a></li>
+          <li class="nav-item"><a href="working-with-gulp.html" class="nav-link">Working with Gulp</a>
+          </li>
+          <li class="nav-item"><a href="compiled-files.html" class="nav-link">Compiled Files</a>
+          </li>
+          <li class="nav-item"><a href="file-structure.html" class="nav-link">File Structure</a></li>
+          <li class="nav-item"><a href="resources-assets.html" class="nav-link">Resources & assets</a></li>
+          <li class="nav-item"><a href="changelog.html" class="nav-link">Changelog</a></li>
+
+
+          <li>
+            <div class="navbar-border"></div>
+          </li>
+          <li class="navbar-header mt-0">
+            <h5 class="heading">Foundation</h5>
+          </li>
+          <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+          <li class="nav-item"><a href="colors.html" class="nav-link">Colors</a></li>
+          <li class="nav-item"><a href="shadows.html" class="nav-link">Shadows</a></li>
+          <li class="nav-item"><a href="icons.html" class="nav-link">Icons</a></li>
+
+
+
+          <li>
+            <div class="navbar-border"></div>
+          </li>
+          <li class="navbar-header mt-0">
+            <h5 class="heading">Components</h5>
+          </li>
+          <li class="nav-item">
+            <a href="accordions.html" class="nav-link">
+              Accordions
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="alerts.html" class="nav-link">
+              Alerts
+            </a>
+          </li>
+      
+          <li class="nav-item">
+            <a href="badge.html" class="nav-link">
+              Badge
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="breadcrumb.html" class="nav-link">
+              Breadcrumb
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="buttons.html" class="nav-link">
+              Buttons
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="button-group.html" class="nav-link">
+              Button group
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="card.html" class="nav-link">
+              Card
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="carousel.html" class="nav-link">
+              Carousel
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="close-button.html" class="nav-link">
+              Close Button
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="collapse.html" class="nav-link">
+              Collapse
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="dropdowns.html" class="nav-link">
+              Dropdowns
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="list-group.html" class="nav-link">
+              List group
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="modal.html" class="nav-link">
+              Modal
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="navs-tabs.html" class="nav-link">
+              Navs and tabs
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="navbar.html" class="nav-link">
+              Navbar
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="offcanvas.html" class="nav-link">
+              Offcanvas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pagination.html" class="nav-link">
+              Pagination
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="placeholders.html" class="nav-link">
+              Placeholders
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="popovers.html" class="nav-link">
+              Popovers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="progress.html" class="nav-link">
+              Progress
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="scrollspy.html" class="nav-link">
+              Scrollspy
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="spinners.html" class="nav-link">
+              Spinners
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="tables.html" class="nav-link">
+              Tables
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="toasts.html" class="nav-link">
+              Toasts
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="tooltips.html" class="nav-link">
+              Tooltips
+            </a>
+          </li>
+          <li>
+            <div class="navbar-border"></div>
+          </li>
+          <li class="navbar-header mt-0">
+            <h5 class="heading">Forms</h5>
+          </li>
+          <li class="nav-item">
+            <a href="forms.html" class="nav-link">
+              Basic Forms
+            </a>
+          </li>
+         
+          <li class="nav-item">
+            <a href="input-group.html" class="nav-link">
+              Input Group
+            </a>
+          </li>
+        
+         
+          <li>
+            <div class="navbar-border"></div>
+          </li>
+          
+          <li class="navbar-header mt-0">
+            <h5 class="heading">Utilities</h5>
+          </li>
+          <li class="nav-item"><a href="background.html" class="nav-link">Background</a></li>
+          <li class="nav-item"><a href="borders.html" class="nav-link"> Borders </a></li>
+          <li class="nav-item"><a href="colored-links.html" class="nav-link"> Colored Links </a></li>
+          <li class="nav-item"><a href="opacity.html" class="nav-link"> Opacity </a></li>
+          <li class="nav-item"><a href="ratio.html" class="nav-link"> Ratio </a></li>
+          <li class="nav-item"><a href="stacks.html" class="nav-link"> Stacks </a></li>
+          <li class="nav-item"><a href="text-color.html" class="nav-link">Colors</a></li>
+          <li class="nav-item"><a href="text.html" class="nav-link"> Text </a></li>
+          <li class="nav-item"><a href="text-truncation.html" class="nav-link"> Text truncation </a></li>
+          <li class="nav-item"><a href="vertical-rule.html" class="nav-link"> Vertical rule </a></li>
+
+
+
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="nav-footer">
+    <p class="mb-0"> Developed by <a href="https://codescandy.com/" target="_blank">Codescandy</a></p>
+  </div>
+</div>
+    <!-- Wrapper  -->
+    <div class="docs-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="offset-xxl-2 col-xxl-6 offset-xl-1 col-xl-7 col-md-12 col-sm-12 col-12 ">
+            <!-- Content -->
+            <div class="docs-content mx-xxl-9">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-8" id="intro">
+                    <h1 class="mb-2 fw-bold display-3">Working with Gulp</h1>
+                    <p class="mb-6 lead text-muted">
+                      Learn how to included npm scripts to automate your time-consuming
+                      tasks in your development workflow with Gulp toolkit.
+                     </p>
+
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-12">
+                  <div class="mb-8" id="quick-start">
+                    <h2 class="fw-semi-bold">Quick Start</h2>
+                     <p>FreshCart uses NPM scripts for its build system. Our package.json includes convenient methods for
+                        working with the framework, including compiling code, running tests, and more.
+                        </p>
+                        <p>To use our build system and run our documentation locally, you ll need a copy of FreshCart s source
+                          files and Node. Follow these steps and you should be ready to rock:</p>
+
+                        <ul class="list-unstyled lh-lg">
+                          <li>1. Download and install Node.js</li>
+                          <li>2. Installing Gulp.</li>
+                          <li>3. Working with Theme Folder
+                            <ul class="list-unstyled ps-3">
+                              <li>a. Installing NPM modules </li>
+                              <li>b. Run Gulp</li>
+                              <li>c. Build Production Files</li>
+                            </ul>
+                          </li>
+                        </ul>
+
+
+                    </div>
+                    <div class="mb-8" id="install-node">
+                      <div class="d-md-flex align-items-center mb-4">
+                      <h2 class="fw-semi-bold mb-0">1. Download and install Node.js </h2>
+                      <span class="text-body ms-2">( Installtion in System )</span>
+                    </div>
+                       <p>Almost all tooling for modern JavaScript projects is based in <a href="https://nodejs.org/en/" target="_blank">Node.js.</a> The <a href="https://nodejs.org/en/download/" target="_blank">download page</a> has
+                        prebuilt installation packages for all platforms.
+
+                          </p>
+                          <p>Node is bundled with npm, the package manager for JavaScript.</p>
+                          <p>To verify the installation, open a new terminal window and run:</p>
+                          <pre><code class="language-markup" data-copy-state="copy">$ node --version
+$ npm --version</code></pre>
+
+
+
+                      </div>
+                      <div class="mb-8" id="install-gulp">
+                        <div class="d-md-flex align-items-center mb-4">
+                        <h2 class="fw-semi-bold mb-0">2. Installing Gulp.js </h2>
+                        <span class="text-body ms-2">( Global Installtion in System )</span>
+                      </div>
+                         <p>Please note, first Gulp should be installed globally and for that reason -g command is used.
+
+                            </p>
+
+                            <pre><code class="language-markup" data-copy-state="copy">$ npm install --global gulp-cli
+</code></pre>
+
+<div class="mt-4">
+  <p>To verify the installation, open a new terminal window and run:</p>
+  <pre><code class="language-markup" data-copy-state="copy">$ gulp --version</code></pre>
+</div>
+
+                        </div>
+                        <div class="mb-8" id="theme-folder">
+                          <div class=" mb-4">
+                          <h2 class="fw-semi-bold mb-0">3.  Now Working with Theme Folder </h2>
+
+                        </div>
+                           <p>Navigate to the root <code>/FreshCart</code> directory and run <code>npm install</code> to install our local dependencies listed
+                            in package.json.
+
+
+                              </p>
+                              <div class="mt-4">
+                              <h3 class="fw-semi-bold">a. Installing NPM modules</h3>
+                              <p>First, change the command line path into your project where FreshCart folder is located. if you have
+                                not done this before, you may check the following article to quick start, you may run
+                                package.json file by using the following command:</p>
+
+                              <pre><code class="language-markup" data-copy-state="copy">$ npm install</code></pre>
+                              <p class="mt-3">If you check the project folder when the command has finished executing, you should see that Gulp has
+                                created a <code>node_modules</code>folder</p>
+</div>
+
+
+
+                          <div class="mt-4">
+
+                                <h3 class="fw-semi-bold">b. Run Gulp</h3>
+                                <p>Compile and watch the SCSS/JS/HTML, use Live Reload to update browsers instantly, start a
+                                  server, and pop a tab in your default browser. Any changes made to the source files will be
+                                  compiled as soon as you save the file. To try it out run:</p>
+
+                                <pre><code class="language-markup" data-copy-state="copy">$ gulp</code></pre>
+
+
+
+
+                            </div>
+                            <div class="mt-4">
+
+                              <h3 class="fw-semi-bold">c. Build Production Files</h3>
+                              <p>Generates a <code>/dist</code> with all the production files.</p>
+
+                              <pre><code class="language-markup" data-copy-state="copy">$ gulp build</code></pre>
+
+
+
+
+                          </div>
+</div>
+
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12  d-none d-xl-block position-fixed end-0">
+            <!-- Sidebar nav fixed -->
+            <div class="sidebar-nav-fixed">
+              <span class="px-4 mb-2 d-block text-uppercase ls-md fw-semi-bold fs-6">Contents</span>
+
+              <ul class="list-unstyled">
+                <li><a href="#intro" class="active">Introduction</a></li>
+                <li><a href="#quick-start">Quick Start</a></li>
+                <li><a href="#install-node">Installation</a></li>
+                <li><a href="#theme-folder">Theme Folder</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <!-- Libs JS -->
+<script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/libs/jquery-countdown/dist/jquery.countdown.min.js"></script>
+<script src="../assets/libs/slick-carousel/slick/slick.min.js"></script>
+<script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
+<script src="../assets/libs/nouislider/dist/nouislider.min.js"></script>
+<script src="../assets/libs/wnumb/wNumb.min.js"></script>
+<script src="../assets/libs/rater-js/index.js"></script>
+<script src="../assets/libs/prismjs/prism.js"></script>
+<script src="../assets/libs/prismjs/components/prism-scss.min.js"></script>
+<script src="../assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+<script src="../assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+<script src="../assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+<script src="../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+<script src="../assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+
+<!-- Theme JS -->
+<script src="../assets/js/theme.min.js"></script>
+</body>
+
+
+<!-- Mirrored from freshcart.codescandy.com/docs/working-with-gulp.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Aug 2022 17:47:47 GMT -->
+</html>
