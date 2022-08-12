@@ -178,6 +178,8 @@ Both Bootstrap 4 and 5 versions of Hyper are available for free.
         <img src="./Theme7/Demo%20Images/2.png"  width = 45%/>
         <img src="./Theme7/Demo%20Images/3.png"  width = 45%/>
         <img src="./Theme7/Demo%20Images/4.png"  width = 45%/>
+        <img src="./Theme7/Demo%20Images/6.png"  width = 45%/>
+        <img src="./Theme7/Demo%20Images/10.png"  width = 45%/>
     </p>
 </details>
 
