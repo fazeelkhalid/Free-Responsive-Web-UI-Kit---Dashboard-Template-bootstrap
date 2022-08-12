@@ -1,4 +1,4 @@
-<h1 align="center"> Theme5 Demo</h1>
+<h1 align="center"> Theme7 Demo</h1>
 
 <p float="left">
   <img src="./Demo%20Images/1.png"  width = 45%/>
