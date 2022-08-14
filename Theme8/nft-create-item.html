@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from cartzilla.createx.studio/nft-create-item.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Aug 2022 18:18:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Cartzilla | Create New Item</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Cartzilla - Bootstrap E-commerce Template">
+    <meta name="keywords" content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap, html5, css3, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#fe6a6a" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/flatpickr/dist/flatpickr.min.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+  <!-- Body-->
+  <body class="handheld-toolbar-enabled">
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+    <!-- Sign in / sign up modal-->
+    <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-secondary">
+            <ul class="nav nav-tabs card-header-tabs" role="tablist">
+              <li class="nav-item"><a class="nav-link fw-medium active" href="#signin-tab" data-bs-toggle="tab" role="tab" aria-selected="true"><i class="ci-unlocked me-2 mt-n1"></i>Sign in</a></li>
+              <li class="nav-item"><a class="nav-link fw-medium" href="#signup-tab" data-bs-toggle="tab" role="tab" aria-selected="false"><i class="ci-user me-2 mt-n1"></i>Sign up</a></li>
+            </ul>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body tab-content py-4">
+            <form class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab">
+              <div class="mb-3">
+                <label class="form-label" for="si-email">Email address</label>
+                <input class="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="si-password">Password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="si-password" required>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3 d-flex flex-wrap justify-content-between">
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="si-remember">
+                  <label class="form-check-label" for="si-remember">Remember me</label>
+                </div><a class="fs-sm" href="#">Forgot password?</a>
+              </div>
+              <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign in</button>
+            </form>
+            <form class="needs-validation tab-pane fade" autocomplete="off" novalidate id="signup-tab">
+              <div class="mb-3">
+                <label class="form-label" for="su-name">Full name</label>
+                <input class="form-control" type="text" id="su-name" placeholder="John Doe" required>
+                <div class="invalid-feedback">Please fill in your name.</div>
+              </div>
+              <div class="mb-3">
+                <label for="su-email">Email address</label>
+                <input class="form-control" type="email" id="su-email" placeholder="johndoe@example.com" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="su-password">Password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="su-password" required>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="su-password-confirm">Confirm password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="su-password-confirm" required>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="page-wrapper">
+      <!-- Navbar for NFT Marketplace demo-->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+      <header class="navbar d-block navbar-sticky navbar-expand-lg navbar-light bg-light">
+        <div class="container"><a class="navbar-brand d-none d-sm-block me-4 order-lg-1" href="index.html"><img src="img/logo-dark.png" width="142" alt="Cartzilla"></a><a class="navbar-brand d-sm-none me-2 order-lg-1" href="index.html"><img src="img/logo-icon.png" width="74" alt="Cartzilla"></a>
+          <div class="navbar-toolbar d-flex align-items-center order-lg-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button><a class="navbar-tool d-none d-lg-flex" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#searchBox" role="button" aria-expanded="false" aria-controls="searchBox"><span class="navbar-tool-tooltip">Search</span>
+              <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-search"></i></div></a><a class="navbar-tool ms-lg-2" href="#signin-modal" data-bs-toggle="modal"><span class="navbar-tool-tooltip">Account</span>
+              <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-user"></i></div></a><a class="btn btn-sm btn-accent rounded-1 ms-lg-4 ms-2" href="nft-connect-wallet.html">Connect Wallet</a>
+          </div>
+          <div class="collapse navbar-collapse me-auto order-lg-2" id="navbarCollapse">
+            <!-- Search (mobile)-->
+            <div class="d-lg-none py-3">
+              <div class="input-group"><i class="ci-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                <input class="form-control rounded-start" type="text" placeholder="What do you need?">
+              </div>
+            </div>
+            <!-- Primary menu-->
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown"><a class="nav-link" href="home-nft.html">Home</a></li>
+              <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Catalog</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="nft-catalog-v1.html">Catalog v.1</a></li>
+                  <li><a class="dropdown-item" href="nft-catalog-v2.html">Catalog v.2</a></li>
+                  <li><a class="dropdown-item" href="nft-single-auction-live.html">Single Item - Auction Live</a></li>
+                  <li><a class="dropdown-item" href="nft-single-auction-ended.html">Single Item - Auction Ended</a></li>
+                  <li><a class="dropdown-item" href="nft-single-buy.html">Single Item - Buy Now</a></li>
+                  <li><a class="dropdown-item" href="nft-vendor.html">Vendor Page</a></li>
+                  <li><a class="dropdown-item" href="nft-connect-wallet.html">Connect Wallet</a></li>
+                  <li><a class="dropdown-item" href="nft-create-item.html">Create New Item</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Account</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="nft-account-settings.html">Profile Settings</a></li>
+                  <li><a class="dropdown-item" href="nft-account-my-items.html">My Items</a></li>
+                  <li><a class="dropdown-item" href="nft-account-my-collections.html">My Collections</a></li>
+                  <li><a class="dropdown-item" href="nft-account-favorites.html">Favorites</a></li>
+                  <li><a class="dropdown-item" href="nft-account-notifications.html">Notifications</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Back to main demo</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Search collapse-->
+        <div class="search-box collapse" id="searchBox">
+          <div class="container py-2">
+            <div class="input-group"><i class="ci-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+              <input class="form-control rounded-start" type="text" placeholder="What do you need?">
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Page title-->
+      <div class="bg-accent mb-4 py-4">
+        <div class="container d-lg-flex justify-content-between py-2 py-lg-3">
+          <div class="order-lg-2 mb-3 mb-lg-0 pt-lg-2">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
+                <li class="breadcrumb-item"><a class="text-nowrap" href="index.html"><i class="ci-home"></i>Home</a></li>
+                <li class="breadcrumb-item text-nowrap"><a href="home-nft.html">NFT Marketplace</a>
+                </li>
+                <li class="breadcrumb-item text-nowrap active" aria-current="page">Create New Item</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="order-lg-1 pe-lg-4 text-center text-lg-start">
+            <h1 class="h3 text-light mb-0">Create New Item</h1>
+          </div>
+        </div>
+      </div>
+      <!-- Page content-->
+      <section class="container mb-5 pt-3 pb-md-5 pb-1">
+        <div class="row gy-5">
+          <form class="needs-validation col-md-8" novalidate>
+            <!-- Upload file-->
+            <div class="mb-md-5 mb-4 pb-md-0 pb-2">
+              <h2 class="h5 mb-2 pb-1">Upload file</h2>
+              <p class="mb-4 fs-sm">File types supported: PNG, JPG, GIF, WEBP, MP3 or MP4. Max size: 100mb.</p>
+              <!-- Drag and drop file upload-->
+              <div class="file-drop-area">
+                <div class="file-drop-icon ci-cloud-upload"></div><span class="file-drop-message">Drag and drop here to upload</span>
+                <input class="file-drop-input" type="file">
+                <button class="file-drop-btn btn btn-outline-accent" type="button">Or select file</button>
+              </div>
+            </div>
+            <!-- Details-->
+            <div class="mb-md-5 mb-4 pb-md-0 pb-2">
+              <h2 class="h5 mb-3">Details</h2>
+              <div class="row gy-md-4 gy-3">
+                <div class="col-12">
+                  <label class="form-label" for="details-title">Title<span class="ms-1 text-danger">*</span></label>
+                  <input class="form-control" id="details-title" type="Text" placeholder="Item title" required>
+                  <div class="invalid-feedback">Please, enter the title.</div><span class="form-text">Maximum 100 characters. No HTML or emoji allowed.</span>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label" for="details-category">Category</label>
+                  <select class="form-select" id="details-category">
+                    <option disabled selected>Choose category</option>
+                    <option>Art</option>
+                    <option>Photography</option>
+                    <option>Music</option>
+                    <option>Gaming</option>
+                    <option>Sports</option>
+                    <option>Collections</option>
+                    <option>Utility</option>
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label" for="details-collection">Add to collection</label>
+                  <select class="form-select" id="details-collection">
+                    <option disabled selected>Choose collection</option>
+                    <option>Contemporary art collage</option>
+                    <option>3D digital abstract art</option>
+                    <option>Clone X Mini Monsters</option>
+                    <option>Ocean and sky</option>
+                    <option>Aesthetic art collage</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="details-description">Description</label>
+                  <textarea class="form-control" id="details-description" rows="4" placeholder="Enter a short description of your item"></textarea><span class="form-text">0 of 500 characters used.</span>
+                </div>
+              </div>
+            </div>
+            <!-- Price & payment options-->
+            <div>
+              <h2 class="h5 mb-4 pb-md-2">Price &amp; payment options</h2>
+              <!-- Button tabs-->
+              <div class="mb-4" style="overflow-x: auto;">
+                <div class="nav nav-tabs d-inline-flex ms-n1 mb-0 border-0 flex-nowrap text-nowrap" role="tablist">
+                  <div class="btn btn-outline-accent active position-relative ms-1 me-2 mb-2" data-bs-target="#price-fix" data-bs-toggle="tab" role="tab"><i class="ci-lable me-2"></i>Fixed price
+                    <label class="position-absolute top-0 start-0 w-100 h-100" style="cursor: pointer;">
+                      <input class="visually-hidden" type="radio" name="price" checked>
+                    </label>
+                  </div>
+                  <div class="btn btn-outline-accent position-relative ms-1 me-2 mb-2" data-bs-target="#price-open" data-bs-toggle="tab" role="tab"><i class="ci-auction me-2"></i>Open for bids
+                    <label class="position-absolute top-0 start-0 w-100 h-100" style="cursor: pointer;">
+                      <input class="visually-hidden" type="radio" name="price">
+                    </label>
+                  </div>
+                  <div class="btn btn-outline-accent position-relative ms-1 mb-2" data-bs-target="#price-time" data-bs-toggle="tab" role="tab"><i class="ci-time me-2"></i>Time auctions
+                    <label class="position-absolute top-0 start-0 w-100 h-100" style="cursor: pointer;">
+                      <input class="visually-hidden" type="radio" name="price">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- Tabs content-->
+              <div class="tab-content">
+                <!-- Fixed price tab-->
+                <div class="tab-pane fade mb-4 pb-2 show active" id="price-fix" role="tabpanel">
+                  <div class="row gy-md-4 gy-3 mb-md-5 mb-4 pb-md-0 pb-2">
+                    <div class="col-sm-6">
+                      <label class="form-label" for="price-fix-value">Price</label>
+                      <div class="input-group">
+                        <input class="form-control" id="price-fix-value" type="text" placeholder="Enter price">
+                        <div class="dropdown" data-bs-toggle="select">
+                          <button class="btn btn-outline-secondary dropdown-toggle rounded-0 rounded-end" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle-label">ETH</span></button>
+                          <input type="hidden" name="price-fix-currency">
+                          <div class="dropdown-menu dropdown-menu-end w-100" style="min-width: auto;"><a class="dropdown-item" href="#"><span class="dropdown-item-label">ETH</span></a><a class="dropdown-item" href="#"><span class="dropdown-item-label">BNB</span></a><a class="dropdown-item" href="#"><span class="dropdown-item-label">BUSD</span></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="form-label" for="price-fix-payment">Preferred payment type</label>
+                      <select class="form-select" id="price-fix-payment">
+                        <option>ETH</option>
+                        <option>BNB</option>
+                        <option>BUSD</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="form-label" for="price-fix-payout">Payout to address</label>
+                      <input class="form-control" id="price-fix-payout" type="text" placeholder="eg. 0x1dDB2C08s97...9Ec">
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-check mt-sm-4 pt-sm-3">
+                        <input class="form-check-input" id="price-fix-wallet" type="checkbox" checked>
+                        <label class="form-check-label fs-base" for="price-fix-wallet"><span class="me-2">Use address currently connected to wallet</span><i class="ci-wallet fs-lg mt-n1 align-middle text-muted"></i></label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Properties-->
+                  <h3 class="h5 mb-4">Properties <span class='fw-normal text-muted'>(optional)</span></h3>
+                  <div class="row gy-md-4 gy-3 mb-3">
+                    <div class="col-sm-6">
+                      <input class="form-control" type="text" placeholder="eg. Size">
+                    </div>
+                    <div class="col-sm-6">
+                      <input class="form-control" type="text" placeholder="eg. M">
+                    </div>
+                  </div><a href="#"><i class="ci-add me-2"></i><ins>Add more</ins></a>
+                </div>
+                <!-- Open for bids tab-->
+                <div class="tab-pane fade mb-4 pb-2" id="price-open" role="tabpanel">
+                  <div class="row gy-md-4 gy-3 mb-md-5 mb-4 pb-md-0 pb-2">
+                    <div class="col-12">
+                      <label class="form-label" for="price-open-min">Minimum bid</label>
+                      <div class="input-group">
+                        <input class="form-control" id="price-open-min" type="text" placeholder="Enter minimum bid">
+                        <div class="dropdown" data-bs-toggle="select">
+                          <button class="btn btn-outline-secondary dropdown-toggle rounded-0 rounded-end" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="dropdown-toggle-label">ETH</span></button>
+                          <input type="hidden" name="price-open-currency">
+                          <div class="dropdown-menu dropdown-menu-end w-100" style="min-width: auto;"><a class="dropdown-item" href="#"><span class="dropdown-item-label">ETH</span></a><a class="dropdown-item" href="#"><span class="dropdown-item-label">BNB</span></a><a class="dropdown-item" href="#"><span class="dropdown-item-label">BUSD</span></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="form-label" for="price-open-start">Starting date</label>
+                      <div class="input-group">
+                        <input class="form-control date-picker date-range rounded pe-5" id="price-open-start" type="text" placeholder="Choose date and time" data-datepicker-options="{&quot;enableTime&quot;: true, &quot;altInput&quot;: true, &quot;altFormat&quot;: &quot;F j, Y&quot;, &quot;dateFormat&quot;: &quot;Y-m-d&quot;}" data-linked-input="#price-open-end"><i class="ci-calendar position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="form-label" for="price-open-end">Expiration date</label>
+                      <div class="input-group">
+                        <input class="form-control date-picker rounded pe-5" id="price-open-end" type="text" placeholder="Choose date and time" data-datepicker-options="{&quot;enableTime&quot;: true, &quot;altInput&quot;: true, &quot;altFormat&quot;: &quot;F j, Y&quot;, &quot;dateFormat&quot;: &quot;Y-m-d&quot;}"><i class="ci-calendar position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="form-label" for="price-open-payout">Payout to address</label>
+                      <input class="form-control" id="price-open-payout" type="text" placeholder="eg. 0x1dDB2C08s97...9Ec">
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-check mt-sm-4 pt-sm-3">
+                        <input class="form-check-input" id="price-open-wallet" type="checkbox" checked>
+                        <label class="form-check-label fs-base" for="price-open-wallet"><span class="me-2">Use address currently connected to wallet</span><i class="ci-wallet fs-lg mt-n1 align-middle text-muted"></i></label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Properties-->
+                  <h3 class="h5 mb-4">Properties <span class='fw-normal text-muted'>(optional)</span></h3>
+                  <div class="row gy-md-4 gy-3 mb-3">
+                    <div class="col-sm-6">
+                      <input class="form-control" type="text" placeholder="eg. Size">
+                    </div>
+                    <div class="col-sm-6">
+                      <input class="form-control" type="text" placeholder="eg. M">
+                    </div>
+                  </div><a href="#"><i class="ci-add me-2"></i><ins>Add more</ins></a>
+                </div>
+                <!-- Time auctions tab-->
+                <div class="tab-pane fade" id="price-time" role="tabpanel">
+                  <p>Time auctions settings go here</p>
+                </div>
+              </div>
+              <!-- Submit-->
+              <div class="pt-2">
+                <button class="btn btn-lg btn-accent d-block w-100" type="submit">Create item</button>
+              </div>
+            </div>
+          </form>
+          <!-- Preview-->
+          <aside class="col-lg-3 offset-lg-1 col-md-4 position-relative">
+            <div class="sticky-top" style="top: 100px;">
+              <h4 class="h5 mb-3 text-md-start text-center">Preview</h4>
+              <!-- Preview item-->
+              <div class="card border-0 shadow mx-auto" style="max-width: 500px; pointer-events: none;">
+                <div class="card-img-top position-relative overflow-hidden"><a class="d-block" href="nft-single-auction-live.html"><img src="img/nft/catalog/06.jpg" alt="Product image"></a></div>
+                <div class="card-body">
+                  <h3 class="product-title mb-2 fs-base"><a class="d-block text-truncate" href="nft-single-auction-live.html">Ocean and sky</a></h3><span class="fs-sm text-muted">Current bid:</span>
+                  <div class="d-flex align-items-center flex-wrap">
+                    <h4 class="mt-1 mb-0 fs-base text-darker">0.5 ETH</h4><span class="mt-1 ms-1 fs-xs text-muted">(≈ $ 2,000.55)</span>
+                  </div>
+                </div>
+                <div class="card-footer mt-n1 py-0 border-0">
+                  <div class="d-flex align-items-center position-relative mb-1 py-3 border-top"><img class="me-2 rounded-circle" src="img/nft/catalog/avatars/07.png" width="32" alt="Avatar"><a class="nav-link-style fs-sm stretched-link" href="nft-vendor.html">@foxnet_creator</a></div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer bg-darker">
+      <div class="bg-dark">
+        <div class="container py-5">
+          <div class="row py-lg-4">
+            <div class="col-lg-4 mb-lg-0 mb-4">
+              <div class="widget pb-3 mb-lg-4">
+                <h3 class="widget-title text-light pb-1">Stay informed</h3>
+                <form class="subscription-form validate" action="https://studio.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=29ca296126" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                  <div class="input-group flex-nowrap"><i class="ci-mail position-absolute top-50 translate-middle-y text-muted fs-base ms-3"></i>
+                    <input class="form-control rounded-start" type="email" name="EMAIL" placeholder="Your email" required>
+                    <button class="btn btn-accent" type="submit" name="subscribe">Subscribe*</button>
+                  </div>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input class="subscription-form-antispam" type="text" name="b_c7103e2c981361a6639545bd5_29ca296126" tabindex="-1">
+                  </div>
+                  <div class="form-text text-light opacity-50">*Subscribe to our newsletter to receive early discount offers, updates and new products info.</div>
+                  <div class="subscription-status"></div>
+                </form>
+              </div>
+              <div><a class="btn-social bs-light bs-twitter me-2 mb-2" href="#"><i class="ci-twitter"></i></a><a class="btn-social bs-light bs-facebook me-2 mb-2" href="#"><i class="ci-facebook"></i></a><a class="btn-social bs-light bs-instagram me-2 mb-2" href="#"><i class="ci-instagram"></i></a><a class="btn-social bs-light bs-pinterest me-2 mb-2" href="#"><i class="ci-pinterest"></i></a><a class="btn-social bs-light bs-youtube me-2 mb-2" href="#"><i class="ci-youtube"></i></a></div>
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+              <div class="d-flex flex-sm-row flex-column justify-content-sm-between mt-n4 mx-lg-n3">
+                <div class="widget widget-links widget-light mt-4 px-lg-3 px-sm-n2">
+                  <h3 class="widget-title text-light">Company</h3>
+                  <ul class="widget-list">
+                    <li class="widget-list-item"><a class="widget-list-link" href="#">About Us</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="#">How It Works</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="#">Create an NFT With Us</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="#">Support</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="#">Blog</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="#">My Account</a></li>
+                  </ul>
+                </div>
+                <div class="widget widget-links widget-light mt-4 px-lg-3 px-sm-n2">
+                  <h3 class="widget-title text-light">Marketplace</h3>
+                  <ul class="widget-list">
+                    <li class="widget-list-item"><a class="widget-list-link" href="#">All NFTs</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="#">New</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="#">Art</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="#">Music</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="#">Photography</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="#">Utility</a></li>
+                  </ul>
+                </div>
+                <div class="widget widget-links widget-light mt-4 px-lg-3 px-sm-n2">
+                  <h3 class="widget-title text-light">Help</h3>
+                  <ul class="widget-list">
+                    <li class="widget-list-item"><a class="widget-list-link" href="#">Terms and Conditions</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="#">Privacy Policy</a></li>
+                    <li class="widget-list-item"><a class="widget-list-link" href="#">FAQ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-lg-4 my-3 py-2">
+        <div class="d-flex flex-md-row flex-column-reverse align-items-center justify-content-md-between">
+          <div class="fs-xs text-light opacity-50">&copy; All rights reserved. Made by <a class="text-light" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a></div>
+          <div class="d-flex align-items-start mb-md-0 mb-3 mx-n1">
+            <div class="px-1"><a class="btn-market btn-apple bg-dark" href="#"><span class="btn-market-subtitle">Download on the</span><span class="btn-market-title">App Store</span></a></div>
+            <div class="px-1"><a class="btn-market btn-google bg-dark" href="#"><span class="btn-market-subtitle">Download on the</span><span class="btn-market-title">Google Play</span></a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Toolbar for handheld devices (NFT Marketplace)-->
+    <div class="handheld-toolbar">
+      <div class="d-table table-layout-fixed w-100"><a class="d-none handheld-toolbar-item" href="#vendor-sidebar" data-bs-toggle="offcanvas"><span class="handheld-toolbar-icon"><i class="ci-sign-in"></i></span><span class="handheld-toolbar-label">Sidebar</span></a><a class="d-table-cell handheld-toolbar-item" href="#signin-modal" data-bs-toggle="modal"><span class="handheld-toolbar-icon"><i class="ci-user"></i></span><span class="handheld-toolbar-label">Account</span></a><a class="d-table-cell handheld-toolbar-item" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" onclick="window.scrollTo(0, 0)"><span class="handheld-toolbar-icon"><i class="ci-menu"></i></span><span class="handheld-toolbar-label">Menu</span></a><a class="d-table-cell handheld-toolbar-item" href="nft-connect-wallet.html"><span class="handheld-toolbar-icon"><i class="ci-wallet"></i></span><span class="handheld-toolbar-label text-nowrap">Connect wallet</span></a>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ci-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="vendor/flatpickr/dist/plugins/rangePlugin.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from cartzilla.createx.studio/nft-create-item.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Aug 2022 18:18:42 GMT -->
+</html>

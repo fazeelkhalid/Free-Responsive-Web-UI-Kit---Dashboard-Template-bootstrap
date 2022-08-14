@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from cartzilla.createx.studio/food-delivery-cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Aug 2022 18:17:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <title>Cartzilla | Food Delivery - Cart</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Cartzilla - Bootstrap E-commerce Template">
+    <meta name="keywords" content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap, html5, css3, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#fe6a6a" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <!-- Google Tag Manager-->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-WKV3GT5');
+    </script>
+  </head>
+  <!-- Body-->
+  <body class="handheld-toolbar-enabled">
+    <!-- Google Tag Manager (noscript)-->
+    <noscript>
+      <iframe src="http://www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+    <!-- Sign in / sign up modal-->
+    <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-secondary">
+            <ul class="nav nav-tabs card-header-tabs" role="tablist">
+              <li class="nav-item"><a class="nav-link fw-medium active" href="#signin-tab" data-bs-toggle="tab" role="tab" aria-selected="true"><i class="ci-unlocked me-2 mt-n1"></i>Sign in</a></li>
+              <li class="nav-item"><a class="nav-link fw-medium" href="#signup-tab" data-bs-toggle="tab" role="tab" aria-selected="false"><i class="ci-user me-2 mt-n1"></i>Sign up</a></li>
+            </ul>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body tab-content py-4">
+            <form class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab">
+              <div class="mb-3">
+                <label class="form-label" for="si-email">Email address</label>
+                <input class="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="si-password">Password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="si-password" required>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3 d-flex flex-wrap justify-content-between">
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="si-remember">
+                  <label class="form-check-label" for="si-remember">Remember me</label>
+                </div><a class="fs-sm" href="#">Forgot password?</a>
+              </div>
+              <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign in</button>
+            </form>
+            <form class="needs-validation tab-pane fade" autocomplete="off" novalidate id="signup-tab">
+              <div class="mb-3">
+                <label class="form-label" for="su-name">Full name</label>
+                <input class="form-control" type="text" id="su-name" placeholder="John Doe" required>
+                <div class="invalid-feedback">Please fill in your name.</div>
+              </div>
+              <div class="mb-3">
+                <label for="su-email">Email address</label>
+                <input class="form-control" type="email" id="su-email" placeholder="johndoe@example.com" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="su-password">Password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="su-password" required>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="su-password-confirm">Confirm password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="su-password-confirm" required>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="page-wrapper">
+      <!-- Navbar for Food Delivery Service demo-->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+      <header class="navbar d-block navbar-sticky navbar-expand-lg navbar-light bg-light">
+        <div class="container"><a class="navbar-brand d-none d-sm-block me-4 order-lg-1" href="index.html"><img src="img/logo-dark.png" width="142" alt="Cartzilla"></a><a class="navbar-brand d-sm-none me-2 order-lg-1" href="index.html"><img src="img/logo-icon.png" width="74" alt="Cartzilla"></a>
+          <div class="navbar-toolbar d-flex align-items-center order-lg-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button><a class="navbar-tool d-none d-lg-flex" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#searchBox" role="button" aria-expanded="false" aria-controls="searchBox"><span class="navbar-tool-tooltip">Search</span>
+              <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-search"></i></div></a><a class="navbar-tool ms-2" href="#signin-modal" data-bs-toggle="modal"><span class="navbar-tool-tooltip">Account</span>
+              <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-user"></i></div></a>
+            <div class="navbar-tool dropdown ms-3"><a class="navbar-tool-icon-box bg-secondary dropdown-toggle" href="food-delivery-cart.html"><span class="navbar-tool-label">3</span><i class="navbar-tool-icon ci-cart"></i></a>
+              <!-- Cart dropdown-->
+              <div class="dropdown-menu dropdown-menu-end">
+                <div class="widget widget-cart px-3 pt-2 pb-3" style="width: 20rem;">
+                  <div style="height: 15rem;" data-simplebar data-simplebar-auto-hide="false">
+                    <div class="widget-cart-item pb-2 border-bottom">
+                      <button class="btn-close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                      <div class="d-flex align-items-center"><a class="d-block" href="#"><img src="img/food-delivery/cart/th01.jpg" width="64" alt="Pizza"></a>
+                        <div class="ps-2">
+                          <h6 class="widget-product-title"><a href="#">Pizza Pepperoni with Tomatoes</a></h6>
+                          <div class="widget-product-meta"><span class="text-accent me-2">$9.<small>00</small></span><span class="text-muted">x 1</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-cart-item py-2 border-bottom">
+                      <button class="btn-close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                      <div class="d-flex align-items-center"><a class="d-block" href="#"><img src="img/food-delivery/cart/th02.jpg" width="64" alt="Burger"></a>
+                        <div class="ps-2">
+                          <h6 class="widget-product-title"><a href="#">Beef Burger with Fries</a></h6>
+                          <div class="widget-product-meta"><span class="text-accent me-2">$12.<small>00</small></span><span class="text-muted">x 1</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-cart-item py-2 border-bottom">
+                      <button class="btn-close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                      <div class="d-flex align-items-center"><a class="d-block" href="#"><img src="img/food-delivery/cart/th03.jpg" width="64" alt="Drink"></a>
+                        <div class="ps-2">
+                          <h6 class="widget-product-title"><a href="#">Coca Cola Can, 335ml</a></h6>
+                          <div class="widget-product-meta"><span class="text-accent me-2">$1.<small>00</small></span><span class="text-muted">x 3</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                    <div class="fs-sm me-2 py-2"><span class="text-muted">Total:</span><span class="text-accent fs-base ms-1">$24.<small>00</small></span></div><a class="btn btn-outline-secondary btn-sm" href="food-delivery-cart.html">Expand cart<i class="ci-arrow-right ms-1 me-n1"></i></a>
+                  </div><a class="btn btn-primary btn-sm d-block w-100" href="food-delivery-checkout.html"><i class="ci-card me-2 fs-base align-middle"></i>Checkout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse me-auto order-lg-2" id="navbarCollapse">
+            <!-- Search (mobile)-->
+            <div class="d-lg-none py-3">
+              <div class="input-group"><i class="ci-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                <input class="form-control rounded-start" type="text" placeholder="What do you need?">
+              </div>
+            </div>
+            <!-- Location dropdown-->
+            <ul class="navbar-nav navbar-mega-nav ms-lg-4 pe-lg-2 me-lg-2">
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-lg-0" href="#" data-bs-toggle="dropdown"><i class="ci-location me-2"></i>New York</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Los Angeles</a></li>
+                  <li><a class="dropdown-item" href="#">Chicago</a></li>
+                  <li><a class="dropdown-item" href="#">Houston</a></li>
+                  <li><a class="dropdown-item" href="#">Philadelphia</a></li>
+                  <li><a class="dropdown-item" href="#">San Diego</a></li>
+                  <li><a class="dropdown-item" href="#">Miami</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Primary menu-->
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Cuisine</a>
+                <div class="dropdown-menu px-2 ps-0 pb-4">
+                  <div class="d-flex">
+                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
+                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/food-delivery/icons/burger.svg" width="60" alt="Burgers &amp; Fries">
+                          <h6 class="fs-base text-center">Burgers &amp; Fries</h6></a></div>
+                    </div>
+                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
+                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/food-delivery/icons/noodles.svg" width="60" alt="Noodles">
+                          <h6 class="fs-base text-center">Noodles</h6></a></div>
+                    </div>
+                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
+                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/food-delivery/icons/pizza.svg" width="60" alt="Pizza &amp; Pasta">
+                          <h6 class="fs-base text-center">Pizza &amp; Pasta</h6></a></div>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
+                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/food-delivery/icons/steak.svg" width="60" alt="Grill &amp; Steaks">
+                          <h6 class="fs-base text-center">Grill &amp; Steaks</h6></a></div>
+                    </div>
+                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
+                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/food-delivery/icons/fish.svg" width="60" alt="Fish &amp; Seafood">
+                          <h6 class="fs-base text-center">Fish &amp; Seafood</h6></a></div>
+                    </div>
+                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
+                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/food-delivery/icons/healthy.svg" width="60" alt="Healthy Food">
+                          <h6 class="fs-base text-center">Healthy Food</h6></a></div>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
+                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/food-delivery/icons/cuisine.svg" width="60" alt="Haute Cuisine">
+                          <h6 class="fs-base text-center">Haute Cuisine</h6></a></div>
+                    </div>
+                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
+                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/food-delivery/icons/chicken.svg" width="60" alt="Chicken &amp; Snaks">
+                          <h6 class="fs-base text-center">Chicken &amp; Snaks</h6></a></div>
+                    </div>
+                    <div class="mega-dropdown-column pt-4 px-3" style="width: 12rem;">
+                      <div class="widget mb-3"><a class="d-block" href="food-delivery-category.html"><img class="d-block mx-auto mb-3" src="img/food-delivery/icons/coffee.svg" width="60" alt="Coffee &amp; Desserts">
+                          <h6 class="fs-base text-center">Coffee &amp; Desserts</h6></a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Back to main demo</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Search collapse-->
+        <div class="search-box collapse" id="searchBox">
+          <div class="container py-2">
+            <div class="input-group"><i class="ci-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+              <input class="form-control rounded-start" type="text" placeholder="What do you need?">
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container pt-4 pb-3 py-sm-4">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start">
+            <li class="breadcrumb-item"><a class="text-nowrap" href="index.html"><i class="ci-home"></i>Home</a></li>
+            <li class="breadcrumb-item text-nowrap active" aria-current="page">Cart</li>
+          </ol>
+        </nav>
+        <div class="rounded-3 shadow-lg mt-4 mb-5">
+          <ul class="nav nav-tabs nav-justified mb-4">
+            <li class="nav-item"><a class="nav-link fs-lg fw-medium py-4 active" href="food-delivery-cart.html">1. Your order</a></li>
+            <li class="nav-item"><a class="nav-link fs-lg fw-medium py-4" href="food-delivery-checkout.html">2. Checkout</a></li>
+          </ul>
+          <div class="px-3 px-sm-4 px-xl-5 pt-1 pb-4 pb-sm-5">
+            <div class="row">
+              <!-- Items in cart-->
+              <div class="col-lg-8 col-md-7 pt-sm-2">
+                <!-- Item-->
+                <div class="d-sm-flex justify-content-between align-items-center mt-3 mb-4 pb-3 border-bottom">
+                  <div class="d-block d-sm-flex align-items-center text-center text-sm-start"><a class="d-inline-block flex-shrink-0 mx-auto me-sm-4" href="#"><img src="img/food-delivery/cart/01.jpg" width="120" alt="Pizza"></a>
+                    <div class="pt-2">
+                      <h3 class="product-title fs-base mb-2"><a href="#">Pizza Pepperoni with Tomatoes</a></h3>
+                      <div class="fs-sm"><span class="text-muted me-2">Size:</span>Medium</div>
+                      <div class="fs-sm"><span class="text-muted me-2">Base:</span>Standard</div>
+                      <div class="fs-lg text-accent pt-2">$9.<small>00</small></div>
+                    </div>
+                  </div>
+                  <div class="pt-2 pt-sm-0 ps-sm-3 mx-auto mx-sm-0 text-center text-sm-start" style="max-width: 9rem;">
+                    <label class="form-label" for="quantity1">Quantity</label>
+                    <input class="form-control" type="number" id="quantity1" value="1" min="1">
+                    <button class="btn btn-link px-0 text-danger" type="button"><i class="ci-close-circle me-2"></i><span class="fs-sm">Remove</span></button>
+                  </div>
+                </div>
+                <!-- Item-->
+                <div class="d-sm-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+                  <div class="d-block d-sm-flex align-items-center text-center text-sm-start"><a class="d-inline-block flex-shrink-0 mx-auto me-sm-4" href="#"><img src="img/food-delivery/cart/02.jpg" width="120" alt="Burger"></a>
+                    <div class="pt-2">
+                      <h3 class="product-title fs-base mb-2"><a href="#">Beef Burger with Fries</a></h3>
+                      <div class="fs-sm"><span class="text-muted me-2">Size:</span>XL</div>
+                      <div class="fs-sm"><span class="text-muted me-2">Sauce:</span>Barbeque</div>
+                      <div class="fs-lg text-accent pt-2">$12.<small>00</small></div>
+                    </div>
+                  </div>
+                  <div class="pt-2 pt-sm-0 ps-sm-3 mx-auto mx-sm-0 text-center text-sm-start" style="max-width: 9rem;">
+                    <label class="form-label" for="quantity2">Quantity</label>
+                    <input class="form-control" type="number" id="quantity2" value="1" min="1">
+                    <button class="btn btn-link px-0 text-danger" type="button"><i class="ci-close-circle me-2"></i><span class="fs-sm">Remove</span></button>
+                  </div>
+                </div>
+                <!-- Item-->
+                <div class="d-sm-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+                  <div class="d-block d-sm-flex align-items-center text-center text-sm-start"><a class="d-inline-block flex-shrink-0 mx-auto me-sm-4" href="#"><img src="img/food-delivery/cart/03.jpg" width="120" alt="Drink"></a>
+                    <div class="pt-2">
+                      <h3 class="product-title fs-base mb-2"><a href="#">Coca Cola Can, 335ml</a></h3>
+                      <div class="fs-sm"><span class="text-muted me-2">Size:</span>335ml</div>
+                      <div class="fs-lg text-accent pt-2">$1.<small>00</small></div>
+                    </div>
+                  </div>
+                  <div class="pt-2 pt-sm-0 ps-sm-3 mx-auto mx-sm-0 text-center text-sm-start" style="max-width: 9rem;">
+                    <label class="form-label" for="quantity3">Quantity</label>
+                    <input class="form-control" type="number" id="quantity3" value="3" min="1">
+                    <button class="btn btn-link px-0 text-danger" type="button"><i class="ci-close-circle me-2"></i><span class="fs-sm">Remove</span></button>
+                  </div>
+                </div>
+              </div>
+              <!-- Sidebar-->
+              <div class="col-lg-4 col-md-5 pt-3 pt-sm-4">
+                <div class="rounded-3 bg-secondary px-3 px-sm-4 py-4">
+                  <div class="text-center mb-4 pb-3 border-bottom">
+                    <h3 class="h5 mb-3 pb-1">Total</h3>
+                    <h4 class="fw-normal">$24.<small>00</small></h4>
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label mb-3" for="order-comments"><span class="badge bg-info fs-xs me-2">Note</span>Additional comments</label>
+                    <textarea class="form-control" rows="4" id="order-comments"></textarea>
+                  </div>
+                  <h3 class="h6 mb-4">Apply promo code</h3>
+                  <form class="needs-validation" method="post" novalidate>
+                    <div class="mb-3">
+                      <input class="form-control" type="text" placeholder="Promo code" required>
+                      <div class="invalid-feedback">Please provide promo code.</div>
+                    </div>
+                    <button class="btn btn-outline-primary d-block w-100" type="submit">Apply promo code</button>
+                  </form><a class="btn btn-primary btn-shadow d-block w-100 mt-4 mb-3" href="food-delivery-checkout.html"><i class="ci-card fs-lg me-2"></i>Proceed to Checkout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer-->
+    <footer class="footer bg-darker pt-5">
+      <div class="container pt-2">
+        <div class="row pb-2">
+          <div class="col-lg-2 col-sm-4 pb-2 mb-4">
+            <div class="mt-n1"><a class="d-inline-block align-middle" href="#"><img class="d-block mb-4" src="img/footer-logo-light.png" width="117" alt="Cartzilla"></a></div>
+            <div class="btn-group dropdown disable-autohide">
+              <button class="btn btn-outline-light border-light btn-sm dropdown-toggle px-2" type="button" data-bs-toggle="dropdown"><img class="me-2" src="img/flags/en.png" width="20" alt="English">Eng / $</button>
+              <ul class="dropdown-menu my-1">
+                <li class="dropdown-item">
+                  <select class="form-select form-select-sm">
+                    <option value="usd">$ USD</option>
+                    <option value="eur">€ EUR</option>
+                    <option value="ukp">£ UKP</option>
+                    <option value="jpy">¥ JPY</option>
+                  </select>
+                </li>
+                <li><a class="dropdown-item pb-1" href="#"><img class="me-2" src="img/flags/fr.png" width="20" alt="Français">Français</a></li>
+                <li><a class="dropdown-item pb-1" href="#"><img class="me-2" src="img/flags/de.png" width="20" alt="Deutsch">Deutsch</a></li>
+                <li><a class="dropdown-item" href="#"><img class="me-2" src="img/flags/it.png" width="20" alt="Italiano">Italiano</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4">
+            <div class="widget widget-links widget-light pb-2 mb-4">
+              <h3 class="widget-title text-light">Join us</h3>
+              <ul class="widget-list">
+                <li class="widget-list-item"><a class="widget-list-link" href="#">Careers</a></li>
+                <li class="widget-list-item"><a class="widget-list-link" href="#">Restaurants</a></li>
+                <li class="widget-list-item"><a class="widget-list-link" href="#">Become a Courier</a></li>
+                <li class="widget-list-item"><a class="widget-list-link" href="#">About</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4">
+            <div class="widget widget-links widget-light pb-2 mb-4">
+              <h3 class="widget-title text-light">Let us help you</h3>
+              <ul class="widget-list">
+                <li class="widget-list-item"><a class="widget-list-link" href="#">Help Center</a></li>
+                <li class="widget-list-item"><a class="widget-list-link" href="#">Support</a></li>
+                <li class="widget-list-item"><a class="widget-list-link" href="#">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4">
+            <div class="widget widget-links widget-light pb-2 mb-4">
+              <h3 class="widget-title text-light">Follow us</h3>
+              <ul class="widget-list">
+                <li class="widget-list-item"><a class="widget-list-link" href="#">Facebook</a></li>
+                <li class="widget-list-item"><a class="widget-list-link" href="#">Twitter</a></li>
+                <li class="widget-list-item"><a class="widget-list-link" href="#">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-8">
+            <div class="widget pb-2 mb-4">
+              <h3 class="widget-title text-light pb-1">Download our app</h3>
+              <div class="d-flex flex-wrap"><a class="btn-market btn-apple border border-light me-3 mb-2" href="#" role="button"><span class="btn-market-subtitle">Download on the</span><span class="btn-market-title">App Store</span></a><a class="btn-market btn-google border border-light mb-2" href="#" role="button"><span class="btn-market-subtitle">Download on the</span><span class="btn-market-title">Google Play</span></a></div>
+            </div>
+          </div>
+        </div>
+        <hr class="hr-light mt-md-2 mb-3">
+        <div class="d-md-flex justify-content-between pt-4 pb-1">
+          <div class="pb-4 fs-xs text-light opacity-50 text-center text-md-start">© All rights reserved. Made by <a class="text-light" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a></div>
+          <div class="widget widget-links widget-light pb-4">
+            <ul class="widget-list d-flex flex-wrap justify-content-center justify-content-md-start">
+              <li class="widget-list-item ms-4"><a class="widget-list-link fs-ms" href="#">Privacy Policy</a></li>
+              <li class="widget-list-item ms-4"><a class="widget-list-link fs-ms" href="#">Terms &amp; Conditions</a></li>
+              <li class="widget-list-item ms-4"><a class="widget-list-link fs-ms" href="#">Cookies Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Toolbar for handheld devices (Food delivery)-->
+    <div class="handheld-toolbar">
+      <div class="d-table table-layout-fixed w-100"><a class="d-table-cell handheld-toolbar-item" href="#signin-modal" data-bs-toggle="modal"><span class="handheld-toolbar-icon"><i class="ci-user"></i></span><span class="handheld-toolbar-label">Account</span></a><a class="d-table-cell handheld-toolbar-item" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" onclick="window.scrollTo(0, 0)"><span class="handheld-toolbar-icon"><i class="ci-menu"></i></span><span class="handheld-toolbar-label">Menu</span></a><a class="d-table-cell handheld-toolbar-item" href="food-delivery-cart.html"><span class="handheld-toolbar-icon"><i class="ci-cart"></i><span class="badge bg-primary rounded-pill ms-1">3</span></span><span class="handheld-toolbar-label">$24.00</span></a></div>
+    </div>
+    <!-- Back To Top Button--><a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ci-arrow-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from cartzilla.createx.studio/food-delivery-cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Aug 2022 18:17:42 GMT -->
+</html>
