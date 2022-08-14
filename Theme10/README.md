@@ -1,4 +1,4 @@
-<h1 align="center"> Theme8 Demo</h1>
+<h1 align="center"> Theme10 Demo</h1>
 
 <p float="left">
   <img src="./Demo%20Images/1.png"  width = 45%/>
@@ -23,59 +23,62 @@
   <img src="./Demo%20Images/20.png"  width = 45%/>
 </p>
 
-
 <div class="theme-description">
-                        <p>Blogzine v1.2.0 is here with all-new Shop pages <a href="https://blogzine.webestica.com/docs/changelog.html" target="_blank" rel="noopener">View Changelog</a></p>
-<h3>Overview</h3>
-<p>The next-generation blog, news, magazine, and podcast theme for you to start sharing your content today with beautiful aesthetics! This minimal &amp; clean Bootstrap 5 based theme is ideal for all types of sites that aim to provide users with content.</p>
-<h3>Readability &amp; content-focused theme</h3>
-<p>We live in a time where blogging has just evolved, so needless to say – “Content is King”. Blogzine bundled with – Clean &amp; minimal design by keeping visual hierarchy in mind, carefully chosen fonts, ample white spaces, fast loading pages made with a lot of love and passion – all combine to give you the best readable theme you deserve! Blogzine has been designed with a strong focus on readability. Whether it’s homepage design or post-presentation or any component in the site, everything is built to support the ease of reading and navigation without losing its actual beauty.</p>
-<h3>Dark mode (with live switcher)</h3>
-<p>In recent times, dark viewing mode for websites has gained a lot of popularity from users worldwide. Dark Mode is a dramatic new look that’s easy and relaxed on your eyes, helps you focus on the content and make reading easier. Especially in low-light environments, Turn it on for a great viewing experience. So how could we resist ourselves to not provide it for our users? In Blogzine, either you may use dark mode by default or use dark mode toggle switch or remove it completely. Choice is yours! 😎</p>
-<h3>Developer friendly theme</h3>
-<p>Blogzine has been built with the same coding practice as Bootstrap core itself so that you can customize and extend our components super easily, just like Bootstrap.</p>
+                        <h2>Build anything</h2>
+<p>Space is a fully responsive and yet modern premium Bootstrap v5 theme. Get started with Space’s components and options for laying out your Space project, including powerful scripts, fully detailed documentation, and yet developer friendly code.</p>
+<h3>Landing Pages</h3>
 <ul>
-<li>Utility and Component-oriented code architecture for fast, responsive UI development.</li>
-<li>Fewer third-party plugins dependency</li>
-<li>Automated workflow with Gulp automation tool to boost your production</li>
-<li>Dynamic color schemes using SASS to save your time</li>
-<li>Well-commented code structure so you can easily copy/paste or remove code blocks</li>
-<li>Professional and possibly prompt support via the online ticket support system</li>
-<li>Detailed documentation for a better understanding of theme setup, components, changing the color scheme, etc.</li>
+<li>Corporate <a href="https://htmlstream.com/space/index.html" target="_blank" rel="noopener">view here</a></li>
+<li>Agency <a href="https://htmlstream.com/space/landing-agency.html" target="_blank" rel="noopener">view here</a></li>
+<li>Consulting <a href="https://htmlstream.com/space/landing-consulting.html" target="_blank" rel="noopener">view here</a></li>
+<li>Services <a href="https://htmlstream.com/space/landing-services.html" target="_blank" rel="noopener">view here</a></li>
+<li>Business <a href="https://htmlstream.com/space/landing-business.html" target="_blank" rel="noopener">view here</a></li>
+<li>Growth <a href="https://htmlstream.com/space/landing-services-growth.html" target="_blank" rel="noopener">view here</a></li>
+<li>SaaS <a href="https://htmlstream.com/space/landing-services-saas.html" target="_blank" rel="noopener">view here</a></li>
+<li>Wallet <a href="https://htmlstream.com/space/landing-services-wallet.html" target="_blank" rel="noopener">view here</a></li>
+<li>API <a href="https://htmlstream.com/space/landing-services-api.html" target="_blank" rel="noopener">view here</a></li>
 </ul>
-<h3>Customize a new layout all your own with ease</h3>
-<p>Blogzine’s beautiful layouts can be used out of the box in a flexible manner according to your requirements. From the templates provided with the theme, there are a number of possibilities that you can make your own pages by replacing and moving your choice of sections here and there and voila, you will have an entirely new page! 🎉</p>
-<h3>Automated workflow</h3>
-<p>With the included Gulp and BrowserSync (Time-saving synchronized browser testing) in the theme, Automate your time-consuming tasks in the development workflow.</p>
-<h3>Feature list</h3>
+<h3>Supporting Pages</h3>
 <ul>
-<li>Built with the latest Bootstrap 5</li>
-<li>NO jQuery dependency</li>
-<li>RTL Support (<a href="https://blogzine.webestica.com/rtl/" target="_blank" rel="noopener">View demo</a>)</li>
-<li>Dark mode with a live toggle switch</li>
-<li>Font size accessibility (Beta)</li>
-<li>Readable &amp; content-focused theme</li>
-<li>Beautifully handcrafted and built with attention to detail for your needs</li>
-<li>11 different and unique home page demos suitable from small blogger to large news agencies</li>
-<li>Tons of post types including image, image grid, blockquote, background video, image slider, YouTube video embedded iframe, Vimeo video embedded iframe, Popup video, HTML5 player video, Player youtube, Player Vimeo, 3 types of audio. <a href="https://blogzine.webestica.com/post-types.html" target="_blank" rel="noopener">View all here</a></li>
-<li>7 types of single/detail post page</li>
-<li>Dashboard / Admin pages included</li>
-<li>Shop pages included</li>
-<li>General-purpose pages included</li>
-<li>Different types of header footer styles</li>
-<li>Sticky sidebar, sticky header, sticky footer and sticky next post</li>
-<li>Font Awesome and Bootstrap icons (2800+ Font icons)</li>
-<li>Lightbox (Pop-ups) for image and videos</li>
-<li>Smooth parallax image and video backgrounds</li>
-<li>Lifetime free updates</li>
-<li>100% money-back guarantee if you are not satisfied&nbsp;</li>
+<li><strong>14 Company pages</strong> – Your ready-to-use page solutions for all kinds of content layouts such as about, services, contacts and more</li>
+<li><strong>5 Specialty pages</strong> – Helper pages such as coming soon, terms, 404 error and more</li>
+<li><strong>3 Portfolio pages</strong> – Showcase your stunning Portfolio design layouts and Case Studies</li>
+<li><strong>3 Blog pages</strong> – Create modern publishing platform and bring more traffic to your website</li>
 </ul>
-<h3>Support</h3>
-<p>You can always count on our friendly support to help you out with your queries/questions. We have an online <a href="http://support.webestica.com/" target="_blank" rel="noopener">ticket support portal</a> to make that easy for you.</p>
-<p>Looking for new pages, features, or have any feedback? We are always up for improvements. <a href="https://www.webestica.com/contact/" target="_blank" rel="noopener">Fill out the form</a> without logging in 🙂</p>
-<h3>Notes</h3>
+<h3>Roadmap (To-do list):</h3>
 <ul>
-<li>This is a pure Bootstrap 5 based HTML5 theme, not a WordPress or any other CMS theme. It doesn’t include any back-end functionality.</li>
-<li>Images used in the preview theme are not included in the Download Package. All images are only for demonstration purposes.</li>
-<li>If you are not familiar with Gulp/SASS, You can also just prefer to work with a simple CSS method.&nbsp;</li>
+<li>RTL (Coming Soon)</li>
 </ul>
+<h3>Developers First</h3>
+<p>The theme is so flexible that extending the base components of Bootstrap has never been easier.</p>
+<ul>
+<li>Built with the latest Bootstrap 5.x</li>
+<li>Thoroughly customized SASS</li>
+<li>Gulp automation tool to boost your production</li>
+<li>Developer friendly and well-commented code structure</li>
+<li>In-depth detailed Documentation with copy-paste snippets</li>
+</ul>
+<h3>Design Solutions</h3>
+<p>Get access to customizable web page designs and useful design tools to build your website with:</p>
+<ul>
+<li>100% responsive layouts/components</li>
+<li>Premium Images (100% demo images are included in the download package)</li>
+<li>Dozens of Header/Navbar Layouts</li>
+<li>Control the look and feel of your website, from its layout to content and colors</li>
+<li>Hundreds of customizable UI components</li>
+<li>Bootstrap Icons</li>
+</ul>
+<p>Some more perks:</p>
+<ul>
+<li><strong>Figma</strong> – The Figma file is&nbsp;NOT&nbsp;a core part of the theme, but at the moment comes as a&nbsp;<strong>complimentary</strong>. Please check out <a href="https://htmlstream.com/space/documentation/figma.html" target="_blank" rel="noopener">Figma Documentaion</a> for terms of usage and other details. <a href="https://www.figma.com/file/aQLhe1y2lvr0vlomoGVTUf/Space-Preview?node-id=0%3A1" target="_blank" rel="noopener">Preview Sapce Figma</a>.</li>
+<li><strong>Duotune Pro Icons</strong> – Generously provided by <a href="https://keenthemes.com/" target="_blank" rel="noopener">KeenThemes</a> to use and include in our products.</li>
+</ul>
+<h3>Documentation</h3>
+<p>Start browsing&nbsp;components with copy-to-clipboard snippet and documentation on how to add them to your project, as well as what’s required to include along with their features. Every component and plugin is well documented with examples.</p>
+<h3>Workflow (Tools)</h3>
+<p>Speed up your development process with Space’s included npm scripts to automate your time-consuming tasks in your development workflow with Gulp toolkit and BrowserSync live browser reload.</p>
+<h3>Theme support</h3>
+<p>Have a question? No worries! Space comes with 6 months of free support. We take seriously every issue that is reported to us, and we aim to resolve each one as quickly as possible. In addition our Customer Support Team has helped over 12,000+ clients from freelancers to corporate companies with their questions. Feel free to contact us at <a href="https://htmlstream.com/contact-us">https://htmlstream.com/contact-us</a></p>
+<h3>45,000+ Happy Customers</h3>
+<p>Over 7 years, we have sold more than 45 thousand copies of templates and learned the best possible ways to create Themes which covers any needs. In this mission, one thing is clear: to make your life easier in both code and design. Here’s how we do it:</p>
+<ul>
