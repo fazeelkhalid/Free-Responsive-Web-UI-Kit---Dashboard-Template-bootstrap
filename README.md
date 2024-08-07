@@ -1,3 +1,11 @@
+<div text-align: "center">
+
+<h1>Fancy more themes? 🎨</h1>
+
+<h3>If your answer is yes, open an issue and let's make it happen! 😊 </h3>
+</div>
+
+
 # Free Responsive Web UI Kit & Dashboard Template bootstrap
 
 
