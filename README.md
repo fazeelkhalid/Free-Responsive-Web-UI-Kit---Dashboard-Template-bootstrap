@@ -1,8 +1,9 @@
+<p text-align: "center">
 <div text-align: "center">
 
 <h1>Fancy more themes? 🎨</h1>
+<h3>If you answer yes, drop an email "fazeel.k.khalid@gmail.com" and let's make it happen! 😊 </h3>
 
-<h3>If your answer is yes, open an issue and let's make it happen! 😊 </h3>
 </div>
 
 
